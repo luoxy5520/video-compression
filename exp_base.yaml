@@ -1,0 +1,29 @@
+{
+  "checkpoint": "/mnt/data_hdd/models/Wan2.1-T2V-1.3B",
+  "output": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_2026_11_05",
+  "steps": 20,
+  "observe": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "samples": [
+    {
+      "prompt": "A fixed camera shows a red toy car moving steadily from left to right on a tabletop, with a static background.",
+      "seed": 42
+    },
+    {
+      "prompt": "A fixed camera shows a red toy car moving steadily from left to right on a tabletop, with a static background.",
+      "seed": 43
+    },
+    {
+      "prompt": "A fixed camera shows a blue ball rolling slowly across a wooden floor.",
+      "seed": 42
+    },
+    {
+      "prompt": "A fixed camera shows a blue ball rolling slowly across a wooden floor.",
+      "seed": 43
+    }
+  ]
+}
