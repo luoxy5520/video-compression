@@ -1,0 +1,370 @@
+[
+  {
+    "sample_id": "sample_0000",
+    "step": 5,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0000",
+    "step": 10,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0000",
+    "step": 15,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0000",
+    "step": 20,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0001",
+    "step": 5,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0001",
+    "step": 10,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0001",
+    "step": 15,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0001",
+    "step": 20,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0002",
+    "step": 5,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0002",
+    "step": 10,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0002",
+    "step": 15,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0002",
+    "step": 20,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0003",
+    "step": 5,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0003",
+    "step": 10,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0003",
+    "step": 15,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_0003",
+    "step": 20,
+    "shapes": {
+      "latent": [
+        16,
+        5,
+        60,
+        104
+      ],
+      "hidden": [
+        1,
+        7800,
+        1536
+      ],
+      "final_latent": [
+        16,
+        5,
+        60,
+        104
+      ]
+    }
+  }
+]
