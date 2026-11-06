@@ -1,0 +1,1209 @@
+{
+  "status": "PASS",
+  "videos": 32,
+  "prompts": 8,
+  "seeds_per_prompt": 4,
+  "feature_records": 128,
+  "unique_final_targets": 32,
+  "oracle_closures": [
+    {
+      "sample_id": "sample_0000",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0000",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0000",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0000",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0004",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0004",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0004",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0004",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0005",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0005",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0005",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0005",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0006",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0006",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0006",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0006",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0007",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0007",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0007",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0007",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0008",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0008",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0008",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0008",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0009",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0009",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0009",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0009",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0010",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0010",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0010",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0010",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0011",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0011",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0011",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0011",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0012",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0012",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0012",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0012",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0013",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0013",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0013",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0013",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0014",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0014",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0014",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0014",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0015",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0015",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0015",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0015",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0016",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0016",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0016",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0016",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0017",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0017",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0017",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0017",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0018",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0018",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0018",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0018",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0019",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0019",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0019",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0019",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0020",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0020",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0020",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0020",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0021",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0021",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0021",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0021",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0022",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0022",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0022",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0022",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0023",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0023",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0023",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0023",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0024",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0024",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0024",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0024",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0025",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0025",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0025",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0025",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0026",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0026",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0026",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0026",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0027",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0027",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0027",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0027",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0028",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0028",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0028",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0028",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0029",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0029",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0029",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0029",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0030",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0030",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0030",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0030",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0031",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0031",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0031",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    },
+    {
+      "sample_id": "sample_0031",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      }
+    }
+  ],
+  "splits": {
+    "train": [
+      "sample_0000",
+      "sample_0001",
+      "sample_0002",
+      "sample_0003",
+      "sample_0004",
+      "sample_0005",
+      "sample_0006",
+      "sample_0007",
+      "sample_0008",
+      "sample_0009",
+      "sample_0010",
+      "sample_0011",
+      "sample_0012",
+      "sample_0013",
+      "sample_0014",
+      "sample_0015",
+      "sample_0016",
+      "sample_0017",
+      "sample_0018",
+      "sample_0019"
+    ],
+    "val": [
+      "sample_0020",
+      "sample_0021",
+      "sample_0022",
+      "sample_0023"
+    ],
+    "test": [
+      "sample_0024",
+      "sample_0025",
+      "sample_0026",
+      "sample_0027",
+      "sample_0028",
+      "sample_0029",
+      "sample_0030",
+      "sample_0031"
+    ]
+  },
+  "model_result": "/mnt/data_hdd/luoxiangyu/dit_pairs/training_expand32_20261106/metrics.json",
+  "limitations": [
+    "Pilot only: 8 prompts, val only 1 prompt.",
+    "Modes only; no trained MV/residual head or online exit controller.",
+    "Oracle final I-frame condition.",
+    "Use (dataset_id,sample_id,step) when combining batches."
+  ]
+}

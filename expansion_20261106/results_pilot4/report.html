@@ -1,0 +1,11 @@
+<html><meta charset="utf-8"><title>Oracle 模式预测实验</title><style>body{font:16px sans-serif;margin:32px}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:9px}th{background:#eee}</style><h1>真实 Oracle 模式预测实验</h1><p>源数据：/mnt/data_hdd/luoxiangyu/dit_pairs/training_pilot4_20261106/metrics.json</p><p>样本数 4；参数量 15042。仅模式预测，不含MV/residual。所有步骤监督目标均为最终P帧状态。</p><table><tr><th>model</th><th>step</th><th>accuracy</th><th>Macro-F1</th><th>Skip recall</th><th>P16 recall</th><th>baseline accuracy</th><th>baseline F1</th></tr><tr><td>A0 final-only</td><td>20</td><td>0.6753</td><td>0.6249</td><td>0.7210</td><td>0.5562</td><td>0.7225</td><td>0.4194</td></tr><tr><td>A2 shared-time</td><td>20</td><td>0.6914</td><td>0.5711</td><td>0.8451</td><td>0.2913</td><td>0.7225</td><td>0.4194</td></tr><tr><td>A2 shared-time</td><td>15</td><td>0.6900</td><td>0.5595</td><td>0.8542</td><td>0.2626</td><td>0.7225</td><td>0.4194</td></tr><tr><td>A2 shared-time</td><td>10</td><td>0.6823</td><td>0.5459</td><td>0.8514</td><td>0.2419</td><td>0.7225</td><td>0.4194</td></tr><tr><td>A2 shared-time</td><td>5</td><td>0.6791</td><td>0.5485</td><td>0.8422</td><td>0.2545</td><td>0.7225</td><td>0.4194</td></tr></table><p>少量prompt的pilot，不能作为泛化或在线提前退出的证据。置信度未经校准。</p><pre>{
+  &quot;train&quot;: [
+    &quot;sample_0000&quot;,
+    &quot;sample_0001&quot;
+  ],
+  &quot;val&quot;: [],
+  &quot;test&quot;: [
+    &quot;sample_0002&quot;,
+    &quot;sample_0003&quot;
+  ]
+}</pre></html>

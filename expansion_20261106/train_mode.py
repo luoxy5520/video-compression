@@ -13,7 +13,7 @@ def metric(pred,y):
     cm=torch.bincount((2*y.flatten()+pred.flatten()).cpu(),minlength=4).reshape(2,2).float();tp=cm.diag();rec=tp/cm.sum(1).clamp_min(1);pre=tp/cm.sum(0).clamp_min(1);f=2*rec*pre/(rec+pre).clamp_min(1e-12)
     return dict(accuracy=float(tp.sum()/cm.sum()),macro_f1=float(f.mean()),skip_recall=float(rec[0]),p16_recall=float(rec[1]),confusion_matrix=cm.int().tolist())
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--config',required=True);a=p.parse_args();cfg=json.loads(Path(a.config).read_text());torch.set_num_threads(4);torch.manual_seed(42);random.seed(42)
+    p=argparse.ArgumentParser();p.add_argument('--config',required=True);p.add_argument('--evaluate-only',action='store_true');a=p.parse_args();cfg=json.loads(Path(a.config).read_text());torch.set_num_threads(4);torch.manual_seed(42);random.seed(42)
     dataset=Path(cfg['dataset']);rows=[json.loads(x) for x in (dataset/'manifests/all.jsonl').read_text().splitlines()];splits=cfg['splits'];ids=[s for v in splits.values() for s in v];assert len(ids)==len(set(ids))
     prompt_sets=[{r['prompt'] for r in rows if r['sample_id'] in v} for v in splits.values()]
     for i,u in enumerate(prompt_sets):
@@ -42,7 +42,8 @@ def main():
                 if ps:
                     y=torch.cat(ys);result[str(s)]=metric(torch.cat(ps),y);result[str(s)].update(mean_confidence=float(torch.cat(cs).mean()),majority_baseline=metric(torch.full_like(y,majority),y))
         return result
-    for stage in range(4):
+    if a.evaluate_only:m.load_state_dict(torch.load(out/'stage_4.pt',weights_only=True))
+    for stage in ([] if a.evaluate_only else range(4)):
         active=steps[:stage+1];best=-1.;checkpoint=out/f'stage_{stage+1}.pt'
         for epoch in range(cfg.get('epochs_per_stage',10)):
             m.train();keys=[(sid,s) for sid in splits['train'] for s in active];random.shuffle(keys);losses=[]
@@ -57,5 +58,6 @@ def main():
     # Evaluate A0 checkpoint once on held-out final-step features.
     final_state={k:v.detach().clone() for k,v in m.state_dict().items()};m.load_state_dict(torch.load(out/'stage_1.pt',weights_only=True));report['a0_test']=evaluate(splits['test'],[20]);m.load_state_dict(final_state)
     report.update(parameters=sum(p.numel() for p in m.parameters()),target='final P-frame modes under Oracle-I',sample_count=len(ids),label_source='real JM oracle',limitation='pilot only; mode predictions do not include MV/residual and cannot alone replay H264',config=cfg)
-    (out/'history.json').write_text(json.dumps(history,indent=2));(out/'metrics.json').write_text(json.dumps(report,indent=2));print('TRAIN_COMPLETE',out,flush=True)
+    if not a.evaluate_only:(out/'history.json').write_text(json.dumps(history,indent=2))
+    (out/('evaluation.json' if a.evaluate_only else 'metrics.json')).write_text(json.dumps(report,indent=2));print('EVALUATE_COMPLETE' if a.evaluate_only else 'TRAIN_COMPLETE',out,flush=True)
 if __name__=='__main__':main()

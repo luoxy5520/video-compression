@@ -25,6 +25,7 @@ def export(r,out):
     if (folder/'metadata.json').exists():
         c=json.loads((folder/'closure_result.json').read_text())
         assert all(c[k] for k in ['bitstream_bit_exact','jm_decoded_pixels_exact','ffmpeg_decoded_pixels_exact']);return
+    if folder.exists():folder.rename(folder.with_name(folder.name+'_incomplete_'+str(time.time_ns())))
     folder.mkdir(parents=True,exist_ok=True)
     raw=ROOT/'data'/r['raw_yuv'];assert raw.stat().st_size==10183680
     shutil.copy2(raw,folder/'input_yuv420p.yuv')

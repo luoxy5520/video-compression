@@ -12,7 +12,7 @@ train_mode.py直接读取原包真实training_dataset/manifests/all.jsonl和mode
 
 ## 运行和结果
 - generate_pairs.py exp_expand32.json：GPU0生成，保存latent/hidden/当前YUV/最终latent/最终YUV。manifest按样本原子更新；不完整目录归档，完成样本可跳过。
-- continue32.py GENERATOR_PID：等待32条完成，执行check、128条Oracle导出回放、明确分组清单、GPU1真实模式训练。
+- continue32.py GENERATOR_PID：与采集同时进行8路Oracle导出回放；128条完成后执行check、明确分组清单、GPU1真实模式训练。
 - train_mode.py --config config_pilot4.json：已有4视频的真实标签训练。
 - train_mode.py --config config_train32.json：32视频训练。
 
@@ -23,3 +23,5 @@ train_mode.py直接读取原包真实training_dataset/manifests/all.jsonl和mode
 进度：pipeline32_status.json；日志：generation32.log、oracle32.log、train32.log。
 
 原包哈希分组可能出现空测试集，本轮训练强制读取config_train32.json中固定划分，另输出manifests/explicit_prompt_split/供复查。测试集不用于选权重。此轮仅模式头，不把Oracle MV/residual混合为“完整预测”，没有宣称端到端提前退出或H264预测链路完成。
+
+本轮已经完成，真实结果及产物入口见 RESULTS.md。采集使用GPU T5；未修改DiT采样参数。原CPU T5启动日志保留。

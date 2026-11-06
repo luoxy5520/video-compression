@@ -1,0 +1,222 @@
+{
+  "test_by_step": {
+    "20": {
+      "accuracy": 0.8225260376930237,
+      "macro_f1": 0.7736984491348267,
+      "skip_recall": 0.8761377930641174,
+      "p16_recall": 0.674217700958252,
+      "confusion_matrix": [
+        [
+          128497,
+          18166
+        ],
+        [
+          17272,
+          35745
+        ]
+      ],
+      "mean_confidence": 0.8507671356201172,
+      "majority_baseline": {
+        "accuracy": 0.26550981402397156,
+        "macro_f1": 0.20980462431907654,
+        "skip_recall": 0.0,
+        "p16_recall": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            146663
+          ],
+          [
+            0,
+            53017
+          ]
+        ]
+      }
+    },
+    "15": {
+      "accuracy": 0.8230268359184265,
+      "macro_f1": 0.7729803323745728,
+      "skip_recall": 0.8798947334289551,
+      "p16_recall": 0.665710985660553,
+      "confusion_matrix": [
+        [
+          129048,
+          17615
+        ],
+        [
+          17723,
+          35294
+        ]
+      ],
+      "mean_confidence": 0.8512893319129944,
+      "majority_baseline": {
+        "accuracy": 0.26550981402397156,
+        "macro_f1": 0.20980462431907654,
+        "skip_recall": 0.0,
+        "p16_recall": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            146663
+          ],
+          [
+            0,
+            53017
+          ]
+        ]
+      }
+    },
+    "10": {
+      "accuracy": 0.8195262551307678,
+      "macro_f1": 0.7683821320533752,
+      "skip_recall": 0.8777742385864258,
+      "p16_recall": 0.658392608165741,
+      "confusion_matrix": [
+        [
+          128737,
+          17926
+        ],
+        [
+          18111,
+          34906
+        ]
+      ],
+      "mean_confidence": 0.8494275808334351,
+      "majority_baseline": {
+        "accuracy": 0.26550981402397156,
+        "macro_f1": 0.20980462431907654,
+        "skip_recall": 0.0,
+        "p16_recall": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            146663
+          ],
+          [
+            0,
+            53017
+          ]
+        ]
+      }
+    },
+    "5": {
+      "accuracy": 0.7896233797073364,
+      "macro_f1": 0.7310236692428589,
+      "skip_recall": 0.8552736639976501,
+      "p16_recall": 0.6080124974250793,
+      "confusion_matrix": [
+        [
+          125437,
+          21226
+        ],
+        [
+          20782,
+          32235
+        ]
+      ],
+      "mean_confidence": 0.8562403917312622,
+      "majority_baseline": {
+        "accuracy": 0.26550981402397156,
+        "macro_f1": 0.20980462431907654,
+        "skip_recall": 0.0,
+        "p16_recall": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            146663
+          ],
+          [
+            0,
+            53017
+          ]
+        ]
+      }
+    }
+  },
+  "a0_test": {
+    "20": {
+      "accuracy": 0.8093950152397156,
+      "macro_f1": 0.7585550546646118,
+      "skip_recall": 0.8633670210838318,
+      "p16_recall": 0.6600901484489441,
+      "confusion_matrix": [
+        [
+          126624,
+          20039
+        ],
+        [
+          18021,
+          34996
+        ]
+      ],
+      "mean_confidence": 0.8223592042922974,
+      "majority_baseline": {
+        "accuracy": 0.26550981402397156,
+        "macro_f1": 0.20980462431907654,
+        "skip_recall": 0.0,
+        "p16_recall": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            146663
+          ],
+          [
+            0,
+            53017
+          ]
+        ]
+      }
+    }
+  },
+  "parameters": 15042,
+  "target": "final P-frame modes under Oracle-I",
+  "sample_count": 32,
+  "label_source": "real JM oracle",
+  "limitation": "pilot only; mode predictions do not include MV/residual and cannot alone replay H264",
+  "config": {
+    "dataset": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/training_dataset",
+    "output": "/mnt/data_hdd/luoxiangyu/dit_pairs/training_expand32_20261106",
+    "splits": {
+      "train": [
+        "sample_0000",
+        "sample_0001",
+        "sample_0002",
+        "sample_0003",
+        "sample_0004",
+        "sample_0005",
+        "sample_0006",
+        "sample_0007",
+        "sample_0008",
+        "sample_0009",
+        "sample_0010",
+        "sample_0011",
+        "sample_0012",
+        "sample_0013",
+        "sample_0014",
+        "sample_0015",
+        "sample_0016",
+        "sample_0017",
+        "sample_0018",
+        "sample_0019"
+      ],
+      "val": [
+        "sample_0020",
+        "sample_0021",
+        "sample_0022",
+        "sample_0023"
+      ],
+      "test": [
+        "sample_0024",
+        "sample_0025",
+        "sample_0026",
+        "sample_0027",
+        "sample_0028",
+        "sample_0029",
+        "sample_0030",
+        "sample_0031"
+      ]
+    },
+    "epochs_per_stage": 15,
+    "lr": 0.001
+  }
+}

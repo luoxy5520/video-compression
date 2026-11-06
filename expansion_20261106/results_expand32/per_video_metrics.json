@@ -1,0 +1,642 @@
+[
+  {
+    "sample_id": "sample_0024",
+    "step": 5,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 101,
+    "accuracy": 0.7386217713356018,
+    "macro_f1": 0.7359602451324463,
+    "skip_recall": 0.6795820593833923,
+    "p16_recall": 0.8338567614555359,
+    "confusion_matrix": [
+      [
+        10471,
+        4937
+      ],
+      [
+        1587,
+        7965
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0024",
+    "step": 10,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 101,
+    "accuracy": 0.7726362347602844,
+    "macro_f1": 0.7709190845489502,
+    "skip_recall": 0.6959371566772461,
+    "p16_recall": 0.8963567614555359,
+    "confusion_matrix": [
+      [
+        10723,
+        4685
+      ],
+      [
+        990,
+        8562
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0024",
+    "step": 15,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 101,
+    "accuracy": 0.7783253192901611,
+    "macro_f1": 0.776663601398468,
+    "skip_recall": 0.7002855539321899,
+    "p16_recall": 0.9042085409164429,
+    "confusion_matrix": [
+      [
+        10790,
+        4618
+      ],
+      [
+        915,
+        8637
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0024",
+    "step": 20,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 101,
+    "accuracy": 0.7741586565971375,
+    "macro_f1": 0.7727357745170593,
+    "skip_recall": 0.6911344528198242,
+    "p16_recall": 0.9080820679664612,
+    "confusion_matrix": [
+      [
+        10649,
+        4759
+      ],
+      [
+        878,
+        8674
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0025",
+    "step": 5,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 102,
+    "accuracy": 0.6995192170143127,
+    "macro_f1": 0.6910861730575562,
+    "skip_recall": 0.6602630615234375,
+    "p16_recall": 0.7739988565444946,
+    "confusion_matrix": [
+      [
+        10792,
+        5553
+      ],
+      [
+        1947,
+        6668
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0025",
+    "step": 10,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 102,
+    "accuracy": 0.7875000238418579,
+    "macro_f1": 0.7715251445770264,
+    "skip_recall": 0.8031814098358154,
+    "p16_recall": 0.7577481269836426,
+    "confusion_matrix": [
+      [
+        13128,
+        3217
+      ],
+      [
+        2087,
+        6528
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0025",
+    "step": 15,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 102,
+    "accuracy": 0.7877404093742371,
+    "macro_f1": 0.7726024389266968,
+    "skip_recall": 0.7984704971313477,
+    "p16_recall": 0.7673824429512024,
+    "confusion_matrix": [
+      [
+        13051,
+        3294
+      ],
+      [
+        2004,
+        6611
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0025",
+    "step": 20,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 102,
+    "accuracy": 0.7820512652397156,
+    "macro_f1": 0.7677782773971558,
+    "skip_recall": 0.7864178419113159,
+    "p16_recall": 0.7737666964530945,
+    "confusion_matrix": [
+      [
+        12854,
+        3491
+      ],
+      [
+        1949,
+        6666
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0026",
+    "step": 5,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 103,
+    "accuracy": 0.676562488079071,
+    "macro_f1": 0.6761983633041382,
+    "skip_recall": 0.6002438068389893,
+    "p16_recall": 0.7870733737945557,
+    "confusion_matrix": [
+      [
+        8862,
+        5902
+      ],
+      [
+        2171,
+        8025
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0026",
+    "step": 10,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 103,
+    "accuracy": 0.7345753312110901,
+    "macro_f1": 0.7322802543640137,
+    "skip_recall": 0.6992007493972778,
+    "p16_recall": 0.7857983708381653,
+    "confusion_matrix": [
+      [
+        10323,
+        4441
+      ],
+      [
+        2184,
+        8012
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0026",
+    "step": 15,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 103,
+    "accuracy": 0.7447916865348816,
+    "macro_f1": 0.7421929836273193,
+    "skip_recall": 0.7144405245780945,
+    "p16_recall": 0.7887406945228577,
+    "confusion_matrix": [
+      [
+        10548,
+        4216
+      ],
+      [
+        2154,
+        8042
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0026",
+    "step": 20,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 103,
+    "accuracy": 0.7489182949066162,
+    "macro_f1": 0.7467435002326965,
+    "skip_recall": 0.7113925814628601,
+    "p16_recall": 0.8032561540603638,
+    "confusion_matrix": [
+      [
+        10503,
+        4261
+      ],
+      [
+        2006,
+        8190
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0027",
+    "step": 5,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 104,
+    "accuracy": 0.809334933757782,
+    "macro_f1": 0.7769161462783813,
+    "skip_recall": 0.8339226841926575,
+    "p16_recall": 0.7480050325393677,
+    "confusion_matrix": [
+      [
+        14858,
+        2959
+      ],
+      [
+        1800,
+        5343
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0027",
+    "step": 10,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 104,
+    "accuracy": 0.793549656867981,
+    "macro_f1": 0.7650212049484253,
+    "skip_recall": 0.7999101877212524,
+    "p16_recall": 0.7776844501495361,
+    "confusion_matrix": [
+      [
+        14252,
+        3565
+      ],
+      [
+        1588,
+        5555
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0027",
+    "step": 15,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 104,
+    "accuracy": 0.7974358797073364,
+    "macro_f1": 0.7699034214019775,
+    "skip_recall": 0.8008643388748169,
+    "p16_recall": 0.7888842225074768,
+    "confusion_matrix": [
+      [
+        14269,
+        3548
+      ],
+      [
+        1508,
+        5635
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0027",
+    "step": 20,
+    "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+    "seed": 104,
+    "accuracy": 0.7971954941749573,
+    "macro_f1": 0.7698906660079956,
+    "skip_recall": 0.7996857166290283,
+    "p16_recall": 0.7909841537475586,
+    "confusion_matrix": [
+      [
+        14248,
+        3569
+      ],
+      [
+        1493,
+        5650
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0028",
+    "step": 5,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 101,
+    "accuracy": 0.8142227530479431,
+    "macro_f1": 0.6434890627861023,
+    "skip_recall": 0.9481967091560364,
+    "p16_recall": 0.2969815135002136,
+    "confusion_matrix": [
+      [
+        18798,
+        1027
+      ],
+      [
+        3610,
+        1525
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0028",
+    "step": 10,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 101,
+    "accuracy": 0.8580929636955261,
+    "macro_f1": 0.7483246922492981,
+    "skip_recall": 0.9559142589569092,
+    "p16_recall": 0.48042842745780945,
+    "confusion_matrix": [
+      [
+        18951,
+        874
+      ],
+      [
+        2668,
+        2467
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0028",
+    "step": 15,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 101,
+    "accuracy": 0.862500011920929,
+    "macro_f1": 0.7557738423347473,
+    "skip_recall": 0.9590920805931091,
+    "p16_recall": 0.48958131670951843,
+    "confusion_matrix": [
+      [
+        19014,
+        811
+      ],
+      [
+        2621,
+        2514
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0028",
+    "step": 20,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 101,
+    "accuracy": 0.8630608916282654,
+    "macro_f1": 0.7573176622390747,
+    "skip_recall": 0.9588398337364197,
+    "p16_recall": 0.49328139424324036,
+    "confusion_matrix": [
+      [
+        19009,
+        816
+      ],
+      [
+        2602,
+        2533
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0029",
+    "step": 5,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 102,
+    "accuracy": 0.8559695482254028,
+    "macro_f1": 0.6002713441848755,
+    "skip_recall": 0.9918878674507141,
+    "p16_recall": 0.16985704004764557,
+    "confusion_matrix": [
+      [
+        20664,
+        169
+      ],
+      [
+        3426,
+        701
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0029",
+    "step": 10,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 102,
+    "accuracy": 0.8590144515037537,
+    "macro_f1": 0.6510460376739502,
+    "skip_recall": 0.9770556092262268,
+    "p16_recall": 0.2631451487541199,
+    "confusion_matrix": [
+      [
+        20355,
+        478
+      ],
+      [
+        3041,
+        1086
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0029",
+    "step": 15,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 102,
+    "accuracy": 0.857892632484436,
+    "macro_f1": 0.6524120569229126,
+    "skip_recall": 0.9745115637779236,
+    "p16_recall": 0.2692027986049652,
+    "confusion_matrix": [
+      [
+        20302,
+        531
+      ],
+      [
+        3016,
+        1111
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0029",
+    "step": 20,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 102,
+    "accuracy": 0.8571314215660095,
+    "macro_f1": 0.6592905521392822,
+    "skip_recall": 0.9699515104293823,
+    "p16_recall": 0.28761813044548035,
+    "confusion_matrix": [
+      [
+        20207,
+        626
+      ],
+      [
+        2940,
+        1187
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0030",
+    "step": 5,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 103,
+    "accuracy": 0.8591746687889099,
+    "macro_f1": 0.6529294848442078,
+    "skip_recall": 0.9894936680793762,
+    "p16_recall": 0.25039762258529663,
+    "confusion_matrix": [
+      [
+        20343,
+        216
+      ],
+      [
+        3299,
+        1102
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0030",
+    "step": 10,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 103,
+    "accuracy": 0.8582932949066162,
+    "macro_f1": 0.6378912329673767,
+    "skip_recall": 0.9946008920669556,
+    "p16_recall": 0.22154055535793304,
+    "confusion_matrix": [
+      [
+        20448,
+        111
+      ],
+      [
+        3426,
+        975
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0030",
+    "step": 15,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 103,
+    "accuracy": 0.8610977530479431,
+    "macro_f1": 0.6498572826385498,
+    "skip_recall": 0.9942117929458618,
+    "p16_recall": 0.23926380276679993,
+    "confusion_matrix": [
+      [
+        20440,
+        119
+      ],
+      [
+        3348,
+        1053
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0030",
+    "step": 20,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 103,
+    "accuracy": 0.8607372045516968,
+    "macro_f1": 0.6502097845077515,
+    "skip_recall": 0.9934335350990295,
+    "p16_recall": 0.24085435271263123,
+    "confusion_matrix": [
+      [
+        20424,
+        135
+      ],
+      [
+        3341,
+        1060
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0031",
+    "step": 5,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 104,
+    "accuracy": 0.8635817170143127,
+    "macro_f1": 0.6355783343315125,
+    "skip_recall": 0.9780693650245667,
+    "p16_recall": 0.2354469895362854,
+    "confusion_matrix": [
+      [
+        20649,
+        463
+      ],
+      [
+        2942,
+        906
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0031",
+    "step": 10,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 104,
+    "accuracy": 0.8925480842590332,
+    "macro_f1": 0.7504062652587891,
+    "skip_recall": 0.9737116098403931,
+    "p16_recall": 0.447245329618454,
+    "confusion_matrix": [
+      [
+        20557,
+        555
+      ],
+      [
+        2127,
+        1721
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0031",
+    "step": 15,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 104,
+    "accuracy": 0.8944311141967773,
+    "macro_f1": 0.7510277628898621,
+    "skip_recall": 0.977358877658844,
+    "p16_recall": 0.4394490718841553,
+    "confusion_matrix": [
+      [
+        20634,
+        478
+      ],
+      [
+        2157,
+        1691
+      ]
+    ]
+  },
+  {
+    "sample_id": "sample_0031",
+    "step": 20,
+    "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+    "seed": 104,
+    "accuracy": 0.896955132484436,
+    "macro_f1": 0.7612465023994446,
+    "skip_recall": 0.9758905172348022,
+    "p16_recall": 0.4638773500919342,
+    "confusion_matrix": [
+      [
+        20603,
+        509
+      ],
+      [
+        2063,
+        1785
+      ]
+    ]
+  }
+]

@@ -1,6 +1,11 @@
 # DiT 视频压缩配对实验
 
-本分支为 `codex/a2-final-handoff`。包含4个生成视频、每个视频第5/10/15/20步的特征与当前视频，以及完整20步采样的最终视频。真实oracle压缩标签尚未生成，预测头尚未进行真实训练。
+## 最新：新增32视频真实训练已完成
+
+见 [expansion_20261106/RESULTS.md](expansion_20261106/RESULTS.md)。新批次32视频/128步骤记录已全部通过Oracle闭合与特征验收，A0.1及共享时间条件模式头已完成真实训练。模型、指标、代码和索引在本分支；新批次完整raw/特征和Oracle产物分别约7.6GiB/8.7GiB，保留在服务器与数据盘备份，未再次上传普通Git。下面目录说明仍是原4样本的完整Git数据，勿混淆。
+
+
+原4样本数据来自 `codex/a2-final-handoff`。包含4个生成视频、每个视频第5/10/15/20步的特征与当前视频，以及完整20步采样的最终视频。原4条Oracle标签和真实pilot训练也已完成，最新32条结果见上方报告。
 
 ## 先看哪里
 
@@ -93,6 +98,6 @@ pairs = json.loads((root / 'a2_final_pairs.json').read_text())['records']
 
 ## 训练状态与边界
 
-已执行最终latent解码、清单生成、真实特征读取校验，以及合成输入的前向/梯度/指标测试。尚未执行真实标签训练，没有可用的已训练预测头或真实精度结果。当前实现仅使用clean latent+step预测最终模式；hidden路径已提供，但hidden输入、MV/residual头尚未实现。
+已完成原4条和新增32条的真实模式训练。详细权重与指标见 expansion_20261106/results_pilot4/ 和 results_expand32/。当前实现使用clean latent+step预测最终模式；hidden路径已提供，但hidden输入、MV/residual头尚未实现。
 
 4个样本仅用于链路pilot，红车两seed训练、蓝球两seed测试；同一样本所有步骤不跨集合。不能据此得出泛化或提前退出有效性的结论。训练/评价命令及标签约定见 `experiments_a/a2_final/README.md`，执行记录见同目录 `执行与交接记录.md`。

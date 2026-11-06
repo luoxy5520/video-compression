@@ -1,0 +1,40 @@
+<html><meta charset="utf-8"><title>Oracle 模式预测实验</title><style>body{font:16px sans-serif;margin:32px}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:9px}th{background:#eee}</style><h1>真实 Oracle 模式预测实验</h1><p>源数据：/mnt/data_hdd/luoxiangyu/dit_pairs/training_expand32_20261106/metrics.json</p><p>样本数 32；参数量 15042。仅模式预测，不含MV/residual。所有步骤监督目标均为最终P帧状态。</p><table><tr><th>model</th><th>step</th><th>accuracy</th><th>Macro-F1</th><th>Skip recall</th><th>P16 recall</th><th>fixed Skip accuracy</th><th>fixed Skip F1</th></tr><tr><td>A0 final-only</td><td>20</td><td>0.8094</td><td>0.7586</td><td>0.8634</td><td>0.6601</td><td>0.7345</td><td>0.4235</td></tr><tr><td>A2 shared-time</td><td>20</td><td>0.8225</td><td>0.7737</td><td>0.8761</td><td>0.6742</td><td>0.7345</td><td>0.4235</td></tr><tr><td>A2 shared-time</td><td>15</td><td>0.8230</td><td>0.7730</td><td>0.8799</td><td>0.6657</td><td>0.7345</td><td>0.4235</td></tr><tr><td>A2 shared-time</td><td>10</td><td>0.8195</td><td>0.7684</td><td>0.8778</td><td>0.6584</td><td>0.7345</td><td>0.4235</td></tr><tr><td>A2 shared-time</td><td>5</td><td>0.7896</td><td>0.7310</td><td>0.8553</td><td>0.6080</td><td>0.7345</td><td>0.4235</td></tr></table><p>少量prompt的pilot，不能作为泛化或在线提前退出的证据。置信度未经校准。</p><pre>{
+  &quot;train&quot;: [
+    &quot;sample_0000&quot;,
+    &quot;sample_0001&quot;,
+    &quot;sample_0002&quot;,
+    &quot;sample_0003&quot;,
+    &quot;sample_0004&quot;,
+    &quot;sample_0005&quot;,
+    &quot;sample_0006&quot;,
+    &quot;sample_0007&quot;,
+    &quot;sample_0008&quot;,
+    &quot;sample_0009&quot;,
+    &quot;sample_0010&quot;,
+    &quot;sample_0011&quot;,
+    &quot;sample_0012&quot;,
+    &quot;sample_0013&quot;,
+    &quot;sample_0014&quot;,
+    &quot;sample_0015&quot;,
+    &quot;sample_0016&quot;,
+    &quot;sample_0017&quot;,
+    &quot;sample_0018&quot;,
+    &quot;sample_0019&quot;
+  ],
+  &quot;val&quot;: [
+    &quot;sample_0020&quot;,
+    &quot;sample_0021&quot;,
+    &quot;sample_0022&quot;,
+    &quot;sample_0023&quot;
+  ],
+  &quot;test&quot;: [
+    &quot;sample_0024&quot;,
+    &quot;sample_0025&quot;,
+    &quot;sample_0026&quot;,
+    &quot;sample_0027&quot;,
+    &quot;sample_0028&quot;,
+    &quot;sample_0029&quot;,
+    &quot;sample_0030&quot;,
+    &quot;sample_0031&quot;
+  ]
+}</pre></html>

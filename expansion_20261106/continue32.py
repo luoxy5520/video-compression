@@ -18,7 +18,7 @@ def main():
     from concurrent.futures import ThreadPoolExecutor
     spec=importlib.util.spec_from_file_location('oracle_pipeline',ROOT/'linux/run_pipeline.py');runner_module=importlib.util.module_from_spec(spec);spec.loader.exec_module(runner_module)
     output=ROOT/'output';output.mkdir(exist_ok=True);submitted={}
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=8) as pool:
         while True:
             manifest=DATA/'manifest.jsonl'
             raw_rows=[json.loads(x) for x in manifest.read_text().splitlines()] if manifest.exists() else []
