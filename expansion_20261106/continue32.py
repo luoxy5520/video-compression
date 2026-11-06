@@ -8,21 +8,38 @@ def phase(name,state):
 def cmd(args,log,env=None):
     with Path(log).open('w') as f:subprocess.run([str(x) for x in args],stdout=f,stderr=subprocess.STDOUT,env=env,check=True)
 def main():
-    phase('generation','waiting')
-    while len(list(DATA.glob('sample_*/complete.json')))<32:
-        if not Path('/proc/'+sys.argv[1]).exists():raise RuntimeError('Generation exited before 32 completed samples; inspect generation32.log')
-        time.sleep(5)
-    rows=[json.loads(x) for x in (DATA/'manifest.jsonl').read_text().splitlines()];assert len(rows)==128
-    for r in rows:
-        for k in ['latent','hidden','raw_yuv','final_latent']:r[k]=str(Path(r[k]).relative_to(DATA))
-    (DATA/'paired_data.local.json').write_text(json.dumps(dict(records=rows),indent=2))
+    phase('generation_and_oracle','running')
     ROOT.mkdir(exist_ok=True);(ROOT/'linux').mkdir(exist_ok=True)
     for dest,source in [(ROOT/'data',DATA),(ROOT/'JM-backend',SOURCE/'JM-backend'),(ROOT/'scripts',SOURCE/'scripts'),(ROOT/'linux/JM',SOURCE/'linux/JM')]:
         if not dest.exists():dest.symlink_to(source,target_is_directory=True)
     shutil.copy2(SOURCE/'linux/run_pipeline.py',ROOT/'linux/run_pipeline.py')
-    runner=ROOT/'linux/run_pipeline.py'
-    phase('environment','running');cmd([PY,runner,'check'],BASE/'check32.log')
-    phase('oracle_128_records','running');cmd([PY,runner,'all'],BASE/'oracle32.log')
+    (ROOT/'linux/skip_p16.cfg').write_text((ROOT/'JM-backend/cfg/state_ip_p16.cfg').read_text().replace('PSliceSkip               = 0','PSliceSkip               = 1'))
+    import importlib.util
+    from concurrent.futures import ThreadPoolExecutor
+    spec=importlib.util.spec_from_file_location('oracle_pipeline',ROOT/'linux/run_pipeline.py');runner_module=importlib.util.module_from_spec(spec);spec.loader.exec_module(runner_module)
+    output=ROOT/'output';output.mkdir(exist_ok=True);submitted={}
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        while True:
+            manifest=DATA/'manifest.jsonl'
+            raw_rows=[json.loads(x) for x in manifest.read_text().splitlines()] if manifest.exists() else []
+            for r in raw_rows:
+                key=(r['sample_id'],r['step'])
+                if key in submitted or not (DATA/r['sample_id']/'complete.json').exists():continue
+                r=dict(r)
+                for k in ['latent','hidden','raw_yuv','final_latent']:r[k]=str(Path(r[k]).relative_to(DATA))
+                submitted[key]=pool.submit(runner_module.export,r,output)
+            for f in submitted.values():
+                if f.done():f.result()
+            if len(submitted)==128:break
+            if not Path('/proc/'+sys.argv[1]).exists():raise RuntimeError('Generation exited before all samples completed')
+            time.sleep(5)
+        for f in submitted.values():f.result()
+    rows=[json.loads(x) for x in (DATA/'manifest.jsonl').read_text().splitlines()];assert len(rows)==128
+    for r in rows:
+        for k in ['latent','hidden','raw_yuv','final_latent']:r[k]=str(Path(r[k]).relative_to(DATA))
+    (DATA/'paired_data.local.json').write_text(json.dumps(dict(records=rows),indent=2))
+    phase('environment','running');cmd([PY,ROOT/'linux/run_pipeline.py','check'],BASE/'check32.log')
+    phase('dataset_build','running');runner_module.build(output)
     dataset=ROOT/'output/training_dataset';accepted=json.loads((dataset/'dataset_summary.json').read_text())['counts'];assert accepted['accepted_records']==128 and accepted['rejected_records']==0
     # Group split from generation plan, independent of package's hash-based default.
     split=json.loads((BASE/'splits32.json').read_text());records=[json.loads(x) for x in (dataset/'manifests/all.jsonl').read_text().splitlines()]

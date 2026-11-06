@@ -2,6 +2,9 @@
 import sys, json, subprocess, time, hashlib, shutil
 from pathlib import Path
 import torch
+import logging,faulthandler,signal
+logging.basicConfig(level=logging.INFO)
+faulthandler.register(signal.SIGUSR1)
 ROOT=Path('/home/luoxiangyu/Wan2.1')
 sys.path[:0]=[str(ROOT),str(ROOT/'experiments/baseline17')]
 from run_remote_baseline17 import sdpa
@@ -13,7 +16,7 @@ torch.set_num_threads(4)
 cfg=json.loads(Path(sys.argv[1]).read_text())
 out=Path(cfg['output']); out.mkdir(parents=True,exist_ok=True)
 (out/'config.json').write_text(json.dumps(cfg,indent=2))
-pipe=WanT2V(WAN_CONFIGS['t2v-1.3B'],cfg['checkpoint'],t5_cpu=True)
+pipe=WanT2V(WAN_CONFIGS['t2v-1.3B'],cfg['checkpoint'],t5_cpu=False)
 original=FlowUniPCMultistepScheduler.step
 state={}
 def hook(module,args,output):
@@ -41,6 +44,7 @@ for idx,item in enumerate(cfg['samples']):
     folder.mkdir(exist_ok=True)
     if list(folder.glob('step_*')):
         folder.rename(out/(sid+'_incomplete_'+str(int(time.time())))); folder.mkdir()
+    print(sid,'START',flush=True)
     state.update(i=0,calls=0,dir=folder,id=sid,prompt=item['prompt'],seed=item['seed'],records=[])
     start=time.time()
     final_video=pipe.generate(item['prompt'],size=(832,480),frame_num=17,shift=8,sample_solver='unipc',sampling_steps=cfg['steps'],guide_scale=6,seed=item['seed'],offload_model=True)
