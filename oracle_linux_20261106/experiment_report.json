@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "step20_equals_final": true,
+    "encoder_sha256": "404ddff96e6120e7bcfdcbfe7cc4eb10d70df6a45c8a2f25e875658abd18d40b",
+    "decoder_sha256": "54bdeb62f94926fea4d1cd46cbb197edb499ad669537853ec97786fec0e4d0b7"
+  },
+  "record_count": 16,
+  "unique_final_targets": 4,
+  "rejected_records": 0,
+  "oracle_exports": [
+    {
+      "sample_id": "sample_0000",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0000",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0000",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0000",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0001",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0002",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_005",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_010",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_015",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    },
+    {
+      "sample_id": "sample_0003",
+      "step": "step_020",
+      "validation": {
+        "bitstream_bit_exact": true,
+        "jm_decoded_pixels_exact": true,
+        "ffmpeg_decoded_pixels_exact": true
+      },
+      "replay_me_seconds": 0.0
+    }
+  ],
+  "ideal_chain": [
+    {
+      "sample_id": "sample_0000",
+      "validation": {
+        "jm_matches_ffmpeg": true,
+        "standard_decode_valid": true,
+        "ideal_matches_oracle_bitstream": true
+      },
+      "bitstream_bytes": 113843,
+      "oracle_i_frame": true
+    },
+    {
+      "sample_id": "sample_0001",
+      "validation": {
+        "jm_matches_ffmpeg": true,
+        "standard_decode_valid": true,
+        "ideal_matches_oracle_bitstream": true
+      },
+      "bitstream_bytes": 77253,
+      "oracle_i_frame": true
+    },
+    {
+      "sample_id": "sample_0002",
+      "validation": {
+        "jm_matches_ffmpeg": true,
+        "standard_decode_valid": true,
+        "ideal_matches_oracle_bitstream": true
+      },
+      "bitstream_bytes": 41733,
+      "oracle_i_frame": true
+    },
+    {
+      "sample_id": "sample_0003",
+      "validation": {
+        "jm_matches_ffmpeg": true,
+        "standard_decode_valid": true,
+        "ideal_matches_oracle_bitstream": true
+      },
+      "bitstream_bytes": 31125,
+      "oracle_i_frame": true
+    }
+  ],
+  "default_split": {
+    "train": 16,
+    "val": 0,
+    "test": 0
+  },
+  "pilot_split": {
+    "train": 8,
+    "test": 8,
+    "val": 0,
+    "note": "Separate non-overwriting prompt split; only pipeline pilot, no validation set."
+  },
+  "prediction_test": "NOT RUN: no trained full mode/MV/residual predictions",
+  "training": "NOT RUN",
+  "oracle_i_dependency": true
+}

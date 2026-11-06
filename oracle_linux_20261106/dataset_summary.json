@@ -1,0 +1,50 @@
+{
+  "schema": "oracle-h264-state-exporter/dataset-v2-final-target",
+  "exports_root": "/home/luoxiangyu/senior-oracle-dataset-kit-20261106/output/oracle_exports",
+  "output_dir": "/home/luoxiangyu/senior-oracle-dataset-kit-20261106/output/training_dataset",
+  "configuration": {
+    "expected_mode_preset": "skip-p16",
+    "step_filter": null,
+    "group_by": "prompt",
+    "split_seed": 20261105,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "require_features": true,
+    "copy_features": false,
+    "copy_backend_artifacts": false,
+    "feature_kind": "both",
+    "target_step": "final",
+    "curriculum_order": [
+      20,
+      15,
+      10,
+      5
+    ]
+  },
+  "counts": {
+    "metadata_files_discovered": 16,
+    "accepted_records": 16,
+    "rejected_records": 0,
+    "splits": {
+      "train": 16,
+      "val": 0,
+      "test": 0
+    },
+    "features": {
+      "latent": {
+        "present": 16
+      },
+      "hidden": {
+        "present": 16
+      },
+      "final_latent": {
+        "present": 16
+      }
+    },
+    "skip_macroblocks": 262888,
+    "p16_macroblocks": 136472
+  }
+}
