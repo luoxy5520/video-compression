@@ -1,0 +1,49 @@
+{
+  "video": {
+    "width": 832,
+    "height": 480,
+    "frames": 17,
+    "fps": 16,
+    "pixel_format": "yuv420p",
+    "color_matrix": "bt709",
+    "color_range": "limited"
+  },
+  "targets": [
+    {
+      "sample_id": "sample_0000",
+      "prompt": "A fixed camera shows a red toy car moving steadily from left to right on a tabletop, with a static background.",
+      "seed": 42,
+      "raw_yuv": "sample_0000/final_raw.yuv",
+      "raw_sha256": "8fba0c49579d139e753778140b6e67a8bdaa2c74777c7c278e8659cef6ad7822",
+      "label_output": "sample_0000/state.npz",
+      "metadata_output": "sample_0000/metadata.json"
+    },
+    {
+      "sample_id": "sample_0001",
+      "prompt": "A fixed camera shows a red toy car moving steadily from left to right on a tabletop, with a static background.",
+      "seed": 43,
+      "raw_yuv": "sample_0001/final_raw.yuv",
+      "raw_sha256": "463c7b13eff76c1c3061e462b9021d67b7b7b57b1efe180889e91e1171f2a66e",
+      "label_output": "sample_0001/state.npz",
+      "metadata_output": "sample_0001/metadata.json"
+    },
+    {
+      "sample_id": "sample_0002",
+      "prompt": "A fixed camera shows a blue ball rolling slowly across a wooden floor.",
+      "seed": 42,
+      "raw_yuv": "sample_0002/final_raw.yuv",
+      "raw_sha256": "d5df232c3fc741e0dc45433baa6a5ca2e7ddc47d730d7527d5d823aa3b70c6df",
+      "label_output": "sample_0002/state.npz",
+      "metadata_output": "sample_0002/metadata.json"
+    },
+    {
+      "sample_id": "sample_0003",
+      "prompt": "A fixed camera shows a blue ball rolling slowly across a wooden floor.",
+      "seed": 43,
+      "raw_yuv": "sample_0003/final_raw.yuv",
+      "raw_sha256": "cc29bca7d64f76dd54c814900bb6a113900ae5c97ada2808e627666f4dfc1947",
+      "label_output": "sample_0003/state.npz",
+      "metadata_output": "sample_0003/metadata.json"
+    }
+  ]
+}

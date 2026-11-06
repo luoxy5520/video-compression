@@ -1,0 +1,23 @@
+{
+  "data_root": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_2026_11_05",
+  "labels_root": "/mnt/data_hdd/luoxiangyu/dit_pairs/labels_a0",
+  "output": "/mnt/data_hdd/luoxiangyu/dit_pairs/a2_final_mode_2026_11_06",
+  "train_ids": [
+    "sample_0000",
+    "sample_0001"
+  ],
+  "test_ids": [
+    "sample_0002",
+    "sample_0003"
+  ],
+  "seed": 42,
+  "epochs": 30,
+  "learning_rate": 0.001,
+  "channels": 32,
+  "steps": [
+    5,
+    10,
+    15,
+    20
+  ]
+}
