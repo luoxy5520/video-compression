@@ -1,0 +1,1 @@
+{"dataset":"/home/luoxiangyu/senior-oracle-dataset-kit-20261106/output/training_dataset","output":"/mnt/data_hdd/luoxiangyu/dit_pairs/training_pilot4_20261106","splits":{"train":["sample_0000","sample_0001"],"val":[],"test":["sample_0002","sample_0003"]},"epochs_per_stage":10,"lr":0.001}
