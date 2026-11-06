@@ -1,0 +1,7 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numpy": "1.26.4",
+  "step20_equals_final": true,
+  "encoder_sha256": "404ddff96e6120e7bcfdcbfe7cc4eb10d70df6a45c8a2f25e875658abd18d40b",
+  "decoder_sha256": "54bdeb62f94926fea4d1cd46cbb197edb499ad669537853ec97786fec0e4d0b7"
+}
