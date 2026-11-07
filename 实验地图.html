@@ -267,7 +267,17 @@ kit=~/senior-oracle-expand32-20261106
 <p>单样本训练、轨迹覆盖和三方解码烟测通过。完整任务已完成：44 条训练、16 条验证、两轮各 8 epoch。按真实验证码流选第 2 轮，再在此前 12 条测试视频上做固定回归对照。训练与验证不使用这些测试视频。候选模型的旧残差置信度不作验收使用。</p>
 <p><strong>结果：单独重训残差未改善 A1。</strong> 回归 12 条的平均 Y PSNR 为 22.838 → 22.842 dB，码率 427.71 → 439.73 kb/s，末帧 20.327 → 20.337 dB。模式和 MV 数组逐项不变，24 条码流均零搜索、Oracle P 零读取，编码器与双解码器一致。仍低于完整 JM 13.71 dB。保留原交接权重；下轮优先提高非零 MV 的质量，再做联合残差训练。</p>
 <p><a href="a_state_20261107/results/rollout_summary.json">按场景汇总</a> · <a href="a_state_20261107/results/rollout_residual.json">逐视频结果</a> · <a href="a_state_20261107/results/rollout_round2.pt">实验候选权重</a></p>
-<p><a href="a_state_20261107/rollout_residual.py">续训实现</a> · <a href="a_state_20261107/run_rollout_residual.sh">113Server 运行入口</a> · <a href="https://github.com/luoxy5520/video-compression/tree/codex/a-state-independent">GitHub 独立状态分支</a></p></div></section><section id="github">
+<p><a href="a_state_20261107/rollout_residual.py">续训实现</a> · <a href="a_state_20261107/run_rollout_residual.sh">113Server 运行入口</a> · <a href="https://github.com/luoxy5520/video-compression/tree/codex/a-state-independent">GitHub 独立状态分支</a></p></div></section><section id="a-coarse-fine">
+<div class="eyebrow">A1 / Cross-branch transfer</div><h2>把闭环分支的候选结构迁移到独立状态头</h2>
+<div class="panel"><p><code>codex/decision-search</code> 的主要增益来自候选覆盖和闭环代价筛选，单独学习排序收益很小；<code>codex/latent-codec</code> 的学习 qpel 方向减少候选评估但仍依赖闭环。这里迁移整数候选与 qpel 细化的结构，闭环只用于离线生成教师标签。直接学生只读 hidden，预先选定唯一 MV 并导出全状态。</p>
+<p>同结构对照 Oracle 监督和闭环教师监督：二维整数锚点、整数偏移、联合 16 类 qpel 相位。用验证集的全量 EPE 与运动至少 1 像素区域的 EPE 锁定权重，再用真实回放选择迁移臂，并按该臂自身达到的重建参考适配残差。原 12 条盲测已见过，本轮仅作为固定回归集。</p>
+<p>单样本通过。60 条训练/验证教师轨迹已采完；必须逐条通过教师码流与固定状态回放的字节一致性。完整学生训练与回放已结束。</p>
+<p>16 条验证的原 hidden / Oracle 候选 / 闭环教师候选分别为 20.41 / 19.23 / 19.21 dB；按验证选择 Oracle 监督。12 条回归上，自选 MV 为 21.55 dB，适配残差后仍为 21.55 dB，原 hidden 为 22.84 dB。qpel 精确率 12.94% → 20.10%，但运动至少一像素的块 EPE 31.95 → 32.32 qpel。</p>
+<p><strong>Oracle top-4 归因：21.82 dB / 434.99 kb/s。</strong> 仅在预测 P16 与 Oracle P16 交集，用 Oracle 从模型前四候选中选最近的 MV，固定残差头并重新以选中 MV 为条件。比模型自行选 MV 高 0.27 dB，仍比原 hidden 低 1.02 dB。12 条均通过三方重建、后端零搜索；该对照使用 Oracle 选向量，不能部署，也不是整条 A1 的理论上界。</p>
+<p>113Server 已启动六组后台续训：增加按运动幅度加权的候选期望端点误差，复用原 32 + 新 48 的 44 train / 16 val，固定划分，不读回归集。目录 <code>~/a_motion_queue_20261107</code>；完成一组更新 <code>status.json</code>。支持传 <code>0</code> 持续调度、<code>STOP</code> 文件在组间停止，并检查磁盘和互斥。现有交接模型不自动替换。</p>
+<p><a href="a_state_20261107/results/coarse_fine_summary.json">跨分支对照</a> · <a href="a_state_20261107/results/coarse_replay_ceiling.json">Oracle top-4 回放</a> · <a href="a_state_20261107/run_motion_queue.sh">后台续训队列</a></p>
+<p><a href="a_state_20261107/coarse_fine_mv.py">整数候选、qpel 细化与残差训练</a> · <a href="a_state_20261107/run_coarse_fine.sh">113Server 复现入口</a></p>
+</div></section><section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>
 <div class="grid3 repo">
 <div class="panel"><span class="tag">01 · 数据交接</span><h3>原始 4 条数据</h3><code>codex/a2-final-handoff</code><ul class="sub"><li><code>dataset_local/exp_2026_11_05/</code> · 四步张量、当前/最终视频、清单</li><li><code>handoff_final_for_labels/</code> · 四个最终 YUV 和生成标签的说明</li><li><code>experiments_a/</code> · A0、A2 早期实现与接口</li></ul><a class="link" href="https://github.com/luoxy5520/video-compression/tree/codex/a2-final-handoff">打开交接分支 ↗</a></div>

@@ -111,3 +111,25 @@ SHA-256：`28ba99d0ffbc2ba1fa419b5f67d9be3c017c4c6af6fb6bdc95408698685b1a35`。
 22.838 → 22.842 dB，427.71 → 439.73 kb/s，末帧 20.327 → 20.337 dB。
 24 条码流均通过零搜索、零 Oracle P 读取与三方重建核验。保留原交接权重；
 `results/rollout_round2.pt` 仅为实验候选。
+
+## 跨分支迁移与后台续训
+
+`coarse_fine_mv.py` 复用闭环实验的候选结构，直接从 hidden 输出最终 MV。
+Oracle 与闭环教师监督用相同学生结构；此前 12 条盲测仅作为固定回归。
+Oracle top-4 用真实标签选候选，属于归因：21.82 dB，高于自选的 21.55 dB，
+仍低于原 hidden 的 22.84 dB。
+
+113Server 队列已经启动，固定 44 train / 16 val，不使用回归集选权重：
+
+```bash
+cd ~/dit-paired-experiment
+tail -f ~/a_motion_queue_20261107/queue.log
+cat ~/a_motion_queue_20261107/status.json   # 第一组结束后出现
+# 单独重启/复跑时使用新的目录；参数 0 表示持续调度
+bash a_state_20261107/run_motion_queue.sh ~/fresh_motion_queue 0
+# 请求已运行的队列在当前组结束后停下
+touch ~/a_motion_queue_20261107/STOP
+```
+
+运行日志在 `trial_*.log`，完整试验有独立目录，重新运行会跳过已完成组。
+队列不自动发布或替换交接权重。

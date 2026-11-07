@@ -1,0 +1,194 @@
+[
+  {
+    "sample_id": "sample_1036",
+    "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+    "all": {
+      "top1_epe": 15.03318977355957,
+      "best4_epe": 12.888397216796875,
+      "top1_exact": 0.23627150058746338,
+      "top4_exact": 0.2994343638420105
+    },
+    "moving": {
+      "top1_epe": 54.90478515625,
+      "best4_epe": 48.47264099121094,
+      "top1_exact": 0.0,
+      "top4_exact": 0.0004789271915797144
+    }
+  },
+  {
+    "sample_id": "sample_1037",
+    "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+    "all": {
+      "top1_epe": 11.102133750915527,
+      "best4_epe": 9.770602226257324,
+      "top1_exact": 0.3432396650314331,
+      "top4_exact": 0.386052668094635
+    },
+    "moving": {
+      "top1_epe": 62.57352066040039,
+      "best4_epe": 58.466861724853516,
+      "top1_exact": 0.0,
+      "top4_exact": 0.003842459060251713
+    }
+  },
+  {
+    "sample_id": "sample_1038",
+    "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+    "all": {
+      "top1_epe": 6.942585468292236,
+      "best4_epe": 5.71227502822876,
+      "top1_exact": 0.524275004863739,
+      "top4_exact": 0.5659824013710022
+    },
+    "moving": {
+      "top1_epe": 54.534423828125,
+      "best4_epe": 48.98387145996094,
+      "top1_exact": 0.0,
+      "top4_exact": 0.0
+    }
+  },
+  {
+    "sample_id": "sample_1039",
+    "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+    "all": {
+      "top1_epe": 9.384969711303711,
+      "best4_epe": 8.091160774230957,
+      "top1_exact": 0.4098997712135315,
+      "top4_exact": 0.4420126676559448
+    },
+    "moving": {
+      "top1_epe": 54.24043273925781,
+      "best4_epe": 50.086429595947266,
+      "top1_exact": 0.0,
+      "top4_exact": 0.004291845485568047
+    }
+  },
+  {
+    "sample_id": "sample_1040",
+    "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+    "all": {
+      "top1_epe": 3.7277815341949463,
+      "best4_epe": 2.739331007003784,
+      "top1_exact": 0.06586600840091705,
+      "top4_exact": 0.11290119588375092
+    },
+    "moving": {
+      "top1_epe": 6.810145854949951,
+      "best4_epe": 5.019443511962891,
+      "top1_exact": 0.029064157977700233,
+      "top4_exact": 0.05306319519877434
+    }
+  },
+  {
+    "sample_id": "sample_1041",
+    "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+    "all": {
+      "top1_epe": 7.955395698547363,
+      "best4_epe": 6.980716705322266,
+      "top1_exact": 0.0868520587682724,
+      "top4_exact": 0.12106785178184509
+    },
+    "moving": {
+      "top1_epe": 14.856772422790527,
+      "best4_epe": 13.258380889892578,
+      "top1_exact": 0.01974402368068695,
+      "top4_exact": 0.04653239622712135
+    }
+  },
+  {
+    "sample_id": "sample_1042",
+    "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+    "all": {
+      "top1_epe": 4.619503974914551,
+      "best4_epe": 3.7678139209747314,
+      "top1_exact": 0.0896410197019577,
+      "top4_exact": 0.13962392508983612
+    },
+    "moving": {
+      "top1_epe": 22.274770736694336,
+      "best4_epe": 19.52886962890625,
+      "top1_exact": 0.0019230770412832499,
+      "top4_exact": 0.006410256493836641
+    }
+  },
+  {
+    "sample_id": "sample_1043",
+    "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+    "all": {
+      "top1_epe": 7.920832633972168,
+      "best4_epe": 6.221341609954834,
+      "top1_exact": 0.30569708347320557,
+      "top4_exact": 0.3288559317588806
+    },
+    "moving": {
+      "top1_epe": 35.473663330078125,
+      "best4_epe": 30.24249267578125,
+      "top1_exact": 0.000891265575774014,
+      "top4_exact": 0.000891265575774014
+    }
+  },
+  {
+    "sample_id": "sample_1044",
+    "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+    "all": {
+      "top1_epe": 44.8934440612793,
+      "best4_epe": 43.11495590209961,
+      "top1_exact": 0.0057037342339754105,
+      "top4_exact": 0.039679933339357376
+    },
+    "moving": {
+      "top1_epe": 58.918235778808594,
+      "best4_epe": 56.67938232421875,
+      "top1_exact": 0.0015345829306170344,
+      "top4_exact": 0.035953085869550705
+    }
+  },
+  {
+    "sample_id": "sample_1045",
+    "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+    "all": {
+      "top1_epe": 9.399489402770996,
+      "best4_epe": 7.684517860412598,
+      "top1_exact": 0.02011839859187603,
+      "top4_exact": 0.059152714908123016
+    },
+    "moving": {
+      "top1_epe": 11.72256851196289,
+      "best4_epe": 9.721099853515625,
+      "top1_exact": 0.014702122658491135,
+      "top4_exact": 0.04896445944905281
+    }
+  },
+  {
+    "sample_id": "sample_1046",
+    "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+    "all": {
+      "top1_epe": 7.760434150695801,
+      "best4_epe": 6.12938117980957,
+      "top1_exact": 0.015195898711681366,
+      "top4_exact": 0.04659465327858925
+    },
+    "moving": {
+      "top1_epe": 10.257149696350098,
+      "best4_epe": 8.194937705993652,
+      "top1_exact": 0.005495681893080473,
+      "top4_exact": 0.035329386591911316
+    }
+  },
+  {
+    "sample_id": "sample_1047",
+    "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+    "all": {
+      "top1_epe": 7.485879898071289,
+      "best4_epe": 5.456645965576172,
+      "top1_exact": 0.013631407171487808,
+      "top4_exact": 0.03162486478686333
+    },
+    "moving": {
+      "top1_epe": 8.370614051818848,
+      "best4_epe": 6.212557315826416,
+      "top1_exact": 0.004871513694524765,
+      "top4_exact": 0.011326269246637821
+    }
+  }
+]
