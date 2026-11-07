@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>从 DiT latent 到 H.264 · 实验地图</title>
+<style>
+:root{color-scheme:light;--ink:#172b33;--muted:#53686e;--green:#13715d;--mint:#a6edca;--line:#dbe6e1;--paper:#f5f8f4;--white:#fff;--dark:#112c32;--amber:#905b17}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--green);text-underline-offset:3px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #cc8c39;outline-offset:4px}
+.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.top{background:var(--dark);color:#fff;border-bottom:1px solid #385155}.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{font-weight:750;letter-spacing:.04em}.top nav{display:flex;gap:18px;flex-wrap:wrap}.top a{color:#d7e8e4;text-decoration:none;font-size:.87rem}
+.hero{color:#f8fffa;background:radial-gradient(ellipse at 96% 5%,#286956 0%,transparent 56%),linear-gradient(130deg,#112c32,#143a38);padding:58px 0 42px}.hero h1{margin:7px 0 14px;font-size:clamp(2.3rem,6vw,5rem);letter-spacing:-.055em;line-height:1.12}.eyebrow{font:700 .78rem/1.5 ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--green)}.hero .eyebrow{color:var(--mint)}.hero p{max-width:750px;color:#d6e9e3;font-size:1.06rem;margin:0}.hero strong{color:#fff}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#467069;border:1px solid #467069;border-radius:14px;overflow:hidden;margin-top:32px}.stats div{padding:16px 20px;background:#1a403e}.stats b{font-size:1.9rem;display:block;line-height:1.25;color:var(--mint);font-variant-numeric:tabular-nums}.stats span{font-size:.85rem;color:#d6e9e3}
+main{padding-bottom:45px}section{margin-top:48px;scroll-margin-top:20px}h2{font-size:clamp(1.45rem,4vw,2.15rem);margin:4px 0 14px;letter-spacing:-.035em;line-height:1.25}h3{font-size:1.08rem;margin:0 0 6px}p{margin:0 0 10px}p:last-child{margin-bottom:0}.muted{color:var(--muted)}.sub{font-size:.88rem}.panel{background:var(--white);border:1px solid var(--line);border-radius:15px;padding:20px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tag{display:inline-block;background:#e6f3eb;color:#17624d;border-radius:999px;padding:3px 10px;font-size:.76rem;font-weight:750;margin-bottom:8px}.tag.next{background:#fff2dc;color:#774808}.tag.partial{background:#e9eef9;color:#334f7d}.pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px}.pipeline .panel{position:relative;border-top:3px solid #5ea88d}.pipeline .panel:last-child{border-top-color:#ce9c57}.pipeline .panel:not(:last-child)::after{content:"→";position:absolute;right:-15px;top:46%;font-size:16px;color:#55887a;z-index:1}.note{padding:14px 17px;border-left:4px solid #68a98c;background:#eaf4ed;border-radius:0 9px 9px 0}.note.amber{border-color:#cc9b57;background:#fbf2e3}.timeline{display:grid;gap:10px;counter-reset:phase}.phase{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start}.phase::before{counter-increment:phase;content:"0" counter(phase);display:grid;place-items:center;background:#e4f1e9;color:#246954;border-radius:10px;height:40px;font:800 1rem ui-monospace,monospace}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 17px}.toolbar button{border:1px solid var(--line);border-radius:8px;background:#f4f7f4;color:var(--ink);padding:7px 11px;font:inherit;font-size:.85rem;cursor:pointer}.toolbar button[aria-pressed=true]{background:var(--dark);border-color:var(--dark);color:#fff}
+.chart{display:grid;gap:9px}.barrow{display:grid;grid-template-columns:140px 1fr 58px;gap:12px;align-items:center;font-size:.88rem}.rail{height:13px;border-radius:8px;background:repeating-linear-gradient(90deg,#eef4ef 0,#eef4ef calc(25% - 1px),#dbe7df calc(25% - 1px),#dbe7df 25%);overflow:hidden}.bar{height:100%;border-radius:8px;background:#16806b;width:var(--val);transition:width .22s}.barrow.a0 .bar{background:#50719f}.barrow.base .bar{background:#c38b46}.value{text-align:right;font:700 .85rem ui-monospace,monospace;font-variant-numeric:tabular-nums}.scale{display:flex;justify-content:space-between;margin:3px 70px 0 152px;color:var(--muted);font:11px ui-monospace,monospace}.keyline{margin-top:14px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}th,td{text-align:left;padding:10px 9px;border-bottom:1px solid var(--line);white-space:nowrap}th{background:#edf4ef;font-weight:700}tr:last-child td{border:0}.table-scroll{overflow:auto;margin-top:10px}
+.repo .panel{display:flex;flex-direction:column;gap:7px}.repo ul{margin:0;padding-left:20px}.repo li{margin:6px 0}.repo .link{margin-top:auto;font-weight:700}code{font: .87em ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;background:#edf3f0;border-radius:4px;padding:.08em .28em}.paths{display:grid;gap:8px}.paths code{display:block;margin-top:2px;padding:4px 7px}details{margin-top:12px}summary{cursor:pointer;font-weight:700;color:var(--green)}details .inner{padding-top:10px}footer{border-top:1px solid var(--line);padding:17px 0 26px;color:var(--muted);font-size:.87rem}footer a{margin-right:12px}
+@media(max-width:850px){.pipeline,.grid3{grid-template-columns:1fr 1fr}.pipeline .panel::after{display:none}.top nav{gap:9px}}@media(max-width:550px){.wrap{width:calc(100% - 28px)}.top .wrap{display:block}.top nav{margin-top:6px}.hero{padding:38px 0 27px}.stats,.grid2,.pipeline,.grid3{grid-template-columns:1fr 1fr}.grid2,.grid3,.pipeline{grid-template-columns:1fr}.stats div{padding:12px}.panel{padding:15px}.barrow{grid-template-columns:101px 1fr 43px;gap:7px;font-size:.77rem}.scale{margin-left:108px;margin-right:50px}.phase{grid-template-columns:35px 1fr;gap:9px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+@media print{.top,.toolbar{display:none}.hero{padding:12px 0;background:white;color:var(--ink)}.hero .eyebrow,.hero p,.hero strong{color:var(--ink)}.stats{background:#eee}.stats div{background:#fff}.stats b,.stats span{color:var(--ink)}.panel{break-inside:avoid}.bar,.rail{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
+<div class="hero"><div class="wrap">
+<div class="eyebrow">Experiment map / 2026.11.07</div>
+<h1>从 latent 读出<br>H.264 压缩状态</h1>
+<p><strong>研究主线一致。</strong> 已用真实 JM 标签训练出 Skip / P16×16 模式预测头，并用完整 Oracle 状态验证了 H.264 后端。现已补齐 MV 和残差预测。本轮固定 Oracle I 帧，依次测试新 Skip/MV 对直接回放的影响，以及基于实际重建参考训练的残差校正。</p>
+<div class="stats"><div><b>32</b><span>扩容批次视频</span></div><div><b>128</b><span>步骤特征与闭合验证</span></div><div><b>0.731</b><span>Step 5 模式 Macro-F1</span></div><div><b>0.774</b><span>Step 20 共享头 Macro-F1</span></div></div>
+</div></div>
+<main class="wrap">
+<section id="route">
+<div class="eyebrow">01 / Research question</div><h2>最初目标与已完成的位置</h2>
+<div class="pipeline">
+<div class="panel"><span class="tag">输入已采集</span><h3>冻结 DiT</h3><p class="sub">缓存 step 5 / 10 / 15 / 20 的 clean latent 与 hidden，并保存各步 VAE 解码的 YUV。</p></div>
+<div class="panel"><span class="tag">标签已导出</span><h3>JM Oracle 状态</h3><p class="sub">固定 QP 28、Baseline / CAVLC、单参考、Skip / P16×16。导出模式、qpel MV 和闭环像素残差。</p></div>
+<div class="panel"><span class="tag partial">已训练模式头</span><h3>latent → 最终模式</h3><p class="sub">Conv3D + 步骤条件，共 15,042 参数。训练读取缓存 clean latent，目标是最终 P 帧宏块模式。</p></div>
+<div class="panel"><span class="tag partial">真实预测已回放</span><h3>状态 → H.264</h3><p class="sub">给定最终 Oracle I 帧，32 条由模型预测全部 P 帧状态的码流通过 JM 与 FFmpeg 双解码。</p></div>
+</div>
+<div class="note"><strong>监督口径的调整</strong><br>初稿中的 A2 可用中间特征读取当前状态 <i>y<sub>s</sub></i>。为研究提前退出，本轮训练 A2-final，把四个输入步骤统一指向同一样本的最终状态 <i>y<sub>final</sub></i>。各步骤自己的 Oracle 标签仍在数据集中，可用于当前状态读取和状态稳定性分析。</div>
+</section>
+<section id="timeline">
+<div class="eyebrow">02 / Execution</div><h2>实验怎么推进到现在</h2>
+<div class="timeline">
+<div class="phase panel"><div><h3>4 条视频验证采集和交接</h3><p>2 个 prompt × 2 个 seed，得到 16 条步骤记录。每步保存 latent、hidden、当前 YUV，另存完整采样的 <code>final_latent.pt</code> 与 <code>final_raw.yuv</code>。本轮对扩容批次的 8 条独立测试视频验证：step 20 clean latent 与 solver 最终 latent 的张量值相同。</p></div></div>
+<div class="phase panel"><div><h3>Linux JM 后端与 Oracle 闭合</h3><p>移植运行包并编译 Linux JM。先做 1 条测试，再构建 16 条记录。4 个样本的理想标签经适配器回放，码流逐字节一致，JM / FFmpeg 解码像素一致。</p></div></div>
+<div class="phase panel"><div><h3>扩容 32 条，构建 128 条 Oracle 记录</h3><p>8 个 prompt × 4 个 seed。所有记录均通过状态回放、双解码和特征检查，回放运动搜索耗时为零。每个视频的四步共用同一份最终监督，共 32 份最终目标。</p></div></div>
+<div class="phase panel"><div><h3>真实训练 A0.1 与 A2-final 模式头</h3><p>先用旧 4 条跑通真实标签训练，再用新增 32 条训练与评测。课程逐步加入 step 20 → 15 → 10 → 5。按 prompt 划分 20 / 4 / 8 条训练、验证和测试视频。验证集选权重，独立测试复核混淆矩阵。</p></div></div>
+</div>
+</section>
+<section id="scores">
+<div class="eyebrow">03 / Held-out evaluation</div><h2>用更早的 latent，能读出多少最终模式？</h2>
+<div class="panel">
+<p class="muted">扩容批次的固定测试集含 2 个 prompt、8 条视频。所有步骤评估同一份最终宏块模式。</p>
+<div class="toolbar" role="group" aria-label="切换图表指标"><button type="button" data-m="f1" aria-pressed="true">Macro-F1</button><button type="button" data-m="acc" aria-pressed="false">Accuracy</button><button type="button" data-m="skip" aria-pressed="false">Skip 召回</button><button type="button" data-m="p16" aria-pressed="false">P16 召回</button></div>
+<div id="chart" class="chart" aria-live="polite"><div class="barrow a0"><span>A0 · Step 20</span><div class="rail" aria-hidden="true"><div class="bar" style="--val:75.85551%"></div></div><span class="value">0.7586</span></div><div class="barrow a2"><span>A2 · Step 5</span><div class="rail" aria-hidden="true"><div class="bar" style="--val:73.10237%"></div></div><span class="value">0.7310</span></div><div class="barrow a2"><span>A2 · Step 10</span><div class="rail" aria-hidden="true"><div class="bar" style="--val:76.83821%"></div></div><span class="value">0.7684</span></div><div class="barrow a2"><span>A2 · Step 15</span><div class="rail" aria-hidden="true"><div class="bar" style="--val:77.29803%"></div></div><span class="value">0.7730</span></div><div class="barrow a2"><span>A2 · Step 20</span><div class="rail" aria-hidden="true"><div class="bar" style="--val:77.36984%"></div></div><span class="value">0.7737</span></div><div class="barrow base"><span>固定全 Skip</span><div class="rail" aria-hidden="true"><div class="bar" style="--val:42.34617%"></div></div><span class="value">0.4235</span></div></div>
+<div class="scale" aria-hidden="true"><span>0</span><span>0.25</span><span>0.50</span><span>0.75</span><span>1.00</span></div>
+<p class="muted sub keyline">蓝色为 A0 最终步头，绿色为 A2 共享头，金色为固定全 Skip 基线。Macro-F1 对两个类别的 F1 等权平均。</p>
+<details><summary>展开精确数值与实验口径</summary><div class="inner table-scroll"><table><thead><tr><th>模型 / 输入</th><th>Macro-F1</th><th>Accuracy</th><th>Skip 召回</th><th>P16 召回</th></tr></thead><tbody><tr><td>A0 · Step 20</td><td>0.7586</td><td>0.8094</td><td>0.8634</td><td>0.6601</td></tr><tr><td>A2 · Step 5</td><td>0.7310</td><td>0.7896</td><td>0.8553</td><td>0.6080</td></tr><tr><td>A2 · Step 10</td><td>0.7684</td><td>0.8195</td><td>0.8778</td><td>0.6584</td></tr><tr><td>A2 · Step 15</td><td>0.7730</td><td>0.8230</td><td>0.8799</td><td>0.6657</td></tr><tr><td>A2 · Step 20</td><td>0.7737</td><td>0.8225</td><td>0.8761</td><td>0.6742</td></tr><tr><td>固定全 Skip</td><td>0.4235</td><td>0.7345</td><td>1.0000</td><td>0.0000</td></tr></tbody></table></div><p class="sub muted">A0 训练 15 个 epoch，A2 四阶段累计 60 个 epoch，训练预算不同。旧 4 条 pilot 与扩容批次使用不同测试 prompt。</p></details>
+</div>
+</section>
+<section id="fullstate">
+<div class="eyebrow">04 / Full-state replay</div><h2>真实预测接入 JM 后的结果</h2>
+<div class="panel"><p>固定 8 条测试视频。模式、MV 和残差均由模型预测，I 帧使用 Oracle。32 条预测码流全部通过双解码。</p>
+<div class="table-scroll"><table><thead><tr><th>路径</th><th>码率 kb/s</th><th>P 帧 Y PSNR dB</th><th>P 帧 YUV PSNR dB</th><th>到码流 s</th><th>到解码 s</th></tr></thead><tbody><tr><td>VAE + 常规 JM</td><td>1205.4</td><td>41.17</td><td>42.17</td><td>44.24</td><td>44.37</td></tr><tr><td>预测 · step 5</td><td>194.2</td><td>21.03</td><td>22.60</td><td>1.69</td><td>1.82</td></tr><tr><td>预测 · step 10</td><td>194.3</td><td>20.97</td><td>22.53</td><td>1.67</td><td>1.80</td></tr><tr><td>预测 · step 15</td><td>194.3</td><td>20.91</td><td>22.48</td><td>1.68</td><td>1.80</td></tr><tr><td>预测 · step 20</td><td>197.2</td><td>20.93</td><td>22.49</td><td>1.66</td><td>1.79</td></tr></tbody></table></div>
+<p class="muted sub keyline">码率包含 I 帧，PSNR 只计 P 帧。耗时从已有 latent 算起，DiT 采样及 Oracle I 帧准备需另外计时。</p>
+<p class="keyline">step 20 的画质差距约 20.24 dB。恢复 Oracle 模式和 MV 后，预测残差的亮度 PSNR 为 26.75 dB。</p>
+<p><a href="full_state_20261107/RESULTS.md">打开完整预测报告</a> · <a href="full_state_20261107/results/benchmark.json">查看逐视频实测</a></p></div></section>
+<section id="closedloop">
+<div class="eyebrow">05 / Final-latent closed loop</div><h2>最终 latent 的闭环编码对照</h2>
+<div class="panel"><p>保留上轮模式和 MV，只重算闭环残差，亮度 PSNR 从 20.93 升到 26.28 dB。通过真实 VAE 像素和 JM 局部运动搜索，闭环画质达到约 40.76 dB。</p>
+<div class="table-scroll"><table><thead><tr><th>路径</th><th>P 帧亮度 PSNR (dB)</th><th>码率 (kb/s)</th><th>latent 到码流 (s)</th></tr></thead><tbody><tr><td>完整 JM 参考</td><td>41.17</td><td>1205.4</td><td>44.24</td></tr><tr><td>上轮纯预测</td><td>20.93</td><td>197.2</td><td>1.66</td></tr><tr><td>原生半径 4</td><td>40.41</td><td>1358.5</td><td>2.46</td></tr><tr><td>相关性头作中心，半径 4</td><td>40.36</td><td>1368.5</td><td>2.49</td></tr><tr><td>原生半径 8</td><td>40.76</td><td>1287.9</td><td>2.69</td></tr><tr><td>旧头作中心，半径 8</td><td>40.74</td><td>1292.9</td><td>2.70</td></tr><tr><td>相关性头作中心，半径 8</td><td>40.73</td><td>1291.7</td><td>2.71</td></tr><tr><td>相关性头补一个候选，半径 8</td><td>40.77</td><td>1287.7</td><td>2.68</td></tr></tbody></table></div>
+<p class="sub muted keyline">8 条测试视频，72 条码流通过双解码。8 像素局部搜索较完整参考低 0.41 dB，码率高约 6.9%。学习 MV 在相同窗口预算下未显示稳定增益。</p>
+<p class="keyline"><a href="closed_loop_20261107/RESULTS.md">闭环结果和数据量对照</a> · <a href="closed_loop_20261107/results/closed_loop.json">逐视频指标</a></p></div></section>
+<section id="reference-aligned">
+<div class="eyebrow">06 / Reference-aligned prediction</div><h2>最终 latent：学到的源图像接入闭环</h2>
+<div class="panel">
+<p><strong>混合路径达到本轮质量线：40.77 dB，距完整 JM 0.40 dB。</strong> 秩 40 输出头保留冻结的 Wan 解码主干，JM 继续用 8 像素窗口选模式和 MV，并在实际重建参考上计算残差。旧预测模式和 MV 仍限制画质。</p>
+<div class="table-scroll"><table><thead><tr><th>路径</th><th>P 帧亮度 PSNR (dB)</th><th>码率 (kb/s)</th><th>latent 到码流 (s)</th></tr></thead><tbody>
+<tr><td>完整 JM 参考</td><td>41.17</td><td>1205.36</td><td>44.24</td></tr>
+<tr><td>直接头，仅生成视频</td><td>27.18</td><td>2770.00</td><td>1.58</td></tr>
+<tr><td>直接头，加入 60 条 DAVIS</td><td>27.70</td><td>1848.79</td><td>1.58</td></tr>
+<tr><td>冻结解码前缀 + 学习尾部</td><td>34.66</td><td>1506.59</td><td>1.95</td></tr>
+<tr><td><strong>秩 40 投影 + JM 8 px</strong></td><td><strong>40.77</strong></td><td>1287.80</td><td>2.66</td></tr>
+<tr><td>秩 40 投影 + 旧模式/MV（Oracle I）</td><td>26.28</td><td>1928.68</td><td>2.04</td></tr>
+</tbody></table></div>
+<p class="sub muted keyline">8 条独立生成域视频，只用最终 latent。码率较完整 JM 高 6.84%。88 条测试码流通过双解码。8 像素窗口加入学习 MV 候选后，画质变化不足 0.001 dB。24 条训练和验证轨迹用于参考对齐核验；DAVIS 公共数据未进入生成域测试。</p>
+<p><a href="residual_reference_20261107/RESULTS.md">完整验收报告</a> · <a href="residual_reference_20261107/results/eval_rank_projection/results.json">逐视频测量</a> · <a href="residual_reference_20261107/README.md">复现流程</a></p>
+</div></section>
+
+<section id="decision-search">
+<div class="eyebrow">07 / Guarded decisions</div><h2>Skip 检查与运动候选减少 JM 搜索</h2>
+<div class="panel">
+<p><strong>步骤</strong>　从 step 20 latent 生成秩 40 源图像代理，提出 MV 候选，在 JM 实际参考上采集候选代价。训练 6,537 参数的决策头，用 4 条验证视频选择宽窗回退阈值。</p>
+<p><strong>测试</strong>　固定生成域 8 条视频，<code>sample_0024–0031</code>。联合策略让 70.2% 的 P 帧宏块绕开 8 像素宽窗，得到 <strong>40.70 dB / 1243.35 kb/s / 2.44 s</strong>。同轮宽窗对照为 40.77 dB / 1287.80 kb/s / 2.68 s。168 条评估码流通过双解码。</p>
+<p><a href="decision_search_20261107/RESULTS.md">详细结果和对照</a> · <a href="decision_search_20261107/results/eval_guarded/results.json">逐视频数据</a></p>
+</div></section>
+<section id="direct-replay">
+<div class="eyebrow">08 / Fixed-residual replay</div><h2>固定旧残差，检验新 Skip 与 MV</h2>
+<div class="panel">
+<ol><li>读取历史 step 20 的 <code>prediction.npz</code>，用同一个 B1 模板恢复 Oracle I 帧，复现原码流。</li>
+<li>将 Skip 概率 ≥0.90 的块设为 Skip，P16 MV 取模型排序第一的整数候选并转成 qpel。分开替换模式、MV 以及两者。回放不做 JM 运动搜索。</li>
+<li>逐样本比对原基线码流、I 帧像素和旧残差哈希，再用 JM 与 FFmpeg 双解码，针对 <code>final_raw.yuv</code> 打分。</li></ol>
+<div class="table-scroll"><table><thead><tr><th>回放方案</th><th>P 帧 Y PSNR (dB)</th><th>P 帧 YUV PSNR (dB)</th><th>整段码率 (kb/s)</th><th>缓存状态到码流 (s)</th></tr></thead><tbody><tr><td>原 step 20（逐字节复现）</td><td>20.93</td><td>22.49</td><td>197.22</td><td>1.66</td></tr><tr><td>仅换模式</td><td>20.86</td><td>22.42</td><td>218.04</td><td>1.73</td></tr><tr><td>仅换 MV</td><td>24.53</td><td>26.12</td><td>244.51</td><td>1.58</td></tr><tr><td>同时替换模式与 MV</td><td>25.16</td><td>26.74</td><td>280.06</td><td>1.62</td></tr></tbody></table></div>
+<p>原基线 8 条码流均逐字节复现。固定旧残差时，新模式与 MV 合用提升 <strong>4.23 dB</strong>。主要增益来自 MV，码率同时增加。表中结果不是等码率比较。</p>
+<p><a href="direct_replay_20261107/results/phase1.json">32 条消融码流的逐视频指标</a></p>
+</div></section>
+<section id="aligned-head">
+<div class="eyebrow">09 / Closed-loop residual correction</div><h2>按选中 MV 与当前重建参考校正残差</h2>
+<div class="panel">
+<ol><li>修复旧 JM 回放的两个 MV 缓冲区不同步。在 P16 同步写码流和运动补偿使用的 MV，Skip 走原生派生；每条码流核对编码器与两个解码器的重建。保持新模式、选中 MV 和 Oracle I 帧。在 20 条训练及 4 条验证视频上，用旧残差和代理残差各跑一遍，采集两种重建轨迹的实际运动补偿像素（MC）。</li>
+<li>用 <code>原视频 − 当前 MC</code> 构造 P16 残差标签。以 <code>秩 40 代理 − 当前 MC</code> 为对照，训练 15 参数的 Y/U/V 校正头，验证集选择正则系数。</li>
+<li>用新残差驱动实时回放。重建后的参考继续参与下一帧的 MC，保留模式与 MV。比较纯代理差分与学习校正的实际码流。</li></ol>
+<div class="table-scroll"><table><thead><tr><th>回放方案</th><th>P 帧 Y PSNR (dB)</th><th>P 帧 YUV PSNR (dB)</th><th>整段码率 (kb/s)</th><th>缓存状态到码流 (s)</th></tr></thead><tbody><tr><td>固定新模式/MV + 旧残差</td><td>25.16</td><td>26.74</td><td>280.06</td><td>1.62</td></tr><tr><td>固定新模式/MV + 代理减实际 MC</td><td>39.57</td><td>40.69</td><td>1397.39</td><td>1.76</td></tr><tr><td>固定新模式/MV + 学习校正</td><td>39.57</td><td>40.69</td><td>1397.39</td><td>1.75</td></tr></tbody></table></div>
+<p>学习校正相对于代理直接减实际 MC 的平均亮度变化为 <strong>+0.000 dB</strong>。验证集亮度残差 RMSE 从 0.4533 降到 0.4453 像素，但 8 条测试码流与未训练的代理差分逐字节相同。</p>
+<p>旧后端的代理残差回放为 22.26 dB。虽然两个解码器一致，旧编码器的内部参考与解码结果存在漂移；该结果作为后端问题复现保留。</p>
+<details><summary>两个诊断对照</summary>
+<p>真值源像素对照保持固定模式/MV，衡量源代理带来的差距。全 P16 对照保留候选 MV，测试模型 Skip 决策的影响。这两组只用于诊断。真值源像素只增加约 0.007 dB。全 P16 增加约 0.74 dB，码率也会上升。主测试的 48 条码流和 16 条诊断码流均通过编码器、JM 解码器、FFmpeg 三方重建一致性检查。</p>
+<div class="table-scroll"><table><thead><tr><th>回放方案</th><th>P 帧 Y PSNR (dB)</th><th>P 帧 YUV PSNR (dB)</th><th>整段码率 (kb/s)</th><th>缓存状态到码流 (s)</th></tr></thead><tbody><tr><td>固定新模式/MV + 真值源减实际 MC</td><td>39.58</td><td>40.69</td><td>1397.75</td><td>1.76</td></tr><tr><td>全 P16 + 同一候选 MV + 代理减实际 MC</td><td>40.31</td><td>41.40</td><td>1499.23</td><td>1.87</td></tr></tbody></table></div>
+</details>
+<details><summary>验证集残差误差与采样数</summary>
+<div class="table-scroll"><table><thead><tr><th>平面</th><th>训练像素</th><th>验证像素</th><th>代理差分 RMSE</th><th>学习校正 RMSE</th></tr></thead><tbody><tr><td>Y</td><td>2,000,000</td><td>400,000</td><td>0.4533</td><td>0.4453</td></tr><tr><td>U</td><td>2,000,000</td><td>400,000</td><td>0.3832</td><td>0.3781</td></tr><tr><td>V</td><td>2,000,000</td><td>400,000</td><td>0.4017</td><td>0.4015</td></tr></tbody></table></div>
+</details>
+<details open><summary>8 条测试数据和逐视频 P 帧亮度 PSNR</summary>
+<p>17 帧、832×480、16 fps、QP 28、单参考。测试原视频仅用于评分；训练与验证的 prompt 均与测试隔离。</p>
+<div class="table-scroll"><table><thead><tr><th>样本</th><th>seed</th><th>prompt</th><th>旧回放</th><th>新模式与 MV</th><th>代理差分</th><th>学习校正</th></tr></thead><tbody><tr><td>sample_0024</td><td>101</td><td>A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.</td><td>14.16</td><td>17.50</td><td>37.65</td><td>37.65</td></tr><tr><td>sample_0025</td><td>102</td><td>A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.</td><td>15.29</td><td>18.87</td><td>38.54</td><td>38.54</td></tr><tr><td>sample_0026</td><td>103</td><td>A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.</td><td>18.32</td><td>22.14</td><td>38.04</td><td>38.04</td></tr><tr><td>sample_0027</td><td>104</td><td>A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.</td><td>18.40</td><td>21.13</td><td>39.54</td><td>39.54</td></tr><tr><td>sample_0028</td><td>101</td><td>A fixed camera shows a dancer turning slowly in a studio with a plain background.</td><td>22.81</td><td>28.95</td><td>39.21</td><td>39.21</td></tr><tr><td>sample_0029</td><td>102</td><td>A fixed camera shows a dancer turning slowly in a studio with a plain background.</td><td>26.50</td><td>31.42</td><td>41.53</td><td>41.53</td></tr><tr><td>sample_0030</td><td>103</td><td>A fixed camera shows a dancer turning slowly in a studio with a plain background.</td><td>24.28</td><td>29.38</td><td>40.28</td><td>40.28</td></tr><tr><td>sample_0031</td><td>104</td><td>A fixed camera shows a dancer turning slowly in a studio with a plain background.</td><td>27.65</td><td>31.87</td><td>41.76</td><td>41.76</td></tr></tbody></table></div>
+</details>
+<p>服务器产物 <code>/home/luoxiangyu/direct_replay_synced_20261107/</code>。权重 <code>/mnt/data_hdd/models/dit_compression/direct_replay_20261107/residual_synced.f64</code>。</p>
+<p><a href="direct_replay_20261107/results/dataset.json">数据清单</a> · <a href="direct_replay_20261107/results/results.json">全部指标</a> · <a href="direct_replay_20261107/results/training.json">训练记录</a> · <a href="direct_replay_20261107/results/diagnostics.json">诊断逐视频数据</a> · <a href="direct_replay_20261107/README.md">复现实验</a></p>
+</div></section>
+<section id="github">
+<div class="eyebrow">10 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>
+<div class="grid3 repo">
+<div class="panel"><span class="tag">01 · 数据交接</span><h3>原始 4 条数据</h3><code>codex/a2-final-handoff</code><ul class="sub"><li><code>dataset_local/exp_2026_11_05/</code> · 四步张量、当前/最终视频、清单</li><li><code>handoff_final_for_labels/</code> · 四个最终 YUV 和生成标签的说明</li><li><code>experiments_a/</code> · A0、A2 早期实现与接口</li></ul><a class="link" href="https://github.com/luoxy5520/video-compression/tree/codex/a2-final-handoff">打开交接分支 ↗</a></div>
+<div class="panel"><span class="tag">02 · 后端闭合</span><h3>Linux Oracle 验证</h3><code>codex/oracle-linux-20261106</code><ul class="sub"><li><code>oracle_linux_20261106/</code> · Linux 构建、运行和审计脚本</li><li><code>experiment_report.json</code> · 16 条 Oracle 导出及 4 条理想状态回放</li><li><code>SERVER_PATHS.md</code> · 运行包与备份目录</li></ul><a class="link" href="https://github.com/luoxy5520/video-compression/tree/b9d12a6e770b1a7fcdf1150afd6ba224f37b471b/oracle_linux_20261106">打开后端实验目录 ↗</a></div>
+<div class="panel"><span class="tag">03 · 真实训练</span><h3>32 条扩容与模式头</h3><code>codex/expand32-mode-training</code><ul class="sub"><li><code>expansion_20261106/</code> · 生成、训练、测试与配置</li><li><code>dataset_index32/</code> · 索引、统计及显式 prompt 划分</li><li><code>results_expand32/</code> · 权重、指标、模式预测</li><li><code>audit32.json</code> · 128 条记录的验收</li></ul><a class="link" href="https://github.com/luoxy5520/video-compression/tree/2812369a57b9ca8ed62776d1d576c0591fa491f6/expansion_20261106">打开扩容实验目录 ↗</a></div>
+</div>
+<details class="panel"><summary>展开复现顺序与关键文件</summary><div class="inner">
+<ol>
+<li>从数据交接目录读取 <code>paired_data.local.json</code>。当前视频用于构建各步 Oracle 状态，最终视频用于最终监督。</li>
+<li>在 Linux 运行包中执行 <code>run_pipeline.py check → one → all → ideal</code>。输出 <code>oracle_exports/</code>、<code>training_dataset/</code> 和理想状态回放报告。</li>
+<li>扩容分支的 <code>generate_pairs.py</code> 和 <code>continue32.py</code> 负责采集、增量标注和训练。<code>config_train32.json</code> 固定 prompt 划分，<code>train.sh</code> 与 <code>test.sh</code> 是训练和独立测试入口。</li>
+<li><code>stage_1.pt</code> 对应 A0.1，<code>stage_4.pt</code> 对应 A2-final 共享头。<code>metrics.json</code> 记录分步骤测试指标，<code>*_mode.npz</code> 保存模式与置信度。</li>
+</ol>
+<p class="sub muted">训练读取 Oracle 的 <code>mode_id</code> 和清单中的 <code>target_label_path</code>。同一 prompt 的全部视频与步骤归入同一集合，随机种子编号可在不同 prompt 下复用。</p>
+<p><a href="https://github.com/luoxy5520/video-compression/blob/2812369a57b9ca8ed62776d1d576c0591fa491f6/expansion_20261106/RESULTS.md">查看实验结果说明 ↗</a></p>
+</div></details>
+<details class="panel"><summary>服务器上的完整产物</summary><div class="inner paths">
+<div>32 条视频的四步特征与原始视频 <code>/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/</code></div>
+<div>Oracle 状态、闭合结果及训练标签 <code>/home/luoxiangyu/senior-oracle-expand32-20261106/output/</code></div>
+<div>训练权重、历史与逐视频预测 <code>/mnt/data_hdd/luoxiangyu/dit_pairs/training_expand32_20261106/</code></div>
+<div>扩容批次 Oracle 备份 <code>/mnt/data_hdd/luoxiangyu/oracle_experiments/expand32_20261106/</code></div>
+</div><p class="sub muted">GitHub 的扩容分支存放代码、索引、模型和报告。扩容批次的完整特征/raw 约 7.6 GiB，Oracle 产物约 8.7 GiB，位于服务器。</p></details>
+</section>
+<section id="claims">
+<div class="eyebrow">11 / Evidence and scope</div><h2>目前能写进阶段总结的结论</h2>
+<div class="grid2">
+<div class="panel"><span class="tag">已有实测</span><h3>latent 可以预测部分压缩状态</h3><p>在这组受限 JM 配置和固定测试集上，step 5 的模式 Macro-F1 为 0.731，step 20 为 0.774，均高于固定全 Skip 基线 0.423。早期 latent 对最终模式具有预测信息。</p></div>
+<div class="panel"><span class="tag">已有实测</span><h3>完整 Oracle 状态可驱动后端</h3><p>给定 Oracle I 帧和完整 P 帧状态，回放可生成与参考一致的码流。零运动搜索来自此回放条件，实测对象是 Oracle 后端路径。</p></div>
+<div class="panel"><span class="tag partial">已跑通，画质待改善</span><h3>完整状态预测的实际表现</h3><p>原 step 20 为 20.93 dB。固定旧残差替换模式与 MV 达到 25.16 dB。使用实际重建参考与代理像素训练校正后达到 39.57 dB，仍使用冻结 Wan 解码主干与 Oracle I 帧。</p></div>
+<div class="panel"><span class="tag next">待验证</span><h3>下一步验证 Skip 决策</h3><p>后续仍需解决运行时 I 帧与源图像代理依赖。当前独立测试覆盖两个 prompt，适用于这批 pilot。</p></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">数据依据 <a href="初版实验.pdf">初版实验 PDF</a><a href="senior-oracle-dataset-kit-20261106/experiment_report.json">Oracle 回放报告</a><a href="expansion_20261106/audit32.json">32 条审计</a><a href="expansion_20261106/results_expand32/metrics.json">真实测试指标</a></div></footer>
+<script>
+const data=[{"label": "A0 · Step 20", "style": "a0", "values": [0.7585550546646118, 0.8093950152397156, 0.8633670210838318, 0.6600901484489441]}, {"label": "A2 · Step 5", "style": "a2", "values": [0.7310236692428589, 0.7896233797073364, 0.8552736639976501, 0.6080124974250793]}, {"label": "A2 · Step 10", "style": "a2", "values": [0.7683821320533752, 0.8195262551307678, 0.8777742385864258, 0.658392608165741]}, {"label": "A2 · Step 15", "style": "a2", "values": [0.7729803323745728, 0.8230268359184265, 0.8798947334289551, 0.665710985660553]}, {"label": "A2 · Step 20", "style": "a2", "values": [0.7736984491348267, 0.8225260376930237, 0.8761377930641174, 0.674217700958252]}, {"label": "固定全 Skip", "style": "base", "values": [0.42346171281071077, 0.7344901842948718, 1.0, 0.0]}];
+const keys=['f1','acc','skip','p16'];
+const buttons=document.querySelectorAll('[data-m]');
+function selectMetric(key){
+  for(const btn of buttons) btn.setAttribute('aria-pressed',String(btn.dataset.m===key));
+  document.querySelectorAll('.barrow').forEach((row,i)=>{
+    const val=data[i].values[keys.indexOf(key)];
+    row.querySelector('.bar').style.setProperty('--val',`${val*100}%`);
+    row.querySelector('.value').textContent=val.toFixed(4);
+  });
+}
+for(const btn of buttons) btn.addEventListener('click',()=>selectMetric(btn.dataset.m));
+</script>
+</body></html>

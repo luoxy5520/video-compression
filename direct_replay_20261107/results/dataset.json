@@ -1,0 +1,232 @@
+{
+  "train": [
+    {
+      "sample_id": "sample_0000",
+      "prompt": "A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0001",
+      "prompt": "A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0002",
+      "prompt": "A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0003",
+      "prompt": "A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0004",
+      "prompt": "A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0005",
+      "prompt": "A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0006",
+      "prompt": "A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0007",
+      "prompt": "A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0008",
+      "prompt": "A fixed camera shows a brass pendulum swinging back and forth against a plain wall.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0009",
+      "prompt": "A fixed camera shows a brass pendulum swinging back and forth against a plain wall.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0010",
+      "prompt": "A fixed camera shows a brass pendulum swinging back and forth against a plain wall.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0011",
+      "prompt": "A fixed camera shows a brass pendulum swinging back and forth against a plain wall.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0012",
+      "prompt": "A camera pans slowly to the right along a quiet street lined with buildings.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0013",
+      "prompt": "A camera pans slowly to the right along a quiet street lined with buildings.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0014",
+      "prompt": "A camera pans slowly to the right along a quiet street lined with buildings.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0015",
+      "prompt": "A camera pans slowly to the right along a quiet street lined with buildings.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0016",
+      "prompt": "A fixed camera shows a shallow stream flowing over small rocks in daylight.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0017",
+      "prompt": "A fixed camera shows a shallow stream flowing over small rocks in daylight.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0017/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0017/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0018",
+      "prompt": "A fixed camera shows a shallow stream flowing over small rocks in daylight.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0018/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0018/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0019",
+      "prompt": "A fixed camera shows a shallow stream flowing over small rocks in daylight.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0019/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0019/final_raw.yuv"
+    }
+  ],
+  "val": [
+    {
+      "sample_id": "sample_0020",
+      "prompt": "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0021",
+      "prompt": "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0022",
+      "prompt": "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0023",
+      "prompt": "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/final_raw.yuv"
+    }
+  ],
+  "test": [
+    {
+      "sample_id": "sample_0024",
+      "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0024/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0024/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0025",
+      "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0025/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0025/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0026",
+      "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0026/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0026/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0027",
+      "prompt": "A fixed camera shows a striped fabric flag waving in a steady breeze against a blue sky.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0027/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0027/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0028",
+      "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+      "seed": 101,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0028/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0028/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0029",
+      "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+      "seed": 102,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0029/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0029/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0030",
+      "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+      "seed": 103,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0030/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0030/final_raw.yuv"
+    },
+    {
+      "sample_id": "sample_0031",
+      "prompt": "A fixed camera shows a dancer turning slowly in a studio with a plain background.",
+      "seed": 104,
+      "latent_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0031/step_020/clean_latent.pt",
+      "reference": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0031/final_raw.yuv"
+    }
+  ]
+}

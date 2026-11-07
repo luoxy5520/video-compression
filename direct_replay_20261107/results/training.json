@@ -1,0 +1,23 @@
+[
+  {
+    "train_pixels": 2000000,
+    "val_pixels": 400000,
+    "ridge": 0.01,
+    "val_proxy_residual_rmse": 0.4533100484216074,
+    "val_learned_residual_rmse": 0.445288597045501
+  },
+  {
+    "train_pixels": 2000000,
+    "val_pixels": 400000,
+    "ridge": 0.001,
+    "val_proxy_residual_rmse": 0.3832133870312988,
+    "val_learned_residual_rmse": 0.3781066224450261
+  },
+  {
+    "train_pixels": 2000000,
+    "val_pixels": 400000,
+    "ridge": 0.001,
+    "val_proxy_residual_rmse": 0.40170884979049193,
+    "val_learned_residual_rmse": 0.401481301476715
+  }
+]
