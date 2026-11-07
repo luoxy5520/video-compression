@@ -1,0 +1,107 @@
+{
+  "selected": "round2",
+  "validation": {
+    "base": {
+      "psnr_y_p_db": 20.408240048380385,
+      "bitrate_kbps": 439.5138823529412,
+      "last_frame_psnr_y": 18.57907009315447,
+      "late_minus_early_psnr": -5.315465722223873,
+      "ssim_y_p": 0.6666065156250001
+    },
+    "round1": {
+      "psnr_y_p_db": 20.41758880923555,
+      "bitrate_kbps": 444.9788235294118,
+      "last_frame_psnr_y": 18.588722175792306,
+      "late_minus_early_psnr": -5.313278355171005,
+      "ssim_y_p": 0.6661380703125
+    },
+    "round2": {
+      "psnr_y_p_db": 20.42011993815458,
+      "bitrate_kbps": 465.3755294117647,
+      "last_frame_psnr_y": 18.593908247235138,
+      "late_minus_early_psnr": -5.313892507134703,
+      "ssim_y_p": 0.6655754765625
+    }
+  },
+  "test": {
+    "videos": 12,
+    "base": {
+      "psnr_y_p_db": 22.83806904034074,
+      "bitrate_kbps": 427.7069803921569,
+      "last_frame_psnr_y": 20.32693904710451,
+      "late_minus_early_psnr": -7.362016410351801,
+      "ssim_y_p": 0.6705263385416667
+    },
+    "selected": {
+      "psnr_y_p_db": 22.842469655146072,
+      "bitrate_kbps": 439.7258039215686,
+      "last_frame_psnr_y": 20.33707274642003,
+      "late_minus_early_psnr": -7.357465262479368,
+      "ssim_y_p": 0.6705358854166666
+    },
+    "oracle": {
+      "psnr_y_p_db": 36.55351566518113,
+      "bitrate_kbps": 2462.3479215686275
+    },
+    "delta": {
+      "psnr_y_p_db": 0.004400614805330605,
+      "bitrate_kbps": 12.018823529411748,
+      "last_frame_psnr_y": 0.010133699315520772,
+      "late_minus_early_psnr": 0.004551147872432715,
+      "ssim_y_p": 9.546874999988297e-06
+    },
+    "groups": {
+      "A locked camera shows a still glass vase filled with flowers beside a plain window.": {
+        "base": {
+          "psnr_y_p_db": 28.402431892870762,
+          "bitrate_kbps": 185.18776470588236,
+          "last_frame_psnr_y": 25.387940140109006,
+          "late_minus_early_psnr": -6.9703067346886805,
+          "ssim_y_p": 0.9133078125
+        },
+        "selected": {
+          "psnr_y_p_db": 28.40192514644797,
+          "bitrate_kbps": 185.4174117647059,
+          "last_frame_psnr_y": 25.387326927632067,
+          "late_minus_early_psnr": -6.971334331411305,
+          "ssim_y_p": 0.9133036406249999
+        }
+      },
+      "A soccer ball rolls across textured grass before a player runs in front of it.": {
+        "base": {
+          "psnr_y_p_db": 20.330813266505245,
+          "bitrate_kbps": 588.8658823529412,
+          "last_frame_psnr_y": 17.78550587298766,
+          "late_minus_early_psnr": -8.193626535610186,
+          "ssim_y_p": 0.62756959375
+        },
+        "selected": {
+          "psnr_y_p_db": 20.335687443064536,
+          "bitrate_kbps": 621.7637647058823,
+          "last_frame_psnr_y": 17.80866504576806,
+          "late_minus_early_psnr": -8.186319810649707,
+          "ssim_y_p": 0.62759478125
+        }
+      },
+      "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.": {
+        "base": {
+          "psnr_y_p_db": 19.780961961646216,
+          "bitrate_kbps": 509.06729411764707,
+          "last_frame_psnr_y": 17.807371128216857,
+          "late_minus_early_psnr": -6.922115960756538,
+          "ssim_y_p": 0.470701609375
+        },
+        "selected": {
+          "psnr_y_p_db": 19.789796375925707,
+          "bitrate_kbps": 511.9962352941177,
+          "last_frame_psnr_y": 17.815226265859962,
+          "late_minus_early_psnr": -6.914741645377093,
+          "ssim_y_p": 0.470709234375
+        }
+      }
+    },
+    "loss_db_vs_full_jm": 13.711046010035059,
+    "rate_increase_vs_full_jm": -0.8214201169258635,
+    "passed": false
+  }
+}

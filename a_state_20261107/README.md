@@ -97,3 +97,17 @@ SHA-256：`28ba99d0ffbc2ba1fa419b5f67d9be3c017c4c6af6fb6bdc95408698685b1a35`。
 对应新增数据复跑入口是 `run_expand.sh`；复制 `new48.json` 后先设置新的输出目录，
 不要与本次归档共用原始生成路径。对照训练入口为 `run_blind.sh`、`run_control.sh`、
 `run_hidden_blind.sh` 和 `run_recurrent.sh`，运行目录互相隔离。
+
+## A1 续训：预测 MV 与残差配对
+
+`bash a_state_20261107/run_rollout_residual.sh ~/fresh_rollout_run`。
+冻结扩容 hidden 头的模式/MV、主干和置信度层。训练时生成预测状态，使用同一回放后端
+记录 P16 实际 MC；只有训练样本的原始像素参与残差监督。重复采集一次更新后的轨迹，
+混合两轮监督。验证按真实回放 PSNR 选权重，候选码率需不超过完整 JM 验证均值的 110%。
+锁定后在此前 12 条测试上做回归对照，并核验模式、MV 数组逐项不变。
+续训候选沿用旧置信度层，残差置信度不能作为已校准的输出使用。
+
+实测 44 train / 16 val，两轮各 8 epoch，选择第 2 轮。在此前的 12 条测试回归中，
+22.838 → 22.842 dB，427.71 → 439.73 kb/s，末帧 20.327 → 20.337 dB。
+24 条码流均通过零搜索、零 Oracle P 读取与三方重建核验。保留原交接权重；
+`results/rollout_round2.pt` 仅为实验候选。

@@ -261,7 +261,13 @@ kit=~/senior-oracle-expand32-20261106
 
 
 
-</div></section><section id="github">
+</div></section><section id="a-rollout-followup">
+<div class="eyebrow">A1 follow-up / 2026-11-07</div><h2>在模型自己的回放轨迹上训练配套残差</h2>
+<div class="panel"><p>冻结当前扩容 hidden 头的模式与 qpel MV。训练时用它导出固定状态，并在只回放的 JM 上记录每个 P16 块实际使用的运动补偿像素；以原始源减去实际运动补偿作为残差监督。下一轮混合初始与更新后的轨迹。推理仍只接收 hidden 和步数，后端没有候选搜索、源代理或在线修正。</p>
+<p>单样本训练、轨迹覆盖和三方解码烟测通过。完整任务已完成：44 条训练、16 条验证、两轮各 8 epoch。按真实验证码流选第 2 轮，再在此前 12 条测试视频上做固定回归对照。训练与验证不使用这些测试视频。候选模型的旧残差置信度不作验收使用。</p>
+<p><strong>结果：单独重训残差未改善 A1。</strong> 回归 12 条的平均 Y PSNR 为 22.838 → 22.842 dB，码率 427.71 → 439.73 kb/s，末帧 20.327 → 20.337 dB。模式和 MV 数组逐项不变，24 条码流均零搜索、Oracle P 零读取，编码器与双解码器一致。仍低于完整 JM 13.71 dB。保留原交接权重；下轮优先提高非零 MV 的质量，再做联合残差训练。</p>
+<p><a href="a_state_20261107/results/rollout_summary.json">按场景汇总</a> · <a href="a_state_20261107/results/rollout_residual.json">逐视频结果</a> · <a href="a_state_20261107/results/rollout_round2.pt">实验候选权重</a></p>
+<p><a href="a_state_20261107/rollout_residual.py">续训实现</a> · <a href="a_state_20261107/run_rollout_residual.sh">113Server 运行入口</a> · <a href="https://github.com/luoxy5520/video-compression/tree/codex/a-state-independent">GitHub 独立状态分支</a></p></div></section><section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>
 <div class="grid3 repo">
 <div class="panel"><span class="tag">01 · 数据交接</span><h3>原始 4 条数据</h3><code>codex/a2-final-handoff</code><ul class="sub"><li><code>dataset_local/exp_2026_11_05/</code> · 四步张量、当前/最终视频、清单</li><li><code>handoff_final_for_labels/</code> · 四个最终 YUV 和生成标签的说明</li><li><code>experiments_a/</code> · A0、A2 早期实现与接口</li></ul><a class="link" href="https://github.com/luoxy5520/video-compression/tree/codex/a2-final-handoff">打开交接分支 ↗</a></div>
