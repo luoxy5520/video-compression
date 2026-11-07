@@ -1,0 +1,162 @@
+[
+  {
+    "epoch": 1,
+    "validation_loss": 0.0662824735045433,
+    "top4_mean_positive_log_regret": 0.009375026449561119,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8856971263885498,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 2,
+    "validation_loss": 0.07208595424890518,
+    "top4_mean_positive_log_regret": 0.009114147163927555,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8820512890815735,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 3,
+    "validation_loss": 0.06723617762327194,
+    "top4_mean_positive_log_regret": 0.009027094580233097,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8798577785491943,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 4,
+    "validation_loss": 0.06611088663339615,
+    "top4_mean_positive_log_regret": 0.008959935978055,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8770933747291565,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 5,
+    "validation_loss": 0.06435561925172806,
+    "top4_mean_positive_log_regret": 0.009077145718038082,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.876762866973877,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 6,
+    "validation_loss": 0.06420137733221054,
+    "top4_mean_positive_log_regret": 0.009030024521052837,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8756310343742371,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 7,
+    "validation_loss": 0.0636882483959198,
+    "top4_mean_positive_log_regret": 0.008985955268144608,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8754206895828247,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 8,
+    "validation_loss": 0.06469932198524475,
+    "top4_mean_positive_log_regret": 0.009051873348653316,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8752403855323792,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 9,
+    "validation_loss": 0.06426621228456497,
+    "top4_mean_positive_log_regret": 0.009036380797624588,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8746094107627869,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 10,
+    "validation_loss": 0.06357940286397934,
+    "top4_mean_positive_log_regret": 0.009016672149300575,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.875120222568512,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 11,
+    "validation_loss": 0.0637025237083435,
+    "top4_mean_positive_log_regret": 0.00897881481796503,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8748998641967773,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 12,
+    "validation_loss": 0.06380727887153625,
+    "top4_mean_positive_log_regret": 0.009044719859957695,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8754106760025024,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 13,
+    "validation_loss": 0.06202385947108269,
+    "top4_mean_positive_log_regret": 0.009002472274005413,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8761518597602844,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 14,
+    "validation_loss": 0.061308011412620544,
+    "top4_mean_positive_log_regret": 0.009013567119836807,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.876682698726654,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 15,
+    "validation_loss": 0.06213850528001785,
+    "top4_mean_positive_log_regret": 0.009013193659484386,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8757712841033936,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 16,
+    "validation_loss": 0.06089302897453308,
+    "top4_mean_positive_log_regret": 0.009020412340760231,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8771033883094788,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 17,
+    "validation_loss": 0.06056910380721092,
+    "top4_mean_positive_log_regret": 0.009081251919269562,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8777244091033936,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 18,
+    "validation_loss": 0.06049603596329689,
+    "top4_mean_positive_log_regret": 0.009056098759174347,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8783453702926636,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 19,
+    "validation_loss": 0.0615122951567173,
+    "top4_mean_positive_log_regret": 0.009043415077030659,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.879026472568512,
+    "mode_majority_accuracy": 0.8579527735710144
+  },
+  {
+    "epoch": 20,
+    "validation_loss": 0.06040147319436073,
+    "top4_mean_positive_log_regret": 0.009123655036091805,
+    "proxy_top4_mean_positive_log_regret": 0.008928142488002777,
+    "mode_accuracy": 0.8796675205230713,
+    "mode_majority_accuracy": 0.8579527735710144
+  }
+]
