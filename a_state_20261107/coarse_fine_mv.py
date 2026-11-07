@@ -120,9 +120,14 @@ def fit(a,base,data,train,val,arm):
     rng=random.Random(a.seed)
     teacher=a.teacher if arm=="teacher" else None
     truth={r["sample_id"]:label(r,teacher) for r in train}
-    anchors=codebook(list(truth.values()),a.seed).cuda()
-    head=Motion(base.mode.in_channels,anchors).cuda()
-    opt=torch.optim.AdamW(head.parameters(),lr=.001)
+    if a.resume_motion:
+        previous = torch.load(a.resume_motion / f"{arm}.pt", map_location="cpu", weights_only=True)
+        head = Motion(base.mode.in_channels, previous["anchors"]).cuda()
+        head.load_state_dict(previous["weights"])
+    else:
+        anchors = codebook(list(truth.values()), a.seed).cuda()
+        head = Motion(base.mode.in_channels, anchors).cuda()
+    opt = torch.optim.AdamW(head.parameters(), lr=.0003 if a.resume_motion else .001)
     path=a.output/f"{arm}.pt"
     history=[]
     best=float("inf")
@@ -243,7 +248,7 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("--config",nargs="+")
     p.add_argument("--test-config",nargs="+")
-    for key in ("teacher","checkpoint","kit","jm","output","input-hidden","head"):
+    for key in ("teacher","checkpoint","kit","jm","output","input-hidden","head","resume-motion"):
         p.add_argument("--"+key,type=Path)
     p.add_argument("--epochs",type=int,default=16)
     p.add_argument("--smoke",action="store_true")
@@ -298,9 +303,13 @@ def main():
         validation.update(val_adapt)
         selected["adapted"]=(adapted,arms[chosen])
     testing={} if a.validation_only else assess(a,backend,base,dict(base=None,**selected),test,"regression")
-    (a.output/"results.json").write_text(json.dumps(dict(selected=chosen,history=history,
-        validation=validation,regression=testing,eligible=eligible,smoke=a.smoke,
-        risk_weight=a.risk_weight,seed=a.seed,validation_only=a.validation_only),indent=2,allow_nan=False))
+    result = dict(selected=chosen, history=history, validation=validation, regression=testing,
+                  eligible=eligible, smoke=a.smoke, risk_weight=a.risk_weight, seed=a.seed,
+                  validation_only=a.validation_only,
+                  resumed_from=a.resume_motion.name if a.resume_motion else None)
+    pending = a.output / "results.tmp"
+    pending.write_text(json.dumps(result, indent=2, allow_nan=False))
+    pending.replace(a.output / "results.json")
 
 
 if __name__=="__main__":

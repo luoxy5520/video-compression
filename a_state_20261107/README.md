@@ -119,17 +119,19 @@ Oracle 与闭环教师监督用相同学生结构；此前 12 条盲测仅作为
 Oracle top-4 用真实标签选候选，属于归因：21.82 dB，高于自选的 21.55 dB，
 仍低于原 hidden 的 22.84 dB。
 
-113Server 队列已经启动，固定 44 train / 16 val，不使用回归集选权重：
+113Server 队列使用持续续训模式，固定 44 train / 16 val。验证结果写入状态文件。
 
 ```bash
 cd ~/dit-paired-experiment
 tail -f ~/a_motion_queue_20261107/queue.log
 cat ~/a_motion_queue_20261107/status.json   # 第一组结束后出现
-# 单独重启/复跑时使用新的目录；参数 0 表示持续调度
-bash a_state_20261107/run_motion_queue.sh ~/fresh_motion_queue 0
+# 参数 0 表示从已完成的组继续训练
+bash a_state_20261107/run_motion_queue.sh ~/a_motion_queue_20261107 0
 # 请求已运行的队列在当前组结束后停下
 touch ~/a_motion_queue_20261107/STOP
 ```
 
-运行日志在 `trial_*.log`，完整试验有独立目录，重新运行会跳过已完成组。
-队列不自动发布或替换交接权重。
+运行日志在 `trial_*.log`。持续模式逐组继承上一组两种监督下的运动头和锚点，
+以 0.0003 的学习率重建优化器。重启会跳过已完成组。若有 STOP 文件，
+确认需要恢复后，先移除该文件，再以同一目录重启。目录剩余空间小于 100 GiB 时队列停止调度。
+`status.json` 记录验证集对照，交接模型由单独验收决定。

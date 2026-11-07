@@ -274,7 +274,7 @@ kit=~/senior-oracle-expand32-20261106
 <p>单样本通过。60 条训练/验证教师轨迹已采完；必须逐条通过教师码流与固定状态回放的字节一致性。完整学生训练与回放已结束。</p>
 <p>16 条验证的原 hidden / Oracle 候选 / 闭环教师候选分别为 20.41 / 19.23 / 19.21 dB；按验证选择 Oracle 监督。12 条回归上，自选 MV 为 21.55 dB，适配残差后仍为 21.55 dB，原 hidden 为 22.84 dB。qpel 精确率 12.94% → 20.10%，但运动至少一像素的块 EPE 31.95 → 32.32 qpel。</p>
 <p><strong>Oracle top-4 归因：21.82 dB / 434.99 kb/s。</strong> 仅在预测 P16 与 Oracle P16 交集，用 Oracle 从模型前四候选中选最近的 MV，固定残差头并重新以选中 MV 为条件。比模型自行选 MV 高 0.27 dB，仍比原 hidden 低 1.02 dB。12 条均通过三方重建、后端零搜索；该对照使用 Oracle 选向量，不能部署，也不是整条 A1 的理论上界。</p>
-<p>113Server 已启动六组后台续训：增加按运动幅度加权的候选期望端点误差，复用原 32 + 新 48 的 44 train / 16 val，固定划分，不读回归集。目录 <code>~/a_motion_queue_20261107</code>；完成一组更新 <code>status.json</code>。支持传 <code>0</code> 持续调度、<code>STOP</code> 文件在组间停止，并检查磁盘和互斥。现有交接模型不自动替换。</p>
+<p>113Server 从六组对照队列切换为持续续训。切换在当前组结束后发生，每组从上一组的 Oracle 和教师运动头权重及锚点继续，以 0.0003 的学习率重新初始化优化器。数据沿用原 32 条和新增 48 条视频中的 44 条训练与 16 条验证。后台目录为 <code>~/a_motion_queue_20261107</code>，每组更新 <code>status.json</code>。<code>STOP</code> 文件触发组间停止，脚本检查互斥和磁盘余量。</p>
 <p><a href="a_state_20261107/results/coarse_fine_summary.json">跨分支对照</a> · <a href="a_state_20261107/results/coarse_replay_ceiling.json">Oracle top-4 回放</a> · <a href="a_state_20261107/run_motion_queue.sh">后台续训队列</a></p>
 <p><a href="a_state_20261107/coarse_fine_mv.py">整数候选、qpel 细化与残差训练</a> · <a href="a_state_20261107/run_coarse_fine.sh">113Server 复现入口</a></p>
 </div></section><section id="github">
