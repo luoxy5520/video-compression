@@ -1,0 +1,12 @@
+{
+  "predictions": 320,
+  "videos": 80,
+  "predictions_by_split": {
+    "train": 176,
+    "val": 64,
+    "test": 80
+  },
+  "archive_sha256": "ffc0bbe2ce21e7d7919ba6027916418caa59acb9d1bc253a29ab3626b7a13a7f",
+  "checkpoint_sha256": "b713fef90db9205471c7b168e1715c70d8a4c87a0f4b342f866baf04e1cd4ca5",
+  "shapes_dtypes_and_hashes_passed": true
+}

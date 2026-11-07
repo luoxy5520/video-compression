@@ -1,0 +1,82 @@
+{
+  "sample_0020": [
+    {
+      "plane": "y",
+      "pixels": 5664512,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "u",
+      "pixels": 1416128,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "v",
+      "pixels": 1416128,
+      "differences": 0,
+      "max_abs": 0
+    }
+  ],
+  "sample_0021": [
+    {
+      "plane": "y",
+      "pixels": 5466880,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "u",
+      "pixels": 1366720,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "v",
+      "pixels": 1366720,
+      "differences": 0,
+      "max_abs": 0
+    }
+  ],
+  "sample_0022": [
+    {
+      "plane": "y",
+      "pixels": 5353984,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "u",
+      "pixels": 1338496,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "v",
+      "pixels": 1338496,
+      "differences": 0,
+      "max_abs": 0
+    }
+  ],
+  "sample_0023": [
+    {
+      "plane": "y",
+      "pixels": 5314048,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "u",
+      "pixels": 1328512,
+      "differences": 0,
+      "max_abs": 0
+    },
+    {
+      "plane": "v",
+      "pixels": 1328512,
+      "differences": 0,
+      "max_abs": 0
+    }
+  ]
+}

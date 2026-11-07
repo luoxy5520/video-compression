@@ -1,0 +1,233 @@
+{
+  "A locked camera shows a still glass vase filled with flowers beside a plain window.": {
+    "pilot": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.23278245192307692,
+      "oracle_mv_zero_baseline": 0.6403589947934387,
+      "mv_exact": 0.12563440233284098,
+      "mv_mae_xy": [
+        6.856895419853024,
+        4.151159224341699
+      ],
+      "mode_macro_f1": 0.7038428843499329,
+      "bitrate_kbps": 177.5134117647059,
+      "psnr_y_p_db": 27.41479336515538,
+      "oracle_psnr_y_p_db": 39.923708450983426,
+      "last_frame_psnr": 24.802267954245053
+    },
+    "control": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.23278245192307692,
+      "oracle_mv_zero_baseline": 0.6403589947934387,
+      "mv_exact": 0.16224401423502915,
+      "mv_mae_xy": [
+        6.756270677704517,
+        4.066101896822962
+      ],
+      "mode_macro_f1": 0.699824095426669,
+      "bitrate_kbps": 185.4456470588235,
+      "psnr_y_p_db": 27.3706118460264,
+      "oracle_psnr_y_p_db": 39.923708450983426,
+      "last_frame_psnr": 24.81128118520598
+    },
+    "expanded": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.23278245192307692,
+      "oracle_mv_zero_baseline": 0.6403589947934387,
+      "mv_exact": 0.15320020982396249,
+      "mv_mae_xy": [
+        6.887801783806162,
+        4.038646880128768
+      ],
+      "mode_macro_f1": 0.6851555352998695,
+      "bitrate_kbps": 188.87529411764706,
+      "psnr_y_p_db": 25.66039235003653,
+      "oracle_psnr_y_p_db": 39.923708450983426,
+      "last_frame_psnr": 23.157232478578408
+    },
+    "hidden": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.23278245192307692,
+      "oracle_mv_zero_baseline": 0.6403589947934387,
+      "mv_exact": 0.21540728027229852,
+      "mv_mae_xy": [
+        6.6093462100125,
+        4.034459610430971
+      ],
+      "mode_macro_f1": 0.7360832268505723,
+      "bitrate_kbps": 185.18776470588236,
+      "psnr_y_p_db": 28.402431892870762,
+      "oracle_psnr_y_p_db": 39.923708450983426,
+      "last_frame_psnr": 25.387940140109006
+    },
+    "recurrent": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.23278245192307692,
+      "oracle_mv_zero_baseline": 0.6403589947934387,
+      "mv_exact": 0.14368944487628602,
+      "mv_mae_xy": [
+        6.703356764970267,
+        4.223158016636922
+      ],
+      "mode_macro_f1": 0.7510561935893304,
+      "bitrate_kbps": 177.46070588235295,
+      "psnr_y_p_db": 27.211152596577307,
+      "oracle_psnr_y_p_db": 39.923708450983426,
+      "last_frame_psnr": 24.306212041345116
+    }
+  },
+  "A soccer ball rolls across textured grass before a player runs in front of it.": {
+    "pilot": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.6758213141025641,
+      "oracle_mv_zero_baseline": 0.2544969636200226,
+      "mv_exact": 0.060932669273758226,
+      "mv_mae_xy": [
+        4.039949025952065,
+        3.285051396875181
+      ],
+      "mode_macro_f1": 0.7014889382244223,
+      "bitrate_kbps": 586.6089411764706,
+      "psnr_y_p_db": 18.70624628360131,
+      "oracle_psnr_y_p_db": 35.643499448799474,
+      "last_frame_psnr": 16.897285673235306
+    },
+    "control": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.6758213141025641,
+      "oracle_mv_zero_baseline": 0.2544969636200226,
+      "mv_exact": 0.06939630120162317,
+      "mv_mae_xy": [
+        3.6193058910171287,
+        3.504386008298098
+      ],
+      "mode_macro_f1": 0.6937365117874741,
+      "bitrate_kbps": 585.28,
+      "psnr_y_p_db": 18.66252932602582,
+      "oracle_psnr_y_p_db": 35.643499448799474,
+      "last_frame_psnr": 16.715635487589
+    },
+    "expanded": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.6758213141025641,
+      "oracle_mv_zero_baseline": 0.2544969636200226,
+      "mv_exact": 0.03261493702105699,
+      "mv_mae_xy": [
+        3.4818059733225297,
+        3.829348351533969
+      ],
+      "mode_macro_f1": 0.6038715684725017,
+      "bitrate_kbps": 591.3863529411765,
+      "psnr_y_p_db": 18.716944851863296,
+      "oracle_psnr_y_p_db": 35.643499448799474,
+      "last_frame_psnr": 16.41365493595838
+    },
+    "hidden": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.6758213141025641,
+      "oracle_mv_zero_baseline": 0.2544969636200226,
+      "mv_exact": 0.14640767155787604,
+      "mv_mae_xy": [
+        3.3675535894186046,
+        2.65904049937302
+      ],
+      "mode_macro_f1": 0.7305354918191769,
+      "bitrate_kbps": 588.8658823529412,
+      "psnr_y_p_db": 20.330813266505245,
+      "oracle_psnr_y_p_db": 35.643499448799474,
+      "last_frame_psnr": 17.78550587298766
+    },
+    "recurrent": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.6758213141025641,
+      "oracle_mv_zero_baseline": 0.2544969636200226,
+      "mv_exact": 0.09030625807659634,
+      "mv_mae_xy": [
+        3.399168942844676,
+        3.197080790602315
+      ],
+      "mode_macro_f1": 0.7669454473560678,
+      "bitrate_kbps": 583.6028235294118,
+      "psnr_y_p_db": 19.90929641220151,
+      "oracle_psnr_y_p_db": 35.643499448799474,
+      "last_frame_psnr": 17.346164687106686
+    }
+  },
+  "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.": {
+    "pilot": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.8815504807692308,
+      "oracle_mv_zero_baseline": 0.02913089858520987,
+      "mv_exact": 0.015167914965374495,
+      "mv_mae_xy": [
+        12.244073415902406,
+        9.284049732181682
+      ],
+      "mode_macro_f1": 0.5095843319014461,
+      "bitrate_kbps": 491.9510588235294,
+      "psnr_y_p_db": 17.516667726862913,
+      "oracle_psnr_y_p_db": 34.093339095760484,
+      "last_frame_psnr": 15.703696190694364
+    },
+    "control": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.8815504807692308,
+      "oracle_mv_zero_baseline": 0.02913089858520987,
+      "mv_exact": 0.012137738151110876,
+      "mv_mae_xy": [
+        11.744604856943706,
+        9.700637606495912
+      ],
+      "mode_macro_f1": 0.5040230125644642,
+      "bitrate_kbps": 497.17835294117646,
+      "psnr_y_p_db": 17.316920613506298,
+      "oracle_psnr_y_p_db": 34.093339095760484,
+      "last_frame_psnr": 15.535047101179199
+    },
+    "expanded": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.8815504807692308,
+      "oracle_mv_zero_baseline": 0.02913089858520987,
+      "mv_exact": 0.010000090082420206,
+      "mv_mae_xy": [
+        11.677422276175173,
+        9.820326354712707
+      ],
+      "mode_macro_f1": 0.47302299945534027,
+      "bitrate_kbps": 491.6197647058824,
+      "psnr_y_p_db": 17.046295556533835,
+      "oracle_psnr_y_p_db": 34.093339095760484,
+      "last_frame_psnr": 15.233733225344082
+    },
+    "hidden": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.8815504807692308,
+      "oracle_mv_zero_baseline": 0.02913089858520987,
+      "mv_exact": 0.026401502171855402,
+      "mv_mae_xy": [
+        11.717289433987306,
+        8.307018625789908
+      ],
+      "mode_macro_f1": 0.6048029160043542,
+      "bitrate_kbps": 509.06729411764707,
+      "psnr_y_p_db": 19.780961961646216,
+      "oracle_psnr_y_p_db": 34.093339095760484,
+      "last_frame_psnr": 17.807371128216857
+    },
+    "recurrent": {
+      "clips": 4,
+      "oracle_p16_fraction": 0.8815504807692308,
+      "oracle_mv_zero_baseline": 0.02913089858520987,
+      "mv_exact": 0.020711264584782785,
+      "mv_mae_xy": [
+        11.85008513530329,
+        8.57800483388034
+      ],
+      "mode_macro_f1": 0.6251596352599665,
+      "bitrate_kbps": 518.2324705882353,
+      "psnr_y_p_db": 19.18719432890687,
+      "oracle_psnr_y_p_db": 34.093339095760484,
+      "last_frame_psnr": 17.1998778431508
+    }
+  }
+}

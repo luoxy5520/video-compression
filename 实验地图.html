@@ -21,11 +21,11 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
+<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
 <div class="hero"><div class="wrap">
 <div class="eyebrow">Experiment map / 2026.11.07</div>
 <h1>从 latent 读出<br>H.264 压缩状态</h1>
-<p><strong>研究主线一致。</strong> 已用真实 JM 标签训练出 Skip / P16×16 模式预测头，并用完整 Oracle 状态验证了 H.264 后端。现已补齐 MV 和残差预测。最新版本从最终 latent 生成标准 H.264，在独立测试上达到 40.89 dB、1289.11 kb/s。</p>
+<p><strong>研究主线一致。</strong> 已用真实 JM 标签训练出 Skip / P16×16 模式预测头，并用完整 Oracle 状态验证了 H.264 后端。已初步训练直接 MV 和残差头。达到阶段工作线的是模型辅助闭环编码器：在原固定测试集上为 40.89 dB、1289.11 kb/s；直接状态回放需独立验收。</p>
 <div class="stats"><div><b>32</b><span>扩容批次视频</span></div><div><b>128</b><span>步骤特征与闭合验证</span></div><div><b>0.731</b><span>Step 5 模式 Macro-F1</span></div><div><b>0.774</b><span>Step 20 共享头 Macro-F1</span></div></div>
 </div></div>
 <main class="wrap">
@@ -158,7 +158,110 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 <div class="table-scroll"><table><thead><tr><th>测试方案</th><th>P 帧 Y PSNR (dB)</th><th>码率 (kb/s)</th><th>每宏块评估候选</th><th>latent 到码流 (s)</th></tr></thead><tbody><tr><td>完整局部方向</td><td>40.92</td><td>1283.54</td><td>22</td><td>2.74</td></tr><tr><td>训练头：每阶段前 4 个方向</td><td>40.89</td><td>1289.11</td><td>14</td><td>2.71</td></tr></tbody></table></div>
 <p>训练头相对完整 JM 平均少 0.28 dB，最差单条少 0.51 dB，码率增加 6.95%。符合本项目此前的画质与码率工作线。方案使用冻结 Wan 解码主干、训练的候选头及标准 JM 闭环；当前支持固定 17 帧 832×480 的生成域规格。</p>
 <p>服务器产物 <code>/home/luoxiangyu/learned_qpel_20261107/</code>。新权重 <code>/mnt/data_hdd/models/dit_compression/learned_qpel_20261107/qpel.pt</code>。<a href="learned_qpel_20261107/README.md">单文件编码</a> · <a href="learned_qpel_20261107/results/results.json">逐视频结果</a> · <a href="learned_qpel_20261107/results/training.json">训练历史</a></p>
-<div class="grid2"><div><h3>旗帜 · seed 101</h3><video controls loop preload="metadata" playsinline style="width:100%;height:auto" src="previews/experiment_map/learned_qpel/sample_0024.mp4"></video></div><div><h3>舞者 · seed 101</h3><video controls loop preload="metadata" playsinline style="width:100%;height:auto" src="previews/experiment_map/learned_qpel/sample_0028.mp4"></video></div></div><p>全部对比视频：<a href="previews/experiment_map/learned_qpel/sample_0024.mp4">0024</a> · <a href="previews/experiment_map/learned_qpel/sample_0025.mp4">0025</a> · <a href="previews/experiment_map/learned_qpel/sample_0026.mp4">0026</a> · <a href="previews/experiment_map/learned_qpel/sample_0027.mp4">0027</a> · <a href="previews/experiment_map/learned_qpel/sample_0028.mp4">0028</a> · <a href="previews/experiment_map/learned_qpel/sample_0029.mp4">0029</a> · <a href="previews/experiment_map/learned_qpel/sample_0030.mp4">0030</a> · <a href="previews/experiment_map/learned_qpel/sample_0031.mp4">0031</a></p></div></section><section id="github">
+<div class="grid2"><div><h3>旗帜 · seed 101</h3><video controls loop preload="metadata" playsinline style="width:100%;height:auto" src="previews/experiment_map/learned_qpel/sample_0024.mp4"></video></div><div><h3>舞者 · seed 101</h3><video controls loop preload="metadata" playsinline style="width:100%;height:auto" src="previews/experiment_map/learned_qpel/sample_0028.mp4"></video></div></div><p>全部对比视频：<a href="previews/experiment_map/learned_qpel/sample_0024.mp4">0024</a> · <a href="previews/experiment_map/learned_qpel/sample_0025.mp4">0025</a> · <a href="previews/experiment_map/learned_qpel/sample_0026.mp4">0026</a> · <a href="previews/experiment_map/learned_qpel/sample_0027.mp4">0027</a> · <a href="previews/experiment_map/learned_qpel/sample_0028.mp4">0028</a> · <a href="previews/experiment_map/learned_qpel/sample_0029.mp4">0029</a> · <a href="previews/experiment_map/learned_qpel/sample_0030.mp4">0030</a> · <a href="previews/experiment_map/learned_qpel/sample_0031.mp4">0031</a></p></div></section><section id="a-state-audit">
+<div class="eyebrow">A experiments / 2026-11-07</div><h2>按原稿重新核验师姐的 A 实验</h2>
+<div class="panel">
+<table><thead><tr><th>原稿项目</th><th>现有证据与缺口</th></tr></thead><tbody>
+<tr><td>A0.1 模式</td><td>已有最终步准确率、Macro-F1、两类召回；补置信度质量。</td></tr>
+<tr><td>A0.2 MV</td><td>已有联合头的精确率和 EPE；补跨档率、水平/垂直误差、按运动幅度分组，并区分 Oracle 与预测模式覆盖。</td></tr>
+<tr><td>A0.3 残差</td><td>已有 Oracle 模式/MV 替换消融；原稿另要求实际 Oracle 重建参考作为预测条件，补各平面 RMSE、量化系数、解码和码率。</td></tr>
+<tr><td>A1 最终联合状态</td><td>直接回放旧版 step 20 约 20.93 dB。新验收先序列化所有 P 帧的状态，再交给只回放的后端；沿用原稿的 Oracle I 帧。单列三方重建、SSIM、末帧、逐帧漂移和头部时间/显存。</td></tr>
+<tr><td>A2 当前状态</td><td>历史 A2-final 监督是 y<sub>N</sub>；原稿要求四步各自的 y<sub>s</sub>，以及置信度、推理接口、checkpoint 和批量产物。</td></tr>
+</tbody></table>
+<p><strong>扩容已提交到 113Server。</strong> 新增 12 个独立 prompt × 4 个 seed，按 prompt 分配 24/12/12 条训练、验证、盲测。测试新增静态、遮挡和流体；沿用原视频和编码配置。旧测试集已多轮使用，留作开发对照，扩容新测试只用于锁定配置后的验证。新采集与标签产物单独写入 <code>~/a_new48_20261107/</code> 和数据盘 <code>exp_a_new48_20261107</code>。</p>
+<p><a href="a_state_20261107/new48.json">扩容计划</a> · <a href="a_state_20261107/label_expansion.py">Oracle 导出、回放与双解码验收</a></p>
+<h3>A2 当前标签与 A1 直接回放：首轮实测</h3>
+<p>新模型 493,190 参数，按当前步 <code>current_label_path</code> 训练 24 轮，按 4 条验证视频的联合损失选择第 21 轮。推理只接收 latent 和步数；输出模式、qpel MV、Y/U/V 残差及三项置信度。在旧测试 8 条视频对每一步做等权视频平均：</p>
+<table><thead><tr><th>step</th><th>模式 Accuracy / Macro-F1</th><th>Oracle P16 MV 精确率</th><th>Y 残差 RMSE</th><th>模式 ECE</th></tr></thead><tbody>
+<tr><td>5</td><td>0.832 / 0.737</td><td>1.34%</td><td>9.46</td><td>0.050</td></tr>
+<tr><td>10</td><td>0.888 / 0.809</td><td>2.69%</td><td>12.34</td><td>0.073</td></tr>
+<tr><td>15</td><td>0.911 / 0.834</td><td>2.44%</td><td>13.62</td><td>0.094</td></tr>
+<tr><td>20</td><td>0.857 / 0.770</td><td>2.63%</td><td>13.05</td><td>0.050</td></tr>
+</tbody></table>
+<p><strong>A1 接口通过，质量未通过。</strong> 8 条最终步用 Oracle I 帧和预先导出的全部 P 状态，编码器、JM 和 FFmpeg 像素一致。平均 21.08 dB / Y SSIM 0.8464 / 190.95 kb/s；末帧 20.13 dB，最后四个 P 帧比最早四个平均低 3.42 dB。状态头推理约 1.6 ms，峰值新增 CUDA 已分配显存约 110.64 MiB，含导出和回放约 1.92 s。后端未启用局部候选、源代理或残差修正；8 条回放日志的运动搜索时间均为 0.000 s、覆盖 26,520 个宏块。回放码率和闭环的画质不可直接等同。</p>
+<p>下一步先在 Oracle MV 和参考条件下隔离残差，再用扩容数据比较 MV 输出和残差结构。这里的 qpel 跨档定义为任一分量偏离对应 qpel 格点，另报偏差 ≥1 像素的占比。MV 与残差置信度仍需根据验证集和测试覆盖审查。</p>
+<p><a href="a_state_20261107/state.py">训练与单样本导出</a> · <a href="a_state_20261107/evaluate.py">批量预测与回放</a> · <a href="a_state_20261107/results/pilot.json">逐样本、逐步指标</a> · <a href="a_state_20261107/results/pilot_training.json">训练日志</a></p>
+<h3>A0.3 与 A1 消融：先解决参考与运动一致性</h3>
+<p>A0.3 固定 Oracle 模式、qpel MV、精确重建参考。每条 Oracle 对照回放都匹配原参考码流和重建；从该轨迹记录真实运动补偿像素。冻结 Wan 前缀与秩 40 投影生成源代理，逐平面拟合小幅残差校正，再将预测像素残差实际取整、变换量化和回放。</p>
+<p>8 条测试的 Y/U/V 残差 RMSE 为 0.401/0.338/0.358 像素值；简单的代理源减 Oracle MC 对照为 0.401/0.338/0.357，校正头无实质增益。预测残差回放为 40.55 dB、1203.67 kb/s，Oracle 为 41.17 dB、1205.36 kb/s；两种轨迹的量化系数活跃并集 1,351,273 个位置，65,914 个 level 改变（4.88%）。该结果用于隔离残差，依赖真实参考。</p>
+<p>A1 消融：全预测 21.08 dB；只换 Oracle 模式 21.17 dB；只换 Oracle MV 25.62 dB；只换 Oracle 残差 20.87 dB；换 Oracle 模式和 MV 26.75 dB；换 Oracle MV 和残差 34.55 dB。所有 48 条消融码流均通过三方重建一致性与零 ME 时间日志检查。运动和残差的配对关系比单独降低残差误差更值得优先处理。</p>
+<p>置信度：用原 4 条验证视频拟合后，step 20 模式 ECE 在旧测试从 0.050 增至 0.136；MV ECE 从 0.013 降到 0.010，仍需结合低事件发生率解释。不将这套模式校准作为交接默认值。</p>
+<p><a href="a_state_20261107/oracle_residual.py">A0.3 条件与量化对照</a> · <a href="a_state_20261107/results/oracle_residual.json">A0.3 逐视频结果</a> · <a href="a_state_20261107/results/ablation.json">A1 消融结果</a> · <a href="a_state_20261107/results/calibration.json">逐步置信度校准</a></p>
+<h3>A0.2 离散 MV 与预导出残差对照</h3>
+<p>离散 qpel 头在 Oracle P16 区域精确率 22.04%，优于连续头的 2.63%，低于零矢量的 23.40%；平均 EPE 47.67 qpel（连续头 46.74、全零 45.85）。在预测/Oracle P16 交集，三者精确率为 11.92% / 2.78% / 13.24%。离散化改善了逐档命中，尚未证明能预测非零运动。</p>
+<p>实现独立 H.264 qpel 运动补偿：在验证集的真实 Oracle 参考上，Y/U/V 全部与 JM 原生 MC 逐像素相同。将预测 MV 与上一帧代理配对，预先导出残差，不让后端修改状态；验证选全 P16 + 离散 MV。旧测试达到 35.92 dB / 1967.88 kb/s，末帧 33.37 dB。相对完整 JM 平均低 5.25 dB、码率高约 63.3%，且保留冻结 Wan 解码前缀。它证明了配对改善能提高画质，未通过 A1 质量、码率或轻量化验收。</p>
+<p>新 48 条与 192 份步骤标签已全部生成并通过 Oracle 回放和双解码；48 条的 step 20 与最终 latent/原始 YUV 均精确相同。已提交扩容对照：锁定旧模型和扩容模型后，在新增三个 prompt 的盲测视频上同口径比较，状态头和码流按 prompt 分开报告。</p>
+<p><a href="a_state_20261107/README.md">师妹交接接口和复现命令</a> · <a href="a_state_20261107/results/discrete_mv.json">MV 对照</a> · <a href="a_state_20261107/results/proxy_mc_check.json">独立 MC 核验</a> · <a href="a_state_20261107/results/proxy_state.json">预导出回放结果</a> · <a href="a_state_20261107/run_blind.sh">扩容盲测入口</a></p>
+<p>代理图像相关性 MV 在旧验证上以更低码率换取更差画质（26.72 dB / 5347.83 kb/s，相比离散 MV 的 27.88 dB / 6878.41 kb/s），未进入同质量容差内的候选。没有据此宣称满足 A1。</p>
+<p>交接包已生成：服务器 <code>~/a_state_pilot_20261107/handoff_state_pilot.tar.gz</code>（27 MiB），含 32 份 P 状态、置信度、checkpoint 和指标。<a href="a_state_20261107/results/pilot_state.pt">直接状态头权重</a> · <a href="a_state_20261107/results/proxy_correlation.json">相关性 MV 对照</a></p>
+<h3>A0.1 专用模式头与 A2 hidden 输入对照</h3>
+<p>原最终步专用 checkpoint 复测：合并 8 条测试视频的 199,680 个宏块，准确率 0.8094、Macro-F1 0.7586、Skip/P16 召回 0.8634/0.6601，原始平均置信度 0.8224、ECE 0.0222。用单个验证 prompt 拟合后 ECE 变为 0.0416，保留原始概率作为报告默认。</p>
+<p>A2 hidden 对照使用最后一层条件分支 token（7800×1536），逐 token 降维后复用同结构和相同轮数，监督仍为各步自己的 y<sub>s</sub>。旧测试 step 5/10/15/20 的模式 Macro-F1 为 0.747/0.828/0.863/0.806，均高于 clean latent 对照；step 20 的 qpel 精确率由 2.63% 升到 7.21%，仍低于零矢量基线。亮度残差 RMSE 几乎不变（13.05）。结论仅针对这两个测试 prompt。</p>
+<p><a href="a_state_20261107/results/a01_mode.json">A0.1 置信度与混淆矩阵</a> · <a href="a_state_20261107/results/hidden_pilot.json">A2 hidden 逐步结果</a> · <a href="a_state_20261107/results/hidden_training.json">hidden 训练历史</a></p>
+<h3>闭环教师蒸馏、长参考链和后端独立性</h3>
+<p>从达标闭环教师录制 24 条 train/val 的最终 P 状态；逐条交给只回放的 JM，码流逐字节一致。相同架构、训练预算、Oracle I、旧测试：Oracle 标签学生为 21.11 dB / 197.64 kb/s，闭环标签学生为 21.18 dB / 213.51 kb/s。换监督标签未实质解决 A1，不能把教师画质算到学生上。</p>
+<p>额外生成两条 33 帧、1I+32P 的压力样本。原 17 帧状态头分别读两个重叠 latent 窗口，拼接全部 P 状态；后端参考链不中断。完整 JM 对照 38.67 / 36.59 dB；直接回放 10.52 / 20.51 dB，末帧 10.18 / 18.52 dB，末四帧比最早四帧下降 7.72 / 6.65 dB。两条均为零 ME 且三方重建一致。这是压力测试，模型没有在 33 帧数据上训练。</p>
+<figure style="margin:1em 0"><img src="a_state_20261107/results/long33_drift.svg" alt="两条 33 帧压力样本的完整 JM 与直接状态逐帧亮度 PSNR 曲线" style="width:100%;height:auto"><figcaption class="sub muted">虚线是状态模型的两个 latent 窗口交界。H.264 参考链不重置。</figcaption></figure>
+<p>单样本推理与历史批处理的 7 个数组逐项相同。新增 I-only 模板适配器只读取开头 I 记录，P 结构由固定配置合成；实测与完整模板生成的回放输入逐字节相同。</p>
+<p><a href="a_state_20261107/run_teacher.sh">蒸馏对照入口</a> · <a href="a_state_20261107/results/teacher_trace.json">教师标签逐条闭合</a> · <a href="a_state_20261107/results/distilled.json">学生实测</a> · <a href="a_state_20261107/results/long33.json">33 帧逐帧指标</a> · <a href="a_state_20261107/isolate_i.py">仅 I 模板适配</a> · <a href="a_state_20261107/results/single_export_check.json">单文件接口复验</a></p>
+<h3>扩容盲测：加数据没有修复当前直接状态头</h3>
+<p>使用新增 12 个 prompt × 4 seed；新测试 12 条视频来自静态、遮挡、流体三个此前未用于调参的 prompt。两个扩容对照均采用 4,224 次更新、同一个合并验证集；旧 pilot 单列。</p>
+<table><thead><tr><th>锁定模型</th><th>Step 20 模式 Macro-F1</th><th>Oracle P16 qpel 精确率</th><th>P 帧 Y PSNR</th><th>末帧 Y PSNR</th><th>码率 kb/s</th></tr></thead><tbody>
+<tr><td>旧 pilot</td><td>0.638</td><td>6.72%</td><td>21.21</td><td>19.13</td><td>418.69</td></tr>
+<tr><td>旧训练集 / 等更新数</td><td>0.633</td><td>8.13%</td><td>21.12</td><td>19.02</td><td>422.63</td></tr>
+<tr><td>旧 + 新训练集</td><td>0.587</td><td>6.53%</td><td>20.47</td><td>18.27</td><td>423.96</td></tr>
+<tr><td>同批完整 JM</td><td>—</td><td>—</td><td>36.55</td><td>—</td><td>2462.35</td></tr>
+</tbody></table>
+<p>三个直接头的 36 条最终步码流均通过三方一致性与零搜索检查；码率更低伴随显著画质损失。扩容头相对等更新旧数据对照低 0.64 dB；相对旧 pilot，静态组低 1.75 dB、遮挡组近似相同、流体组低 0.47 dB。这里只有三个独立测试 prompt，结论限于这套模型、损失与样本分布。建议保留扩容基准，优先改联合状态和参考误差训练，再讨论继续增加训练量。</p>
+<p><a href="a_state_20261107/results/expansion_audit.json">扩容审计</a> · <a href="a_state_20261107/results/blind_comparison.json">按 prompt 与步数对照</a> · <a href="a_state_20261107/results/blind_control.json">等更新数逐视频指标</a> · <a href="a_state_20261107/run_control.sh">等更新数对照入口</a></p>
+<h3>盲测补充：hidden、Oracle 残差与冻结闭环分别验收</h3>
+<table><thead><tr><th>路径</th><th>12 条新盲测 P 帧 Y PSNR</th><th>码率 kb/s</th><th>解释</th></tr></thead><tbody>
+<tr><td>扩容 hidden 直接状态头</td><td>22.84</td><td>427.71</td><td>step 20 模式 Macro-F1 0.690、qpel 精确率 12.94%，末帧 20.33 dB；不达 A1 工作线。</td></tr>
+<tr><td>A0.3 锁定权重 + Oracle 模式/MV/重建参考</td><td>35.81</td><td>2457.32</td><td>Y/U/V 残差 RMSE 0.426 / 0.372 / 0.377；量化系数活跃位置的 6.86% 改变。用于隔离残差。</td></tr>
+<tr><td>冻结的模型辅助闭环</td><td>36.55</td><td>2501.07</td><td>比完整 JM 平均低约 0.003 dB，码率 +1.57%，12 条均通过解码；这条路线通过工作线。</td></tr>
+</tbody></table>
+<p>新验证覆盖四个 prompt 后，clean 模式 step 20 ECE 从 0.062 小幅变为 0.059；hidden 模式从 0.041 变为 0.041，hidden 的 MV 和残差校准变差。现阶段交接保留原始置信度，并提供校准的逐组指标，不把概率直接当退出条件。hidden 是更好的状态读取候选，但参考链和 MV 仍是 A1 的主要缺口。</p>
+<p><a href="a_state_20261107/results/blind_hidden.json">hidden 盲测</a> · <a href="a_state_20261107/results/expanded_hidden_state.pt">扩容 hidden 权重</a> · <a href="a_state_20261107/results/expanded_clean_state.pt">扩容 clean 权重</a> · <a href="a_state_20261107/results/oracle_residual_blind.json">A0.3 盲测</a> · <a href="a_state_20261107/results/frozen_codec_blind.json">冻结闭环盲测</a> · <a href="a_state_20261107/results/blind_calibration_hidden.json">盲测置信度</a></p>
+<h3>参考反馈单独带来的增益</h3>
+<p>状态生产端实现独立 QP28 亮度参考更新，在四条验证的 Oracle P16 轨迹上与 JM 重建逐像素一致。实测路径用自己上帧的亮度重建估计，与预测 qpel MV 配对算当前残差；色度仍用上帧代理。输出状态写完后再交给后端，后端不参与决策。</p>
+<p>旧测试中，在同一全 P16 与离散 MV 下，亮度反馈将 P 帧 PSNR 35.92→39.21 dB，末帧 33.37→38.44 dB，最后四帧相对最早四帧的平均差从 −5.37→−1.63 dB；码率 1967.88→2033.00 kb/s。相对完整 JM 仍低 1.96 dB、码率高 68.7%，且仍保留 Wan 前缀，因此仅作为参考反馈诊断。</p>
+<p>纯 hidden 循环状态头已完成：同训练划分与 4,224 次更新，推理只传递上一帧自己的预测和隐状态。12 条新测试均通过三方回放一致性，模式 Macro-F1 从 0.690 增至 0.714，但 qpel 精确率从 12.94% 降至 8.49%，回放从 22.84 降至 22.10 dB，末帧从 20.33 降至 19.62 dB。状态头实测约 15.2 ms（非循环约 1.9 ms）。保留非循环 hidden 作为当前交接模型。</p>
+<p><a href="a_state_20261107/shadow_luma.py">亮度参考更新实现</a> · <a href="a_state_20261107/results/proxy_feedback_check.json">像素核验</a> · <a href="a_state_20261107/results/proxy_feedback.json">参考反馈逐视频结果</a> · <a href="a_state_20261107/run_recurrent.sh">纯 hidden 循环对照</a> · <a href="a_state_20261107/results/blind_recurrent.json">循环盲测</a> · <a href="a_state_20261107/results/recurrent_training.json">循环训练记录</a></p>
+<p>按内容拆开，扩容 hidden 的 qpel 精确率在静态 / 遮挡 / 流体分别是 21.5% / 14.6% / 2.6%，对应的全零 MV 基线是 64.0% / 25.4% / 2.9%。因此下一轮不以总体 exact 命中作为唯一训练或验收依据：先按运动幅度看端点误差和非零运动，再在相近码率下看真实回放与末帧漂移。<a href="a_state_20261107/results/blind_content_groups.json">按内容的诊断指标</a></p>
+<p>全量交接包已完成：用锁定的扩容 hidden 头为原 32 条与新增 48 条生成 320 份四步预测，逐份核对字段形状、类型、数值范围与 SHA-256。服务器 <code>~/a_handoff80_20261107/handoff_80x4.tar</code>（159 MiB）；清单保留 split，训练/验证输出只用于开发。<a href="a_state_20261107/run_handoff.sh">批处理</a> · <a href="a_state_20261107/results/handoff_validation.json">交接校验记录</a></p>
+<details><summary>展开 113Server 直接推理、状态适配与验收命令</summary><div class="inner"><pre style="overflow-x:auto"><code>cd ~/dit-paired-experiment
+py=~/Wan2.1/.venv/bin/python
+root=~/a_state_pilot_20261107
+kit=~/senior-oracle-expand32-20261106
+
+# 独立推理：最终 latent → 完整 P 状态与置信度
+&quot;$py&quot; a_state_20261107/state.py --latent /path/to/final_latent.pt \
+  --step 20 --checkpoint &quot;$root/model/state.pt&quot; --output /tmp/state.npz
+
+# 后端：只读 Oracle I，生成固定 P 槽位，再注入模型的 NPZ
+&quot;$py&quot; a_state_20261107/isolate_i.py --oracle-i /path/to/oracle_state.bin \
+  --frames 17 --output /tmp/i_template.bin
+&quot;$py&quot; &quot;$kit/scripts/prediction_to_b1_state.py&quot; --prediction /tmp/state.npz \
+  --oracle-template /tmp/i_template.bin --output-state /tmp/replay.bin \
+  --result-json /tmp/adapter.json
+
+# 完整批量验收；包含 JM/FFmpeg、一致性和零搜索日志检查
+&quot;$py&quot; a_state_20261107/evaluate.py --config expansion_20261106/config_train32.json \
+  --checkpoint &quot;$root/model/state.pt&quot; --kit &quot;$kit&quot; --jm ~/jm-direct-replay-20261107 \
+  --output /tmp/a_replay_eval --steps 5 10 15 20 --replay 20
+</code></pre></div></details>
+
+
+
+
+
+
+
+
+
+
+
+</div></section><section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>
 <div class="grid3 repo">
 <div class="panel"><span class="tag">01 · 数据交接</span><h3>原始 4 条数据</h3><code>codex/a2-final-handoff</code><ul class="sub"><li><code>dataset_local/exp_2026_11_05/</code> · 四步张量、当前/最终视频、清单</li><li><code>handoff_final_for_labels/</code> · 四个最终 YUV 和生成标签的说明</li><li><code>experiments_a/</code> · A0、A2 早期实现与接口</li></ul><a class="link" href="https://github.com/luoxy5520/video-compression/tree/codex/a2-final-handoff">打开交接分支 ↗</a></div>
@@ -188,7 +291,7 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 <div class="panel"><span class="tag">已有实测</span><h3>latent 可以预测部分压缩状态</h3><p>在这组受限 JM 配置和固定测试集上，step 5 的模式 Macro-F1 为 0.731，step 20 为 0.774，均高于固定全 Skip 基线 0.423。早期 latent 对最终模式具有预测信息。</p></div>
 <div class="panel"><span class="tag">已有实测</span><h3>完整 Oracle 状态可驱动后端</h3><p>给定 Oracle I 帧和完整 P 帧状态，回放可生成与参考一致的码流。零运动搜索来自此回放条件，实测对象是 Oracle 后端路径。</p></div>
 <div class="panel"><span class="tag partial">已跑通，画质待改善</span><h3>完整状态预测的实际表现</h3><p>原 step 20 为 20.93 dB。固定旧残差替换模式与 MV 达到 25.16 dB。使用实际重建参考与代理像素训练校正后达到 39.57 dB，仍使用冻结 Wan 解码主干与 Oracle I 帧。</p></div>
-<div class="panel"><span class="tag next">待验证</span><h3>下一步验证 Skip 决策</h3><p>后续仍需解决运行时 I 帧与源图像代理依赖。当前独立测试覆盖两个 prompt，适用于这批 pilot。</p></div>
+<div class="panel"><span class="tag next">待验证</span><h3>下一步训练能跟踪参考误差的直接状态头</h3><p>新盲测中，继续增加相同训练目标的数据没有提高直接回放；优先联合训练预测 MV 与残差，并用模型自身预测造成的参考扰动训练。锁定后，在已有盲测和更长参考链上同时验收质量、码率和速度。</p></div>
 </div>
 </section>
 </main>

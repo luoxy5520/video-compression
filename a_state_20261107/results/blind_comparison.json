@@ -1,0 +1,398 @@
+{
+  "5": {
+    "groups": [
+      {
+        "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.7282937580695352,
+          "mv_exact": 0.06720145324453349,
+          "y_res_rmse": 8.692713975906372
+        },
+        "expanded": {
+          "mode_f1": 0.6874550969121874,
+          "mv_exact": 0.08922486886850699,
+          "y_res_rmse": 8.68838632106781
+        },
+        "delta": {
+          "mode_f1": -0.0408386611573478,
+          "mv_exact": 0.022023415623973502,
+          "y_res_rmse": -0.004327654838562012
+        }
+      },
+      {
+        "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.7004740115847837,
+          "mv_exact": 0.04105826438064721,
+          "y_res_rmse": 11.79694950580597
+        },
+        "expanded": {
+          "mode_f1": 0.6439934643114861,
+          "mv_exact": 0.011739028518968382,
+          "y_res_rmse": 11.78634774684906
+        },
+        "delta": {
+          "mode_f1": -0.056480547273297654,
+          "mv_exact": -0.02931923586167883,
+          "y_res_rmse": -0.01060175895690918
+        }
+      },
+      {
+        "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.6525654509264354,
+          "mv_exact": 0.008295471274955156,
+          "y_res_rmse": 10.177728652954102
+        },
+        "expanded": {
+          "mode_f1": 0.544915152709098,
+          "mv_exact": 0.013662688331771429,
+          "y_res_rmse": 10.158344745635986
+        },
+        "delta": {
+          "mode_f1": -0.1076502982173374,
+          "mv_exact": 0.005367217056816273,
+          "y_res_rmse": -0.019383907318115234
+        }
+      }
+    ],
+    "mean": {
+      "pilot": {
+        "mode_f1": 0.6937777401935847,
+        "mv_exact": 0.038851729633378615,
+        "y_res_rmse": 10.222464044888815
+      },
+      "expanded": {
+        "mode_f1": 0.6254545713109239,
+        "mv_exact": 0.0382088619064156,
+        "y_res_rmse": 10.211026271184286
+      },
+      "delta": {
+        "mode_f1": -0.06832316888266095,
+        "mv_exact": -0.0006428677269630188,
+        "y_res_rmse": -0.011437773704528809
+      }
+    }
+  },
+  "10": {
+    "groups": [
+      {
+        "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.7513309788660283,
+          "mv_exact": 0.11958909602542342,
+          "y_res_rmse": 10.288193941116333
+        },
+        "expanded": {
+          "mode_f1": 0.7201583324773847,
+          "mv_exact": 0.13951275280461814,
+          "y_res_rmse": 10.288593530654907
+        },
+        "delta": {
+          "mode_f1": -0.031172646388643588,
+          "mv_exact": 0.01992365677919472,
+          "y_res_rmse": 0.00039958953857421875
+        }
+      },
+      {
+        "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.6520052413613351,
+          "mv_exact": 0.04574031808041263,
+          "y_res_rmse": 11.733231782913208
+        },
+        "expanded": {
+          "mode_f1": 0.6033610705132784,
+          "mv_exact": 0.03136773827147162,
+          "y_res_rmse": 11.727983355522156
+        },
+        "delta": {
+          "mode_f1": -0.04864417084805672,
+          "mv_exact": -0.014372579808941008,
+          "y_res_rmse": -0.005248427391052246
+        }
+      },
+      {
+        "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.46731643025600367,
+          "mv_exact": 0.01821072986313508,
+          "y_res_rmse": 10.319820404052734
+        },
+        "expanded": {
+          "mode_f1": 0.4540575599028555,
+          "mv_exact": 0.024811700920275584,
+          "y_res_rmse": 10.31462550163269
+        },
+        "delta": {
+          "mode_f1": -0.013258870353148156,
+          "mv_exact": 0.006600971057140505,
+          "y_res_rmse": -0.005194902420043945
+        }
+      }
+    ],
+    "mean": {
+      "pilot": {
+        "mode_f1": 0.6235508834944556,
+        "mv_exact": 0.061180047989657045,
+        "y_res_rmse": 10.780415376027426
+      },
+      "expanded": {
+        "mode_f1": 0.5925256542978395,
+        "mv_exact": 0.06523073066545512,
+        "y_res_rmse": 10.77706746260325
+      },
+      "delta": {
+        "mode_f1": -0.031025229196616155,
+        "mv_exact": 0.004050682675798073,
+        "y_res_rmse": -0.0033479134241739907
+      }
+    }
+  },
+  "15": {
+    "groups": [
+      {
+        "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.7407332181755854,
+          "mv_exact": 0.1307971208519889,
+          "y_res_rmse": 11.09992241859436
+        },
+        "expanded": {
+          "mode_f1": 0.7058925131317344,
+          "mv_exact": 0.11099151790616785,
+          "y_res_rmse": 11.099819779396057
+        },
+        "delta": {
+          "mode_f1": -0.03484070504385095,
+          "mv_exact": -0.019805602945821066,
+          "y_res_rmse": -0.00010263919830322266
+        }
+      },
+      {
+        "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.7031028614038399,
+          "mv_exact": 0.04939384851523579,
+          "y_res_rmse": 12.080757021903992
+        },
+        "expanded": {
+          "mode_f1": 0.5950797019189691,
+          "mv_exact": 0.0391463082067615,
+          "y_res_rmse": 12.087260127067566
+        },
+        "delta": {
+          "mode_f1": -0.10802315948487085,
+          "mv_exact": -0.010247540308474287,
+          "y_res_rmse": 0.006503105163574219
+        }
+      },
+      {
+        "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.5045821345530148,
+          "mv_exact": 0.010956403756569099,
+          "y_res_rmse": 10.563522577285767
+        },
+        "expanded": {
+          "mode_f1": 0.4657955982513651,
+          "mv_exact": 0.017672885630029035,
+          "y_res_rmse": 10.563527584075928
+        },
+        "delta": {
+          "mode_f1": -0.03878653630164974,
+          "mv_exact": 0.006716481873459936,
+          "y_res_rmse": 5.0067901611328125e-06
+        }
+      }
+    ],
+    "mean": {
+      "pilot": {
+        "mode_f1": 0.6494727380441467,
+        "mv_exact": 0.0637157910412646,
+        "y_res_rmse": 11.248067339261373
+      },
+      "expanded": {
+        "mode_f1": 0.5889226044340229,
+        "mv_exact": 0.055936903914319464,
+        "y_res_rmse": 11.250202496846518
+      },
+      "delta": {
+        "mode_f1": -0.060550133610123846,
+        "mv_exact": -0.007778887126945139,
+        "y_res_rmse": 0.002135157585144043
+      }
+    }
+  },
+  "20": {
+    "groups": [
+      {
+        "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.7038428843499329,
+          "mv_exact": 0.12563440233284098,
+          "y_res_rmse": 5.929857134819031,
+          "psnr_y_p_db": 27.41479336515538,
+          "bitrate_kbps": 177.5134117647059,
+          "last_frame_psnr_y": 24.802267954245053,
+          "ssim_y_p": 0.899746421875,
+          "jm_psnr_y_p_db": 39.923708450983426,
+          "jm_bitrate_kbps": 500.0414117647059
+        },
+        "expanded": {
+          "mode_f1": 0.6851555352998695,
+          "mv_exact": 0.15320020982396249,
+          "y_res_rmse": 5.926992654800415,
+          "psnr_y_p_db": 25.66039235003653,
+          "bitrate_kbps": 188.87529411764706,
+          "last_frame_psnr_y": 23.157232478578408,
+          "ssim_y_p": 0.874292390625,
+          "jm_psnr_y_p_db": 39.923708450983426,
+          "jm_bitrate_kbps": 500.0414117647059
+        },
+        "delta": {
+          "mode_f1": -0.018687349050063418,
+          "mv_exact": 0.027565807491121502,
+          "y_res_rmse": -0.0028644800186157227,
+          "psnr_y_p_db": -1.754401015118848,
+          "bitrate_kbps": 11.361882352941166,
+          "last_frame_psnr_y": -1.6450354756666457,
+          "ssim_y_p": -0.02545403125000001,
+          "jm_psnr_y_p_db": 0.0,
+          "jm_bitrate_kbps": 0.0
+        }
+      },
+      {
+        "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.7014889382244223,
+          "mv_exact": 0.060932669273758226,
+          "y_res_rmse": 8.719213485717773,
+          "psnr_y_p_db": 18.70624628360131,
+          "bitrate_kbps": 586.6089411764706,
+          "last_frame_psnr_y": 16.897285673235306,
+          "ssim_y_p": 0.5224755,
+          "jm_psnr_y_p_db": 35.643499448799474,
+          "jm_bitrate_kbps": 3515.021176470588
+        },
+        "expanded": {
+          "mode_f1": 0.6038715684725017,
+          "mv_exact": 0.03261493702105699,
+          "y_res_rmse": 8.712951302528381,
+          "psnr_y_p_db": 18.716944851863296,
+          "bitrate_kbps": 591.3863529411765,
+          "last_frame_psnr_y": 16.41365493595838,
+          "ssim_y_p": 0.4759595,
+          "jm_psnr_y_p_db": 35.643499448799474,
+          "jm_bitrate_kbps": 3515.021176470588
+        },
+        "delta": {
+          "mode_f1": -0.09761736975192059,
+          "mv_exact": -0.028317732252701233,
+          "y_res_rmse": -0.00626218318939209,
+          "psnr_y_p_db": 0.010698568261986452,
+          "bitrate_kbps": 4.777411764705903,
+          "last_frame_psnr_y": -0.4836307372769255,
+          "ssim_y_p": -0.046516,
+          "jm_psnr_y_p_db": 0.0,
+          "jm_bitrate_kbps": 0.0
+        }
+      },
+      {
+        "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+        "videos": 4,
+        "pilot": {
+          "mode_f1": 0.5095843319014461,
+          "mv_exact": 0.015167914965374495,
+          "y_res_rmse": 8.592896938323975,
+          "psnr_y_p_db": 17.516667726862913,
+          "bitrate_kbps": 491.9510588235294,
+          "last_frame_psnr_y": 15.703696190694364,
+          "ssim_y_p": 0.369569625,
+          "jm_psnr_y_p_db": 34.093339095760484,
+          "jm_bitrate_kbps": 3371.9811764705883
+        },
+        "expanded": {
+          "mode_f1": 0.47302299945534027,
+          "mv_exact": 0.010000090082420206,
+          "y_res_rmse": 8.597559809684753,
+          "psnr_y_p_db": 17.046295556533835,
+          "bitrate_kbps": 491.6197647058824,
+          "last_frame_psnr_y": 15.233733225344082,
+          "ssim_y_p": 0.35255284374999996,
+          "jm_psnr_y_p_db": 34.093339095760484,
+          "jm_bitrate_kbps": 3371.9811764705883
+        },
+        "delta": {
+          "mode_f1": -0.036561332446105876,
+          "mv_exact": -0.005167824882954289,
+          "y_res_rmse": 0.004662871360778809,
+          "psnr_y_p_db": -0.4703721703290782,
+          "bitrate_kbps": -0.331294117647019,
+          "last_frame_psnr_y": -0.46996296535028215,
+          "ssim_y_p": -0.017016781250000057,
+          "jm_psnr_y_p_db": 0.0,
+          "jm_bitrate_kbps": 0.0
+        }
+      }
+    ],
+    "mean": {
+      "pilot": {
+        "mode_f1": 0.6383053848252671,
+        "mv_exact": 0.06724499552399124,
+        "y_res_rmse": 7.747322519620259,
+        "psnr_y_p_db": 21.212569125206535,
+        "bitrate_kbps": 418.69113725490195,
+        "last_frame_psnr_y": 19.13441660605824,
+        "ssim_y_p": 0.5972638489583333,
+        "jm_psnr_y_p_db": 36.55351566518113,
+        "jm_bitrate_kbps": 2462.3479215686275
+      },
+      "expanded": {
+        "mode_f1": 0.5873500344092372,
+        "mv_exact": 0.0652717456424799,
+        "y_res_rmse": 7.745834589004517,
+        "psnr_y_p_db": 20.47454425281122,
+        "bitrate_kbps": 423.9604705882353,
+        "last_frame_psnr_y": 18.26820687996029,
+        "ssim_y_p": 0.567601578125,
+        "jm_psnr_y_p_db": 36.55351566518113,
+        "jm_bitrate_kbps": 2462.3479215686275
+      },
+      "delta": {
+        "mode_f1": -0.050955350416029964,
+        "mv_exact": -0.00197324988151134,
+        "y_res_rmse": -0.0014879306157430012,
+        "psnr_y_p_db": -0.7380248723953132,
+        "bitrate_kbps": 5.26933333333335,
+        "last_frame_psnr_y": -0.8662097260979511,
+        "ssim_y_p": -0.029662270833333355,
+        "jm_psnr_y_p_db": 0.0,
+        "jm_bitrate_kbps": 0.0
+      }
+    }
+  },
+  "final_replay_gate": {
+    "pilot": {
+      "mean_y_loss_db": 15.340946539974595,
+      "rate_increase_fraction": -0.8299626411087444,
+      "pass_project_quality_rate_line": false
+    },
+    "expanded": {
+      "mean_y_loss_db": 16.07897141236991,
+      "rate_increase_fraction": -0.8278226781542093,
+      "pass_project_quality_rate_line": false
+    }
+  }
+}

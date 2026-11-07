@@ -1,0 +1,40 @@
+{
+  "schema": "oracle-h264-state-exporter/prediction-adapter-v1",
+  "prediction": "/home/luoxiangyu/a_state_pilot_20261107/eval/test/sample_0024/step_020/prediction.npz",
+  "oracle_template": "/home/luoxiangyu/a_state_pilot_20261107/i_only_check/template.bin",
+  "output_state": "/home/luoxiangyu/a_state_pilot_20261107/i_only_check/replay.bin",
+  "configuration": {
+    "width": 832,
+    "height": 480,
+    "frames": 17,
+    "p_frames": 16,
+    "qp": 28,
+    "profile_idc": 66,
+    "symbol_mode": 0,
+    "num_ref_frames": 1,
+    "mode_preset": "skip-p16"
+  },
+  "counts": {
+    "skip_macroblocks": 15502,
+    "p16_macroblocks": 9458,
+    "skip_predictions_with_nonzero_mv_ignored": 15455
+  },
+  "quantization": {
+    "residual_y_clipped": 0,
+    "residual_u_clipped": 0,
+    "residual_v_clipped": 0
+  },
+  "hashes": {
+    "oracle_template_sha256": "8da31522beadf3eafbf0acf006fdec003b3435f3f02c4ab6e1071f41ffbf8f4a",
+    "predicted_state_sha256": "85b4651ecbe029bbd27d20db757dc674c14e2130e26409d6286204ca7dd4b764",
+    "state_matches_oracle_template": false
+  },
+  "contract": {
+    "skip_mv": "ignored and deterministically derived from reconstructed neighbor motion",
+    "skip_residual": "ignored and omitted",
+    "p16_ref_idx": 0,
+    "p16_mv_unit": "qpel integer",
+    "residual_range": "rounded and clipped to [-255,255]",
+    "oracle_dependency": "I-frame state only; all P-frame mode/MV/residual records are replaced"
+  }
+}

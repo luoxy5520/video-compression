@@ -1,0 +1,349 @@
+{
+  "checkpoint": "/mnt/data_hdd/models/Wan2.1-T2V-1.3B",
+  "output": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107",
+  "steps": 20,
+  "observe": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_1000",
+      "prompt": "A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",
+      "seed": 701,
+      "category": "static",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1001",
+      "prompt": "A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",
+      "seed": 702,
+      "category": "static",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1002",
+      "prompt": "A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",
+      "seed": 703,
+      "category": "static",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1003",
+      "prompt": "A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",
+      "seed": 704,
+      "category": "static",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1004",
+      "prompt": "A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",
+      "seed": 701,
+      "category": "translation",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1005",
+      "prompt": "A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",
+      "seed": 702,
+      "category": "translation",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1006",
+      "prompt": "A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",
+      "seed": 703,
+      "category": "translation",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1007",
+      "prompt": "A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",
+      "seed": 704,
+      "category": "translation",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1008",
+      "prompt": "A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.",
+      "seed": 701,
+      "category": "camera",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1009",
+      "prompt": "A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.",
+      "seed": 702,
+      "category": "camera",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1010",
+      "prompt": "A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.",
+      "seed": 703,
+      "category": "camera",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1011",
+      "prompt": "A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.",
+      "seed": 704,
+      "category": "camera",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1012",
+      "prompt": "A person folds a large blue towel on a table in a fixed medium shot.",
+      "seed": 701,
+      "category": "nonrigid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1013",
+      "prompt": "A person folds a large blue towel on a table in a fixed medium shot.",
+      "seed": 702,
+      "category": "nonrigid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1014",
+      "prompt": "A person folds a large blue towel on a table in a fixed medium shot.",
+      "seed": 703,
+      "category": "nonrigid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1015",
+      "prompt": "A person folds a large blue towel on a table in a fixed medium shot.",
+      "seed": 704,
+      "category": "nonrigid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1016",
+      "prompt": "A flock of white birds crosses a gray sky at different speeds, viewed from a fixed camera.",
+      "seed": 701,
+      "category": "multiple",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1017",
+      "prompt": "A flock of white birds crosses a gray sky at different speeds, viewed from a fixed camera.",
+      "seed": 702,
+      "category": "multiple",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1018",
+      "prompt": "A flock of white birds crosses a gray sky at different speeds, viewed from a fixed camera.",
+      "seed": 703,
+      "category": "multiple",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1019",
+      "prompt": "A flock of white birds crosses a gray sky at different speeds, viewed from a fixed camera.",
+      "seed": 704,
+      "category": "multiple",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1020",
+      "prompt": "Steady rain makes ripples in a shallow puddle that reflects a brick wall.",
+      "seed": 701,
+      "category": "fluid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1021",
+      "prompt": "Steady rain makes ripples in a shallow puddle that reflects a brick wall.",
+      "seed": 702,
+      "category": "fluid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1022",
+      "prompt": "Steady rain makes ripples in a shallow puddle that reflects a brick wall.",
+      "seed": 703,
+      "category": "fluid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1023",
+      "prompt": "Steady rain makes ripples in a shallow puddle that reflects a brick wall.",
+      "seed": 704,
+      "category": "fluid",
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_1024",
+      "prompt": "A wooden metronome swings against a dark shelf, with the camera fixed.",
+      "seed": 701,
+      "category": "periodic",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1025",
+      "prompt": "A wooden metronome swings against a dark shelf, with the camera fixed.",
+      "seed": 702,
+      "category": "periodic",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1026",
+      "prompt": "A wooden metronome swings against a dark shelf, with the camera fixed.",
+      "seed": 703,
+      "category": "periodic",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1027",
+      "prompt": "A wooden metronome swings against a dark shelf, with the camera fixed.",
+      "seed": 704,
+      "category": "periodic",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1028",
+      "prompt": "A skater passes behind a stone column and reappears, filmed from the side.",
+      "seed": 701,
+      "category": "occlusion",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1029",
+      "prompt": "A skater passes behind a stone column and reappears, filmed from the side.",
+      "seed": 702,
+      "category": "occlusion",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1030",
+      "prompt": "A skater passes behind a stone column and reappears, filmed from the side.",
+      "seed": 703,
+      "category": "occlusion",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1031",
+      "prompt": "A skater passes behind a stone column and reappears, filmed from the side.",
+      "seed": 704,
+      "category": "occlusion",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1032",
+      "prompt": "A slow leftward pan shows rows of brightly colored market stalls.",
+      "seed": 701,
+      "category": "camera",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1033",
+      "prompt": "A slow leftward pan shows rows of brightly colored market stalls.",
+      "seed": 702,
+      "category": "camera",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1034",
+      "prompt": "A slow leftward pan shows rows of brightly colored market stalls.",
+      "seed": 703,
+      "category": "camera",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1035",
+      "prompt": "A slow leftward pan shows rows of brightly colored market stalls.",
+      "seed": 704,
+      "category": "camera",
+      "split": "val"
+    },
+    {
+      "sample_id": "sample_1036",
+      "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+      "seed": 701,
+      "category": "static",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1037",
+      "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+      "seed": 702,
+      "category": "static",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1038",
+      "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+      "seed": 703,
+      "category": "static",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1039",
+      "prompt": "A locked camera shows a still glass vase filled with flowers beside a plain window.",
+      "seed": 704,
+      "category": "static",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1040",
+      "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+      "seed": 701,
+      "category": "occlusion",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1041",
+      "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+      "seed": 702,
+      "category": "occlusion",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1042",
+      "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+      "seed": 703,
+      "category": "occlusion",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1043",
+      "prompt": "A soccer ball rolls across textured grass before a player runs in front of it.",
+      "seed": 704,
+      "category": "occlusion",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1044",
+      "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+      "seed": 701,
+      "category": "fluid",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1045",
+      "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+      "seed": 702,
+      "category": "fluid",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1046",
+      "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+      "seed": 703,
+      "category": "fluid",
+      "split": "test"
+    },
+    {
+      "sample_id": "sample_1047",
+      "prompt": "Foamy waves repeatedly wash over dark rocks in a close view from a fixed camera.",
+      "seed": 704,
+      "category": "fluid",
+      "split": "test"
+    }
+  ]
+}

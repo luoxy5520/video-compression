@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="325" viewBox="0 0 920 325" role="img" aria-labelledby="t d">
+<title id="t">Luma PSNR along a 33-frame H.264 reference chain</title>
+<desc id="d">Two panels show frame PSNR for the complete JM reference and direct-state replay; direct replay deteriorates over time.</desc>
+<rect width="920" height="325" fill="#fff"/>
+<g font-family="system-ui,sans-serif" fill="#1b2839" font-size="13">
+<text x="22" y="26" font-size="17" font-weight="650">33-frame stress test: luma PSNR by P-frame index</text>
+<text x="220" y="308" fill="#344b64">P-frame index (two model windows; a single H.264 reference chain)</text>
+<text x="57" y="53" font-weight="600">Van behind fence</text>
+<path d="M 57 266.0 h 382" stroke="#e4eaf1"/><text x="49" y="270.0" text-anchor="end">0</text>
+<path d="M 57 226.0 h 382" stroke="#e4eaf1"/><text x="49" y="230.0" text-anchor="end">10</text>
+<path d="M 57 186.0 h 382" stroke="#e4eaf1"/><text x="49" y="190.0" text-anchor="end">20</text>
+<path d="M 57 146.0 h 382" stroke="#e4eaf1"/><text x="49" y="150.0" text-anchor="end">30</text>
+<path d="M 57 106.0 h 382" stroke="#e4eaf1"/><text x="49" y="110.0" text-anchor="end">40</text>
+<path d="M 57 66.0 h 382" stroke="#e4eaf1"/><text x="49" y="70.0" text-anchor="end">50</text>
+<text x="57.0" y="284" text-anchor="middle">1</text>
+<text x="143.25806451612902" y="284" text-anchor="middle">8</text>
+<text x="241.83870967741936" y="284" text-anchor="middle">16</text>
+<text x="340.4193548387097" y="284" text-anchor="middle">24</text>
+<text x="439.0" y="284" text-anchor="middle">32</text>
+<path d="M 248.0 66 V 266" stroke="#a2acb8" stroke-dasharray="4 5"/>
+<polyline points="57.00,104.00 69.32,104.11 81.65,104.94 93.97,105.82 106.29,105.04 118.61,104.94 130.94,103.74 143.26,103.38 155.58,104.22 167.90,105.57 180.23,106.59 192.55,107.47 204.87,112.25 217.19,113.34 229.52,113.98 241.84,113.41 254.16,114.02 266.48,113.37 278.81,114.13 291.13,112.65 303.45,113.28 315.77,112.00 328.10,112.45 340.42,111.50 352.74,113.88 365.06,114.80 377.39,116.50 389.71,116.29 402.03,116.57 414.35,116.29 426.68,116.66 439.00,115.69" fill="none" stroke="#13705d" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="57.00,184.88 69.32,192.69 81.65,197.06 93.97,203.44 106.29,206.63 118.61,210.99 130.94,213.19 143.26,214.97 155.58,218.53 167.90,221.99 180.23,223.91 192.55,226.48 204.87,227.28 217.19,228.65 229.52,229.32 241.84,230.18 254.16,229.67 266.48,229.89 278.81,230.41 291.13,230.32 303.45,229.44 315.77,229.32 328.10,228.71 340.42,228.29 352.74,227.40 365.06,227.65 377.39,226.48 389.71,226.01 402.03,225.62 414.35,225.30 426.68,225.43 439.00,225.28" fill="none" stroke="#ad3c34" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="503" y="53" font-weight="600">Crossing skaters</text>
+<path d="M 503 266.0 h 382" stroke="#e4eaf1"/><text x="495" y="270.0" text-anchor="end">0</text>
+<path d="M 503 226.0 h 382" stroke="#e4eaf1"/><text x="495" y="230.0" text-anchor="end">10</text>
+<path d="M 503 186.0 h 382" stroke="#e4eaf1"/><text x="495" y="190.0" text-anchor="end">20</text>
+<path d="M 503 146.0 h 382" stroke="#e4eaf1"/><text x="495" y="150.0" text-anchor="end">30</text>
+<path d="M 503 106.0 h 382" stroke="#e4eaf1"/><text x="495" y="110.0" text-anchor="end">40</text>
+<path d="M 503 66.0 h 382" stroke="#e4eaf1"/><text x="495" y="70.0" text-anchor="end">50</text>
+<text x="503.0" y="284" text-anchor="middle">1</text>
+<text x="589.258064516129" y="284" text-anchor="middle">8</text>
+<text x="687.8387096774194" y="284" text-anchor="middle">16</text>
+<text x="786.4193548387098" y="284" text-anchor="middle">24</text>
+<text x="885.0" y="284" text-anchor="middle">32</text>
+<path d="M 694.0 66 V 266" stroke="#a2acb8" stroke-dasharray="4 5"/>
+<polyline points="503.00,118.49 515.32,118.91 527.65,118.69 539.97,118.61 552.29,119.09 564.61,119.40 576.94,119.37 589.26,119.14 601.58,119.59 613.90,119.79 626.23,119.85 638.55,119.82 650.87,120.57 663.19,120.26 675.52,119.75 687.84,119.37 700.16,120.00 712.48,119.98 724.81,119.84 737.13,119.58 749.45,120.35 761.77,120.11 774.10,120.01 786.42,119.62 798.74,119.65 811.06,119.96 823.39,119.80 835.71,119.26 848.03,119.86 860.35,119.89 872.68,119.96 885.00,119.71" fill="none" stroke="#13705d" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="503.00,155.18 515.32,165.54 527.65,168.19 539.97,170.74 552.29,172.42 564.61,175.30 576.94,176.09 589.26,177.70 601.58,177.74 613.90,179.36 626.23,180.52 638.55,180.82 650.87,182.20 663.19,182.54 675.52,183.52 687.84,184.52 700.16,184.88 712.48,185.66 724.81,185.81 737.13,186.49 749.45,187.22 761.77,187.56 774.10,188.26 786.42,188.46 798.74,188.84 811.06,189.67 823.39,189.70 835.71,190.23 848.03,190.97 860.35,191.31 872.68,191.79 885.00,191.91" fill="none" stroke="#ad3c34" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="670" y="27" fill="#13705d">━ Complete JM</text>
+<text x="794" y="27" fill="#ad3c34">━ Direct state</text>
+<text x="12" y="170" transform="rotate(-90 12 170)">dB</text>
+</g></svg>

@@ -1,0 +1,20 @@
+{
+  "step20_bit_exact": true,
+  "splits": {
+    "train": {
+      "videos": 24,
+      "prompts": 6,
+      "records": 96
+    },
+    "val": {
+      "videos": 12,
+      "prompts": 3,
+      "records": 48
+    },
+    "test": {
+      "videos": 12,
+      "prompts": 3,
+      "records": 48
+    }
+  }
+}

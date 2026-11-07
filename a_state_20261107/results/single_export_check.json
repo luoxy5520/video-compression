@@ -1,0 +1,76 @@
+{
+  "fields": {
+    "mode_id": {
+      "shape": [
+        16,
+        30,
+        52
+      ],
+      "dtype": "uint8",
+      "array_equal": true
+    },
+    "mv_qpel": {
+      "shape": [
+        16,
+        30,
+        52,
+        2
+      ],
+      "dtype": "int16",
+      "array_equal": true
+    },
+    "confidence": {
+      "shape": [
+        16,
+        30,
+        52,
+        3
+      ],
+      "dtype": "float32",
+      "array_equal": true
+    },
+    "p16_probability": {
+      "shape": [
+        16,
+        30,
+        52
+      ],
+      "dtype": "float32",
+      "array_equal": true
+    },
+    "residual_y": {
+      "shape": [
+        16,
+        30,
+        52,
+        16,
+        16
+      ],
+      "dtype": "int16",
+      "array_equal": true
+    },
+    "residual_u": {
+      "shape": [
+        16,
+        30,
+        52,
+        8,
+        8
+      ],
+      "dtype": "int16",
+      "array_equal": true
+    },
+    "residual_v": {
+      "shape": [
+        16,
+        30,
+        52,
+        8,
+        8
+      ],
+      "dtype": "int16",
+      "array_equal": true
+    }
+  },
+  "single_sha256": "5921a86cdeb95254216ad1627cc9b954f81bfb4e78143e6da5345138c0155d5b"
+}

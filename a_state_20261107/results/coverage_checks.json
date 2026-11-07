@@ -1,0 +1,43 @@
+{
+  "pilot": {
+    "videos": 8,
+    "predictions": 32,
+    "replays": 8
+  },
+  "hidden_pilot": {
+    "videos": 8,
+    "predictions": 32,
+    "replays": 0
+  },
+  "blind_pilot": {
+    "videos": 12,
+    "predictions": 48,
+    "replays": 12
+  },
+  "blind_control": {
+    "videos": 12,
+    "predictions": 48,
+    "replays": 12
+  },
+  "blind_expanded": {
+    "videos": 12,
+    "predictions": 48,
+    "replays": 12
+  },
+  "blind_hidden": {
+    "videos": 12,
+    "predictions": 48,
+    "replays": 12
+  },
+  "blind_recurrent": {
+    "videos": 12,
+    "predictions": 48,
+    "replays": 12
+  },
+  "oracle_residual": 8,
+  "oracle_residual_blind": 12,
+  "teacher_exact": 24,
+  "stress33": 2,
+  "frozen_codec_blind": 12,
+  "handoff_predictions": 320
+}
