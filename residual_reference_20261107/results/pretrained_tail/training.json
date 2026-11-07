@@ -1,0 +1,76 @@
+{
+  "channels": 192,
+  "trainable_parameters": 689196,
+  "steps": 4000,
+  "patches": {
+    "train": 240,
+    "public": 720,
+    "val": 96
+  },
+  "history": [
+    {
+      "step": 250,
+      "validation_patch_y_psnr": 19.490189437388192
+    },
+    {
+      "step": 500,
+      "validation_patch_y_psnr": 23.03297979908759
+    },
+    {
+      "step": 750,
+      "validation_patch_y_psnr": 24.991439523065985
+    },
+    {
+      "step": 1000,
+      "validation_patch_y_psnr": 26.035515689394106
+    },
+    {
+      "step": 1250,
+      "validation_patch_y_psnr": 26.794076421821444
+    },
+    {
+      "step": 1500,
+      "validation_patch_y_psnr": 27.502394677323654
+    },
+    {
+      "step": 1750,
+      "validation_patch_y_psnr": 28.140958021871988
+    },
+    {
+      "step": 2000,
+      "validation_patch_y_psnr": 28.855206421384434
+    },
+    {
+      "step": 2250,
+      "validation_patch_y_psnr": 28.286110959100622
+    },
+    {
+      "step": 2500,
+      "validation_patch_y_psnr": 29.395248844711176
+    },
+    {
+      "step": 2750,
+      "validation_patch_y_psnr": 29.752243311723664
+    },
+    {
+      "step": 3000,
+      "validation_patch_y_psnr": 30.232112688400274
+    },
+    {
+      "step": 3250,
+      "validation_patch_y_psnr": 30.32789818626988
+    },
+    {
+      "step": 3500,
+      "validation_patch_y_psnr": 30.518122835916984
+    },
+    {
+      "step": 3750,
+      "validation_patch_y_psnr": 30.501634755871784
+    },
+    {
+      "step": 4000,
+      "validation_patch_y_psnr": 30.795463684860195
+    }
+  ]
+}

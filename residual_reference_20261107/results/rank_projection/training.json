@@ -1,0 +1,42 @@
+{
+  "rank": 48,
+  "original_parameters": 7779,
+  "trainable_parameters": 8499,
+  "rank_selection": [
+    {
+      "rank": 48,
+      "validation_patch_rgb_psnr": 58.67974844996933
+    }
+  ],
+  "history": [
+    {
+      "step": 0,
+      "validation_patch_rgb_psnr": 58.67974844996933
+    },
+    {
+      "step": 200,
+      "validation_patch_rgb_psnr": 61.932747392117015
+    },
+    {
+      "step": 400,
+      "validation_patch_rgb_psnr": 62.39113467123349
+    },
+    {
+      "step": 600,
+      "validation_patch_rgb_psnr": 61.950967288720776
+    },
+    {
+      "step": 800,
+      "validation_patch_rgb_psnr": 62.68447496033204
+    },
+    {
+      "step": 1000,
+      "validation_patch_rgb_psnr": 62.69759156145474
+    }
+  ],
+  "best": 62.69759156145474,
+  "patches": {
+    "train": 800,
+    "val": 40
+  }
+}

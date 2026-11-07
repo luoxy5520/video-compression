@@ -1,0 +1,122 @@
+[
+  {
+    "sample_id": "sample_0000",
+    "p16_blocks": 3984,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0001",
+    "p16_blocks": 4088,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0002",
+    "p16_blocks": 5221,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0003",
+    "p16_blocks": 3592,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0004",
+    "p16_blocks": 20275,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0005",
+    "p16_blocks": 23367,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0006",
+    "p16_blocks": 23422,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0007",
+    "p16_blocks": 22581,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0008",
+    "p16_blocks": 1519,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0009",
+    "p16_blocks": 1053,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0010",
+    "p16_blocks": 1109,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0011",
+    "p16_blocks": 1064,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0012",
+    "p16_blocks": 17974,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0013",
+    "p16_blocks": 17154,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0014",
+    "p16_blocks": 17630,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0015",
+    "p16_blocks": 19848,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0016",
+    "p16_blocks": 19753,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0017",
+    "p16_blocks": 23061,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0018",
+    "p16_blocks": 23320,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0019",
+    "p16_blocks": 22472,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0020",
+    "p16_blocks": 23871,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0021",
+    "p16_blocks": 23034,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0022",
+    "p16_blocks": 23859,
+    "decoder_agreement": true
+  },
+  {
+    "sample_id": "sample_0023",
+    "p16_blocks": 22903,
+    "decoder_agreement": true
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "means": {
+    "assisted8": {
+      "proxy_y_psnr": 57.18616166735872,
+      "psnr_y_p_db": 40.76939104641387,
+      "psnr_yuv_p_db": 41.81189114991949,
+      "bitrate_kbps": 1287.4616470588235,
+      "head_s": 2.6660112418758217,
+      "jm_s": 1.3726501913915854,
+      "latent_to_bitstream_s": 4.067712762451265
+    }
+  },
+  "per_video": [
+    {
+      "sample_id": "sample_0024",
+      "variant": "assisted8",
+      "proxy_y_psnr": 57.385102787207316,
+      "bitrate_kbps": 2837.5416470588234,
+      "head_s": 2.6954809341114014,
+      "motion_s": 0.02122278092429042,
+      "jm_s": 1.3945406540296972,
+      "latent_to_bitstream_s": 4.111244369065389,
+      "extra_candidates_accepted": 11,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 38.530510349957375,
+      "psnr_yuv_p_db": 39.416578295355976
+    },
+    {
+      "sample_id": "sample_0025",
+      "variant": "assisted8",
+      "proxy_y_psnr": 57.49012280264181,
+      "bitrate_kbps": 2259.433411764706,
+      "head_s": 2.653902767924592,
+      "motion_s": 0.1687966191675514,
+      "jm_s": 1.3827030181419104,
+      "latent_to_bitstream_s": 4.205402405234054,
+      "extra_candidates_accepted": 10,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 39.44719494610814,
+      "psnr_yuv_p_db": 40.30146704374005
+    },
+    {
+      "sample_id": "sample_0026",
+      "variant": "assisted8",
+      "proxy_y_psnr": 57.44619185389932,
+      "bitrate_kbps": 2206.2531764705886,
+      "head_s": 2.6632304850500077,
+      "motion_s": 0.005835304036736488,
+      "jm_s": 1.3986911159008741,
+      "latent_to_bitstream_s": 4.067756904987618,
+      "extra_candidates_accepted": 7,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 39.404891968694976,
+      "psnr_yuv_p_db": 39.80759491638977
+    },
+    {
+      "sample_id": "sample_0027",
+      "variant": "assisted8",
+      "proxy_y_psnr": 57.48802381560007,
+      "bitrate_kbps": 1606.9044705882352,
+      "head_s": 2.65118027292192,
+      "motion_s": 0.00581143400631845,
+      "jm_s": 1.3802405598107725,
+      "latent_to_bitstream_s": 4.037232266739011,
+      "extra_candidates_accepted": 2,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 40.6181178229673,
+      "psnr_yuv_p_db": 41.41038046822538
+    },
+    {
+      "sample_id": "sample_0028",
+      "variant": "assisted8",
+      "proxy_y_psnr": 57.11204611268789,
+      "bitrate_kbps": 470.09882352941173,
+      "head_s": 2.66393008409068,
+      "motion_s": 0.00584772415459156,
+      "jm_s": 1.373820333974436,
+      "latent_to_bitstream_s": 4.043598142219707,
+      "extra_candidates_accepted": 2,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 40.97719089495148,
+      "psnr_yuv_p_db": 42.446372547934814
+    },
+    {
+      "sample_id": "sample_0029",
+      "variant": "assisted8",
+      "proxy_y_psnr": 57.2730238527932,
+      "bitrate_kbps": 274.9741176470588,
+      "head_s": 2.6691918671131134,
+      "motion_s": 0.008305654162541032,
+      "jm_s": 1.3503082210663706,
+      "latent_to_bitstream_s": 4.027805742342025,
+      "extra_candidates_accepted": 0,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 42.29987983777861,
+      "psnr_yuv_p_db": 43.55858410343548
+    },
+    {
+      "sample_id": "sample_0030",
+      "variant": "assisted8",
+      "proxy_y_psnr": 56.828697564423024,
+      "bitrate_kbps": 340.39717647058825,
+      "head_s": 2.666300494922325,
+      "motion_s": 0.00828641396947205,
+      "jm_s": 1.3985503790900111,
+      "latent_to_bitstream_s": 4.073137287981808,
+      "extra_candidates_accepted": 5,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 42.549249716655424,
+      "psnr_yuv_p_db": 43.985078037800555
+    },
+    {
+      "sample_id": "sample_0031",
+      "variant": "assisted8",
+      "proxy_y_psnr": 56.466084549617065,
+      "bitrate_kbps": 304.09035294117643,
+      "head_s": 2.6648730288725346,
+      "motion_s": 0.008304703049361706,
+      "jm_s": 1.3023472491186112,
+      "latent_to_bitstream_s": 3.9755249810405076,
+      "extra_candidates_accepted": 2,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 42.3280928341977,
+      "psnr_yuv_p_db": 43.56907378647388
+    }
+  ]
+}

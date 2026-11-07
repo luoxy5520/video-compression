@@ -1,0 +1,216 @@
+{
+  "means": {
+    "native8": {
+      "proxy_y_psnr": 27.208386803447663,
+      "psnr_y_p_db": 27.69853219829259,
+      "psnr_yuv_p_db": 29.207629904134485,
+      "bitrate_kbps": 1848.7868235294118,
+      "head_s": 0.015871667943429202,
+      "jm_s": 1.5633321733621415,
+      "latent_to_bitstream_s": 1.5792038413055707
+    },
+    "fixed_model_mode_mv": {
+      "proxy_y_psnr": 27.208386803447663,
+      "psnr_y_p_db": 25.210911464239874,
+      "psnr_yuv_p_db": 26.812881847065974,
+      "bitrate_kbps": 1622.7501176470587,
+      "head_s": 0.015871667943429202,
+      "jm_s": 0.7477739073219709,
+      "latent_to_bitstream_s": 0.7636455752654001
+    }
+  },
+  "per_video": [
+    {
+      "sample_id": "sample_0024",
+      "variant": "native8",
+      "proxy_y_psnr": 19.873429358255212,
+      "bitrate_kbps": 3936.180705882353,
+      "head_s": 0.055856061866506934,
+      "jm_s": 1.6697021857835352,
+      "latent_to_bitstream_s": 1.7255582476500422,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 19.97315512275399,
+      "psnr_yuv_p_db": 21.548139697575674
+    },
+    {
+      "sample_id": "sample_0024",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 19.873429358255212,
+      "bitrate_kbps": 3854.614588235294,
+      "head_s": 0.055856061866506934,
+      "jm_s": 0.8350427348632365,
+      "latent_to_bitstream_s": 0.8908987967297435,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 17.70888031111553,
+      "psnr_yuv_p_db": 19.349993398624452
+    },
+    {
+      "sample_id": "sample_0025",
+      "variant": "native8",
+      "proxy_y_psnr": 21.907671267670544,
+      "bitrate_kbps": 2761.170823529412,
+      "head_s": 0.010024616029113531,
+      "jm_s": 1.616327374940738,
+      "latent_to_bitstream_s": 1.6263519909698516,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 22.059599055211564,
+      "psnr_yuv_p_db": 23.627045166007523
+    },
+    {
+      "sample_id": "sample_0025",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 21.907671267670544,
+      "bitrate_kbps": 2682.872470588235,
+      "head_s": 0.010024616029113531,
+      "jm_s": 0.7872817208990455,
+      "latent_to_bitstream_s": 0.797306336928159,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 20.211591354476724,
+      "psnr_yuv_p_db": 21.825029965470645
+    },
+    {
+      "sample_id": "sample_0026",
+      "variant": "native8",
+      "proxy_y_psnr": 23.305315136263552,
+      "bitrate_kbps": 3275.075764705882,
+      "head_s": 0.010021314956247807,
+      "jm_s": 1.6333582249935716,
+      "latent_to_bitstream_s": 1.6433795399498194,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 23.54191286271358,
+      "psnr_yuv_p_db": 24.515122037801707
+    },
+    {
+      "sample_id": "sample_0026",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 23.305315136263552,
+      "bitrate_kbps": 2966.9270588235295,
+      "head_s": 0.010021314956247807,
+      "jm_s": 0.8164595218840986,
+      "latent_to_bitstream_s": 0.8264808368403465,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 21.363598320340998,
+      "psnr_yuv_p_db": 22.56539046780844
+    },
+    {
+      "sample_id": "sample_0027",
+      "variant": "native8",
+      "proxy_y_psnr": 23.53809808858214,
+      "bitrate_kbps": 1939.968,
+      "head_s": 0.00997694581747055,
+      "jm_s": 1.5829804241657257,
+      "latent_to_bitstream_s": 1.5929573699831963,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 23.729322890010298,
+      "psnr_yuv_p_db": 25.239358193541968
+    },
+    {
+      "sample_id": "sample_0027",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 23.53809808858214,
+      "bitrate_kbps": 1802.3529411764705,
+      "head_s": 0.00997694581747055,
+      "jm_s": 0.7821830750908703,
+      "latent_to_bitstream_s": 0.7921600209083408,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 21.68258555546553,
+      "psnr_yuv_p_db": 23.28479445519216
+    },
+    {
+      "sample_id": "sample_0028",
+      "variant": "native8",
+      "proxy_y_psnr": 30.923697864965668,
+      "bitrate_kbps": 966.2418823529412,
+      "head_s": 0.01092998986132443,
+      "jm_s": 1.4846403920091689,
+      "latent_to_bitstream_s": 1.4955703818704933,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 31.50740668486317,
+      "psnr_yuv_p_db": 33.15211294995596
+    },
+    {
+      "sample_id": "sample_0028",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 30.923697864965668,
+      "bitrate_kbps": 689.9124705882354,
+      "head_s": 0.01092998986132443,
+      "jm_s": 0.6932655479758978,
+      "latent_to_bitstream_s": 0.7041955378372222,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 29.034031542033656,
+      "psnr_yuv_p_db": 30.746570113625722
+    },
+    {
+      "sample_id": "sample_0029",
+      "variant": "native8",
+      "proxy_y_psnr": 32.167563712781615,
+      "bitrate_kbps": 643.8851764705882,
+      "head_s": 0.010012415936216712,
+      "jm_s": 1.5175957100000232,
+      "latent_to_bitstream_s": 1.52760812593624,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 32.974580958113386,
+      "psnr_yuv_p_db": 34.58611624193166
+    },
+    {
+      "sample_id": "sample_0029",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 32.167563712781615,
+      "bitrate_kbps": 302.5091764705883,
+      "head_s": 0.010012415936216712,
+      "jm_s": 0.6934909538831562,
+      "latent_to_bitstream_s": 0.7035033698193729,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 30.06478921512215,
+      "psnr_yuv_p_db": 31.760592505561686
+    },
+    {
+      "sample_id": "sample_0030",
+      "variant": "native8",
+      "proxy_y_psnr": 32.45442721594965,
+      "bitrate_kbps": 639.3072941176471,
+      "head_s": 0.010003416100516915,
+      "jm_s": 1.5112554940860718,
+      "latent_to_bitstream_s": 1.5212589101865888,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 33.32052411679546,
+      "psnr_yuv_p_db": 34.95711843021625
+    },
+    {
+      "sample_id": "sample_0030",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 32.45442721594965,
+      "bitrate_kbps": 310.1741176470588,
+      "head_s": 0.010003416100516915,
+      "jm_s": 0.678863505134359,
+      "latent_to_bitstream_s": 0.6888669212348759,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 29.454120535970482,
+      "psnr_yuv_p_db": 31.16912951288412
+    },
+    {
+      "sample_id": "sample_0031",
+      "variant": "native8",
+      "proxy_y_psnr": 33.496891783112915,
+      "bitrate_kbps": 628.4649411764706,
+      "head_s": 0.010148582980036736,
+      "jm_s": 1.4907975809182972,
+      "latent_to_bitstream_s": 1.500946163898334,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 34.48175589587929,
+      "psnr_yuv_p_db": 36.03602651604512
+    },
+    {
+      "sample_id": "sample_0031",
+      "variant": "fixed_model_mode_mv",
+      "proxy_y_psnr": 33.496891783112915,
+      "bitrate_kbps": 372.6381176470588,
+      "head_s": 0.010148582980036736,
+      "jm_s": 0.6956041988451034,
+      "latent_to_bitstream_s": 0.7057527818251401,
+      "decoder_agreement": true,
+      "psnr_y_p_db": 32.167694879393935,
+      "psnr_yuv_p_db": 33.80155435736059
+    }
+  ]
+}

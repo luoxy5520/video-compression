@@ -1,0 +1,190 @@
+{
+  "parameters": 2076768,
+  "train_generated": 20,
+  "train_public": 60,
+  "aligned_train": 20,
+  "steps": 4500,
+  "history": [
+    {
+      "step": 100,
+      "validation_y_psnr": 19.578086022122314
+    },
+    {
+      "step": 200,
+      "validation_y_psnr": 19.781246448296553
+    },
+    {
+      "step": 300,
+      "validation_y_psnr": 19.945737789583823
+    },
+    {
+      "step": 400,
+      "validation_y_psnr": 20.075791326226387
+    },
+    {
+      "step": 500,
+      "validation_y_psnr": 20.25893721737646
+    },
+    {
+      "step": 600,
+      "validation_y_psnr": 20.347995932533983
+    },
+    {
+      "step": 700,
+      "validation_y_psnr": 20.476780866499848
+    },
+    {
+      "step": 800,
+      "validation_y_psnr": 20.580387561845402
+    },
+    {
+      "step": 900,
+      "validation_y_psnr": 20.629522096864928
+    },
+    {
+      "step": 1000,
+      "validation_y_psnr": 20.588761744440195
+    },
+    {
+      "step": 1100,
+      "validation_y_psnr": 20.750360988875848
+    },
+    {
+      "step": 1200,
+      "validation_y_psnr": 20.793697060421582
+    },
+    {
+      "step": 1300,
+      "validation_y_psnr": 20.826121731253842
+    },
+    {
+      "step": 1400,
+      "validation_y_psnr": 21.004263472216298
+    },
+    {
+      "step": 1500,
+      "validation_y_psnr": 21.035069777968353
+    },
+    {
+      "step": 1600,
+      "validation_y_psnr": 21.103545317618572
+    },
+    {
+      "step": 1700,
+      "validation_y_psnr": 21.16459490121047
+    },
+    {
+      "step": 1800,
+      "validation_y_psnr": 21.145799547990723
+    },
+    {
+      "step": 1900,
+      "validation_y_psnr": 21.21039159229888
+    },
+    {
+      "step": 2000,
+      "validation_y_psnr": 21.274196343615234
+    },
+    {
+      "step": 2100,
+      "validation_y_psnr": 21.38456823088241
+    },
+    {
+      "step": 2200,
+      "validation_y_psnr": 21.43875994945101
+    },
+    {
+      "step": 2300,
+      "validation_y_psnr": 21.396925443534794
+    },
+    {
+      "step": 2400,
+      "validation_y_psnr": 21.5030156390673
+    },
+    {
+      "step": 2500,
+      "validation_y_psnr": 21.34365206366153
+    },
+    {
+      "step": 2600,
+      "validation_y_psnr": 21.565700311422837
+    },
+    {
+      "step": 2700,
+      "validation_y_psnr": 21.641019737094286
+    },
+    {
+      "step": 2800,
+      "validation_y_psnr": 21.7047946753112
+    },
+    {
+      "step": 2900,
+      "validation_y_psnr": 21.73671903256102
+    },
+    {
+      "step": 3000,
+      "validation_y_psnr": 21.741759929788422
+    },
+    {
+      "step": 3100,
+      "validation_y_psnr": 21.751169998082702
+    },
+    {
+      "step": 3200,
+      "validation_y_psnr": 21.86645094040296
+    },
+    {
+      "step": 3300,
+      "validation_y_psnr": 21.754836139534177
+    },
+    {
+      "step": 3400,
+      "validation_y_psnr": 21.8106552538972
+    },
+    {
+      "step": 3500,
+      "validation_y_psnr": 21.983834130087736
+    },
+    {
+      "step": 3600,
+      "validation_y_psnr": 21.971933345593598
+    },
+    {
+      "step": 3700,
+      "validation_y_psnr": 22.054768194889427
+    },
+    {
+      "step": 3800,
+      "validation_y_psnr": 22.047834871330064
+    },
+    {
+      "step": 3900,
+      "validation_y_psnr": 22.116133383492663
+    },
+    {
+      "step": 4000,
+      "validation_y_psnr": 22.043442955719065
+    },
+    {
+      "step": 4100,
+      "validation_y_psnr": 22.034102535428858
+    },
+    {
+      "step": 4200,
+      "validation_y_psnr": 22.15398312428595
+    },
+    {
+      "step": 4300,
+      "validation_y_psnr": 22.094054119154166
+    },
+    {
+      "step": 4400,
+      "validation_y_psnr": 22.169376734397748
+    },
+    {
+      "step": 4500,
+      "validation_y_psnr": 22.18187955701882
+    }
+  ],
+  "peak_allocated_gib": 0.6358113288879395
+}
