@@ -1,0 +1,14 @@
+{
+  "selected": "skip25",
+  "eligible": [
+    "refine",
+    "skip4",
+    "skip9",
+    "skip16",
+    "skip25"
+  ],
+  "native_validation_psnr": 33.810684510544064,
+  "mean_drop_limit": 0.25,
+  "worst_drop_limit": 0.75,
+  "fallback_max_validation_psnr": false
+}

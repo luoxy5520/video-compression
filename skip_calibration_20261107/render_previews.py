@@ -33,7 +33,12 @@ def main(a):
     a.output.mkdir(parents=True,exist_ok=True)
     report = json.loads((a.run/"results.json").read_text())
     records = { (r["sample_id"],r["variant"]):r for r in report["per_video"] if r.get("split","test")=="test" }
-    if a.experiment=="skip":
+    if a.experiment=="latent":
+        tag = report["calibration"]["selected"]
+        cases = [("Single MV","top1"),("Local qpel refine","refine")]
+        if tag not in ("top1","refine"):
+            cases.append(("Calibrated Skip",tag))
+    elif a.experiment=="skip":
         selected = report["calibration"]["selected"]
         tag = f"mse_{selected}" if isinstance(selected,int) else selected
         cases = [("Fixed Skip","fixed")]
@@ -55,5 +60,5 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser()
     for key in ("run","data","output"):
         parser.add_argument("--"+key,type=Path,required=True)
-    parser.add_argument("--experiment",choices=("replay","skip"),required=True)
+    parser.add_argument("--experiment",choices=("replay","skip","latent"),required=True)
     main(parser.parse_args())
