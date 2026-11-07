@@ -33,6 +33,18 @@ def main(a):
     a.output.mkdir(parents=True,exist_ok=True)
     report = json.loads((a.run/"results.json").read_text())
     records = { (r["sample_id"],r["variant"]):r for r in report["per_video"] if r.get("split","test")=="test" }
+    if a.experiment=="exact":
+        if not a.previous:
+            raise ValueError("Exact Skip previews require --previous")
+        for sid in sorted({sid for sid,_ in records}):
+            r = records[sid,"refine"]
+            panels = [("Source YUV",a.data/sid/"final_raw.yuv"),
+                      (f"Before  {r['old_bitrate_kbps']:.1f} kbps",
+                       a.previous/"samples"/sid/"refine/decoded_ffmpeg.yuv"),
+                      (f"Exact Skip  {r['bitrate_kbps']:.1f} kbps",
+                       a.run/"samples"/sid/"refine/decoded_ffmpeg.yuv")]
+            render(a.output/f"{sid}.mp4",panels)
+        return
     if a.experiment=="latent":
         tag = report["calibration"]["selected"]
         cases = [("Single MV","top1"),("Local qpel refine","refine")]
@@ -60,5 +72,6 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser()
     for key in ("run","data","output"):
         parser.add_argument("--"+key,type=Path,required=True)
-    parser.add_argument("--experiment",choices=("replay","skip","latent"),required=True)
+    parser.add_argument("--previous",type=Path)
+    parser.add_argument("--experiment",choices=("replay","skip","latent","exact"),required=True)
     main(parser.parse_args())
