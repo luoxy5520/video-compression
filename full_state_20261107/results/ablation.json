@@ -1,0 +1,214 @@
+{
+  "means": {
+    "oracle_mode": {
+      "bitrate_kbps": 203.4164705882353,
+      "psnr_y_p_db": 21.012225498682174,
+      "psnr_yuv_p_db": 22.57847904698967
+    },
+    "only_residual_predicted": {
+      "bitrate_kbps": 256.71529411764703,
+      "psnr_y_p_db": 26.75172330711893,
+      "psnr_yuv_p_db": 28.28561226099891
+    },
+    "only_mv_predicted": {
+      "bitrate_kbps": 1152.0602352941178,
+      "psnr_y_p_db": 20.758474684506666,
+      "psnr_yuv_p_db": 22.272758957733572
+    }
+  },
+  "per_video": [
+    {
+      "sample_id": "sample_0024",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 418.3416470588235,
+      "psnr_y_p_db": 14.191043304332442,
+      "psnr_yuv_p_db": 15.847457071061017
+    },
+    {
+      "sample_id": "sample_0024",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 513.4230588235293,
+      "psnr_y_p_db": 19.710494601009806,
+      "psnr_yuv_p_db": 21.27896714996265
+    },
+    {
+      "sample_id": "sample_0024",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 2568.4630588235295,
+      "psnr_y_p_db": 14.159790025647219,
+      "psnr_yuv_p_db": 15.683826752263437
+    },
+    {
+      "sample_id": "sample_0025",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 288.3312941176471,
+      "psnr_y_p_db": 15.330083213535069,
+      "psnr_yuv_p_db": 16.962125782895356
+    },
+    {
+      "sample_id": "sample_0025",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 362.6315294117647,
+      "psnr_y_p_db": 20.285084564423887,
+      "psnr_yuv_p_db": 21.948932442827626
+    },
+    {
+      "sample_id": "sample_0025",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 2036.050823529412,
+      "psnr_y_p_db": 15.271389259160914,
+      "psnr_yuv_p_db": 16.860806447207718
+    },
+    {
+      "sample_id": "sample_0026",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 312.89223529411765,
+      "psnr_y_p_db": 18.331396465938592,
+      "psnr_yuv_p_db": 19.083806132848455
+    },
+    {
+      "sample_id": "sample_0026",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 399.6461176470588,
+      "psnr_y_p_db": 23.86304966916387,
+      "psnr_yuv_p_db": 24.576177412629626
+    },
+    {
+      "sample_id": "sample_0026",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 1969.1444705882352,
+      "psnr_y_p_db": 17.235245530972886,
+      "psnr_yuv_p_db": 17.85571562614811
+    },
+    {
+      "sample_id": "sample_0027",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 214.0084705882353,
+      "psnr_y_p_db": 18.433025678486555,
+      "psnr_yuv_p_db": 20.03954130776875
+    },
+    {
+      "sample_id": "sample_0027",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 273.4155294117647,
+      "psnr_y_p_db": 22.198041731398284,
+      "psnr_yuv_p_db": 23.81696883797854
+    },
+    {
+      "sample_id": "sample_0027",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 1441.0992941176469,
+      "psnr_y_p_db": 18.13865112168273,
+      "psnr_yuv_p_db": 19.65020676489283
+    },
+    {
+      "sample_id": "sample_0028",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 111.31482352941177,
+      "psnr_y_p_db": 22.857770446378282,
+      "psnr_yuv_p_db": 24.605617676859097
+    },
+    {
+      "sample_id": "sample_0028",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 149.05976470588234,
+      "psnr_y_p_db": 30.433337735764074,
+      "psnr_yuv_p_db": 32.15265802394182
+    },
+    {
+      "sample_id": "sample_0028",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 397.9971764705883,
+      "psnr_y_p_db": 22.371727920011523,
+      "psnr_yuv_p_db": 24.11580036912023
+    },
+    {
+      "sample_id": "sample_0029",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 92.76988235294118,
+      "psnr_y_p_db": 26.938087908551246,
+      "psnr_yuv_p_db": 28.660830929626535
+    },
+    {
+      "sample_id": "sample_0029",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 111.71388235294117,
+      "psnr_y_p_db": 33.00562716007414,
+      "psnr_yuv_p_db": 34.653003575134434
+    },
+    {
+      "sample_id": "sample_0029",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 250.57882352941178,
+      "psnr_y_p_db": 27.2835128585041,
+      "psnr_yuv_p_db": 29.012673792107456
+    },
+    {
+      "sample_id": "sample_0030",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 86.43764705882353,
+      "psnr_y_p_db": 24.28426502425686,
+      "psnr_yuv_p_db": 26.025821540214015
+    },
+    {
+      "sample_id": "sample_0030",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 116.26164705882353,
+      "psnr_y_p_db": 31.067464146068,
+      "psnr_yuv_p_db": 32.766333172233686
+    },
+    {
+      "sample_id": "sample_0030",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 288.768,
+      "psnr_y_p_db": 23.892079741604533,
+      "psnr_yuv_p_db": 25.620755050430354
+    },
+    {
+      "sample_id": "sample_0031",
+      "variant": "oracle_mode",
+      "decoder_agreement": true,
+      "bitrate_kbps": 103.23576470588235,
+      "psnr_y_p_db": 27.73213194797835,
+      "psnr_yuv_p_db": 29.402631934644113
+    },
+    {
+      "sample_id": "sample_0031",
+      "variant": "only_residual_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 127.57082352941177,
+      "psnr_y_p_db": 33.45068684904938,
+      "psnr_yuv_p_db": 35.09185747328289
+    },
+    {
+      "sample_id": "sample_0031",
+      "variant": "only_mv_predicted",
+      "decoder_agreement": true,
+      "bitrate_kbps": 264.38023529411765,
+      "psnr_y_p_db": 27.71540101846943,
+      "psnr_yuv_p_db": 29.382286859698436
+    }
+  ],
+  "note": "Diagnostic hybrid states only; residual predictions were produced with predicted MV conditioning. Oracle residual targets were derived under Oracle motion and reconstruction, so hybrid effects are not additive."
+}

@@ -1,0 +1,9 @@
+{
+  "baseline_clips": 8,
+  "predicted_clips": 32,
+  "hybrid_clips": 24,
+  "dual_decoder_agreement": "64/64",
+  "raw_and_bitstream_baseline_matches_oracle": "8/8",
+  "mode_predictions_match_prior_checkpoint": "32/32",
+  "prediction_replays_without_motion_search": "32/32"
+}
