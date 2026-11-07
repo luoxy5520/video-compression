@@ -1,0 +1,9 @@
+{
+  "selected": "all_p16",
+  "native8_mean_psnr": 33.810684510544064,
+  "criteria": {
+    "mean_drop_db": 0.25,
+    "worst_drop_db": 0.75
+  },
+  "eligible_thresholds": []
+}

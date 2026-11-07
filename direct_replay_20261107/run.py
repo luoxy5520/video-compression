@@ -59,7 +59,7 @@ def get_new(a, sid, head):
 
 
 def encode(a, backend, row, sid, tag, arrays, *, proxy=None, weights=None, trace=False,
-           decision_s=None):
+           decision_s=None, extra_env=None):
     folder = a.output/"samples"/sid/tag
     folder.mkdir(parents=True, exist_ok=False)
     start = time.perf_counter()
@@ -82,6 +82,8 @@ def encode(a, backend, row, sid, tag, arrays, *, proxy=None, weights=None, trace
         env["JM_ALIGNED_WEIGHTS"] = str(weights)
     if trace:
         env["JM_LIVE_MC_TRACE"] = str(folder/"mc.bin")
+    if extra_env:
+        env.update(extra_env)
     bitstream = folder/"prediction.264"
     settings = dict(InputFile=a.output/"dummy.yuv", OutputFile=bitstream,
                     ReconFile=folder/"recon.yuv", SourceWidth=832, SourceHeight=480,
