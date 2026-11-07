@@ -1,0 +1,10 @@
+{
+  "selected": 4,
+  "eligible": [
+    4,
+    6
+  ],
+  "mean_drop": 0.1,
+  "worst_drop": 0.35,
+  "rate_ratio": 1.02
+}

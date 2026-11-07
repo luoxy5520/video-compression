@@ -1,0 +1,102 @@
+[
+  {
+    "epoch": 1,
+    "val_loss": 1.8840210437774658,
+    "val_top4_direction_recall": 0.7076168060302734
+  },
+  {
+    "epoch": 2,
+    "val_loss": 1.858466386795044,
+    "val_top4_direction_recall": 0.7175177931785583
+  },
+  {
+    "epoch": 3,
+    "val_loss": 1.8519192934036255,
+    "val_top4_direction_recall": 0.7214912176132202
+  },
+  {
+    "epoch": 4,
+    "val_loss": 1.849968433380127,
+    "val_top4_direction_recall": 0.7201558947563171
+  },
+  {
+    "epoch": 5,
+    "val_loss": 1.8457270860671997,
+    "val_top4_direction_recall": 0.7209050059318542
+  },
+  {
+    "epoch": 6,
+    "val_loss": 1.8472672700881958,
+    "val_top4_direction_recall": 0.7201125025749207
+  },
+  {
+    "epoch": 7,
+    "val_loss": 1.844346046447754,
+    "val_top4_direction_recall": 0.721339225769043
+  },
+  {
+    "epoch": 8,
+    "val_loss": 1.8453922271728516,
+    "val_top4_direction_recall": 0.7199605107307434
+  },
+  {
+    "epoch": 9,
+    "val_loss": 1.8428113460540771,
+    "val_top4_direction_recall": 0.7205467224121094
+  },
+  {
+    "epoch": 10,
+    "val_loss": 1.8467544317245483,
+    "val_top4_direction_recall": 0.7175287008285522
+  },
+  {
+    "epoch": 11,
+    "val_loss": 1.8459914922714233,
+    "val_top4_direction_recall": 0.7188422679901123
+  },
+  {
+    "epoch": 12,
+    "val_loss": 1.8445866107940674,
+    "val_top4_direction_recall": 0.7189508676528931
+  },
+  {
+    "epoch": 13,
+    "val_loss": 1.846337914466858,
+    "val_top4_direction_recall": 0.7194610834121704
+  },
+  {
+    "epoch": 14,
+    "val_loss": 1.8466094732284546,
+    "val_top4_direction_recall": 0.7173224091529846
+  },
+  {
+    "epoch": 15,
+    "val_loss": 1.8446124792099,
+    "val_top4_direction_recall": 0.7184948921203613
+  },
+  {
+    "epoch": 16,
+    "val_loss": 1.8443737030029297,
+    "val_top4_direction_recall": 0.7204164862632751
+  },
+  {
+    "epoch": 17,
+    "val_loss": 1.8466289043426514,
+    "val_top4_direction_recall": 0.7167252898216248
+  },
+  {
+    "epoch": 18,
+    "val_loss": 1.8427456617355347,
+    "val_top4_direction_recall": 0.7196456789970398
+  },
+  {
+    "epoch": 19,
+    "val_loss": 1.8436143398284912,
+    "val_top4_direction_recall": 0.721469521522522
+  },
+  {
+    "epoch": 20,
+    "val_loss": 1.845885157585144,
+    "val_top4_direction_recall": 0.7191354036331177
+  }
+]

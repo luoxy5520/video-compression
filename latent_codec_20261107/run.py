@@ -60,11 +60,13 @@ def load_models(a):
 
 
 @torch.inference_mode()
-def prepare_one(latent, folder, vae, head):
+def prepare_one(latent, folder, vae, head, *, keep_features=False):
     folder.mkdir(parents=True,exist_ok=True)
     start = time.perf_counter()
     vae_s = proxy({"latent_path":str(latent)},folder/"proxy.yuv",vae)
     candidates, features = shortlist(folder/"proxy.yuv")
+    if keep_features:
+        np.save(folder/"features.npy", features, allow_pickle=False)
     costs,_ = head(torch.from_numpy(features).cuda())
     top = costs.topk(4,largest=False).indices.cpu().numpy()
     qpel = 4*np.take_along_axis(candidates,top[...,None],axis=1)
@@ -83,7 +85,7 @@ def prepare(a, samples):
             print(json.dumps(dict(sample_id=sid,**timing)),flush=True)
 
 
-def encode_prepared(a, backend, sample, case, tag):
+def encode_prepared(a, backend, sample, case, tag, extra_env=None):
     case.mkdir()
     bitstream = case/"prediction.264"
     proxy_path = sample/"proxy.yuv"
@@ -99,6 +101,8 @@ def encode_prepared(a, backend, sample, case, tag):
         options["JM_LATENT_REFINE"] = "1"
     if tag.startswith("skip"):
         options["JM_SKIP_GATE_MSE"] = tag.removeprefix("skip")
+    if extra_env:
+        options.update(extra_env)
     settings = dict(InputFile=proxy_path,OutputFile=bitstream,ReconFile=case/"recon.yuv",
                     SourceWidth=832,SourceHeight=480,FramesToBeEncoded=17,FrameRate=16,
                     QPISlice=28,QPPSlice=28,RDOptimization=0,NumberReferenceFrames=1,PList0References=1)
@@ -111,11 +115,11 @@ def encode_prepared(a, backend, sample, case, tag):
     return bitstream, time.perf_counter()-start
 
 
-def run_case(a, backend, item):
+def run_case(a, backend, item, *, name=None, extra_env=None):
     split,sid,tag = item
     sample = a.output/"samples"/sid
-    case = sample/tag
-    bitstream, encode_s = encode_prepared(a,backend,sample,case,tag)
+    case = sample/(name or tag)
+    bitstream, encode_s = encode_prepared(a,backend,sample,case,tag,extra_env=extra_env)
     prepared = json.loads((sample/"prepared.json").read_text())
     result = collect_quality(backend,case,bitstream,a.data/sid/"final_raw.yuv",
                              dict(encoder_s=encode_s,**prepared,
@@ -130,7 +134,7 @@ def run_case(a, backend, item):
         raise ValueError("Incomplete Skip gate")
     if tag != "top1" and (not motion or int(motion[1])+skip_count!=BLOCKS):
         raise ValueError("Incomplete shortlist selection")
-    result.update(sample_id=sid,split=split,variant=tag,encoder_matches_decoder=True,
+    result.update(sample_id=sid,split=split,variant=name or tag,encoder_matches_decoder=True,
                   skip_fraction=skip_count/BLOCKS,candidates_per_mb=int(motion[2])/BLOCKS if motion else 1)
     (case/"metrics.json").write_text(json.dumps(result,indent=2))
     return result

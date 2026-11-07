@@ -33,7 +33,12 @@ def main(a):
     a.output.mkdir(parents=True,exist_ok=True)
     report = json.loads((a.run/"results.json").read_text())
     records = { (r["sample_id"],r["variant"]):r for r in report["per_video"] if r.get("split","test")=="test" }
-    if a.experiment=="exact":
+    if a.experiment=="qpel":
+        selected = report["calibration"]["selected"]
+        cases = [("Full local directions","teacher")]
+        if selected:
+            cases.append((f"Learned top {selected}",f"top{selected}"))
+    elif a.experiment=="exact":
         if not a.previous:
             raise ValueError("Exact Skip previews require --previous")
         for sid in sorted({sid for sid,_ in records}):
@@ -45,7 +50,7 @@ def main(a):
                        a.run/"samples"/sid/"refine/decoded_ffmpeg.yuv")]
             render(a.output/f"{sid}.mp4",panels)
         return
-    if a.experiment=="latent":
+    elif a.experiment=="latent":
         tag = report["calibration"]["selected"]
         cases = [("Single MV","top1"),("Local qpel refine","refine")]
         if tag not in ("top1","refine"):
@@ -73,5 +78,5 @@ if __name__=="__main__":
     for key in ("run","data","output"):
         parser.add_argument("--"+key,type=Path,required=True)
     parser.add_argument("--previous",type=Path)
-    parser.add_argument("--experiment",choices=("replay","skip","latent","exact"),required=True)
+    parser.add_argument("--experiment",choices=("replay","skip","latent","exact","qpel"),required=True)
     main(parser.parse_args())
