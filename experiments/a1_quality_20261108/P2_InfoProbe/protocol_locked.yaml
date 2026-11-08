@@ -1,0 +1,25 @@
+historical_code: 387cdb2d504e04f1810a0cd913ffccb8edbc33a3
+historical_artifacts: 6e875a677dff9f40da3168b8855e08aad09f21cc
+split: historical_step20_44_train_16_val_11_and_4_disjoint_prompts
+blind: sealed
+replay: "17 frames, 832x480 YUV420, Oracle I, QP28, Baseline CAVLC, single reference, zero search"
+anchor: "P0.6 frozen A, unchanged Mode and native qpel MV"
+label: P0_6_offline_gain_3_on_own_reconstructed_reference
+d0:
+  sample: sample_0000
+  subset_rule: first_nonzero_block_then_its_frame_then_entire_video
+  seed: 1701
+  original_head: P2_Lite_low
+  updates_per_tier: 200
+  optimizer: "AdamW, lr 0.001, original losses and positive weight 24"
+  top_k: teacher_support_count_for_diagnostic_only
+  gate: "Exact lookup must recover the historical teacher stream and gains. If the head cannot approach the lookup on the fixed sample, inspect target coverage, ranking and values and repair before G."
+d1:
+  groups: [A, TT, TS, ST, SS]
+  reference: recompute_source_assisted_target_from_each_arms_previous_JM_reconstruction
+  primary_rate_pct: 3
+  absolute_rate_pct: 5
+g:
+  seeds: [1701, 1702]
+  sequence: [G0_G1_G2, G3_G4_if_unexplained, G5_if_source_or_layer_increment]
+  student_gate: "paired prompt means for P Y-PSNR and last-four positive, no clip below -0.30 dB, all clips within +5% and prioritize +3%, two seeds, strict complete JM replay"

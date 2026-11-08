@@ -23,3 +23,19 @@ git -C P2-Lite-review checkout
 ```
 
 [复现代码](https://github.com/luoxy5520/video-compression/tree/codex/a1-p2-lite-20261108/experiments/a1_quality_20261108/P2_Lite) · [完整科研记录](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-lite-20261108)
+
+## P2-InfoProbe
+
+- [d1_closest_sample_0021](videos/p2_infoprobe/d1_closest_sample_0021.mp4)
+- [d1_worst_sample_1025](videos/p2_infoprobe/d1_worst_sample_1025.mp4)
+- [probe_G0-1701_R_sample_1030](videos/p2_infoprobe/probe_G0-1701_R_sample_1030.mp4)
+
+四宫格为原始源、冻结 A、D1 TT 源辅助诊断及实际学生回放。视频 17 帧、16 fps，预览统一重编码。评测使用归档原始码流。
+
+从 113Server 取精简版，先在一个空目录运行。只导出 Markdown、地图和本轮三个 MP4。
+
+```sh
+ssh 113Server 'cd ~/dit-p2-infoprobe-20261108 && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_infoprobe experiments/a1_quality_20261108/P2_InfoProbe/README.md experiments/a1_quality_20261108/P2_InfoProbe/decision.md experiments/a1_quality_20261108/P2_InfoProbe/environment_audit.md experiments/a1_quality_20261108/P2_InfoProbe/D0_overfit_report.md experiments/a1_quality_20261108/P2_InfoProbe/D1_position_value_report.md experiments/a1_quality_20261108/P2_InfoProbe/G0_G2_comparison.md experiments/a1_quality_20261108/P2_InfoProbe/G3_G5_conditional_report.md' | tar -xf -
+```
+
+[代码与报告](https://github.com/luoxy5520/video-compression/tree/codex/a1-p2-infoprobe-20261108/experiments/a1_quality_20261108/P2_InfoProbe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-infoprobe-20261108)

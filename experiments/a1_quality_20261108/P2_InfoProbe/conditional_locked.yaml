@@ -1,0 +1,7 @@
+trigger: "G0/G1/G2 failed to separate feature-source causes; rounded sign BA below 2% and replay deltas near zero"
+subset: first_sample_of_first_four_distinct_prompts_each_split
+comparison: [G1_subset, G3, G4]
+G3: clean_latent_step20_2x2_unshuffle_then_frozen_A_trunk
+G4: "conditional DiT block 14, zero based, step 20; recapture last block must match frozen feature exactly"
+training: "same head, losses, seeds, epochs, labels and budget; 4 train and 4 validation clips"
+G5: "requires repeatable source or feature-layer increment beyond seed variation"

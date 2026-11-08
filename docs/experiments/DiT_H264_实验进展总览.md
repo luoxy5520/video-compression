@@ -51,3 +51,11 @@ DC-only 74,114 个可训参数。64 个/视频、种子 1701 的头部推理中�
 **判定：停止扩大 Residual Head。** 当前可部署结果保留冻结 A。P2-Lite-4 学生轨迹再训练、P2-Lite-5 联合微调及 P3 均未触发。若重新立项，先验证特征能否在学生实际参考上提供可迁移的位置与符号信息，再决定是否调整模型或预算策略。最终盲测封存。
 
 [复现入口](https://github.com/luoxy5520/video-compression/tree/codex/a1-p2-lite-20261108/experiments/a1_quality_20261108/P2_Lite) · [实验地图](../../实验地图.html) · [本地视频](../local_review/) · [完整科研记录与校验清单](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-lite-20261108)
+
+## P2-InfoProbe｜A/B 残差可学习性诊断
+
+环境、标签和回放核验通过。冻结 A 复跑 20.408 dB、439.514 kb/s，末四帧 18.810 dB。D0 的原头整段位置命中 3/217；修复后为 204/226，固定样本通过。D1 的 SS 平均 −0.0900 dB，TT 真实源辅助诊断为 +0.1444 dB，尾帧 +0.1878 dB。位置和值都限制泛化。
+
+G0–G2 两种子在统一输入权限、训练条件和预算下完成真实回放，未出现稳定学生收益。G3/G4 同小子集条件比较完成，离线改善随样本、指标或种子变化。G5、G4b 和 P3 未启动。继续使用冻结 A，最终盲测封存。
+
+[阶段报告](../../experiments/a1_quality_20261108/P2_InfoProbe/decision.md) · [实验地图](../../实验地图.html#a1-quality-p2-infoprobe) · [精选 MP4](../local_review/README.md#p2-infoprobe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-infoprobe-20261108)

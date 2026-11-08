@@ -1,0 +1,9 @@
+seed: 1701
+updates: 400
+learning_rate: 0.001
+optimizer: AdamW
+frequencies: all_16_native_raster
+position_loss: mean_softplus_negative_positive_logits_plus_mean_softplus_top_K_negative_logits
+K: number_of_teacher_positions_diagnostic_only
+value_loss: original_sign_bce_and_magnitude_cross_entropy
+fixed_chroma: frozen_A

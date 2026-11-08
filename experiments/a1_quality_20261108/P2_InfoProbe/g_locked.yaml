@@ -1,0 +1,12 @@
+features: "83 shared channels, frozen hidden backbone 64, fixed A Mode/MV 3, previous frozen A reconstructed luma mean 16 (4x4 grid per macroblock)"
+G0: [hidden]
+G1: [hidden, mode_mv]
+G2: [hidden, mode_mv, frozen_A_previous_reference_diagnostic]
+masked_channels: zero
+target: source_minus_MC_from_frozen_A_trajectory_at_native_qpel
+C: QP28_DC_first_horizontal_first_vertical
+R: DC_pixel_block_mean
+training: "12 epochs, AdamW 0.001, one update per training video, seeds 1701 and 1702, identical head and loss"
+training_loss: "top64 magnitude ranking with hard negatives, plus fixed sample and top64 Smooth L1 for signed C and R"
+fixed_locations: "8192 per video, deterministic seed 52020, P16 blocks only"
+replay: "C or quantized R, fixed 64 coefficient top budget, validate actual per-clip bit cap"
