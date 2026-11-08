@@ -1,0 +1,46 @@
+{
+  "T0-1701": {
+    "sample": "sample_0020",
+    "state_sha256": "f7f823360830c63302862c29895a644ad7547c6f3002e9e9f9673a091e9d3217",
+    "fields": {
+      "mode_id": true,
+      "mv_qpel": true,
+      "residual_y": true,
+      "residual_u": true,
+      "residual_v": true
+    }
+  },
+  "T1-1701": {
+    "sample": "sample_0020",
+    "state_sha256": "03818f089376ba45aec644befd46612c7448cdee5f108d62ad2174f8b64523cb",
+    "fields": {
+      "mode_id": true,
+      "mv_qpel": true,
+      "residual_y": true,
+      "residual_u": true,
+      "residual_v": true
+    }
+  },
+  "T0-1702": {
+    "sample": "sample_0020",
+    "state_sha256": "14475235def438def3322b0508a9ffb99a18e0a56db7f8be25e37beab6f7ee53",
+    "fields": {
+      "mode_id": true,
+      "mv_qpel": true,
+      "residual_y": true,
+      "residual_u": true,
+      "residual_v": true
+    }
+  },
+  "T1-1702": {
+    "sample": "sample_0020",
+    "state_sha256": "8e1b4aac18c68882d5036a4f072b849ee3165e3b1a5841b7f4bd8f1f8b6e1d96",
+    "fields": {
+      "mode_id": true,
+      "mv_qpel": true,
+      "residual_y": true,
+      "residual_u": true,
+      "residual_v": true
+    }
+  }
+}

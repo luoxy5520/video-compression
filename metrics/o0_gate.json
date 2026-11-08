@@ -1,0 +1,50 @@
+{
+  "proceed": true,
+  "teacher_rd": {
+    "T0": {
+      "policy": "frame",
+      "budget": 4,
+      "delta_db": 0.14183536001860875,
+      "delta_last4_db": 0.1627261638791191,
+      "rate_pct": 0.8356513472085867,
+      "bitrate_kbps": 441.9901176470588,
+      "psnr_y_p_db": 20.550075408398996,
+      "last4_db": 18.972438800308606,
+      "delta_offline_3_db": 0,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": true,
+      "worst_clip": "sample_0023",
+      "worst_delta_db": 0.006034390200792217,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": 0.0439123153492349,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": 0.39532800284191527,
+        "A skater passes behind a stone column and reappears, filmed from the side.": 0.054183137179630414,
+        "A slow leftward pan shows rows of brightly colored market stalls.": 0.0739179847036544
+      }
+    },
+    "T1": {
+      "policy": "frame",
+      "budget": 4,
+      "delta_db": 0.06832150333302123,
+      "delta_last4_db": 0.07015780372550218,
+      "rate_pct": 0.8310855204086711,
+      "bitrate_kbps": 441.9670588235294,
+      "psnr_y_p_db": 20.47656155171341,
+      "last4_db": 18.87987044015499,
+      "delta_offline_3_db": 0,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": true,
+      "worst_clip": "sample_0023",
+      "worst_delta_db": -0.012646385732253407,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": 0.02421526689466491,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": 0.14895519276944302,
+        "A skater passes behind a stone column and reappears, filmed from the side.": 0.03499563473069944,
+        "A slow leftward pan shows rows of brightly colored market stalls.": 0.06511991893727753
+      }
+    }
+  },
+  "reference_policy": "fixed-prefix oracle"
+}
