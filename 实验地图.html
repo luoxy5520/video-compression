@@ -21,7 +21,7 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#a1-quality-p0">A1 P0</a><a href="#a1-quality-p05">A1 P0.5</a><a href="#a1-quality-p06">A1 P0.6</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
+<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#a1-quality-p0">A1 P0</a><a href="#a1-quality-p05">A1 P0.5</a><a href="#a1-quality-p06">A1 P0.6</a><a href="#a1-quality-p2lite">A1 P2-Lite</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
 <div class="hero"><div class="wrap">
 <div class="eyebrow">Experiment map / 2026.11.07</div>
 <h1>从 latent 读出<br>H.264 压缩状态</h1>
@@ -285,16 +285,98 @@ kit=~/senior-oracle-expand32-20261106
 </section>
 <section id="a1-quality-p05">
 <div class="eyebrow">A1 / P0.5</div><h2>Skip/P16 一致性与码率瓶颈</h2>
-<div class="panel"><p>113Server 完成 44 条训练和 16 条验证视频。原生 Skip 与 P16 候选在固定参考下合并比较，随后严格回放 18 个联合 RD 点。与验证基线 20.408 dB、439.514 kb/s 相比，联合冻结残差 λ=256 为 20.166 dB、445.044 kb/s。所有选点均未过门槛。</p>
+<div class="panel"><p>113Server 完成 44 条训练和 16 条验证视频。原生 Skip 与 P16 候选在固定参考下合并比较，随后严格回放 18 个联合 RD 点。与验证基线 20.408 dB、439.514 kb/s 相比，联合冻结残差 λ=256 为 20.166 dB、445.044 kb/s。固定参考局部代价下降 3.16%，真实回放 P 帧下降 0.242 dB、末四帧下降 0.517 dB。所有选点均未过门槛。</p>
 <p>按自身重建轨迹配对的 E 达到 36.537 dB、3826.293 kb/s。E 相对 A 的新增比特中 95.29% 直接来自残差系数。阶段维持冻结基线，下一轮优先定位受码率约束的残差收益。</p>
 <p><a href="experiments/a1_quality_20261108/P0_5/decision.md">阶段判定</a> · <a href="experiments/a1_quality_20261108/P0_5/results/rd_curve.svg">真实 RD 曲线</a> · <a href="experiments/a1_quality_20261108/P0_5/results/bit_allocation.svg">A/F/E 比特分布</a> · <a href="experiments/a1_quality_20261108/P0_5/results/per_frame.csv">逐帧诊断</a></p></div>
 </section>
 <section id="a1-quality-p06">
 <div class="eyebrow">A1 / P0.6</div><h2>固定 Mode/MV 的残差率失真可行性</h2>
 <div class="panel"><p>冻结 A 的 Mode/MV 和 QP28。44 条训练和 16 条验证视频比较三种逐帧分配与五档残差预算，每一帧按策略自身的实际 JM 重建轨迹产生稀疏残差。严格回放使用预导出全段状态。</p>
-<p>验证基线为 20.408 dB、439.514 kb/s。早期倾斜 +5% 档为 21.047 dB、460.635 kb/s，末四帧提升 0.607 dB。离线收益分配 +5% 档末四帧提升 0.771 dB。三种分配在 +3% 与 +5% 档均过锁定门槛，支持小规模 Residual Head 原型验证。</p>
+<p>验证基线为 20.408 dB、439.514 kb/s。离线收益分配 +3% 档为 20.826 dB、452.390 kb/s，末四帧提升 0.526 dB。早期倾斜 +5% 档为 21.047 dB、460.635 kb/s，末四帧提升 0.607 dB。离线收益分配 +5% 档末四帧提升 0.771 dB。三种分配在 +3% 与 +5% 档均过锁定门槛，支持小规模 Residual Head 原型验证。此处稀疏残差依赖真实源离线选择。</p>
 <p><a href="experiments/a1_quality_20261108/P0_6/decision.md">阶段判定</a> · <a href="experiments/a1_quality_20261108/P0_6/results/rd_curve.svg">真实 RD 曲线</a> · <a href="experiments/a1_quality_20261108/P0_6/results/per_frame.csv">逐帧预算</a> · <a href="experiments/a1_quality_20261108/P0_6/results/fixed_A_states.tar.gz">固定 A 状态</a></p></div>
 </section>
+<section id="a1-quality-p2lite">
+<div class="eyebrow">A1 / P2-Lite</div><h2>冻结 Mode/MV 的稀疏整数残差头</h2>
+<div class="panel"><p>问题是冻结 hidden 能否预测低码率下有用的 Y 残差。44 条训练、16 条验证，按 prompt 隔离，验证 4 个 prompt 等权。UniPC step 20 条件末块 hidden 为 1×7800×1536，经冻结 A 主干转换到 P 帧宏块，加入固定 Mode 和 qpel MV。QP28、Oracle I、单参考与 A 的 U/V 保持原设置。</p>
+<p>从严格复现的 P0.6 offline_gain_3 教师码流提取实际有符号 level。训练 DC 阳性为 11,719 / 10,844,080；水平及垂直第一低频为 511 和 864。DC-only 为 74,114 个参数，DC+低频为 78,470 个。每块以位置 BCE（正权重 24）、正位置符号 BCE 和整数幅值交叉熵训练，AdamW、学习率 0.001、12 epoch、两种子。候选系数通过整数像素基适配器交给 JM，实写系数逐位置校验。</p>
+<p>DC-only 在 64 个/视频时两种子分别下降 0.090 和 0.083 dB。相同预算下加低频分别下降 0.104 和 0.112 dB。逐帧 top-k、逐视频固定预算和全局阈值均未通过。最接近 A 的低频阈值点为 20.402 dB、440.307 kb/s，末四帧下降 0.0045 dB。它比真实源辅助的 P0.6 +3% 档低 0.424 dB。</p>
+<p>A100 额外头部开销为 DC-only 3.75 ms、199 MiB，DC+低频 9.65 ms、401 MiB。608 条学生码流和 48 条离线干预保持三方重建一致、固定 Mode/MV、ME 日志 0.000 s 和 Oracle P 读取 0。学生实际参考链闭环回放。教师与学生参考对应的源配对 DC level 平均绝对变化 2.28，5,268 处中 134 处符号发生变化或归零。</p>
+<p>离线位置和值同时替换后达到 +0.116 dB，单独替换各自接近 A。继续部署 A。P2-Lite-4 闭环再训练、P2-Lite-5 联合微调和 P3 均未触发。最终盲测封存。</p>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;max-width:850px;height:auto" role="img" aria-label="P2-Lite 实际 H.264 RD 曲线" viewBox="0 0 850 450">
+<rect width="850" height="450" fill="white"/>
+<g font-family="sans-serif" fill="#142338">
+<text x="45" y="42" font-size="24" font-weight="bold">P2-Lite · actual H.264 rate–distortion</text>
+<text x="45" y="67" font-size="13">16 validation clips · 4 equal prompt weights · JM QP28</text>
+<path d="M183.9310344827586 95V365" stroke="#dfe7ef"/><text x="183.9310344827586" y="385" text-anchor="middle">440</text>
+<path d="M306.34482758620686 95V365" stroke="#dfe7ef"/><text x="306.34482758620686" y="385" text-anchor="middle">445</text>
+<path d="M428.7586206896552 95V365" stroke="#dfe7ef"/><text x="428.7586206896552" y="385" text-anchor="middle">450</text>
+<path d="M551.1724137931035 95V365" stroke="#dfe7ef"/><text x="551.1724137931035" y="385" text-anchor="middle">455</text>
+<path d="M673.5862068965517 95V365" stroke="#dfe7ef"/><text x="673.5862068965517" y="385" text-anchor="middle">460</text>
+<path d="M86 292.34121244998806H796" stroke="#dfe7ef"/><text x="76" y="296.34121244998806" text-anchor="end">20</text>
+<path d="M86 213.40472746999285H796" stroke="#dfe7ef"/><text x="76" y="217.40472746999285" text-anchor="end">20.5</text>
+<path d="M86 134.46824248999764H796" stroke="#dfe7ef"/><text x="76" y="138.46824248999764" text-anchor="end">21</text>
+<path d="M494.8449022312378 95V365" stroke="#8a5362" stroke-dasharray="4 4"/>
+<path d="M710.0551480730239 95V365" stroke="#8a5362" stroke-dasharray="4 4"/>
+<circle cx="232.05549695740277" cy="242.09439886578284" r="5" stroke="#3266aa" fill="#3266aa"><title>dc-1701 video 64: -0.090 dB</title></circle>
+<circle cx="290.6412981744437" cy="254.7337616727525" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 128: -0.170 dB</title></circle>
+<circle cx="405.9694929006095" cy="279.379617142363" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 256: -0.326 dB</title></circle>
+<circle cx="519.9266531440157" cy="302.00436736060595" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 384: -0.469 dB</title></circle>
+<circle cx="633.1003651115617" cy="323.1204815290511" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 512: -0.603 dB</title></circle>
+<circle cx="230.327302231238" cy="240.97754569221001" r="5" stroke="#3266aa" fill="#3266aa"><title>dc-1702 video 64: -0.083 dB</title></circle>
+<circle cx="287.59967545639006" cy="255.0305378952392" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 128: -0.172 dB</title></circle>
+<circle cx="400.7503448275861" cy="279.71692431971695" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 256: -0.328 dB</title></circle>
+<circle cx="514.0047058823528" cy="301.3723954161047" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 384: -0.465 dB</title></circle>
+<circle cx="626.6830020283979" cy="324.2064522068713" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 512: -0.610 dB</title></circle>
+<circle cx="231.51399594320475" cy="244.24041506468018" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1701 video 64: -0.104 dB</title></circle>
+<circle cx="289.7656795131835" cy="256.61511600158525" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 128: -0.182 dB</title></circle>
+<circle cx="405.1399594320479" cy="281.4056551834831" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 256: -0.339 dB</title></circle>
+<circle cx="519.4081947261664" cy="302.6906028084085" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 384: -0.474 dB</title></circle>
+<circle cx="632.5703853955373" cy="321.98739280066036" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 512: -0.596 dB</title></circle>
+<circle cx="231.2605273833675" cy="241.41037370901654" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1701 frame 4: -0.086 dB</title></circle>
+<circle cx="289.1896146044619" cy="255.0658796166689" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 8: -0.172 dB</title></circle>
+<circle cx="403.12373225152095" cy="277.96466781575543" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 16: -0.317 dB</title></circle>
+<circle cx="515.9287626774853" cy="300.59437853572035" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 24: -0.461 dB</title></circle>
+<circle cx="627.4779716024345" cy="321.2472419911893" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 32: -0.591 dB</title></circle>
+<circle cx="750.2719675456393" cy="258.6681696213404" r="5" stroke="#0b877b" fill="white"><title>low-1701 threshold 0.4: -0.195 dB</title></circle>
+<circle cx="302.40454361054736" cy="234.19022002396417" r="5" stroke="#0b877b" fill="white"><title>low-1701 threshold 0.6: -0.040 dB</title></circle>
+<circle cx="191.44292089249478" cy="228.92468733824202" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1701 threshold 0.8: -0.007 dB</title></circle>
+<circle cx="232.1015821501013" cy="245.51333698834267" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1702 video 64: -0.112 dB</title></circle>
+<circle cx="291.5284381338746" cy="263.40822563916265" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 128: -0.225 dB</title></circle>
+<circle cx="409.2184989858017" cy="295.5354540631267" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 256: -0.428 dB</title></circle>
+<circle cx="525.4107910750513" cy="322.916023354119" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 384: -0.602 dB</title></circle>
+<circle cx="641.4763488843817" cy="349.21270300400073" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 512: -0.768 dB</title></circle>
+<circle cx="233.15002028397515" cy="244.12856774363968" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1702 frame 4: -0.103 dB</title></circle>
+<circle cx="293.1529411764715" cy="261.0230443197356" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 8: -0.210 dB</title></circle>
+<circle cx="411.51123732251585" cy="291.18899154083385" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 16: -0.401 dB</title></circle>
+<circle cx="528.83261663286" cy="318.8056993115327" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 24: -0.576 dB</title></circle>
+<circle cx="645.4281541582147" cy="343.6109999593679" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 32: -0.733 dB</title></circle>
+<rect x="168.02953346856066" y="223.89114355556646" width="8" height="8" fill="#492a48"/><text x="180.02953346856066" y="221.89114355556646" font-size="12">A</text>
+<rect x="483.2637728194726" y="157.9520806927356" width="8" height="8" fill="#492a48"/><text x="495.2637728194726" y="155.9520806927356" font-size="12">B +3% offline</text>
+<rect x="685.1399594320485" y="123.11501975693855" width="8" height="8" fill="#492a48"/><text x="697.1399594320485" y="121.11501975693855" font-size="12">B +5% offline</text>
+<text x="450" y="410" text-anchor="middle" font-size="14">Actual bitrate (kb/s)</text>
+<text x="20" y="220" font-size="14" transform="rotate(-90 20 220)">P-frame Y-PSNR (dB)</text>
+<text x="88" y="435" font-size="12"><tspan fill="#3266aa">DC</tspan> · <tspan fill="#0b877b">DC + low</tspan> · hollow = over +3% on at least one clip</text>
+<text x="796" y="435" text-anchor="end" font-size="12">5 high-rate points in RD table</text></g></svg>
+<details><summary>展开最接近 A 的学生点逐视频与末四帧</summary>
+<table><thead><tr><th>视频</th><th>Δ P 帧 dB</th><th>Δ 末四帧 dB</th><th>实际码率变化</th></tr></thead><tbody><tr><td>sample_0020</td><td>-0.0039</td><td>-0.0076</td><td>+0.390%</td></tr>
+<tr><td>sample_0021</td><td>-0.0005</td><td>+0.0003</td><td>+0.011%</td></tr>
+<tr><td>sample_0022</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr>
+<tr><td>sample_0023</td><td>-0.0009</td><td>-0.0011</td><td>+0.005%</td></tr>
+<tr><td>sample_1024</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr>
+<tr><td>sample_1025</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr>
+<tr><td>sample_1026</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr>
+<tr><td>sample_1027</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr>
+<tr><td>sample_1028</td><td>+0.0003</td><td>+0.0000</td><td>+0.051%</td></tr>
+<tr><td>sample_1029</td><td>-0.0937</td><td>-0.0576</td><td>+2.661%</td></tr>
+<tr><td>sample_1030</td><td>-0.0012</td><td>-0.0041</td><td>+0.035%</td></tr>
+<tr><td>sample_1031</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr>
+<tr><td>sample_1032</td><td>-0.0001</td><td>-0.0001</td><td>+0.007%</td></tr>
+<tr><td>sample_1033</td><td>-0.0048</td><td>-0.0017</td><td>+0.130%</td></tr>
+<tr><td>sample_1034</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr>
+<tr><td>sample_1035</td><td>+0.0000</td><td>+0.0000</td><td>+0.000%</td></tr></tbody></table>
+</details>
+<p><a href="docs/experiments/DiT_H264_实验进展总览.md">实验总览及逐 prompt 结果</a> · <a href="docs/local_review/">精选视频</a> · <a href="experiments/a1_quality_20261108/P2_Lite/README.md">复现</a> · <a href="https://github.com/luoxy5520/video-compression/tree/artifacts/p2-lite-20261108">完整科研记录与哈希</a></p>
+</div></section>
 <section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>
 <div class="grid3 repo">

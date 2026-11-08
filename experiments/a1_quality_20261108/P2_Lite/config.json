@@ -1,0 +1,22 @@
+{
+  "status": "prototype_gate_locked_before_training",
+  "checkpoint_sha256": "b713fef90db9205471c7b168e1715c70d8a4c87a0f4b342f866baf04e1cd4ca5",
+  "teacher": "offline_gain_3",
+  "primary_rate_pct": 3,
+  "absolute_rate_pct": 5,
+  "min_mean_delta_db_exclusive": 0,
+  "min_last4_delta_db_exclusive": 0,
+  "severe_clip_drop_db": -0.3,
+  "prompt_aggregation": "equal_prompt_means",
+  "seeds": [1701, 1702],
+  "epochs": 12,
+  "lr": 0.001,
+  "hidden_width": 64,
+  "select_pos_weight": 24,
+  "value_loss_weight": 1,
+  "video_budgets": [64, 128, 256, 384, 512],
+  "frame_budgets": [4, 8, 16, 24, 32],
+  "thresholds": [0.2, 0.4, 0.6, 0.8],
+  "frequencies": {"dc": [0], "low": [0, 1, 4]},
+  "blind": "sealed"
+}
