@@ -1,28 +1,17 @@
 # P2-InfoProbe research archive
 
-The corresponding code and report commit is  on . All original paths are relative to  on 113Server.
+The code and report commit is `f5e02b7126565f3a92b4a21ad6383491c494d603` on `codex/a1-p2-infoprobe-20261108`. Original paths are relative to `~/a1_quality_20261108/P2_InfoProbe` on 113Server.
 
-- Core contains the completed audit, D0, D1 and repaired D0, including native bitstreams, coefficients, input state NPZ, bit accounting, MC traces and logs. Audit retry output and both console logs are preserved.
-- Probes contains G0–G4 metrics, head weights, emitted states, native streams, G-label cache, captured block-14 features, capture manifests and logs. G5 was not triggered.
-- Existing locked A weights, original 60 hidden/feature caches, source YUV and prior artifacts stay on 113Server. See the historical manifests and the per-clip manifest in g_labels. Reproducible core YUV reconstructions, neutral dummy input and intermediate replay state binaries also stay on 113Server. The first audit attempt stopped on JSON key type comparison and its partial work directory stays on 113Server. Regenerate reconstructions from the archived streams and regenerate state files with the archived states and matching code.
+- Core contains the completed audit, D0, D1 and repaired D0, with native streams, coefficients, input state NPZ, syntax bits, MC traces and logs.
+- Probes contains G0–G4 metrics, head weights, emitted states, native streams, 60 G-label caches, eight captured block-14 features and capture manifests. G5 did not start.
+- Historical locked A weights, original hidden and backbone feature caches, source YUV and prior artifacts stay on 113Server. Their identities are in the historical manifests and the per-clip manifest in `g_labels`. Reproducible core YUV reconstructions, neutral dummy input, intermediate replay state binaries and partial output from the first audit attempt also stay on 113Server. Decode archived streams for reconstructions and use archived states with the matching code to regenerate replay binaries.
 
-core.tar.zst.part-000: OK
-core.tar.zst.part-001: OK
-core.tar.zst.part-002: OK
-core.tar.zst.part-003: OK
-core.tar.zst.part-004: OK
-core.tar.zst.part-005: OK
-core.tar.zst.part-006: OK
-core.tar.zst.part-007: OK
-core.tar.zst.part-008: OK
-probes.tar.zst.part-000: OK
-probes.tar.zst.part-001: OK
-probes.tar.zst.part-002: OK
-probes.tar.zst.part-003: OK
-probes.tar.zst.part-004: OK
-probes.tar.zst.part-005: OK
-probes.tar.zst.part-006: OK
-probes.tar.zst.part-007: OK
-probes.tar.zst.part-008: OK
-probes.tar.zst.part-009: OK
-probes.tar.zst.part-010: OK
+Verify and extract in a separate destination directory.
+
+```sh
+sha256sum -c CORE.sha256
+sha256sum -c PROBES.sha256
+sha256sum -c FILES.sha256
+cat core.tar.zst.part-* | zstd -dc | tar -xf -
+cat probes.tar.zst.part-* | zstd -dc | tar -xf -
+```
