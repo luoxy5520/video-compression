@@ -1,0 +1,13 @@
+parent: a545141f4aba2c14258ec008057198ebaa550b21
+splits: [train, val]
+fixed: [A_mode, A_qpel_mv, QP28, oracle_i, hidden_checkpoint]
+train_neural_network: false
+target_total_rate_increase_pct: [0, 1, 2, 3, 5]
+cap_unit: per_video_A_total_stream_bits
+frame_allocations: [uniform, early_half_life_6_frames, offline_gain_frozen_A]
+residual_family: one_integer_transform_basis_per_selected_luma_4x4
+unselected_p16_residual: zero
+skip_residual: zero
+native_coeff_rate: measured_from_strict_JM
+budget_controller: at_most_3_measured_rate_trials_per_point
+gate: ../P0/config.yaml
