@@ -1,0 +1,441 @@
+{
+  "stability": {
+    "median_val_iou": 0.12777519018785904,
+    "median_train_iou": 0.13274336283185842,
+    "median_val_overlap": 14.5,
+    "median_sign_agreement": 1.0,
+    "median_joint_level_mae": 0.5559440559440559,
+    "median_dense_exact": 0.989355621057294,
+    "median_to_zero_T0": 0.015625,
+    "median_to_zero_T1": 0.0078125,
+    "self_consistent_clips": {
+      "T0": 0,
+      "T1": 0
+    },
+    "mean_prefix_ref_mse": {
+      "T0": 76.53449442490819,
+      "T1": 18.859819936857093
+    }
+  },
+  "o1": {
+    "o1-T0-1701": {
+      "policy": "frame",
+      "budget": 4,
+      "delta_db": -0.11165419248370423,
+      "delta_last4_db": -0.10018540952734067,
+      "rate_pct": 0.8637591030916769,
+      "bitrate_kbps": 442.05270588235294,
+      "psnr_y_p_db": 20.296585855896684,
+      "last4_db": 18.709527226902146,
+      "delta_offline_3_db": 0,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1025",
+      "worst_delta_db": -0.48113337839123815,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.023634703471340668,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.36484622352074414,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.03179990954653222,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.026335933396199884
+      },
+      "params": 106784,
+      "updates": 528,
+      "negative_clips": 16,
+      "overcap_clips": 0,
+      "head_median_ms": 11.82508806232363,
+      "head_peak_mib": 97.5,
+      "jm_median_s": 0.961304689059034,
+      "ffmpeg_median_s": 0.13091388356406242,
+      "last_frame_db": 18.48167952980631,
+      "last4_delta_by_prompt": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.02518789325037707,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.31141706907575095,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.042184250270356216,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.02195242551287846
+      },
+      "delta_interval": [
+        -0.1315579983493964,
+        -0.09456473067823234
+      ],
+      "last4_interval": [
+        -0.1128141863626646,
+        -0.08714983575245736
+      ],
+      "val": {
+        "psnr_y_p_db": 20.296585855896684,
+        "bitrate_kbps": 442.05270588235294,
+        "last4_db": 18.709527226902146,
+        "ssim_y_p": 0.6655353515625,
+        "delta_db": -0.11165419248370423,
+        "delta_last4_db": -0.10018540952734067,
+        "rate_pct": 0.8637591030916769,
+        "coeff_bits": 2751.875,
+        "mv_bits": 98446.25,
+        "nonzero": 64,
+        "ap": 0.0002421344695679246,
+        "precision": 0.0,
+        "recall": 0.0,
+        "realized_precision": 0.0,
+        "realized_recall": 0.0,
+        "value_exact": 0.015625,
+        "sign_correct": 0.51953125,
+        "value_mae": 34.0244140625,
+        "loss_select": 1.4563038498163223,
+        "loss_level": 5.037633806467056
+      },
+      "train": {
+        "ap": 0.0010419212718552578,
+        "realized_precision": 0.0024857954545454545,
+        "realized_recall": 0.0024857954545454545,
+        "value_exact": 0.10511363636363637,
+        "sign_correct": 0.6022727272727273,
+        "loss_select": 1.4445348111065952,
+        "loss_level": 3.747062851082195
+      }
+    },
+    "o1-T0-1702": {
+      "policy": "frame",
+      "budget": 4,
+      "delta_db": -0.13886539672915,
+      "delta_last4_db": -0.13105562236969537,
+      "rate_pct": 0.8663634665020028,
+      "bitrate_kbps": 442.0785882352941,
+      "psnr_y_p_db": 20.269374651651237,
+      "last4_db": 18.67865701405979,
+      "delta_offline_3_db": 0,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1025",
+      "worst_delta_db": -0.6102120427520319,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.03138698026706743,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.4552973336924877,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.027384438407250133,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.0413928345497947
+      },
+      "params": 106784,
+      "updates": 528,
+      "negative_clips": 16,
+      "overcap_clips": 0,
+      "head_median_ms": 10.671919444575906,
+      "head_peak_mib": 97.5,
+      "jm_median_s": 0.9705406040884554,
+      "ffmpeg_median_s": 0.12767157214693725,
+      "last_frame_db": 18.449667859875078,
+      "last4_delta_by_prompt": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.03048749858894917,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.4060016544269196,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.04161271858401561,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.0461206178788971
+      },
+      "delta_interval": [
+        -0.16880004972916154,
+        -0.10726077690384163
+      ],
+      "last4_interval": [
+        -0.15601703759349608,
+        -0.0993466922007153
+      ],
+      "val": {
+        "psnr_y_p_db": 20.269374651651237,
+        "bitrate_kbps": 442.0785882352941,
+        "last4_db": 18.67865701405979,
+        "ssim_y_p": 0.66499373046875,
+        "delta_db": -0.13886539672915,
+        "delta_last4_db": -0.13105562236969537,
+        "rate_pct": 0.8663634665020028,
+        "coeff_bits": 2793.5625,
+        "mv_bits": 98446.25,
+        "nonzero": 64,
+        "ap": 0.00026900653319130054,
+        "precision": 0.0,
+        "recall": 0.0,
+        "realized_precision": 0.0,
+        "realized_recall": 0.0,
+        "value_exact": 0.015625,
+        "sign_correct": 0.5234375,
+        "value_mae": 33.2685546875,
+        "loss_select": 1.4434518218040466,
+        "loss_level": 4.82304111123085
+      },
+      "train": {
+        "ap": 0.0009247492936408703,
+        "realized_precision": 0.0007102272727272727,
+        "realized_recall": 0.0007102272727272727,
+        "value_exact": 0.08203125,
+        "sign_correct": 0.6083096590909091,
+        "loss_select": 1.4285605956207623,
+        "loss_level": 3.900531167333776
+      }
+    },
+    "o1-T1-1701": {
+      "policy": "frame",
+      "budget": 4,
+      "delta_db": -0.17250467081981047,
+      "delta_last4_db": -0.1597850100217787,
+      "rate_pct": 0.8655910883142076,
+      "bitrate_kbps": 442.0574117647059,
+      "psnr_y_p_db": 20.235735377560577,
+      "last4_db": 18.649927626407706,
+      "delta_offline_3_db": 0,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1025",
+      "worst_delta_db": -0.7511386205647987,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.04055247397917183,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.5642367876597243,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.04365112759867351,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.04157829404167224
+      },
+      "params": 106784,
+      "updates": 528,
+      "negative_clips": 16,
+      "overcap_clips": 0,
+      "head_median_ms": 11.160106980241835,
+      "head_peak_mib": 97.5,
+      "jm_median_s": 0.9205347615061328,
+      "ffmpeg_median_s": 0.13136111397761852,
+      "last_frame_db": 18.41825297650386,
+      "last4_delta_by_prompt": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.040461282018284805,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.4911278069730267,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.06356588784871331,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.04398506324708995
+      },
+      "delta_interval": [
+        -0.21839094608071585,
+        -0.11970633589786427
+      ],
+      "last4_interval": [
+        -0.20267319220837388,
+        -0.11040829427686916
+      ],
+      "val": {
+        "psnr_y_p_db": 20.235735377560577,
+        "bitrate_kbps": 442.0574117647059,
+        "last4_db": 18.649927626407706,
+        "ssim_y_p": 0.66465859375,
+        "delta_db": -0.17250467081981047,
+        "delta_last4_db": -0.1597850100217787,
+        "rate_pct": 0.8655910883142076,
+        "coeff_bits": 2763.8125,
+        "mv_bits": 98446.25,
+        "nonzero": 64,
+        "ap": 0.00031709240959177233,
+        "precision": 0.0009765625,
+        "recall": 0.0009765625,
+        "realized_precision": 0.0009765625,
+        "realized_recall": 0.0009765625,
+        "value_exact": 0.0224609375,
+        "sign_correct": 0.4990234375,
+        "value_mae": 39.732421875,
+        "loss_select": 1.4473353549838066,
+        "loss_level": 4.613176554441452
+      },
+      "train": {
+        "ap": 0.0002878618869405533,
+        "realized_precision": 0.0,
+        "realized_recall": 0.0,
+        "value_exact": 0.13245738636363635,
+        "sign_correct": 0.6672585227272727,
+        "loss_select": 1.435271834785288,
+        "loss_level": 3.753860804167661
+      }
+    },
+    "o1-T1-1702": {
+      "policy": "frame",
+      "budget": 4,
+      "delta_db": -0.18450480819161863,
+      "delta_last4_db": -0.16307068765129895,
+      "rate_pct": 0.8585414943442754,
+      "bitrate_kbps": 442.05882352941177,
+      "psnr_y_p_db": 20.22373524018877,
+      "last4_db": 18.646641948778186,
+      "delta_offline_3_db": 0,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1025",
+      "worst_delta_db": -0.8678590515836113,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.06213746998682046,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.5636548268931598,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.050365766836133474,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.061861169050360765
+      },
+      "params": 106784,
+      "updates": 528,
+      "negative_clips": 16,
+      "overcap_clips": 0,
+      "head_median_ms": 10.809413506649435,
+      "head_peak_mib": 97.5,
+      "jm_median_s": 0.9708608874352649,
+      "ffmpeg_median_s": 0.12936264160089195,
+      "last_frame_db": 18.420085119723417,
+      "last4_delta_by_prompt": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.06163192053349098,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.4553112653629299,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.07676414733320547,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.05857541737556948
+      },
+      "delta_interval": [
+        -0.23568919627400664,
+        -0.14983352974959926
+      ],
+      "last4_interval": [
+        -0.2040471524381709,
+        -0.13476118930604164
+      ],
+      "val": {
+        "psnr_y_p_db": 20.22373524018877,
+        "bitrate_kbps": 442.05882352941177,
+        "last4_db": 18.646641948778186,
+        "ssim_y_p": 0.665158765625,
+        "delta_db": -0.18450480819161863,
+        "delta_last4_db": -0.16307068765129895,
+        "rate_pct": 0.8585414943442754,
+        "coeff_bits": 2790.375,
+        "mv_bits": 98446.25,
+        "nonzero": 64,
+        "ap": 0.00024177727782781142,
+        "precision": 0.0,
+        "recall": 0.0,
+        "realized_precision": 0.0,
+        "realized_recall": 0.0,
+        "value_exact": 0.0234375,
+        "sign_correct": 0.5146484375,
+        "value_mae": 38.876953125,
+        "loss_select": 1.4255388602614403,
+        "loss_level": 4.51257711648941
+      },
+      "train": {
+        "ap": 0.0008099087870284382,
+        "realized_precision": 0.001065340909090909,
+        "realized_recall": 0.001065340909090909,
+        "value_exact": 0.06711647727272728,
+        "sign_correct": 0.6189630681818182,
+        "loss_select": 1.4214497100223193,
+        "loss_level": 4.046757036989385
+      }
+    }
+  },
+  "paired_by_seed": {
+    "1701": {
+      "psnr_y_p_db": {
+        "mean": -0.06085047833610624,
+        "bootstrap_95": [
+          -0.09477312969001117,
+          -0.02141565157288047
+        ],
+        "prompts": {
+          "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.016917770507831165,
+          "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.19939056413898015,
+          "A skater passes behind a stone column and reappears, filmed from the side.": -0.011851218052141288,
+          "A slow leftward pan shows rows of brightly colored market stalls.": -0.015242360645472353
+        }
+      },
+      "last4_db": {
+        "mean": -0.05959960049443802,
+        "bootstrap_95": [
+          -0.0951923626478937,
+          -0.020859450485483773
+        ],
+        "prompts": {
+          "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.015273388767907736,
+          "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.17971073789727576,
+          "A skater passes behind a stone column and reappears, filmed from the side.": -0.021381637578357093,
+          "A slow leftward pan shows rows of brightly colored market stalls.": -0.02203263773421149
+        }
+      },
+      "bitrate_kbps": {
+        "mean": 0.004705882352917357,
+        "bootstrap_95": [
+          -0.02494117647060179,
+          0.03388235294113784
+        ],
+        "prompts": {
+          "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": 0.026352941176412514,
+          "A wooden metronome swings against a dark shelf, with the camera fixed.": 0.005647058823534223,
+          "A skater passes behind a stone column and reappears, filmed from the side.": 0.003764705882346675,
+          "A slow leftward pan shows rows of brightly colored market stalls.": -0.016941176470623986
+        }
+      }
+    },
+    "1702": {
+      "psnr_y_p_db": {
+        "mean": -0.04563941146246864,
+        "bootstrap_95": [
+          -0.07486095665131638,
+          -0.017524470516265357
+        ],
+        "prompts": {
+          "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.030750489719753027,
+          "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.10835749320067212,
+          "A skater passes behind a stone column and reappears, filmed from the side.": -0.02298132842888334,
+          "A slow leftward pan shows rows of brightly colored market stalls.": -0.020468334500566066
+        }
+      },
+      "last4_db": {
+        "mean": -0.03201506528160358,
+        "bootstrap_95": [
+          -0.0632763988293603,
+          -0.0012369098267427084
+        ],
+        "prompts": {
+          "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.03114442194454181,
+          "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.04930961093601027,
+          "A skater passes behind a stone column and reappears, filmed from the side.": -0.03515142874918986,
+          "A slow leftward pan shows rows of brightly colored market stalls.": -0.012454799496672386
+        }
+      },
+      "bitrate_kbps": {
+        "mean": -0.01976470588234669,
+        "bootstrap_95": [
+          -0.042352941176464085,
+          0.0014117647058907057
+        ],
+        "prompts": {
+          "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.03200000000001069,
+          "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.03576470588234315,
+          "A skater passes behind a stone column and reappears, filmed from the side.": -0.013176470588241784,
+          "A slow leftward pan shows rows of brightly colored market stalls.": 0.0018823529412088646
+        }
+      }
+    }
+  },
+  "own_reference": {
+    "T0-1701": {
+      "block_energy_logit_correlation": -0.12208511781178923,
+      "realized_support_overlap": 0,
+      "value_exact": 0.015625,
+      "sign_correct": 0.4921875,
+      "actual_signed_level_mae": 26.3359375
+    },
+    "T0-1702": {
+      "block_energy_logit_correlation": -0.08334579973602042,
+      "realized_support_overlap": 0.75,
+      "value_exact": 0.01171875,
+      "sign_correct": 0.52734375,
+      "actual_signed_level_mae": 28.23828125
+    },
+    "T1-1701": {
+      "block_energy_logit_correlation": -0.19711554621031174,
+      "realized_support_overlap": 1.75,
+      "value_exact": 0.03125,
+      "sign_correct": 0.4765625,
+      "actual_signed_level_mae": 31.62890625
+    },
+    "T1-1702": {
+      "block_energy_logit_correlation": 0.03822413878547549,
+      "realized_support_overlap": 0.75,
+      "value_exact": 0.02734375,
+      "sign_correct": 0.41796875,
+      "actual_signed_level_mae": 42.52734375
+    }
+  },
+  "o2_gate": false
+}

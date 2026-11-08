@@ -68,3 +68,9 @@ G0–G2 两种子在统一输入权限、训练条件和预算下完成真实回
 L1 固定每帧四点和相同 QP28 筛选，从 A 换成教师参考后 64 个稀疏位置的中位 IoU 为 0.128，换成历史学生参考为 0.829。六对重复标签和码流哈希一致。L2 的 Sparse、Continuous、Region 都完成小规模真实回放，未稳定通过。真实源辅助组单列。继续用冻结 A，P3 保持停用，最终盲测封存。
 
 [完整判定](../../experiments/a1_quality_20261108/P2_LabelProbe/decision.md) · [精选视频](../local_review/README.md#p2-labelprobe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-labelprobe-20261108)
+
+## P2-OnPolicy｜残差参考轨迹对齐
+
+冻结 A 16 条验证码流逐条复现。O0 在相同选择器下切换实际重建参考，验证中位 IoU 0.128。T1 源辅助固定前缀标签回放较 A 提升 +0.0683 dB，触发双种子 O1。T1−T0 的实际 P 帧配对差值为 -0.0609 / -0.0456 dB。T1 未满足两个种子同时超过 A 并相对 T0 取得可辨配对收益的联合门槛。O2 与 P3 未启动，最终盲测封存。
+
+[阶段报告](../../experiments/a1_quality_20261108/P2_OnPolicy/decision.md) · [实验地图](../../实验地图.html#a1-quality-p2-onpolicy) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-onpolicy-20261108)

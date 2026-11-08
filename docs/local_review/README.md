@@ -53,3 +53,17 @@ ssh 113Server 'cd ~/dit-p2-infoprobe-20261108 && git archive HEAD -- 实验地�
 ```sh
 ssh 113Server 'cd ~/dit-p2-labelprobe-20261108 && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_labelprobe experiments/a1_quality_20261108/P2_LabelProbe/README.md experiments/a1_quality_20261108/P2_LabelProbe/decision.md' | tar -xf -
 ```
+
+## P2-OnPolicy
+
+- [best_sample_1033](videos/p2_onpolicy/best_sample_1033.mp4)
+- [motion_sample_1028](videos/p2_onpolicy/motion_sample_1028.mp4)
+- [worst_sample_1025](videos/p2_onpolicy/worst_sample_1025.mp4)
+
+四宫格依次为原视频、冻结 A、T0 学生和 T1 学生。各格 832×480，17 帧，16 fps。所有图格统一重编码预览。教师上界属于源辅助诊断，见报告。
+
+在 Mac 的空目录中执行精简同步。
+
+```sh
+ssh 113Server 'cd ~/dit-p2-onpolicy-20261108 && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_onpolicy experiments/a1_quality_20261108/P2_OnPolicy/README.md experiments/a1_quality_20261108/P2_OnPolicy/decision.md experiments/a1_quality_20261108/P2_OnPolicy/label_stability.md' | tar -xf -
+```
