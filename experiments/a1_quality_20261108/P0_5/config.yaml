@@ -1,0 +1,8 @@
+parent: 1aa7d1d56a736f66286c00ed2d5a865bd4ffae6e
+training: false
+splits: [train, val]
+candidate_slots: [baseline_mv_source_residual, coarse1, coarse2, coarse3, coarse4, zero, baseline_p16_predicted_residual, native_skip]
+lambda_y_sse_per_mb_bit: [0, 1, 4, 16, 64, 256]
+f_lambda_for_bit_attribution: 256
+gate: ../P0/config.yaml
+joint_residual_policies: [fixed_local, frozen_predicted, own_trajectory_source_paired]
