@@ -1,0 +1,974 @@
+{
+  "validation_videos": 16,
+  "validation_prompts": 4,
+  "decision": "stop_and_rethink_candidates",
+  "chosen_lambda": null,
+  "scores": {
+    "A": {
+      "psnr_y_db": 20.408240048380385,
+      "bitrate_kbps": 439.5138823529412,
+      "last4_psnr_y_db": 18.809712636429484,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 13.717099488165605,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": 0.0,
+          "rate": 745.8277647058824,
+          "baseline_rate": 745.8277647058824,
+          "last4": 0.0
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": 0.0,
+          "rate": 148.0734117647059,
+          "baseline_rate": 148.0734117647059,
+          "last4": 0.0
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 0.0,
+          "rate": 298.132705882353,
+          "baseline_rate": 298.132705882353,
+          "last4": 0.0
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": 0.0,
+          "rate": 566.0216470588235,
+          "baseline_rate": 566.0216470588235,
+          "last4": 0.0
+        }
+      ],
+      "delta_psnr_db": 0.0,
+      "delta_rate_pct": 0.0,
+      "delta_last4_db": 0.0,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        0.0,
+        0.0
+      ],
+      "passes": false
+    },
+    "A_fixed_p16": {
+      "psnr_y_db": 20.308635569392074,
+      "bitrate_kbps": 489.856,
+      "last4_psnr_y_db": 18.72509291349091,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 13.816027099931658,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -0.0004835525599773405,
+          "rate": 751.3449411764706,
+          "baseline_rate": 745.8277647058824,
+          "last4": -0.0011883992582060188
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -0.4254664349399597,
+          "rate": 268.63247058823526,
+          "baseline_rate": 148.0734117647059,
+          "last4": -0.36053308789882266
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 0.029263793714413566,
+          "rate": 334.4244705882353,
+          "baseline_rate": 298.132705882353,
+          "last4": 0.025370465664185105
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -0.0017317221677259909,
+          "rate": 605.0221176470588,
+          "baseline_rate": 566.0216470588235,
+          "last4": -0.0021278702614608846
+        }
+      ],
+      "delta_psnr_db": -0.09960447898831237,
+      "delta_rate_pct": 11.454044950196307,
+      "delta_last4_db": -0.08461972293857611,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -0.31922071434496413,
+        0.021514914743878677
+      ],
+      "passes": false
+    },
+    "B_nearest_with_fixed_residual": {
+      "psnr_y_db": 19.179793945448804,
+      "bitrate_kbps": 493.9830588235294,
+      "last4_psnr_y_db": 17.751909993923892,
+      "worst_video": "sample_0023",
+      "worst_video_psnr_y_db": 14.149850846605371,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -1.1315195382658239,
+          "rate": 754.5016470588236,
+          "baseline_rate": 745.8277647058824,
+          "last4": -1.0755580725844904
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -3.3764916483181473,
+          "rate": 257.4682352941177,
+          "baseline_rate": 148.0734117647059,
+          "last4": -2.7232979158212594
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 0.8229916591283093,
+          "rate": 349.87105882352944,
+          "baseline_rate": 298.132705882353,
+          "last4": 0.7867726824534813
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -1.2287648842706709,
+          "rate": 614.0912941176471,
+          "baseline_rate": 566.0216470588235,
+          "last4": -1.219127264070103
+        }
+      ],
+      "delta_psnr_db": -1.2284461029315832,
+      "delta_rate_pct": 12.39305028978539,
+      "delta_last4_db": -1.0578026425055929,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -2.8152486208050664,
+        0.31005252327856425
+      ],
+      "passes": false
+    },
+    "C_min_distortion": {
+      "psnr_y_db": 16.3072578288309,
+      "bitrate_kbps": 6301.318588235294,
+      "last4_psnr_y_db": 13.571376662562791,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 8.736995716761784,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -3.9891378355747857,
+          "rate": 10051.674352941176,
+          "baseline_rate": 745.8277647058824,
+          "last4": -5.050026209250175
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -3.1587593520911064,
+          "rate": 1484.7849411764705,
+          "baseline_rate": 148.0734117647059,
+          "last4": -3.7806878368070898
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": -4.626155025772185,
+          "rate": 6043.228235294118,
+          "baseline_rate": 298.132705882353,
+          "last4": -6.238799547383854
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -4.629876664759873,
+          "rate": 7625.586823529411,
+          "baseline_rate": 566.0216470588235,
+          "last4": -5.8838303020256575
+        }
+      ],
+      "delta_psnr_db": -4.100982219549488,
+      "delta_rate_pct": 1333.7018331482802,
+      "delta_last4_db": -5.238335973866694,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        -4.628015845266029,
+        -3.525608270511376
+      ],
+      "passes": false
+    },
+    "F_lambda_0": {
+      "psnr_y_db": 18.653742009465294,
+      "bitrate_kbps": 639.2136470588235,
+      "last4_psnr_y_db": 17.341664326420403,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 13.415093853812238,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -0.8802206498071854,
+          "rate": 895.0738823529412,
+          "baseline_rate": 745.8277647058824,
+          "last4": -0.43979007573548223
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -4.825232871518633,
+          "rate": 381.7901176470588,
+          "baseline_rate": 148.0734117647059,
+          "last4": -4.31576667769901
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 0.03446079022371151,
+          "rate": 518.3077647058824,
+          "baseline_rate": 298.132705882353,
+          "last4": 0.12009076822433329
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -1.3469994245582626,
+          "rate": 761.6828235294117,
+          "baseline_rate": 566.0216470588235,
+          "last4": -1.2367272548261674
+        }
+      ],
+      "delta_psnr_db": -1.7544980389150924,
+      "delta_rate_pct": 45.43650899871194,
+      "delta_last4_db": -1.4680483100090815,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -3.838979816090771,
+        -0.310904263471782
+      ],
+      "passes": false
+    },
+    "E_baseline_mv_with_ideal_residual": {
+      "psnr_y_db": 15.900701160067554,
+      "bitrate_kbps": 6054.176941176471,
+      "last4_psnr_y_db": 13.264781610290836,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 8.824613908578726,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -4.41587265511769,
+          "rate": 9715.256470588236,
+          "baseline_rate": 745.8277647058824,
+          "last4": -5.4714385651014315
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -3.612220931510617,
+          "rate": 1203.3336470588235,
+          "baseline_rate": 148.0734117647059,
+          "last4": -4.0116079832973135
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": -4.976020364519053,
+          "rate": 5843.331764705882,
+          "baseline_rate": 298.132705882353,
+          "last4": -6.5032233681199205
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -5.026041602103971,
+          "rate": 7454.7858823529405,
+          "baseline_rate": 566.0216470588235,
+          "last4": -6.193454188035933
+        }
+      ],
+      "delta_psnr_db": -4.507538888312833,
+      "delta_rate_pct": 1277.471152621024,
+      "delta_last4_db": -5.5449310261386495,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        -5.001030983311512,
+        -3.953170789762726
+      ],
+      "passes": false
+    },
+    "D_lambda_1": {
+      "psnr_y_db": 16.25267305282148,
+      "bitrate_kbps": 6206.784470588235,
+      "last4_psnr_y_db": 13.51528489236367,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 8.755963897859393,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -4.008333329608353,
+          "rate": 9937.374117647058,
+          "baseline_rate": 745.8277647058824,
+          "last4": -5.063475345528147
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -3.3706591948983338,
+          "rate": 1390.260705882353,
+          "baseline_rate": 148.0734117647059,
+          "last4": -3.964925477226931
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": -4.571293052108487,
+          "rate": 5968.306823529412,
+          "baseline_rate": 298.132705882353,
+          "last4": -6.2305706735899165
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -4.6719824056204615,
+          "rate": 7531.196235294117,
+          "baseline_rate": 566.0216470588235,
+          "last4": -5.918739479918267
+        }
+      ],
+      "delta_psnr_db": -4.1555669955589085,
+      "delta_rate_pct": 1312.1930432231543,
+      "delta_last4_db": -5.294427744065816,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        -4.621637728864474,
+        -3.670817659200872
+      ],
+      "passes": false
+    },
+    "F_lambda_1": {
+      "psnr_y_db": 19.04045787531766,
+      "bitrate_kbps": 635.8738823529411,
+      "last4_psnr_y_db": 17.596879852116984,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 13.72861506235827,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -0.734845883356936,
+          "rate": 890.2945882352941,
+          "baseline_rate": 745.8277647058824,
+          "last4": -0.39102396939580153
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -3.943059947915806,
+          "rate": 378.7501176470588,
+          "baseline_rate": 148.0734117647059,
+          "last4": -3.7823689635042363
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 0.3412640133699547,
+          "rate": 516.1487058823529,
+          "baseline_rate": 298.132705882353,
+          "last4": 0.4686366290445889
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -1.1344868743481236,
+          "rate": 758.3021176470588,
+          "baseline_rate": 566.0216470588235,
+          "last4": -1.1465748333945598
+        }
+      ],
+      "delta_psnr_db": -1.3677821730627278,
+      "delta_rate_pct": 44.67663204374457,
+      "delta_last4_db": -1.2128327843125022,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -3.1410064317760886,
+        -0.027673708559564858
+      ],
+      "passes": false
+    },
+    "D_lambda_4": {
+      "psnr_y_db": 16.120221829663805,
+      "bitrate_kbps": 6018.296470588236,
+      "last4_psnr_y_db": 13.379466185573245,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 8.868496280584052,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -4.099162970101656,
+          "rate": 9690.48094117647,
+          "baseline_rate": 745.8277647058824,
+          "last4": -5.146555846259334
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -3.8421624929634,
+          "rate": 1258.1985882352942,
+          "baseline_rate": 148.0734117647059,
+          "last4": -4.392547227842702
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": -4.439130505686684,
+          "rate": 5803.136,
+          "baseline_rate": 298.132705882353,
+          "last4": -6.172163012538718
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -4.771616906114595,
+          "rate": 7321.370352941177,
+          "baseline_rate": 566.0216470588235,
+          "last4": -6.009719716784211
+        }
+      ],
+      "delta_psnr_db": -4.288018218716584,
+      "delta_rate_pct": 1269.307480885299,
+      "delta_last4_db": -5.430246450856242,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        -4.605373705900639,
+        -3.970662731532528
+      ],
+      "passes": false
+    },
+    "F_lambda_4": {
+      "psnr_y_db": 19.71223208408822,
+      "bitrate_kbps": 625.5214117647058,
+      "last4_psnr_y_db": 18.03055556607401,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 14.246961841918216,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -0.48722821390422055,
+          "rate": 879.8644705882352,
+          "baseline_rate": 745.8277647058824,
+          "last4": -0.3164063378607924
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -2.3763771977786483,
+          "rate": 363.20376470588235,
+          "baseline_rate": 148.0734117647059,
+          "last4": -2.8022913996807297
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 0.8626686326223094,
+          "rate": 509.67529411764707,
+          "baseline_rate": 298.132705882353,
+          "last4": 1.0136015515615249
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -0.7830950781081114,
+          "rate": 749.3421176470588,
+          "baseline_rate": 566.0216470588235,
+          "last4": -1.0115320954419005
+        }
+      ],
+      "delta_psnr_db": -0.6960079642921677,
+      "delta_rate_pct": 42.32119550262481,
+      "delta_last4_db": -0.7791570703554744,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -1.9040899518100414,
+        0.4512277049397042
+      ],
+      "passes": false
+    },
+    "D_lambda_16": {
+      "psnr_y_db": 16.06234861912957,
+      "bitrate_kbps": 5731.639999999999,
+      "last4_psnr_y_db": 13.327914570686652,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 9.150470634455187,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -4.19893246445166,
+          "rate": 9271.77788235294,
+          "baseline_rate": 745.8277647058824,
+          "last4": -5.239267395213673
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -4.328896098793248,
+          "rate": 1145.6470588235295,
+          "baseline_rate": 148.0734117647059,
+          "last4": -4.856909980562936
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": -4.01052730450229,
+          "rate": 5521.534117647058,
+          "baseline_rate": 298.132705882353,
+          "last4": -5.768245940421817
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -4.845209849256072,
+          "rate": 6987.600941176471,
+          "baseline_rate": 566.0216470588235,
+          "last4": -6.062768946772907
+        }
+      ],
+      "delta_psnr_db": -4.345891429250818,
+      "delta_rate_pct": 1204.0862257445924,
+      "delta_last4_db": -5.481798065742833,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        -4.683640503054969,
+        -4.090119503075029
+      ],
+      "passes": false
+    },
+    "F_lambda_16": {
+      "psnr_y_db": 20.159017708624244,
+      "bitrate_kbps": 606.011294117647,
+      "last4_psnr_y_db": 18.283356781191618,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 14.90398292649115,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -0.22287738275705493,
+          "rate": 860.4310588235294,
+          "baseline_rate": 745.8277647058824,
+          "last4": -0.2070027518415447
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -1.6626918732240341,
+          "rate": 343.11905882352943,
+          "baseline_rate": 148.0734117647059,
+          "last4": -2.510119154830438
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 1.4258972318529075,
+          "rate": 489.4456470588235,
+          "baseline_rate": 298.132705882353,
+          "last4": 1.5748538686828546
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -0.5372173348963898,
+          "rate": 731.0494117647058,
+          "baseline_rate": 566.0216470588235,
+          "last4": -0.9631553829623414
+        }
+      ],
+      "delta_psnr_db": -0.24922233975614283,
+      "delta_rate_pct": 37.88217356716028,
+      "delta_last4_db": -0.5263558552378673,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -1.3027382506072893,
+        0.9351185901655832
+      ],
+      "passes": false
+    },
+    "D_lambda_64": {
+      "psnr_y_db": 16.07131275530259,
+      "bitrate_kbps": 5571.115294117647,
+      "last4_psnr_y_db": 13.339978655437342,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 9.41416726555643,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -4.22322576678229,
+          "rate": 9021.788235294118,
+          "baseline_rate": 745.8277647058824,
+          "last4": -5.264551044452686
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -4.5172766585484005,
+          "rate": 1110.0103529411765,
+          "baseline_rate": 148.0734117647059,
+          "last4": -5.008315344059611
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": -3.782107042343622,
+          "rate": 5337.682823529412,
+          "baseline_rate": 298.132705882353,
+          "last4": -5.600171323605819
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -4.825099704636877,
+          "rate": 6814.979764705882,
+          "baseline_rate": 566.0216470588235,
+          "last4": -6.005898211850457
+        }
+      ],
+      "delta_psnr_db": -4.336927293077798,
+      "delta_rate_pct": 1167.5629867008147,
+      "delta_last4_db": -5.469733980992143,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        -4.6746312201732305,
+        -3.9658994463948165
+      ],
+      "passes": false
+    },
+    "F_lambda_64": {
+      "psnr_y_db": 20.26237055354893,
+      "bitrate_kbps": 593.9731764705882,
+      "last4_psnr_y_db": 18.330517230230907,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 15.02914451146081,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -0.1776398719499639,
+          "rate": 850.6710588235294,
+          "baseline_rate": 745.8277647058824,
+          "last4": -0.18623042865940498
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -1.4763148720351715,
+          "rate": 334.5091764705882,
+          "baseline_rate": 148.0734117647059,
+          "last4": -2.408904533236303
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 1.6179855656487803,
+          "rate": 471.7741176470588,
+          "baseline_rate": 298.132705882353,
+          "last4": 1.6935165818651114
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -0.5475088009894691,
+          "rate": 718.9383529411765,
+          "baseline_rate": 566.0216470588235,
+          "last4": -1.0151632447637198
+        }
+      ],
+      "delta_psnr_db": -0.14586949483145606,
+      "delta_rate_pct": 35.14321169805783,
+      "delta_last4_db": -0.47919540619857903,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -1.1516461220138696,
+        1.076611973989218
+      ],
+      "passes": false
+    },
+    "D_lambda_256": {
+      "psnr_y_db": 16.0895535087426,
+      "bitrate_kbps": 5551.253647058824,
+      "last4_psnr_y_db": 13.355918994303181,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 9.456582505807031,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -4.2062720438311665,
+          "rate": 8990.315294117647,
+          "baseline_rate": 745.8277647058824,
+          "last4": -5.25320535710514
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -4.545163931373356,
+          "rate": 1107.7703529411765,
+          "baseline_rate": 148.0734117647059,
+          "last4": -5.038773159208642
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": -3.7371474872044494,
+          "rate": 5313.084235294117,
+          "baseline_rate": 298.132705882353,
+          "last4": -5.560001474360728
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -4.786162696142172,
+          "rate": 6793.844705882353,
+          "baseline_rate": 566.0216470588235,
+          "last4": -5.963194577830709
+        }
+      ],
+      "delta_psnr_db": -4.3186865396377865,
+      "delta_rate_pct": 1163.043983352731,
+      "delta_last4_db": -5.453793642126305,
+      "positive_prompt_fraction": 0.0,
+      "prompt_bootstrap_95pct_db": [
+        -4.665663313757764,
+        -3.939151598246676
+      ],
+      "passes": false
+    },
+    "F_lambda_256": {
+      "psnr_y_db": 20.285963328786416,
+      "bitrate_kbps": 593.6150588235295,
+      "last4_psnr_y_db": 18.35029439302677,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 15.07733944748696,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": -0.17836350068932205,
+          "rate": 850.7708235294118,
+          "baseline_rate": 745.8277647058824,
+          "last4": -0.19104296687912203
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": -1.4669550047006013,
+          "rate": 334.72564705882354,
+          "baseline_rate": 148.0734117647059,
+          "last4": -2.413554410345011
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 1.6763291958878526,
+          "rate": 470.90635294117646,
+          "baseline_rate": 298.132705882353,
+          "last4": 1.7573475325122132
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": -0.5201175688738182,
+          "rate": 718.0574117647059,
+          "baseline_rate": 566.0216470588235,
+          "last4": -0.99042312889895
+        }
+      ],
+      "delta_psnr_db": -0.12227671959397224,
+      "delta_rate_pct": 35.061731303140256,
+      "delta_last4_db": -0.4594182434027174,
+      "positive_prompt_fraction": 0.25,
+      "prompt_bootstrap_95pct_db": [
+        -1.1448071286977815,
+        1.1272175046974349
+      ],
+      "passes": false
+    }
+  },
+  "d_f_by_lambda": {
+    "0": {
+      "d": "C_min_distortion",
+      "f": "F_lambda_0",
+      "d_vs_e_psnr_db": 0.4065566687633453,
+      "d_vs_e_rate_pct": 4.082167559027394,
+      "eligible": false
+    },
+    "1": {
+      "d": "D_lambda_1",
+      "f": "F_lambda_1",
+      "d_vs_e_psnr_db": 0.3519718927539248,
+      "d_vs_e_rate_pct": 2.5206982038108228,
+      "eligible": false
+    },
+    "4": {
+      "d": "D_lambda_4",
+      "f": "F_lambda_4",
+      "d_vs_e_psnr_db": 0.21952066959624972,
+      "d_vs_e_rate_pct": -0.592656457464924,
+      "eligible": false
+    },
+    "16": {
+      "d": "D_lambda_16",
+      "f": "F_lambda_16",
+      "d_vs_e_psnr_db": 0.1616474590620154,
+      "d_vs_e_rate_pct": -5.327510978128014,
+      "eligible": false
+    },
+    "64": {
+      "d": "D_lambda_64",
+      "f": "F_lambda_64",
+      "d_vs_e_psnr_db": 0.17061159523503555,
+      "d_vs_e_rate_pct": -7.978981317400247,
+      "eligible": false
+    },
+    "256": {
+      "d": "D_lambda_256",
+      "f": "F_lambda_256",
+      "d_vs_e_psnr_db": 0.18885234867504685,
+      "d_vs_e_rate_pct": -8.30704650696774,
+      "eligible": false
+    }
+  },
+  "trajectory_diagnostic": {
+    "paired_A": {
+      "psnr_y_db": 35.785663208961395,
+      "bitrate_kbps": 3747.961882352941,
+      "last4_psnr_y_db": 35.78470830094704,
+      "worst_video": "sample_1029",
+      "worst_video_psnr_y_db": 30.263523536305254,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": 16.43158993123858,
+          "rate": 6750.1007058823525,
+          "baseline_rate": 745.8277647058824,
+          "last4": 18.23935275473181
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": 12.481868038756804,
+          "rate": 497.97082352941175,
+          "baseline_rate": 148.0734117647059,
+          "last4": 14.13023567683565
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 16.441923910988244,
+          "rate": 2959.533176470588,
+          "baseline_rate": 298.132705882353,
+          "last4": 18.03582215532891
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": 16.154310761340405,
+          "rate": 4784.242823529412,
+          "baseline_rate": 566.0216470588235,
+          "last4": 17.494572071173835
+        }
+      ],
+      "delta_psnr_db": 15.377423160581008,
+      "delta_rate_pct": 752.751649683554,
+      "delta_last4_db": 16.97499566451755,
+      "positive_prompt_fraction": 1.0,
+      "prompt_bootstrap_95pct_db": [
+        13.469298511877248,
+        16.436756921113414
+      ],
+      "passes": false
+    },
+    "paired_E_baseline_mv_with_ideal_residual": {
+      "psnr_y_db": 36.53688531762195,
+      "bitrate_kbps": 3826.293176470588,
+      "last4_psnr_y_db": 35.99614886396027,
+      "worst_video": "sample_0022",
+      "worst_video_psnr_y_db": 33.22616303657134,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": 16.45295198260533,
+          "rate": 6760.528941176471,
+          "baseline_rate": 745.8277647058824,
+          "last4": 18.26428688627705
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": 12.895861942193864,
+          "rate": 680.1505882352941,
+          "baseline_rate": 148.0734117647059,
+          "last4": 14.439911922294204
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 18.771779429385298,
+          "rate": 3028.0677647058824,
+          "baseline_rate": 298.132705882353,
+          "last4": 18.32397618205004
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": 16.393987722781752,
+          "rate": 4836.425411764706,
+          "baseline_rate": 566.0216470588235,
+          "last4": 17.717569919501848
+        }
+      ],
+      "delta_psnr_db": 16.12864526924156,
+      "delta_rate_pct": 770.5739067868564,
+      "delta_last4_db": 17.186436227530784,
+      "positive_prompt_fraction": 1.0,
+      "prompt_bootstrap_95pct_db": [
+        13.785134452296731,
+        18.17733150273441
+      ],
+      "passes": false
+    },
+    "paired_C_min_distortion": {
+      "psnr_y_db": 36.481343984720795,
+      "bitrate_kbps": 4953.785882352941,
+      "last4_psnr_y_db": 35.753701554293116,
+      "worst_video": "sample_0022",
+      "worst_video_psnr_y_db": 33.1541262497034,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": 16.32073124053895,
+          "rate": 8608.11105882353,
+          "baseline_rate": 745.8277647058824,
+          "last4": 18.00312622612425
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": 12.807448755925865,
+          "rate": 1190.7614117647058,
+          "baseline_rate": 148.0734117647059,
+          "last4": 14.11767785445485
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 18.873704743358218,
+          "rate": 3677.127529411765,
+          "baseline_rate": 298.132705882353,
+          "last4": 18.19197738780717
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": 16.290531005538597,
+          "rate": 6339.143529411765,
+          "baseline_rate": 566.0216470588235,
+          "last4": 17.46317420306824
+        }
+      ],
+      "delta_psnr_db": 16.07310393634041,
+      "delta_rate_pct": 1027.1056686157006,
+      "delta_last4_db": 16.943988917863628,
+      "positive_prompt_fraction": 1.0,
+      "prompt_bootstrap_95pct_db": [
+        13.685769377079136,
+        18.227911308903312
+      ],
+      "passes": false
+    },
+    "paired_D_lambda_64": {
+      "psnr_y_db": 36.53053383266057,
+      "bitrate_kbps": 4640.5322352941175,
+      "last4_psnr_y_db": 35.82214251134726,
+      "worst_video": "sample_0022",
+      "worst_video_psnr_y_db": 33.152386436050456,
+      "per_prompt": [
+        {
+          "prompt_id": "53b014284d8c57aa",
+          "psnr": 16.34579782683377,
+          "rate": 8117.547294117647,
+          "baseline_rate": 745.8277647058824,
+          "last4": 18.006680394024905
+        },
+        {
+          "prompt_id": "8b0ba89f5c34484c",
+          "psnr": 12.979822958865352,
+          "rate": 803.1209411764706,
+          "baseline_rate": 148.0734117647059,
+          "last4": 14.35225846770005
+        },
+        {
+          "prompt_id": "ada0ca91660cfab9",
+          "psnr": 18.87211107864151,
+          "rate": 3567.420235294118,
+          "baseline_rate": 298.132705882353,
+          "last4": 18.22615746119768
+        },
+        {
+          "prompt_id": "b6d47928de9fd270",
+          "psnr": 16.291443272780114,
+          "rate": 6074.040470588236,
+          "baseline_rate": 566.0216470588235,
+          "last4": 17.464623176748468
+        }
+      ],
+      "delta_psnr_db": 16.12229378428019,
+      "delta_rate_pct": 955.8329148674418,
+      "delta_last4_db": 17.012429874917775,
+      "positive_prompt_fraction": 1.0,
+      "prompt_bootstrap_95pct_db": [
+        13.821316675857457,
+        18.22694412717616
+      ],
+      "passes": false
+    }
+  }
+}

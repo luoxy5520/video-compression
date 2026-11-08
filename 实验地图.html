@@ -280,8 +280,8 @@ kit=~/senior-oracle-expand32-20261106
 </div></section><section id="a1-quality-p0">
 <div class="eyebrow">A1 / 2026-11-08</div><h2>P0 固定参考候选诊断</h2>
 <div class="panel"><p>113Server 复现锁定 hidden 基线。12 条历史开发回归（3 个独立 prompt）平均 P 帧 Y-PSNR 22.838 dB、427.707 kb/s、末帧 20.327 dB。预测文件、适配状态、码流及重建均匹配历史 SHA-256，三方重建逐像素一致。沿用固定 Oracle I。</p>
-<p>训练视频第 2 个 P 帧的六组候选均与原生 JM 的 Y/U/V 运动补偿逐像素一致。诊断用真实源构造候选残差，并记录该候选编码上下文中的宏块层与残差比特。另对一条平移场景训练视频完成 16 个 P 帧的固定前缀核验及 A–F 整段回放。A 为 21.10 dB、460.25 kb/s。最小局部失真 C 为 15.92 dB、5038.81 kb/s，配套残差在整段回放中遇到不同的参考轨迹。F 组最高 PSNR 点为 21.50 dB、599.68 kb/s。负责人已锁定验证门槛。113Server 正在运行 44 条训练、16 条验证视频的固定参考标签与 A–F 回放。追加诊断单独检验残差与实际重建轨迹配对后的画质及码率。P1–P3 尚未启动。</p>
-<p><a href="experiments/a1_quality_20261108/P0/README.md">复现与指标</a> · <a href="experiments/a1_quality_20261108/P0/baseline_audit.md">基线核对</a> · <a href="experiments/a1_quality_20261108/P0/decision.md">验证门槛</a></p></div>
+<p>训练视频第 2 个 P 帧的六组候选均与原生 JM 的 Y/U/V 运动补偿逐像素一致。诊断用真实源构造候选残差，并记录该候选编码上下文中的宏块层与残差比特。另对一条平移场景训练视频完成 16 个 P 帧的固定前缀核验及 A–F 整段回放。A 为 21.10 dB、460.25 kb/s。最小局部失真 C 为 15.92 dB、5038.81 kb/s，配套残差在整段回放中遇到不同的参考轨迹。F 组最高 PSNR 点为 21.50 dB、599.68 kb/s。负责人在验证前锁定门槛。113Server 已完成 44 条训练、16 条验证的 P0 矩阵。验证基线 A 为 20.408 dB、439.514 kb/s。F 的最高 PSNR 点为 20.286 dB、593.615 kb/s。轨迹配对 E 恢复到 36.537 dB、3826.293 kb/s，使用真实源做离线诊断。没有候选通过受控码率门槛，阶段判定为 stop_and_rethink_candidates。</p>
+<p><a href="experiments/a1_quality_20261108/P0/README.md">复现与指标</a> · <a href="experiments/a1_quality_20261108/P0/baseline_audit.md">基线核对</a> · <a href="experiments/a1_quality_20261108/P0/decision.md">验证判定</a> · <a href="experiments/a1_quality_20261108/P0/full_report/rd_curve.csv">验证 RD</a></p></div>
 </section>
 <section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>

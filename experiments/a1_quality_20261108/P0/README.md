@@ -83,3 +83,5 @@ bash "$p/run_trajectory_val.sh" "$out/full" "$out/trajectory_val"
 ```
 
 轨迹配对诊断保留给定的 mode/MV。只在离线教师阶段使用真实源，记录 JM 原生 MC，再将 Y/U/V 源减 MC 的差值预导出到状态。独立回放关闭 live residual，使用零占位 YUV，码流和重建必须逐字节匹配教师。包含 A 的合法 Skip/P16 混合模式和全 P16 组；Skip 保留派生语义，不生成自由残差。该诊断只用于定位漂移和码率来源。
+
+全量主矩阵完成 60 条视频、960 个固定参考帧、960 条整段回放。额外轨迹配对验证完成 64 条回放。阶段判定见 [decision.md](decision.md)，验证曲线见 [full_report/rd_curve.csv](full_report/rd_curve.csv)。
