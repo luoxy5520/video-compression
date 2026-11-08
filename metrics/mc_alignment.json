@@ -1,0 +1,27 @@
+[
+  {
+    "sample": "sample_0000",
+    "p16_pixels_compared": 1860864,
+    "differences": 0
+  },
+  {
+    "sample": "sample_0020",
+    "p16_pixels_compared": 6312960,
+    "differences": 0
+  },
+  {
+    "sample": "sample_1024",
+    "p16_pixels_compared": 1886208,
+    "differences": 0
+  },
+  {
+    "sample": "sample_1028",
+    "p16_pixels_compared": 6196992,
+    "differences": 0
+  },
+  {
+    "sample": "sample_1032",
+    "p16_pixels_compared": 5168640,
+    "differences": 0
+  }
+]
