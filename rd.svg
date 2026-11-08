@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="450" viewBox="0 0 850 450">
+<rect width="850" height="450" fill="white"/>
+<g font-family="sans-serif" fill="#142338">
+<text x="45" y="42" font-size="24" font-weight="bold">P2-Lite · actual H.264 rate–distortion</text>
+<text x="45" y="67" font-size="13">16 validation clips · 4 equal prompt weights · JM QP28</text>
+<path d="M183.9310344827586 95V365" stroke="#dfe7ef"/><text x="183.9310344827586" y="385" text-anchor="middle">440</text>
+<path d="M306.34482758620686 95V365" stroke="#dfe7ef"/><text x="306.34482758620686" y="385" text-anchor="middle">445</text>
+<path d="M428.7586206896552 95V365" stroke="#dfe7ef"/><text x="428.7586206896552" y="385" text-anchor="middle">450</text>
+<path d="M551.1724137931035 95V365" stroke="#dfe7ef"/><text x="551.1724137931035" y="385" text-anchor="middle">455</text>
+<path d="M673.5862068965517 95V365" stroke="#dfe7ef"/><text x="673.5862068965517" y="385" text-anchor="middle">460</text>
+<path d="M86 292.34121244998806H796" stroke="#dfe7ef"/><text x="76" y="296.34121244998806" text-anchor="end">20</text>
+<path d="M86 213.40472746999285H796" stroke="#dfe7ef"/><text x="76" y="217.40472746999285" text-anchor="end">20.5</text>
+<path d="M86 134.46824248999764H796" stroke="#dfe7ef"/><text x="76" y="138.46824248999764" text-anchor="end">21</text>
+<path d="M494.8449022312378 95V365" stroke="#8a5362" stroke-dasharray="4 4"/>
+<path d="M710.0551480730239 95V365" stroke="#8a5362" stroke-dasharray="4 4"/>
+<circle cx="232.05549695740277" cy="242.09439886578284" r="5" stroke="#3266aa" fill="#3266aa"><title>dc-1701 video 64: -0.090 dB</title></circle>
+<circle cx="290.6412981744437" cy="254.7337616727525" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 128: -0.170 dB</title></circle>
+<circle cx="405.9694929006095" cy="279.379617142363" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 256: -0.326 dB</title></circle>
+<circle cx="519.9266531440157" cy="302.00436736060595" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 384: -0.469 dB</title></circle>
+<circle cx="633.1003651115617" cy="323.1204815290511" r="5" stroke="#3266aa" fill="white"><title>dc-1701 video 512: -0.603 dB</title></circle>
+<circle cx="230.327302231238" cy="240.97754569221001" r="5" stroke="#3266aa" fill="#3266aa"><title>dc-1702 video 64: -0.083 dB</title></circle>
+<circle cx="287.59967545639006" cy="255.0305378952392" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 128: -0.172 dB</title></circle>
+<circle cx="400.7503448275861" cy="279.71692431971695" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 256: -0.328 dB</title></circle>
+<circle cx="514.0047058823528" cy="301.3723954161047" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 384: -0.465 dB</title></circle>
+<circle cx="626.6830020283979" cy="324.2064522068713" r="5" stroke="#3266aa" fill="white"><title>dc-1702 video 512: -0.610 dB</title></circle>
+<circle cx="231.51399594320475" cy="244.24041506468018" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1701 video 64: -0.104 dB</title></circle>
+<circle cx="289.7656795131835" cy="256.61511600158525" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 128: -0.182 dB</title></circle>
+<circle cx="405.1399594320479" cy="281.4056551834831" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 256: -0.339 dB</title></circle>
+<circle cx="519.4081947261664" cy="302.6906028084085" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 384: -0.474 dB</title></circle>
+<circle cx="632.5703853955373" cy="321.98739280066036" r="5" stroke="#0b877b" fill="white"><title>low-1701 video 512: -0.596 dB</title></circle>
+<circle cx="231.2605273833675" cy="241.41037370901654" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1701 frame 4: -0.086 dB</title></circle>
+<circle cx="289.1896146044619" cy="255.0658796166689" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 8: -0.172 dB</title></circle>
+<circle cx="403.12373225152095" cy="277.96466781575543" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 16: -0.317 dB</title></circle>
+<circle cx="515.9287626774853" cy="300.59437853572035" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 24: -0.461 dB</title></circle>
+<circle cx="627.4779716024345" cy="321.2472419911893" r="5" stroke="#0b877b" fill="white"><title>low-1701 frame 32: -0.591 dB</title></circle>
+<circle cx="750.2719675456393" cy="258.6681696213404" r="5" stroke="#0b877b" fill="white"><title>low-1701 threshold 0.4: -0.195 dB</title></circle>
+<circle cx="302.40454361054736" cy="234.19022002396417" r="5" stroke="#0b877b" fill="white"><title>low-1701 threshold 0.6: -0.040 dB</title></circle>
+<circle cx="191.44292089249478" cy="228.92468733824202" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1701 threshold 0.8: -0.007 dB</title></circle>
+<circle cx="232.1015821501013" cy="245.51333698834267" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1702 video 64: -0.112 dB</title></circle>
+<circle cx="291.5284381338746" cy="263.40822563916265" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 128: -0.225 dB</title></circle>
+<circle cx="409.2184989858017" cy="295.5354540631267" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 256: -0.428 dB</title></circle>
+<circle cx="525.4107910750513" cy="322.916023354119" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 384: -0.602 dB</title></circle>
+<circle cx="641.4763488843817" cy="349.21270300400073" r="5" stroke="#0b877b" fill="white"><title>low-1702 video 512: -0.768 dB</title></circle>
+<circle cx="233.15002028397515" cy="244.12856774363968" r="5" stroke="#0b877b" fill="#0b877b"><title>low-1702 frame 4: -0.103 dB</title></circle>
+<circle cx="293.1529411764715" cy="261.0230443197356" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 8: -0.210 dB</title></circle>
+<circle cx="411.51123732251585" cy="291.18899154083385" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 16: -0.401 dB</title></circle>
+<circle cx="528.83261663286" cy="318.8056993115327" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 24: -0.576 dB</title></circle>
+<circle cx="645.4281541582147" cy="343.6109999593679" r="5" stroke="#0b877b" fill="white"><title>low-1702 frame 32: -0.733 dB</title></circle>
+<rect x="168.02953346856066" y="223.89114355556646" width="8" height="8" fill="#492a48"/><text x="180.02953346856066" y="221.89114355556646" font-size="12">A</text>
+<rect x="483.2637728194726" y="157.9520806927356" width="8" height="8" fill="#492a48"/><text x="495.2637728194726" y="155.9520806927356" font-size="12">B +3% offline</text>
+<rect x="685.1399594320485" y="123.11501975693855" width="8" height="8" fill="#492a48"/><text x="697.1399594320485" y="121.11501975693855" font-size="12">B +5% offline</text>
+<text x="450" y="410" text-anchor="middle" font-size="14">Actual bitrate (kb/s)</text>
+<text x="20" y="220" font-size="14" transform="rotate(-90 20 220)">P-frame Y-PSNR (dB)</text>
+<text x="88" y="435" font-size="12"><tspan fill="#3266aa">DC</tspan> · <tspan fill="#0b877b">DC + low</tspan> · hollow = over +3% on at least one clip</text>
+<text x="796" y="435" text-anchor="end" font-size="12">5 high-rate points in RD table</text></g></svg>

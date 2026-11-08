@@ -1,0 +1,604 @@
+{
+  "best_nonzero": [
+    {
+      "policy": "video",
+      "budget": 64,
+      "delta_db": -0.08996635278234333,
+      "delta_last4_db": -0.08864834641263764,
+      "rate_pct": 0.8038970603385598,
+      "bitrate_kbps": 441.9656470588235,
+      "psnr_y_p_db": 20.318273695598045,
+      "last4_db": 18.7135447270982,
+      "delta_offline_3_db": -0.507637996506671,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1025",
+      "worst_delta_db": -0.4281718209059626,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.018471990076981637,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.24947331221135816,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.048972695299669855,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.042947413541363666
+      },
+      "run": "dc-1701",
+      "params": 74114,
+      "coeff_bits": 2716.0,
+      "luma_nonzero": 64,
+      "last_frame_delta_db": -0.08954516028178328,
+      "head_ms_median": 3.7474515847861767,
+      "head_mib_peak": 199.0234375,
+      "selected_true_positive": 8,
+      "total_selected": 1024,
+      "teacher_positive": 5268,
+      "teacher_pos_sign_correct": 2775,
+      "teacher_pos_magnitude_correct": 156,
+      "video": [
+        {
+          "sample": "sample_0020",
+          "delta_db": -0.017666598596644434,
+          "delta_last4_db": -0.006762556739513315,
+          "rate_pct": 0.3457576249188854
+        },
+        {
+          "sample": "sample_0021",
+          "delta_db": -0.0007676133503071725,
+          "delta_last4_db": 0.02028124292291089,
+          "rate_pct": 0.34437751004015027
+        },
+        {
+          "sample": "sample_0022",
+          "delta_db": -0.03932772677335805,
+          "delta_last4_db": -0.04514463330847107,
+          "rate_pct": 0.35343258005784417
+        },
+        {
+          "sample": "sample_0023",
+          "delta_db": -0.01612602158761689,
+          "delta_last4_db": -0.03576518172617682,
+          "rate_pct": 0.32305236697984796
+        },
+        {
+          "sample": "sample_1024",
+          "delta_db": -0.19366817635485134,
+          "delta_last4_db": -0.2126560962335411,
+          "rate_pct": 1.751106125755597
+        },
+        {
+          "sample": "sample_1025",
+          "delta_db": -0.4281718209059626,
+          "delta_last4_db": -0.34543416386755865,
+          "rate_pct": 1.8042582816035324
+        },
+        {
+          "sample": "sample_1026",
+          "delta_db": -0.20765867814404615,
+          "delta_last4_db": -0.20220026946828895,
+          "rate_pct": 1.2786094553396632
+        },
+        {
+          "sample": "sample_1027",
+          "delta_db": -0.16839457344057251,
+          "delta_last4_db": -0.1852824856554527,
+          "rate_pct": 1.3417083279921416
+        },
+        {
+          "sample": "sample_1028",
+          "delta_db": -0.03721791613002168,
+          "delta_last4_db": -0.06044027641231153,
+          "rate_pct": 0.807903830242851
+        },
+        {
+          "sample": "sample_1029",
+          "delta_db": -0.013053149672179742,
+          "delta_last4_db": 0.003944294529096837,
+          "rate_pct": 0.8058798506404452
+        },
+        {
+          "sample": "sample_1030",
+          "delta_db": -0.012624151495355562,
+          "delta_last4_db": -0.013280235900715809,
+          "rate_pct": 0.7157619928206183
+        },
+        {
+          "sample": "sample_1031",
+          "delta_db": -0.13299556390112244,
+          "delta_last4_db": -0.12647815579724409,
+          "rate_pct": 1.147880041365057
+        },
+        {
+          "sample": "sample_1032",
+          "delta_db": -0.02004464728253552,
+          "delta_last4_db": -0.04460156663597559,
+          "rate_pct": 0.39319241999464793
+        },
+        {
+          "sample": "sample_1033",
+          "delta_db": -0.025923133618338312,
+          "delta_last4_db": -0.031728792161333175,
+          "rate_pct": 0.37429537767756926
+        },
+        {
+          "sample": "sample_1034",
+          "delta_db": -0.041151377124954536,
+          "delta_last4_db": -0.028266979018027882,
+          "rate_pct": 0.47129690310525607
+        },
+        {
+          "sample": "sample_1035",
+          "delta_db": -0.0846704961396263,
+          "delta_last4_db": -0.10455768712959923,
+          "rate_pct": 0.6038402768828499
+        }
+      ]
+    },
+    {
+      "policy": "video",
+      "budget": 64,
+      "delta_db": -0.08289197409765925,
+      "delta_last4_db": -0.0997989962623701,
+      "rate_pct": 0.7810663550169614,
+      "bitrate_kbps": 441.89505882352944,
+      "psnr_y_p_db": 20.32534807428273,
+      "last4_db": 18.709913640167116,
+      "delta_offline_3_db": -0.5005636178219869,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1026",
+      "worst_delta_db": -0.2727553495268147,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.020099033623103946,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.21820771836039388,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.05729009522949324,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.03597104917764593
+      },
+      "run": "dc-1702",
+      "params": 74114,
+      "coeff_bits": 2687.3125,
+      "luma_nonzero": 64,
+      "last_frame_delta_db": -0.1039062987239292,
+      "head_ms_median": 3.6541569279506803,
+      "head_mib_peak": 199.0234375,
+      "selected_true_positive": 5,
+      "total_selected": 1024,
+      "teacher_positive": 5268,
+      "teacher_pos_sign_correct": 2742,
+      "teacher_pos_magnitude_correct": 182,
+      "video": [
+        {
+          "sample": "sample_0020",
+          "delta_db": -0.006053602644058742,
+          "delta_last4_db": -0.011546854599437495,
+          "rate_pct": 0.3204088254380233
+        },
+        {
+          "sample": "sample_0021",
+          "delta_db": -0.004326961690951592,
+          "delta_last4_db": 0.007108521517809052,
+          "rate_pct": 0.3343373493975843
+        },
+        {
+          "sample": "sample_0022",
+          "delta_db": -0.018466653045500436,
+          "delta_last4_db": -0.029295662711334103,
+          "rate_pct": 0.3566456035128951
+        },
+        {
+          "sample": "sample_0023",
+          "delta_db": -0.05154891711190501,
+          "delta_last4_db": -0.08882506148431979,
+          "rate_pct": 0.30871572347481724
+        },
+        {
+          "sample": "sample_1024",
+          "delta_db": -0.20819326754515188,
+          "delta_last4_db": -0.23481552912728887,
+          "rate_pct": 1.825886458528081
+        },
+        {
+          "sample": "sample_1025",
+          "delta_db": -0.24462522925966468,
+          "delta_last4_db": -0.23084999119100402,
+          "rate_pct": 1.6940302836920607
+        },
+        {
+          "sample": "sample_1026",
+          "delta_db": -0.2727553495268147,
+          "delta_last4_db": -0.2255762211828909,
+          "rate_pct": 1.1921554352277486
+        },
+        {
+          "sample": "sample_1027",
+          "delta_db": -0.14725702710994426,
+          "delta_last4_db": -0.15561934925073473,
+          "rate_pct": 1.2220655471520736
+        },
+        {
+          "sample": "sample_1028",
+          "delta_db": -0.05959355863269877,
+          "delta_last4_db": -0.08226964680622117,
+          "rate_pct": 0.8298048376891964
+        },
+        {
+          "sample": "sample_1029",
+          "delta_db": -0.021691522793004125,
+          "delta_last4_db": -0.011549394159080961,
+          "rate_pct": 0.8271494068157192
+        },
+        {
+          "sample": "sample_1030",
+          "delta_db": -0.07995512169092933,
+          "delta_last4_db": -0.21432527265304202,
+          "rate_pct": 0.6918307407810298
+        },
+        {
+          "sample": "sample_1031",
+          "delta_db": -0.06792017780134074,
+          "delta_last4_db": -0.09697933863787966,
+          "rate_pct": 1.1065149948293662
+        },
+        {
+          "sample": "sample_1032",
+          "delta_db": -0.01683225298188873,
+          "delta_last4_db": -0.05575929447705974,
+          "rate_pct": 0.37341646987656407
+        },
+        {
+          "sample": "sample_1033",
+          "delta_db": -0.007569310479834002,
+          "delta_last4_db": -0.005737863879382132,
+          "rate_pct": 0.366403607666288
+        },
+        {
+          "sample": "sample_1034",
+          "delta_db": -0.02822073207726561,
+          "delta_last4_db": -0.05312542902178308,
+          "rate_pct": 0.44201514285315824
+        },
+        {
+          "sample": "sample_1035",
+          "delta_db": -0.09126190117159538,
+          "delta_last4_db": -0.10761755253427197,
+          "rate_pct": 0.6056812533367761
+        }
+      ]
+    },
+    {
+      "policy": "threshold",
+      "budget": 0.8,
+      "delta_db": -0.006546679795391919,
+      "delta_last4_db": -0.004498992431719917,
+      "rate_pct": 0.2056121296762456,
+      "bitrate_kbps": 440.30682352941176,
+      "psnr_y_p_db": 20.401693368584993,
+      "last4_db": 18.805213643997767,
+      "delta_offline_3_db": -0.42421832351971955,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1029",
+      "worst_delta_db": -0.09370384792333475,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.001315713095144222,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": 0.0,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.02365709885306133,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.0012139072333621215
+      },
+      "run": "low-1701",
+      "params": 78470,
+      "coeff_bits": 1129.0625,
+      "luma_nonzero": 20.125,
+      "last_frame_delta_db": -0.004527718888238441,
+      "head_ms_median": 9.654867928475142,
+      "head_mib_peak": 400.99560546875,
+      "selected_true_positive": 1,
+      "total_selected": 322,
+      "teacher_positive": 5600,
+      "teacher_pos_sign_correct": 2977,
+      "teacher_pos_magnitude_correct": 154,
+      "video": [
+        {
+          "sample": "sample_0020",
+          "delta_db": -0.003872223723462298,
+          "delta_last4_db": -0.007599552122620423,
+          "rate_pct": 0.39037151200518316
+        },
+        {
+          "sample": "sample_0021",
+          "delta_db": -0.000484671390369229,
+          "delta_last4_db": 0.0002685135088444923,
+          "rate_pct": 0.011044176706831443
+        },
+        {
+          "sample": "sample_0022",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        },
+        {
+          "sample": "sample_0023",
+          "delta_db": -0.0009059572667453608,
+          "delta_last4_db": -0.0011448285540396341,
+          "rate_pct": 0.004778881168343574
+        },
+        {
+          "sample": "sample_1024",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        },
+        {
+          "sample": "sample_1025",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        },
+        {
+          "sample": "sample_1026",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        },
+        {
+          "sample": "sample_1027",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        },
+        {
+          "sample": "sample_1028",
+          "delta_db": 0.00031062874809251184,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.05110235070813207
+        },
+        {
+          "sample": "sample_1029",
+          "delta_db": -0.09370384792333475,
+          "delta_last4_db": -0.05758287015686392,
+          "rate_pct": 2.661057805927114
+        },
+        {
+          "sample": "sample_1030",
+          "delta_db": -0.0012351762370030883,
+          "delta_last4_db": -0.004113761024612472,
+          "rate_pct": 0.03480909387576503
+        },
+        {
+          "sample": "sample_1031",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        },
+        {
+          "sample": "sample_1032",
+          "delta_db": -9.781827547428179e-05,
+          "delta_last4_db": -7.471560497762653e-05,
+          "rate_pct": 0.0069797471004884315
+        },
+        {
+          "sample": "sample_1033",
+          "delta_db": -0.004757810657974204,
+          "delta_last4_db": -0.0017366649532490896,
+          "rate_pct": 0.12965050732807182
+        },
+        {
+          "sample": "sample_1034",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        },
+        {
+          "sample": "sample_1035",
+          "delta_db": 0.0,
+          "delta_last4_db": 0.0,
+          "rate_pct": 0.0
+        }
+      ]
+    },
+    {
+      "policy": "frame",
+      "budget": 4,
+      "delta_db": -0.102851198607264,
+      "delta_last4_db": -0.09766044377323524,
+      "rate_pct": 0.8355638344695284,
+      "bitrate_kbps": 442.01035294117645,
+      "psnr_y_p_db": 20.305388849773124,
+      "last4_db": 18.712052192656248,
+      "delta_offline_3_db": -0.5205228423315916,
+      "primary_per_clip_cap": true,
+      "maximum_per_clip_cap": true,
+      "passed": false,
+      "worst_clip": "sample_1025",
+      "worst_delta_db": -0.39078665219142295,
+      "prompt_delta_db": {
+        "A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.": -0.03836190103370907,
+        "A wooden metronome swings against a dark shelf, with the camera fixed.": -0.28167337021320016,
+        "A skater passes behind a stone column and reappears, filmed from the side.": -0.04134823498097173,
+        "A slow leftward pan shows rows of brightly colored market stalls.": -0.05002128820117502
+      },
+      "run": "low-1702",
+      "params": 78470,
+      "coeff_bits": 2762.25,
+      "luma_nonzero": 64,
+      "last_frame_delta_db": -0.10052203767856827,
+      "head_ms_median": 8.877344080246985,
+      "head_mib_peak": 400.99560546875,
+      "selected_true_positive": 5,
+      "total_selected": 1024,
+      "teacher_positive": 5600,
+      "teacher_pos_sign_correct": 2974,
+      "teacher_pos_magnitude_correct": 172,
+      "video": [
+        {
+          "sample": "sample_0020",
+          "delta_db": -0.0371368042136595,
+          "delta_last4_db": -0.03090853603619692,
+          "rate_pct": 0.3376460090850131
+        },
+        {
+          "sample": "sample_0021",
+          "delta_db": -0.028380593116192898,
+          "delta_last4_db": -0.04453886359553039,
+          "rate_pct": 0.33634538152611526
+        },
+        {
+          "sample": "sample_0022",
+          "delta_db": -0.04614708133587442,
+          "delta_last4_db": -0.03995070567090231,
+          "rate_pct": 0.35129056442111395
+        },
+        {
+          "sample": "sample_0023",
+          "delta_db": -0.04178312546910945,
+          "delta_last4_db": -0.06229865091773057,
+          "rate_pct": 0.3240081432135167
+        },
+        {
+          "sample": "sample_1024",
+          "delta_db": -0.25682281395772577,
+          "delta_last4_db": -0.24185943978481106,
+          "rate_pct": 1.9941422072661474
+        },
+        {
+          "sample": "sample_1025",
+          "delta_db": -0.39078665219142295,
+          "delta_last4_db": -0.31471147147530587,
+          "rate_pct": 1.8622730173464053
+        },
+        {
+          "sample": "sample_1026",
+          "delta_db": -0.2343622539761263,
+          "delta_last4_db": -0.2274698434457676,
+          "rate_pct": 1.4196660144696782
+        },
+        {
+          "sample": "sample_1027",
+          "delta_db": -0.2447217607275256,
+          "delta_last4_db": -0.21956076744174524,
+          "rate_pct": 1.3929838054950183
+        },
+        {
+          "sample": "sample_1028",
+          "delta_db": -0.032657999075070165,
+          "delta_last4_db": -0.06290007671347198,
+          "rate_pct": 0.8006034944274099
+        },
+        {
+          "sample": "sample_1029",
+          "delta_db": -0.014723727771272621,
+          "delta_last4_db": -0.02461842947604609,
+          "rate_pct": 0.8011532826015078
+        },
+        {
+          "sample": "sample_1030",
+          "delta_db": -0.04654418407785954,
+          "delta_last4_db": -0.041432844951096115,
+          "rate_pct": 0.7288154030240301
+        },
+        {
+          "sample": "sample_1031",
+          "delta_db": -0.0714670289996846,
+          "delta_last4_db": -0.06347878822301212,
+          "rate_pct": 1.1444329541537401
+        },
+        {
+          "sample": "sample_1032",
+          "delta_db": -0.03938402068667202,
+          "delta_last4_db": -0.036900639768710164,
+          "rate_pct": 0.3920291288112221
+        },
+        {
+          "sample": "sample_1033",
+          "delta_db": -0.018524863915693857,
+          "delta_last4_db": -0.02150882170109547,
+          "rate_pct": 0.37993235625704
+        },
+        {
+          "sample": "sample_1034",
+          "delta_db": -0.03605428269795041,
+          "delta_last4_db": -0.033860151545322736,
+          "rate_pct": 0.4740856421768802
+        },
+        {
+          "sample": "sample_1035",
+          "delta_db": -0.10612198550438379,
+          "delta_last4_db": -0.09656906962501921,
+          "rate_pct": 0.6296139472376172
+        }
+      ]
+    }
+  ],
+  "replay_count": 608,
+  "passed": [],
+  "reference": {
+    "A": {
+      "bitrate_kbps": 439.5138823529412,
+      "psnr_y_db": 20.408240048380385
+    },
+    "zero": {
+      "bitrate_kbps": 438.96282352941176,
+      "psnr_y_db": 20.408240048380385
+    },
+    "uniform_5": {
+      "bitrate_kbps": 460.41270588235295,
+      "psnr_y_db": 21.02334492580995
+    },
+    "uniform_3": {
+      "bitrate_kbps": 452.392,
+      "psnr_y_db": 20.82041053361345
+    },
+    "uniform_2": {
+      "bitrate_kbps": 448.06823529411764,
+      "psnr_y_db": 20.7010037401783
+    },
+    "uniform_1": {
+      "bitrate_kbps": 443.6611764705882,
+      "psnr_y_db": 20.567640978973035
+    },
+    "uniform_0": {
+      "bitrate_kbps": 439.4545882352941,
+      "psnr_y_db": 20.41171236621723
+    },
+    "early_5": {
+      "bitrate_kbps": 460.63529411764705,
+      "psnr_y_db": 21.046576831581255
+    },
+    "early_3": {
+      "bitrate_kbps": 452.40282352941176,
+      "psnr_y_db": 20.829617347269078
+    },
+    "early_2": {
+      "bitrate_kbps": 448.08,
+      "psnr_y_db": 20.703148921199087
+    },
+    "early_1": {
+      "bitrate_kbps": 443.7628235294117,
+      "psnr_y_db": 20.574953766611262
+    },
+    "early_0": {
+      "bitrate_kbps": 439.4945882352941,
+      "psnr_y_db": 20.414529835239748
+    },
+    "offline_gain_5": {
+      "bitrate_kbps": 460.34870588235293,
+      "psnr_y_db": 21.020096878021555
+    },
+    "offline_gain_3": {
+      "bitrate_kbps": 452.3896470588235,
+      "psnr_y_db": 20.825911692104714
+    },
+    "offline_gain_2": {
+      "bitrate_kbps": 448.1025882352941,
+      "psnr_y_db": 20.708469883226055
+    },
+    "offline_gain_1": {
+      "bitrate_kbps": 443.73835294117646,
+      "psnr_y_db": 20.57790819272482
+    },
+    "offline_gain_0": {
+      "bitrate_kbps": 439.4625882352941,
+      "psnr_y_db": 20.411676401350803
+    }
+  }
+}
