@@ -1,0 +1,6 @@
+{
+  "status": "start_L2",
+  "loss_only_improved_all_fixed": true,
+  "median_sparse_position_density": 1.21666127901386e-05,
+  "median_A_teacher_iou": 0.12777519018785904
+}

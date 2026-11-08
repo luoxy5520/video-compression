@@ -1,0 +1,401 @@
+sample,split,prompt,category,trajectory,motion,candidates,selected,dc,low,sign_positive,mean_abs_level,last4_selected,frame_count
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,all,6312960,572,568,572,409,31.5,166,29 31 31 31 33 33 34 36 36 37 37 38 39 42 42 43
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_lt1,235520,10,10,10,8,33.7,10,0 0 0 0 0 0 0 0 0 0 0 0 3 1 5 1
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_1_to_8,5360384,170,168,170,129,32.758823529411764,122,0 0 3 6 5 3 2 8 8 3 7 3 30 32 27 33
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_8_to_32,274176,47,47,47,42,32.8936170212766,11,0 2 1 2 2 0 3 4 0 4 5 13 1 3 1 6
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_ge32,442880,345,343,345,230,30.62608695652174,23,29 29 27 23 26 30 29 24 28 30 25 22 5 6 9 3
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,all,6312960,64,64,64,51,41.15625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_lt1,235520,1,1,1,1,37.0,0,0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_1_to_8,5360384,27,27,27,24,44.7037037037037,16,0 0 0 0 1 2 2 2 2 0 1 1 4 4 4 4
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_8_to_32,274176,4,4,4,4,41.5,0,0 0 0 0 0 0 0 0 0 1 0 3 0 0 0 0
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_ge32,442880,32,32,32,22,38.25,0,4 4 4 4 3 2 2 2 1 3 3 0 0 0 0 0
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,all,6312960,64,64,64,45,36.515625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_lt1,235520,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_1_to_8,5360384,10,10,10,8,38.3,6,0 0 1 1 0 0 0 0 1 0 1 0 3 2 0 1
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_8_to_32,274176,7,7,7,7,38.714285714285715,2,0 0 0 0 0 0 0 1 0 1 0 3 0 0 0 2
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_ge32,442880,47,47,47,30,35.808510638297875,8,4 4 3 3 4 4 4 3 3 3 3 1 1 2 4 1
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,all,6312960,64,64,64,51,41.21875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_lt1,235520,1,1,1,1,37.0,0,0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_1_to_8,5360384,27,27,27,24,44.51851851851852,16,0 0 0 0 1 2 2 2 2 0 1 1 4 4 4 4
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_8_to_32,274176,4,4,4,4,41.5,0,0 0 0 0 0 0 0 0 0 1 0 3 0 0 0 0
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_ge32,442880,32,32,32,22,38.53125,0,4 4 4 4 3 2 2 2 1 3 3 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,all,6130944,589,588,589,206,42.853989813242784,148,33 35 37 37 37 37 38 38 38 37 37 37 37 37 37 37
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_lt1,43776,10,10,10,2,38.0,6,0 0 0 0 0 0 0 0 4 0 0 0 1 0 5 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_1_to_8,5065472,277,276,277,88,39.624548736462096,141,7 0 0 1 15 1 6 11 18 20 33 24 36 37 31 37
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_8_to_32,714752,96,96,96,17,43.416666666666664,1,1 1 1 11 7 20 7 16 7 9 2 13 0 0 1 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_ge32,306944,206,206,206,99,47.16990291262136,0,25 34 36 25 15 16 25 11 9 8 2 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,all,6130944,64,64,64,13,52.09375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_lt1,43776,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_1_to_8,5065472,32,32,32,0,52.0625,16,1 1 0 0 4 0 0 0 1 2 3 4 4 4 4 4
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_8_to_32,714752,8,8,8,0,51.875,0,0 0 0 1 0 4 2 1 0 0 0 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_ge32,306944,24,24,24,13,52.208333333333336,0,3 3 4 3 0 0 2 3 3 2 1 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,all,6130944,64,63,64,27,46.75,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_lt1,43776,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_1_to_8,5065472,25,24,25,13,43.84,16,1 0 0 0 2 0 0 1 1 0 3 1 4 4 4 4
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_8_to_32,714752,10,10,10,3,45.1,0,0 0 0 1 0 2 0 1 0 2 1 3 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_ge32,306944,29,29,29,11,49.827586206896555,0,3 4 4 3 2 2 4 2 3 2 0 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,all,6130944,64,64,64,14,52.21875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_lt1,43776,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_1_to_8,5065472,31,31,31,0,52.064516129032256,16,1 1 0 0 4 0 0 0 0 2 3 4 4 4 4 4
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_8_to_32,714752,8,8,8,0,51.875,0,0 0 0 1 0 4 2 1 0 0 0 0 0 0 0 0
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_ge32,306944,25,25,25,14,52.52,0,3 3 4 3 0 0 2 3 4 2 1 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,all,6084352,526,476,514,301,28.8212927756654,174,14 19 21 24 25 26 32 33 37 39 40 42 42 43 44 45
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_lt1,90880,5,2,5,4,16.6,0,0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_1_to_8,5014784,427,380,415,255,28.11007025761124,173,14 16 16 24 25 26 32 33 23 0 39 6 41 43 44 45
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_8_to_32,978688,94,94,94,42,32.702127659574465,1,0 3 0 0 0 0 0 0 14 39 1 36 1 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,all,6084352,64,61,62,27,36.96875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_lt1,90880,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_1_to_8,5014784,55,52,53,21,36.50909090909091,16,4 3 4 4 4 4 4 4 3 0 3 2 4 4 4 4
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_8_to_32,978688,9,9,9,6,39.77777777777778,0,0 1 0 0 0 0 0 0 1 4 1 2 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,all,6084352,64,57,62,37,30.546875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_lt1,90880,1,0,1,0,20.0,0,0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_1_to_8,5014784,53,47,51,32,29.849056603773583,16,4 3 3 4 4 4 4 4 3 0 4 0 4 4 4 4
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_8_to_32,978688,10,10,10,5,35.3,0,0 1 0 0 0 0 0 0 1 4 0 4 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,all,6084352,64,61,62,27,36.96875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_lt1,90880,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_1_to_8,5014784,55,52,53,21,36.50909090909091,16,4 3 4 4 4 4 4 4 3 0 3 2 4 4 4 4
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_8_to_32,978688,9,9,9,6,39.77777777777778,0,0 1 0 0 0 0 0 0 1 4 1 2 0 0 0 0
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,all,6079744,620,619,620,299,43.49032258064516,158,23 27 29 36 45 46 48 46 37 40 44 41 38 39 40 41
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_lt1,211456,8,8,8,0,48.75,0,0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_1_to_8,4557056,213,213,213,109,45.16901408450704,55,6 0 3 3 30 4 12 8 29 10 31 22 17 12 7 19
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_8_to_32,1224448,362,361,362,161,42.469613259668506,80,17 27 26 33 7 42 36 38 8 17 12 19 19 11 33 17
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,native_teacher,qpel_ge32,86784,37,37,37,29,42.67567567567568,23,0 0 0 0 0 0 0 0 0 13 1 0 2 16 0 5
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,all,6079744,64,64,64,26,47.21875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_lt1,211456,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_1_to_8,4557056,25,25,25,9,50.48,6,0 0 0 0 4 0 2 4 3 0 4 2 1 1 0 4
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_8_to_32,1224448,35,35,35,13,44.97142857142857,6,4 4 4 4 0 4 2 0 1 4 0 2 0 2 4 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,A,qpel_ge32,86784,4,4,4,4,46.5,4,0 0 0 0 0 0 0 0 0 0 0 0 3 1 0 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,all,6079744,64,64,64,24,47.625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_lt1,211456,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_1_to_8,4557056,23,23,23,10,50.30434782608695,7,0 0 0 0 4 0 0 0 4 1 4 3 1 2 0 4
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_8_to_32,1224448,38,38,38,11,46.18421052631579,6,4 4 4 4 0 4 4 4 0 3 0 1 2 0 4 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,teacher,qpel_ge32,86784,3,3,3,3,45.333333333333336,3,0 0 0 0 0 0 0 0 0 0 0 0 1 2 0 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,all,6079744,64,64,64,26,47.21875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_lt1,211456,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_1_to_8,4557056,25,25,25,9,50.48,6,0 0 0 0 4 0 2 4 3 0 4 2 1 1 0 4
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_8_to_32,1224448,35,35,35,13,44.97142857142857,6,4 4 4 4 0 4 2 0 1 4 0 2 0 2 4 0
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",unspecified,student,qpel_ge32,86784,4,4,4,4,46.5,4,0 0 0 0 0 0 0 0 0 0 0 0 3 1 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,all,1886208,87,34,84,69,23.333333333333332,28,2 3 4 5 5 5 5 5 6 6 6 7 7 7 7 7
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_lt1,334848,2,2,2,2,21.5,0,0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_1_to_8,1550848,85,32,82,67,23.376470588235293,28,2 3 4 5 5 5 4 5 6 6 5 7 7 7 7 7
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_8_to_32,512,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,all,1886208,64,16,64,64,30.4375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_lt1,334848,16,2,16,16,34.5625,11,0 0 0 0 0 0 4 0 1 0 0 0 3 3 1 4
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_1_to_8,1550848,48,14,48,48,29.0625,5,4 4 4 4 4 4 0 4 3 4 4 4 1 1 3 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_8_to_32,512,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,all,1886208,64,19,62,53,23.015625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_lt1,334848,1,1,1,1,23.0,0,0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_1_to_8,1550848,63,18,61,52,23.015873015873016,16,4 4 4 4 4 4 4 4 4 4 3 4 4 4 4 4
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_8_to_32,512,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,all,1886208,64,19,64,57,30.953125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_lt1,334848,17,5,17,14,35.411764705882355,11,0 0 0 0 0 0 4 1 0 0 1 0 3 3 1 4
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_1_to_8,1550848,47,14,47,43,29.340425531914892,5,4 4 4 4 4 4 0 3 4 4 3 4 1 1 3 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_8_to_32,512,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,all,950016,97,30,83,43,18.237113402061855,36,2 3 4 4 4 4 5 6 7 7 7 8 9 9 9 9
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_lt1,322560,11,0,10,0,18.181818181818183,4,0 0 0 0 0 0 1 0 1 4 0 1 1 3 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_1_to_8,627456,86,30,73,43,18.24418604651163,32,2 3 4 4 4 4 4 6 6 3 7 7 8 6 9 9
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,all,950016,64,7,44,24,23.359375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_lt1,322560,5,0,5,0,27.0,1,0 0 0 0 0 0 0 0 1 0 3 0 0 1 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_1_to_8,627456,59,7,39,24,23.050847457627118,15,4 4 4 4 4 4 4 4 3 4 1 4 4 3 4 4
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,all,950016,64,21,49,30,17.3125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_lt1,322560,4,0,3,0,17.0,0,0 0 0 0 0 0 1 0 0 2 0 1 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_1_to_8,627456,60,21,46,30,17.333333333333332,16,4 4 4 4 4 4 3 4 4 2 4 3 4 4 4 4
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,all,950016,64,34,51,31,27.140625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_lt1,322560,26,26,26,18,30.5,2,0 0 0 2 4 3 3 0 4 3 3 2 0 1 1 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_1_to_8,627456,38,8,25,13,24.842105263157894,14,4 4 4 2 0 1 1 4 0 1 1 2 4 3 3 4
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,all,1134848,127,76,122,42,20.401574803149607,46,2 4 4 5 6 7 7 8 9 9 10 10 11 11 12 12
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_lt1,424192,1,0,1,0,16.0,0,0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_1_to_8,710656,126,76,121,42,20.436507936507937,46,2 4 4 5 5 7 7 8 9 9 10 10 11 11 12 12
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,all,1134848,64,47,61,38,26.90625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_lt1,424192,13,10,13,10,30.0,7,0 0 0 0 2 1 3 0 0 0 0 0 3 0 2 2
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_1_to_8,710656,51,37,48,28,26.11764705882353,9,4 4 4 4 2 3 1 4 4 4 4 4 1 4 2 2
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,all,1134848,64,35,61,24,19.59375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_lt1,424192,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_1_to_8,710656,64,35,61,24,19.59375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,all,1134848,64,50,61,27,30.1875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_lt1,424192,20,19,20,6,36.65,6,0 0 0 2 2 0 3 2 2 0 1 2 3 0 2 1
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_1_to_8,710656,44,31,41,21,27.25,10,4 4 4 2 2 4 1 2 2 4 3 2 1 4 2 3
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,all,1222144,134,65,117,61,20.79850746268657,48,3 4 5 6 7 8 8 8 9 9 9 10 11 12 12 13
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_lt1,350720,3,3,3,3,19.666666666666668,0,0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_1_to_8,871168,131,62,114,58,20.82442748091603,48,3 4 5 6 6 7 8 7 9 9 9 10 11 12 12 13
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_8_to_32,256,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,all,1222144,64,30,50,39,27.671875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_lt1,350720,7,7,7,7,27.285714285714285,1,0 0 0 0 1 2 0 2 0 0 1 0 1 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_1_to_8,871168,57,23,43,32,27.719298245614034,15,4 4 4 4 3 2 4 2 4 4 3 4 3 4 4 4
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_8_to_32,256,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,all,1222144,64,30,51,31,20.859375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_lt1,350720,2,2,2,2,20.5,0,0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_1_to_8,871168,62,28,49,29,20.870967741935484,16,4 4 4 4 3 3 4 4 4 4 4 4 4 4 4 4
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_8_to_32,256,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,all,1222144,64,41,53,43,30.140625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_lt1,350720,13,13,13,10,33.30769230769231,3,0 1 1 1 2 1 1 2 0 0 1 0 0 2 1 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_1_to_8,871168,51,28,40,33,29.333333333333332,13,4 3 3 3 2 3 3 2 4 4 3 4 4 2 3 4
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_8_to_32,256,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",unspecified,student,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,all,6196992,267,267,267,41,31.086142322097377,68,16 17 16 16 16 16 17 17 17 17 17 17 17 17 17 17
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_lt1,57088,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_1_to_8,2509312,93,93,93,35,29.21505376344086,37,1 2 1 1 0 0 2 14 13 1 17 4 14 7 13 3
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_8_to_32,1667584,93,93,93,6,29.397849462365592,31,2 0 4 2 0 3 15 3 4 16 0 13 3 10 4 14
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_ge32,1963008,81,81,81,0,35.17283950617284,0,13 15 11 13 16 13 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,all,6196992,64,64,64,12,36.0625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_lt1,57088,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_1_to_8,2509312,26,26,26,11,35.65384615384615,9,0 0 0 0 0 0 4 4 4 0 4 1 3 3 2 1
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_8_to_32,1667584,19,19,19,1,34.05263157894737,7,0 1 1 0 0 3 0 0 0 4 0 3 1 1 2 3
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_ge32,1963008,19,19,19,0,38.63157894736842,0,4 3 3 4 4 1 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,all,6196992,64,64,64,7,33.109375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_lt1,57088,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_1_to_8,2509312,19,19,19,6,30.42105263157895,7,0 0 0 0 0 0 1 4 3 0 4 0 3 3 1 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_8_to_32,1667584,24,24,24,1,30.583333333333332,9,0 0 1 0 0 2 3 0 1 4 0 4 1 1 3 4
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_ge32,1963008,21,21,21,0,38.42857142857143,0,4 4 3 4 4 2 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,all,6196992,64,64,64,14,36.203125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_lt1,57088,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_1_to_8,2509312,28,28,28,14,35.535714285714285,11,0 0 0 0 0 0 4 4 4 0 4 1 4 3 3 1
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_8_to_32,1667584,17,17,17,0,34.588235294117645,5,0 1 1 0 0 3 0 0 0 4 0 3 0 1 1 3
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_ge32,1963008,19,19,19,0,38.63157894736842,0,4 3 3 4 4 1 0 0 0 0 0 0 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,all,5625856,463,463,463,85,35.97840172786177,115,29 29 29 29 29 30 30 30 29 28 28 28 28 28 29 30
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_lt1,19712,3,3,3,0,33.666666666666664,3,0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_1_to_8,1150208,106,106,106,42,34.43396226415094,105,1 0 0 0 0 0 0 0 0 0 0 0 21 28 26 30
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_8_to_32,1320960,90,90,90,6,36.522222222222226,7,27 29 1 0 0 0 0 0 0 0 3 23 7 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_ge32,3134976,264,264,264,37,36.43939393939394,0,1 0 28 29 29 30 30 30 29 28 25 5 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,all,5625856,64,64,64,1,37.875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_lt1,19712,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_1_to_8,1150208,16,16,16,0,39.5,16,0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_8_to_32,1320960,12,12,12,0,37.916666666666664,0,4 4 0 0 0 0 0 0 0 0 0 4 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_ge32,3134976,36,36,36,1,37.138888888888886,0,0 0 4 4 4 4 4 4 4 4 4 0 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,all,5625856,64,64,64,5,37.453125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_lt1,19712,2,2,2,0,34.0,2,0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_1_to_8,1150208,14,14,14,1,38.214285714285715,14,0 0 0 0 0 0 0 0 0 0 0 0 4 4 2 4
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_8_to_32,1320960,13,13,13,0,37.84615384615385,0,4 4 0 0 0 0 0 0 0 0 1 4 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_ge32,3134976,35,35,35,4,37.2,0,0 0 4 4 4 4 4 4 4 4 3 0 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,all,5625856,64,64,64,0,42.5625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_lt1,19712,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_1_to_8,1150208,16,16,16,0,39.6875,16,0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_8_to_32,1320960,9,9,9,0,38.111111111111114,0,4 4 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_ge32,3134976,39,39,39,0,44.76923076923077,0,0 0 4 4 4 4 4 4 4 4 4 3 0 0 0 0
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,all,5355264,277,277,277,244,35.3971119133574,71,17 18 18 17 17 17 17 17 17 17 17 17 18 17 18 18
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_lt1,61696,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_1_to_8,3848448,145,145,145,137,35.44137931034483,22,13 6 9 0 17 11 13 16 12 9 9 8 4 0 9 9
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_8_to_32,1358336,119,119,119,105,35.48739495798319,40,4 12 9 17 0 6 4 1 5 8 4 9 14 12 9 5
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_ge32,86784,13,13,13,2,34.07692307692308,9,0 0 0 0 0 0 0 0 0 0 4 0 0 5 0 4
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,all,5355264,64,64,64,64,40.640625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_lt1,61696,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_1_to_8,3848448,47,47,47,47,40.8936170212766,9,3 4 4 4 4 4 4 0 4 3 3 1 3 0 3 3
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_8_to_32,1358336,17,17,17,17,39.94117647058823,7,1 0 0 0 0 0 0 4 0 1 1 3 1 4 1 1
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_ge32,86784,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,all,5355264,64,64,64,56,36.78125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_lt1,61696,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_1_to_8,3848448,33,33,33,32,37.121212121212125,1,3 4 2 0 4 4 3 3 2 2 3 2 0 0 1 0
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_8_to_32,1358336,28,28,28,24,36.5,12,1 0 2 4 0 0 1 1 2 2 1 2 4 4 3 1
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_ge32,86784,3,3,3,0,35.666666666666664,3,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,all,5355264,64,64,64,54,41.53125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_lt1,61696,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_1_to_8,3848448,43,43,43,43,41.18604651162791,7,3 4 4 4 4 4 4 0 4 3 2 0 1 0 3 3
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_8_to_32,1358336,15,15,15,10,42.266666666666666,7,1 0 0 0 0 0 0 4 0 1 1 1 2 3 1 1
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_ge32,86784,6,6,6,1,42.166666666666664,2,0 0 0 0 0 0 0 0 0 0 1 3 1 1 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,all,2952192,171,171,171,54,38.12280701754386,47,8 9 10 10 10 11 11 11 11 11 11 11 11 12 12 12
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_lt1,168960,4,4,4,0,36.75,0,0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_1_to_8,1532160,75,75,75,35,37.16,47,0 0 2 0 0 0 3 0 3 2 7 11 11 12 12 12
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_8_to_32,990720,85,85,85,14,38.96470588235294,0,8 8 8 10 6 10 7 11 8 9 0 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,native_teacher,qpel_ge32,260352,7,7,7,5,39.0,0,0 1 0 0 4 1 1 0 0 0 0 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,all,2952192,64,64,64,27,40.25,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_lt1,168960,1,1,1,1,42.0,1,0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_1_to_8,1532160,27,27,27,14,40.18518518518518,15,0 0 0 0 0 0 1 0 3 0 4 4 4 4 3 4
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_8_to_32,990720,28,28,28,6,40.32142857142857,0,4 2 4 4 1 1 3 4 1 4 0 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,A,qpel_ge32,260352,8,8,8,6,40.0,0,0 2 0 0 3 3 0 0 0 0 0 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,all,2952192,64,64,64,23,38.953125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_lt1,168960,1,1,1,0,37.0,0,0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_1_to_8,1532160,24,24,24,12,37.875,16,0 0 0 0 0 0 1 0 0 0 3 4 4 4 4 4
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_8_to_32,990720,36,36,36,8,39.611111111111114,0,4 4 4 4 3 3 2 4 4 4 0 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,teacher,qpel_ge32,260352,3,3,3,3,40.333333333333336,0,0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,all,2952192,64,64,64,36,40.328125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_lt1,168960,1,1,1,1,42.0,1,0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_1_to_8,1532160,29,29,29,23,40.275862068965516,15,0 0 0 0 0 0 1 0 3 2 4 4 4 4 3 4
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_8_to_32,990720,26,26,26,6,40.42307692307692,0,4 2 4 4 1 1 3 4 1 2 0 0 0 0 0 0
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",unspecified,student,qpel_ge32,260352,8,8,8,6,40.0,0,0 2 0 0 3 3 0 0 0 0 0 0 0 0 0 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,all,5168640,500,498,500,226,34.358,128,22 29 31 31 32 34 32 32 33 32 33 31 31 32 33 32
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_lt1,34048,1,1,1,1,30.0,1,0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_1_to_8,2253568,101,100,101,56,31.871287128712872,54,0 0 8 2 1 0 1 11 7 5 9 3 12 3 21 18
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_8_to_32,2644736,298,297,298,138,34.285234899328856,62,21 15 15 29 20 1 31 20 23 16 22 23 18 23 11 10
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_ge32,236288,100,100,100,31,37.13,11,1 14 8 0 11 33 0 1 3 11 2 5 1 6 0 4
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,all,5168640,64,64,64,40,42.625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_lt1,34048,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_1_to_8,2253568,13,13,13,11,42.76923076923077,5,0 0 0 2 0 0 0 0 1 0 2 3 0 0 1 4
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_8_to_32,2644736,42,42,42,28,42.714285714285715,11,3 4 4 2 1 0 4 4 3 3 2 1 4 4 3 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_ge32,236288,9,9,9,1,42.0,0,1 0 0 0 3 4 0 0 0 1 0 0 0 0 0 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,all,5168640,64,63,64,27,39.078125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_lt1,34048,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_1_to_8,2253568,6,5,6,1,36.833333333333336,2,0 0 0 1 0 0 0 1 0 0 1 1 2 0 0 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_8_to_32,2644736,44,44,44,17,39.11363636363637,11,3 4 4 3 3 0 4 3 4 0 2 3 2 2 4 3
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_ge32,236288,14,14,14,9,39.92857142857143,3,1 0 0 0 1 4 0 0 0 4 1 0 0 2 0 1
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,all,5168640,64,64,64,38,42.78125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_lt1,34048,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_1_to_8,2253568,14,14,14,10,43.5,6,0 0 0 2 0 0 0 0 1 0 2 3 0 0 2 4
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_8_to_32,2644736,41,41,41,27,42.707317073170735,10,3 4 4 2 1 0 4 4 3 3 2 1 4 4 2 0
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_ge32,236288,9,9,9,1,42.0,0,1 0 0 0 3 4 0 0 0 1 0 0 0 0 0 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,all,5666560,508,496,508,249,35.46259842519685,136,24 27 29 29 31 32 32 33 33 34 34 34 33 34 34 35
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_lt1,79104,1,1,1,0,31.0,1,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_1_to_8,2082560,75,75,75,40,34.54666666666667,49,0 0 0 0 6 3 4 1 2 1 6 3 5 7 20 17
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_8_to_32,2896128,347,335,347,181,35.654178674351584,75,21 12 18 16 25 23 28 32 25 22 24 26 26 18 14 17
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_ge32,608768,85,85,85,28,35.54117647058823,11,3 15 11 13 0 6 0 0 6 11 4 5 2 9 0 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,all,5666560,64,60,64,12,45.0,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_lt1,79104,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_1_to_8,2082560,12,12,12,0,46.416666666666664,7,0 0 0 0 1 0 2 2 0 0 0 0 0 0 3 4
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_8_to_32,2896128,38,34,38,12,45.23684210526316,9,4 1 1 1 3 4 2 2 4 0 4 3 4 4 1 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_ge32,608768,14,14,14,0,43.142857142857146,0,0 3 3 3 0 0 0 0 0 4 0 1 0 0 0 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,all,5666560,64,59,64,31,40.15625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_lt1,79104,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_1_to_8,2082560,5,5,5,1,38.6,4,0 0 0 0 1 0 0 0 0 0 0 0 0 0 2 2
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_8_to_32,2896128,51,46,51,28,40.294117647058826,10,4 3 3 3 3 2 4 4 4 4 4 3 4 2 2 2
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_ge32,608768,8,8,8,2,40.25,2,0 1 1 1 0 2 0 0 0 0 0 1 0 2 0 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,all,5666560,64,60,64,14,45.03125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_lt1,79104,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_1_to_8,2082560,12,12,12,0,46.416666666666664,7,0 0 0 0 1 0 2 2 0 0 0 0 0 0 3 4
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_8_to_32,2896128,36,32,36,12,45.416666666666664,8,4 0 1 1 3 4 2 2 4 0 4 3 4 3 1 0
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_ge32,608768,16,16,16,2,43.125,1,0 4 3 3 0 0 0 0 0 4 0 1 0 1 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,all,4750592,413,405,412,263,29.84261501210654,122,12 18 22 23 25 25 27 28 26 27 29 29 30 31 31 30
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_lt1,138496,3,3,3,3,27.0,3,0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_1_to_8,2984704,146,140,145,79,28.616438356164384,72,1 5 10 7 8 3 5 8 0 1 13 13 6 18 23 25
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_8_to_32,1534208,231,229,231,153,30.376623376623378,47,11 5 12 14 17 21 22 19 26 6 16 15 24 13 5 5
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_ge32,93184,33,33,33,28,31.78787878787879,0,0 8 0 2 0 1 0 1 0 20 0 1 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,all,4750592,64,64,64,63,38.5625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_lt1,138496,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_1_to_8,2984704,9,9,9,9,33.111111111111114,0,0 1 3 2 3 0 0 0 0 0 0 0 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_8_to_32,1534208,45,45,45,45,39.977777777777774,16,4 0 1 2 1 4 4 3 4 1 4 1 4 4 4 4
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_ge32,93184,10,10,10,9,37.1,0,0 3 0 0 0 0 0 1 0 3 0 3 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,all,4750592,64,62,64,53,33.328125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_lt1,138496,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_1_to_8,2984704,17,15,17,14,31.058823529411764,6,0 3 3 0 1 1 0 0 0 0 1 2 0 1 3 2
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_8_to_32,1534208,41,41,41,33,33.951219512195124,10,4 0 1 4 3 3 4 3 4 0 3 2 4 3 1 2
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_ge32,93184,6,6,6,6,35.5,0,0 1 0 0 0 0 0 1 0 4 0 0 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,all,4750592,64,64,64,61,38.71875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_lt1,138496,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_1_to_8,2984704,8,8,8,8,32.875,0,0 1 3 2 2 0 0 0 0 0 0 0 0 0 0 0
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_8_to_32,1534208,45,45,45,44,40.06666666666667,16,4 0 1 1 2 4 4 3 4 1 4 1 4 4 4 4
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_ge32,93184,11,11,11,9,37.45454545454545,0,0 3 0 1 0 0 0 1 0 3 0 3 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,all,3446016,309,235,301,121,25.550161812297734,97,8 11 14 17 17 18 19 20 21 21 23 23 23 24 25 25
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_lt1,162560,3,3,3,1,24.333333333333332,0,0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_1_to_8,2276608,224,162,217,95,25.4375,90,6 4 0 8 11 12 16 15 14 15 20 13 21 20 25 24
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_8_to_32,997888,82,70,81,25,25.902439024390244,7,2 7 14 9 6 4 3 4 7 6 3 10 2 4 0 1
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,native_teacher,qpel_ge32,8960,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,all,3446016,64,52,62,11,35.5,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_lt1,162560,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_1_to_8,2276608,28,18,26,4,36.32142857142857,11,4 0 0 0 1 1 3 2 1 2 3 0 2 3 4 2
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_8_to_32,997888,36,34,36,7,34.861111111111114,5,0 4 4 4 3 3 1 2 3 2 1 4 2 1 0 2
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,A,qpel_ge32,8960,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,all,3446016,64,47,60,24,28.53125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_lt1,162560,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_1_to_8,2276608,37,25,33,18,28.08108108108108,15,4 2 0 0 1 1 2 4 0 3 4 1 4 3 4 4
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_8_to_32,997888,27,22,27,6,29.14814814814815,1,0 2 4 4 3 3 2 0 4 1 0 3 0 1 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,teacher,qpel_ge32,8960,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,all,3446016,64,52,62,11,35.515625,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_lt1,162560,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_1_to_8,2276608,28,18,26,4,36.32142857142857,11,4 0 0 0 1 1 3 2 1 2 3 0 2 3 4 2
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_8_to_32,997888,36,34,36,7,34.888888888888886,5,0 4 4 4 3 3 1 2 3 2 1 4 2 1 0 2
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,unspecified,student,qpel_ge32,8960,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,native_teacher,all,1860864,226,151,217,91,6.946902654867257,87,5 7 8 8 10 11 13 12 15 16 17 17 18 22 23 24
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,native_teacher,qpel_lt1,882944,27,23,27,9,8.037037037037036,21,1 0 1 0 1 0 0 0 0 2 0 1 4 3 6 8
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,native_teacher,qpel_1_to_8,977920,199,128,190,82,6.798994974874372,66,4 7 7 8 9 11 13 12 15 14 17 16 14 19 17 16
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,native_teacher,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,A,all,1860864,64,60,63,38,12.46875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,A,qpel_lt1,882944,8,8,8,8,15.5,0,0 0 0 0 0 0 0 0 1 3 1 3 0 0 0 0
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,A,qpel_1_to_8,977920,56,52,55,30,12.035714285714286,16,4 4 4 4 4 4 4 4 3 1 3 1 4 4 4 4
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,A,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,native_teacher,all,6150912,421,421,421,227,25.5083135391924,124,10 17 19 23 25 26 28 28 30 30 31 30 31 31 31 31
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,native_teacher,qpel_lt1,9984,3,3,3,3,28.0,1,0 0 0 0 0 0 0 0 0 0 0 2 0 0 1 0
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,native_teacher,qpel_1_to_8,4218880,314,314,314,169,25.452229299363058,116,5 11 12 15 17 21 16 22 17 18 22 22 30 29 27 30
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,native_teacher,qpel_8_to_32,1921024,104,104,104,55,25.60576923076923,7,5 6 7 8 8 5 12 6 13 12 9 6 1 2 3 1
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,native_teacher,qpel_ge32,1024,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,A,all,6150912,64,64,64,47,34.484375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,A,qpel_lt1,9984,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,A,qpel_1_to_8,4218880,57,57,57,43,35.56140350877193,16,2 2 3 4 3 4 4 4 3 4 4 4 4 4 4 4
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,A,qpel_8_to_32,1921024,7,7,7,4,25.714285714285715,0,2 2 1 0 1 0 0 0 1 0 0 0 0 0 0 0
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,unspecified,A,qpel_ge32,1024,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,native_teacher,all,467712,61,30,55,22,19.62295081967213,19,2 2 3 3 4 4 4 4 4 4 4 4 4 5 5 5
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,native_teacher,qpel_lt1,27904,2,0,1,0,16.5,0,0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,native_teacher,qpel_1_to_8,437248,58,29,53,21,19.74137931034483,19,2 1 3 3 4 2 4 4 4 4 4 4 4 5 5 5
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,native_teacher,qpel_8_to_32,2560,1,1,1,1,19.0,0,0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,A,all,467712,64,36,56,23,21.796875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,A,qpel_lt1,27904,3,0,2,0,19.0,0,0 2 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,A,qpel_1_to_8,437248,61,36,54,23,21.934426229508198,16,4 2 4 4 3 4 4 4 4 4 4 4 4 4 4 4
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,A,qpel_8_to_32,2560,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,native_teacher,all,5143808,475,446,472,257,26.0,128,18 24 26 27 28 30 32 33 33 32 32 32 32 32 32 32
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,native_teacher,qpel_lt1,332288,18,16,18,9,24.11111111111111,11,0 0 0 0 1 0 1 0 0 2 0 3 0 0 8 3
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,native_teacher,qpel_1_to_8,4298496,196,178,193,105,24.801020408163264,97,0 0 0 0 5 3 9 10 20 10 18 24 32 28 14 23
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,native_teacher,qpel_8_to_32,387584,123,116,123,45,25.829268292682926,20,0 0 3 6 4 11 13 16 12 19 14 5 0 4 10 6
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,native_teacher,qpel_ge32,125440,138,136,138,98,28.10144927536232,0,18 24 23 21 18 16 9 7 1 1 0 0 0 0 0 0
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,A,all,5143808,64,64,64,29,44.203125,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,A,qpel_lt1,332288,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,A,qpel_1_to_8,4298496,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,A,qpel_8_to_32,387584,39,39,39,19,46.84615384615385,16,0 0 0 0 4 1 1 3 2 4 4 4 4 4 4 4
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,unspecified,A,qpel_ge32,125440,25,25,25,10,40.08,0,4 4 4 4 0 3 3 1 2 0 0 0 0 0 0 0
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,native_teacher,all,5505792,480,447,480,253,26.510416666666668,150,17 21 22 24 26 27 29 30 32 33 34 35 37 37 38 38
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,native_teacher,qpel_lt1,536064,26,24,26,13,26.692307692307693,10,1 0 0 1 3 2 1 2 5 0 0 1 2 3 4 1
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,native_teacher,qpel_1_to_8,4969728,454,423,454,240,26.5,140,16 21 22 23 23 25 28 28 27 33 34 34 35 34 34 37
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,native_teacher,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,A,all,5505792,64,64,64,21,42.796875,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,A,qpel_lt1,536064,3,3,3,2,45.0,2,0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,A,qpel_1_to_8,4969728,61,61,61,19,42.68852459016394,14,4 4 4 4 3 4 4 4 4 4 4 4 3 4 3 4
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,A,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,native_teacher,all,2239488,107,65,106,73,18.009345794392523,39,2 4 4 5 5 6 6 7 7 7 7 8 9 10 10 10
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,native_teacher,qpel_lt1,488704,4,4,4,4,16.5,0,0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,native_teacher,qpel_1_to_8,1750784,103,61,102,69,18.067961165048544,39,2 4 4 5 5 6 4 7 7 7 5 8 9 10 10 10
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,native_teacher,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,native_teacher,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,A,all,2239488,64,38,64,41,24.59375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,A,qpel_lt1,488704,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,A,qpel_1_to_8,1750784,64,38,64,41,24.59375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,A,qpel_8_to_32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",unspecified,A,qpel_ge32,0,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,native_teacher,all,6038016,432,428,432,178,30.613425925925927,119,22 21 22 25 26 27 28 28 28 28 29 29 29 30 30 30
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,native_teacher,qpel_lt1,31488,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,native_teacher,qpel_1_to_8,2345472,180,179,180,69,29.716666666666665,110,0 0 2 0 3 3 16 9 4 4 14 15 25 28 30 27
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,native_teacher,qpel_8_to_32,3183360,200,197,200,90,31.355,9,21 4 14 17 23 24 7 17 22 13 15 14 4 2 0 3
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,native_teacher,qpel_ge32,477696,52,52,52,19,30.865384615384617,0,1 17 6 8 0 0 5 2 2 11 0 0 0 0 0 0
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,A,all,6038016,64,64,64,17,39.5,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,A,qpel_lt1,31488,0,0,0,0,,0,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,A,qpel_1_to_8,2345472,16,16,16,0,44.4375,16,0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,A,qpel_8_to_32,3183360,38,38,38,10,38.921052631578945,0,4 0 2 2 4 4 3 4 4 3 4 4 0 0 0 0
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",unspecified,A,qpel_ge32,477696,10,10,10,7,33.8,0,0 4 2 2 0 0 1 0 0 1 0 0 0 0 0 0
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,native_teacher,all,6205696,448,398,446,259,25.569196428571427,130,13 20 21 25 25 28 30 29 31 32 32 32 32 32 33 33
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,native_teacher,qpel_lt1,84480,4,4,4,3,26.75,3,0 0 0 0 0 0 0 0 0 1 0 0 0 3 0 0
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,native_teacher,qpel_1_to_8,3084032,248,207,246,147,25.241935483870968,116,2 4 3 8 16 10 13 10 22 17 15 12 32 24 33 27
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,native_teacher,qpel_8_to_32,2815488,190,181,190,106,25.88421052631579,11,11 16 18 17 9 12 17 19 9 14 17 20 0 5 0 6
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,native_teacher,qpel_ge32,221696,6,6,6,3,28.333333333333332,0,0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,A,all,6205696,64,62,64,45,36.34375,16,4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,A,qpel_lt1,84480,1,1,1,1,42.0,0,0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,A,qpel_1_to_8,3084032,22,20,22,16,39.09090909090909,13,0 1 1 0 1 1 0 0 1 0 3 1 4 3 4 2
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,A,qpel_8_to_32,2815488,40,40,40,27,34.675,3,4 3 3 4 3 2 4 4 3 3 1 3 0 1 0 2
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,unspecified,A,qpel_ge32,221696,1,1,1,1,37.0,0,0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0

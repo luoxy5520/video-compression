@@ -1,0 +1,57 @@
+sample,split,prompt,trajectory,p16_blocks,selected,selected_dc,selected_low,dense_dc,dense_low,level_abs_mean,positive_sign,mc_mse_mean,mc_mse_last4,verified_repeat
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",A,394560,64,64,64,257552,613221,41.15625,0.796875,973.4934583086923,1858.7276979102103,True
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",teacher,394560,64,64,64,257458,615257,36.515625,0.703125,933.1252890153437,1771.4377912488972,True
+sample_0020,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",student,394560,64,64,64,257622,614147,41.21875,0.796875,976.2325794005752,1859.743976125178,True
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",A,383184,64,64,64,279649,660854,52.09375,0.203125,2134.0117142640684,2518.3554070951673,False
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",teacher,383184,64,63,64,279533,664583,46.75,0.421875,1910.616087748421,2108.3980063644212,False
+sample_0021,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",student,383184,64,64,64,279620,662239,52.21875,0.21875,2133.7600116377025,2507.404927339112,False
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",A,380272,64,61,62,242481,560825,36.96875,0.421875,995.3879377938093,1727.6365468539416,False
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",teacher,380272,64,57,62,242353,561087,30.546875,0.578125,917.1039393749732,1541.666012669739,False
+sample_0022,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",student,380272,64,61,62,242835,562428,36.96875,0.421875,1002.7882304798798,1745.6857319975416,False
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",A,379984,64,64,64,246585,580942,47.21875,0.40625,1499.268526047557,1901.9075319388767,False
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",teacher,379984,64,64,64,246901,584113,47.625,0.375,1542.9807956014085,2024.968609528236,False
+sample_0023,val,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",student,379984,64,64,64,246609,581472,47.21875,0.40625,1503.6028797904203,1917.2049891250178,False
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",A,117888,64,16,64,27482,53676,30.4375,1.0,382.3460275651408,326.2541704940071,True
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",teacher,117888,64,19,62,27449,53735,23.015625,0.828125,345.6780816231001,279.44447441813355,True
+sample_1024,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",student,117888,64,19,64,27759,54393,30.953125,0.890625,393.7068319523256,337.1993148480333,True
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",A,59376,64,7,44,19248,40918,23.359375,0.375,469.74374199231977,482.8526070111508,False
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",teacher,59376,64,21,49,19220,40836,17.3125,0.46875,426.2335954946708,407.2483265734807,False
+sample_1025,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",student,59376,64,34,51,19485,41499,27.140625,0.484375,506.7153375087079,521.1662951479087,False
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",A,70928,64,47,61,28652,62980,26.90625,0.59375,618.7913125361739,609.9773380133477,False
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",teacher,70928,64,35,61,28617,62921,19.59375,0.375,536.1239687170929,488.9784895235524,False
+sample_1026,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",student,70928,64,50,61,28877,63478,30.1875,0.421875,640.5452608362251,638.4759389506182,False
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",A,76384,64,30,50,31194,72787,27.671875,0.609375,633.5259962647053,835.6399045242324,False
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",teacher,76384,64,30,51,31208,72994,20.859375,0.484375,581.5987180638659,740.6899214092082,False
+sample_1027,val,"A wooden metronome swings against a dark shelf, with the camera fixed.",student,76384,64,41,53,31408,73278,30.140625,0.671875,650.3037386611056,864.9486301949544,False
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",A,387312,64,64,64,297643,457511,36.0625,0.1875,1054.323817643904,1097.1170349305962,False
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",teacher,387312,64,64,64,297552,460439,33.109375,0.109375,1014.3014879678286,1020.6954084303079,False
+sample_1028,val,"A skater passes behind a stone column and reappears, filmed from the side.",student,387312,64,64,64,297871,459190,36.203125,0.21875,1062.1400950533884,1112.6197156771784,False
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",A,351616,64,64,64,325769,467968,37.875,0.015625,2891.28604418598,3068.9158281361265,False
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",teacher,351616,64,64,64,325627,471763,37.453125,0.078125,2840.5893231319715,2978.6458625655177,False
+sample_1029,val,"A skater passes behind a stone column and reappears, filmed from the side.",student,351616,64,64,64,325724,470851,42.5625,0.0,2898.2893852309808,3065.914801276348,False
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",A,334704,64,64,64,199887,356743,40.640625,1.0,1001.6399620906955,1161.276223542366,False
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",teacher,334704,64,64,64,199783,361097,36.78125,0.875,895.5951621982915,1013.8794150028968,False
+sample_1030,val,"A skater passes behind a stone column and reappears, filmed from the side.",student,334704,64,64,64,199897,357467,41.53125,0.84375,1003.6198073971408,1164.7129968693039,False
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",A,184512,64,64,64,131321,246085,40.25,0.421875,1520.5031568545123,1703.009643042505,False
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",teacher,184512,64,64,64,131571,248176,38.953125,0.359375,1507.8014258673593,1628.3980030830053,False
+sample_1031,val,"A skater passes behind a stone column and reappears, filmed from the side.",student,184512,64,64,64,131570,248350,40.328125,0.5625,1556.111822403473,1744.2940064033378,False
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,A,323040,64,64,64,234328,526857,42.625,0.625,1360.9293428105361,1797.037461623923,False
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,teacher,323040,64,63,64,234334,529304,39.078125,0.421875,1282.8504594786355,1670.3103853990206,False
+sample_1032,val,A slow leftward pan shows rows of brightly colored market stalls.,student,323040,64,64,64,234422,527364,42.78125,0.59375,1365.0661654106277,1808.7746273169814,False
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,A,354160,64,60,64,262803,573852,45.0,0.1875,1590.9423416662053,2100.614787968818,False
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,teacher,354160,64,59,64,262691,575460,40.15625,0.484375,1488.1760961782663,1911.3713216593887,False
+sample_1033,val,A slow leftward pan shows rows of brightly colored market stalls.,student,354160,64,60,64,262817,574310,45.03125,0.21875,1598.5309298793109,2115.02181580861,False
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,A,296912,64,64,64,199266,426959,38.5625,0.984375,961.1486130889913,1277.5002798150408,False
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,teacher,296912,64,62,64,199239,428688,33.328125,0.828125,864.5893098483717,1102.1904289127872,False
+sample_1034,val,A slow leftward pan shows rows of brightly colored market stalls.,student,296912,64,64,64,199420,427933,38.71875,0.953125,968.7337782798154,1283.9488278430451,False
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,A,215376,64,52,62,110907,254785,35.5,0.171875,734.9323637483088,1087.7930251790394,False
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,teacher,215376,64,47,60,110832,254934,28.53125,0.375,664.4750117742583,940.2138203970931,False
+sample_1035,val,A slow leftward pan shows rows of brightly colored market stalls.,student,215376,64,52,62,111081,255499,35.515625,0.171875,745.9043834997087,1107.9471789983245,False
+sample_0000,train,A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.,A,116304,64,60,63,50911,74847,12.46875,0.59375,64.86452976011618,89.47676832929692,False
+sample_0004,train,A fixed camera shows a brown dog walking slowly across a grassy garden from left to right.,A,384432,64,64,64,228626,465069,34.484375,0.734375,417.2524826740987,672.970747829837,False
+sample_0008,train,A fixed camera shows a brass pendulum swinging back and forth against a plain wall.,A,29232,64,36,56,13912,34376,21.796875,0.359375,950.2232120273394,1228.3334951499444,False
+sample_0012,train,A camera pans slowly to the right along a quiet street lined with buildings.,A,321488,64,64,64,202787,468361,44.203125,0.453125,985.5220535621775,1252.823799497668,False
+sample_0016,train,A fixed camera shows a shallow stream flowing over small rocks in daylight.,A,344112,64,64,64,196213,456629,42.796875,0.328125,753.3407450570191,1197.692333353518,False
+sample_1000,train,"A locked camera shows a stack of books beside a potted cactus under soft light, with no movement.",A,139968,64,38,64,74697,108852,24.59375,0.640625,201.5102256059856,201.15783287332027,False
+sample_1004,train,"A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",A,377376,64,64,64,224553,392294,39.5,0.265625,532.7697220847768,737.6568203308076,False
+sample_1008,train,A handheld camera moves slowly forward down a narrow greenhouse aisle full of leaves.,A,387856,64,62,64,279992,565119,36.34375,0.703125,718.784559624822,972.6201245603949,False

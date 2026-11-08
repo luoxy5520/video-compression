@@ -1,0 +1,57 @@
+run,prompt,clips,delta_db,delta_last4_db,bitrate_kbps,psnr_y_p_db
+l0-multi-A-1701,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.018008276665393286,-0.0204588791657887,748.3877647058823,17.001972065859107
+l0-multi-A-1701,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.27328173630080244,-0.2699264651436941,150.57505882352942,27.940159858620877
+l0-multi-A-1701,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.0298616773093503,-0.038182268271768294,300.7190588235294,17.389484843193173
+l0-multi-A-1701,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.034791880748258563,-0.03348168003256413,568.6268235294118,18.945399854824586
+l0-multi-A-1702,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.02891699197989528,-0.03034752665731144,748.3614117647058,16.991063350544607
+l0-multi-A-1702,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.24718765882013916,-0.2644896466545843,150.67670588235293,27.96625393610154
+l0-multi-A-1702,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.03259359269238926,-0.03049123401078102,300.66823529411766,17.386752927810136
+l0-multi-A-1702,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.0386469825139244,-0.05089078608734576,568.6004705882353,18.94154475305892
+l0-multi-B-1701,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.0162628065492747,-0.019484995123961735,748.3576470588235,17.003717535975227
+l0-multi-B-1701,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.19226185460928047,-0.1613295126658505,150.38870588235295,28.021179740312398
+l0-multi-B-1701,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.019774838467184974,-0.024818253255077583,300.4065882352941,17.39957168203534
+l0-multi-B-1701,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.027771775989042347,-0.025970498927442964,568.4442352941177,18.9524199595838
+l0-multi-B-1702,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.022856199632542484,-0.031094837979446233,748.4065882352941,16.99712414289196
+l0-multi-B-1702,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.15163155709039522,-0.15115107460698418,150.5035294117647,28.061810037831286
+l0-multi-B-1702,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.019886492579245463,-0.02531513108237382,300.7190588235294,17.39946002792328
+l0-multi-B-1702,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.017323317194905208,-0.015543560490920871,568.6211764705882,18.962868418377937
+l0-multi-C-1701,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.011922047371559774,-0.017258518859282646,748.3689411764706,17.008058295152942
+l0-multi-C-1701,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.21317584386422794,-0.2411842411005214,150.5844705882353,28.00026575105745
+l0-multi-C-1701,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.03853235459210902,-0.039305897328667516,300.672,17.380814165910415
+l0-multi-C-1701,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.05279587638913785,-0.07465058163027027,568.5214117647058,18.927395859183704
+l0-multi-C-1702,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.019916399041031152,-0.02375200939352018,748.3218823529412,17.000063943483468
+l0-multi-C-1702,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.4124088915701538,-0.4048581509353282,150.58070588235293,27.801032703351524
+l0-multi-C-1702,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.04592901044511777,-0.0596694125002184,300.4574117647059,17.373417510057408
+l0-multi-C-1702,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.037877880947714715,-0.03198175732674269,568.6117647058824,18.942313854625127
+l0-multi-D-1701,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.009480774901059252,-0.013982067441321355,748.2070588235295,17.01049956762344
+l0-multi-D-1701,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.168946864671228,-0.12823604003497469,150.62588235294118,28.044494730250452
+l0-multi-D-1701,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.010594572326314555,-0.011757544942716969,300.58729411764705,17.40875194817621
+l0-multi-D-1701,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.012103597924421727,-0.011982981037121032,568.3256470588235,18.968088137648422
+l0-multi-D-1702,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.011866376168325754,-0.012614618862273552,748.3614117647058,17.008113966356177
+l0-multi-D-1702,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.16187364978034946,-0.14918471101378294,150.4809411764706,28.05156794514133
+l0-multi-D-1702,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.010681388507939094,-0.008566062943711206,300.5402352941176,17.408665131994585
+l0-multi-D-1702,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.013210342347866444,-0.010450240461937543,568.5364705882353,18.966981393224977
+l2-Continuous-1701,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-3.679259513900135e-05,-7.353777582608245e-05,746.08,17.019943549929362
+l2-Continuous-1701,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-4.019741599936566e-05,-5.168907892372232e-05,148.08282352941177,28.21340139750568
+l2-Continuous-1701,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.0001145247637235336,-0.00021488636071609335,298.4658823529412,17.4192319957388
+l2-Continuous-1701,A slow leftward pan shows rows of brightly colored market stalls.,4,-1.1796823320864291e-05,-7.577371239353425e-06,566.0837647058823,18.980179938749522
+l2-Continuous-1702,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-2.16030458637384e-05,2.3694867907764205e-06,745.8804705882353,17.01995873947864
+l2-Continuous-1702,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.00015066993368328951,-0.00017869713357043793,148.10729411764706,28.213290924987994
+l2-Continuous-1702,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.00015505962458428613,-2.912646957442533e-05,298.4470588235294,17.41919146087794
+l2-Continuous-1702,A slow leftward pan shows rows of brightly colored market stalls.,4,0.00038816616427972406,0.0009518822815830497,566.4621176470589,18.980579901737123
+l2-Region-1701,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.03671373012888379,-0.03778737662242593,748.2616470588234,16.983266612395617
+l2-Region-1701,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.2165298133974085,-0.20987322613934634,150.47717647058823,27.996911781524272
+l2-Region-1701,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.02042713045421518,-0.02424696389848391,300.5458823529412,17.39891939004831
+l2-Region-1701,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.037850566760473825,-0.04230635427841767,568.5007058823529,18.94234116881237
+l2-Region-1702,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.058846991655880476,-0.06984865759721837,748.4178823529412,16.96113335086862
+l2-Region-1702,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.20738441554037745,-0.18526091377763887,150.4790588235294,28.0060571793813
+l2-Region-1702,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.01723269817701123,-0.02157318309411904,300.3331764705882,17.40211382232551
+l2-Region-1702,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.0941039130107919,-0.08484255626095338,568.5477647058824,18.88608782256205
+l2-Sparse-1701,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.03254784579668035,-0.043463702922847514,748.3331764705882,16.98743249672782
+l2-Sparse-1701,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.23175439185402436,-0.21923130578386818,150.4865882352941,27.981687203067654
+l2-Sparse-1701,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.031587931502943256,-0.03820109999663224,300.57035294117645,17.38775858899958
+l2-Sparse-1701,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.054174970548027446,-0.06097711439915221,568.5797647058823,18.926016765024816
+l2-Sparse-1702,"A cyclist rides behind a tree and emerges on the other side, filmed by a fixed camera.",4,-0.037328610011710506,-0.04803657771493253,748.3162352941176,16.982651732512792
+l2-Sparse-1702,"A wooden metronome swings against a dark shelf, with the camera fixed.",4,-0.1343000559648031,-0.11366225858597279,150.25129411764706,28.079141538956875
+l2-Sparse-1702,"A skater passes behind a stone column and reappears, filmed from the side.",4,-0.03235274894417417,-0.04422445448692214,300.47435294117645,17.38699377155835
+l2-Sparse-1702,A slow leftward pan shows rows of brightly colored market stalls.,4,-0.04687553449263682,-0.049211101906035726,568.3708235294117,18.933316201080206
