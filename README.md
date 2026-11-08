@@ -17,3 +17,16 @@ grep -v '  run01/features/' FILES.sha256 | sha256sum -c -
 
 The display MP4s are re-encoded composites. Actual scoring streams are stored
 under each evaluated policy and clip as prediction.264.
+
+The first DC seed originally logged pooled last-four Y-PSNR. The tables at this
+branch root use the P0.6 arithmetic frame mean for every run. After verifying the
+original archive, apply the correction and verify its files.
+
+```sh
+sha256sum -c CORRECTION_ARCHIVE.sha256
+zstd -dc dc1701-tail-correction.tar.zst | tar xf -
+sha256sum -c CORRECTED_TAIL.sha256
+```
+
+The correction covers metrics only. It preserves the original bitstreams, models,
+and per-frame scores.
