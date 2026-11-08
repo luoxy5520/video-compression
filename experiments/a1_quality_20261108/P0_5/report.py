@@ -11,7 +11,7 @@ from statistics import mean
 import numpy as np
 import yaml
 
-from diagnose import CONFIGS, FRAMES, HERE, LAMBDAS, digest, csv_write, records
+from diagnose import CONFIGS, FRAMES, HERE, JM, LAMBDAS, OLD, digest, csv_write, records
 
 BIT_FIELDS = ("mode_run_bits", "mv_bits", "luma_coeff_bits", "chroma_coeff_bits",
               "other_mb_bits", "i_and_container_bits")
@@ -100,6 +100,45 @@ def bar_svg(path, data):
     path.write_text("\n".join(svg))
 
 
+def rd_svg(path, curves):
+    by_arm = {r["arm"]: r for r in curves}
+    plot = dict(fixed="#3266aa", predicted="#138779", paired="#bf5742")
+    low = math.floor(min(r["psnr_y_db"] for r in curves)) - 1
+    high = math.ceil(max(r["psnr_y_db"] for r in curves)) + 1
+    x0 = math.floor(math.log10(min(r["bitrate_kbps"] for r in curves)) * 2) / 2
+    x1 = math.ceil(math.log10(max(r["bitrate_kbps"] for r in curves)) * 2) / 2
+    def xy(rate, quality):
+        return (85 + 700*(math.log10(rate)-x0)/(x1-x0), 405 - 315*(quality-low)/(high-low))
+    svg = ['<svg xmlns="http://www.w3.org/2000/svg" width="860" height="490" viewBox="0 0 860 490">',
+           '<rect width="860" height="490" fill="#fff"/><g font-family="system-ui, sans-serif" fill="#182941">',
+           '<text x="39" y="33" font-size="22" font-weight="700">Joint Skip/P16 · measured JM replay</text>',
+           '<text x="39" y="55" font-size="13">Validation prompt mean · every joint point uses source-derived selection</text>',
+           '<text x="38" y="80" font-size="12">Y-PSNR (dB)</text>']
+    for y in range(5*math.ceil(low/5),high+1,5):
+        _,py = xy(10**x0,y)
+        svg.append(f'<path d="M85 {py:.1f}h700" stroke="#dce4ed"/><text x="74" y="{py+4:.1f}" text-anchor="end" font-size="12">{y}</text>')
+    for exponent in np.arange(x0,x1+.01,.5):
+        tick=10**exponent
+        x,_=xy(tick,low)
+        svg.append(f'<path d="M{x:.1f} 90v315" stroke="#dce4ed"/><text x="{x:.1f}" y="423" text-anchor="middle" font-size="12">{tick:,.0f}</text>')
+    for policy,color in plot.items():
+        rows=[by_arm[f"joint_{policy}_{w}"] for w in LAMBDAS]
+        points=[xy(r["bitrate_kbps"],r["psnr_y_db"]) for r in rows]
+        coords=" ".join(f"{x:.2f},{y:.2f}" for x,y in points)
+        svg.append(f'<polyline points="{coords}" stroke="{color}" stroke-width="2.4" fill="none"/>')
+        for (x,y),w,r in zip(points,LAMBDAS,rows):
+            svg.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="4" fill="{color}"><title>{policy}, λ={w}: {r["psnr_y_db"]:.3f} dB, {r["bitrate_kbps"]:.1f} kb/s</title></circle>')
+    for arm in ("A","F","E"):
+        r=by_arm[arm]; x,y=xy(r["bitrate_kbps"],r["psnr_y_db"])
+        svg.append(f'<rect x="{x-4:.2f}" y="{y-4:.2f}" width="8" height="8" fill="#25344e"/><text x="{x+7:.2f}" y="{y-7:.2f}" font-size="12">{arm}</text>')
+    svg.append('<text x="435" y="445" text-anchor="middle" font-size="13">Bitrate (kb/s, log scale)</text>')
+    for i,(name,color) in enumerate(plot.items()):
+        x=90+200*i
+        svg.append(f'<circle cx="{x}" cy="470" r="4" fill="{color}"/><text x="{x+10}" y="474" font-size="13">{name}</text>')
+    svg.append("</g></svg>")
+    path.write_text("\n".join(svg))
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--run",required=True,type=Path)
@@ -109,7 +148,7 @@ def main():
     assert status==dict(total=60,failed=[])
     gate=yaml.safe_load((HERE.parent/"P0/config.yaml").read_text())["gate"]
     groups=records(CONFIGS)
-    all_frames, videos, rd, rd_frames, local, manifest = [], [], [], [], [], []
+    all_frames, videos, rd, rd_frames, local, manifest, skip_audit = [], [], [], [], [], [], []
     for split in ("train","val"):
         for row in (r for r in groups[split] if r["step"]==20):
             sample=row["sample_id"]
@@ -120,6 +159,13 @@ def main():
             base=dict(split=split,prompt_id=prompt,video_id=sample,seed=row["seed"])
             labels=folder/"local_candidates.npz"
             manifest.append(dict(**base,diagnostic_oracle=True,labels=str(labels),sha256=digest(labels)))
+            with np.load(labels,allow_pickle=False) as costs:
+                is_skip=~costs["valid"][...,6]
+                old=costs["sse"][...,6][is_skip].astype(np.int64)
+                new=costs["sse"][...,7][is_skip].astype(np.int64)
+                skip_audit.append(dict(**base,skip_blocks=int(is_skip.sum()),
+                    mean_abs_pre_post_sse_y=float(np.abs(new-old).mean()) if len(old) else None,
+                    mean_signed_pre_minus_post_sse_y=float((new-old).mean()) if len(old) else None))
             for arm, values in native.items():
                 assert values["decoder_agreement"] and values["encoder_matches_decoder"]
                 assert values["motion_search_s_reported"]==0 and values["oracle_p_bytes_read"]==0
@@ -186,17 +232,34 @@ def main():
                     ("mc_reference_error_mse_y","ideal_residual_mse_y_p16"),
                     ("motion_error_clean_ref_mse_y","ideal_residual_mse_y_p16"),
                     ("ideal_residual_mse_y_p16","residual_coeff_bits"))} for arm in bit_summary}
+    local_summary = []
+    for weight in LAMBDAS:
+        subset = [r for r in local if r["split"]=="val" and int(r["lambda_rd"])==weight]
+        local_summary.append(dict(lambda_rd=weight,
+            selected_skip_fraction=cohort(subset,"skip_selected")/1560,
+            nonzero_skip_probe_fraction=cohort(subset,"native_skip_nonzero")/1560,
+            local_cost_reduction_pct=100*(1-cohort(subset,"joint_cost")/cohort(subset,"p16_only_cost"))))
     args.output.mkdir(parents=True,exist_ok=False)
+    hashes = {str(path):digest(path) for path in (
+        JM/"bin/lencod.exe", OLD/"jm_mb_bits/bin/lencod.exe",
+        Path("/mnt/data_hdd/models/dit_compression/a1_quality_20261108/locked_hidden.pt"),
+        *CONFIGS, OLD/"full/expected.json", OLD/"full_report/summary.json")}
+    (args.output/"manifest.json").write_text(json.dumps(dict(
+        p0_commit="1aa7d1d56a736f66286c00ed2d5a865bd4ffae6e",
+        batch_commit="4219638", sha256=hashes,
+        sample_ids=json.loads((args.run/"expected.json").read_text())),indent=2))
     for name,data in (("per_frame",all_frames),("per_video",videos),("rd_curve",curves),
-                      ("rd_per_video",rd),("rd_per_frame",rd_frames),("local_per_frame",local)):
+                      ("rd_per_video",rd),("rd_per_frame",rd_frames),("local_per_frame",local),("skip_deblock_audit",skip_audit)):
         csv_write(args.output/f"{name}.csv",data)
     (args.output/"candidate_manifest.jsonl").write_text("".join(json.dumps(r)+"\n" for r in manifest))
     bar_svg(args.output/"bit_allocation.svg",bit_summary)
+    rd_svg(args.output/"rd_curve.svg",curves)
     gain=sum(bit_summary["E"].values())-sum(bit_summary["A"].values())
     residual_delta=sum(bit_summary["E"][k]-bit_summary["A"][k] for k in BIT_FIELDS[2:4])
     (args.output/"summary.json").write_text(json.dumps(dict(
         train_videos=44,val_videos=16,val_prompts=4,curves=curves,bit_kbps=bit_summary,
         residual_share_of_e_minus_a=residual_delta/gain,errors=errors,associations=associations,
+        local_fixed_reference=local_summary,
         passing_joint=[r["arm"] for r in curves if r["arm"].startswith("joint") and r["passes"]]
     ),indent=2,allow_nan=False))
 

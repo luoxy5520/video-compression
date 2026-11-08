@@ -1,0 +1,437 @@
+{
+  "train_videos": 44,
+  "val_videos": 16,
+  "val_prompts": 4,
+  "curves": [
+    {
+      "arm": "A",
+      "psnr_y_db": 20.408240048380385,
+      "bitrate_kbps": 439.5138823529412,
+      "delta_psnr_db": 0.0,
+      "delta_rate_pct": 0.0,
+      "delta_last4_db": 0.0,
+      "positive_prompt_fraction": 0,
+      "p16_fraction": 0.6745492788461538,
+      "diagnostic_oracle": false,
+      "passes": false
+    },
+    {
+      "arm": "F",
+      "psnr_y_db": 20.285963328786416,
+      "bitrate_kbps": 593.6150588235295,
+      "delta_psnr_db": -0.12227671959396957,
+      "delta_rate_pct": 35.061731303140256,
+      "delta_last4_db": -0.4594182434027171,
+      "positive_prompt_fraction": 0.25,
+      "p16_fraction": 1.0,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "E",
+      "psnr_y_db": 36.53688531762195,
+      "bitrate_kbps": 3826.293176470588,
+      "delta_psnr_db": 16.128645269241566,
+      "delta_rate_pct": 770.5739067868564,
+      "delta_last4_db": 17.186436227530784,
+      "positive_prompt_fraction": 1,
+      "p16_fraction": 1.0,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_fixed_0",
+      "psnr_y_db": 16.306821160756375,
+      "bitrate_kbps": 6299.96,
+      "delta_psnr_db": -4.1014188876240105,
+      "delta_rate_pct": 1333.3927215843812,
+      "delta_last4_db": -5.23837085818275,
+      "positive_prompt_fraction": 0,
+      "p16_fraction": 0.9965619991987179,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_predicted_0",
+      "psnr_y_db": 18.653029503813094,
+      "bitrate_kbps": 638.3397647058823,
+      "delta_psnr_db": -1.7552105445672908,
+      "delta_rate_pct": 45.23767970388673,
+      "delta_last4_db": -1.4689289242085004,
+      "positive_prompt_fraction": 0.25,
+      "p16_fraction": 0.9965619991987179,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_paired_0",
+      "psnr_y_db": 36.47430750673246,
+      "bitrate_kbps": 4952.754823529412,
+      "delta_psnr_db": 16.066067458352073,
+      "delta_rate_pct": 1026.8710778860495,
+      "delta_last4_db": 16.943858572924817,
+      "positive_prompt_fraction": 1,
+      "p16_fraction": 0.9965619991987179,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_fixed_1",
+      "psnr_y_db": 16.108829817431214,
+      "bitrate_kbps": 6170.080470588236,
+      "delta_psnr_db": -4.299410230949171,
+      "delta_rate_pct": 1303.8419987001682,
+      "delta_last4_db": -5.392428165493596,
+      "positive_prompt_fraction": 0,
+      "p16_fraction": 0.8409104567307693,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_predicted_1",
+      "psnr_y_db": 18.937303871171597,
+      "bitrate_kbps": 601.6348235294117,
+      "delta_psnr_db": -1.470936177208788,
+      "delta_rate_pct": 36.886421040572074,
+      "delta_last4_db": -1.2900045134634885,
+      "positive_prompt_fraction": 0.25,
+      "p16_fraction": 0.8409104567307693,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_paired_1",
+      "psnr_y_db": 35.40311939834519,
+      "bitrate_kbps": 4850.141647058824,
+      "delta_psnr_db": 14.994879349964805,
+      "delta_rate_pct": 1003.524107382809,
+      "delta_last4_db": 16.140381851465616,
+      "positive_prompt_fraction": 1,
+      "p16_fraction": 0.8409104567307693,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_fixed_4",
+      "psnr_y_db": 16.04077199048828,
+      "bitrate_kbps": 5969.040941176471,
+      "delta_psnr_db": -4.367468057892104,
+      "delta_rate_pct": 1258.1006609441233,
+      "delta_last4_db": -5.49443477378667,
+      "positive_prompt_fraction": 0,
+      "p16_fraction": 0.7952999799679488,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_predicted_4",
+      "psnr_y_db": 19.616492180901233,
+      "bitrate_kbps": 579.7736470588235,
+      "delta_psnr_db": -0.7917478674791525,
+      "delta_rate_pct": 31.912476565017812,
+      "delta_last4_db": -0.8547478914880065,
+      "positive_prompt_fraction": 0.25,
+      "p16_fraction": 0.7952999799679488,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_paired_4",
+      "psnr_y_db": 35.688107721712825,
+      "bitrate_kbps": 4710.1129411764705,
+      "delta_psnr_db": 15.27986767333244,
+      "delta_rate_pct": 971.6642022683883,
+      "delta_last4_db": 16.22821619803761,
+      "positive_prompt_fraction": 1,
+      "p16_fraction": 0.7952999799679488,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_fixed_16",
+      "psnr_y_db": 16.05982826311993,
+      "bitrate_kbps": 5663.875764705882,
+      "delta_psnr_db": -4.348411785260456,
+      "delta_rate_pct": 1188.668229177262,
+      "delta_last4_db": -5.483360356546325,
+      "positive_prompt_fraction": 0,
+      "p16_fraction": 0.7334334935897436,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_predicted_16",
+      "psnr_y_db": 20.154183381415386,
+      "bitrate_kbps": 544.275294117647,
+      "delta_psnr_db": -0.25405666696499907,
+      "delta_rate_pct": 23.835745802581876,
+      "delta_last4_db": -0.534134097636538,
+      "positive_prompt_fraction": 0.25,
+      "p16_fraction": 0.7334334935897436,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_paired_16",
+      "psnr_y_db": 36.24028719209483,
+      "bitrate_kbps": 4577.24,
+      "delta_psnr_db": 15.832047143714448,
+      "delta_rate_pct": 941.4324060700217,
+      "delta_last4_db": 16.669433563028377,
+      "positive_prompt_fraction": 1,
+      "p16_fraction": 0.7334334935897436,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_fixed_64",
+      "psnr_y_db": 16.141421361463443,
+      "bitrate_kbps": 5382.905411764706,
+      "delta_psnr_db": -4.266818686916942,
+      "delta_rate_pct": 1124.7407028299713,
+      "delta_last4_db": -5.392389500033795,
+      "positive_prompt_fraction": 0,
+      "p16_fraction": 0.6345527844551282,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_predicted_64",
+      "psnr_y_db": 20.243675484502795,
+      "bitrate_kbps": 507.20235294117646,
+      "delta_psnr_db": -0.16456456387759033,
+      "delta_rate_pct": 15.400758270902504,
+      "delta_last4_db": -0.4960367221811508,
+      "positive_prompt_fraction": 0.25,
+      "p16_fraction": 0.6345527844551282,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_paired_64",
+      "psnr_y_db": 35.71429758262719,
+      "bitrate_kbps": 4504.420705882353,
+      "delta_psnr_db": 15.306057534246804,
+      "delta_rate_pct": 924.8642617993997,
+      "delta_last4_db": 16.418914259793873,
+      "positive_prompt_fraction": 1,
+      "p16_fraction": 0.6345527844551282,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_fixed_256",
+      "psnr_y_db": 16.960528197555973,
+      "bitrate_kbps": 4246.421176470588,
+      "delta_psnr_db": -3.447711850824412,
+      "delta_rate_pct": 866.1631513747272,
+      "delta_last4_db": -4.5572916583833365,
+      "positive_prompt_fraction": 0,
+      "p16_fraction": 0.41632862580128205,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_predicted_256",
+      "psnr_y_db": 20.16611027396909,
+      "bitrate_kbps": 445.04423529411764,
+      "delta_psnr_db": -0.24212977441129624,
+      "delta_rate_pct": 1.2582885690821888,
+      "delta_last4_db": -0.5166207584706365,
+      "positive_prompt_fraction": 0.25,
+      "p16_fraction": 0.41632862580128205,
+      "diagnostic_oracle": true,
+      "passes": false
+    },
+    {
+      "arm": "joint_paired_256",
+      "psnr_y_db": 31.315595382329686,
+      "bitrate_kbps": 3792.0183529411765,
+      "delta_psnr_db": 10.907355333949301,
+      "delta_rate_pct": 762.7755584512086,
+      "delta_last4_db": 12.46057280872036,
+      "positive_prompt_fraction": 1,
+      "p16_fraction": 0.41632862580128205,
+      "diagnostic_oracle": true,
+      "passes": false
+    }
+  ],
+  "bit_kbps": {
+    "A": {
+      "mode_run_bits": 35.20664705882353,
+      "mv_bits": 92.65529411764706,
+      "luma_coeff_bits": 0.0,
+      "chroma_coeff_bits": 0.3442941176470588,
+      "other_mb_bits": 16.052470588235295,
+      "i_and_container_bits": 295.25517647058825
+    },
+    "F": {
+      "mode_run_bits": 46.98352941176471,
+      "mv_bits": 227.26082352941177,
+      "luma_coeff_bits": 0.0,
+      "chroma_coeff_bits": 0.38635294117647057,
+      "other_mb_bits": 23.723117647058825,
+      "i_and_container_bits": 295.2612352941176
+    },
+    "E": {
+      "mode_run_bits": 46.98352941176471,
+      "mv_bits": 123.50164705882354,
+      "luma_coeff_bits": 3023.1185882352943,
+      "chroma_coeff_bits": 204.42523529411764,
+      "other_mb_bits": 132.99582352941175,
+      "i_and_container_bits": 295.2683529411765
+    }
+  },
+  "residual_share_of_e_minus_a": 0.9528815577138287,
+  "errors": {
+    "A": {
+      "p16_fraction": 0.6745492788461538,
+      "luma_nonzero_coeffs": 0.0,
+      "chroma_nonzero_coeffs": 4.61328125,
+      "recon_mse_y": 934.6972377874912,
+      "previous_recon_error_mse_y": 856.0874478560228,
+      "mc_reference_error_mse_y": 838.6001884264824,
+      "motion_error_clean_ref_mse_y": 248.34812629895333,
+      "reference_motion_cross_y": 76.12553846897222,
+      "ideal_residual_mse_y": 934.6972377874912,
+      "ideal_residual_mse_y_p16": 1176.39214730385,
+      "residual_error_mse_y": 934.710860433334,
+      "residual_error_mse_y_p16": 1176.3887548329953
+    },
+    "F": {
+      "p16_fraction": 1.0,
+      "luma_nonzero_coeffs": 0.0,
+      "chroma_nonzero_coeffs": 5.171875,
+      "recon_mse_y": 861.7472628568992,
+      "previous_recon_error_mse_y": 782.390819989718,
+      "mc_reference_error_mse_y": 738.2090561402149,
+      "motion_error_clean_ref_mse_y": 400.2911258404072,
+      "reference_motion_cross_y": 138.37645956186148,
+      "ideal_residual_mse_y": 861.7472628568992,
+      "ideal_residual_mse_y_p16": 861.7472628568992,
+      "residual_error_mse_y": 861.7483506618402,
+      "residual_error_mse_y_p16": 861.7483506618402
+    },
+    "E": {
+      "p16_fraction": 1.0,
+      "luma_nonzero_coeffs": 35598.5546875,
+      "chroma_nonzero_coeffs": 2214.37109375,
+      "recon_mse_y": 17.46468953841772,
+      "previous_recon_error_mse_y": 16.857115046183267,
+      "mc_reference_error_mse_y": 14.115016849224384,
+      "motion_error_clean_ref_mse_y": 248.00793992066994,
+      "reference_motion_cross_y": 4.86626085134653,
+      "ideal_residual_mse_y": 252.39043506720128,
+      "ideal_residual_mse_y_p16": 252.39043506720128,
+      "residual_error_mse_y": 0.0,
+      "residual_error_mse_y_p16": 0.0
+    }
+  },
+  "associations": {
+    "A": {
+      "mc_reference_error_mse_y_vs_residual_error_mse_y_p16": {
+        "within_video_pearson": 0.7926496008943322,
+        "median_video_pearson": 0.9439694324720252,
+        "videos": 16
+      },
+      "mc_reference_error_mse_y_vs_ideal_residual_mse_y_p16": {
+        "within_video_pearson": 0.7925748211043725,
+        "median_video_pearson": 0.9439819376399319,
+        "videos": 16
+      },
+      "motion_error_clean_ref_mse_y_vs_ideal_residual_mse_y_p16": {
+        "within_video_pearson": -0.0445051691315427,
+        "median_video_pearson": -0.13870953864388738,
+        "videos": 16
+      },
+      "ideal_residual_mse_y_p16_vs_residual_coeff_bits": {
+        "within_video_pearson": -0.1536462276824516,
+        "median_video_pearson": -0.13190739174832686,
+        "videos": 7
+      }
+    },
+    "F": {
+      "mc_reference_error_mse_y_vs_residual_error_mse_y_p16": {
+        "within_video_pearson": 0.9771634552101405,
+        "median_video_pearson": 0.9930438583921769,
+        "videos": 16
+      },
+      "mc_reference_error_mse_y_vs_ideal_residual_mse_y_p16": {
+        "within_video_pearson": 0.9770897525229183,
+        "median_video_pearson": 0.9930474787238375,
+        "videos": 16
+      },
+      "motion_error_clean_ref_mse_y_vs_ideal_residual_mse_y_p16": {
+        "within_video_pearson": 0.9148531654603683,
+        "median_video_pearson": 0.9223981352695058,
+        "videos": 16
+      },
+      "ideal_residual_mse_y_p16_vs_residual_coeff_bits": {
+        "within_video_pearson": -0.09033030123238905,
+        "median_video_pearson": 0.1485399497904999,
+        "videos": 7
+      }
+    },
+    "E": {
+      "mc_reference_error_mse_y_vs_residual_error_mse_y_p16": {
+        "within_video_pearson": null,
+        "median_video_pearson": null,
+        "videos": 0
+      },
+      "mc_reference_error_mse_y_vs_ideal_residual_mse_y_p16": {
+        "within_video_pearson": -0.32257968115012164,
+        "median_video_pearson": -0.29797261970598166,
+        "videos": 16
+      },
+      "motion_error_clean_ref_mse_y_vs_ideal_residual_mse_y_p16": {
+        "within_video_pearson": 0.9881353782458472,
+        "median_video_pearson": 0.9966669552667233,
+        "videos": 16
+      },
+      "ideal_residual_mse_y_p16_vs_residual_coeff_bits": {
+        "within_video_pearson": 0.6293104916648821,
+        "median_video_pearson": 0.913267393681849,
+        "videos": 16
+      }
+    }
+  },
+  "local_fixed_reference": [
+    {
+      "lambda_rd": 0,
+      "selected_skip_fraction": 0.003438000801282051,
+      "nonzero_skip_probe_fraction": 0.6153745993589743,
+      "local_cost_reduction_pct": 0.007008332431368558
+    },
+    {
+      "lambda_rd": 1,
+      "selected_skip_fraction": 0.15908954326923078,
+      "nonzero_skip_probe_fraction": 0.6153745993589743,
+      "local_cost_reduction_pct": 0.042014645653665195
+    },
+    {
+      "lambda_rd": 4,
+      "selected_skip_fraction": 0.2047000200320513,
+      "nonzero_skip_probe_fraction": 0.6153745993589743,
+      "local_cost_reduction_pct": 0.15413190838461377
+    },
+    {
+      "lambda_rd": 16,
+      "selected_skip_fraction": 0.2665665064102564,
+      "nonzero_skip_probe_fraction": 0.6153745993589743,
+      "local_cost_reduction_pct": 0.48563301911519474
+    },
+    {
+      "lambda_rd": 64,
+      "selected_skip_fraction": 0.3654472155448718,
+      "nonzero_skip_probe_fraction": 0.6153745993589743,
+      "local_cost_reduction_pct": 1.1504346744586669
+    },
+    {
+      "lambda_rd": 256,
+      "selected_skip_fraction": 0.583671374198718,
+      "nonzero_skip_probe_fraction": 0.6153745993589743,
+      "local_cost_reduction_pct": 3.1620537331945253
+    }
+  ],
+  "passing_joint": []
+}

@@ -21,7 +21,7 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#a1-quality-p0">A1 P0</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
+<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#a1-quality-p0">A1 P0</a><a href="#a1-quality-p05">A1 P0.5</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
 <div class="hero"><div class="wrap">
 <div class="eyebrow">Experiment map / 2026.11.07</div>
 <h1>从 latent 读出<br>H.264 压缩状态</h1>
@@ -282,6 +282,12 @@ kit=~/senior-oracle-expand32-20261106
 <div class="panel"><p>113Server 复现锁定 hidden 基线。12 条历史开发回归（3 个独立 prompt）平均 P 帧 Y-PSNR 22.838 dB、427.707 kb/s、末帧 20.327 dB。预测文件、适配状态、码流及重建均匹配历史 SHA-256，三方重建逐像素一致。沿用固定 Oracle I。</p>
 <p>训练视频第 2 个 P 帧的六组候选均与原生 JM 的 Y/U/V 运动补偿逐像素一致。诊断用真实源构造候选残差，并记录该候选编码上下文中的宏块层与残差比特。另对一条平移场景训练视频完成 16 个 P 帧的固定前缀核验及 A–F 整段回放。A 为 21.10 dB、460.25 kb/s。最小局部失真 C 为 15.92 dB、5038.81 kb/s，配套残差在整段回放中遇到不同的参考轨迹。F 组最高 PSNR 点为 21.50 dB、599.68 kb/s。负责人在验证前锁定门槛。113Server 已完成 44 条训练、16 条验证的 P0 矩阵。验证基线 A 为 20.408 dB、439.514 kb/s。F 的最高 PSNR 点为 20.286 dB、593.615 kb/s。轨迹配对 E 恢复到 36.537 dB、3826.293 kb/s，使用真实源做离线诊断。没有候选通过受控码率门槛，阶段判定为 stop_and_rethink_candidates。</p>
 <p><a href="experiments/a1_quality_20261108/P0/README.md">复现与指标</a> · <a href="experiments/a1_quality_20261108/P0/baseline_audit.md">基线核对</a> · <a href="experiments/a1_quality_20261108/P0/decision.md">验证判定</a> · <a href="experiments/a1_quality_20261108/P0/full_report/rd_curve.csv">验证 RD</a></p></div>
+</section>
+<section id="a1-quality-p05">
+<div class="eyebrow">A1 / P0.5</div><h2>Skip/P16 一致性与码率瓶颈</h2>
+<div class="panel"><p>113Server 完成 44 条训练和 16 条验证视频。原生 Skip 与 P16 候选在固定参考下合并比较，随后严格回放 18 个联合 RD 点。与验证基线 20.408 dB、439.514 kb/s 相比，联合冻结残差 λ=256 为 20.166 dB、445.044 kb/s。所有选点均未过门槛。</p>
+<p>按自身重建轨迹配对的 E 达到 36.537 dB、3826.293 kb/s。E 相对 A 的新增比特中 95.29% 直接来自残差系数。阶段维持冻结基线，下一轮优先定位受码率约束的残差收益。</p>
+<p><a href="experiments/a1_quality_20261108/P0_5/decision.md">阶段判定</a> · <a href="experiments/a1_quality_20261108/P0_5/results/rd_curve.svg">真实 RD 曲线</a> · <a href="experiments/a1_quality_20261108/P0_5/results/bit_allocation.svg">A/F/E 比特分布</a> · <a href="experiments/a1_quality_20261108/P0_5/results/per_frame.csv">逐帧诊断</a></p></div>
 </section>
 <section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>

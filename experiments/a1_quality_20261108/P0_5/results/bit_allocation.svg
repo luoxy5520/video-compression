@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410">
+<rect width="900" height="410" fill="#fff"/>
+<g font-family="system-ui, sans-serif" fill="#182941">
+<text x="36" y="43" font-size="24" font-weight="700">A/F/E bit allocation</text>
+<text x="36" y="68" font-size="14">Validation · 16 videos, 4 equally weighted prompts · kb/s</text>
+<path d="M100.0 101v214" stroke="#dae2eb"/><text x="100.0" y="334" text-anchor="middle" font-size="12">0</text>
+<path d="M257.5 101v214" stroke="#dae2eb"/><text x="257.5" y="334" text-anchor="middle" font-size="12">1000</text>
+<path d="M415.0 101v214" stroke="#dae2eb"/><text x="415.0" y="334" text-anchor="middle" font-size="12">2000</text>
+<path d="M572.5 101v214" stroke="#dae2eb"/><text x="572.5" y="334" text-anchor="middle" font-size="12">3000</text>
+<path d="M730.0 101v214" stroke="#dae2eb"/><text x="730.0" y="334" text-anchor="middle" font-size="12">4000</text>
+<text x="64" y="145" font-size="19" font-weight="700">A</text>
+<rect x="100.000" y="121" width="5.545" height="35" fill="#3266aa"/>
+<rect x="105.545" y="121" width="14.593" height="35" fill="#13a69a"/>
+<rect x="120.138" y="121" width="0.000" height="35" fill="#df674b"/>
+<rect x="120.138" y="121" width="0.054" height="35" fill="#e9a649"/>
+<rect x="120.192" y="121" width="2.528" height="35" fill="#8266a7"/>
+<rect x="122.721" y="121" width="46.503" height="35" fill="#abb7c6"/>
+<text x="178.223" y="144" font-size="14">439.5</text>
+<text x="64" y="209" font-size="19" font-weight="700">F</text>
+<rect x="100.000" y="185" width="7.400" height="35" fill="#3266aa"/>
+<rect x="107.400" y="185" width="35.794" height="35" fill="#13a69a"/>
+<rect x="143.193" y="185" width="0.000" height="35" fill="#df674b"/>
+<rect x="143.193" y="185" width="0.061" height="35" fill="#e9a649"/>
+<rect x="143.254" y="185" width="3.736" height="35" fill="#8266a7"/>
+<rect x="146.991" y="185" width="46.504" height="35" fill="#abb7c6"/>
+<text x="202.494" y="208" font-size="14">593.6</text>
+<text x="64" y="273" font-size="19" font-weight="700">E</text>
+<rect x="100.000" y="249" width="7.400" height="35" fill="#3266aa"/>
+<rect x="107.400" y="249" width="19.452" height="35" fill="#13a69a"/>
+<rect x="126.851" y="249" width="476.141" height="35" fill="#df674b"/>
+<rect x="602.993" y="249" width="32.197" height="35" fill="#e9a649"/>
+<rect x="635.190" y="249" width="20.947" height="35" fill="#8266a7"/>
+<rect x="656.136" y="249" width="46.505" height="35" fill="#abb7c6"/>
+<text x="711.641" y="272" font-size="14">3,826.3</text>
+<rect x="38" y="348" width="13" height="13" fill="#3266aa"/><text x="58" y="359" font-size="13">Mode + Skip run</text>
+<rect x="318" y="348" width="13" height="13" fill="#13a69a"/><text x="338" y="359" font-size="13">MV syntax</text>
+<rect x="598" y="348" width="13" height="13" fill="#df674b"/><text x="618" y="359" font-size="13">Luma coefficients</text>
+<rect x="38" y="373" width="13" height="13" fill="#e9a649"/><text x="58" y="384" font-size="13">Chroma coefficients</text>
+<rect x="318" y="373" width="13" height="13" fill="#8266a7"/><text x="338" y="384" font-size="13">Other MB syntax</text>
+<rect x="598" y="373" width="13" height="13" fill="#abb7c6"/><text x="618" y="384" font-size="13">I frame + framing</text>
+</g></svg>
