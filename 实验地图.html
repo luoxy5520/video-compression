@@ -21,7 +21,7 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#a1-quality-p0">A1 P0</a><a href="#a1-quality-p05">A1 P0.5</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
+<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#a1-quality-p0">A1 P0</a><a href="#a1-quality-p05">A1 P0.5</a><a href="#a1-quality-p06">A1 P0.6</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
 <div class="hero"><div class="wrap">
 <div class="eyebrow">Experiment map / 2026.11.07</div>
 <h1>从 latent 读出<br>H.264 压缩状态</h1>
@@ -288,6 +288,12 @@ kit=~/senior-oracle-expand32-20261106
 <div class="panel"><p>113Server 完成 44 条训练和 16 条验证视频。原生 Skip 与 P16 候选在固定参考下合并比较，随后严格回放 18 个联合 RD 点。与验证基线 20.408 dB、439.514 kb/s 相比，联合冻结残差 λ=256 为 20.166 dB、445.044 kb/s。所有选点均未过门槛。</p>
 <p>按自身重建轨迹配对的 E 达到 36.537 dB、3826.293 kb/s。E 相对 A 的新增比特中 95.29% 直接来自残差系数。阶段维持冻结基线，下一轮优先定位受码率约束的残差收益。</p>
 <p><a href="experiments/a1_quality_20261108/P0_5/decision.md">阶段判定</a> · <a href="experiments/a1_quality_20261108/P0_5/results/rd_curve.svg">真实 RD 曲线</a> · <a href="experiments/a1_quality_20261108/P0_5/results/bit_allocation.svg">A/F/E 比特分布</a> · <a href="experiments/a1_quality_20261108/P0_5/results/per_frame.csv">逐帧诊断</a></p></div>
+</section>
+<section id="a1-quality-p06">
+<div class="eyebrow">A1 / P0.6</div><h2>固定 Mode/MV 的残差率失真可行性</h2>
+<div class="panel"><p>冻结 A 的 Mode/MV 和 QP28。44 条训练和 16 条验证视频比较三种逐帧分配与五档残差预算，每一帧按策略自身的实际 JM 重建轨迹产生稀疏残差。严格回放使用预导出全段状态。</p>
+<p>验证基线为 20.408 dB、439.514 kb/s。早期倾斜 +5% 档为 21.047 dB、460.635 kb/s，末四帧提升 0.607 dB。离线收益分配 +5% 档末四帧提升 0.771 dB。三种分配在 +3% 与 +5% 档均过锁定门槛，支持小规模 Residual Head 原型验证。</p>
+<p><a href="experiments/a1_quality_20261108/P0_6/decision.md">阶段判定</a> · <a href="experiments/a1_quality_20261108/P0_6/results/rd_curve.svg">真实 RD 曲线</a> · <a href="experiments/a1_quality_20261108/P0_6/results/per_frame.csv">逐帧预算</a> · <a href="experiments/a1_quality_20261108/P0_6/results/fixed_A_states.tar.gz">固定 A 状态</a></p></div>
 </section>
 <section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>

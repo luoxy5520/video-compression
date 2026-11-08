@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870" height="480" viewBox="0 0 870 480">
+<rect width="870" height="480" fill="#fff"/><g font-family="system-ui,sans-serif" fill="#172943">
+<text x="34" y="37" font-size="23" font-weight="700">Fixed Mode/MV residual RD · JM QP28</text>
+<text x="34" y="60" font-size="13">Validation · 4 equally weighted prompts · strict replay</text>
+<text x="33" y="88" font-size="12">Y-PSNR (dB)</text>
+<path d="M82 384.1h710" stroke="#dbe4ec"/><text x="74" y="388.1" text-anchor="end" font-size="12">20</text>
+<path d="M82 294.4h710" stroke="#dbe4ec"/><text x="74" y="298.4" text-anchor="end" font-size="12">20.5</text>
+<path d="M82 204.6h710" stroke="#dbe4ec"/><text x="74" y="208.6" text-anchor="end" font-size="12">21</text>
+<path d="M82 114.9h710" stroke="#dbe4ec"/><text x="74" y="118.9" text-anchor="end" font-size="12">21.5</text>
+<path d="M123.8 97v305" stroke="#dbe4ec"/><text x="123.8" y="420" text-anchor="middle" font-size="12">435</text>
+<path d="M228.2 97v305" stroke="#dbe4ec"/><text x="228.2" y="420" text-anchor="middle" font-size="12">440</text>
+<path d="M332.6 97v305" stroke="#dbe4ec"/><text x="332.6" y="420" text-anchor="middle" font-size="12">445</text>
+<path d="M437.0 97v305" stroke="#dbe4ec"/><text x="437.0" y="420" text-anchor="middle" font-size="12">450</text>
+<path d="M541.4 97v305" stroke="#dbe4ec"/><text x="541.4" y="420" text-anchor="middle" font-size="12">455</text>
+<path d="M645.8 97v305" stroke="#dbe4ec"/><text x="645.8" y="420" text-anchor="middle" font-size="12">460</text>
+<path d="M750.2 97v305" stroke="#dbe4ec"/><text x="750.2" y="420" text-anchor="middle" font-size="12">465</text>
+<path d="M676.9 97v305" stroke="#845442" stroke-dasharray="5 4"/><text x="672.9" y="106" text-anchor="end" font-size="12">+5% cap</text>
+<polyline points="216.79,310.19 304.63,282.22 396.66,258.29 486.95,236.87 654.44,200.46" fill="none" stroke="#3266aa" stroke-width="2"/>
+<circle cx="216.8" cy="310.2" r="4" fill="#3266aa"><title>uniform_0: 20.412 dB, 439.455 kb/s</title></circle>
+<circle cx="304.6" cy="282.2" r="4" fill="#3266aa"><title>uniform_1: 20.568 dB, 443.661 kb/s</title></circle>
+<circle cx="396.7" cy="258.3" r="4" fill="#3266aa"><title>uniform_2: 20.701 dB, 448.068 kb/s</title></circle>
+<circle cx="487.0" cy="236.9" r="4" fill="#3266aa"><title>uniform_3: 20.820 dB, 452.392 kb/s</title></circle>
+<circle cx="654.4" cy="200.5" r="4" fill="#3266aa"><title>uniform_5: 21.023 dB, 460.413 kb/s</title></circle>
+<circle cx="90" cy="462" r="4" fill="#3266aa"/><text x="100" y="466" font-size="13">uniform</text>
+<polyline points="217.62,309.69 306.75,280.91 396.91,257.91 487.18,235.22 659.09,196.29" fill="none" stroke="#0b877b" stroke-width="2"/>
+<circle cx="217.6" cy="309.7" r="4" fill="#0b877b"><title>early_0: 20.415 dB, 439.495 kb/s</title></circle>
+<circle cx="306.8" cy="280.9" r="4" fill="#0b877b"><title>early_1: 20.575 dB, 443.763 kb/s</title></circle>
+<circle cx="396.9" cy="257.9" r="4" fill="#0b877b"><title>early_2: 20.703 dB, 448.080 kb/s</title></circle>
+<circle cx="487.2" cy="235.2" r="4" fill="#0b877b"><title>early_3: 20.830 dB, 452.403 kb/s</title></circle>
+<circle cx="659.1" cy="196.3" r="4" fill="#0b877b"><title>early_5: 21.047 dB, 460.635 kb/s</title></circle>
+<circle cx="290" cy="462" r="4" fill="#0b877b"/><text x="300" y="466" font-size="13">early</text>
+<polyline points="216.95,310.20 306.24,280.38 397.38,256.95 486.90,235.88 653.11,201.04" fill="none" stroke="#d15d42" stroke-width="2"/>
+<circle cx="217.0" cy="310.2" r="4" fill="#d15d42"><title>offline_gain_0: 20.412 dB, 439.463 kb/s</title></circle>
+<circle cx="306.2" cy="280.4" r="4" fill="#d15d42"><title>offline_gain_1: 20.578 dB, 443.738 kb/s</title></circle>
+<circle cx="397.4" cy="257.0" r="4" fill="#d15d42"><title>offline_gain_2: 20.708 dB, 448.103 kb/s</title></circle>
+<circle cx="486.9" cy="235.9" r="4" fill="#d15d42"><title>offline_gain_3: 20.826 dB, 452.390 kb/s</title></circle>
+<circle cx="653.1" cy="201.0" r="4" fill="#d15d42"><title>offline_gain_5: 21.020 dB, 460.349 kb/s</title></circle>
+<circle cx="490" cy="462" r="4" fill="#d15d42"/><text x="500" y="466" font-size="13">offline_gain</text>
+<rect x="214.0" y="306.8" width="8" height="8" fill="#26384d"/><text x="226.0" y="302.8" font-size="12">A</text>
+<text x="435" y="439" text-anchor="middle" font-size="13">Measured bitrate (kb/s)</text></g></svg>

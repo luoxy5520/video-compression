@@ -4,13 +4,15 @@ import csv
 import hashlib
 import json
 import math
+import tarfile
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 
+import numpy as np
 import yaml
 
-from sweep import CONFIGS, FRAMES, HERE, JM, P05, PCTS, POLICIES, digest, records
+from sweep import BASIS, CONFIGS, FRAMES, HERE, JM, P05, PCTS, POLICIES, digest, records
 from diagnose import csv_write
 
 
@@ -24,8 +26,9 @@ def average(rows, key):
 def svg(path, curves):
     keys=["A","zero",*(f"{p}_{n}" for p in POLICIES for n in PCTS)]
     points={r["arm"]:r for r in curves if r["arm"] in keys}
+    cap=points["A"]["bitrate_kbps"]*1.05
     xmin=5*math.floor(min(p["bitrate_kbps"] for p in points.values())/5)-2
-    xmax=5*math.ceil(max(p["bitrate_kbps"] for p in points.values())/5)+2
+    xmax=5*math.ceil(max(cap, max(p["bitrate_kbps"] for p in points.values()))/5)+2
     ymin=math.floor(2*min(p["psnr_y_db"] for p in points.values()))/2-.1
     ymax=math.ceil(2*max(p["psnr_y_db"] for p in points.values()))/2+.1
     def xy(rate, psnr):
@@ -41,6 +44,9 @@ def svg(path, curves):
     for rate in range(5*math.ceil(xmin/5),5*math.floor(xmax/5)+1,5):
         x,_=xy(rate,ymin)
         data.append(f'<path d="M{x:.1f} 97v305" stroke="#dbe4ec"/><text x="{x:.1f}" y="420" text-anchor="middle" font-size="12">{rate}</text>')
+    cap_x,_=xy(cap,ymin)
+    data.append(f'<path d="M{cap_x:.1f} 97v305" stroke="#845442" stroke-dasharray="5 4"/>'
+                f'<text x="{cap_x-4:.1f}" y="106" text-anchor="end" font-size="12">+5% cap</text>')
     colors=["#3266aa","#0b877b","#d15d42"]
     for i,(policy,color) in enumerate(zip(POLICIES,colors)):
         rows=[points[f"{policy}_{pct}"] for pct in sorted(PCTS)]
@@ -56,6 +62,25 @@ def svg(path, curves):
     data.append(f'<rect x="{x-4:.1f}" y="{y-4:.1f}" width="8" height="8" fill="#26384d"/><text x="{x+8:.1f}" y="{y-8:.1f}" font-size="12">A</text>')
     data.append('<text x="435" y="439" text-anchor="middle" font-size="13">Measured bitrate (kb/s)</text></g></svg>')
     path.write_text("\n".join(data))
+
+
+def frequency_audit(run, rows):
+    counts=defaultdict(lambda:np.zeros(16,dtype=np.int64))
+    for row in rows:
+        if not row["paired_offline"]:
+            continue
+        arm=row["arm"]
+        folder=run/"val"/row["video_id"]/arm
+        with np.load(folder/"prediction.npz",allow_pickle=False) as state:
+            y=state["residual_y"]
+        blocks=y.reshape(FRAMES,30,52,4,4,4,4).transpose(0,1,3,2,5,4,6).reshape(-1,16)
+        used=blocks[np.any(blocks!=0,axis=1)].astype(np.int32)
+        projection=used @ BASIS.T
+        assert (np.count_nonzero(projection,axis=1)==1).all()
+        counts[arm]+=np.bincount(np.abs(projection).argmax(1),minlength=16)
+    return [dict(arm=arm,frequency_y=i//4,frequency_x=i%4,selected_blocks=int(n),
+                 share_of_selected=float(n / v.sum()) if v.sum() else 0.0)
+            for arm,v in counts.items() for i,n in enumerate(v)]
 
 
 def main():
@@ -143,12 +168,18 @@ def main():
             data=[{k:v for k,v in r.items() if k not in
                    ("delta_psnr_y_db","delta_last4_psnr_y_db","delta_total_y_sse")} for r in data]
         csv_write(a.output/f"{name}.csv",data)
+    csv_write(a.output/"selected_frequency.csv",frequency_audit(a.run,val))
     (a.output/"fixed_state_manifest.jsonl").write_text("".join(json.dumps(r)+"\n" for r in manifest))
     (a.output/"summary.json").write_text(json.dumps(dict(
         validation_clips=16,validation_prompts=4,rate_cap_kbps=cap,best_under_cap=best,
         passing_arms=[r["arm"] for r in curves if r["passes"]],curves=curves,
         p06_encoder_sha256=digest(JM/"bin/lencod.exe"),
         p05_manifest_sha256=digest(P05/"report/manifest.json")),indent=2,allow_nan=False))
+    with tarfile.open(a.output/"fixed_A_states.tar.gz","w:gz") as archive:
+        for r in manifest:
+            prefix=Path(r["split"])/r["video_id"]
+            archive.add(r["mode_mv_path"],arcname=prefix/"fixed_mode_mv.npz")
+            archive.add(r["weights_path"],arcname=prefix/"frame_weights.json")
     svg(a.output/"rd_curve.svg",curves)
 
 
