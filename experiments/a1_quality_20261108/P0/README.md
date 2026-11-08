@@ -67,3 +67,19 @@ bash experiments/a1_quality_20261108/P0/run_train_pilot.sh \
 | F，λ=256（F 组最高 PSNR） | 21.50 | 599.68 | 20.42 |
 
 全部 16 组整段码流通过编码器、JM、FFmpeg 三方一致性和零 ME 时间核验。C/D/E 使用的残差在 A 轨迹上配对，一旦连续替换 P 帧便失去配对条件。F 的最高 PSNR 点较 A 高 0.40 dB，但码率增加约 30.3%。结果仅覆盖一个训练 prompt，暂不据此选择 P1 或 P2。完整扫点见 `rd_curve.csv`，逐帧及哈希见 `train_pilot_summary.json`。
+
+## 全量 P0 与推进门槛
+
+在验证结果开放前，负责人已锁定 `config.yaml` 中的门槛。train/val 分别为 44/16 条、11/4 个 prompt。旧开发回归和最终测试不参与该门槛或 λ 的评估。复现用命令如下。
+
+```bash
+p=experiments/a1_quality_20261108/P0
+py="$HOME/Wan2.1/.venv/bin/python"
+out="$HOME/a1_quality_20261108/P0"
+"$py" "$p/run_p0_batch.py" --output "$out/full"
+bash "$p/run_trajectory_val.sh" "$out/full" "$out/trajectory_val"
+"$py" "$p/summarize_p0.py" --run "$out/full" --trajectory "$out/trajectory_val" \
+  --output "$out/full_report"
+```
+
+轨迹配对诊断保留给定的 mode/MV。只在离线教师阶段使用真实源，记录 JM 原生 MC，再将 Y/U/V 源减 MC 的差值预导出到状态。独立回放关闭 live residual，使用零占位 YUV，码流和重建必须逐字节匹配教师。包含 A 的合法 Skip/P16 混合模式和全 P16 组；Skip 保留派生语义，不生成自由残差。该诊断只用于定位漂移和码率来源。
