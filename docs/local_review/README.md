@@ -39,3 +39,17 @@ ssh 113Server 'cd ~/dit-p2-infoprobe-20261108 && git archive HEAD -- 实验地�
 ```
 
 [代码与报告](https://github.com/luoxy5520/video-compression/tree/codex/a1-p2-infoprobe-20261108/experiments/a1_quality_20261108/P2_InfoProbe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-infoprobe-20261108)
+
+## P2-LabelProbe
+
+- [best_sample_1032](videos/p2_labelprobe/best_sample_1032.mp4)
+- [training_fit_sample_0000](videos/p2_labelprobe/training_fit_sample_0000.mp4)
+- [worst_sample_1025](videos/p2_labelprobe/worst_sample_1025.mp4)
+
+对比视频每格 832×480，17 帧，16 fps。验证示例按原型逐视频最佳和最差变化选取，四格为源、冻结 A、真实源辅助诊断和实际学生。训练示例对照同样本 L0-A/L0-B。预览经过统一重编码，原始评分码流在[科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-labelprobe-20261108)。
+
+在 Mac 的空目录仅同步地图、Markdown 和三个 MP4。
+
+```sh
+ssh 113Server 'cd ~/dit-p2-labelprobe-20261108 && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_labelprobe experiments/a1_quality_20261108/P2_LabelProbe/README.md experiments/a1_quality_20261108/P2_LabelProbe/decision.md' | tar -xf -
+```

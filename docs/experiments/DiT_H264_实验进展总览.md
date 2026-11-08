@@ -59,3 +59,12 @@ DC-only 74,114 个可训参数。64 个/视频、种子 1701 的头部推理中�
 G0–G2 两种子在统一输入权限、训练条件和预算下完成真实回放，未出现稳定学生收益。G3/G4 同小子集条件比较完成，离线改善随样本、指标或种子变化。G5、G4b 和 P3 未启动。继续使用冻结 A，最终盲测封存。
 
 [阶段报告](../../experiments/a1_quality_20261108/P2_InfoProbe/decision.md) · [实验地图](../../实验地图.html#a1-quality-p2-infoprobe) · [精选 MP4](../local_review/README.md#p2-infoprobe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-infoprobe-20261108)
+
+
+## P2-LabelProbe｜残差标签稳定性
+
+冻结 A 复跑为 20.408 dB、439.514 kb/s，末四帧 18.810 dB。L0 以相同 400 步、两样本和两种子拆开历史修复。单换困难负例损失明显提高公共 DC 排名，单扩频带没有该效果。跨 prompt 真实回放中，修复组减轻退化，仍低于 A。
+
+L1 固定每帧四点和相同 QP28 筛选，从 A 换成教师参考后 64 个稀疏位置的中位 IoU 为 0.128，换成历史学生参考为 0.829。六对重复标签和码流哈希一致。L2 的 Sparse、Continuous、Region 都完成小规模真实回放，未稳定通过。真实源辅助组单列。继续用冻结 A，P3 保持停用，最终盲测封存。
+
+[完整判定](../../experiments/a1_quality_20261108/P2_LabelProbe/decision.md) · [精选视频](../local_review/README.md#p2-labelprobe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-labelprobe-20261108)
