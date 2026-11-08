@@ -17,11 +17,13 @@ LAMBDAS = (0, 1, 4, 16, 64, 256)
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    for key in ("config", "kit", "jm", "audit", "output"):
+    for key in ("kit", "jm", "audit", "output"):
         parser.add_argument(f"--{key}", type=Path, required=True)
+    parser.add_argument("--config", type=Path, nargs="+", required=True)
+    parser.add_argument("--split", choices=("train", "val"), default="train")
     parser.add_argument("--sample", required=True)
     args = parser.parse_args()
-    row, = (r for r in records([args.config])["train"]
+    row, = (r for r in records(args.config)[args.split]
             if r["step"] == 20 and r["sample_id"] == args.sample)
     frames = [args.audit / f"frame_{t:02d}" for t in range(1, 17)]
     with np.load(frames[-1] / "baseline_prefix/prediction.npz") as data:
@@ -82,7 +84,7 @@ def main():
         assert before == digest(prediction)
         trace = np.loadtxt(folder / "mb_bits.csv", dtype=np.int32, delimiter=",")
         assert trace.shape == (16 * 1560, 4)
-        results.append(dict(arm=name, sample_id=args.sample, split="train",
+        results.append(dict(arm=name, sample_id=args.sample, split=args.split,
                             diagnostic_oracle=name not in ("A", "A_fixed_p16"),
                             skip_fraction=float((arrays["mode_id"] == 0).mean()),
                             p_mb_layer_bits=int(trace[:, 2].sum()),

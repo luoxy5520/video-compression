@@ -44,9 +44,11 @@ def candidate_mvs(base, proposal, row):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    for key in ("config", "checkpoint", "head", "kit", "jm", "output"):
+    for key in ("checkpoint", "head", "kit", "jm", "output"):
         parser.add_argument(f"--{key}", type=Path, required=True)
     parser.add_argument("--trace-bits", action="store_true")
+    parser.add_argument("--config", type=Path, nargs="+", required=True)
+    parser.add_argument("--split", choices=("train", "val"), default="train")
     parser.add_argument("--sample", default="sample_1000")
     parser.add_argument("--frame", type=int, default=2, choices=range(1, 17))
     args = parser.parse_args()
@@ -54,7 +56,7 @@ def main():
     assert digest(args.checkpoint) == LOCKED
     torch.set_num_threads(4)
     torch.backends.cudnn.allow_tf32 = True
-    row, = (r for r in records([args.config])["train"]
+    row, = (r for r in records(args.config)[args.split]
             if r["step"] == 20 and r["sample_id"] == args.sample)
     base = load_model(args.checkpoint)
     saved = torch.load(args.head, map_location="cpu", weights_only=True)
@@ -138,7 +140,7 @@ def main():
     np.savez_compressed(args.output / "cost_labels.npz", mv_qpel=mv, valid=valid,
                         sse_yuv=sse, residual_nonzero_proxy=nonzero, min_d_id=best,
                         oracle_mode=mode, oracle_mv_qpel=oracle_mv, diagnostic_oracle=True, **bit_labels)
-    summary = dict(sample_id=args.sample, split="train", frame=t, diagnostic_oracle=True,
+    summary = dict(sample_id=args.sample, split=args.split, frame=t, diagnostic_oracle=True,
                    per_candidate=arms, mc_matches_jm_yuv=True, fixed_prefix_equal=True,
                    candidate_slots=["baseline_mv", "coarse1", "coarse2", "coarse3", "coarse4", "zero"],
                    distinct_candidates_mean=float(valid.sum(-1).mean()),
