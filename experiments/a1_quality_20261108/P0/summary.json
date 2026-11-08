@@ -1,0 +1,230 @@
+{
+  "baseline": {
+    "psnr_y_p_db": 22.83806904034074,
+    "bitrate_kbps": 427.7069803921569,
+    "last_frame_psnr_y": 20.32693904710451,
+    "ssim_y_p": 0.6705263385416667,
+    "late_minus_early_psnr": -7.362016410351801,
+    "head_seconds": 0.00234252616064623,
+    "export_s": 0.16300802020123228,
+    "videos": 12,
+    "independent_prompts": 3,
+    "bit_exact_historical_all": true,
+    "all_three_recon_equal": true,
+    "yuv_psnr_db": 24.516915676564498,
+    "min_pframe_y_psnr_db": 16.96352097564485
+  },
+  "training_smoke": {
+    "bit_trace_nonperturbation": true,
+    "sample_id": "sample_1000",
+    "split": "train",
+    "frame": 2,
+    "diagnostic_oracle": true,
+    "per_candidate": [
+      {
+        "id": 0,
+        "state_sha256": "9bd03f219e4514b6d29f1ae29d821f5a6c952ab193533ec35e7b783c6f5da638",
+        "bitstream_sha256": "13c9b68e4400ccb245be06110e7d7df910a9b71474acc9e2ac2dd9d50b21dc85",
+        "adapt_s": 0.25948230898939073,
+        "jm_replay_s": 0.21755803213454783,
+        "latent_to_bitstream_s": 0.47704034112393856,
+        "ffmpeg_decode_s": 0.09626203589141369,
+        "decoder_agreement": true,
+        "bitstream_bytes": 14542,
+        "bitrate_kbps": 620.4586666666667,
+        "oracle_i_bytes_read": 853694,
+        "oracle_p_bytes_read": 0,
+        "encoder_matches_decoder": true,
+        "motion_search_s_reported": 0.0,
+        "psnr_y_p_pooled": 40.31907947649361,
+        "psnr_y_by_frame": [
+          43.862222954536854,
+          39.41167196553422,
+          41.46755420062447
+        ],
+        "last_frame_psnr_y": 41.46755420062447,
+        "ssim_y_by_frame": [
+          0.983834,
+          0.979835,
+          0.981442
+        ],
+        "ssim_y_p": 0.9806385,
+        "last_frame_ssim_y": 0.981442,
+        "late_minus_early_psnr": null
+      },
+      {
+        "id": 1,
+        "state_sha256": "c5e57e956345b36fd9d7fb169888ecdc5d83699610965b1aede84414160a311b",
+        "bitstream_sha256": "1d400bf5351dfcbd41d5bb58e9c062b77166f077f332e28b1f2227b7dc208a79",
+        "adapt_s": 0.2631512980442494,
+        "jm_replay_s": 0.2174232150427997,
+        "latent_to_bitstream_s": 0.4805745130870491,
+        "ffmpeg_decode_s": 0.09307379904203117,
+        "decoder_agreement": true,
+        "bitstream_bytes": 14932,
+        "bitrate_kbps": 637.0986666666666,
+        "oracle_i_bytes_read": 853694,
+        "oracle_p_bytes_read": 0,
+        "encoder_matches_decoder": true,
+        "motion_search_s_reported": 0.0,
+        "psnr_y_p_pooled": 40.31922891962207,
+        "psnr_y_by_frame": [
+          43.862222954536854,
+          39.41167196553422,
+          41.46794312670121
+        ],
+        "last_frame_psnr_y": 41.46794312670121,
+        "ssim_y_by_frame": [
+          0.983834,
+          0.979835,
+          0.980799
+        ],
+        "ssim_y_p": 0.980317,
+        "last_frame_ssim_y": 0.980799,
+        "late_minus_early_psnr": null
+      },
+      {
+        "id": 2,
+        "state_sha256": "4c2f923433632e9bcd1cfb7f91ce4d23d770a03fd8693c3b9bc9f4c420485606",
+        "bitstream_sha256": "fa4ca60d81df7b37b3787bc23f9d6b4bb29d351dfcfdcaf1f6f5cbb744e19bac",
+        "adapt_s": 0.2682057418860495,
+        "jm_replay_s": 0.22424846910871565,
+        "latent_to_bitstream_s": 0.49245421099476516,
+        "ffmpeg_decode_s": 0.09114112192764878,
+        "decoder_agreement": true,
+        "bitstream_bytes": 25222,
+        "bitrate_kbps": 1076.1386666666667,
+        "oracle_i_bytes_read": 853694,
+        "oracle_p_bytes_read": 0,
+        "encoder_matches_decoder": true,
+        "motion_search_s_reported": 0.0,
+        "psnr_y_p_pooled": 39.90269203985146,
+        "psnr_y_by_frame": [
+          43.862222954536854,
+          39.41167196553422,
+          40.45638885509195
+        ],
+        "last_frame_psnr_y": 40.45638885509195,
+        "ssim_y_by_frame": [
+          0.983834,
+          0.979835,
+          0.972236
+        ],
+        "ssim_y_p": 0.9760355000000001,
+        "last_frame_ssim_y": 0.972236,
+        "late_minus_early_psnr": null
+      },
+      {
+        "id": 3,
+        "state_sha256": "852da8e9eb422f88b47fafbba771383e908b54842a590463597570190637c3e0",
+        "bitstream_sha256": "3bcaa6771fccd157bcc21132875398f20598e0caf0335980f406af261f5e254a",
+        "adapt_s": 0.2624381391797215,
+        "jm_replay_s": 0.21970131597481668,
+        "latent_to_bitstream_s": 0.48213945515453815,
+        "ffmpeg_decode_s": 0.0940733419265598,
+        "decoder_agreement": true,
+        "bitstream_bytes": 21398,
+        "bitrate_kbps": 912.9813333333334,
+        "oracle_i_bytes_read": 853694,
+        "oracle_p_bytes_read": 0,
+        "encoder_matches_decoder": true,
+        "motion_search_s_reported": 0.0,
+        "psnr_y_p_pooled": 39.944870941735026,
+        "psnr_y_by_frame": [
+          43.862222954536854,
+          39.41167196553422,
+          40.55281691115929
+        ],
+        "last_frame_psnr_y": 40.55281691115929,
+        "ssim_y_by_frame": [
+          0.983834,
+          0.979835,
+          0.973624
+        ],
+        "ssim_y_p": 0.9767295,
+        "last_frame_ssim_y": 0.973624,
+        "late_minus_early_psnr": null
+      },
+      {
+        "id": 4,
+        "state_sha256": "a11f254a50a80d6657d3f2987ac53df91a55d60214abdeeb810f9c131a4c5e8f",
+        "bitstream_sha256": "c85239112954cf0213f114704b1d490f9633a92858e005ae6b24efbee2f50a0f",
+        "adapt_s": 0.2630780271720141,
+        "jm_replay_s": 0.22312434785999358,
+        "latent_to_bitstream_s": 0.4862023750320077,
+        "ffmpeg_decode_s": 0.09303146903403103,
+        "decoder_agreement": true,
+        "bitstream_bytes": 26585,
+        "bitrate_kbps": 1134.2933333333333,
+        "oracle_i_bytes_read": 853694,
+        "oracle_p_bytes_read": 0,
+        "encoder_matches_decoder": true,
+        "motion_search_s_reported": 0.0,
+        "psnr_y_p_pooled": 39.78833856854793,
+        "psnr_y_by_frame": [
+          43.862222954536854,
+          39.41167196553422,
+          40.20080273103446
+        ],
+        "last_frame_psnr_y": 40.20080273103446,
+        "ssim_y_by_frame": [
+          0.983834,
+          0.979835,
+          0.969279
+        ],
+        "ssim_y_p": 0.974557,
+        "last_frame_ssim_y": 0.969279,
+        "late_minus_early_psnr": null
+      },
+      {
+        "id": 5,
+        "state_sha256": "a058dc059f8011067afee08a34ab4274333ab2db3ff1deccf5ee764a73a0265f",
+        "bitstream_sha256": "87cae72738350df6a053d5ef576ca15fea45fcc50627589e8e057c7f33b7df8b",
+        "adapt_s": 0.26612507714889944,
+        "jm_replay_s": 0.2175141421612352,
+        "latent_to_bitstream_s": 0.48363921931013465,
+        "ffmpeg_decode_s": 0.0926047470420599,
+        "decoder_agreement": true,
+        "bitstream_bytes": 13023,
+        "bitrate_kbps": 555.648,
+        "oracle_i_bytes_read": 853694,
+        "oracle_p_bytes_read": 0,
+        "encoder_matches_decoder": true,
+        "motion_search_s_reported": 0.0,
+        "psnr_y_p_pooled": 40.33460858023905,
+        "psnr_y_by_frame": [
+          43.862222954536854,
+          39.41167196553422,
+          41.50813117925391
+        ],
+        "last_frame_psnr_y": 41.50813117925391,
+        "ssim_y_by_frame": [
+          0.983834,
+          0.979835,
+          0.981365
+        ],
+        "ssim_y_p": 0.9806,
+        "last_frame_ssim_y": 0.981365,
+        "late_minus_early_psnr": null
+      }
+    ],
+    "mc_matches_jm_yuv": true,
+    "fixed_prefix_equal": true,
+    "candidate_slots": [
+      "baseline_mv",
+      "coarse1",
+      "coarse2",
+      "coarse3",
+      "coarse4",
+      "zero"
+    ],
+    "distinct_candidates_mean": 5.6596153846153845,
+    "best_differs_from_baseline_fraction": 0.8025641025641026,
+    "baseline_mv_mean_sse_y": 1187.3121794871795,
+    "min_d_mean_sse_y": 916.3948717948718,
+    "context": "Each trial replaces the entire final P frame; fixed temporal prefix, candidate-specific spatial neighbors and deblocking.",
+    "rate_measure": "Native CAVLC macroblock-layer counters under each candidate frame's spatial context. Excludes slice/NAL overhead and is not mixed-frame RD.",
+    "elapsed_seconds": 7.172844768036157
+  },
+  "status": "P0 smoke complete; validation gate thresholds pending"
+}

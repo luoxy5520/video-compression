@@ -21,11 +21,11 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
+<header class="top"><div class="wrap"><div class="brand">DiT × H.264</div><nav aria-label="报告目录"><a href="#route">研究路线</a><a href="#timeline">实验步骤</a><a href="#scores">模式指标</a><a href="#fullstate">完整回放</a><a href="#closedloop">闭环</a><a href="#reference-aligned">参考对齐</a><a href="#decision-search">闭环决策</a><a href="#direct-replay">固定残差</a><a href="#aligned-head">残差校正</a><a href="#skip-calibration">Skip 校准</a><a href="#latent-codec">无 Oracle I</a><a href="#exact-skip">等价 Skip</a><a href="#learned-qpel">训练亚像素头</a><a href="#a-state-audit">原稿 A 项验收</a><a href="#a1-quality-p0">A1 P0</a><a href="#github">GitHub 文件</a><a href="#claims">结论</a></nav></div></header>
 <div class="hero"><div class="wrap">
 <div class="eyebrow">Experiment map / 2026.11.07</div>
 <h1>从 latent 读出<br>H.264 压缩状态</h1>
-<p><strong>研究主线一致。</strong> 已用真实 JM 标签训练出 Skip / P16×16 模式预测头，并用完整 Oracle 状态验证了 H.264 后端。已初步训练直接 MV 和残差头。达到阶段工作线的是模型辅助闭环编码器：在原固定测试集上为 40.89 dB、1289.11 kb/s；直接状态回放需独立验收。</p>
+<p><strong>A1 主线是独立输出可回放状态。</strong> 冻结 DiT，从最终步 hidden 一次导出全部 P 帧的 mode、qpel MV 和 Y/U/V 像素残差。JM 使用预导出状态和固定 Oracle I 生成标准码流。模型辅助闭环实验保留为历史对照，独立 A1 的验收依据是直接回放的画质、码率、长链漂移与状态头开销。</p>
 <div class="stats"><div><b>32</b><span>扩容批次视频</span></div><div><b>128</b><span>步骤特征与闭合验证</span></div><div><b>0.731</b><span>Step 5 模式 Macro-F1</span></div><div><b>0.774</b><span>Step 20 共享头 Macro-F1</span></div></div>
 </div></div>
 <main class="wrap">
@@ -277,7 +277,13 @@ kit=~/senior-oracle-expand32-20261106
 <p>113Server 从六组对照队列切换为持续续训。切换在当前组结束后发生，每组从上一组的 Oracle 和教师运动头权重及锚点继续，以 0.0003 的学习率重新初始化优化器。数据沿用原 32 条和新增 48 条视频中的 44 条训练与 16 条验证。后台目录为 <code>~/a_motion_queue_20261107</code>，每组更新 <code>status.json</code>。<code>STOP</code> 文件触发组间停止，脚本检查互斥和磁盘余量。</p>
 <p><a href="a_state_20261107/results/coarse_fine_summary.json">跨分支对照</a> · <a href="a_state_20261107/results/coarse_replay_ceiling.json">Oracle top-4 回放</a> · <a href="a_state_20261107/run_motion_queue.sh">后台续训队列</a></p>
 <p><a href="a_state_20261107/coarse_fine_mv.py">整数候选、qpel 细化与残差训练</a> · <a href="a_state_20261107/run_coarse_fine.sh">113Server 复现入口</a></p>
-</div></section><section id="github">
+</div></section><section id="a1-quality-p0">
+<div class="eyebrow">A1 / 2026-11-08</div><h2>P0 固定参考候选诊断</h2>
+<div class="panel"><p>113Server 复现锁定 hidden 基线。12 条历史开发回归（3 个独立 prompt）平均 P 帧 Y-PSNR 22.838 dB、427.707 kb/s、末帧 20.327 dB。预测文件、适配状态、码流及重建均匹配历史 SHA-256，三方重建逐像素一致。沿用固定 Oracle I。</p>
+<p>训练视频第 2 个 P 帧的六组候选均与原生 JM 的 Y/U/V 运动补偿逐像素一致。诊断用真实源构造候选残差，并记录该候选编码上下文中的宏块层与残差比特。全量 A–F 回放和受控码率验证待完成，P1–P3 尚未启动。</p>
+<p><a href="experiments/a1_quality_20261108/P0/README.md">复现与指标</a> · <a href="experiments/a1_quality_20261108/P0/baseline_audit.md">基线核对</a> · <a href="experiments/a1_quality_20261108/P0/decision.md">验证门槛</a></p></div>
+</section>
+<section id="github">
 <div class="eyebrow">14 / Repository map</div><h2>在 GitHub 哪里看代码、数据和结果</h2>
 <div class="grid3 repo">
 <div class="panel"><span class="tag">01 · 数据交接</span><h3>原始 4 条数据</h3><code>codex/a2-final-handoff</code><ul class="sub"><li><code>dataset_local/exp_2026_11_05/</code> · 四步张量、当前/最终视频、清单</li><li><code>handoff_final_for_labels/</code> · 四个最终 YUV 和生成标签的说明</li><li><code>experiments_a/</code> · A0、A2 早期实现与接口</li></ul><a class="link" href="https://github.com/luoxy5520/video-compression/tree/codex/a2-final-handoff">打开交接分支 ↗</a></div>

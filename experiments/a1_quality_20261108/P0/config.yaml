@@ -1,0 +1,35 @@
+experiment: a1_quality_20261108
+stage: P0
+training_new_models: false
+checkpoint_sha256: b713fef90db9205471c7b168e1715c70d8a4c87a0f4b342f866baf04e1cd4ca5
+coarse_proposal_sha256: dfd2b56b322c8d86b706b1fb031c2bfa9f68a4ff9e52887a64a78d931a38fd01
+features: hidden_cond_last_block
+sampler: unipc
+step: 20
+video:
+  width: 832
+  height: 480
+  frames: 17
+  fps: 16
+codec:
+  profile: Baseline
+  entropy: CAVLC
+  format: yuv420p
+  qp: 28
+  references: 1
+  fixed_oracle_i: true
+  p_modes: [Skip, P16]
+diagnostic_smoke:
+  sample: sample_1000
+  p_frame: 2
+  top_k: 4
+  modes: [P16]
+  candidate_slots: [baseline_mv, coarse1, coarse2, coarse3, coarse4, zero]
+gate:
+  status: proposed_pending_owner_lock
+  lambda_y_sse_per_mb_bit: [0, 1, 4, 16, 64, 256]
+  min_psnr_gain_db_at_controlled_rate: 0.30
+  max_rate_increase_pct: 5
+  min_positive_prompt_fraction: 0.75
+  min_last4_delta_db: -0.20
+  min_d_vs_e_gain_db_at_controlled_rate: 0.15
