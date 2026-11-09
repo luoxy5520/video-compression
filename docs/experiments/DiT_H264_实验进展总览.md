@@ -80,3 +80,9 @@ L1 固定每帧四点和相同 QP28 筛选，从 A 换成教师参考后 64 个�
 M1 通过。复制 2/4/8 个同样本均为 100% 召回，8 个不同视频各曝光 400 次仍只有 17.77% / 18.36%。44 条在每条 80 次时低于 0.2%。M2 未恢复拟合，严格回放均未通过。保留冻结 A；M3、P3 未启动，最终盲测封存。
 
 [阶段报告](../../experiments/a1_quality_20261108/P2_MultiSampleAudit/decision.md) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-multisample-audit-20261108)
+
+## P2-CapacityProbe｜容量与位置排序
+
+历史八视频召回 17.77% / 18.36% 逐元素复现。扩至约 16× 后训练召回 97.66% / 72.46%，验证仍接近零。C2 的匹配跨视频近邻一致率 61.32%，随机 55.37%。保留冻结 A，停用 44 条扩量、G5 与 P3，最终盲测封存。
+
+[阶段报告](../../experiments/a1_quality_20261108/P2_CapacityProbe/decision.md) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-capacityprobe-20261109)

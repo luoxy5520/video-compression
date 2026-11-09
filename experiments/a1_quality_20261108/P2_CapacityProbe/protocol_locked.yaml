@@ -1,0 +1,13 @@
+target: OnPolicy O0 T0, historical M0 first eight training prompt representatives
+widths: {A: 64, B: 352, C: 1504}
+head: fixed 32 features per block and 16 raster frequencies, only first convolution width changes
+seeds: [1701, 1702]
+optimizer: AdamW 0.001, batch one video, same seeded within-epoch shuffle
+budget: 3200 updates primary, 4000 common auxiliary cap
+checkpoints: [400, 800, 1600, 2400, 3200, 4000]
+capacity_gate: both seeds gain >=15 percentage points at 3200 relative to A
+c1: same architecture chosen by mean train recall at 3200, paired ranking at 3200 on A and chosen width; if no capacity gate, A only
+c1_gain: not_run_no_rd_labels
+replay: full validation for A/B/C at 3200, plus rank arms if run; no validation-driven selection
+accept: +3 percent each clip, positive P and last4 means both seeds, worst at least -0.30 dB
+blind: sealed

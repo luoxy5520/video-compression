@@ -80,3 +80,16 @@ ssh 113Server 'cd ~/dit-p2-onpolicy-20261108 && git archive HEAD -- 实验地图
 ```sh
 ssh 113Server 'cd ~/dit-p2-multisample-audit-20261108 && d=experiments/a1_quality_20261108/P2_MultiSampleAudit && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_multisample_audit "$d"/*.md' | tar -xf -
 ```
+
+## P2-CapacityProbe
+
+- [best_or_closest_sample_0021](videos/p2_capacityprobe/best_or_closest_sample_0021.mp4)
+- [worst_sample_1024](videos/p2_capacityprobe/worst_sample_1024.mp4)
+
+四宫格为原片、冻结 A、C0 学生和 O0 源辅助诊断。各格 832×480，17 帧，16 fps，统一重编码预览。严格评分码流见科研归档。
+
+在 Mac 的空目录运行：
+
+```sh
+ssh 113Server 'cd ~/dit-p2-capacityprobe-20261109 && d=experiments/a1_quality_20261108/P2_CapacityProbe && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_capacityprobe "$d"/*.md' | tar -xf -
+```
