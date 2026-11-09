@@ -1,0 +1,740 @@
+{
+  "torch": "2.7.1+cu128",
+  "numpy": "1.26.4",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "records": [
+    {
+      "sample": "sample_0000",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0000/step_020/input_yuv420p.yuv": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0000/step_020/oracle_state.bin": "8f0d8f8d59cd5b664c40fb09fe93dc27a282e08468b9beecb8bef72db2581e33",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0000/A/prediction.npz": "0a3a784eaa810c2db4c7645affa485dc1dcd2ebba2ef966f20b6742fc0b01dbe",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0000/A/prediction.264": "411588a4f9ef41172b3f39e28d35957918724a8cc9bca3015c4e9bf0f8e0eea4",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0000/summary.json": "7d92f255b1e299b9bbfe260f4c7f3adfd5f4febd0c1f702e03ba6ccec69f45ab",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0000/offline_gain_3/prediction.npz": "ac0c4cc1575a4b8c73478cb1984d8f606b2271bebc765f747369ff66cfc184f6"
+      }
+    },
+    {
+      "sample": "sample_0001",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0001/step_020/input_yuv420p.yuv": "e243f73cccf2d4e5000c616b865d17342d6266888e037c4cc6f11779c3bf6d71",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0001/step_020/oracle_state.bin": "0becf27ef7c5014eae30e19f7c03a96680e5866f3ec147996484f350265f2545",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0001/A/prediction.npz": "964c70f053dc11e668809a9b0ae7d6419c8b720466e2c654ecd9132f342233fd",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0001/A/prediction.264": "5fd1943200d97b7c8dcd0b949ca77f8108d881f696a7dbfb98435990aff7c291",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0001/summary.json": "d32b73a5851c317d5364f6206fdeb056478ab86759491149d4d1417a673e3d38",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0001/offline_gain_3/prediction.npz": "a2774db332fd2959df604b637910f7fed0129b1d7146068c6a6275e2b686e260"
+      }
+    },
+    {
+      "sample": "sample_0002",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0002/step_020/input_yuv420p.yuv": "43fa11f2d60fbd0afb420886d728b84c890b23762d5edec28faadf56af0061b3",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0002/step_020/oracle_state.bin": "d4f3f0d9fdbc5e0ba35bf4111f0d1bab30c212852c3c3481ee00b1ad6ff77c15",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0002/A/prediction.npz": "7b1ca0980132037072f507e9bd2d7ee2b74a9b20f1c4d49220e0a77327dbbd42",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0002/A/prediction.264": "fbf6919f684b40f704ca8497ea3b3ceae481e598ea369a2364bd4b8c74420628",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0002/summary.json": "1f14eee33f0f6c711f8d5d9f8e4efa8c28ce32ab725c302358f5f0881e1b17bf",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0002/offline_gain_3/prediction.npz": "e19f88cd0ac61278ee7aa60d50bb5993e851721d5a6ed913a122cb9e11411c25"
+      }
+    },
+    {
+      "sample": "sample_0003",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0003/step_020/input_yuv420p.yuv": "6786769acb39277ba6c2a3561deb4a38d41b8b75c733382176af4b0aae7d0f7e",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0003/step_020/oracle_state.bin": "b6c2decccf875aadb2f5080b5f7ff1d381c01aad38a0eecc802931e8397b2dc2",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0003/A/prediction.npz": "90eba3adf7681ce7930d6235c2923431996273e9497e14cbd2b4fc7259a8ffbb",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0003/A/prediction.264": "70f79f822752fa615a59609507f9d7c0e6546b47e914d02efa24f0caaa486678",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0003/summary.json": "842aa91b19996c43e58c69a8b39b41f9fae8782c2a0fcf942dfe23d1eb053807",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0003/offline_gain_3/prediction.npz": "c3aac2daa6461534c6b65d948c5649a1a88ad2db197830847f9b72060064e4c1"
+      }
+    },
+    {
+      "sample": "sample_0004",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0004/step_020/input_yuv420p.yuv": "12a6d9d277f26e04310068af21e3983342d2893a3414096ee02679c166f886e2",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0004/step_020/oracle_state.bin": "52a989e2552546fdab7f89e8acf78bd42163084f0ba9786e6a5a4981b26a7a48",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0004/A/prediction.npz": "33fae3bed5b3409fe9149f83d45ef52b2bfd731dfb11f7ca812db6837f7487f6",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0004/A/prediction.264": "8981b6327947aff8bb525d77af4e7cb487c6edc08f22788ce511d1183b50244e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0004/summary.json": "e8c364847686f551442428b46cb20fa2082060e2997060175707470894dd8d20",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0004/offline_gain_3/prediction.npz": "ee0f2dbf1013dae0dbf2d8334522491685bcc30c3e491b3a9449a1bba6cfedd0"
+      }
+    },
+    {
+      "sample": "sample_0005",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0005/step_020/input_yuv420p.yuv": "29dae1e1ec17622bbee9eb0aead54bcac1352c1220e0ed5f13fdfff8d5e483ce",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0005/step_020/oracle_state.bin": "40ce733c62050e2e92124d03fb6d0a739de4f03f05e5a04bfef695f28280f277",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0005/A/prediction.npz": "4154a4a1a4de5c6bb314cb24fe1ae6a4fbb5d5535b7bd6d0343a95f5d31030b4",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0005/A/prediction.264": "25282d5a472d79ba216802dab37e98948037e51ceff42489948d009e0eae7df6",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0005/summary.json": "cc2e44fc2c3ff5e1153afc15195d0a38fe972c2acadb458502ee864739def888",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0005/offline_gain_3/prediction.npz": "68493e4544ba8fbc5e5f6d0e0ee920f24405ff0c57c7d722812086c8463fa775"
+      }
+    },
+    {
+      "sample": "sample_0006",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0006/step_020/input_yuv420p.yuv": "5e9f8da1b6209cda0904a6b7456c7cd115fcec3fb8e3069186841073ae907acb",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0006/step_020/oracle_state.bin": "d4ae261a03c85441d7c7b29c6fde391ee29be8284134938f3013c4d589d037fe",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0006/A/prediction.npz": "733c0103d2004320631beab5101ee5c442dace75db936b80e217497b760c8ce6",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0006/A/prediction.264": "bc2aa0bcd09b795bca3d8e057297f920b1c39c89808a6846b55877562c27b910",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0006/summary.json": "5f9708b1efe155355ccb3e334d5fff93fb40a1f66faed08ff80ef40c3bd654af",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0006/offline_gain_3/prediction.npz": "5a767b749c932c3284444546cd8268624186b744b3fcc7bf61615050d6bffd89"
+      }
+    },
+    {
+      "sample": "sample_0007",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0007/step_020/input_yuv420p.yuv": "5d9323d4135086805e6cf3de0d78c04057d8369cd4aa9e44e09d3e879d30b3e9",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0007/step_020/oracle_state.bin": "45efa4dc61772078543f83bbc1c27dce96638bd223934adb6b6486d4ba8109f8",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0007/A/prediction.npz": "4ec4f2baf13d463309421830a2ef0cc3a69891f3a246301e78e2a105c37c1993",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0007/A/prediction.264": "5462b6d155334c82f3d5455ea6fd44b91911e645d361068b20b6e3b9cf94963a",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0007/summary.json": "df538a8690ea679cc540825af89380e098b8a264d9c5b32c108a251474cc5477",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0007/offline_gain_3/prediction.npz": "c7ef8031538c8c2471e5b8c4d1564c71d7f90d6ee2ada4ffde04d3f333eaa93e"
+      }
+    },
+    {
+      "sample": "sample_0008",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0008/step_020/input_yuv420p.yuv": "17b3121f7460e08b2be8a0f98121c9606db08d90b93ed30ff64c1c77f3394e4d",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0008/step_020/oracle_state.bin": "24b233d4883ce2480cf855b5315cb4839086ef6205eb732577985346fea942d4",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0008/A/prediction.npz": "f13469d4489e3c427a1886b1a6125fb2bf7f3598c82363a656e57d566f680247",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0008/A/prediction.264": "96225f18e1b2578c7c3b0f2997c27dd3b2872796915083d0ded7faa6548e7e4f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0008/summary.json": "9de5fbbf9e9d2996666c60c678b52a92ce0c1bd93bf99e00a87891f5f6343e86",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0008/offline_gain_3/prediction.npz": "918ddb1daf4efbf95a22c6d46783b041292575598ba08a557ad6d8244ce87a0a"
+      }
+    },
+    {
+      "sample": "sample_0009",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0009/step_020/input_yuv420p.yuv": "2a205baf44d74dba87fa612cbdf9aac4fab3f3c12591074ae3d6bb7316617998",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0009/step_020/oracle_state.bin": "c6cdc521ac1e3ba18035186ca296c44aefe8d1071f319a6ec10e19bc5bca644f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0009/A/prediction.npz": "91961bfa0b7da97143b3165f0df04258b252c5148c9a7b430bdc59d0a39bf328",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0009/A/prediction.264": "c342c1f602733c6fcf23edeceda990fe50a9d593ce78333281e4a6dbe2aff234",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0009/summary.json": "289b927260c34d3d66c5a68d74826231b9f4741af90131d00ec94cc75e0135a3",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0009/offline_gain_3/prediction.npz": "ac9a74ddcc36e5965c9b4dcdc0566f6c04cc0d2c6c367e5978d84197f11e1722"
+      }
+    },
+    {
+      "sample": "sample_0010",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0010/step_020/input_yuv420p.yuv": "4609712613cbc60ea0ee3a045e3b53fcecd6458c879949263d922a90912c90ea",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0010/step_020/oracle_state.bin": "78be3abcdc768d832d06de75978b6f543a79fa940294589e4d5680734f509ae4",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0010/A/prediction.npz": "972c48189410606ea1b47d886ba0aacc8c17b8dd7ee41ee8eae9fae8ff508930",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0010/A/prediction.264": "253eedb7cc6f79c6026ac3c3a6c1ffe16c833262549812241c37c294571d249e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0010/summary.json": "079ee2045c676efb9cb301aead7e61d47bbaf40cd0e7b4d4605d6b9ced2db82f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0010/offline_gain_3/prediction.npz": "a87e51bad2cc611b1e77b8ed34b7bb06ee2bf64ccba994894d495ce2ff3f0786"
+      }
+    },
+    {
+      "sample": "sample_0011",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0011/step_020/input_yuv420p.yuv": "27af5a780c8508b3eeb2827d8f67c7ba817e1f4516d3c5b466cdd5e84e83998e",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0011/step_020/oracle_state.bin": "4de1db446dee693d675ff7f98f53f00563931a476c98660f4e7ae1d2b298fde3",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0011/A/prediction.npz": "81c215a7c073fa3a9ca7428fb91c48b6cba6f85a4a7e2e1fa7218e97756a007e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0011/A/prediction.264": "f8a61344df6707b011f3219af633df3d51a6c1c02e5caa826b0d3ca023246eb6",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0011/summary.json": "1608126d9a0fa781b1eb9a5ebaea6f46c66b969de46be8b8456f3cd7e6ab0ae9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0011/offline_gain_3/prediction.npz": "acac1c1eae136da4e9e170bfcac6314f9ffdd160a1fb3e7359bd4652d6ee6ca6"
+      }
+    },
+    {
+      "sample": "sample_0012",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0012/step_020/input_yuv420p.yuv": "b8e8ebfd0835f1d45ad6ee5d8df644d5ead1fe82312ccff02bc20e28a0eadcf1",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0012/step_020/oracle_state.bin": "b99f155a2b7268f288934ef9e1a0dfdb606b43388803420a367a88fd7a278ce0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0012/A/prediction.npz": "a524158cea2bdc284bc11211039d0711b1e0c4dc58244583efd0093f85749d98",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0012/A/prediction.264": "6c504238a9d34c4116f07c847a0d55a9bef027d9178b5fb87f56b97c0702e341",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0012/summary.json": "f007bf06b13e890566eee387ac1d28d6785c06c7fff95b3721954bb06ea6123e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0012/offline_gain_3/prediction.npz": "6652e628c0124d8fdce08cac24ce8a91eb27014700ed82d7c091247f7c3645c0"
+      }
+    },
+    {
+      "sample": "sample_0013",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0013/step_020/input_yuv420p.yuv": "39abd78cf6c005ac167626fae6bbfd12b8d3ee32a1f2685d13d7442ac38d90fa",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0013/step_020/oracle_state.bin": "aeb62fe82fe06ca14698ab45f28ea3a000fd5d0477ff58815cd87b50bfebe71a",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0013/A/prediction.npz": "834d3ef62da85b47583d8eab9779af5493cc376752656777dcec6a65eea40aed",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0013/A/prediction.264": "606440429de897da23062217c9cd15caf1cd788c6ce879e013ec3b080008ab8c",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0013/summary.json": "c155aa26ac7bbe70fed2bc74398bb70b9cb390b430ba8a35fb782c9e89eb2853",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0013/offline_gain_3/prediction.npz": "412b669f90668b28a4c971e9d998267a555ebaf11c5f5f4ffeb516bc6aedbe9d"
+      }
+    },
+    {
+      "sample": "sample_0014",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0014/step_020/input_yuv420p.yuv": "141b5c7257bd2fb2e77485487f882a4d9724f557688d410d0fa1da6fd4d4334c",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0014/step_020/oracle_state.bin": "ad6d9a83b18e80c64801654bc2705d60f243777f2bcbad6238a020c0c5497b66",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0014/A/prediction.npz": "0c7f862d5a7ce9389150b4217e941b4977091a87404a85c233ba2ff1ebcef4f9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0014/A/prediction.264": "a17ea77bd8f4876a70aa545c70122d8f6637e60d27494f1a71861f260fd03a2d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0014/summary.json": "51173c08f2d635ef58ea433438e87854301d3a3c6a1dc37dc48f71ed3640d8c9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0014/offline_gain_3/prediction.npz": "d88fcc66b16a2c6b31c657bd014f66ca8f83925038e7de2e3cc6e30661bcbc3d"
+      }
+    },
+    {
+      "sample": "sample_0015",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0015/step_020/input_yuv420p.yuv": "bc52f8614b1d043d53e2d46d80c279938a6b95ddee7ff869672e09c593dc40c7",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0015/step_020/oracle_state.bin": "bd384f7393a90f07f15c12ccc108fbb1c656074f5c9a06764b0fcf3da4e5f263",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0015/A/prediction.npz": "ed39a227195ad4ee1e762ea5bd68501739b08d993f872451649b0e9cfe898e42",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0015/A/prediction.264": "d957ba505c7854a58fadc6b6faf60182c4f5499daf554aa790558648b83f3be1",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0015/summary.json": "fc60a9fb04ce9dd7460e409989cc4674be363a6f64d8c6f1e38a1236cb5ba855",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0015/offline_gain_3/prediction.npz": "bc06bbd203cf5ae35c49a539ecb94378d7ac87e5645d030cd9df077134d03003"
+      }
+    },
+    {
+      "sample": "sample_0016",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0016/step_020/input_yuv420p.yuv": "6c10f88334ed2b8d5ead0b2eee8db8b0985692530efecc5806283258ba1bf3c0",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0016/step_020/oracle_state.bin": "8cd5740db904889afe544198ae26f662a83d4054ee1a541604ce0d0046b0cae4",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0016/A/prediction.npz": "90f02b314661512e9d34ecdd70c577b3daf6b9740afc1ec6ba1fa32bd459b148",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0016/A/prediction.264": "ee284ac71c0d719b2a7c3243b3b41e8dca2c0d13209562204d117b5c9b817b38",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0016/summary.json": "78d7ed5bd6e053a17798fdbaf9b66ac2396b14a64c18e5817162b10fad41796f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0016/offline_gain_3/prediction.npz": "290ab1cb1d3c3fab7543eeb709fb1ec635d021cdcecd8d29474fd2e0817f9a43"
+      }
+    },
+    {
+      "sample": "sample_0017",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0017/step_020/input_yuv420p.yuv": "038e36403d083d22d00d6171e2d7cb15b459a5fdb8babe1211d8ee74d818f6b3",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0017/step_020/oracle_state.bin": "4d8474e3b98d94c8cc936f7d6f2fdae39da06b2ec1efae605dbc67b3efe2e5d7",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0017/A/prediction.npz": "69d446970c6aedbc7fa97bd29a6b73d6a8fabdc62f064bcf45266bc3cd98d4cd",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0017/A/prediction.264": "39c1e38ee54f6529fddf8a3ea13f85e1e8ad1c7f569028925bad95ac20be0324",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0017/summary.json": "2e955cb4c1181cb3d210df4be04add357e0938d4874b2fa5dbd494b6965eb834",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0017/offline_gain_3/prediction.npz": "c52107bd691128913b3694a0ff237dcb7b6bee0b8249624abe0d07f28c8c8ba1"
+      }
+    },
+    {
+      "sample": "sample_0018",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0018/step_020/input_yuv420p.yuv": "46685839728f9925d2d9807a3be9b667a1a6cdd0023795f2d4e3d0ad0d63b0ab",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0018/step_020/oracle_state.bin": "bc7e9d98f95aadb1a428161beb6db80066fdb6776a8ab3ad6ded62a9ad1daf8e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0018/A/prediction.npz": "7c7d292a3e26d164e7ec06c935740a4f4933d9c7b4626d3e413db35b99087711",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0018/A/prediction.264": "3d9000f52fd01a4c9f26717f79dc5dde06f3d13eceacb6c8afe5b2e0d75fb905",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0018/summary.json": "6df1589586847e04294a39e892f862b84932acfab1e11f1a9b4dece33b6aa2c2",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0018/offline_gain_3/prediction.npz": "d33d181221528471e7492166b58972871e0af9a3e95ef3695273718f5c556a92"
+      }
+    },
+    {
+      "sample": "sample_0019",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0019/step_020/input_yuv420p.yuv": "022dfaef53ed4874469bfbe6acd7c83635f78668db9cdfd8cf0b9c7d8ecc8e87",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0019/step_020/oracle_state.bin": "bb1d6fa474ef2fd573b66d875e7f49f5a2d53d3754f65b952df896bc891ec51f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0019/A/prediction.npz": "c16f9bc714a8f1f51d550c600d73d5780577685a1261669c9e4300dcd9b9e811",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0019/A/prediction.264": "c0e02a0075ce450bf2de3389a7846b8ffea396642e49642cdaa4c7598be7a62c",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0019/summary.json": "7645e837abb17d83157c85fb6e73587916716a18911764177d4aa366d984e29c",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_0019/offline_gain_3/prediction.npz": "ee61c676c509d4627a96b21d70970491c6f3465d6af4e7cd3e6814970cbb00c6"
+      }
+    },
+    {
+      "sample": "sample_1000",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1000/step_020/input_yuv420p.yuv": "8a5f59d04d82d64d750236cbae8d6d9f50d832e369979ba1c6959a3f436aadb2",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1000/step_020/oracle_state.bin": "df6cb6a61213d6d45395f99a13f2b74373cc9769b8c401697ed1ab49ef648224",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1000/A/prediction.npz": "95f1db17a6c9ba4675d61a8c6189e28eccd4a4de823e2bebe994d9c36cb1fd2b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1000/A/prediction.264": "70bfce21aba2ea6b5ab83333b19dd55d84b8404ddff698784561fa5779d6c993",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1000/summary.json": "5a874f6408f56a30b1610fa3f2ee69cba7342ad4b7103902da637195828f67bf",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1000/offline_gain_3/prediction.npz": "ee0e5aa67bdbbb94d2f3352f5c20077fe03ce42bc4b0d4d044d26e00e838876a"
+      }
+    },
+    {
+      "sample": "sample_1001",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1001/step_020/input_yuv420p.yuv": "d91dfd211a50009d927571c88177414443c32a5964ba63ade66f5c4f5ed5b46b",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1001/step_020/oracle_state.bin": "bfe8339ec41ae8a035dcfe42e5bdc8f51e431d7f3ea95f91658c406014a5f86b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1001/A/prediction.npz": "a0d4d3f0393db4a833626fd4022898389be2b15d2ae92f5357d3f8ff11871631",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1001/A/prediction.264": "52c4ce9d622a2fb5f1c8a9d3d3d6cb3ff1aef15050cdc03dfa7590989e02cbd9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1001/summary.json": "02aa9f2d9426471a33ded92e617cd71560c62476469075f9361cfb381cb8424b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1001/offline_gain_3/prediction.npz": "63e16d103bfc191396ac7f6291f81292307bd028841d76becdc30f4c2b4e6ba2"
+      }
+    },
+    {
+      "sample": "sample_1002",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1002/step_020/input_yuv420p.yuv": "70c1bf3211529c3441c0a30d54d7ace0685e617ad54b54abc6cbdf9b3fc85468",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1002/step_020/oracle_state.bin": "d5109be6d4b0a36fdfa5c0bb3cf1d318f2efa1b68dffe96d47574eefd7a862ec",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1002/A/prediction.npz": "7c76ad3a9b0b52716562aa66fd6b5e82fbae1c5185e2a83e9127f72c9d1fd727",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1002/A/prediction.264": "0c3ceb4f43fa7cded4252620ff0e457b9025bee29db89c0006f915f43c73842e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1002/summary.json": "8cac1725251beba776d19204ac4295d803b1d81aba509649bfa24a67961c21e0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1002/offline_gain_3/prediction.npz": "57bfc46e5a1812f753e285b7d6885787b00aa139e05728d71ac87a9df270758d"
+      }
+    },
+    {
+      "sample": "sample_1003",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1003/step_020/input_yuv420p.yuv": "787fa695f72741c78c0955a36f396145d1522876a35251c0dc8b025c42723732",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1003/step_020/oracle_state.bin": "691c3a53950131662991026c355b0369e3477ac4c48f8ca153e67ff2220f1721",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1003/A/prediction.npz": "39b80d2318338ec7bbcce235238d83991e0b2386a9c275e6f98a23fabecaf6d2",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1003/A/prediction.264": "74dccea8de541a3c024d2145641a3054d1be856c18febf958fe92fbf10a3d058",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1003/summary.json": "0987bff760e6044c32bce8b7bcf778883fd794fe1e0a68911832603a63436a6f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1003/offline_gain_3/prediction.npz": "1a39e3d2815c61d884da1cbcb119fa97d7acce060467c3a709335de1c6a2eccc"
+      }
+    },
+    {
+      "sample": "sample_1004",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1004/step_020/input_yuv420p.yuv": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1004/step_020/oracle_state.bin": "5267edab2aaac981d1ec88020f3ff1e5e2364ccd18216a9d9aacda138bdde162",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1004/A/prediction.npz": "9f1e5abbf219eae4aa3786a96f38c96a5be3308a209b1d45e2cbc400008a16ef",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1004/A/prediction.264": "9786918a411137344d9258c008db3896089baddcabacedb2d7037715cb2d0895",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1004/summary.json": "714c19c91c29c53a23bbc00b6c7392a37c5230dd0a9fd40282b226f55c8f2ced",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1004/offline_gain_3/prediction.npz": "91aea82b2f8e702ccbe133b7cb081d7cef4b42f388511ec283011ad1ce82baac"
+      }
+    },
+    {
+      "sample": "sample_1005",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1005/step_020/input_yuv420p.yuv": "7fe03ff14d849443254b6cddbebd44e0fbefcc142da24b809e5f7c8a0bb016fe",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1005/step_020/oracle_state.bin": "883494a97a2d9e2c6d6a88ce32a9f8bc054b273f79a21287758f1da95e1b2096",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1005/A/prediction.npz": "7223a0616a1eb6e168d3a57a4260dfc02fcd8548bc27bb5cf2db0123c54f6b4a",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1005/A/prediction.264": "ea97506c822a717e7841bc8833b55d3b12363b7637b8d1b0406d81c2ca480b03",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1005/summary.json": "c7d4689e5cc9f8d4700accc89fb85a47e50f8763166f25e3301444a7549509c9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1005/offline_gain_3/prediction.npz": "be6aabbffb3dca29365b35af0d4c39003fd75d2ada93f3b5f141076aefc1886e"
+      }
+    },
+    {
+      "sample": "sample_1006",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1006/step_020/input_yuv420p.yuv": "dc32af674aa95213780fd95d46f847981d5917c9faf8df281273b54c5675b10b",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1006/step_020/oracle_state.bin": "9f3c3861334ff34db29e11f6831194f73c3b5ffc08fb39bf8fb6bfb9dede5f03",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1006/A/prediction.npz": "8d6f9bce700db33620da84c705fe9c05abd468ad1a10b948b5818ddf9f6f40db",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1006/A/prediction.264": "a4e0d41510d31a7d40b62eba987e4a76d7e37c94e73c9cfecdb5295a9d48185f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1006/summary.json": "08a3a44dce376149404a9c007c229d6564aa508ebf43ed68b641923c94e7450d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1006/offline_gain_3/prediction.npz": "10df70032ef207ec65e0933f9c88f1d4f0860974ff8cc6143d4a2943fdb17868"
+      }
+    },
+    {
+      "sample": "sample_1007",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1007/step_020/input_yuv420p.yuv": "d1ce38aee93301e5775eca41ca8fe11a65e428bf353b5282b93b7ce9aa6eecd6",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1007/step_020/oracle_state.bin": "cd50158aa30c02ee4f5768b74f1bca578a14c2933c85eef53f9cf77b17dc780f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1007/A/prediction.npz": "ab34f3bc8eb86f04c0e195e44585b6f7524716924dda78a5eeefd317ee90cd1b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1007/A/prediction.264": "30312b9640c075ef3d410ea74b1b7af04c5aa521db52547dad5f4708dad1a041",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1007/summary.json": "ba051d024d00aaba18219c84dca07840be55e7f28c3164cb13fbf1de76edee6e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1007/offline_gain_3/prediction.npz": "c8fa73f57720e9edc6b18f160446488e8ac5a14d5380b858ac6f65b0c6a118b5"
+      }
+    },
+    {
+      "sample": "sample_1008",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1008/step_020/input_yuv420p.yuv": "0666a2c41d7e40dd4702c78af45b0c5cb86fd694f30ad2764864eacf3afc6d75",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1008/step_020/oracle_state.bin": "100e1d0e3fdd373e465f8a0fa8aae6db1839e3e9f49636d41a9f672a6bf019fb",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1008/A/prediction.npz": "7b685feae5544a6dfaee5b8473bef2e183c529b5377dadb588a6b52f2954eda3",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1008/A/prediction.264": "95f97329e8c5e0668679b90860a189675c38ad858929b6a8e45d90b80188eb53",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1008/summary.json": "d284cd95a3bfa2592d4c95b60f68947cbf353dca49cb91bc93c38bda1fb83f26",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1008/offline_gain_3/prediction.npz": "64742b0cc41181bbdbaf238100cf3c820aa5fa5d6f6c69e37cbcc73e9301e6bf"
+      }
+    },
+    {
+      "sample": "sample_1009",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1009/step_020/input_yuv420p.yuv": "9702fd65d5a161942f560dc011aa5e9e92483c6cab506f8c339e57b1869babb0",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1009/step_020/oracle_state.bin": "84d3954b6c9efebb57b6c8837012eae5d39626b9ac948b5474b41b21add121df",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1009/A/prediction.npz": "73b2bfd006e3bbf981451d355dc83a2b828c971dcc14e7efb6667c3132a886e2",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1009/A/prediction.264": "49eadb6706a699db0d9e70b8e14ae520d28e5ddaa2f530f62f82af3e5812c7a7",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1009/summary.json": "f9d23580b03c8d0329bf93cfec030e4ae2363f072db28f0114a861f6f072afea",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1009/offline_gain_3/prediction.npz": "f1821d9455d8fe5d8c987e6a7a5032b7ce55536c2a52b3bf4aa7d560824784d9"
+      }
+    },
+    {
+      "sample": "sample_1010",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1010/step_020/input_yuv420p.yuv": "fa2d8235761cb4d0e85ef31c1f3bdcc4e62b24ee8e1f16583c23ba012bcf3c5b",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1010/step_020/oracle_state.bin": "ba2c163e034188c82ee4687942e84a87cf7741260588fac1b1a5ff848b40e4a0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1010/A/prediction.npz": "9059ebf9ed34755d0008b66c8fca28b99abf0ea055760863b64b5f0d0c1da629",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1010/A/prediction.264": "f53ff19be9e3bcb7dd300a74869de93548a5c284a1c79206f038047980374475",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1010/summary.json": "7042e4a59d2008918badf2d06e3877c9865e0af0897d5ba1a716e64673156137",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1010/offline_gain_3/prediction.npz": "ceca52623a41ba0e941ec027118f5ea5557a4d3bfbe13f46677135fc108fba74"
+      }
+    },
+    {
+      "sample": "sample_1011",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1011/step_020/input_yuv420p.yuv": "f5024da2485438c829644ab26d86ebd78cc0395cd2c9378848eb362a5ebd645f",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1011/step_020/oracle_state.bin": "0e0cfbec8eca6184b02e1fd9fab81fa662b68e70ff45d03b7b09970453726ec5",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1011/A/prediction.npz": "02d7e2dbb550a24359aa1f581d44c941653dbae8a2cfa9f5a8c0be313445568a",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1011/A/prediction.264": "a0c8e4635f3c7251e36b471d39fff91fd4be6442309f0f4c583e3b66523526b5",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1011/summary.json": "39b4eef0f563158204d9d6f65eb7aba72bb6857584749a0b5dfb918f6d8969a6",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1011/offline_gain_3/prediction.npz": "7cc9d0e86624961907e776f75bb14cdec586852ad547db5669b59a02c6d72093"
+      }
+    },
+    {
+      "sample": "sample_1012",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1012/step_020/input_yuv420p.yuv": "4731cef6ff02424afbe4641ef93d0a22134cd08c83e8f71550a28472b549e8d5",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1012/step_020/oracle_state.bin": "988057d97399759808a81ded1bc6cdd1198514d592c21b2b6bc00095903e6c92",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1012/A/prediction.npz": "5a4436ae5c2d2850ae30932b4881c5e8bb9b601aefefe69482a28282b989e8c0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1012/A/prediction.264": "40a16e42442ce57f3abac71a66d0f8dbd4b3b987c35ca4ef96d4d10c479aa829",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1012/summary.json": "3e464b31cf057979e790c80ae4bad16593162b5224ed4e505a542f0976953639",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1012/offline_gain_3/prediction.npz": "34a3b89ee634b71d2d9c1e92534c82e2eb07556a8e0afcdab55e093a00635836"
+      }
+    },
+    {
+      "sample": "sample_1013",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1013/step_020/input_yuv420p.yuv": "ce39d087e49b9bbf67b79e69944dfc1c7e356f7ea9520c79fc74ef70eed251de",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1013/step_020/oracle_state.bin": "845d1c2c04743993c2576c5895085282407aab0fd4c33aeedeb370f639a8cabb",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1013/A/prediction.npz": "50774d7bb9db8169d13db382fdfe04a6dde4a178973bb2514ba42491bfc32f2d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1013/A/prediction.264": "9271918f89b4ac455ab306e0d241a4b07c0f6f0c3431af819324ebbbe612c907",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1013/summary.json": "e9312f34691583636af5dff9774cbc1d161ffe705127f8f7625db7fac9e10af9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1013/offline_gain_3/prediction.npz": "eab7426bfb836f92e4b0b0a57a91fe5801cf764021c41b2c8c865b3d08ef4157"
+      }
+    },
+    {
+      "sample": "sample_1014",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1014/step_020/input_yuv420p.yuv": "e5f6641dbfac4731ecfa6a75d085170966ced2d6aacae708735c1565eb42fe93",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1014/step_020/oracle_state.bin": "ba4805eb832fbfe100086e3a8425bbc9902f5f1d03dab67eccc50f99458eaf6a",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1014/A/prediction.npz": "23aabf8c8aefdb0f08aa95253cff693a0e1132880bfe6fb208239ea44d558d20",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1014/A/prediction.264": "8f0c3e5d9601e071c343a8522eafe06b1c6eba84fc50dbdc9a126dfa5688f2b5",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1014/summary.json": "0ec5493afe6e82c534beb506be4cb9a0014f30e86404d9baf8a6a1230cc63bf2",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1014/offline_gain_3/prediction.npz": "5f4add22dfeb4c919f43e4cda6cf95a678615b48396fd1de55745f5c354507a6"
+      }
+    },
+    {
+      "sample": "sample_1015",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1015/step_020/input_yuv420p.yuv": "0caa018ebe8611afc97d1907e7a7e84c450687cf6f7a9f0e1202860473a214fc",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1015/step_020/oracle_state.bin": "5fce9fa5a5ca6486ccd6e68f274ab5bb4dcd6aefe14d20d5e1a41cee7e5c4191",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1015/A/prediction.npz": "3d1b3b0b85352b4d8099f510870ac29395284e0199371fdd3c00c08ed12fa3ea",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1015/A/prediction.264": "97467a87dcea41fce7e0defe5b9440f2851d889f674d8bce92f373882bc30084",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1015/summary.json": "858c9152184fc07eac1a63278fc5fb6996c42bd1fb3bcfe4f6523cd72065f8bf",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1015/offline_gain_3/prediction.npz": "ceb63d91710e20ea104b1ac97d87ee68bc29d032aec7fa559ad650c421fd14fc"
+      }
+    },
+    {
+      "sample": "sample_1016",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1016/step_020/input_yuv420p.yuv": "4ba6578d3525413a2c9ede116810809553eb3b79df090cba6c1a7cfa2a3082c9",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1016/step_020/oracle_state.bin": "9fd4a74ede652187fd8b6c596dbeda78f03c02c197aaa2a78b9765aeecb2a427",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1016/A/prediction.npz": "cdaa30057deaa4dca6563dc6c751d0002e031e919624dd2271207c44d9d12d06",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1016/A/prediction.264": "57ef42d721371672f5d2387330cb8a0e795fbe0ea1e51c5f07c910f151fcfd56",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1016/summary.json": "ac91d8bcfbc97886986e8d1acecb694e0ff760f7f8b3f98adb1c8c6c14573231",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1016/offline_gain_3/prediction.npz": "3184455b7077eb1573b49405eb8ef478f3cedd537b625c4bf31e2c233db2a598"
+      }
+    },
+    {
+      "sample": "sample_1017",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1017/step_020/input_yuv420p.yuv": "0522da5e40d55d9c32b70953887dd22009c32f7356d1c454606320e0aee0a82f",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1017/step_020/oracle_state.bin": "6f01379936fceb69743524e9e57152314baddc2fa975872ad679b991d185d30b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1017/A/prediction.npz": "0ba841d7c55aef16af1fe532e26a33c7163e0c35249c1690f4a50aea657ba580",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1017/A/prediction.264": "ffcae6c567d1080658b9587e6397e096405c0d2c9b68873cce877495a1989809",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1017/summary.json": "c1c8af61f89339324f99c68a5a69e6353e80d6e60bb5608b0e317defbd06b9f8",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1017/offline_gain_3/prediction.npz": "7a6dfee22f0862b543d2e134ed58601efabdaa7a8d8d28f771e1f3803905dc2f"
+      }
+    },
+    {
+      "sample": "sample_1018",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1018/step_020/input_yuv420p.yuv": "13a41df87ae2fec00059b4d1874bedce2e13576dbfcc2604b1ad5da62e121667",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1018/step_020/oracle_state.bin": "00f75b31ba21c0588759fa1c4d6baae2399bcfaa2bf1d42c4bf683e46efb2f3e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1018/A/prediction.npz": "82ae6a02029ace1463824b4edbdf1af90b88371860ce44d601fb47bf5e34629d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1018/A/prediction.264": "21ec444f76c01de604f29f87fd110bad9d3ac3c5a55fbe32b1173394eb011d0d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1018/summary.json": "43adb5c29c212421b77ed0385985526e48f9b6fe74ff31283f8fb4dca221afef",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1018/offline_gain_3/prediction.npz": "70f85d67c5aa0ae1d386272c282af07051f28d64a1bd36f138cfc98037636b07"
+      }
+    },
+    {
+      "sample": "sample_1019",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1019/step_020/input_yuv420p.yuv": "0b561a6fad0cb60024c549673ba8e7b2a7f3006cd75c6889fa49b6e7e2a7684a",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1019/step_020/oracle_state.bin": "59d431290afd959e438bb83406247bb7331c6d211d059888d13b9fda77155a85",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1019/A/prediction.npz": "f59b1f651804644160cfb5262692a8e87ded40ddf0ec77ab94120b8526f28a14",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1019/A/prediction.264": "05ff980e4da3c40bf145feb7184f3e8e83e03f7b7a564c260b4821012249ac67",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1019/summary.json": "822d472e18197876c017101e68c2cd0885ba36c536a02fd6963515133873ff34",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1019/offline_gain_3/prediction.npz": "051f8603a0120b21df35a019424a0b8476c63a82cd721ec3e1d9080a36be4f74"
+      }
+    },
+    {
+      "sample": "sample_1020",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1020/step_020/input_yuv420p.yuv": "e276b0afc808d5a7a17cabade0277d3f1290b7263d114691cd48a452cb62d606",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1020/step_020/oracle_state.bin": "fcc23676d91f0ad0b42a159e18f16f015c115a57c71e6aef8b5d7666f497237f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1020/A/prediction.npz": "2e9e3ebce300292331922accc1186476aa2fa759f5a0a34bc4e4b3f82cae7b80",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1020/A/prediction.264": "218202432d86a869a0888afee9d55ad59cbe34d25c9f146fbfd3e124765c9dd8",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1020/summary.json": "9f0613a09359a56fea06132af1f196e67691bff77e81f63a28473815614e319c",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1020/offline_gain_3/prediction.npz": "1745135d2c93f754e55b9bad5430bba9120dcfc2f098cb5ead136097839980c7"
+      }
+    },
+    {
+      "sample": "sample_1021",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1021/step_020/input_yuv420p.yuv": "beabd33b9b403f3fa33b26677c35a2fa4d28005a630a263e2fbababf2ac4d05d",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1021/step_020/oracle_state.bin": "590de437a15b17c014dc544dfa81e6a906ec5b5a12710c44f25e0ed96d08d6b0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1021/A/prediction.npz": "1da3812f2ce77a82a190876ee8b5b35e7e28e521dc7c108e1d92541ff1f2b67d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1021/A/prediction.264": "9a1621e4ea3c80c0395364b1fae273245d0ee672c4f8b525780e479ace02f6c0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1021/summary.json": "cddf7de5df5668e828b784c5a7b37dbe0d0a5ca678a64aed2e980dd520caabe7",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1021/offline_gain_3/prediction.npz": "0eb66c2615379666ee2ddac60e2103ec23c63a3d259c727162c5fca337c14efc"
+      }
+    },
+    {
+      "sample": "sample_1022",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1022/step_020/input_yuv420p.yuv": "90a56112d3db4e26b07802294772eace3db4bd5011673cfd4aa71afce290d852",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1022/step_020/oracle_state.bin": "2eb78bc27f47d7097367e17111d5d8b534846226c531e8ac86c90ebed15d902d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1022/A/prediction.npz": "35f0f3b47b7a520755402256bf232fe317fc1b76a0f3451457060559c01f3a12",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1022/A/prediction.264": "d61709882f4bd9fcedde1fbd13887505d562b1566772c0f09795c56f6cf919cc",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1022/summary.json": "74517ee4e86534d464f387872cd2599ba46bfcc4e6e3428d1276fc63c66fa5b3",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1022/offline_gain_3/prediction.npz": "32632641a260e5217e9c80bedbb16864d6ef4add61557cd1695ed9dd744bf1e4"
+      }
+    },
+    {
+      "sample": "sample_1023",
+      "split": "train",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1023/step_020/input_yuv420p.yuv": "f8c3461afc9e51f06d8346596a2852b5cbe8ee0d920a33a3f489684d0fd1afd7",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1023/step_020/oracle_state.bin": "1d3478b2ca9ecef21a3937566604b40a038cd0271ac1ff65ceebe7e38c17c45e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1023/A/prediction.npz": "c278e855ced7ecc820336ee9f4a0c1827bef5d9e3f62fc51a8241092f1e88c20",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1023/A/prediction.264": "ac51fbb80d2ff3e6ef5f6e48a593719bc456501e0bdf7c0e933dd8faf14ede65",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1023/summary.json": "c412faa0d365f37943fe72b9a424182b904f8cc9d39c5e40502d0ff817472206",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/train/sample_1023/offline_gain_3/prediction.npz": "faf47f728f71cbeb33cf0c1274aeaf66471ec1da6060868b72bf24d7bacbcc11"
+      }
+    },
+    {
+      "sample": "sample_0020",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0020/step_020/input_yuv420p.yuv": "182deb7cdf008d615d18767bafdd90b64c3c14da4b113845dfe1824d731cac53",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0020/step_020/oracle_state.bin": "8d2507b79f1f614f96a962c8d17cc1b908058ae22399d811f7f0a52d50467de5",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0020/A/prediction.npz": "797eecfec86968eb1aad97f7f12e0c3a616ce5ae2e1cbec43cfa3e0cec787ada",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0020/A/prediction.264": "ac50972f4559d1f5f78c7558c4c64fc5dfb7df48e4b748c36bad6ab3d1374982",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0020/summary.json": "2234d57409322cc5bf6a64da11e10901ac26288acb2e18803dd2bf40c0fe8623",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0020/offline_gain_3/prediction.npz": "7bc9d18f61c75dc6304f1aec19a492228c63476ada25707c403c77e5fdb774fb"
+      }
+    },
+    {
+      "sample": "sample_0021",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0021/step_020/input_yuv420p.yuv": "3ce1c0950d67ebf44f55ec2a6460157b609a2c2fa7c2e6435457859ad5b75b90",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0021/step_020/oracle_state.bin": "499ec2d4e14f695580d8e1e60bd0bf364ce2a4485bf6de045798d6f1e389fa33",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0021/A/prediction.npz": "31dfcb246c04db7ad51700010c77fdf0615ffe437a41a42f0bce058545e3536b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0021/A/prediction.264": "3eab30cd95b3213c2f3aa8ae929d1cbd74f61022d541f4e2b3bdc9371cd8b541",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0021/summary.json": "2364449882035803797216f06f39f0aeb79f5d5402b51d2c7d57744c04baf31d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0021/offline_gain_3/prediction.npz": "09b52b047925da5f9d62dd97a3a127f806dc338aeda98164846907fda22d6f94"
+      }
+    },
+    {
+      "sample": "sample_0022",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0022/step_020/input_yuv420p.yuv": "37cebf4b8689d58ef7488c5a0d1caeacdc557f527f657e16459699e298ec9953",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0022/step_020/oracle_state.bin": "d31a9dc05b7b606d6fea2ff1ee6061f1175fe844eb4ee717fd968ee3bb1890a4",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0022/A/prediction.npz": "f47a699afde992d4b83ff2082a846d8bdb73284bf8e7583601ba2e89704a7bc7",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0022/A/prediction.264": "bdcec6462eedf77cf0a8dcc1733268e9a3015eb56a5da9cc84a4726bd4ea65e0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0022/summary.json": "e4b03ab206b924dc3c994f2698a2fbf3ddac0b587898c748f063fc0527dbae22",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0022/offline_gain_3/prediction.npz": "97633b6186921ae54b86a3ea59629187c40c63bafdfab81e98272bd4c23961c5"
+      }
+    },
+    {
+      "sample": "sample_0023",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0023/step_020/input_yuv420p.yuv": "45487487a07846a0904119b7ff60803f7a2a96bd6e4321f85f7aa2f0fb1fdf75",
+        "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0023/step_020/oracle_state.bin": "52b7dabf4f65fe7cbfb276c32fa49eed19aa3872b1cb1e85eaee3f54de3adc46",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0023/A/prediction.npz": "4be28b072ea5d4e65ee134904ee9f03b2a25b45bc8ab0ef3f71fbdcfe45f6fba",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0023/A/prediction.264": "cf329cf391c285f58e28521c7b140ff54ae3d2e39e59da511e6f42e726bed6a9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0023/summary.json": "5fcda8f69f38bc73c2520468cf935a754d1d58804dab2fa6d103b09390c769f1",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_0023/offline_gain_3/prediction.npz": "24c27634cfe3f531bb8d53bb4f6a16d56796f75675a75e249ef7e1407d9b9e2e"
+      }
+    },
+    {
+      "sample": "sample_1024",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1024/step_020/input_yuv420p.yuv": "0d3b1708781ff2477fa86af42794b08c9571efff2f493a98e70585ebaac982d3",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1024/step_020/oracle_state.bin": "095f9db285cc3fadb052191510c847d29fd2c959fddc9819debdfc11fe5da875",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1024/A/prediction.npz": "19afd97b023a51945b3ed3203ec03a1c93035f89e9c7ea321103fffa5e01f540",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1024/A/prediction.264": "bcde8f5d7712934a207182e4d3d661f01f3c347f8900f6bb7432e21679abcd6c",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1024/summary.json": "fe7d0744f743f7df90daa14487baae3f6e88ffe1cbe27c5065e423c38ceb298a",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1024/offline_gain_3/prediction.npz": "13364064619930fd22d195b0c728d4b1048742cf930c0b0cedbe7fe7f1416459"
+      }
+    },
+    {
+      "sample": "sample_1025",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1025/step_020/input_yuv420p.yuv": "cb7b6da7606d79e1ba5b678f5e9b22e2b4f4fab4b8fa1e0260a50d32de94dd30",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1025/step_020/oracle_state.bin": "2a94e7c397bba9f10e668d333500094ff0f20cc00419d3247b0a58116904e592",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1025/A/prediction.npz": "1581fa94628ae7eddb277935212089a5f552db4f1d02a1c875879abbb66ff333",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1025/A/prediction.264": "92a9d9d65e01d1cf84ab97e93c0c7f4163c94245a49789ef682b3ed64e07b0a6",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1025/summary.json": "1b448e6b884e9f09436ede43e343ef021634e746c2bb36e61a8aef609dd75103",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1025/offline_gain_3/prediction.npz": "77a508511e6ad63344fa7f540c7ab47386c76589db5ed573a8cb31cedb9431d1"
+      }
+    },
+    {
+      "sample": "sample_1026",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1026/step_020/input_yuv420p.yuv": "caab2057f787db7a4039a35c20aad4639e3878392309bf2066df5f6daa6b2fbb",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1026/step_020/oracle_state.bin": "4898db0a6835efc9307d2a025ad63c7e66fc878ef5cee75e8dde0ead1044f03a",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1026/A/prediction.npz": "bf52a7f4a4d7f87e97f808d98ca52d995f4f9c59b397f5141b668d411360e511",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1026/A/prediction.264": "a5df6291a8a934389a6a26c1c6d8784996733a56801ff47da3bb32f2b74ab34e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1026/summary.json": "92595608d469234af6e5e3cb3038bc32674c104eb6f5b0fdb7c2a8755de043f9",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1026/offline_gain_3/prediction.npz": "553931db0e101c13edd7089de0e41640ad8d11625b61463b8167eb47ffa341de"
+      }
+    },
+    {
+      "sample": "sample_1027",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1027/step_020/input_yuv420p.yuv": "d4a1c28960cadb698b5e902006b93d41c32aa937c76d78b762c740b2d1e5a1fd",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1027/step_020/oracle_state.bin": "f580dba916e1a25a25e064f4433b65be0755aa08578381d6138f1f4f81d59042",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1027/A/prediction.npz": "a6ad38f8d05d5344f249e9719c5c099efbb2caf46e1dd36361edaa9dec4bb6c1",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1027/A/prediction.264": "eaa2183da6b642a1f1fc150c6e01bfe017648440a2e3e8328f61e30304448c43",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1027/summary.json": "2af2f3e673d1c0a66b818117c07dac76992b8249d3fe1ea3af61b0017ef3035f",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1027/offline_gain_3/prediction.npz": "9ca0b42e5a15129622201ce285fc76bf378dd410b5cc64e178d2eea64d903a83"
+      }
+    },
+    {
+      "sample": "sample_1028",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1028/step_020/input_yuv420p.yuv": "00b55bd00345b917f65d7c7cd6068895542e7884804fe63ca5c2442dc4fe1504",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1028/step_020/oracle_state.bin": "84b5d51b7c5a99dcfd3c6cab80e3600a5d6ba030bfbb2e218871d8972ee0f173",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1028/A/prediction.npz": "6615cf9cb63bd588bf70572c9a3a93cd5a32a70f36f7b5b03b921f357e9639c8",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1028/A/prediction.264": "226724951dacd71ee27fd8b1d0624d5657f36b2a19de4789a6dbe9225d7711aa",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1028/summary.json": "d8ca2dde2f4ca3469dbe9fead90e95ba172003ccf266f6c85468d8fd9ea6e749",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1028/offline_gain_3/prediction.npz": "f9b33885aaa4d677716579dfeccbc47dd742ed574b39b79a55b8d604b903ad61"
+      }
+    },
+    {
+      "sample": "sample_1029",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1029/step_020/input_yuv420p.yuv": "e8893e6ae9faaf5c7f34e362f99e30980c6ef76709913a2ae5c5d3515009f558",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1029/step_020/oracle_state.bin": "8958be5034e686ec95e11dfafe2c4fab1562153b4f5b4afad4eabb930eaf3b64",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1029/A/prediction.npz": "ba496984b9773f27e94b6c3454b644cbae1bbfa5367dfeb7235f76c65994c548",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1029/A/prediction.264": "5843ef86b42f45c3ef0e10273c2cebeca8dd0d8a239758a6438ce57221a36edb",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1029/summary.json": "4ce8845dbb7e621228973d586c3604aac9c96f058129226fdce7db2345d216cc",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1029/offline_gain_3/prediction.npz": "373b4d59faa27db8028f7ed5d8c68e2a344eb0ef93e5ec36c7a1d409aee2ef4b"
+      }
+    },
+    {
+      "sample": "sample_1030",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1030/step_020/input_yuv420p.yuv": "3085984af5b268a121a39514a4195844e109fe95975341fb320010a28ef7b332",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1030/step_020/oracle_state.bin": "77df2c1a25c32c61dce5b3d9723ed6a20d3cbba6bba0c6e0cf549183c4152c5e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1030/A/prediction.npz": "9f88eeaf767c6b957fb8a74fb607b8fbe6a3dff99cc427eb0909a6e9761dedc7",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1030/A/prediction.264": "a6672e12c2af94e0e3db6409218c503ffcaf3bf94909456ce5aa0786f0b800ae",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1030/summary.json": "41fe433152967cd4b4b6af7cf9f92ff53af577933db6d4fc9526ff7e8deb434d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1030/offline_gain_3/prediction.npz": "719cca3e4c2ebf9c6e9d1ff677ab4b16124ba535e5f5cc96c8846c0d11fc8435"
+      }
+    },
+    {
+      "sample": "sample_1031",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1031/step_020/input_yuv420p.yuv": "9b6e93e83820afe2e9c8524f1604b196d338603830b70c4bb1f293bcbea40b14",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1031/step_020/oracle_state.bin": "d1e2abac2e5dcba4b193cad4c82e518a37ea00e979be6026f97c8e22a13a5989",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1031/A/prediction.npz": "ff985415c0c7f6dd75786f520337f7a6a0e26a982648a07be4e2eebe131bde4e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1031/A/prediction.264": "b2e3687672697b90969a5c21467787d5648a9d531b55c7e4d8461f13b3861dc3",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1031/summary.json": "a6304634579a961d6fd8dc6a4c397384039d63db51ccca14e9b852921fced976",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1031/offline_gain_3/prediction.npz": "22f60dc8207e730e3b59c6059cd6c982da37deeb2e35edc13d561d9b534ed165"
+      }
+    },
+    {
+      "sample": "sample_1032",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1032/step_020/input_yuv420p.yuv": "c710702a016c8bcc9391b356a0570bf55856fba8e3a5a798a9ba8eed102e71ec",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1032/step_020/oracle_state.bin": "d5f915e90dc9964a46900a5b9cf2b149eee0db84150201db20d7917aa9cb9d77",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1032/A/prediction.npz": "1527d4568da711a61e21b95632ad229e5d5dc55d8b644916d778d5921648c423",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1032/A/prediction.264": "b6d3b7d355ab50cdd3ca4edbea66a22591e1b0fac28689c5b906c8335060999b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1032/summary.json": "0f56b3d880a0a2a6c9037d7f6dd39259c4d44e7477ee80a5f6a069c2631872c0",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1032/offline_gain_3/prediction.npz": "ec6ea526228ac15dc8f946c35acfe7927f1434aeb95d5219963b94727f600d74"
+      }
+    },
+    {
+      "sample": "sample_1033",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1033/step_020/input_yuv420p.yuv": "1f013870648f3a3d0cce5dca12cb4fb61695eb08a0b9af2fcce87d0b8009d828",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1033/step_020/oracle_state.bin": "57bf193051078bb218af95db4bb299c1f1af8bf98fdf809865fd0f626d41263b",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1033/A/prediction.npz": "b8b7da66311713157be2c67c52a29ed5d8d549c23fc709df9b6300de1dde673d",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1033/A/prediction.264": "0487ab2a5819f0ade01305cf7930eca4e1cb3867339468f61b367a812fe1c5ea",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1033/summary.json": "d80c11f1d2d951da16a2cfee97b8e1a83abc396de1c8647ee5b17bf1aa94c84e",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1033/offline_gain_3/prediction.npz": "ed14490ef87acb384b6afb3505f666e21c7710585a2f1ed05d2410eeb1bc0a08"
+      }
+    },
+    {
+      "sample": "sample_1034",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1034/step_020/input_yuv420p.yuv": "a5fe00a0d2f68fbc6910cc4f6423e39dbcb320575acc915cb7f7c846603fb045",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1034/step_020/oracle_state.bin": "025eef5521b7360b9ea96ebdf426716161d1fb6254e2cbdf982b69eb233ff824",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1034/A/prediction.npz": "d2c370740e09ada2add24f52402ba04853596403223c398f3b5893d0ab069e55",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1034/A/prediction.264": "5fc37046e0d42de16df07fa186e92a331b180d56ff87038e466336610d3c9cfa",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1034/summary.json": "7a703279a52d0733de79c9f128f8735d385a870384559af97168d230270c39ca",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1034/offline_gain_3/prediction.npz": "b864fe259b2db8ed3b2f985b722d40576a0b95f65baba25437fb4601d214d81b"
+      }
+    },
+    {
+      "sample": "sample_1035",
+      "split": "val",
+      "sha256": {
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1035/step_020/input_yuv420p.yuv": "5bb1cfe2287e09394dbe1d9ce2247ec4200020d778b7d4d972e03043c8bd42cc",
+        "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1035/step_020/oracle_state.bin": "9830d7cde313420324112af5c0d6392ec4acde40d05b161f2baf53b22c2d6dbd",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1035/A/prediction.npz": "1397a9c4c6aeba5bea5032ced9a27c7b32e53fba4295348eb9f132172007e468",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1035/A/prediction.264": "2a3dc24d724ff1b430cb3ce149376d2a62fad5b23daaf87dc6e866ed4975c9f3",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1035/summary.json": "a07a30a40cc2bffd3a2bb2c0811ade8d6bdcdb4f219203c148851730a5f1d2fe",
+        "/home/luoxiangyu/a1_quality_20261108/P0_6/full/val/sample_1035/offline_gain_3/prediction.npz": "53a32aff34b12fc09d4f5ba774aab425d86543c0b632ffce42ff73ebebd0e6f6"
+      }
+    }
+  ],
+  "sha256": {
+    "/mnt/data_hdd/models/dit_compression/a1_quality_20261108/locked_hidden.pt": "b713fef90db9205471c7b168e1715c70d8a4c87a0f4b342f866baf04e1cd4ca5",
+    "/home/luoxiangyu/a1_quality_20261108/P2_Lite/code/expansion_20261106/config_train32.json": "232cfe4033b09f099d66112106c33e76243f852e6ebb35378b1bbd4502ab2a06",
+    "/home/luoxiangyu/a_new48_20261107/kit/state_config.json": "81a8bb2ffc4962e76737f91787606ca9d54950e421d9860ae4b783c2ce7ad3bc",
+    "/home/luoxiangyu/a1_quality_20261108/P0_6/jm/bin/lencod.exe": "0d7455024f213ae7cca908ea07bac929bd8c848e8e503d01c5f998252c0bdb0a",
+    "/home/luoxiangyu/a1_quality_20261108/P0_6/jm/bin/ldecod.exe": "54bdeb62f94926fea4d1cd46cbb197edb499ad669537853ec97786fec0e4d0b7",
+    "/home/luoxiangyu/a1_quality_20261108/P0_6/jm/lencod/src/state_io.c": "3a4533e57eee791e6d14881ca2b226a1e328e0ce7e1d81a138ec58432ee10b37",
+    "/home/luoxiangyu/a1_quality_20261108/P0_6/jm/lencod/src/slice.c": "3276673acbcfdb95f6517c513400a741281442e9053e0d3a221c09755244defa",
+    "/home/luoxiangyu/a_new48_20261107/kit/scripts/prediction_to_b1_state.py": "cae01714d66f06f381af294dee2eabdd09675f5bb409521b2f576d995904a35b",
+    "/home/luoxiangyu/a_new48_20261107/kit/linux/skip_p16.cfg": "80f978ed72c25d6d72884a4845428c191f2ff9344dc7edb56acf38982173fa26",
+    "/home/luoxiangyu/a_new48_20261107/kit/linux/run_pipeline.py": "8c52ec0a927c395f0113f659f6abd378e7d570a7890b4802edeb99b043ccd494",
+    "/home/luoxiangyu/a_new48_20261107/kit/JM-backend/cfg/encoder_baseline.cfg": "964c9877a00bae3b87a48237e9ea11c445406df059b8725613f444a3202a0dfd"
+  }
+}
