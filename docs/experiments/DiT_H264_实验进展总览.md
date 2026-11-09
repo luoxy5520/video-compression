@@ -74,3 +74,9 @@ L1 固定每帧四点和相同 QP28 筛选，从 A 换成教师参考后 64 个�
 冻结 A 16 条验证码流逐条复现。O0 在相同选择器下切换实际重建参考，验证中位 IoU 0.128。T1 源辅助固定前缀标签回放较 A 提升 +0.0683 dB，触发双种子 O1。T1−T0 的实际 P 帧配对差值为 -0.0609 / -0.0456 dB。T1 未满足两个种子同时超过 A 并相对 T0 取得可辨配对收益的联合门槛。O2 与 P3 未启动，最终盲测封存。
 
 [阶段报告](../../experiments/a1_quality_20261108/P2_OnPolicy/decision.md) · [实验地图](../../实验地图.html#a1-quality-p2-onpolicy) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-onpolicy-20261108)
+
+## P2-MultiSampleAudit｜多视频拟合审计
+
+M1 通过。复制 2/4/8 个同样本均为 100% 召回，8 个不同视频各曝光 400 次仍只有 17.77% / 18.36%。44 条在每条 80 次时低于 0.2%。M2 未恢复拟合，严格回放均未通过。保留冻结 A；M3、P3 未启动，最终盲测封存。
+
+[阶段报告](../../experiments/a1_quality_20261108/P2_MultiSampleAudit/decision.md) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-multisample-audit-20261108)

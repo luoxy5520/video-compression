@@ -67,3 +67,16 @@ ssh 113Server 'cd ~/dit-p2-labelprobe-20261108 && git archive HEAD -- 实验地�
 ```sh
 ssh 113Server 'cd ~/dit-p2-onpolicy-20261108 && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_onpolicy experiments/a1_quality_20261108/P2_OnPolicy/README.md experiments/a1_quality_20261108/P2_OnPolicy/decision.md experiments/a1_quality_20261108/P2_OnPolicy/label_stability.md' | tar -xf -
 ```
+
+## P2-MultiSampleAudit
+
+- [closest_or_best_sample_1029](videos/p2_multisample_audit/closest_or_best_sample_1029.mp4)
+- [worst_sample_1025](videos/p2_multisample_audit/worst_sample_1025.mp4)
+
+四宫格为原片、冻结 A、M2 学生和 O0 源辅助诊断。各格 832×480、17 帧、16 fps，统一重编码预览。严格评分码流见科研归档。
+
+在 Mac 的空目录中执行精简同步。
+
+```sh
+ssh 113Server 'cd ~/dit-p2-multisample-audit-20261108 && d=experiments/a1_quality_20261108/P2_MultiSampleAudit && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_multisample_audit "$d"/*.md' | tar -xf -
+```
