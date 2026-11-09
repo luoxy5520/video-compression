@@ -79,7 +79,7 @@ def normalize(x):
 def cat(raw,ids,key):
     return np.concatenate([raw[s][key] for s in ids])
 
-def candidate_fit(raw,z,ids,arm):
+def candidate_fit(raw,z,ids,arm,native=False):
     keys = ("q","group","support")
     train = {k:np.concatenate([raw[s]["candidate"][arm][k] for s in ids]) for k in keys}
     train["x"] = np.concatenate([z[s][raw[s]["region_n"]:] for s in ids])
@@ -87,9 +87,11 @@ def candidate_fit(raw,z,ids,arm):
     positives = np.bincount(g[y],minlength=1024)
     counts = np.bincount(g,minlength=1024)
     prior = (positives+1)/(counts+2)
-    x = np.column_stack([x,prior[g]])
+    center = x.mean(0) if native else 0.
+    scale = x.std(0).clip(1e-5) if native else 1.
+    x = np.column_stack([(x-center)/scale,prior[g]])
     weights = np.where(y,.5/y.mean(),.5/(~y).mean())
-    train.update(prior=prior,beta=ridge(x,y,weights),ids=np.concatenate([
+    train.update(prior=prior,center=center,scale=scale,beta=ridge(x,y,weights),ids=np.concatenate([
         np.repeat(s,len(raw[s]["candidate"][arm]["q"])) for s in ids]))
     return train
 
@@ -100,7 +102,7 @@ def sparse_score(raw,z,s,arm,tr,rng):
     val = raw[s]["candidate"][arm]
     x = z[s][raw[s]["region_n"]:]
     prior = tr["prior"][val["group"]]
-    linear = predict(np.column_stack([x,prior]),tr["beta"])
+    linear = predict(np.column_stack([(x-tr["center"])/tr["scale"],prior]),tr["beta"])
     pred = np.zeros(len(x))
     top = np.full(len(x),-1)
     rand = top.copy()
@@ -219,7 +221,7 @@ def continuous_score(raw,z,s,tr,rng):
 
 def main():
     cli = argparse.ArgumentParser(description=__doc__)
-    cli.add_argument("stage",choices=("gz1","gz2"))
+    cli.add_argument("stage",choices=("gz1","gz1_native","gz2"))
     args = cli.parse_args()
     torch.set_num_threads(2)
     stage = args.stage
@@ -235,8 +237,14 @@ def main():
     for fi,fold in enumerate(manifest["folds"]):
         ids = fold["A"]
         for feature in ("F0","F1","F2"):
-            z = design(raw,ids,feature)
-            tr = candidate_fit(raw,z,ids,arm)
+            if stage == "gz1_native":
+                # The historical F0 vector is hidden64 + A MV/32 + constant P16.
+                # Apply the same side channels to both other native feature spaces.
+                z = {s:np.column_stack([r["features"][feature],r["side"][:,:2],np.ones(len(r["side"]),np.float32)])
+                     for s,r in raw.items()}
+            else:
+                z = design(raw,ids,feature)
+            tr = candidate_fit(raw,z,ids,arm,native=stage=="gz1_native")
             reg = continuous_fit(raw,z,ids) if continuous else None
             scores = {}
             folder = OUT/f"{stage}_pairs"

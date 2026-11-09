@@ -75,9 +75,9 @@ def stage(tag,folds):
 def main():
     folds = read(OUT/"split_manifest.json")["folds"]
     first = gz0()
-    gz1,gz2 = (stage(s,folds) for s in ("gz1","gz2"))
+    gz1,gz1_native,gz2 = (stage(s,folds) for s in ("gz1","gz1_native","gz2"))
     t = read(OUT/"gz2_labels.json")
-    decision = dict(gz0=first,gz1=gz1,gz2=gz2,
+    decision = dict(gz0=first,gz1=gz1,gz1_native=gz1_native,gz2=gz2,
         replay_pass=[a for a in ("A","C1") if all(r["gate"] for r in first if r["arm"]==a)],
         t0_t1={k:average([x[k] for x in t]) for k in ("t0_t1_iou","t0_t1_overlap","t0_t1_sign","t0_t1_level_mae")})
     p.save_json(HERE/"metrics/summary.json",decision)
