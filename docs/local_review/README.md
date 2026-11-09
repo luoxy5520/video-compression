@@ -93,3 +93,14 @@ ssh 113Server 'cd ~/dit-p2-multisample-audit-20261108 && d=experiments/a1_qualit
 ```sh
 ssh 113Server 'cd ~/dit-p2-capacityprobe-20261109 && d=experiments/a1_quality_20261108/P2_CapacityProbe && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/p2_capacityprobe "$d"/*.md' | tar -xf -
 ```
+
+## P2-GeneralizationProbe
+
+本轮按开发池诊断门槛停止在冻结 A 核验，未生成新学生回放或新 MP4。代表性回放仍见上节 P2-CapacityProbe 两个视频。精简同步命令、关键图及分层数表见本轮 README。
+
+[本轮精简交付](../../experiments/a1_quality_20261108/P2_GeneralizationProbe/README.md)
+
+| 保留的历史 MP4 | SHA-256 |
+| --- | --- |
+| best_or_closest_sample_0021.mp4 | `9f670c9c23975da21be44fd8c1df2d2cf911ab30cb3ad755d198c3d561d5097b` |
+| worst_sample_1024.mp4 | `9a161bf3471486e94eb43242d0b2e610fa28c5c1bb3cb9bc4d11ac4c8aaee1cc` |

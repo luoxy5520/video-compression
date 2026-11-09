@@ -86,3 +86,11 @@ M1 通过。复制 2/4/8 个同样本均为 100% 召回，8 个不同视频各�
 历史八视频召回 17.77% / 18.36% 逐元素复现。扩至约 16× 后训练召回 97.66% / 72.46%，验证仍接近零。C2 的匹配跨视频近邻一致率 61.32%，随机 55.37%。保留冻结 A，停用 44 条扩量、G5 与 P3，最终盲测封存。
 
 [阶段报告](../../experiments/a1_quality_20261108/P2_CapacityProbe/decision.md) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-capacityprobe-20261109)
+
+## P2-GeneralizationProbe｜跨视频泛化与目标可预测性
+
+冻结 A 的 16 条历史验证码流逐条复现。44 条训练池含 11 个确切 prompt、每组 4 个生成 seed。两折两种子下，C1 的支持视频写入召回为 95.31%–97.85%，同 prompt 新 seed 为 0%–0.391%。匹配降维后，原始 hidden 的同 prompt kNN AP 为 13.66% / 11.42%，冻结投影为 9.28% / 9.58%，原生宽度的 Top-1 正类召回未保持优势。
+
+冻结 A 轨迹上的区域能量最稳定。F0 线性读出的同 prompt top 10% 区域召回为 44.2% / 41.1%，低频系数幅值未超过零预测。无独立学生通过门槛，未启动新学生 JM。冻结 A 保留，P3 未启动，最终盲测封存。
+
+[阶段报告](../../experiments/a1_quality_20261108/P2_GeneralizationProbe/decision.md) · [实验地图](../../实验地图.html#a1-quality-p2-generalizationprobe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-generalizationprobe-20261109)
