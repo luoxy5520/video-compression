@@ -9,3 +9,5 @@ Mac 精简包可在空目录解包，再将更新合并到笔记工作区。已�
 ```sh
 ssh 113Server 'cd ~/dit-p2-generalizationprobe-20261109 && d=experiments/a1_quality_20261108/P2_GeneralizationProbe && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md "$d/README.md" "$d/decision.md" "$d/tables" "$d/figures"' | tar -xf -
 ```
+
+完整复现包保存在 113Server 的 `~/a1_quality_20261108/P2_GeneralizationProbe/publish`，三卷均在服务器核验。GitHub 科研归档为报告、派生指标和校验清单版。完整包的 H.264 码流、JM 原始证据与 checkpoint 留在服务器，因为自动审批未放行这一发布范围。

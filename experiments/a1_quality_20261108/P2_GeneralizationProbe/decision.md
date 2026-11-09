@@ -69,3 +69,9 @@
 - **下一阶段**。暂停继续扩大 hidden-only sparse head，保留冻结 A。区域重要度或预算分配有独立诊断依据，需另立受控实验才能判断闭环收益。
 
 `same_prompt_no_generalization` · `projection_information_loss_supported`（限匹配读出） · `region_target_more_predictable` · `sparse_target_unstable` · `no_candidate_replay_gate` · `keep_frozen_A` · `P3_not_started` · `final_blind_sealed`
+
+## 归档范围
+
+完整复现包三卷保留于 113Server，服务器逐卷 SHA-256 核验通过。自动审批拦截了包含码流、JM 原始证据和 checkpoint 的 GitHub 推送。GitHub 科研归档保留派生指标、报告与复现校验清单。Mac 精简交付保留旧 MP4，并核对清单哈希。
+
+[GitHub 科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-generalizationprobe-20261109)
