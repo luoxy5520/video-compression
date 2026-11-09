@@ -75,3 +75,5 @@
 完整复现包三卷保留于 113Server，服务器逐卷 SHA-256 核验通过。自动审批拦截了包含码流、JM 原始证据和 checkpoint 的 GitHub 推送。GitHub 科研归档保留派生指标、报告与复现校验清单。Mac 精简交付保留旧 MP4，并核对清单哈希。
 
 [GitHub 科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-generalizationprobe-20261109)
+
+服务器完整包已重新解卷，CORE 和 STUDENTS 共 820 条 SHA-256 检查通过。GitHub 指标归档提交为 `e40333827ca03159660e35f03edcd3d9a2adb24b`，从远端独立获取并核验唯一指标卷 `metrics.tar.zst.part-000`，SHA-256 为 `884cc8d079fe2689a49600fa3cdd0a859afe5b04bb7f94a7832c38fa0ad70e23`。
