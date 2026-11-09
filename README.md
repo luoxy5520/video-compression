@@ -18,3 +18,5 @@ sha256sum -c "$o/FILES.sha256"
 ```
 
 `CODE_COMMIT` 记录交付代码，`run_manifest.json` 记录评分时的代码提交。`RAW_COMMIT` 记录全量分卷的提交对象，`FILES.sha256` 和 `PARTS.sha256` 分别校验原始文件与分卷。
+
+[完整分卷归档](https://github.com/luoxy5520/video-compression/tree/artifacts/a1-three-state-20261109-raw) 的远端提交与 `RAW_COMMIT` 一致。46 个分卷共 1,606,117,471 字节。113Server 完整解包后通过 2,592 个原始文件的 SHA-256 校验，验证记录为 `~/a1_quality_20261108/A1_ThreeState/restored_verify.log`。
