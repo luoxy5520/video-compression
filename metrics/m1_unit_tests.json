@@ -1,0 +1,152 @@
+{
+  "pass_m1": true,
+  "fresh_hidden_matches": [
+    "sample_0000",
+    "sample_0004",
+    "sample_0008",
+    "sample_0012",
+    "sample_0016"
+  ],
+  "dataloader_observations": 60,
+  "units": {
+    "perfect": true,
+    "negative_logits": true,
+    "reversed": true,
+    "illegal_rank_mask": true,
+    "masked_loss_gradient": true
+  },
+  "original_metrics": [
+    {
+      "run": "o1-T0-1701",
+      "updates": 528,
+      "videos": 44,
+      "hits": 7,
+      "positives": 2816,
+      "video_macro_recall": 0.0024857954545454545,
+      "prompt_macro_recall": 0.0024857954545454545,
+      "min_hits": 0,
+      "max_hits": 2
+    },
+    {
+      "run": "o1-T0-1702",
+      "updates": 528,
+      "videos": 44,
+      "hits": 2,
+      "positives": 2816,
+      "video_macro_recall": 0.0007102272727272727,
+      "prompt_macro_recall": 0.0007102272727272727,
+      "min_hits": 0,
+      "max_hits": 1
+    },
+    {
+      "run": "o1-T1-1701",
+      "updates": 528,
+      "videos": 44,
+      "hits": 0,
+      "positives": 2816,
+      "video_macro_recall": 0.0,
+      "prompt_macro_recall": 0.0,
+      "min_hits": 0,
+      "max_hits": 0
+    },
+    {
+      "run": "o1-T1-1702",
+      "updates": 528,
+      "videos": 44,
+      "hits": 3,
+      "positives": 2816,
+      "video_macro_recall": 0.001065340909090909,
+      "prompt_macro_recall": 0.001065340909090909,
+      "min_hits": 0,
+      "max_hits": 1
+    },
+    {
+      "run": "fit-0-T0-1701",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    },
+    {
+      "run": "fit-0-T0-1702",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    },
+    {
+      "run": "fit-0-T1-1701",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    },
+    {
+      "run": "fit-0-T1-1702",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    },
+    {
+      "run": "fit-1-T0-1701",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    },
+    {
+      "run": "fit-1-T0-1702",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    },
+    {
+      "run": "fit-1-T1-1701",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    },
+    {
+      "run": "fit-1-T1-1702",
+      "updates": 400,
+      "videos": 1,
+      "hits": 64,
+      "positives": 64,
+      "video_macro_recall": 1.0,
+      "prompt_macro_recall": 1.0,
+      "min_hits": 64,
+      "max_hits": 64
+    }
+  ]
+}
