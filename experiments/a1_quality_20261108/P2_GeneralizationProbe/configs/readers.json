@@ -1,0 +1,11 @@
+{
+  "diagnostic_seed": 61109,
+  "pca_components": 32,
+  "ridge_penalty": 1.0,
+  "regions_per_video": 1024,
+  "matched_negatives_per_positive": 16,
+  "motion_qpel_cutoffs": [1, 8, 32],
+  "top_region_fraction": 0.1,
+  "near_zero_transform_abs": [16, 24, 24],
+  "regression_target": "log1p(mean luma residual squared) and raw raster frequency 0,1,4 levels before quantization"
+}
