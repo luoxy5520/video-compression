@@ -454,6 +454,21 @@ kit=~/senior-oracle-expand32-20261106
 <img src="experiments/a1_quality_20261108/P2_GeneralizationProbe/figures/generalization.svg" alt="训练内与同 prompt 新 seed 的写入召回，以及跨视频区域能量召回" style="max-width:100%;height:auto">
 <p><a href="experiments/a1_quality_20261108/P2_GeneralizationProbe/decision.md">阶段报告</a> · <a href="experiments/a1_quality_20261108/P2_GeneralizationProbe/tables/gz0.md">GZ0 分层矩阵</a> · <a href="https://github.com/luoxy5520/video-compression/tree/artifacts/p2-generalizationprobe-20261109">科研归档</a></p>
 </section>
+<section id="a1-three-state">
+<div class="eyebrow">A1 / Mode · MV · Residual</div>
+<h2>三状态消融与视频可视化</h2>
+<p>冻结联合 Head，完整 16 条历史验证集。Oracle MV 在共同 P16 上带来 +4.847 dB，原始 Oracle 残差因错配仅 +0.018 dB。真实源减本组实际运动补偿达到 35.786 dB，平均码率升至 A 的 8.53 倍。A–E 零额外搜索，F 完整 JM 搜索；编码器、JM、FFmpeg 逐帧像素一致。</p>
+<div class="table-scroll"><table><thead><tr><th>组</th><th>P Y-PSNR dB</th><th>kb/s</th><th>末四帧 dB</th><th>末帧 dB</th></tr></thead><tbody>
+<tr><td>A · 全预测</td><td>20.408</td><td>439.514</td><td>18.810</td><td>18.579</td></tr>
+<tr><td>B · Oracle Mode</td><td>20.672</td><td>425.463</td><td>19.058</td><td>18.818</td></tr>
+<tr><td>C · Oracle MV</td><td>25.255</td><td>477.949</td><td>23.181</td><td>22.851</td></tr>
+<tr><td>D · 原始 Oracle 残差</td><td>20.426</td><td>2305.099</td><td>18.840</td><td>18.593</td></tr>
+<tr><td>E · 源减实际 MC</td><td>35.786</td><td>3747.962</td><td>35.785</td><td>35.687</td></tr>
+<tr><td>F · 完整 JM</td><td>37.161</td><td>2326.024</td><td>36.646</td><td>36.638</td></tr>
+</tbody></table></div>
+<p><a href="experiments/a1_quality_20261108/A1_ThreeState/decision.md">实验判定</a> · <a href="docs/local_review/README.md#a1-three-state">预览时间索引及单路 MP4</a> · <a href="https://github.com/luoxy5520/video-compression/tree/artifacts/a1-three-state-20261109">科研归档和逐帧指标</a></p>
+<video controls playsinline preload="metadata" style="display:block;width:100%;height:auto" src="docs/local_review/videos/a1_three_state/a1_three_state_comparison.mp4" aria-label="三条代表视频的同步六路及 A/E 对比"></video>
+</section>
 </main>
 <footer><div class="wrap">数据依据 <a href="初版实验.pdf">初版实验 PDF</a><a href="senior-oracle-dataset-kit-20261106/experiment_report.json">Oracle 回放报告</a><a href="expansion_20261106/audit32.json">32 条审计</a><a href="expansion_20261106/results_expand32/metrics.json">真实测试指标</a></div></footer>
 <script>

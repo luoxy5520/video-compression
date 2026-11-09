@@ -104,3 +104,23 @@ ssh 113Server 'cd ~/dit-p2-capacityprobe-20261109 && d=experiments/a1_quality_20
 | --- | --- |
 | best_or_closest_sample_0021.mp4 | `9f670c9c23975da21be44fd8c1df2d2cf911ab30cb3ad755d198c3d561d5097b` |
 | worst_sample_1024.mp4 | `9a161bf3471486e94eb43242d0b2e610fa28c5c1bb3cb9bc4d11ac4c8aaee1cc` |
+
+## 三状态消融与视频可视化
+
+<a id="a1-three-state"></a>
+
+[六路与 A/E 同步合辑](videos/a1_three_state/a1_three_state_comparison.mp4) · [实验判定](../../experiments/a1_quality_20261108/A1_ThreeState/decision.md)
+
+合辑为 16 fps、102 帧、6.375 秒，每段 17 帧。各格显示分组、原片帧号（0 为共同 I 帧）、P 帧 Y-PSNR、码率及末四帧 PSNR。
+
+| 视频 | 六路起始 | A/E 起始 | 单路 MP4 |
+|---|---:|---:|---|
+| 市场横移 1032 | 0.0000 s | 1.0625 s | [A](videos/a1_three_state/sample_1032_A.mp4) · [E](videos/a1_three_state/sample_1032_E.mp4) · [F](videos/a1_three_state/sample_1032_F.mp4) |
+| 固定机位 1024 | 2.1250 s | 3.1875 s | [A](videos/a1_three_state/sample_1024_A.mp4) · [E](videos/a1_three_state/sample_1024_E.mp4) · [F](videos/a1_three_state/sample_1024_F.mp4) |
+| 历史最差 1029 | 4.2500 s | 5.3125 s | [A](videos/a1_three_state/sample_1029_A.mp4) · [E](videos/a1_three_state/sample_1029_E.mp4) · [F](videos/a1_three_state/sample_1029_F.mp4) |
+
+单路为 H.264 直接封装。对比合辑重编码以叠加同步标签和指标。Mac 上用 AVFoundation 和 FFmpeg 逐帧验证了 10 个 MP4，AVFoundation 输出时间戳与 16 fps 帧序一致。全部单路、独立六路和 A/E 片段存放在 113Server 的 `~/a1_quality_20261108/A1_ThreeState/report`。
+
+```sh
+ssh 113Server 'cd ~/dit-a1-three-state-20261109 && git archive HEAD -- 实验地图.html docs/experiments/DiT_H264_实验进展总览.md docs/local_review/README.md docs/local_review/videos/a1_three_state experiments/a1_quality_20261108/A1_ThreeState/decision.md' | tar -xf -
+```

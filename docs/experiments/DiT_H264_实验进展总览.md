@@ -94,3 +94,11 @@ M1 通过。复制 2/4/8 个同样本均为 100% 召回，8 个不同视频各�
 冻结 A 轨迹上的区域能量最稳定。F0 线性读出的同 prompt top 10% 区域召回为 44.2% / 41.1%，低频系数幅值未超过零预测。无独立学生通过门槛，未启动新学生 JM。冻结 A 保留，P3 未启动，最终盲测封存。
 
 [阶段报告](../../experiments/a1_quality_20261108/P2_GeneralizationProbe/decision.md) · [实验地图](../../实验地图.html#a1-quality-p2-generalizationprobe) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/p2-generalizationprobe-20261109)
+
+## 三状态消融与视频可视化
+
+在历史完整验证集 16 条视频上复现冻结 A 三个 Head 的状态和码流。只换 Oracle Mode 平均 +0.264 dB，只在共同 P16 换 Oracle MV 平均 +4.847 dB（477.949 kb/s），市场横移的摊位拉扯减轻。直接换入原始 Oracle 残差仅 +0.018 dB（2305.099 kb/s），错位的残差信号会在柱面和棚架上叠出重复边缘。按当前实际 MC 计算真实源残差后达 35.786 dB、3747.962 kb/s，末四 P 帧比首四仅低 0.473 dB。完整 JM 为 37.161 dB、2326.024 kb/s。
+
+A–E 零额外运动搜索，F 使用正常 JM 搜索。全部码流的编码器重建、JM 解码与 FFmpeg 解码逐帧一致。E 属于源辅助诊断。本轮保持冻结 A、P3 和最终盲测封存。
+
+[实验判定](../../experiments/a1_quality_20261108/A1_ThreeState/decision.md) · [Mac 预览](../local_review/README.md#a1-three-state) · [科研归档](https://github.com/luoxy5520/video-compression/tree/artifacts/a1-three-state-20261109)
