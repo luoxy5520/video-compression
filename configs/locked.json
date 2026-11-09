@@ -1,0 +1,11 @@
+{
+  "seeds": [1701, 1702],
+  "epochs": 400,
+  "folds": [{"prompt_offset": 0, "seed_rank": 0}, {"prompt_offset": 3, "seed_rank": 1}],
+  "support_prompts": 8,
+  "near_domain": "different prompt and median P16 MV norm within 1 pixel of any support video",
+  "prior": "Laplace-smoothed per-frame raster coefficient frequency, conditional on training legal masks",
+  "replay_gate": "For the same arm in both folds and both training seeds, paired video bootstrap 95% lower bound > 0 for held-out AP and written top-4 recall versus both raster prior and random opportunity, on B and D. Diagnostic readers have no student export.",
+  "readout": "GZ1 matched PCA32 from support only, L2 cosine top-1/5 and balanced ridge linear probe; F1 advantage requires positive-class AP and recall improvement in both folds",
+  "blind": "sealed"
+}

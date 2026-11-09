@@ -1,0 +1,9 @@
+path_scope	reason
+~/a1_quality_20261108/P2_GeneralizationProbe/pre_a/A/*/{*.yuv,trace.bin,replay.bin,prediction.npz,i_and_neutral_p.bin}	Raw reconstructions and regenerable JM state
+~/a1_quality_20261108/P2_GeneralizationProbe/*.log	Full server run logs
+~/a1_quality_20261108/P2_InfoProbe/g_labels	Existing historical derived data
+~/a1_quality_20261108/P2_OnPolicy/o0	Existing historical label trajectories and label caches
+~/a1_quality_20261108/P2_CapacityProbe	Existing historical checkpoints and replay cache
+dataset manifests: source_export_dir, hidden_path, final_latent_path	Source YUV, DiT hidden and clean latent remain on 113Server
+/mnt/data_hdd/models/dit_compression	Existing model weights
+/home/luoxiangyu/a1_quality_20261108/P2_GeneralizationProbe/publish/core.tar.zst.part-*	Complete archive including checkpoint, bitstreams and JM evidence. Server-only.

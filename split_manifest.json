@@ -1,0 +1,2164 @@
+{
+  "videos": [
+    {
+      "video_id": "sample_0000",
+      "prompt_id": "94c60caeaa86ba3d",
+      "seed": 101,
+      "source_hash": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "784968e21bb16166ea9940361e5317e20bfa043e8bd6078131801f62e9973b36",
+        "T1": "411588a4f9ef41172b3f39e28d35957918724a8cc9bca3015c4e9bf0f8e0eea4"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "4c5958758b666080430eb939192430a521263ad83ce1dee4b541ce6092874d73",
+      "label_hash": {
+        "T0": "50f008fba72cfcf95a6fcef0d841ad217a0f53248c9e8bd9b7fa9e408d6debe5",
+        "T1": "53a1ff9d20c03ab707e1bce1ed1267e2ab2d309cb665dae4c892f74f855f8eb0"
+      },
+      "feature_hash": {
+        "F0": "91107d6a49a41ded037b303ad2f555fec6ab82dbbbcd20eccfac7b40be23f010",
+        "F1": "fa8a0929022caa838dc116d0771c86dbd4eed2a325e61e56ddd59ef407b4bb45",
+        "F2": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0001",
+      "prompt_id": "94c60caeaa86ba3d",
+      "seed": 102,
+      "source_hash": "e243f73cccf2d4e5000c616b865d17342d6266888e037c4cc6f11779c3bf6d71",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "d9a7c30b7a94c119a6db9a7dd6c256edf0fa26b4707884f774139bd580a9c97e",
+        "T1": "5fd1943200d97b7c8dcd0b949ca77f8108d881f696a7dbfb98435990aff7c291"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "03660e43ab3b1d79ae1d9efa9ed23698b3e2d10241c8fb231f44aa7526976710",
+      "label_hash": {
+        "T0": "6015b6151565e193ea580b026ce0c1b311018dbc910af9c29b83cb10bd98bb94",
+        "T1": "ff2f89176802c16be9bde452e80081767fe6004569a30166f7eaebaed97a3b38"
+      },
+      "feature_hash": {
+        "F0": "0095b05a23f5f01cc978197e4558f55caa2d8f0e56ef4ad9c7d5aec3187edffa",
+        "F1": "2c8b4b0a1a729ee60bded7e56720d4b2af1e28fd828f96ffe116b6557745a57c",
+        "F2": "57b5c7e8cf10c9b26538f2551f2148d37b8b52703ae68ad2e5e60764fb199363"
+      },
+      "median_mv_px": 0.3535533845424652,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0002",
+      "prompt_id": "94c60caeaa86ba3d",
+      "seed": 103,
+      "source_hash": "43fa11f2d60fbd0afb420886d728b84c890b23762d5edec28faadf56af0061b3",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "c24d8906087f51110a8aafec3cb302a8d2fc00e7bb3ae00fa0fe2ebd4e98ba6c",
+        "T1": "fbf6919f684b40f704ca8497ea3b3ceae481e598ea369a2364bd4b8c74420628"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "9ad98d260d7ecb7653bbc135abbe2722c657f20e9c964ca5c17f704ee4038d9e",
+      "label_hash": {
+        "T0": "404e8450692be9551e3578126e4236a4f3f904dd467d9a26b92739bb9644be80",
+        "T1": "078074f80a95598aa11965ae548a6b7a50e71e8fbc3f91fbb3c1358ca3ae7a67"
+      },
+      "feature_hash": {
+        "F0": "7f92c51e89183dcf9964b6a7e78898545c14e013c108521c7b83c638791bc442",
+        "F1": "0aa228ba24ea213a9260cab301dadbe83828c771010b702ced9114371d6d1c9b",
+        "F2": "884809388a3139cdbe90ff5d74199278cead1b54e66e6158674316329dea859c"
+      },
+      "median_mv_px": 0.3535533845424652,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0003",
+      "prompt_id": "94c60caeaa86ba3d",
+      "seed": 104,
+      "source_hash": "6786769acb39277ba6c2a3561deb4a38d41b8b75c733382176af4b0aae7d0f7e",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "8de95604ceed46c7e8eb7417a3247f31be532c234f9d0b928ef467f75e3699d5",
+        "T1": "70f79f822752fa615a59609507f9d7c0e6546b47e914d02efa24f0caaa486678"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "2556711e7480122953d17b2e32020337d35f5e9984f69d84125be984672a7001",
+      "label_hash": {
+        "T0": "8dc2115cff72e699919062401d797c06c7a4ef342d2122919c74c0f62e4333a2",
+        "T1": "908ddeb855704ad4ff807870b3a59f01fc81d757e0a7a61a9c675c7b470bcbce"
+      },
+      "feature_hash": {
+        "F0": "c36a2f42c9ca334eb688e4909a5dee4b28280296bcf8b9661b78417bce9d171c",
+        "F1": "09e2f6238739d25548f1ed70ef448f247d2d1298ede99ba4271435e35033690a",
+        "F2": "388481036dfb5eab998701f051c10fd9e32a80217bbffd0536d1ba751ed1c329"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0004",
+      "prompt_id": "491bbc7a253b55f6",
+      "seed": 101,
+      "source_hash": "12a6d9d277f26e04310068af21e3983342d2893a3414096ee02679c166f886e2",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "570fefce5745b5efec344eaf6179fb10b92a6287560a46ccd2e49676c22d50a1",
+        "T1": "8981b6327947aff8bb525d77af4e7cb487c6edc08f22788ce511d1183b50244e"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "7013e81f661079126baa92004aec8cdbefd49f9c09b70ff5f1de4dd4aed52953",
+      "label_hash": {
+        "T0": "522c4e0f794b4c660ab0ab8332ba41f760ba64ce1beea82c2e63c0b11405bbd1",
+        "T1": "0e637bdd5f044dd0c66c63b971a547ad83cba5c11e19f3a7b1047a0d678c84ef"
+      },
+      "feature_hash": {
+        "F0": "9de9c50227fa7d50696ccd54aca3adc4b6115ca4477322580913aa050f41338e",
+        "F1": "83dd8fdeb876e12aa5e0f8a8d9a6e3115d87b688bae33d60aff313804933491f",
+        "F2": "6579563c8e7b3889425a1f23bc6adfb9e18d9c70dcfe641f9e04fc06c10680ee"
+      },
+      "median_mv_px": 1.520690679550171,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0005",
+      "prompt_id": "491bbc7a253b55f6",
+      "seed": 102,
+      "source_hash": "29dae1e1ec17622bbee9eb0aead54bcac1352c1220e0ed5f13fdfff8d5e483ce",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "562a37e3ea6a877c2890208282d4de45196dedaa72073033a9039f0a567ba4fd",
+        "T1": "25282d5a472d79ba216802dab37e98948037e51ceff42489948d009e0eae7df6"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "fcc84e0eb5c71462d8b8ff38259ba34086b114c12b43ae099ac770c453a60b25",
+      "label_hash": {
+        "T0": "a4f3cd56baba347dc9a326a2b23cb14acdb50c0533066c63cb6b8b79215ff3c2",
+        "T1": "936168018a7fe84abad2c5987a03a81391c737b24245ac47080862d77ebf2b85"
+      },
+      "feature_hash": {
+        "F0": "483e415f39d0d91fdc8d385ebcc5e812808097b36d304f046b0f510cf66a5af0",
+        "F1": "0de94f51346e5c9dc74861724e0d43d58d5dfbed83dadd755f5c36735e03cef3",
+        "F2": "bb6691be8d1d53f1877fa6982009c8b6887302ed7a35a2cc6d7eda6afe24d08c"
+      },
+      "median_mv_px": 1.0307763814926147,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0006",
+      "prompt_id": "491bbc7a253b55f6",
+      "seed": 103,
+      "source_hash": "5e9f8da1b6209cda0904a6b7456c7cd115fcec3fb8e3069186841073ae907acb",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "d724c23c67e81b0491cfb673e6e0f531155adfd81c2adbcd69ace3bf36011c33",
+        "T1": "bc2aa0bcd09b795bca3d8e057297f920b1c39c89808a6846b55877562c27b910"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "b89495a270063c86e14fa8a3d0456b1662d374241a96894cc02bd1893c910de4",
+      "label_hash": {
+        "T0": "a6369b24129021f31b14725459cfdc892834ab40af47da4307acf4dad7b9c952",
+        "T1": "d3f85ea3f863ebf63246bd3aa3e9f2f1398d180f342b78768e892426c9951f85"
+      },
+      "feature_hash": {
+        "F0": "e90400a2414a0115dba95dcfabdb2fd3ef47fc2b7ff40fd9e06a39bcc2509d67",
+        "F1": "37236a8c49e13d2581269d6dcb97fb708f87bd840d7cc246787f816882642b22",
+        "F2": "c2e31b8d72d613860d11b2963640dba4de43f37a845fb7b700fc2f84b0185c3a"
+      },
+      "median_mv_px": 0.55901700258255,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0007",
+      "prompt_id": "491bbc7a253b55f6",
+      "seed": 104,
+      "source_hash": "5d9323d4135086805e6cf3de0d78c04057d8369cd4aa9e44e09d3e879d30b3e9",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "fed549c601b5a18d4afb5699eaa2c9d9bb3ee2c2812b8906070bd9322c67bbdd",
+        "T1": "5462b6d155334c82f3d5455ea6fd44b91911e645d361068b20b6e3b9cf94963a"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "7855965dc00095b01c75f0fa4ddf701419ed00838fe6349b7de23657204896d9",
+      "label_hash": {
+        "T0": "6d4ac8f1f8efff0cc8fe3c5258f59e1bb8b21cf32b5b5f4a121b9f3b235fa0be",
+        "T1": "1aab4363b06499dc60d807244032de155eb4cf7798864ef3dd04a79ddc1e7065"
+      },
+      "feature_hash": {
+        "F0": "e0d11859f1e9a1e35ed1bb455e6de23035a5ec2d2f66037ca8c10621bf96384c",
+        "F1": "3aa80e313092eb4731d7861b0c98f56d54ac159e1aac7ac5e2fceb45efb89679",
+        "F2": "f42eed2ab698bf388e2f279c6da695bcbe90c898e24af38a6e7c9c2f392c3f1e"
+      },
+      "median_mv_px": 2.015564441680908,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0008",
+      "prompt_id": "0b06eaba5150a837",
+      "seed": 101,
+      "source_hash": "17b3121f7460e08b2be8a0f98121c9606db08d90b93ed30ff64c1c77f3394e4d",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "88edd89f83c938bcde5133c4a69a3fbb84dfc2ffd156ef570b76dd73f0d3325e",
+        "T1": "96225f18e1b2578c7c3b0f2997c27dd3b2872796915083d0ded7faa6548e7e4f"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "9a07828597ad62043bf8ca3594fdd31c30aa3b58a5b5a387e6175ed3095a1902",
+      "label_hash": {
+        "T0": "2f0cb12b411ca3cafaaf68e9b8e28945f033e10f4231955051f034fb53f4dd32",
+        "T1": "b2f932eb17aaeb33e4599fa7199f726973f03966c901af2d2c6d86d4a893495b"
+      },
+      "feature_hash": {
+        "F0": "eba6b60f575cc3be5cf63f3c9aacfce8cdd4352dde7d57868607b8451dd0f621",
+        "F1": "22f98bab4732f037eec64de4f761cb8c8dc20499fc03f968c485c4884727121e",
+        "F2": "e955bc93215019e6bd36f1faa828f595988759c92bb6a88eb6cc9cc14b11ecb5"
+      },
+      "median_mv_px": 0.55901700258255,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0009",
+      "prompt_id": "0b06eaba5150a837",
+      "seed": 102,
+      "source_hash": "2a205baf44d74dba87fa612cbdf9aac4fab3f3c12591074ae3d6bb7316617998",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "65bcae35c4f94248cc39288f10bf0f7f450ae60e11474701f66e79c62f405a56",
+        "T1": "c342c1f602733c6fcf23edeceda990fe50a9d593ce78333281e4a6dbe2aff234"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "9388bc8e47daf7ee7da995ef7391d7b7e6a6a551ed570795f6843eedaff79152",
+      "label_hash": {
+        "T0": "e2bd1cc94eeb8bee641d66df9cc4c4dcbde7d389c7c54d877760bc3ffc93a8a9",
+        "T1": "e8c1f367d40ab379b62d2fa9310236817fc9023c182e460388f14d6d440eae47"
+      },
+      "feature_hash": {
+        "F0": "2e15ae6cebb31e137c8e49022f58a39834782455a673fac78a20376d3ef3b018",
+        "F1": "1d4b94858591ed51c1e2dac536bb319d9ec2a1aaa1d8e1f7871266fa75f249a1",
+        "F2": "619790f75ce89455a5e67bb570c6b9fe58bffa0724b5b6184a3119a52a37a582"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0010",
+      "prompt_id": "0b06eaba5150a837",
+      "seed": 103,
+      "source_hash": "4609712613cbc60ea0ee3a045e3b53fcecd6458c879949263d922a90912c90ea",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "455a3452d4b0d05e91814ededcd1afd8b141bdbff7a053e26e27b397b6a5a18b",
+        "T1": "253eedb7cc6f79c6026ac3c3a6c1ffe16c833262549812241c37c294571d249e"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "8eb21578ae9f25f7b7f0569b4d4cfb836557ccfe9305626e9ebb407a77e074b4",
+      "label_hash": {
+        "T0": "f8e84d8a6a9311bceac11d1f1c53e8a6520c33bbbcb47e2311ce14fc1fbd77a9",
+        "T1": "c183bd53ba1ba848ad3ed9925095a3bd0eec3081bb845557f0f2dd3bcc723873"
+      },
+      "feature_hash": {
+        "F0": "72aa258d14a75940974b49ca856be2440dde0966b95fcba42fb2454c2f5874f4",
+        "F1": "ead0afd1f662a92f5426fa2450557907b4409c383bb9245847267452db10dfc3",
+        "F2": "067108671b2bc0da87e97b77ac472d097cb3abeb761cd5174a8ef0daf44de851"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0011",
+      "prompt_id": "0b06eaba5150a837",
+      "seed": 104,
+      "source_hash": "27af5a780c8508b3eeb2827d8f67c7ba817e1f4516d3c5b466cdd5e84e83998e",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "0dc5a933f800b1888dc2da95d999dc2044fe824a8f1f0436ed81338797b79e94",
+        "T1": "f8a61344df6707b011f3219af633df3d51a6c1c02e5caa826b0d3ca023246eb6"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "f196292bd2088679f2f5cbcccbb058f5d179a6da49114ff718515ac13b50a3ec",
+      "label_hash": {
+        "T0": "96dfde5d28b8ec2b5d64b6a5e9d128c3c770c74a51f9cc0f1420dafdec1a9154",
+        "T1": "d92da30df05afe2ad21efc78c5b2e1227404be680edd52f2508d40c240b1cc13"
+      },
+      "feature_hash": {
+        "F0": "13ab1410ed00e3d844a24d8947aab6f0f5e14df6c1a7f101f6b3aadd23d29928",
+        "F1": "f8c1d7bed660b139fea515d76bb5fa5fcd10e12acae6af654fc044ce7395dc0d",
+        "F2": "b53513b0505fb61f13f84975152e38a6ffbb8f6009662a4488986b2347cce51a"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0012",
+      "prompt_id": "2cad61727b79ce09",
+      "seed": 101,
+      "source_hash": "b8e8ebfd0835f1d45ad6ee5d8df644d5ead1fe82312ccff02bc20e28a0eadcf1",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "eef2793ead099df33cde05e1e8c2c104976584bb960bac4cd53985082979d582",
+        "T1": "6c504238a9d34c4116f07c847a0d55a9bef027d9178b5fb87f56b97c0702e341"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "f460fe45882317722256f047d93a8265f1d422797105bc2351175602972fd9dc",
+      "label_hash": {
+        "T0": "78fd9d318cb87164f491af8809f8809a79fdd0663199a5364fa05f7c327e620c",
+        "T1": "a73013b1be40f620cbee2c4acb695737dad623385c1602c22190377e9252efa7"
+      },
+      "feature_hash": {
+        "F0": "71d871fe86fb98fc5c63d7f8d7d30329e2e51f3d2fb92b1140c9fc82e95b3c7e",
+        "F1": "1e263f3ac7648fb7d2515a390feaa6e42327e98cdde4af642f30898d360365cf",
+        "F2": "5eb370a1a6e8ec6b2156b0f37073aeb7d96bfc6ee7c06620b4e8bb1d983a6c44"
+      },
+      "median_mv_px": 0.55901700258255,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0013",
+      "prompt_id": "2cad61727b79ce09",
+      "seed": 102,
+      "source_hash": "39abd78cf6c005ac167626fae6bbfd12b8d3ee32a1f2685d13d7442ac38d90fa",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "dfd0596fa5f1704c0ba8b875d4a84dfa1dbb7d3ac0c62cfd466da41a8ede816e",
+        "T1": "606440429de897da23062217c9cd15caf1cd788c6ce879e013ec3b080008ab8c"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "ea04442d21213eb063f564cb83fe18f9bfa6636f12e7250c07f62619f9ba345e",
+      "label_hash": {
+        "T0": "06117e23adfc600a47ecab96103191f55ac08f767093f030805d33265ad83e1f",
+        "T1": "e1631d0101cba414ea6c28a750484446fdb24c6c6c06efd17b8836fba065c428"
+      },
+      "feature_hash": {
+        "F0": "18c539a966cdcd496913f8ca314b38de331948580378abaf3e2c41c012bdddab",
+        "F1": "6f6f38382139a727e990b4d9b84af3876ef20dcc22b80e758a3e8d822480a7cd",
+        "F2": "d0eb7c6a74a2aad109f36306547665a8a8e21610e83521a45865931f345e4b63"
+      },
+      "median_mv_px": 0.3535533845424652,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0014",
+      "prompt_id": "2cad61727b79ce09",
+      "seed": 103,
+      "source_hash": "141b5c7257bd2fb2e77485487f882a4d9724f557688d410d0fa1da6fd4d4334c",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "140c8e1e8bdcc86ce5405385fdea7a04836863025febad6c6e4f113265d3ab79",
+        "T1": "a17ea77bd8f4876a70aa545c70122d8f6637e60d27494f1a71861f260fd03a2d"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "e91ce062fc11bfdd549f8ed1c478492b8c142e61ca39bc422df4eb9aed563cb2",
+      "label_hash": {
+        "T0": "e23fcbb34ad68af3b11a51231a1f85b83f1d3152ba8066ea96369ec335dca5d2",
+        "T1": "17f0bad1299d47fc363abfbf90372178e48fc58dc5ff255c43c14d96f5597058"
+      },
+      "feature_hash": {
+        "F0": "1372d06e23296466d5f12a604b779da5229e985a408b310b9ddde2d7df91e03e",
+        "F1": "387dee79633e51235a3de0c70ae3a7b2f1cb970d504c5b5b9246dfac64a98145",
+        "F2": "fabc7898ad0b127faa56c08e5537b5503810e75c821b456f2a86074f25c05da7"
+      },
+      "median_mv_px": 0.7905694246292114,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0015",
+      "prompt_id": "2cad61727b79ce09",
+      "seed": 104,
+      "source_hash": "bc52f8614b1d043d53e2d46d80c279938a6b95ddee7ff869672e09c593dc40c7",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "62c34744ae823cbeea990bf28a75fee199e90c52666eff3b2b31fa0943e05860",
+        "T1": "d957ba505c7854a58fadc6b6faf60182c4f5499daf554aa790558648b83f3be1"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "89649119f70645a375f25a6a5a77f1cd01c8e320f28aba7c3d98cfc850f145c8",
+      "label_hash": {
+        "T0": "d44d08a961d542dd1ad30c5ff4b6a03b66dd70b25dd3bea496e64666ee795e07",
+        "T1": "f6050d72089333bc384dbbbaa944908208817972bce6b1b91c8286ae60dec4b6"
+      },
+      "feature_hash": {
+        "F0": "510c2ca5ebefeb66ac15b664bac849b7fd6e5e8f31026d4f44ea415a0e87628f",
+        "F1": "c2d747d765712a2c0279bc2f36eeaed19f7db3804155a32798013a8e830d2fd8",
+        "F2": "b20a0e29990b208796c0af52ff5483b5f1fbeb3c9dd0df1f2c2bdf57c63df5fd"
+      },
+      "median_mv_px": 0.55901700258255,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0016",
+      "prompt_id": "f800007f7b741868",
+      "seed": 101,
+      "source_hash": "6c10f88334ed2b8d5ead0b2eee8db8b0985692530efecc5806283258ba1bf3c0",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "507e5c2c897641c345ec260bb2d8b1bd306ba8579b765b737e8cedba6793f1b8",
+        "T1": "ee284ac71c0d719b2a7c3243b3b41e8dca2c0d13209562204d117b5c9b817b38"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "c3918efeb4a0725057777cb0d07fe1de894804cdd1991a5819c9e00d207e52fe",
+      "label_hash": {
+        "T0": "cf906cc176139016f62898aec1745d6130d61cb93562c49a5cda59071687bb2e",
+        "T1": "130078d1c4aad64796f9a8acd39e4e4c14eb47897af8dfca04c48463a6e59c2f"
+      },
+      "feature_hash": {
+        "F0": "18798e295a413da365e29d3c65fa30cbca53410f4432cba2917c45e3a94422d7",
+        "F1": "29418b2c8617a05534d5ed9b4a864a547aa5c391196244ef162e68cfa54d82bc",
+        "F2": "19b9f19ac89af4ec9c921be4136d13d92fa714883bcf10a7480bf0a802f2825d"
+      },
+      "median_mv_px": 0.3535533845424652,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0017",
+      "prompt_id": "f800007f7b741868",
+      "seed": 102,
+      "source_hash": "038e36403d083d22d00d6171e2d7cb15b459a5fdb8babe1211d8ee74d818f6b3",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "521e63830329cd2959d92bc0f801d1e7b5fa123b2bb1bcacdf4121bdb46a941b",
+        "T1": "39c1e38ee54f6529fddf8a3ea13f85e1e8ad1c7f569028925bad95ac20be0324"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "f0c196023f3a9e228e272c6bebb1b26cca9a03591a5e1cdc8d6035e65fcd27e1",
+      "label_hash": {
+        "T0": "4053c86583a8a17672261fbf88be08b72c924ee567acebac9c2568ce1159e9af",
+        "T1": "3c2b96796390d41808f737b6af02e66e1a21f747512e5cf3db5b259bdcd2201f"
+      },
+      "feature_hash": {
+        "F0": "91be6e368a3f085ae62f3e34bc82177197bd8d57c5d40a56ff303f3a5a664969",
+        "F1": "188da1710b11b8dc9ace43f7b024717e0a814a0f1ea9763633d6e22fab86597d",
+        "F2": "d1d0f3885777bf5a4de8514692f23092b259b8825e7f2b6f72853c9f00587777"
+      },
+      "median_mv_px": 0.7071067690849304,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0018",
+      "prompt_id": "f800007f7b741868",
+      "seed": 103,
+      "source_hash": "46685839728f9925d2d9807a3be9b667a1a6cdd0023795f2d4e3d0ad0d63b0ab",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "f85f170613ddccb9d0a59fea0f135cf99c1690a81e91c1835a9aeaf17bb64598",
+        "T1": "3d9000f52fd01a4c9f26717f79dc5dde06f3d13eceacb6c8afe5b2e0d75fb905"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "d07418617a9b5a7fa24982b7c95d64b781099206997a2f147333afd7c1613bd5",
+      "label_hash": {
+        "T0": "14829cd13c9ee96493713df904c1c142f81d7215d4c25a833a4efa8b3de89d55",
+        "T1": "d10220d97a512f425f39e8e4f9b266548df7031809fee6821c5785e833bca51b"
+      },
+      "feature_hash": {
+        "F0": "fcaea859a85a6eac3b60fe96cc14e43ee276faf7ef6da08d75189ea14c4f2cef",
+        "F1": "73d156b1b58b55e640b6835d5861fa102d7cfad9ec2e8dbfa32d35e05cf1e9e9",
+        "F2": "744d42fe0455da7965ba1b386acf2ade8df03af3eeeffc40d8d953ccd8402561"
+      },
+      "median_mv_px": 0.7071067690849304,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_0019",
+      "prompt_id": "f800007f7b741868",
+      "seed": 104,
+      "source_hash": "022dfaef53ed4874469bfbe6acd7c83635f78668db9cdfd8cf0b9c7d8ecc8e87",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "7c87359b9be3c987a9ca370dee4fd65d915736e3e12945800695296fa97921fb",
+        "T1": "c0e02a0075ce450bf2de3389a7846b8ffea396642e49642cdaa4c7598be7a62c"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "16ea1da9a28862610e9cdaaef946a26e451636beb3741055fe3d3202e66c9c41",
+      "label_hash": {
+        "T0": "6db0b2c2492ab87baf47da80c774699fbde4402af0bb93ec81e17c3d5ebfe480",
+        "T1": "2c3334a51571716edf42eb2c6893ff9e3978fd2e6c8504f561123a976a72379a"
+      },
+      "feature_hash": {
+        "F0": "745eea0541d56f2c7c3e65f6d54c314ca00c7e67cc6d76e9025f1b759e53d291",
+        "F1": "725d55d418c9a5f931e9ac0a10a66a0fa83cfa80e3fe4c3001a3901c9680e334",
+        "F2": "98acefd103dee5db285251422f8fc00d64a927473f075e88a03b63f60a2bc695"
+      },
+      "median_mv_px": 1.520690679550171,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1000",
+      "prompt_id": "5cd516b6be42a3ad",
+      "seed": 701,
+      "source_hash": "8a5f59d04d82d64d750236cbae8d6d9f50d832e369979ba1c6959a3f436aadb2",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "3545e7f41bca678af8068a05947e66af7cb45b048e0436ca3e7e34e1b0f55228",
+        "T1": "70bfce21aba2ea6b5ab83333b19dd55d84b8404ddff698784561fa5779d6c993"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "0396af9f81f92163eaaf2ed98f9b2f6c65613df8b0eb9856098fd619d14a0eb3",
+      "label_hash": {
+        "T0": "3b7a03a7f13f3aaa0f3f68c6a61b3c13b146504b5142f3c5a250eaca3404bb7b",
+        "T1": "27e34736130d5d1dc1b0ce1feff92c8330f4252576f10de9854e1f97fcfa5dc2"
+      },
+      "feature_hash": {
+        "F0": "ef81825f418f74d8479502a6a8d6d57d96408d4f5865088f74e4e589b18c5503",
+        "F1": "732b5626c20bf3cf5cea5bcc5428b600db1f2691bf6bfed3f727fbdc68df4214",
+        "F2": "adfb3b6bac8ee5162206022fed410f97296fdb1172c6497a5f28d035a51cbf82"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1001",
+      "prompt_id": "5cd516b6be42a3ad",
+      "seed": 702,
+      "source_hash": "d91dfd211a50009d927571c88177414443c32a5964ba63ade66f5c4f5ed5b46b",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "9795c6257b0c3245ea2a8974b418a7238228a01942d2a7db96c3c9a9e064dbbd",
+        "T1": "52c4ce9d622a2fb5f1c8a9d3d3d6cb3ff1aef15050cdc03dfa7590989e02cbd9"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "4fb1b3069eec5df2cca2d6cea0a4fad206f32d16fe0cb5e47d272456cab7504a",
+      "label_hash": {
+        "T0": "e36a627dbe0edce89a5bd5ae04fde832ab2e25a5bb02103e491350c63d355af2",
+        "T1": "9572ac8782d9487e1b3f33da183c3ea41265fc960386308d69cb84158d8fe21f"
+      },
+      "feature_hash": {
+        "F0": "a3e690f692e8c21412ba71a0374d2dce6ab5da38b4dc925dab39c06c84a8452d",
+        "F1": "897326a5e2528a3b69bb230b00758bab5e3f5a7928b9a219c425ae7f13cd7a28",
+        "F2": "2be7e3cc53bb514ccef32fec62d63b2c69882b51559124d86373eac36358bac9"
+      },
+      "median_mv_px": 0.0,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1002",
+      "prompt_id": "5cd516b6be42a3ad",
+      "seed": 703,
+      "source_hash": "70c1bf3211529c3441c0a30d54d7ace0685e617ad54b54abc6cbdf9b3fc85468",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "54fece4cb5a4f20a35ee032c9f6ad3e2b94742c1fb2985579ec345c49cc0d4ac",
+        "T1": "0c3ceb4f43fa7cded4252620ff0e457b9025bee29db89c0006f915f43c73842e"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "05b8078ffa95b7a0af8b174673ffad0785e57ee688391fe21499b0f7be5cf92b",
+      "label_hash": {
+        "T0": "c30996bece7f9a8a2bf0365f7d5831ed81dc6bc4f4fcd2234804231951e427e4",
+        "T1": "31f95279605e0dc7c2edb4527d0c61afb1a88a0049870ed9cd1e442695524229"
+      },
+      "feature_hash": {
+        "F0": "4ba153915842a6d5cb18ee4e25f16a3afe0402768a7053cfa6aadee93feae3b2",
+        "F1": "18575e6adea9f13f4d9474b2b668cc522e8a293dca5f78d0e6109be100a5390a",
+        "F2": "9b0ccbfde40e4c7b8add6bb5e6410749b3c1c33246816a1d9debebcd59fa940b"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1003",
+      "prompt_id": "5cd516b6be42a3ad",
+      "seed": 704,
+      "source_hash": "787fa695f72741c78c0955a36f396145d1522876a35251c0dc8b025c42723732",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "34d8ab567f8fbe318200463632ee493e90d9750f99f0714f5cfd5b2332a624f7",
+        "T1": "74dccea8de541a3c024d2145641a3054d1be856c18febf958fe92fbf10a3d058"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "27ded16ea1f9d21ffe2864497fdf5c21af41dbce66ec81c525253a43ae2aebef",
+      "label_hash": {
+        "T0": "f3043058a32ce93a479123486fa5cfc9ea07e8541c11cf27ece1ba6eeb95e592",
+        "T1": "8bc52b6cce7897ee9fdd718c1aa69cb8234d69e3956031820ee5ca233452104d"
+      },
+      "feature_hash": {
+        "F0": "fd92a4e8c7afe5c6bb4bce2e5dca958b7bddc085b893a66a6c46b95cf491400a",
+        "F1": "7015068bcc6d4d3a4b2852311187b1c45b8508b691ab19ca971f42686bb14b72",
+        "F2": "55da9f3736b211699209380933e94306597f9fa03aecdb0fb0b99843416ff388"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1004",
+      "prompt_id": "d3740828fbdbf1cd",
+      "seed": 701,
+      "source_hash": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "46ba7c0e4665d387de919ac46adfad3f4e0e70312b43ddc59f20aaf476adfa77",
+        "T1": "9786918a411137344d9258c008db3896089baddcabacedb2d7037715cb2d0895"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "86483928d5020974efc0cb164526846d2f4cd18841a9527cbf69174a90f9a786",
+      "label_hash": {
+        "T0": "27db62ad33bcd72f9df7b5d73817119370e11b784bccd623f34af8a22d5912ef",
+        "T1": "6f3dd566aaa3060074973581fe4a85e9fb199951f9d90c9fcd7e924a3f354ab9"
+      },
+      "feature_hash": {
+        "F0": "9c22130093166af94348a4d828d90654e825100c1140b08586f176702831e320",
+        "F1": "9b3e77553771373c53dee74ced80b2989d830701ac87df8dfec71642d7935fe4",
+        "F2": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066"
+      },
+      "median_mv_px": 2.5124688148498535,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1005",
+      "prompt_id": "d3740828fbdbf1cd",
+      "seed": 702,
+      "source_hash": "7fe03ff14d849443254b6cddbebd44e0fbefcc142da24b809e5f7c8a0bb016fe",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "38fb9388a9a4c3fa303c478f9e0def696be85fd50f12690e02d53260d981719b",
+        "T1": "ea97506c822a717e7841bc8833b55d3b12363b7637b8d1b0406d81c2ca480b03"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "7bb182245c66d1c9d8d3413ec700f85e88cb161f27efb5c2c00a001d797c5578",
+      "label_hash": {
+        "T0": "f31bf5f1a848e7317c9fc2634df38c46207c71452ccac10b6d34e848131b23d9",
+        "T1": "c3acc49bd67af310ee2cc88655d9161246a9b1c4191752e62afe522a72f51533"
+      },
+      "feature_hash": {
+        "F0": "39380450027f2a9fa6e161ff3502766e6493543d20d98224b26c8b173634bd28",
+        "F1": "3f5f6f991072f56c67f6d1d6651305228aa132abde4f063c5c81840dd150b9e8",
+        "F2": "1e9926bd54353cb4f6bf53756c3a463de8afbcfba13d03c49650dcebc4cdf4f0"
+      },
+      "median_mv_px": 5.550900936126709,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1006",
+      "prompt_id": "d3740828fbdbf1cd",
+      "seed": 703,
+      "source_hash": "dc32af674aa95213780fd95d46f847981d5917c9faf8df281273b54c5675b10b",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "76b4aaec9578dd67c6412321fa0f88aad5c5387d2820c456a1ebdccf6898bc00",
+        "T1": "a4e0d41510d31a7d40b62eba987e4a76d7e37c94e73c9cfecdb5295a9d48185f"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "a148302a302df85181165953fb9e96baa6b7f4bf1171c003f559fe882ab8c6b6",
+      "label_hash": {
+        "T0": "d94c6afbda9b50a383e9fd09f692ee9edfdb81e6a34f535afaaa67e5694fec10",
+        "T1": "cf93a8b688eb58297abc638a264e3ce89ad787343e673477db56b1aab5eccfa1"
+      },
+      "feature_hash": {
+        "F0": "c5337dc798dd6d728bd15fbf1f032d3491b287a47571e67384f56a065587acec",
+        "F1": "a61c7cf170032533945536ae88392c4fe24897b62d24581be7b95b7f3ff46159",
+        "F2": "e13b0f94fdaff18ce451df785cafbef2b7f0d07abca34b1857c8c52a28d9a913"
+      },
+      "median_mv_px": 0.7071067690849304,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1007",
+      "prompt_id": "d3740828fbdbf1cd",
+      "seed": 704,
+      "source_hash": "d1ce38aee93301e5775eca41ca8fe11a65e428bf353b5282b93b7ce9aa6eecd6",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "f3581bc1788d2b5c798f6cc91b4646ab11cb3f189a185931514bbe128603ff46",
+        "T1": "30312b9640c075ef3d410ea74b1b7af04c5aa521db52547dad5f4708dad1a041"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "4143f8995d86bdb8109f36638202a4842a4302308d5c6b67916af25fae191859",
+      "label_hash": {
+        "T0": "aa961def71f25dd210f1fe166198d1d130992118387ff27d6134e64a6835858d",
+        "T1": "bcce4d341eda25b960146e91c2cefd68032206bd63716b735191b38a4ddc7560"
+      },
+      "feature_hash": {
+        "F0": "6851bb90deddc3e91227ede0501b6970753466e4ef138edc73a7103793576607",
+        "F1": "817e7143bf6dea311e58ebd45d0ca1bb441058f0aaf3930823e5a3a815fe3d42",
+        "F2": "77bc6f96691cbeae18daac2b300dba99789da38486347afae8518b599931cbec"
+      },
+      "median_mv_px": 0.75,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1008",
+      "prompt_id": "14adb1a1ba7bef49",
+      "seed": 701,
+      "source_hash": "0666a2c41d7e40dd4702c78af45b0c5cb86fd694f30ad2764864eacf3afc6d75",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "2eb30a408ff5cebafa6799ea1a9138281a888157b61d4fdbec1bc48e13ad146e",
+        "T1": "95f97329e8c5e0668679b90860a189675c38ad858929b6a8e45d90b80188eb53"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "9018b682c1bd1a0f7c4241f362f3327b3dc093f254c162f83997eab18857020a",
+      "label_hash": {
+        "T0": "94471bf1fc4264eed855305a465be707f82b4877100e3fca139deced8c893fc9",
+        "T1": "2fa201fef1ea140276cf3aedfa200ef84b2a4413d2218ea38bffd22882d06776"
+      },
+      "feature_hash": {
+        "F0": "6a8b3cc961aa000b6d85277f5d97a0919d2cc1bfac0630c1aec861a267490d36",
+        "F1": "ef6dbc0e15bcdcc1b4700f9c5a04b1e3e94e85436904bc64d874157f221c3b26",
+        "F2": "7afd76de5a5f35a0f6a51b28831b05805609598b44a4a38e95efe848fcad93e3"
+      },
+      "median_mv_px": 1.9039433002471924,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1009",
+      "prompt_id": "14adb1a1ba7bef49",
+      "seed": 702,
+      "source_hash": "9702fd65d5a161942f560dc011aa5e9e92483c6cab506f8c339e57b1869babb0",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "d1252ee9985ceee4b6487891a2a30c4889c111a2d764931370269006b8e6f102",
+        "T1": "49eadb6706a699db0d9e70b8e14ae520d28e5ddaa2f530f62f82af3e5812c7a7"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "12cfede7709272330d25c6160cde0b0bf8c77843c03e61fd40df693224fa65a9",
+      "label_hash": {
+        "T0": "e1fdeede53970358490705bc39bf29af1c7e4fff5f154a2ce589c93ef3b46058",
+        "T1": "b0e2be52150cde035cf2ec4a650e14f99916625d92dcafadee4cc20df0e01541"
+      },
+      "feature_hash": {
+        "F0": "10fe6c62af1ab2499bd47c1f1dc8791f8a410ce9a8c7d9b96483c0228c2f810d",
+        "F1": "b8a5d553d883b0308eec413d5097a569616206a1387733fab4caa79eb4b39096",
+        "F2": "bad3d91292a91144b43bdc2cc1b241d4fb473d3d182d267b196f639bec04b630"
+      },
+      "median_mv_px": 2.3048861026763916,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1010",
+      "prompt_id": "14adb1a1ba7bef49",
+      "seed": 703,
+      "source_hash": "fa2d8235761cb4d0e85ef31c1f3bdcc4e62b24ee8e1f16583c23ba012bcf3c5b",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "f6c94a95c6804170160f24e504f7df552a04c70a19046be3eaab760c80dbbff0",
+        "T1": "f53ff19be9e3bcb7dd300a74869de93548a5c284a1c79206f038047980374475"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "395bdab9aab54527bbdac1a6326684497c9218eda63aa681e61246710bfdb94d",
+      "label_hash": {
+        "T0": "49df3c17e7126cd06f41f277dbd8554f50fc69ed5677e18184a34a91bffa6490",
+        "T1": "7df0006b97fb3f71d0ef90df59a981b0a0c60fc641660f1b265033e1638fed02"
+      },
+      "feature_hash": {
+        "F0": "eca03e3edb76f8a349c7130346905c8b7bd1bb39d95c4220cc38ab956e1517b0",
+        "F1": "ee6a088ccbc47ba8097906aaee31ef04924c7b376bc7d6e58548d1a7fc3c377c",
+        "F2": "d5567bec6c072d3510364c20cf4ea25d49b65825202a73de052584c69b6619ed"
+      },
+      "median_mv_px": 0.7905694246292114,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1011",
+      "prompt_id": "14adb1a1ba7bef49",
+      "seed": 704,
+      "source_hash": "f5024da2485438c829644ab26d86ebd78cc0395cd2c9378848eb362a5ebd645f",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "3d3dafa8db4d76418e19d76014217e9c080f03358d7a2c43884cfb299b0b05a1",
+        "T1": "a0c8e4635f3c7251e36b471d39fff91fd4be6442309f0f4c583e3b66523526b5"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "da042d82d7b391eccbc1a570be83b5b2b1ef0a184d45ee354aba9a6fd93fb4d9",
+      "label_hash": {
+        "T0": "ae57f1b3e6cd38d8e90c6e05ba6f69507da3d681bdcb491f02c42e4890912d96",
+        "T1": "9e3689713ba7d7908c1ec45ff2db333c6b34be713dd02ee7efd70401dfe535ca"
+      },
+      "feature_hash": {
+        "F0": "e87b2852bf36360fe4ef584cb2b406729116edf5f48d4e33bec7a02587e93fd0",
+        "F1": "469c915f01cca5c5faf5ee1530ed0af2ce8c87f1b4444bfb4848701c67b94b0f",
+        "F2": "313b69ad2b7a4e4bcf640c92e4200c653c45765e3f3ecbd5c9300a9506501852"
+      },
+      "median_mv_px": 0.55901700258255,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1012",
+      "prompt_id": "672c6386586c4fa2",
+      "seed": 701,
+      "source_hash": "4731cef6ff02424afbe4641ef93d0a22134cd08c83e8f71550a28472b549e8d5",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "d9c28f5c803046ff832ba8ba93e27f1c3e7a255904bd00770963ad79a11d2bdc",
+        "T1": "40a16e42442ce57f3abac71a66d0f8dbd4b3b987c35ca4ef96d4d10c479aa829"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "b0bb9e3038bcc89801f94fc2cbcd78cca7df09a04db6486a0e59dabbce5f481d",
+      "label_hash": {
+        "T0": "08ed2865a3051b9580a77614a6b3bc04605aa38da2b103da909695f8089c412d",
+        "T1": "0237e3c4096db02a1050b836250e9faabe8d37aa7b434af89943ec396f11e793"
+      },
+      "feature_hash": {
+        "F0": "65122b223f022f4d2de5c90d0d4aa2857906eb46d69814bfed2e42e0a4ef3991",
+        "F1": "1b2c310c34fb43a5dbf960baa428ff239ee53582874b2f0698482a08138e00e8",
+        "F2": "ec3f5c2ee18348c0a5a8fd0dacf9a9c467fb0abc0bca76cf588d77946d6d0180"
+      },
+      "median_mv_px": 1.0,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1013",
+      "prompt_id": "672c6386586c4fa2",
+      "seed": 702,
+      "source_hash": "ce39d087e49b9bbf67b79e69944dfc1c7e356f7ea9520c79fc74ef70eed251de",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "c02cd26ca225d7a4a7bc167d2083f9d8c3275e42ed773c35c6c40259242e52e0",
+        "T1": "9271918f89b4ac455ab306e0d241a4b07c0f6f0c3431af819324ebbbe612c907"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "f0a59cd32adace410a3bcac48051ab548764148e6a762d1cddb6dd798dc7f78a",
+      "label_hash": {
+        "T0": "b826bc67c7edb2656ae723f804f6558f964200ff5b7c761f8f9941108f818c63",
+        "T1": "30ffb431c69a7fe3d124f4a0542e75a5bf65b3914191d1fb6af1ff69b5227501"
+      },
+      "feature_hash": {
+        "F0": "f5f903f30133b306b3b93ccb222ffa0eac248f9f83d7dbc2949c337e53458171",
+        "F1": "9732faaf4ab61f9fef8df8c923a044944062153e8b0d5b5324f8665cd8091b77",
+        "F2": "ba3fa1de0bb82ae4a9708059d9ac3b374364194d17f31cac2d9678774a1e5931"
+      },
+      "median_mv_px": 0.7905694246292114,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1014",
+      "prompt_id": "672c6386586c4fa2",
+      "seed": 703,
+      "source_hash": "e5f6641dbfac4731ecfa6a75d085170966ced2d6aacae708735c1565eb42fe93",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "5118becc76ee340e4ecab4ba0b95ac68c0a1e5d6cd71a41ac00cc4e68a7d8947",
+        "T1": "8f0c3e5d9601e071c343a8522eafe06b1c6eba84fc50dbdc9a126dfa5688f2b5"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "dc8b1857362eecbdb05bbe4a8418f759ff8d20cf3c5d54fc6dcee8fc78b1a565",
+      "label_hash": {
+        "T0": "c4ec9b4391ef94ff4d33647bf01f27f1bf716722a74baaddbbda73d434d2d0fa",
+        "T1": "c78745f1e6cef3bd5f95e72bccdc76f4b326182261381dd9bc917ca7735b49a7"
+      },
+      "feature_hash": {
+        "F0": "7cd29a3b37a1878c7753ff7a7315cca4fb17a3afc527edc6b665529ee9bb17ce",
+        "F1": "1014986d54a99edf273833df6f964c2fadb54ab1753dbc5c0aab07eb07c6c4ad",
+        "F2": "75c1fcde3472c253eee78b57f7e4ec3ffe9324b636af48655c6db0774eb77b14"
+      },
+      "median_mv_px": 0.55901700258255,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1015",
+      "prompt_id": "672c6386586c4fa2",
+      "seed": 704,
+      "source_hash": "0caa018ebe8611afc97d1907e7a7e84c450687cf6f7a9f0e1202860473a214fc",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "49776716ac3cefbf0926d72493cfc9c41d1ca1aa8d71dbae36d022f1818f0d34",
+        "T1": "97467a87dcea41fce7e0defe5b9440f2851d889f674d8bce92f373882bc30084"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "77fbecfb03349601c6b1af4859f80a81432901677fb9db5acb8517c25baff40d",
+      "label_hash": {
+        "T0": "d4d6bf9337940d0078746e414dd6e3e5766f4380abfcc26edfc17cf42c966a00",
+        "T1": "6ef9b9f7a3ddf7e1c44b84e8f2b2c49d1713248748bfc12d5dda6ca119ef19a6"
+      },
+      "feature_hash": {
+        "F0": "146d0d2575010eaf05bd0f5cb6d8f70a426e7c8dc6bdd0bd280a0d34e3a870ff",
+        "F1": "339af0fdbe128e77f945234c2bc1d3406d031d662335fa1cde1227b4ca5b0645",
+        "F2": "a6147cee218aceeffdebd545a79e2aa7b91b0eed2db8aaa497d7af9cc6223a2a"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1016",
+      "prompt_id": "1b432500a7e8f101",
+      "seed": 701,
+      "source_hash": "4ba6578d3525413a2c9ede116810809553eb3b79df090cba6c1a7cfa2a3082c9",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "e12f1e7f0f8719e9b6e45a9a13aa31768339237d75e8b14397ca231ed838656a",
+        "T1": "57ef42d721371672f5d2387330cb8a0e795fbe0ea1e51c5f07c910f151fcfd56"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "f782f8258ac98561fb76515e41af420b978dfa604a349f2fbc850c606aa5db8e",
+      "label_hash": {
+        "T0": "3ae68f8d470b7c1d01b94a826e797c05c557377bdf11f353ee76b281fccbc8d9",
+        "T1": "00c0173b183216719c51ddc30190120d70c3ba3c26062d38927ab76f6acdaf5f"
+      },
+      "feature_hash": {
+        "F0": "fc958801e1d7ac0b21a6500fcc59b0e42b954cd1ca2b5af9adf4fd320219c2ab",
+        "F1": "31f00e935ca7aeba4de696c439fd4b25fc21a0d55d89ae35b08135ae321c4e83",
+        "F2": "627f95ff3e528c5e843c299c0c91a25f3683aa559ec62e950f1bf757d4912ea5"
+      },
+      "median_mv_px": 1.75,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1017",
+      "prompt_id": "1b432500a7e8f101",
+      "seed": 702,
+      "source_hash": "0522da5e40d55d9c32b70953887dd22009c32f7356d1c454606320e0aee0a82f",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "bc816a7ffff53836baa2fca303277fb47cf552a69013ac9913f681d467339dc4",
+        "T1": "ffcae6c567d1080658b9587e6397e096405c0d2c9b68873cce877495a1989809"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "a97d546878deb24857f53de483af9763732aad89ede58115a1d1cd4e5cf5972a",
+      "label_hash": {
+        "T0": "52283ec060014f8c5bbf0d85a14f93ec3a4a2be09e5c872c2ff9cf1804d4ef05",
+        "T1": "c8ef16c80b2a5a10f229b53501098bd8cbd4ba042e262d07b65b8f48d8be487d"
+      },
+      "feature_hash": {
+        "F0": "6f7c55022d379329e3ca5596c94e6e3845bf21e6288c0d222af304cdcd45b079",
+        "F1": "b87d8eb0e0e33e704df9a4973912988693d7559c7b5f02b78b505bdf73c1eeaa",
+        "F2": "fe1c543aa708bcf0ae2618dc867b3ef4bbf8d99df88223ab8b82018d9420b26d"
+      },
+      "median_mv_px": 2.0615527629852295,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1018",
+      "prompt_id": "1b432500a7e8f101",
+      "seed": 703,
+      "source_hash": "13a41df87ae2fec00059b4d1874bedce2e13576dbfcc2604b1ad5da62e121667",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "7642d86a096aa9535b960655cef4114b0cca5e11828546498ba9ce4a59e550b0",
+        "T1": "21ec444f76c01de604f29f87fd110bad9d3ac3c5a55fbe32b1173394eb011d0d"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "1fffb1300e0363669c1cea56c344c116bccb5abe3c2ef013ac6fba61d7fdc294",
+      "label_hash": {
+        "T0": "a2e189cc300963214ad45dd5210e345bdd983c521b7cc35e5d615d21a57c9897",
+        "T1": "10c12ab95d0294f1f01ab8c14fdd65c753ba53e2e3836f9921ae74fb75d0c105"
+      },
+      "feature_hash": {
+        "F0": "0f86c4fbd87f2f47dad782bd820ef292757b04a60eb88338222ba9b3c78a24a2",
+        "F1": "5a83c2408080cf835edf80792c44a7b5dcd686e9d80a43c8d0b3091d53e67ce0",
+        "F2": "3854efb691d4f5b25f21e91e98cc6485fa9f8d873eecc0f82633c7d8e28de931"
+      },
+      "median_mv_px": 0.7905694246292114,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1019",
+      "prompt_id": "1b432500a7e8f101",
+      "seed": 704,
+      "source_hash": "0b561a6fad0cb60024c549673ba8e7b2a7f3006cd75c6889fa49b6e7e2a7684a",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "c02acb4e1665d93e348ecf5e57590f098bf53e0ed85c9a4dbb2b402106f5d1b8",
+        "T1": "05ff980e4da3c40bf145feb7184f3e8e83e03f7b7a564c260b4821012249ac67"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "41643a62ba82c4263074c960ab5b15100bdf27daf4f477deadb9ee21a5f9ed12",
+      "label_hash": {
+        "T0": "b8f43bf9989854cc20f64a0c9f208c1bde3f627a151c0ca352dc0902504f42da",
+        "T1": "c1f8b724b727a26e1bd5244b38e214926a75f06cac4de9d7dd4489f9dfcc78b9"
+      },
+      "feature_hash": {
+        "F0": "0677d1735d04043fb1885fd7aaafbf2bcad6072460fc2ba70534841a768ebce5",
+        "F1": "0c5d8e7470f9cbdcd8661f73e519126c5f524f8db96b1555c29a0a72038b351d",
+        "F2": "1ee475cbf39c743a01d1dec0b6ea3fbbe165ce219053448fac25bcba6e8104ef"
+      },
+      "median_mv_px": 0.75,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1020",
+      "prompt_id": "1ed499089ac25939",
+      "seed": 701,
+      "source_hash": "e276b0afc808d5a7a17cabade0277d3f1290b7263d114691cd48a452cb62d606",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "50f70e409e652123854828b41424f3cef255b4a2c9b00919fb09ae9fc13e43f2",
+        "T1": "218202432d86a869a0888afee9d55ad59cbe34d25c9f146fbfd3e124765c9dd8"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "7baf94adba4c56849e3f5dd6049393d93080de9f0bf0e8aff48c0babf9f49693",
+      "label_hash": {
+        "T0": "644788b0dd6be3b63e46abaa82a068f7b85fe0c29e0c75c0316f74861f1fc7c3",
+        "T1": "44634c14c9a2d6955e8e2d7ce168c4f9685a83dc87bdeb4e76242c684b59b570"
+      },
+      "feature_hash": {
+        "F0": "52be15af0e57dfa805734739f1c7f7478edcd00d1aa84bddb588a52c3fa56ef4",
+        "F1": "b13917fe3d223b687694a48963f9f9517b0f877ea3a9479d9e6c261855cd59c5",
+        "F2": "6a61fcde9ecf7f01d5bc2e4bf8f306efb38c4cad94199f2041f2153ef45050b8"
+      },
+      "median_mv_px": 0.3535533845424652,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1021",
+      "prompt_id": "1ed499089ac25939",
+      "seed": 702,
+      "source_hash": "beabd33b9b403f3fa33b26677c35a2fa4d28005a630a263e2fbababf2ac4d05d",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "7be069380908178792c27e1eff765d0f9de465343009f52d82b36c0e69b990df",
+        "T1": "9a1621e4ea3c80c0395364b1fae273245d0ee672c4f8b525780e479ace02f6c0"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "341348a25cf12a84591bd324530bf1d57e497e3ab4616c8905a8868a836c4dad",
+      "label_hash": {
+        "T0": "a844eae9dc26ad9e16b115be48efd56ee1b914200c5ee320a9ddca994fb3308e",
+        "T1": "7539b05b1853baeb7f1425b7721ef9e75a7169c73baccefc8ee000f76f1d3554"
+      },
+      "feature_hash": {
+        "F0": "694054467fd804bf630b76657e3e4bfdc54f5bc087e51f490052f77930eb76f5",
+        "F1": "2d1b2e27938955f27ff57f92f58d0169ca15fc882c62bcc4230566d01be1bfdd",
+        "F2": "70d246dafc70de6b2b56b6aa3ab7571dad29253d6298c9e90ee0e889dfea9121"
+      },
+      "median_mv_px": 0.3535533845424652,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1022",
+      "prompt_id": "1ed499089ac25939",
+      "seed": 703,
+      "source_hash": "90a56112d3db4e26b07802294772eace3db4bd5011673cfd4aa71afce290d852",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "eec3e8e4d701f59afb0c410a32447e4db8ce8c14157519ba80fb4d7f9b75ec82",
+        "T1": "d61709882f4bd9fcedde1fbd13887505d562b1566772c0f09795c56f6cf919cc"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "bcaf29f721fddc1819f03d9a210e7047f238763e0fc14439eb926411a9ccf3ba",
+      "label_hash": {
+        "T0": "22cfa9edeb59f8309744fbe41f48a898ce45c2626f9150157499b46219d066b8",
+        "T1": "8c4b3b3d03e8e050f836c13eaff5d7034b70749cb10570b32a5dc5b50210e993"
+      },
+      "feature_hash": {
+        "F0": "19c02ee5877872afa515384120693bc90f8e0f23e1a58b814693181745702242",
+        "F1": "30a6c273a5434ca0eb3779497c3d5fca0ef1d975d19b55f2377c459edce0fd73",
+        "F2": "ae740efbb3765c16d9468254979bf3b27350f89b5083063979de3c52efda8e7d"
+      },
+      "median_mv_px": 0.55901700258255,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    },
+    {
+      "video_id": "sample_1023",
+      "prompt_id": "1ed499089ac25939",
+      "seed": 704,
+      "source_hash": "f8c3461afc9e51f06d8346596a2852b5cbe8ee0d920a33a3f489684d0fd1afd7",
+      "split": "train_pool",
+      "frame_id": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "step_id": 20,
+      "feature_layer": "F0 frozen step20 / F1 cached final block / F2 clean latent",
+      "reference_trajectory_id": {
+        "T0": "5b904ffbe06aa9f01c08772beeceec6bc02359ac130a69d71734f31252413bbf",
+        "T1": "ac51fbb80d2ff3e6ef5f6e48a593719bc456501e0bdf7c0e933dd8faf14ede65"
+      },
+      "label_generator_version": "963001586f01a4008307cf2221050f0de7b52e3d: O0/L1",
+      "qp": 28,
+      "mode_mv_source": "frozen A",
+      "candidate_mask_hash": "79869183cbd233a37324c1d15879290af0e6c512abfdecfb5484f5cde2b870cb",
+      "label_hash": {
+        "T0": "6b149397789fef249cd8eae43418ecb8d0b64325b8cedaceca4de40e7c0646ee",
+        "T1": "080af59ce27ef3d4fa4086ff25c452ef66f4f7bcd6d76ef4b55103e1cf32905b"
+      },
+      "feature_hash": {
+        "F0": "aff80a214ac3e876a542c91ba64c746a85935bd0fe0b2637a121771eaa5e925c",
+        "F1": "e965f67b8f0a222621ebbd3a29914b3499e5a244f0f23debd2e114775f4c3dd0",
+        "F2": "d6358f68c48a135b0c0766d7d0779ab34ecf5d1d7c8e01dd7421e6d48a6ed393"
+      },
+      "median_mv_px": 0.25,
+      "reason_for_grouping": "exact manifest prompt identity, generated seed, distinct full-source and frame hashes"
+    }
+  ],
+  "folds": [
+    {
+      "A": [
+        "sample_0000",
+        "sample_0004",
+        "sample_0008",
+        "sample_0012",
+        "sample_0016",
+        "sample_1000",
+        "sample_1004",
+        "sample_1008"
+      ],
+      "B": [
+        "sample_0001",
+        "sample_0002",
+        "sample_0003",
+        "sample_0005",
+        "sample_0006",
+        "sample_0007",
+        "sample_0009",
+        "sample_0010",
+        "sample_0011",
+        "sample_0013",
+        "sample_0014",
+        "sample_0015",
+        "sample_0017",
+        "sample_0018",
+        "sample_0019",
+        "sample_1001",
+        "sample_1002",
+        "sample_1003",
+        "sample_1005",
+        "sample_1006",
+        "sample_1007",
+        "sample_1009",
+        "sample_1010",
+        "sample_1011"
+      ],
+      "C": [
+        "sample_1012",
+        "sample_1013",
+        "sample_1014",
+        "sample_1015",
+        "sample_1016",
+        "sample_1017",
+        "sample_1018",
+        "sample_1019",
+        "sample_1020",
+        "sample_1021",
+        "sample_1022",
+        "sample_1023"
+      ],
+      "D": [
+        "sample_1012",
+        "sample_1013",
+        "sample_1014",
+        "sample_1015",
+        "sample_1016",
+        "sample_1017",
+        "sample_1018",
+        "sample_1019",
+        "sample_1020",
+        "sample_1021",
+        "sample_1022",
+        "sample_1023"
+      ],
+      "D_far": []
+    },
+    {
+      "A": [
+        "sample_0013",
+        "sample_0017",
+        "sample_1001",
+        "sample_1005",
+        "sample_1009",
+        "sample_1013",
+        "sample_1017",
+        "sample_1021"
+      ],
+      "B": [
+        "sample_0012",
+        "sample_0014",
+        "sample_0015",
+        "sample_0016",
+        "sample_0018",
+        "sample_0019",
+        "sample_1000",
+        "sample_1002",
+        "sample_1003",
+        "sample_1004",
+        "sample_1006",
+        "sample_1007",
+        "sample_1008",
+        "sample_1010",
+        "sample_1011",
+        "sample_1012",
+        "sample_1014",
+        "sample_1015",
+        "sample_1016",
+        "sample_1018",
+        "sample_1019",
+        "sample_1020",
+        "sample_1022",
+        "sample_1023"
+      ],
+      "C": [
+        "sample_0000",
+        "sample_0001",
+        "sample_0002",
+        "sample_0003",
+        "sample_0004",
+        "sample_0005",
+        "sample_0006",
+        "sample_0007",
+        "sample_0008",
+        "sample_0009",
+        "sample_0010",
+        "sample_0011"
+      ],
+      "D": [
+        "sample_0000",
+        "sample_0001",
+        "sample_0002",
+        "sample_0003",
+        "sample_0004",
+        "sample_0005",
+        "sample_0006",
+        "sample_0007",
+        "sample_0008",
+        "sample_0009",
+        "sample_0010",
+        "sample_0011"
+      ],
+      "D_far": []
+    }
+  ]
+}
