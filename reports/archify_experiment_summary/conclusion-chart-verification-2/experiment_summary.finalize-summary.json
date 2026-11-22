@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/candidate.archify.md",
+    "sha256": "4a883c84568fb161ceb46788558d9d45158861db080dec6c69a1fcbed9cbb4ff",
+    "bytes": 4074
+  },
+  "artifact": {
+    "path": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/experiment_summary.html",
+    "sha256": "ef9a42b149faaa1ae03a88ec7a26c54dfd977231ebb5642ff51ec087ca16ce57",
+    "bytes": 1652756
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/conclusion-chart-verification-2/experiment_summary.finalize.json",
+    "summaryReceipt": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/conclusion-chart-verification-2/experiment_summary.finalize-summary.json",
+    "browserCheckReceipt": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/conclusion-chart-verification-2/experiment_summary.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-22T09:05:40.745Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4401,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

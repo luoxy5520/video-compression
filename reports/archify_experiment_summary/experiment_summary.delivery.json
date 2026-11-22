@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d543b1cf-cb04-4063-be64-4ea21078fb19",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/candidate.archify.md",
+  "output": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/experiment_summary.html",
+  "specification": {
+    "sha256": "4a883c84568fb161ceb46788558d9d45158861db080dec6c69a1fcbed9cbb4ff",
+    "bytes": 4074
+  },
+  "artifact": {
+    "sha256": "ef9a42b149faaa1ae03a88ec7a26c54dfd977231ebb5642ff51ec087ca16ce57",
+    "bytes": 1652756
+  },
+  "explainer": {
+    "preparedSha256": "014e2af6b0212175ea6489d1020e7905f3f01886f329389f3c56daaff8bc230e",
+    "dependencies": [
+      {
+        "kind": "image",
+        "id": "measured-conclusion",
+        "path": "/Users/a1/Documents/note/doc/多模态/视频压缩/reports/archify_experiment_summary/conclusion_chart.png",
+        "sha256": "ff476f84307bab05b0f6d731041b46e86221b9d9e4154d8205ad401a2d72a10e",
+        "bytes": 208249
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "codec-flow",
+        "inline": true,
+        "sha256": "11de29681dcf34200212240ca4522997aa7443967a60220b91309cab8992d921",
+        "bytes": 1081
+      }
+    ]
+  }
+}
