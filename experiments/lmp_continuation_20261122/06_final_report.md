@@ -88,7 +88,7 @@ C0 的链路稳定轮次为 0.976–0.997 s、1.128–1.130 s。按链路中位�
 
 ## 9. Git 与复现
 
-服务器归档分支 `codex/lmp-continuation-20261122`，代码与配置提交 `1a74db16e86292c768bb269d76e30372f930e9a5`，继承已核验的历史实验提交 `f080a451831e89a59948006c4299bca698fdfef6`。编译、先验生成、编码、质量评价与汇总命令见 `README.md`。编译使用 `make -j4 CFLAGS=-fcommon`，保留历史码流一致的设置。补充阶段计时提交为 `14527e4ebed630c1896fea8a788af4321c38ffb7`。GitHub 归档发布基于远端已有提交 `306dd73a2e064c0ee6a2cb4afe7cb0ab2eeb1d94`，因此不会携带旧的未发布实验提交。完整配置、平台和构建指纹见 `logs/environment.json`。
+服务器归档分支 `codex/lmp-continuation-20261122`，代码与配置提交 `1a74db16e86292c768bb269d76e30372f930e9a5`，继承已核验的历史实验提交 `f080a451831e89a59948006c4299bca698fdfef6`。编译、先验生成、编码、质量评价与汇总命令见 `README.md`。编译使用 `make -j4 CFLAGS=-fcommon`，保留历史码流一致的设置。补充阶段计时提交为 `14527e4ebed630c1896fea8a788af4321c38ffb7`。GitHub 待发布提交 `b3658a1896e79f40af68234a82ec95a0e9c7f451` 基于远端已有提交 `306dd73a2e064c0ee6a2cb4afe7cb0ab2eeb1d94`，只包含本轮文件。自动审批拦截推送，要求明确确认私有实验源码、报告和统计向该仓库的外发许可。完整配置、平台和构建指纹见 `logs/environment.json`。
 
 ## 10. 科研判断
 
