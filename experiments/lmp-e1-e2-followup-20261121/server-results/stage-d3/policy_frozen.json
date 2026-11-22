@@ -1,0 +1,7 @@
+{
+  "native_stop_multiplier": 2,
+  "dit_gated": "same multiplier only if cached latent seed improves live initial cost",
+  "seed_count": 1,
+  "QP": 28,
+  "search_mode": 3
+}

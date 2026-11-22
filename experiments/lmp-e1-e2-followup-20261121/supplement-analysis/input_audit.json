@@ -1,0 +1,242 @@
+[
+  {
+    "sample": "sample_0000",
+    "kind": "raw",
+    "sha256": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0000/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_0000",
+    "kind": "latent",
+    "sha256": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt"
+  },
+  {
+    "sample": "sample_0000",
+    "kind": "hidden",
+    "sha256": "fa8a0929022caa838dc116d0771c86dbd4eed2a325e61e56ddd59ef407b4bb45",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_0000",
+    "kind": "labels",
+    "sha256": "fc39e4be36aa9a17c23736d49a6fbe62706936006b47a0f6c17d34cfdec40360",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/training_dataset/labels/sample_0000__step-20.npz"
+  },
+  {
+    "sample": "sample_0004",
+    "kind": "raw",
+    "sha256": "12a6d9d277f26e04310068af21e3983342d2893a3414096ee02679c166f886e2",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0004/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_0004",
+    "kind": "latent",
+    "sha256": "6579563c8e7b3889425a1f23bc6adfb9e18d9c70dcfe641f9e04fc06c10680ee",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt"
+  },
+  {
+    "sample": "sample_0004",
+    "kind": "hidden",
+    "sha256": "83dd8fdeb876e12aa5e0f8a8d9a6e3115d87b688bae33d60aff313804933491f",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_0004",
+    "kind": "labels",
+    "sha256": "4ec4c2a5d5f6b09935b9f68b3b300336824910ea2028c0ff12710951a7207aba",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/training_dataset/labels/sample_0004__step-20.npz"
+  },
+  {
+    "sample": "sample_0008",
+    "kind": "raw",
+    "sha256": "17b3121f7460e08b2be8a0f98121c9606db08d90b93ed30ff64c1c77f3394e4d",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0008/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_0008",
+    "kind": "latent",
+    "sha256": "e955bc93215019e6bd36f1faa828f595988759c92bb6a88eb6cc9cc14b11ecb5",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt"
+  },
+  {
+    "sample": "sample_0008",
+    "kind": "hidden",
+    "sha256": "22f98bab4732f037eec64de4f761cb8c8dc20499fc03f968c485c4884727121e",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_0008",
+    "kind": "labels",
+    "sha256": "ac3e59cc4417baf298aec5a1d7c14698d47a0159933cddf52db98b9fd6412b9b",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/training_dataset/labels/sample_0008__step-20.npz"
+  },
+  {
+    "sample": "sample_0012",
+    "kind": "raw",
+    "sha256": "b8e8ebfd0835f1d45ad6ee5d8df644d5ead1fe82312ccff02bc20e28a0eadcf1",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0012/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_0012",
+    "kind": "latent",
+    "sha256": "5eb370a1a6e8ec6b2156b0f37073aeb7d96bfc6ee7c06620b4e8bb1d983a6c44",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt"
+  },
+  {
+    "sample": "sample_0012",
+    "kind": "hidden",
+    "sha256": "1e263f3ac7648fb7d2515a390feaa6e42327e98cdde4af642f30898d360365cf",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_0012",
+    "kind": "labels",
+    "sha256": "5065e4d9118a5a92f0b3da5727e46c689d709d6a37fd2a9c1062c23b16677375",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/training_dataset/labels/sample_0012__step-20.npz"
+  },
+  {
+    "sample": "sample_0016",
+    "kind": "raw",
+    "sha256": "6c10f88334ed2b8d5ead0b2eee8db8b0985692530efecc5806283258ba1bf3c0",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0016/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_0016",
+    "kind": "latent",
+    "sha256": "19b9f19ac89af4ec9c921be4136d13d92fa714883bcf10a7480bf0a802f2825d",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+  },
+  {
+    "sample": "sample_0016",
+    "kind": "hidden",
+    "sha256": "29418b2c8617a05534d5ed9b4a864a547aa5c391196244ef162e68cfa54d82bc",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_0016",
+    "kind": "labels",
+    "sha256": "4d7fdc2d47fcdc709bd800ee3beddbd7e73f83d9d9c524e942899b4c97ef644c",
+    "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/training_dataset/labels/sample_0016__step-20.npz"
+  },
+  {
+    "sample": "sample_1000",
+    "kind": "raw",
+    "sha256": "8a5f59d04d82d64d750236cbae8d6d9f50d832e369979ba1c6959a3f436aadb2",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1000/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_1000",
+    "kind": "latent",
+    "sha256": "adfb3b6bac8ee5162206022fed410f97296fdb1172c6497a5f28d035a51cbf82",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1000/final_latent.pt"
+  },
+  {
+    "sample": "sample_1000",
+    "kind": "hidden",
+    "sha256": "732b5626c20bf3cf5cea5bcc5428b600db1f2691bf6bfed3f727fbdc68df4214",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1000/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_1000",
+    "kind": "labels",
+    "sha256": "356659eb1e3576d2076ffb6319a3bcbc8e70c67cc1ea2fc421703620ad8d03b9",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/training_dataset/labels/sample_1000__step-20.npz"
+  },
+  {
+    "sample": "sample_1004",
+    "kind": "raw",
+    "sha256": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1004/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_1004",
+    "kind": "latent",
+    "sha256": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt"
+  },
+  {
+    "sample": "sample_1004",
+    "kind": "hidden",
+    "sha256": "9b3e77553771373c53dee74ced80b2989d830701ac87df8dfec71642d7935fe4",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_1004",
+    "kind": "labels",
+    "sha256": "6d5603f3cb2da1ee9687bcc47d453b80f8f932d76af41d3c32fb172650bf3cb4",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/training_dataset/labels/sample_1004__step-20.npz"
+  },
+  {
+    "sample": "sample_1008",
+    "kind": "raw",
+    "sha256": "0666a2c41d7e40dd4702c78af45b0c5cb86fd694f30ad2764864eacf3afc6d75",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1008/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_1008",
+    "kind": "latent",
+    "sha256": "7afd76de5a5f35a0f6a51b28831b05805609598b44a4a38e95efe848fcad93e3",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1008/final_latent.pt"
+  },
+  {
+    "sample": "sample_1008",
+    "kind": "hidden",
+    "sha256": "ef6dbc0e15bcdcc1b4700f9c5a04b1e3e94e85436904bc64d874157f221c3b26",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1008/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_1008",
+    "kind": "labels",
+    "sha256": "15d1eed9e298688af9858b582f1431473ea2427377f01d87d860f1feb8f90243",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/training_dataset/labels/sample_1008__step-20.npz"
+  },
+  {
+    "sample": "sample_1028",
+    "kind": "raw",
+    "sha256": "00b55bd00345b917f65d7c7cd6068895542e7884804fe63ca5c2442dc4fe1504",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1028/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_1028",
+    "kind": "latent",
+    "sha256": "392056c401984b181c4960ca6b3b8937521ff47c6fabf38ef012508c3c0371af",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/final_latent.pt"
+  },
+  {
+    "sample": "sample_1028",
+    "kind": "hidden",
+    "sha256": "d28e1b106b2655f4ca1133ed257e787e130c0b6440800bca1df0d04a15fecf57",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_1028",
+    "kind": "labels",
+    "sha256": "156cb80dcfd6c010177ac5c3a31024a44583a9167e082bf64c36d2f533b03c0a",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/training_dataset/labels/sample_1028__step-20.npz"
+  },
+  {
+    "sample": "sample_1029",
+    "kind": "raw",
+    "sha256": "e8893e6ae9faaf5c7f34e362f99e30980c6ef76709913a2ae5c5d3515009f558",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1029/step_020/input_yuv420p.yuv"
+  },
+  {
+    "sample": "sample_1029",
+    "kind": "latent",
+    "sha256": "7266777b1bcb8821a33579b07abcf7c42e3852eafb5b347f8be14fe960f4aa1d",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/final_latent.pt"
+  },
+  {
+    "sample": "sample_1029",
+    "kind": "hidden",
+    "sha256": "0fd5799f724f35d0d28c88831e3b83cbf1bdcd414e8c2136bc0711dee0d627c8",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/step_020/hidden_cond_last_block.pt"
+  },
+  {
+    "sample": "sample_1029",
+    "kind": "labels",
+    "sha256": "3adb58784af5fa4bafc087574a4d37727f0fa1c4b97289c8cf57ed2b57267914",
+    "path": "/home/luoxiangyu/a_new48_20261107/kit/output/training_dataset/labels/sample_1029__step-20.npz"
+  }
+]

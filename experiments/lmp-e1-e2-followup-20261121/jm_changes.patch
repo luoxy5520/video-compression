@@ -1,0 +1,446 @@
+--- a/lencod/src/me_hme.c
++++ b/lencod/src/me_hme.c
+@@ -1,3 +1,4 @@
++extern unsigned long long lmp_ie,lmp_se;
+ 
+ /*!
+ *************************************************************************************
+@@ -1222,7 +1223,7 @@
+   min_mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+ 
+   //--- add residual cost to motion cost ---
+-  min_mcost += mv_block->computePredFPel (ref_picture, mv_block, DISTBLK_MAX-min_mcost, &cand);
++  min_mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, DISTBLK_MAX-min_mcost, &cand);
+ 
+   //check another predictor;
+   //tmv = pic_mv[mv_block->pos_y2][mv_block->pos_x2];
+@@ -1238,7 +1239,7 @@
+       mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+       if(mcost < min_mcost)
+       {
+-        mcost += mv_block->computePredFPel (ref_picture, mv_block, min_mcost-mcost, &cand);
++        mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, min_mcost-mcost, &cand);
+ 
+         if((mcost < min_mcost))
+         { //small enough, then early terminate;
+@@ -1331,7 +1332,7 @@
+ 
+           if (mcost < second_mcost)
+           {
+-            mcost += mv_block->computePredFPel (ref_picture, mv_block, second_mcost - mcost, &cand);
++            mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, second_mcost - mcost, &cand);
+             
+             //--- check if motion cost is less than minimum cost ---
+             if (mcost < min_mcost)
+@@ -1406,7 +1407,7 @@
+                 mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+                 if (mcost < min_mcost)
+                 {
+-                  mcost += mv_block->computePredFPel (ref_picture, mv_block, min_mcost - mcost, &cand);
++                  mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+               
+                   if (mcost < min_mcost)
+                   {
+--- a/lencod/src/me_epzs_sub.c
++++ b/lencod/src/me_epzs_sub.c
+@@ -1,3 +1,4 @@
++extern unsigned long long lmp_ie,lmp_se;
+ 
+ /*!
+ *************************************************************************************
+@@ -71,7 +72,7 @@
+     mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred_mv);        
+     if (mcost < second_mcost)
+     {
+-      mcost += mv_block->computePredHPel(ref_picture, mv_block, second_mcost - mcost, &cand);
++      mcost += mv_block->computePredHPel((++lmp_se, ref_picture), mv_block, second_mcost - mcost, &cand);
+ 
+       if (mcost < min_mcost)
+       {
+@@ -109,7 +110,7 @@
+ 
+         if (mcost < min_mcost)
+         {
+-          mcost += mv_block->computePredHPel( ref_picture, mv_block, min_mcost - mcost, &cand);
++          mcost += mv_block->computePredHPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+           if (mcost < min_mcost)
+           {
+@@ -156,7 +157,7 @@
+ 
+     if (mcost < second_mcost)
+     {
+-      mcost += mv_block->computePredQPel(ref_picture, mv_block, second_mcost - mcost, &cand);
++      mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, second_mcost - mcost, &cand);
+ 
+       if (mcost < min_mcost)
+       {
+@@ -191,7 +192,7 @@
+ 
+         if (mcost < min_mcost) 
+         {
+-          mcost += mv_block->computePredQPel(ref_picture, mv_block, min_mcost - mcost, &cand);
++          mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+           if (mcost < min_mcost)
+           {
+--- a/lencod/src/me_umhex.c
++++ b/lencod/src/me_umhex.c
+@@ -1,3 +1,4 @@
++extern unsigned long long lmp_ie,lmp_se;
+ 
+ /*!
+  ************************************************************************
+@@ -277,7 +278,7 @@
+   cand = center;
+   mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+ 
+-  mcost += mv_block->computePredFPel(ref_picture, mv_block, min_mcost - mcost, &cand);
++  mcost += mv_block->computePredFPel((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+   p_UMHex->McostState[search_range][search_range] = 1;
+   if (mcost < min_mcost)
+@@ -542,7 +543,7 @@
+     cand = *mv;
+     mcost = mv_cost (p_Vid, lambda_factor, &cand, pred_mv);
+     cand_pad = pad_MVs (cand, mv_block); //cand = pad_MVs (cand, mv_block);
+-    mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cand_pad); //&cand);
++    mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand_pad); //&cand);
+ 
+     if (mcost < min_mcost)
+     {
+@@ -564,7 +565,7 @@
+     p_UMHex->SearchState[cand.mv_y -mv->mv_y + dynamic_search_range][cand.mv_x - mv->mv_x + dynamic_search_range] = 1;
+     cand_pad = pad_MVs (cand, mv_block); //cand = pad_MVs (cand, mv_block);
+ 
+-    mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cand_pad); //&cand);
++    mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand_pad); //&cand);
+ 
+     if (mcost < min_mcost)
+     {
+@@ -591,7 +592,7 @@
+           mcost = mv_cost (p_Vid, lambda_factor, &cand, pred_mv);
+           cand_pad = pad_MVs (cand, mv_block); //cand = pad_MVs (cand, mv_block);
+ 
+-          mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cand_pad); // &cand);                    
++          mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand_pad); // &cand);                    
+           if (mcost < min_mcost)
+           {
+             min_mcost = mcost;
+--- a/lencod/src/mv_search.c
++++ b/lencod/src/mv_search.c
+@@ -1,3 +1,11 @@
++#include <time.h>
++#include <stdlib.h>
++#include <stdio.h>
++unsigned long long lmp_ie=0,lmp_se=0;
++static double lmp_it=0,lmp_st=0;
++static double lmp_now(void){struct timespec t;clock_gettime(CLOCK_MONOTONIC,&t);return t.tv_sec+t.tv_nsec*1e-9;}
++static void lmp_report(void){fprintf(stderr,"LMP_PROFILE {\"integer_s\":%.9f,\"subpixel_s\":%.9f,\"integer_evals\":%llu,\"subpixel_evals\":%llu}\n",lmp_it,lmp_st,lmp_ie,lmp_se);}
++static int lmp_ready=0;
+ 
+ /*!
+  *************************************************************************************
+@@ -957,7 +965,7 @@
+   clip_mv_range(p_Vid, 0, mv, Q_PEL);
+ 
+   //--- perform motion search ---
+-  min_mcost = currMB->IntPelME (currMB, &pred, mv_block, min_mcost, lambda_factor[F_PEL]);
++  { double lmp_t; if(!lmp_ready){atexit(lmp_report);lmp_ready=1;} lmp_t=lmp_now(); min_mcost = currMB->IntPelME (currMB, &pred, mv_block, min_mcost, lambda_factor[F_PEL]); lmp_it += lmp_now()-lmp_t; }
+ 
+   //==============================
+   //=====   SUB-PEL SEARCH   =====
+@@ -972,7 +980,7 @@
+       {
+         min_mcost = max_value;
+       }
+-      min_mcost =  currMB->SubPelME (currMB, &pred, mv_block, min_mcost, lambda_factor);
++      { double lmp_t; if(!lmp_ready){atexit(lmp_report);lmp_ready=1;} lmp_t=lmp_now(); min_mcost =  currMB->SubPelME (currMB, &pred, mv_block, min_mcost, lambda_factor); lmp_st += lmp_now()-lmp_t; }
+     }
+   }
+ 
+--- a/lencod/src/me_epzs_int.c
++++ b/lencod/src/me_epzs_int.c
+@@ -1,3 +1,10 @@
++#include <stdio.h>
++#include <stdlib.h>
++static short lmp_candidates[16*30*52*8*2];
++static int lmp_loaded=0;
++static int lmp_mode(void){char *s=getenv("LMP_MODE");return s?atoi(s):0;}
++static int lmp_load(void){FILE *f;char *s;if(lmp_loaded)return lmp_loaded>0;s=getenv("LMP_CANDIDATES");if(!s)return 0;f=fopen(s,"rb");if(!f)return 0;lmp_loaded=fread(lmp_candidates,sizeof(short),16*30*52*8*2,f)==16*30*52*8*2?1:-1;fclose(f);return lmp_loaded>0;}
++extern unsigned long long lmp_ie,lmp_se;
+ 
+ /*!
+ *************************************************************************************
+@@ -100,9 +107,31 @@
+   min_mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+ 
+   //--- add residual cost to motion cost ---
+-  min_mcost += mv_block->computePredFPel (ref_picture, mv_block, DISTBLK_MAX - min_mcost, &cand);
+-
+-
++  min_mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, DISTBLK_MAX - min_mcost, &cand);
++
++
++  /* Cached latent proposal; evaluated against the LIVE reconstructed reference.
++     Original predictor remains intact. No historical MV labels read here. */
++  if (blocktype==1 && list==0 && ref==0 && p_Vid->frame_no>=1 && p_Vid->frame_no<=16)
++  {
++    int mode=lmp_mode(), used=0, improved=0;
++    if(mode>=2 && lmp_load())
++    {
++      int ix=(((p_Vid->frame_no-1)*30+currMB->pix_y/16)*52+currMB->pix_x/16)*16;
++      MotionVector proposal; distblk cost;
++      proposal.mv_x=lmp_candidates[ix];proposal.mv_y=lmp_candidates[ix+1];
++      if (iabs(proposal.mv_x-mv->mv_x)<=searchRange->max_x && iabs(proposal.mv_y-mv->mv_y)<=searchRange->max_y)
++      {
++        MotionVector padded=pad_MVs(proposal,mv_block);
++        cost=mv_cost(p_Vid,lambda_factor,&padded,&pred);
++        cost += mv_block->computePredFPel((++lmp_ie,ref_picture),mv_block,DISTBLK_MAX-cost,&padded);used=1;
++        if(cost<min_mcost){min_mcost=cost;tmp=proposal;improved=1;}
++      }
++    }
++    /* Pre-search early stopping; mode 1 is the same native budget control. */
++    if(mode==1 || (mode==3 && improved))stopCriterion*=2;
++    fprintf(stderr,"LMP_BLOCK %d %d %d %d %d %d\n",p_Vid->frame_no,currMB->pix_x,currMB->pix_y,mode,used,improved);
++  }
+   // Additional threshold for ref>0
+   //if ((ref > 0 && currSlice->structure == FRAME) && (*prevSad < imin (p_EPZS->medthres[blocktype] + lambda_dist, min_mcost))) 
+   if ((ref > 0 && currSlice->structure == FRAME) && 
+@@ -116,7 +145,7 @@
+     {
+       *p_motion = tmp;
+     }
+-    return min_mcost;
++    *mv = tmp; return min_mcost;
+   }
+ 
+   //! If p_EPZS->medthres satisfied, then terminate, otherwise generate Predictors
+@@ -150,7 +179,7 @@
+       if ((ref == 0) || (*prevSad > min_mcost))
+         *prevSad = min_mcost;
+ 
+-      return min_mcost;
++      *mv = tmp; return min_mcost;
+     }
+ 
+     //! Add Spatial Predictors in predictor list.
+@@ -230,7 +259,7 @@
+ 
+           if (mcost < second_mcost)
+           {
+-            mcost += mv_block->computePredFPel (ref_picture, mv_block, second_mcost - mcost, &cand);
++            mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, second_mcost - mcost, &cand);
+ 
+             //--- check if motion cost is less than minimum cost ---
+             if (mcost < min_mcost)
+@@ -325,7 +354,7 @@
+ 
+                 if (mcost < min_mcost)
+                 {
+-                  mcost += mv_block->computePredFPel (ref_picture, mv_block, min_mcost - mcost, &cand);
++                  mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+                   if (mcost < min_mcost)
+                   {
+@@ -494,7 +523,7 @@
+   min_mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+ 
+   //--- add residual cost to motion cost ---
+-  min_mcost += mv_block->computePredFPel (ref_picture, mv_block, DISTBLK_MAX-min_mcost, &cand);
++  min_mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, DISTBLK_MAX-min_mcost, &cand);
+ 
+ 
+   // Additional threshold for ref>0
+@@ -577,7 +606,7 @@
+ 
+           if (mcost < second_mcost)
+           {
+-            mcost += mv_block->computePredFPel (ref_picture, mv_block, second_mcost - mcost, &cand);
++            mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, second_mcost - mcost, &cand);
+ 
+             //--- check if motion cost is less than minimum cost ---
+             if (mcost < min_mcost)
+@@ -677,7 +706,7 @@
+                 if (mcost < min_mcost)
+                 {
+ 
+-                  mcost += mv_block->computePredFPel (ref_picture, mv_block, min_mcost - mcost, &cand);
++                  mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+                   if (mcost < min_mcost)
+                   {
+--- a/lencod/src/me_epzs.c
++++ b/lencod/src/me_epzs.c
+@@ -1,3 +1,4 @@
++extern unsigned long long lmp_ie,lmp_se;
+ 
+ /*!
+ *************************************************************************************
+@@ -112,7 +113,7 @@
+   min_mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+ 
+   //--- add residual cost to motion cost ---
+-  min_mcost += mv_block->computePredFPel (ref_picture, mv_block, DISTBLK_MAX - min_mcost, &cand);
++  min_mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, DISTBLK_MAX - min_mcost, &cand);
+ 
+   // Additional threshold for ref>0
+   if ((ref > 0 && currSlice->structure == FRAME) && (*prevSad < distblkmin (p_EPZS->medthres[blocktype] + lambda_dist, min_mcost))) 
+@@ -236,7 +237,7 @@
+ 
+           if (mcost < second_mcost)
+           {
+-            mcost += mv_block->computePredFPel (ref_picture, mv_block, second_mcost - mcost, &cand);
++            mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, second_mcost - mcost, &cand);
+ 
+             //--- check if motion cost is less than minimum cost ---
+             if (mcost < min_mcost)
+@@ -311,7 +312,7 @@
+ 
+                 if (mcost < min_mcost)
+                 {
+-                  mcost += mv_block->computePredFPel (ref_picture, mv_block, min_mcost - mcost, &cand);
++                  mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+                   if (mcost < min_mcost)
+                   {
+@@ -479,7 +480,7 @@
+   min_mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+ 
+   //--- add residual cost to motion cost ---
+-  min_mcost += mv_block->computePredFPel (ref_picture, mv_block, DISTBLK_MAX-min_mcost, &cand);
++  min_mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, DISTBLK_MAX-min_mcost, &cand);
+ 
+   // Additional threshold for ref>0
+   if ((ref > 0 && currSlice->structure == FRAME) && 
+@@ -563,7 +564,7 @@
+ 
+           if (mcost < second_mcost)
+           {
+-            mcost += mv_block->computePredFPel (ref_picture, mv_block, second_mcost - mcost, &cand);
++            mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, second_mcost - mcost, &cand);
+ 
+             //--- check if motion cost is less than minimum cost ---
+             if (mcost < min_mcost)
+@@ -650,7 +651,7 @@
+                 if (mcost < min_mcost)
+                 {
+ 
+-                  mcost += mv_block->computePredFPel (ref_picture, mv_block, min_mcost - mcost, &cand);
++                  mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+                   if (mcost < min_mcost)
+                   {
+--- a/lencod/src/me_umhexsmp.c
++++ b/lencod/src/me_umhexsmp.c
+@@ -1,3 +1,4 @@
++extern unsigned long long lmp_ie,lmp_se;
+ 
+ /*!
+  *************************************************************************************
+@@ -50,7 +51,7 @@
+    (iabs(cand.mv_y - center.mv_y)>>2) <= search_range)                                             \
+ {                                                                                             \
+     mcost  = mv_cost (p_Vid, lambda_factor, &cand, &pred);                                      \
+-    mcost += mv_block->computePredFPel( ref_picture, mv_block, min_mcost - mcost, &cand);       \
++    mcost += mv_block->computePredFPel((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);       \
+     if (mcost < min_mcost)                                                                      \
+     {                                                                                           \
+       best = cand;                                                                              \
+@@ -182,7 +183,7 @@
+   cand = center;
+   mcost = mv_cost (p_Vid, lambda_factor, &cand, &pred);
+ 
+-  mcost += mv_block->computePredFPel(ref_picture, mv_block, min_mcost - mcost, &cand);
++  mcost += mv_block->computePredFPel((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+   if (mcost < min_mcost)
+   {
+@@ -427,7 +428,7 @@
+ 
+     cmv = pad_MVs(cand, mv_block);
+ 
+-    mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cmv);
++    mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cmv);
+ 
+     if (pos==0 && check_position0)
+     {
+@@ -478,7 +479,7 @@
+ 
+     cmv = pad_MVs(cand, mv_block);
+ 
+-    mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cmv);
++    mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cmv);
+ 
+     if (mcost < min_mcost)
+     {
+@@ -550,7 +551,7 @@
+     mcost = mv_cost (p_Vid, lambda_factor, &cand, pred_mv);
+     cand_pad = pad_MVs (cand, mv_block); //cand = pad_MVs (cand, mv_block);
+ 
+-    mcost   += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cand_pad); //&cand);
++    mcost   += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand_pad); //&cand);
+     if (mcost < min_mcost)
+     {
+       min_mcost = mcost;
+@@ -581,7 +582,7 @@
+     mcost = mv_cost (p_Vid, lambda_factor, &cand, pred_mv);
+ 
+     cand_pad = pad_MVs (cand, mv_block); //cand = pad_MVs (cand, mv_block);
+-    mcost   += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cand_pad); //&cand);
++    mcost   += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand_pad); //&cand);
+ 
+     if (mcost < min_mcost)
+     {
+@@ -609,7 +610,7 @@
+           p_UMHexSMP->SearchState[cand.mv_y - mv->mv_y + dynamic_search_range][cand.mv_x - mv->mv_x + dynamic_search_range] = 1;
+           mcost = mv_cost (p_Vid, lambda_factor, &cand, pred_mv);
+           cand_pad = pad_MVs (cand, mv_block); //cand = pad_MVs (cand, mv_block);
+-          mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cand_pad); //&cand);
++          mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cand_pad); //&cand);
+           if (mcost < min_mcost)
+           {
+             min_mcost    = mcost;
+--- a/lencod/src/me_fullsearch.c
++++ b/lencod/src/me_fullsearch.c
+@@ -1,3 +1,4 @@
++extern unsigned long long lmp_ie,lmp_se;
+ 
+ /*!
+ *************************************************************************************
+@@ -83,7 +84,7 @@
+     if (mcost >= min_mcost)   continue;
+ 
+     //--- add residual cost to motion cost ---
+-    mcost += mv_block->computePredFPel(ref_picture, mv_block, min_mcost - mcost, &cand);
++    mcost += mv_block->computePredFPel((++lmp_ie, ref_picture), mv_block, min_mcost - mcost, &cand);
+ 
+     //--- check if motion cost is less than minimum cost ---
+     if (mcost < min_mcost)
+@@ -231,7 +232,7 @@
+ 
+     cmv = pad_MVs(cand, mv_block);
+ 
+-    mcost += mv_block->computePredHPel( ref_picture, mv_block, min_mcost - mcost, &cmv);
++    mcost += mv_block->computePredHPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cmv);
+ 
+     if (pos==0 && check_position0)
+     {
+@@ -272,7 +273,7 @@
+ 
+     cmv = pad_MVs(cand, mv_block);
+ 
+-    mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cmv);
++    mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cmv);
+     if (mcost < min_mcost)
+     {
+       min_mcost = mcost;
+@@ -448,7 +449,7 @@
+     if (mcost >= min_mcost) continue;
+ 
+     cmv = pad_MVs(cand, mv_block);
+-    mcost += mv_block->computePredQPel( ref_picture, mv_block, min_mcost - mcost, &cmv);
++    mcost += mv_block->computePredQPel((++lmp_se, ref_picture), mv_block, min_mcost - mcost, &cmv);
+ 
+     if (pos == 0 && check_position0)
+     {

@@ -1,0 +1,35 @@
+{
+  "scope": "analysis only; 8 dev + 2 targeted historically observed validation",
+  "dev": [
+    "sample_0000",
+    "sample_0004",
+    "sample_0008",
+    "sample_0012",
+    "sample_0016",
+    "sample_1000",
+    "sample_1004",
+    "sample_1008"
+  ],
+  "diagnostic_val": [
+    "sample_1028",
+    "sample_1029"
+  ],
+  "policies": "frozen prior policies; no tuning",
+  "groups": 40,
+  "correctness_pass": true,
+  "quality_pass": true,
+  "timing": "not measured for conclusions; trace runs are diagnostic",
+  "remote": "/home/luoxiangyu/lmp-e1-e2-followup-20261121/supplement-analysis",
+  "baseline_commit": "f080a451831e89a59948006c4299bca698fdfef6",
+  "completed_tasks": [
+    1,
+    2,
+    3
+  ],
+  "not_run": [
+    "new gating optimization",
+    "deduplication performance experiment",
+    "new training or generation",
+    "sealed blind test"
+  ]
+}

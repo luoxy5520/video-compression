@@ -1,0 +1,148 @@
+{
+  "support": [
+    {
+      "sample": "dev_pooled",
+      "N": 108175,
+      "outside_max_window": 7230,
+      "outside_fraction": 0.0668361451351976,
+      "latent_misses": 48390,
+      "fraction_misses_outside_window": 0.14941103533787972,
+      "coverage_inside_window": 0.5922532071920352,
+      "oracle_all81_coverage_upper_bound": 0.9331638548648024
+    },
+    {
+      "sample": "sample_0000",
+      "N": 5519,
+      "outside_max_window": 203,
+      "outside_fraction": 0.036782025729298784,
+      "latent_misses": 1421,
+      "fraction_misses_outside_window": 0.14285714285714285,
+      "coverage_inside_window": 0.7708803611738149,
+      "oracle_all81_coverage_upper_bound": 0.9632179742707012
+    },
+    {
+      "sample": "sample_0004",
+      "N": 18355,
+      "outside_max_window": 52,
+      "outside_fraction": 0.002833015527104331,
+      "latent_misses": 10426,
+      "fraction_misses_outside_window": 0.004987531172069825,
+      "coverage_inside_window": 0.43320767087362727,
+      "oracle_all81_coverage_upper_bound": 0.9971669844728956
+    },
+    {
+      "sample": "sample_0008",
+      "N": 2519,
+      "outside_max_window": 334,
+      "outside_fraction": 0.13259229853116317,
+      "latent_misses": 1120,
+      "fraction_misses_outside_window": 0.2982142857142857,
+      "coverage_inside_window": 0.6402745995423341,
+      "oracle_all81_coverage_upper_bound": 0.8674077014688368
+    },
+    {
+      "sample": "sample_0012",
+      "N": 18110,
+      "outside_max_window": 309,
+      "outside_fraction": 0.017062396466040863,
+      "latent_misses": 4289,
+      "fraction_misses_outside_window": 0.0720447656796456,
+      "coverage_inside_window": 0.7764170552216167,
+      "oracle_all81_coverage_upper_bound": 0.9829376035339591
+    },
+    {
+      "sample": "sample_0016",
+      "N": 18473,
+      "outside_max_window": 188,
+      "outside_fraction": 0.010177015103123478,
+      "latent_misses": 1383,
+      "fraction_misses_outside_window": 0.13593637020968907,
+      "coverage_inside_window": 0.9346458846048674,
+      "oracle_all81_coverage_upper_bound": 0.9898229848968765
+    },
+    {
+      "sample": "sample_1000",
+      "N": 6601,
+      "outside_max_window": 556,
+      "outside_fraction": 0.08422966217239812,
+      "latent_misses": 3054,
+      "fraction_misses_outside_window": 0.18205631958087753,
+      "coverage_inside_window": 0.5867659222497932,
+      "oracle_all81_coverage_upper_bound": 0.9157703378276019
+    },
+    {
+      "sample": "sample_1004",
+      "N": 19738,
+      "outside_max_window": 5474,
+      "outside_fraction": 0.2773330631269632,
+      "latent_misses": 17747,
+      "fraction_misses_outside_window": 0.3084464979996619,
+      "coverage_inside_window": 0.13958216489063377,
+      "oracle_all81_coverage_upper_bound": 0.7226669368730367
+    },
+    {
+      "sample": "sample_1008",
+      "N": 18860,
+      "outside_max_window": 114,
+      "outside_fraction": 0.006044538706256628,
+      "latent_misses": 8950,
+      "fraction_misses_outside_window": 0.012737430167597765,
+      "coverage_inside_window": 0.528646111170383,
+      "oracle_all81_coverage_upper_bound": 0.9939554612937433
+    },
+    {
+      "sample": "sample_1028",
+      "N": 21582,
+      "outside_max_window": 7725,
+      "outside_fraction": 0.3579371698637754,
+      "latent_misses": 20630,
+      "fraction_misses_outside_window": 0.37445467765390206,
+      "coverage_inside_window": 0.06870173919318756,
+      "oracle_all81_coverage_upper_bound": 0.6420628301362247
+    },
+    {
+      "sample": "sample_1029",
+      "N": 19634,
+      "outside_max_window": 9290,
+      "outside_fraction": 0.4731588061525924,
+      "latent_misses": 18539,
+      "fraction_misses_outside_window": 0.5011057770106262,
+      "coverage_inside_window": 0.1058584686774942,
+      "oracle_all81_coverage_upper_bound": 0.5268411938474076
+    }
+  ],
+  "phase": [
+    {
+      "phase": 1,
+      "N": 28621,
+      "coverage": 0.5357604556095175,
+      "motion_standardized_coverage": 0.5682434380281656,
+      "motion_standardized_epe_mean": 5.717570366249657,
+      "motion_standardized_sad_mean": 2387.888141903293
+    },
+    {
+      "phase": 2,
+      "N": 28192,
+      "coverage": 0.5392309875141884,
+      "motion_standardized_coverage": 0.571724351125653,
+      "motion_standardized_epe_mean": 5.521807475939575,
+      "motion_standardized_sad_mean": 2432.606489012852
+    },
+    {
+      "phase": 3,
+      "N": 26035,
+      "coverage": 0.5683118878432879,
+      "motion_standardized_coverage": 0.5165726042000189,
+      "motion_standardized_epe_mean": 6.003347338908036,
+      "motion_standardized_sad_mean": 2320.9794330246073
+    },
+    {
+      "phase": 4,
+      "N": 25327,
+      "coverage": 0.5706558218501994,
+      "motion_standardized_coverage": 0.5545503670876221,
+      "motion_standardized_epe_mean": 5.6495665912240565,
+      "motion_standardized_sad_mean": 2373.410118578784
+    }
+  ]
+}

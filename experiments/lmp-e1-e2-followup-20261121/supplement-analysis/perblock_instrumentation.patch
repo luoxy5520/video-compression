@@ -1,0 +1,148 @@
+--- a/lencod/src/me_epzs_int.c
++++ b/lencod/src/me_epzs_int.c
+@@ -1,3 +1,6 @@
++
++int lmp_seed_evals=0,lmp_seed_improved=0,lmp_seed_duplicate=0,lmp_seed_status=0,lmp_raised=0,lmp_predictors=0,lmp_pattern=0,lmp_reason=0;
++double lmp_initial_cost=0,lmp_seed_cost=-1,lmp_after_seed=0,lmp_initial_stop=0;
+ #include <stdio.h>
+ #include <stdlib.h>
+ static short lmp_candidates[16*30*52*8*2];
+@@ -53,6 +56,8 @@
+                                 int lambda_factor        // <--  lagrangian parameter for determining motion cost
+                                 )
+ {
++  lmp_seed_evals=lmp_seed_improved=lmp_seed_duplicate=lmp_seed_status=lmp_raised=lmp_predictors=lmp_pattern=lmp_reason=0;
++  lmp_initial_cost=lmp_after_seed=lmp_initial_stop=0;lmp_seed_cost=-1;
+   Slice *currSlice = currMB->p_Slice;
+   VideoParameters *p_Vid = currMB->p_Vid;
+   InputParameters *p_Inp = currMB->p_Inp;
+@@ -110,27 +115,32 @@
+   min_mcost += mv_block->computePredFPel ((++lmp_ie, ref_picture), mv_block, DISTBLK_MAX - min_mcost, &cand);
+ 
+ 
++  lmp_initial_cost=(double)min_mcost;lmp_initial_stop=(double)stopCriterion;
+   /* Cached latent proposal; evaluated against the LIVE reconstructed reference.
+      Original predictor remains intact. No historical MV labels read here. */
+   if (blocktype==1 && list==0 && ref==0 && p_Vid->frame_no>=1 && p_Vid->frame_no<=16)
+   {
+     int mode=lmp_mode(), used=0, improved=0;
++    if(mode>=2 && !lmp_load())lmp_seed_status=1;
+     if(mode>=2 && lmp_load())
+     {
+       int ix=(((p_Vid->frame_no-1)*30+currMB->pix_y/16)*52+currMB->pix_x/16)*16;
+       MotionVector proposal; distblk cost;
+       proposal.mv_x=lmp_candidates[ix];proposal.mv_y=lmp_candidates[ix+1];
++      lmp_seed_status=2;
+       if (iabs(proposal.mv_x-mv->mv_x)<=searchRange->max_x && iabs(proposal.mv_y-mv->mv_y)<=searchRange->max_y)
+       {
+         MotionVector padded=pad_MVs(proposal,mv_block);
++        lmp_seed_duplicate=(proposal.mv_x==mv->mv_x && proposal.mv_y==mv->mv_y);
+         cost=mv_cost(p_Vid,lambda_factor,&padded,&pred);
+-        cost += mv_block->computePredFPel((++lmp_ie,ref_picture),mv_block,DISTBLK_MAX-cost,&padded);used=1;
+-        if(cost<min_mcost){min_mcost=cost;tmp=proposal;improved=1;}
++        cost += mv_block->computePredFPel((++lmp_ie,++lmp_seed_evals,ref_picture),mv_block,DISTBLK_MAX-cost,&padded);used=1;lmp_seed_cost=(double)cost;lmp_seed_status=3;
++        if(cost<min_mcost){min_mcost=cost;tmp=proposal;improved=1;lmp_seed_status=4;}
+       }
+     }
+     /* Pre-search early stopping; mode 1 is the same native budget control. */
+-    if(mode==1 || (mode==3 && improved))stopCriterion*=2;
+-    fprintf(stderr,"LMP_BLOCK %d %d %d %d %d %d\n",p_Vid->frame_no,currMB->pix_x,currMB->pix_y,mode,used,improved);
++    if(mode==1 || (mode==3 && improved)){stopCriterion*=2;lmp_raised=1;if(mode==3)lmp_seed_status=5;}
++    lmp_seed_improved=improved;lmp_after_seed=(double)min_mcost;
++
+   }
+   // Additional threshold for ref>0
+   //if ((ref > 0 && currSlice->structure == FRAME) && (*prevSad < imin (p_EPZS->medthres[blocktype] + lambda_dist, min_mcost))) 
+@@ -145,13 +155,14 @@
+     {
+       *p_motion = tmp;
+     }
+-    *mv = tmp; return min_mcost;
++    *mv = tmp; lmp_reason=7;return min_mcost;
+   }
+ 
+   //! If p_EPZS->medthres satisfied, then terminate, otherwise generate Predictors
+   //! Condition could be strengthened by consideration distortion of adjacent partitions.
+   if (min_mcost > stopCriterion)
+   {
++    lmp_predictors=1;
+     SPoint *p_EPZS_point = p_EPZS->predictor->point;
+     Boolean checkMedian = FALSE;
+     distblk second_mcost = DISTBLK_MAX;
+@@ -179,7 +190,7 @@
+       if ((ref == 0) || (*prevSad > min_mcost))
+         *prevSad = min_mcost;
+ 
+-      *mv = tmp; return min_mcost;
++      *mv = tmp; lmp_reason=2;return min_mcost;
+     }
+ 
+     //! Add Spatial Predictors in predictor list.
+@@ -299,7 +310,7 @@
+       //if ((*prevSad > min_mcost))
+         // *prevSad = min_mcost;
+ 
+-      return min_mcost;
++      lmp_reason=3;return min_mcost;
+     }
+ 
+     //! Refine using EPZS pattern if needed
+@@ -308,6 +319,7 @@
+     //! instead of the full set. Code could be easily modified for this task.
+     if (min_mcost > stopCriterion)
+     {
++      lmp_pattern=1;
+       const int mv_range = 10;
+       int patternStop = 0, pointNumber = 0, checkPts, nextLast = 0;
+       int totalCheckPts = 0, motionDirection = 0;
+@@ -403,7 +415,7 @@
+             *p_motion = tmp;
+           }
+ 
+-          return min_mcost;
++          lmp_reason=4;return min_mcost;
+         }
+ 
+         //! Check Second best predictor with EPZS pattern
+@@ -451,7 +463,7 @@
+ 
+   *mv = tmp;
+ 
+-  return min_mcost;
++  lmp_reason=(lmp_pattern?6:(lmp_predictors?5:1));return min_mcost;
+ }
+ 
+ 
+--- a/lencod/src/mv_search.c
++++ b/lencod/src/mv_search.c
+@@ -6,6 +6,13 @@
+ static double lmp_now(void){struct timespec t;clock_gettime(CLOCK_MONOTONIC,&t);return t.tv_sec+t.tv_nsec*1e-9;}
+ static void lmp_report(void){fprintf(stderr,"LMP_PROFILE {\"integer_s\":%.9f,\"subpixel_s\":%.9f,\"integer_evals\":%llu,\"subpixel_evals\":%llu}\n",lmp_it,lmp_st,lmp_ie,lmp_se);}
+ static int lmp_ready=0;
++
++extern int lmp_seed_evals,lmp_seed_improved,lmp_seed_duplicate,lmp_seed_status,lmp_raised,lmp_predictors,lmp_pattern,lmp_reason;
++extern double lmp_initial_cost,lmp_seed_cost,lmp_after_seed,lmp_initial_stop;
++static FILE *lmp_block_file=NULL;
++static void lmp_close_blocks(void){if(lmp_block_file)fclose(lmp_block_file);}
++static void lmp_open_blocks(void){char *p=getenv("LMP_BLOCK_CSV");if(p && !lmp_block_file){lmp_block_file=fopen(p,"w");if(!lmp_block_file){perror("LMP_BLOCK_CSV");exit(2);}atexit(lmp_close_blocks);fprintf(lmp_block_file,"frame,x,y,blocktype,list,ref,integer_evals,subpixel_evals,seed_evals,seed_duplicate_initial,seed_improved,seed_status,threshold_raised,predictors_entered,pattern_entered,exit_reason,initial_cost,seed_cost,after_seed_cost,initial_stop,me_mv_x,me_mv_y\n");}}
++
+ 
+ /*!
+  *************************************************************************************
+@@ -964,6 +971,7 @@
+   // valid search range limits could be precomputed once during the initialization process
+   clip_mv_range(p_Vid, 0, mv, Q_PEL);
+ 
++  { unsigned long long lmp_i0=lmp_ie,lmp_s0=lmp_se;
+   //--- perform motion search ---
+   { double lmp_t; if(!lmp_ready){atexit(lmp_report);lmp_ready=1;} lmp_t=lmp_now(); min_mcost = currMB->IntPelME (currMB, &pred, mv_block, min_mcost, lambda_factor[F_PEL]); lmp_it += lmp_now()-lmp_t; }
+ 
+@@ -984,6 +992,8 @@
+     }
+   }
+ 
++  if(blocktype==1 && list==0 && ref==0){lmp_open_blocks();if(lmp_block_file)fprintf(lmp_block_file,"%d,%d,%d,%d,%d,%d,%llu,%llu,%d,%d,%d,%d,%d,%d,%d,%d,%.0f,%.0f,%.0f,%.0f,%d,%d\n",p_Vid->frame_no,currMB->pix_x,currMB->pix_y,blocktype,list,ref,lmp_ie-lmp_i0,lmp_se-lmp_s0,lmp_seed_evals,lmp_seed_duplicate,lmp_seed_improved,lmp_seed_status,lmp_raised,lmp_predictors,lmp_pattern,lmp_reason,lmp_initial_cost,lmp_seed_cost,lmp_after_seed,lmp_initial_stop,mv->mv_x,mv->mv_y);}
++  }
+   // clip mvs after me is performed (is not exactly the best)
+   // better solution is to modify search window appropriately
+   clip_mv_range(p_Vid, 0, mv, Q_PEL);

@@ -1,0 +1,8 @@
+{
+  "primary": {"K": 2, "radius_px": 2, "minimum_gain_pp": 5},
+  "additional_K": [1, 2, 4, 8],
+  "additional_radius_px": [0, 2, 4, 8],
+  "motion_arms": ["E0", "E1-cached", "E2", "E3", "E2+E0", "E3+E0", "E5+E0"],
+  "selection": "Primary fixed before validation, dev estimates use video means and validation uses equal prompt weights. SAD compares valid qpel centers at K2. Candidate centers can be fewer than K after deduplication.",
+  "validation": ["sample_0020","sample_0021","sample_0022","sample_0023","sample_1024","sample_1025","sample_1026","sample_1027","sample_1028","sample_1029","sample_1030","sample_1031","sample_1032","sample_1033","sample_1034","sample_1035"]
+}

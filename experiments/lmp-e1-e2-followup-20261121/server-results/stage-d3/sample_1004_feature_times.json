@@ -1,0 +1,10 @@
+{
+  "seconds": [
+    0.051393172703683376,
+    0.05035638762637973,
+    0.05029516015201807,
+    0.05029769893735647
+  ],
+  "median_s": 0.05029769893735647,
+  "includes": "feature read, normalization, matching, candidate file write; excludes Python interpreter/module startup"
+}

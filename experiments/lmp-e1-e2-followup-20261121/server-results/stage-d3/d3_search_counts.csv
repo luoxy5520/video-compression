@@ -1,0 +1,9 @@
+sample,arm,integer_ME_evals,subpixel_ME_evals
+sample_0000,B1-measured,188708,244057
+sample_0000,Native-budget,164988,242212
+sample_0000,DiT-seed,213770,244218
+sample_0000,DiT-gated,212150,244220
+sample_1004,B1-measured,668182,294019
+sample_1004,Native-budget,651787,293254
+sample_1004,DiT-seed,679444,294137
+sample_1004,DiT-gated,677078,293781

@@ -1,0 +1,38 @@
+{
+  "dev": [
+    "sample_0000",
+    "sample_0004",
+    "sample_0008",
+    "sample_0012",
+    "sample_0016",
+    "sample_1000",
+    "sample_1004",
+    "sample_1008"
+  ],
+  "edges": {
+    "texture": [
+      2.52734375,
+      5.40625,
+      10.248046875
+    ],
+    "confidence": [
+      0.06367393583059311,
+      0.18040649592876434,
+      0.4540921747684479
+    ],
+    "pixel_change": [
+      2.73828125,
+      5.93359375,
+      10.712890625
+    ]
+  },
+  "purpose": "descriptive quartiles only, no policy tuning",
+  "motion_edges_px": [
+    0,
+    1,
+    4,
+    16,
+    Infinity
+  ],
+  "phase": "P frames modulo 4; phases 1-4"
+}

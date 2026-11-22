@@ -1,0 +1,28 @@
+{
+  "E2": {
+    "N": 108175,
+    "E0_hit": 90756,
+    "DiT_hit": 59785,
+    "Both_hit": 58516,
+    "E0_only": 32240,
+    "DiT_only": 1269,
+    "Neither": 16150,
+    "lost_by_insertion": 1342,
+    "gained_by_insertion": 692,
+    "rescue": 0.07285148401171135,
+    "union": 0.8507048763577536
+  },
+  "E3": {
+    "N": 108175,
+    "E0_hit": 90756,
+    "DiT_hit": 60093,
+    "Both_hit": 58791,
+    "E0_only": 31965,
+    "DiT_only": 1302,
+    "Neither": 16117,
+    "lost_by_insertion": 1250,
+    "gained_by_insertion": 699,
+    "rescue": 0.0747459670474769,
+    "union": 0.8510099376011093
+  }
+}

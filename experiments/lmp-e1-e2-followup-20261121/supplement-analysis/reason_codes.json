@@ -1,0 +1,20 @@
+{
+  "exit_reason": {
+    "1": "initial_threshold_stop",
+    "2": "derived_threshold_stop",
+    "3": "reference_prune_after_predictors",
+    "4": "reference_prune_in_pattern",
+    "5": "predictor_threshold_stop",
+    "6": "pattern_completed",
+    "7": "reference_prune_before_predictors"
+  },
+  "seed_status": {
+    "0": "native_only_or_disabled",
+    "1": "candidate_file_unavailable",
+    "2": "candidate_out_of_search_range",
+    "3": "seed_not_better_native_search_retained",
+    "4": "seed_better_native_threshold_retained",
+    "5": "seed_better_relaxed_threshold_requested"
+  },
+  "frozen_policy": "unchanged from prior phase; no new gates tuned"
+}

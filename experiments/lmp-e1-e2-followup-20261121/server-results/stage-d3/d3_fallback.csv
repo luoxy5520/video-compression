@@ -1,0 +1,9 @@
+sample,arm,blocks,seed_attempted,seed_improved,improved_fraction,note
+sample_0000,B1-measured,24960,0,0,0.0,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented
+sample_0000,Native-budget,24960,0,0,0.0,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented
+sample_0000,DiT-seed,24960,24957,652,0.026121794871794873,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented
+sample_0000,DiT-gated,24960,24957,672,0.026923076923076925,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented
+sample_1004,B1-measured,24960,0,0,0.0,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented
+sample_1004,Native-budget,24960,0,0,0.0,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented
+sample_1004,DiT-seed,24960,24548,3043,0.1219150641025641,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented
+sample_1004,DiT-gated,24960,24572,3109,0.12455929487179487,full native search retained unless cheap stop threshold met; full fallback reasons not instrumented

@@ -1,0 +1,434 @@
+[
+  {
+    "sample": "sample_0000",
+    "arm": "B1-measured",
+    "bitrate_kbps": 335.4729411764706,
+    "P_Y_PSNR": 39.38401250628685,
+    "last4_Y_PSNR": 38.73423133193276,
+    "JM_wall_s": 1.0804809699766338,
+    "min_s": 1.0451264237053692,
+    "max_s": 1.0999220157973468,
+    "seconds": [
+      1.0358168352395296,
+      1.0451264237053692,
+      1.0999220157973468,
+      1.0804809699766338
+    ],
+    "sha256": "b83784abd00608ebf8736b8a7d29cef55381237f57ed8873b0978987c9d67d96",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.088076151,
+          "subpixel_s": 0.132885129,
+          "integer_evals": 188708,
+          "subpixel_evals": 244057
+        }
+      ],
+      [
+        {
+          "integer_s": 0.085948939,
+          "subpixel_s": 0.12939991,
+          "integer_evals": 188708,
+          "subpixel_evals": 244057
+        }
+      ],
+      [
+        {
+          "integer_s": 0.08667616,
+          "subpixel_s": 0.127826524,
+          "integer_evals": 188708,
+          "subpixel_evals": 244057
+        }
+      ],
+      [
+        {
+          "integer_s": 0.088479789,
+          "subpixel_s": 0.134558738,
+          "integer_evals": 188708,
+          "subpixel_evals": 244057
+        }
+      ]
+    ],
+    "feature_s": 0,
+    "pipeline_wall_s": 1.0804809699766338
+  },
+  {
+    "sample": "sample_0000",
+    "arm": "Native-budget",
+    "bitrate_kbps": 335.69882352941175,
+    "P_Y_PSNR": 39.38138337481063,
+    "last4_Y_PSNR": 38.73306625901946,
+    "JM_wall_s": 1.085003832820803,
+    "min_s": 1.0482946778647602,
+    "max_s": 1.1043375497683883,
+    "seconds": [
+      1.035626898985356,
+      1.0482946778647602,
+      1.1043375497683883,
+      1.085003832820803
+    ],
+    "sha256": "da75fab9b95c25f55c27fc04edc860fe0d6e7d833954f51d5a6ad38a838830bc",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.085200981,
+          "subpixel_s": 0.132324943,
+          "integer_evals": 164988,
+          "subpixel_evals": 242212
+        }
+      ],
+      [
+        {
+          "integer_s": 0.083170485,
+          "subpixel_s": 0.127868906,
+          "integer_evals": 164988,
+          "subpixel_evals": 242212
+        }
+      ],
+      [
+        {
+          "integer_s": 0.084565331,
+          "subpixel_s": 0.132872499,
+          "integer_evals": 164988,
+          "subpixel_evals": 242212
+        }
+      ],
+      [
+        {
+          "integer_s": 0.082395623,
+          "subpixel_s": 0.127689007,
+          "integer_evals": 164988,
+          "subpixel_evals": 242212
+        }
+      ]
+    ],
+    "feature_s": 0,
+    "pipeline_wall_s": 1.085003832820803
+  },
+  {
+    "sample": "sample_0000",
+    "arm": "DiT-seed",
+    "bitrate_kbps": 335.6009411764706,
+    "P_Y_PSNR": 39.387745986265294,
+    "last4_Y_PSNR": 38.73672213775437,
+    "JM_wall_s": 1.0715635269880295,
+    "min_s": 1.0470873569138348,
+    "max_s": 1.0968788741156459,
+    "seconds": [
+      1.0391115779057145,
+      1.0470873569138348,
+      1.0715635269880295,
+      1.0968788741156459
+    ],
+    "sha256": "f6121ae6329f3761c98523ff0fe4536d33208120c5fc472a97d9501bbd2df28d",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.090464009,
+          "subpixel_s": 0.133594908,
+          "integer_evals": 213770,
+          "subpixel_evals": 244218
+        }
+      ],
+      [
+        {
+          "integer_s": 0.089158449,
+          "subpixel_s": 0.127814701,
+          "integer_evals": 213770,
+          "subpixel_evals": 244218
+        }
+      ],
+      [
+        {
+          "integer_s": 0.089271909,
+          "subpixel_s": 0.128659963,
+          "integer_evals": 213770,
+          "subpixel_evals": 244218
+        }
+      ],
+      [
+        {
+          "integer_s": 0.090857689,
+          "subpixel_s": 0.133288516,
+          "integer_evals": 213770,
+          "subpixel_evals": 244218
+        }
+      ]
+    ],
+    "feature_s": 0.05111062712967396,
+    "pipeline_wall_s": 1.1226741541177034
+  },
+  {
+    "sample": "sample_0000",
+    "arm": "DiT-gated",
+    "bitrate_kbps": 335.80423529411763,
+    "P_Y_PSNR": 39.38804339434726,
+    "last4_Y_PSNR": 38.738992011588955,
+    "JM_wall_s": 1.0758845028467476,
+    "min_s": 1.0650020171888173,
+    "max_s": 1.1058488902635872,
+    "seconds": [
+      1.0365192769095302,
+      1.0650020171888173,
+      1.1058488902635872,
+      1.0758845028467476
+    ],
+    "sha256": "45eb8647597d3791ff6e9c83caa9463c46a9c4ff7dc7f5f74af87fa0da40591c",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.090071842,
+          "subpixel_s": 0.132481197,
+          "integer_evals": 212150,
+          "subpixel_evals": 244220
+        }
+      ],
+      [
+        {
+          "integer_s": 0.091350051,
+          "subpixel_s": 0.132354676,
+          "integer_evals": 212150,
+          "subpixel_evals": 244220
+        }
+      ],
+      [
+        {
+          "integer_s": 0.088678706,
+          "subpixel_s": 0.127720668,
+          "integer_evals": 212150,
+          "subpixel_evals": 244220
+        }
+      ],
+      [
+        {
+          "integer_s": 0.091383132,
+          "subpixel_s": 0.129661601,
+          "integer_evals": 212150,
+          "subpixel_evals": 244220
+        }
+      ]
+    ],
+    "feature_s": 0.05111062712967396,
+    "pipeline_wall_s": 1.1269951299764216
+  },
+  {
+    "sample": "sample_1004",
+    "arm": "B1-measured",
+    "bitrate_kbps": 1612.1524705882352,
+    "P_Y_PSNR": 37.63517541258689,
+    "last4_Y_PSNR": 37.549614763972265,
+    "JM_wall_s": 1.2128416430205107,
+    "min_s": 1.1515538599342108,
+    "max_s": 1.2360646622255445,
+    "seconds": [
+      1.178556190803647,
+      1.1515538599342108,
+      1.2128416430205107,
+      1.2360646622255445
+    ],
+    "sha256": "0393bd7ef434bcc8b2c5217b738d17d1cc1fc8893de6c27c4cb0e4a8486fcb73",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.15046391,
+          "subpixel_s": 0.159248975,
+          "integer_evals": 668182,
+          "subpixel_evals": 294019
+        }
+      ],
+      [
+        {
+          "integer_s": 0.139703552,
+          "subpixel_s": 0.151714208,
+          "integer_evals": 668182,
+          "subpixel_evals": 294019
+        }
+      ],
+      [
+        {
+          "integer_s": 0.140761718,
+          "subpixel_s": 0.153065294,
+          "integer_evals": 668182,
+          "subpixel_evals": 294019
+        }
+      ],
+      [
+        {
+          "integer_s": 0.142468572,
+          "subpixel_s": 0.158093954,
+          "integer_evals": 668182,
+          "subpixel_evals": 294019
+        }
+      ]
+    ],
+    "feature_s": 0,
+    "pipeline_wall_s": 1.2128416430205107
+  },
+  {
+    "sample": "sample_1004",
+    "arm": "Native-budget",
+    "bitrate_kbps": 1609.8785882352943,
+    "P_Y_PSNR": 37.6358422877051,
+    "last4_Y_PSNR": 37.52465483956948,
+    "JM_wall_s": 1.2255345629528165,
+    "min_s": 1.1796032469719648,
+    "max_s": 1.2273362460546196,
+    "seconds": [
+      1.1684090159833431,
+      1.1796032469719648,
+      1.2255345629528165,
+      1.2273362460546196
+    ],
+    "sha256": "f0750ad385a9419d89b7287c4d4afbf43c5a8d6af497a13b1e80148a57346a76",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.140662033,
+          "subpixel_s": 0.158912887,
+          "integer_evals": 651787,
+          "subpixel_evals": 293254
+        }
+      ],
+      [
+        {
+          "integer_s": 0.136919113,
+          "subpixel_s": 0.153098582,
+          "integer_evals": 651787,
+          "subpixel_evals": 293254
+        }
+      ],
+      [
+        {
+          "integer_s": 0.137339177,
+          "subpixel_s": 0.151437772,
+          "integer_evals": 651787,
+          "subpixel_evals": 293254
+        }
+      ],
+      [
+        {
+          "integer_s": 0.148672616,
+          "subpixel_s": 0.152873444,
+          "integer_evals": 651787,
+          "subpixel_evals": 293254
+        }
+      ]
+    ],
+    "feature_s": 0,
+    "pipeline_wall_s": 1.2255345629528165
+  },
+  {
+    "sample": "sample_1004",
+    "arm": "DiT-seed",
+    "bitrate_kbps": 1608.6738823529413,
+    "P_Y_PSNR": 37.64811244293202,
+    "last4_Y_PSNR": 37.5542227502625,
+    "JM_wall_s": 1.2506422949954867,
+    "min_s": 1.177774004638195,
+    "max_s": 1.4007382858544588,
+    "seconds": [
+      1.14626334188506,
+      1.177774004638195,
+      1.2506422949954867,
+      1.4007382858544588
+    ],
+    "sha256": "c1de6672be41c028d80c54fab4fdc92b95fa44d949c8132524d579dc85e72cc6",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.142393905,
+          "subpixel_s": 0.152813614,
+          "integer_evals": 679444,
+          "subpixel_evals": 294137
+        }
+      ],
+      [
+        {
+          "integer_s": 0.142216733,
+          "subpixel_s": 0.152826724,
+          "integer_evals": 679444,
+          "subpixel_evals": 294137
+        }
+      ],
+      [
+        {
+          "integer_s": 0.141670363,
+          "subpixel_s": 0.152595046,
+          "integer_evals": 679444,
+          "subpixel_evals": 294137
+        }
+      ],
+      [
+        {
+          "integer_s": 0.145466626,
+          "subpixel_s": 0.158401742,
+          "integer_evals": 679444,
+          "subpixel_evals": 294137
+        }
+      ]
+    ],
+    "feature_s": 0.05029769893735647,
+    "pipeline_wall_s": 1.3009399939328432
+  },
+  {
+    "sample": "sample_1004",
+    "arm": "DiT-gated",
+    "bitrate_kbps": 1610.315294117647,
+    "P_Y_PSNR": 37.6531543658309,
+    "last4_Y_PSNR": 37.54462421216277,
+    "JM_wall_s": 1.2192610800266266,
+    "min_s": 1.213406769093126,
+    "max_s": 1.24546954408288,
+    "seconds": [
+      1.148233903106302,
+      1.213406769093126,
+      1.24546954408288,
+      1.2192610800266266
+    ],
+    "sha256": "69a7a0f4e48822c0d7f0dd182f2c79176511698540c27597db6f4a98ce3efaba",
+    "dual_decode": true,
+    "profiles": [
+      [
+        {
+          "integer_s": 0.142138592,
+          "subpixel_s": 0.152406614,
+          "integer_evals": 677078,
+          "subpixel_evals": 293781
+        }
+      ],
+      [
+        {
+          "integer_s": 0.146451305,
+          "subpixel_s": 0.158350924,
+          "integer_evals": 677078,
+          "subpixel_evals": 293781
+        }
+      ],
+      [
+        {
+          "integer_s": 0.147197497,
+          "subpixel_s": 0.154157863,
+          "integer_evals": 677078,
+          "subpixel_evals": 293781
+        }
+      ],
+      [
+        {
+          "integer_s": 0.141094615,
+          "subpixel_s": 0.151499077,
+          "integer_evals": 677078,
+          "subpixel_evals": 293781
+        }
+      ]
+    ],
+    "feature_s": 0.05029769893735647,
+    "pipeline_wall_s": 1.269558778963983
+  }
+]
