@@ -1,0 +1,5 @@
+sample_id,kind,encoder,encode_mean_s,n,bitrate_kbps,bytes,p_y_psnr_db,all_y_psnr_db,historical_raw_match,historical_b1_match,decode_verified
+sample_0000,native,JM Native B1,1.0517258890904486,5,335.4729411764706,44555,39.38401250628685,39.45725735566651,True,True,True
+sample_0000,historical_raw_reencode,JM Native B1,0.9829591419547796,1,335.4729411764706,44555,39.38401250628685,39.45725735566651,True,True,True
+sample_1004,native,JM Native B1,1.233587258681655,5,1612.1524705882352,214114,37.63517541258689,37.741266782551264,True,True,True
+sample_1004,historical_raw_reencode,JM Native B1,1.0836531138047576,1,1612.1524705882352,214114,37.63517541258689,37.741266782551264,True,True,True

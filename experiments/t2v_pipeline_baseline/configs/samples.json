@@ -1,0 +1,92 @@
+[
+  {
+    "sample": "sample_0000",
+    "split": "train",
+    "pairing": {
+      "sample_id": "sample_0000",
+      "diffusion_step": "20",
+      "prompt": "A fixed camera shows a white ceramic teacup on a wooden table in steady daylight. Nothing moves.",
+      "seed": 101,
+      "latent_ref": "sample_0000/step_020/clean_latent.pt",
+      "hidden_ref": "sample_0000/step_020/hidden_cond_last_block.pt",
+      "final_latent_ref": "sample_0000/final_latent.pt",
+      "timestep": 296.0,
+      "sigma": 0.29607677459716797,
+      "hidden_branch": "conditional",
+      "hidden_block": 29,
+      "sampler": "unipc",
+      "total_steps": 20
+    },
+    "input": {
+      "path": "/home/luoxiangyu/senior-oracle-expand32-20261106/data/sample_0000/step_020/raw.yuv",
+      "sha256": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016",
+      "width": 832,
+      "height": 480,
+      "frames": 17,
+      "fps": 16,
+      "color_matrix": "bt709",
+      "color_range": "limited"
+    },
+    "h264": {
+      "mode_preset": "skip-p16",
+      "qp": 28,
+      "reference_frames": 1,
+      "rd_optimization": 0
+    },
+    "raw": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/oracle_exports/sample_0000/step_020/input_yuv420p.yuv",
+    "hidden": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/step_020/hidden_cond_last_block.pt",
+    "labels": "/home/luoxiangyu/senior-oracle-expand32-20261106/output/training_dataset/labels/sample_0000__step-20.npz",
+    "latent": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "baseline_sha256": "e3f36a50c414d3a93a201769ac378037f450c3d43c5087c285b572db1fbec2d3",
+    "hidden_sha256": "fa8a0929022caa838dc116d0771c86dbd4eed2a325e61e56ddd59ef407b4bb45",
+    "latent_sha256": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1",
+    "labels_sha256": "fc39e4be36aa9a17c23736d49a6fbe62706936006b47a0f6c17d34cfdec40360",
+    "final_yuv": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_raw.yuv",
+    "historical_b1_result": "/home/luoxiangyu/lmp-e1-e2-followup-20261121/repo/results-e1-e2-followup/stage-d0/sample_0000/B1/result.json"
+  },
+  {
+    "sample": "sample_1004",
+    "split": "train",
+    "pairing": {
+      "sample_id": "sample_1004",
+      "diffusion_step": "20",
+      "prompt": "A red toy car rolls left to right along a tiled floor, filmed at ground level by a fixed camera.",
+      "seed": 701,
+      "latent_ref": "sample_1004/step_020/clean_latent.pt",
+      "hidden_ref": "sample_1004/step_020/hidden_cond_last_block.pt",
+      "final_latent_ref": "sample_1004/final_latent.pt",
+      "timestep": 296.0,
+      "sigma": 0.29607677459716797,
+      "hidden_branch": "conditional",
+      "hidden_block": 29,
+      "sampler": "unipc",
+      "total_steps": 20
+    },
+    "input": {
+      "path": "/home/luoxiangyu/a_new48_20261107/kit/data/sample_1004/step_020/raw.yuv",
+      "sha256": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+      "width": 832,
+      "height": 480,
+      "frames": 17,
+      "fps": 16,
+      "color_matrix": "bt709",
+      "color_range": "limited"
+    },
+    "h264": {
+      "mode_preset": "skip-p16",
+      "qp": 28,
+      "reference_frames": 1,
+      "rd_optimization": 0
+    },
+    "raw": "/home/luoxiangyu/a_new48_20261107/kit/output/oracle_exports/sample_1004/step_020/input_yuv420p.yuv",
+    "hidden": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/step_020/hidden_cond_last_block.pt",
+    "labels": "/home/luoxiangyu/a_new48_20261107/kit/output/training_dataset/labels/sample_1004__step-20.npz",
+    "latent": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt",
+    "baseline_sha256": "6b7b478c5d6cadcf8b19868a3095473eea2558f5b1c4d1788d00b82a1e609e58",
+    "hidden_sha256": "9b3e77553771373c53dee74ced80b2989d830701ac87df8dfec71642d7935fe4",
+    "latent_sha256": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066",
+    "labels_sha256": "6d5603f3cb2da1ee9687bcc47d453b80f8f932d76af41d3c32fb172650bf3cb4",
+    "final_yuv": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_raw.yuv",
+    "historical_b1_result": "/home/luoxiangyu/lmp-e1-e2-followup-20261121/repo/results-e1-e2-followup/stage-d0/sample_1004/B1/result.json"
+  }
+]
