@@ -1,0 +1,525 @@
+--- a/lencod/src/slice.c
++++ b/lencod/src/slice.c
+@@ -1,3 +1,35 @@
++#include <stdio.h>
++#include <stdlib.h>
++#include <time.h>
++static int lmp_phase_enabled;
++static double lmp_mb_s, lmp_entropy_s;
++double lmp_transform_s, lmp_residual_s;
++unsigned long long lmp_p16_tests, lmp_skip_checks;
++double lmp_phase_now(void)
++{
++  struct timespec t;
++  clock_gettime(CLOCK_MONOTONIC, &t);
++  return t.tv_sec + t.tv_nsec * 1e-9;
++}
++int lmp_phase_on(void) { return lmp_phase_enabled; }
++static void lmp_phase_report(void)
++{
++  fprintf(stderr, "LMP_PHASE {\"macroblock_s\":%.9f,\"entropy_s\":%.9f,"
++          "\"transform_s\":%.9f,\"residual_s\":%.9f,\"p16_tests\":%llu,"
++          "\"skip_checks\":%llu}\n", lmp_mb_s, lmp_entropy_s,
++          lmp_transform_s, lmp_residual_s, lmp_p16_tests, lmp_skip_checks);
++}
++static void lmp_phase_init(void)
++{
++  static int initialized;
++  if (!initialized)
++  {
++    lmp_phase_enabled = getenv("LMP_DETAIL") != NULL;
++    if (lmp_phase_enabled)
++      atexit(lmp_phase_report);
++    initialized = 1;
++  }
++}
+ /*!
+  **************************************************************************************
+  * \file
+@@ -515,9 +547,18 @@
+         write_macroblock (currMB, 1);
+         jm_state_validate_replay_mb(currMB);
+       } else {
++        double lmp_t = 0;
++        lmp_phase_init();
++        if (lmp_phase_enabled) lmp_t = lmp_phase_now();
+         currSlice->encode_one_macroblock (currMB);
+         end_encode_one_macroblock(currMB);
++        if (lmp_phase_enabled)
++        {
++          lmp_mb_s += lmp_phase_now() - lmp_t;
++          lmp_t = lmp_phase_now();
++        }
+         write_macroblock (currMB, 1);
++        if (lmp_phase_enabled) lmp_entropy_s += lmp_phase_now() - lmp_t;
+         jm_state_dump_mb(currMB);
+       }
+     }
+--- a/lencod/src/block.c
++++ b/lencod/src/block.c
+@@ -1,3 +1,6 @@
++extern int lmp_phase_on(void);
++extern double lmp_phase_now(void), lmp_transform_s, lmp_residual_s;
++extern unsigned long long lmp_p16_tests, lmp_skip_checks;
+ 
+ /*!
+  *************************************************************************************
+@@ -25,6 +28,16 @@
+ #include <math.h>
+ 
+ #include "global.h"
++int residual_transform_quant_luma_16x16(Macroblock *currMB, ColorPlane pl);
++int residual_transform_quant_luma_16x16_ls(Macroblock *currMB, ColorPlane pl);
++int residual_transform_quant_luma_4x4(Macroblock *currMB, ColorPlane pl, int block_x,int block_y, int *coeff_cost, int intra);
++int residual_transform_quant_luma_4x4_ls(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra);
++int residual_transform_quant_chroma_4x4(Macroblock *currMB, int uv, int cr_cbp);
++int residual_transform_quant_chroma_4x4_ls(Macroblock *currMB, int uv, int cr_cbp);
++int residual_transform_quant_luma_4x4_sp(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra);
++int residual_transform_quant_chroma_4x4_sp(Macroblock *currMB, int uv,int cr_cbp);
++int residual_transform_quant_luma_4x4_sp2(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra);
++int residual_transform_quant_chroma_4x4_sp2(Macroblock *currMB, int uv,int cr_cbp);
+ #include "blk_prediction.h"
+ #include "enc_statistics.h"
+ #include "memalloc.h"
+@@ -205,7 +218,7 @@
+  *    none
+  ************************************************************************
+  */
+-int residual_transform_quant_luma_16x16(Macroblock *currMB, ColorPlane pl)
++static int lmp_unprofiled_residual_transform_quant_luma_16x16(Macroblock *currMB, ColorPlane pl)
+ {
+   int i,j;
+   int ii,jj;
+@@ -480,7 +493,7 @@
+  *    none
+  ************************************************************************
+  */
+-int residual_transform_quant_luma_16x16_ls(Macroblock *currMB, ColorPlane pl)
++static int lmp_unprofiled_residual_transform_quant_luma_16x16_ls(Macroblock *currMB, ColorPlane pl)
+ {
+   int i,j;
+   int ii,jj;
+@@ -658,7 +671,7 @@
+ *    coeff_cost:      Coeff coding cost for thresholding consideration.\n
+ ************************************************************************
+ */
+-int residual_transform_quant_luma_4x4(Macroblock *currMB, ColorPlane pl, int block_x,int block_y, int *coeff_cost, int intra)
++static int lmp_unprofiled_residual_transform_quant_luma_4x4(Macroblock *currMB, ColorPlane pl, int block_x,int block_y, int *coeff_cost, int intra)
+ {
+   int nonzero = FALSE;
+ 
+@@ -746,7 +759,7 @@
+ *    coeff_cost:      Coeff coding cost for thresholding consideration.\n
+ ************************************************************************
+ */
+-int residual_transform_quant_luma_4x4_ls(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
++static int lmp_unprofiled_residual_transform_quant_luma_4x4_ls(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
+ {
+   int i,j, coeff_ctr;
+   int run = -1;
+@@ -951,7 +964,7 @@
+  *    cr_cbp: Updated chroma coded block pattern.
+  ************************************************************************
+  */
+-int residual_transform_quant_chroma_4x4(Macroblock *currMB, int uv, int cr_cbp)
++static int lmp_unprofiled_residual_transform_quant_chroma_4x4(Macroblock *currMB, int uv, int cr_cbp)
+ {
+   int i, j, n2, n1, coeff_ctr;
+   int *m1;
+@@ -1296,7 +1309,7 @@
+  *    cr_cbp: Updated chroma coded block pattern.
+  ************************************************************************
+  */
+-int residual_transform_quant_chroma_4x4_ls(Macroblock *currMB, int uv, int cr_cbp)
++static int lmp_unprofiled_residual_transform_quant_chroma_4x4_ls(Macroblock *currMB, int uv, int cr_cbp)
+ {
+   int i,j,n2,n1,coeff_ctr,level ,scan_pos,run;
+   int m1[BLOCK_SIZE];
+@@ -1515,7 +1528,7 @@
+  *
+  ************************************************************************
+  */
+-int residual_transform_quant_luma_4x4_sp(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
++static int lmp_unprofiled_residual_transform_quant_luma_4x4_sp(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
+ {
+   int i,j,coeff_ctr;
+   int qp_const,ilev, level,scan_pos = 0,run = -1;
+@@ -1697,7 +1710,7 @@
+  *    cr_cbp: Updated chroma coded block pattern.
+  ************************************************************************
+  */
+-int residual_transform_quant_chroma_4x4_sp(Macroblock *currMB, int uv,int cr_cbp)
++static int lmp_unprofiled_residual_transform_quant_chroma_4x4_sp(Macroblock *currMB, int uv,int cr_cbp)
+ {
+   int i,j,ilev,n2,n1,coeff_ctr,c_err,level ,scan_pos,run;
+   int m1[BLOCK_SIZE];
+@@ -2065,7 +2078,7 @@
+  ************************************************************************
+  */
+ 
+-int residual_transform_quant_luma_4x4_sp2(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
++static int lmp_unprofiled_residual_transform_quant_luma_4x4_sp2(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
+ {
+   int i,j,ilev,coeff_ctr;
+   int level,scan_pos = 0,run = -1;
+@@ -2182,7 +2195,7 @@
+  *
+  ************************************************************************
+  */
+-int residual_transform_quant_chroma_4x4_sp2(Macroblock *currMB, int uv,int cr_cbp)
++static int lmp_unprofiled_residual_transform_quant_chroma_4x4_sp2(Macroblock *currMB, int uv,int cr_cbp)
+ {
+   int i,j,ilev,n2,n1,coeff_ctr,c_err,level ,scan_pos = 0,run = -1;
+   int m1[BLOCK_SIZE];
+@@ -2435,3 +2448,123 @@
+     currMB->residual_transform_quant_chroma_4x4[1]  = residual_transform_quant_chroma_4x4_sp2;
+   }
+ }
++
++int residual_transform_quant_luma_16x16(Macroblock *currMB, ColorPlane pl)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_16x16(currMB, pl);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_16x16(currMB, pl);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_luma_16x16_ls(Macroblock *currMB, ColorPlane pl)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_16x16_ls(currMB, pl);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_16x16_ls(currMB, pl);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_luma_4x4(Macroblock *currMB, ColorPlane pl, int block_x,int block_y, int *coeff_cost, int intra)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_4x4(currMB, pl, block_x, block_y, coeff_cost, intra);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_4x4(currMB, pl, block_x, block_y, coeff_cost, intra);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_luma_4x4_ls(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_4x4_ls(currMB, pl, block_x, block_y, coeff_cost, intra);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_4x4_ls(currMB, pl, block_x, block_y, coeff_cost, intra);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_chroma_4x4(Macroblock *currMB, int uv, int cr_cbp)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_chroma_4x4(currMB, uv, cr_cbp);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_chroma_4x4(currMB, uv, cr_cbp);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_chroma_4x4_ls(Macroblock *currMB, int uv, int cr_cbp)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_chroma_4x4_ls(currMB, uv, cr_cbp);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_chroma_4x4_ls(currMB, uv, cr_cbp);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_luma_4x4_sp(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_4x4_sp(currMB, pl, block_x, block_y, coeff_cost, intra);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_4x4_sp(currMB, pl, block_x, block_y, coeff_cost, intra);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_chroma_4x4_sp(Macroblock *currMB, int uv,int cr_cbp)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_chroma_4x4_sp(currMB, uv, cr_cbp);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_chroma_4x4_sp(currMB, uv, cr_cbp);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_luma_4x4_sp2(Macroblock *currMB, ColorPlane pl, int block_x,int block_y,int *coeff_cost, int intra)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_4x4_sp2(currMB, pl, block_x, block_y, coeff_cost, intra);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_4x4_sp2(currMB, pl, block_x, block_y, coeff_cost, intra);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_chroma_4x4_sp2(Macroblock *currMB, int uv,int cr_cbp)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_chroma_4x4_sp2(currMB, uv, cr_cbp);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_chroma_4x4_sp2(currMB, uv, cr_cbp);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
+--- a/lencod/src/transform8x8.c
++++ b/lencod/src/transform8x8.c
+@@ -1,3 +1,6 @@
++extern int lmp_phase_on(void);
++extern double lmp_phase_now(void), lmp_transform_s, lmp_residual_s;
++extern unsigned long long lmp_p16_tests, lmp_skip_checks;
+ /*!
+  ***************************************************************************
+  * \file transform8x8.c
+@@ -19,6 +22,9 @@
+ #include <limits.h>
+ 
+ #include "global.h"
++int residual_transform_quant_luma_8x8(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra);
++int residual_transform_quant_luma_8x8_cavlc(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra);
++int residual_transform_quant_luma_8x8_ls(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra);
+ 
+ #include "image.h"
+ #include "mb_access.h"
+@@ -519,7 +525,7 @@
+  *    coeff_cost: Counter for nonzero coefficients, used to discard expensive levels.
+  ************************************************************************
+  */
+-int residual_transform_quant_luma_8x8(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
++static int lmp_unprofiled_residual_transform_quant_luma_8x8(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
+ {
+   VideoParameters *p_Vid = currMB->p_Vid;
+   int nonzero = FALSE; 
+@@ -601,7 +607,7 @@
+  *    coeff_cost: Counter for nonzero coefficients, used to discard expensive levels.
+  ************************************************************************
+  */
+-int residual_transform_quant_luma_8x8_cavlc(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
++static int lmp_unprofiled_residual_transform_quant_luma_8x8_cavlc(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
+ {
+   VideoParameters *p_Vid = currMB->p_Vid;
+   int nonzero = FALSE; 
+@@ -660,7 +666,7 @@
+   return nonzero;
+ }
+ 
+-int residual_transform_quant_luma_8x8_ls(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
++static int lmp_unprofiled_residual_transform_quant_luma_8x8_ls(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
+ {
+   VideoParameters *p_Vid = currMB->p_Vid;
+   int i,j,coeff_ctr;
+@@ -898,3 +904,39 @@
+   return (dist_scale(HadamardSAD8x8 (diff64)));
+ }
+ 
++
++int residual_transform_quant_luma_8x8(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_8x8(currMB, pl, b8, coeff_cost, intra);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_8x8(currMB, pl, b8, coeff_cost, intra);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_luma_8x8_cavlc(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_8x8_cavlc(currMB, pl, b8, coeff_cost, intra);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_8x8_cavlc(currMB, pl, b8, coeff_cost, intra);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
++
++int residual_transform_quant_luma_8x8_ls(Macroblock *currMB, ColorPlane pl, int b8, int *coeff_cost, int intra)
++{
++  double t;
++  int result;
++  if (!lmp_phase_on())
++    return lmp_unprofiled_residual_transform_quant_luma_8x8_ls(currMB, pl, b8, coeff_cost, intra);
++  t = lmp_phase_now();
++  result = lmp_unprofiled_residual_transform_quant_luma_8x8_ls(currMB, pl, b8, coeff_cost, intra);
++  lmp_transform_s += lmp_phase_now() - t;
++  return result;
++}
+--- a/lencod/src/macroblock.c
++++ b/lencod/src/macroblock.c
+@@ -1,3 +1,6 @@
++extern int lmp_phase_on(void);
++extern double lmp_phase_now(void), lmp_transform_s, lmp_residual_s;
++extern unsigned long long lmp_p16_tests, lmp_skip_checks;
+ /*!
+  *************************************************************************************
+  * \file macroblock.c
+@@ -951,7 +954,10 @@
+ 
+       //===== compute prediction residual ======            
+       if (!jm_state_apply_b1_residual(currMB, PLANE_Y, mb_x, mb_y, 8, 8))
+-        compute_residue (&p_Vid->pCurImg[currMB->opix_y + mb_y], &currSlice->mb_pred[0][mb_y], &currSlice->mb_ores[0][mb_y], mb_x, currMB->pix_x + mb_x, 8, 8);
++        { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++          compute_residue (&p_Vid->pCurImg[currMB->opix_y + mb_y], &currSlice->mb_pred[0][mb_y], &currSlice->mb_ores[0][mb_y], mb_x, currMB->pix_x + mb_x, 8, 8);
++          if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++        }
+     }
+ 
+     for (byy=0, block_y=mb_y; block_y<mb_y+8; byy+=4, block_y+=4)
+@@ -968,7 +974,10 @@
+ 
+           //===== compute prediction residual ======            
+           if (!jm_state_apply_b1_residual(currMB, PLANE_Y, block_x, block_y, 4, 4))
+-            compute_residue(&p_Vid->pCurImg[currMB->opix_y + block_y], &currSlice->mb_pred[0][block_y], &currSlice->mb_ores[0][block_y], block_x, pic_pix_x, 4, 4);
++            { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++              compute_residue(&p_Vid->pCurImg[currMB->opix_y + block_y], &currSlice->mb_pred[0][block_y], &currSlice->mb_ores[0][block_y], block_x, pic_pix_x, 4, 4);
++              if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++            }
+         }
+ 
+         //===== forward transform, Quantization, inverse Quantization, inverse transform, Reconstruction =====
+@@ -999,7 +1008,10 @@
+ 
+     //===== compute prediction residual ======            
+     if (!jm_state_apply_b1_residual(currMB, PLANE_Y, block_x, block_y, 8, 8))
+-      compute_residue (&p_Vid->pCurImg[currMB->opix_y + block_y], &currSlice->mb_pred[0][block_y], &currSlice->mb_ores[0][block_y], block_x, pic_pix_x, 8, 8);
++      { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++        compute_residue (&p_Vid->pCurImg[currMB->opix_y + block_y], &currSlice->mb_pred[0][block_y], &currSlice->mb_ores[0][block_y], block_x, pic_pix_x, 8, 8);
++        if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++      }
+ 
+     if (currSlice->NoResidueDirect != 1 && !skipped)
+     {
+@@ -1215,7 +1227,10 @@
+     //===== compute prediction residual ======
+     // We should not need to compute this for skip mode, but currently computed for "debugging" purposes
+     if (!jm_state_apply_b1_residual(currMB, PLANE_Y, 0, 0, MB_BLOCK_SIZE, MB_BLOCK_SIZE))
+-      compute_residue (&p_Vid->pCurImg[currMB->opix_y], *currSlice->mb_pred, *currSlice->mb_ores, 0, currMB->pix_x, MB_BLOCK_SIZE, MB_BLOCK_SIZE);
++      { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++        compute_residue (&p_Vid->pCurImg[currMB->opix_y], *currSlice->mb_pred, *currSlice->mb_ores, 0, currMB->pix_x, MB_BLOCK_SIZE, MB_BLOCK_SIZE);
++        if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++      }
+ 
+     copy_image_data_16x16(&p_Vid->enc_picture->imgY[currMB->pix_y], *currSlice->mb_pred, currMB->pix_x, 0);
+   }
+@@ -1233,7 +1248,10 @@
+ 
+       //===== compute prediction residual ======      
+       if (!jm_state_apply_b1_residual(currMB, PLANE_Y, 0, 0, MB_BLOCK_SIZE, MB_BLOCK_SIZE))
+-        compute_residue (&p_Vid->pCurImg[currMB->opix_y], *currSlice->mb_pred, *currSlice->mb_ores, 0, currMB->pix_x, MB_BLOCK_SIZE, MB_BLOCK_SIZE);
++        { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++          compute_residue (&p_Vid->pCurImg[currMB->opix_y], *currSlice->mb_pred, *currSlice->mb_ores, 0, currMB->pix_x, MB_BLOCK_SIZE, MB_BLOCK_SIZE);
++          if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++        }
+ 
+       // Luma residual coding (16x16 mode)
+       for (block8x8 = 0; block8x8 < 4; ++block8x8)
+@@ -1301,7 +1319,10 @@
+ 
+     //===== compute prediction residual ======
+     // We should not need to compute this for skip mode, but currently computed for "debugging" purposes
+-    compute_residue (&p_Vid->pCurImg[currMB->opix_y], &currSlice->mb_pred[0][0], &currSlice->mb_ores[0][0], 0, currMB->pix_x, 16, 16);
++    { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++      compute_residue (&p_Vid->pCurImg[currMB->opix_y], &currSlice->mb_pred[0][0], &currSlice->mb_ores[0][0], 0, currMB->pix_x, 16, 16);
++      if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++    }
+ 
+     // Luma residual coding (16x16 mode)
+     if (!is_skip)
+@@ -1497,7 +1518,10 @@
+     else
+     {
+       if (!jm_state_apply_b1_residual(currMB, uv + 1, 0, 0, p_Vid->mb_cr_size_x, p_Vid->mb_cr_size_y))
+-        compute_residue(&p_Vid->pImgOrg[uv + 1][currMB->opix_c_y ], currSlice->mb_pred[ uv + 1], currSlice->mb_ores[uv + 1], 0, currMB->pix_c_x, p_Vid->mb_cr_size_x, p_Vid->mb_cr_size_y);
++        { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++          compute_residue(&p_Vid->pImgOrg[uv + 1][currMB->opix_c_y ], currSlice->mb_pred[ uv + 1], currSlice->mb_ores[uv + 1], 0, currMB->pix_c_x, p_Vid->mb_cr_size_x, p_Vid->mb_cr_size_y);
++          if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++        }
+ 
+       //===== forward transform, Quantization, inverse Quantization, inverse transform, and Reconstruction =====
+       chroma_cbp = currMB->residual_transform_quant_chroma_4x4[uv] (currMB, uv, chroma_cbp);
+@@ -1538,7 +1562,10 @@
+       }
+     }
+ 
+-    compute_residue(&p_Vid->pImgOrg[uv + 1][currMB->opix_c_y ], currSlice->mb_pred[ uv + 1], currSlice->mb_ores[uv + 1], 0, currMB->pix_c_x, p_Vid->mb_cr_size_x, p_Vid->mb_cr_size_y);
++    { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++      compute_residue(&p_Vid->pImgOrg[uv + 1][currMB->opix_c_y ], currSlice->mb_pred[ uv + 1], currSlice->mb_ores[uv + 1], 0, currMB->pix_c_x, p_Vid->mb_cr_size_x, p_Vid->mb_cr_size_y);
++      if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++    }
+ 
+     //===== forward transform, Quantization, inverse Quantization, inverse transform, and Reconstruction =====
+     if (currMB->mb_type==I16MB || currMB->mb_type == I4MB)
+@@ -1620,7 +1647,10 @@
+     }   
+     else
+     {
+-      compute_residue(&p_Vid->pImgOrg[uv + 1][currMB->opix_c_y ], &currSlice->mb_pred[ uv + 1][0], &currSlice->mb_ores[uv + 1][0], 0, currMB->pix_c_x, p_Vid->mb_cr_size_x, p_Vid->mb_cr_size_y);
++      { double t = lmp_phase_on() ? lmp_phase_now() : 0;
++        compute_residue(&p_Vid->pImgOrg[uv + 1][currMB->opix_c_y ], &currSlice->mb_pred[ uv + 1][0], &currSlice->mb_ores[uv + 1][0], 0, currMB->pix_c_x, p_Vid->mb_cr_size_x, p_Vid->mb_cr_size_y);
++        if (lmp_phase_on()) lmp_residual_s += lmp_phase_now() - t;
++      }
+     }
+ 
+     //===== forward transform, Quantization, inverse Quantization, inverse transform, and Reconstruction =====
+--- a/lencod/src/md_low.c
++++ b/lencod/src/md_low.c
+@@ -1,3 +1,6 @@
++extern int lmp_phase_on(void);
++extern double lmp_phase_now(void), lmp_transform_s, lmp_residual_s;
++extern unsigned long long lmp_p16_tests, lmp_skip_checks;
+ 
+ /*!
+  ***************************************************************************
+@@ -189,6 +192,7 @@
+       b8x8info->best[mode][0].bipred = 0;
+       if (enc_mb.valid[mode])
+       {
++        if (lmp_phase_on() && mode == 1) ++lmp_p16_tests;
+         for (cost=0, block=0; block<(mode==1?1:2); block++)
+         {
+           update_lambda_costs(currMB, &enc_mb, lambda_mf);
+@@ -644,6 +648,7 @@
+     currSlice->set_motion_vectors_mb (currMB);
+ 
+     //===== check for SKIP mode =====
++    if (lmp_phase_on()) ++lmp_skip_checks;
+     if(p_Vid->P444_joined)
+     {
+       if ((pslice) && currMB->best_mode == 1 && currMB->cbp==0 && currSlice->cmp_cbp[1] == 0 && currSlice->cmp_cbp[2] == 0 &&

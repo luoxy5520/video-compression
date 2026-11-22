@@ -1,0 +1,13 @@
+{
+  "samples": ["sample_0000", "sample_1004"],
+  "search_mode": 3,
+  "range_px": 32,
+  "qp": 28,
+  "repeats_after_warmup": 3,
+  "fixed_integer_evaluations": 18,
+  "fixed_radius_px": 1,
+  "fixed_pixel_centers": ["EPZS initial center", "zero"],
+  "fixed_latent_centers": ["E2 rank 1", "E2 rank 2"],
+  "fixed_fusion_centers": ["EPZS initial center", "E2 rank 1"],
+  "adaptive_modes": {"pixel": 1, "latent_seed": 2, "latent_gated": 3}
+}

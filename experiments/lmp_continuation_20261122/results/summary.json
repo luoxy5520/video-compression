@@ -1,0 +1,107 @@
+{
+  "samples": [
+    "sample_0000",
+    "sample_1004"
+  ],
+  "group_video_count": 14,
+  "closed_loop_validation": "development_only",
+  "arm_metrics": {
+    "C-pixel-fixed": {
+      "median_reduction_pct": -0.8724661524529387,
+      "median_speedup": 0.991637656439931,
+      "max_bitrate_change_pct": 26.86512792250857,
+      "mean_p_psnr_change_db": -0.3035269350630827,
+      "worst_p_psnr_change_db": -0.5661735711029294,
+      "mean_last4_change_db": -0.3417013622423539,
+      "dual_decode": true,
+      "passes_quality": false,
+      "passes_speed": false,
+      "passes_all": false
+    },
+    "C1-fixed": {
+      "median_reduction_pct": -6.615202413993471,
+      "median_speedup": 0.9385753803910146,
+      "max_bitrate_change_pct": 48.60915213390997,
+      "mean_p_psnr_change_db": -0.352299149823196,
+      "worst_p_psnr_change_db": -0.6120963674742299,
+      "mean_last4_change_db": -0.3717821646954782,
+      "dual_decode": true,
+      "passes_quality": false,
+      "passes_speed": false,
+      "passes_all": false
+    },
+    "C2-fixed": {
+      "median_reduction_pct": -5.785898894271813,
+      "median_speedup": 0.945632937993643,
+      "max_bitrate_change_pct": 17.438840991247663,
+      "mean_p_psnr_change_db": -0.23117089696908621,
+      "worst_p_psnr_change_db": -0.421635543680722,
+      "mean_last4_change_db": -0.2775812249483103,
+      "dual_decode": true,
+      "passes_quality": false,
+      "passes_speed": false,
+      "passes_all": false
+    },
+    "C-pixel-adaptive": {
+      "median_reduction_pct": -0.11009234499689269,
+      "median_speedup": 0.9989077863318899,
+      "max_bitrate_change_pct": 0.06733251038042454,
+      "mean_p_psnr_change_db": -0.0009811281790028659,
+      "worst_p_psnr_change_db": -0.0026291314762190154,
+      "mean_last4_change_db": -0.01306249865804432,
+      "dual_decode": true,
+      "passes_quality": true,
+      "passes_speed": false,
+      "passes_all": false
+    },
+    "C1-seed": {
+      "median_reduction_pct": -5.764071096330781,
+      "median_speedup": 0.9455939656660002,
+      "max_bitrate_change_pct": 0.03815508921556354,
+      "mean_p_psnr_change_db": 0.008335255161785682,
+      "worst_p_psnr_change_db": 0.0037334799784431993,
+      "mean_last4_change_db": 0.0035493960559200843,
+      "dual_decode": true,
+      "passes_quality": true,
+      "passes_speed": false,
+      "passes_all": false
+    },
+    "C2-adaptive": {
+      "median_reduction_pct": -6.140946650170798,
+      "median_speedup": 0.9421451058261842,
+      "max_bitrate_change_pct": 0.09875434855795007,
+      "mean_p_psnr_change_db": 0.011004920652208483,
+      "worst_p_psnr_change_db": 0.004030888060405857,
+      "mean_last4_change_db": -0.00011493607664903038,
+      "dual_decode": true,
+      "passes_quality": true,
+      "passes_speed": false,
+      "passes_all": false
+    }
+  },
+  "historical_candidate_analysis": {
+    "E2": {
+      "N": 108175,
+      "Both_hit": 58516,
+      "E0_only": 32240,
+      "DiT_only": 1269,
+      "Neither": 16150,
+      "lost_by_insertion": 1342,
+      "gained_by_insertion": 692,
+      "P_hit_given_E0_miss": 0.07285148401171135
+    },
+    "E3": {
+      "N": 108175,
+      "Both_hit": 58791,
+      "E0_only": 31965,
+      "DiT_only": 1302,
+      "Neither": 16117,
+      "lost_by_insertion": 1250,
+      "gained_by_insertion": 699,
+      "P_hit_given_E0_miss": 0.0747459670474769
+    }
+  },
+  "historical_source": "/home/luoxiangyu/lmp-e1-e2-followup-20261121/repo/results-e1-e2-followup",
+  "v2b_wall": "not_run",
+  "bd_rate": "not_run"
+}

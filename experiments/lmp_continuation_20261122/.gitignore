@@ -1,0 +1,13 @@
+__pycache__/
+jm/
+logs/runs/
+logs/failed*/
+logs/*.stdout
+logs/*.stderr
+logs/*.console
+*.264
+*.mp4
+*.yuv
+*.pt
+*.bin
+jm-detail/

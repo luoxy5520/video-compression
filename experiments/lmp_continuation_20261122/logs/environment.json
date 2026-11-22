@@ -1,0 +1,24 @@
+{
+  "hostname": "user-AS-4124GS-TNR",
+  "kernel": "6.17.0-29-generic",
+  "cpu_affinity": [
+    24
+  ],
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "torch": "2.7.1+cu128",
+  "gpu_used": false,
+  "encoder_sha256": "d2e8ef663e22a61867477a9bf3589a0471e5d3cb9aef3239d352c330af69234c",
+  "decoder_sha256": "54bdeb62f94926fea4d1cd46cbb197edb499ad669537853ec97786fec0e4d0b7",
+  "configs": {
+    "/home/luoxiangyu/a_new48_20261107/kit/JM-backend/cfg/encoder_baseline.cfg": "964c9877a00bae3b87a48237e9ea11c445406df059b8725613f444a3202a0dfd",
+    "/home/luoxiangyu/a_new48_20261107/kit/linux/skip_p16.cfg": "80f978ed72c25d6d72884a4845428c191f2ff9344dc7edb56acf38982173fa26",
+    "/home/luoxiangyu/a_new48_20261107/kit/JM-backend/cfg/decoder.cfg": "2e017eefa24780c591654a9d827220cd342a943dc9d67956ff7da17e59e65540"
+  },
+  "historical_base": "f080a451831e89a59948006c4299bca698fdfef6",
+  "jm_patch_sha256": "126b574c2449d49b69414a5f0fcba98096d6ac1c5b8bc432db520408ca9ee6d5",
+  "runner_sha256": "cdb225a4fca8a02a2f8f363e87d48931f8e06138c1cc604061259d61b742ac18",
+  "prior_generator_sha256": "3e9f94321a286fb4c5a2c0809573e0ad18186139e662caf138683cee63557918",
+  "prior_storage_bytes": 798720,
+  "encoder_threads": 1
+}
