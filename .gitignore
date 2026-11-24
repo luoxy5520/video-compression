@@ -1,0 +1,8 @@
+__pycache__/
+results/*/*.rgb
+results/*/*.yuv
+results/*/*.lvc
+results/*/*.264
+results/*/jm_*/
+
+tools_plot/
