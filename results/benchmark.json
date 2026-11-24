@@ -1,0 +1,432 @@
+[
+  {
+    "sample": "sample_0000",
+    "method": "x264_medium_28",
+    "repeat": 1,
+    "warmup": false,
+    "post_dit_encoding_s": 1.5222598281688988,
+    "post_dit_to_receiver_pixels_s": 1.6545691629871726,
+    "stages": {
+      "vae_s": 1.1827640268020332,
+      "pixel_prepare_transfer_conversion_s": 0.15942339226603508,
+      "encode_serialization_s": 0.18007240910083055
+    },
+    "peak_allocated": 9010307072,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "x264_medium_28",
+    "repeat": 2,
+    "warmup": false,
+    "post_dit_encoding_s": 1.5254655061289668,
+    "post_dit_to_receiver_pixels_s": 1.6578704798594117,
+    "stages": {
+      "vae_s": 1.1865150788798928,
+      "pixel_prepare_transfer_conversion_s": 0.16399245616048574,
+      "encode_serialization_s": 0.17495797108858824
+    },
+    "peak_allocated": 9010307072,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "x264_medium_28",
+    "repeat": 3,
+    "warmup": false,
+    "post_dit_encoding_s": 1.5602978966198862,
+    "post_dit_to_receiver_pixels_s": 1.6797028295695782,
+    "stages": {
+      "vae_s": 1.1904027997516096,
+      "pixel_prepare_transfer_conversion_s": 0.17198833683505654,
+      "encode_serialization_s": 0.19790676003322005
+    },
+    "peak_allocated": 9010307072,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "x264_medium_28",
+    "repeat": 4,
+    "warmup": false,
+    "post_dit_encoding_s": 1.5703361411578953,
+    "post_dit_to_receiver_pixels_s": 1.7123902360908687,
+    "stages": {
+      "vae_s": 1.1889242571778595,
+      "pixel_prepare_transfer_conversion_s": 0.15898237703368068,
+      "encode_serialization_s": 0.2224295069463551
+    },
+    "peak_allocated": 9010307072,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "x264_medium_28",
+    "repeat": 5,
+    "warmup": false,
+    "post_dit_encoding_s": 1.548482608050108,
+    "post_dit_to_receiver_pixels_s": 1.6938253520056605,
+    "stages": {
+      "vae_s": 1.1915523931384087,
+      "pixel_prepare_transfer_conversion_s": 0.17018232867121696,
+      "encode_serialization_s": 0.18674788624048233
+    },
+    "peak_allocated": 9010307072,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT8",
+    "repeat": 1,
+    "warmup": false,
+    "post_dit_encoding_s": 0.028598677832633257,
+    "post_dit_to_receiver_pixels_s": 1.233936628792435,
+    "stages": {
+      "latent_d2h_s": 0.00024857698008418083,
+      "codec_s": 0.028350100852549076
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT8",
+    "repeat": 2,
+    "warmup": false,
+    "post_dit_encoding_s": 0.02612690906971693,
+    "post_dit_to_receiver_pixels_s": 1.234482510946691,
+    "stages": {
+      "latent_d2h_s": 0.00023315707221627235,
+      "codec_s": 0.025893751997500658
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT8",
+    "repeat": 3,
+    "warmup": false,
+    "post_dit_encoding_s": 0.024062464013695717,
+    "post_dit_to_receiver_pixels_s": 1.2314074076712132,
+    "stages": {
+      "latent_d2h_s": 0.00023877667263150215,
+      "codec_s": 0.023823687341064215
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT8",
+    "repeat": 4,
+    "warmup": false,
+    "post_dit_encoding_s": 0.024873023852705956,
+    "post_dit_to_receiver_pixels_s": 1.235800612717867,
+    "stages": {
+      "latent_d2h_s": 0.0002366066910326481,
+      "codec_s": 0.024636417161673307
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT8",
+    "repeat": 5,
+    "warmup": false,
+    "post_dit_encoding_s": 0.02853296883404255,
+    "post_dit_to_receiver_pixels_s": 1.235918859951198,
+    "stages": {
+      "latent_d2h_s": 0.0002453969791531563,
+      "codec_s": 0.028287571854889393
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT4",
+    "repeat": 1,
+    "warmup": false,
+    "post_dit_encoding_s": 0.02015364170074463,
+    "post_dit_to_receiver_pixels_s": 1.2296655951067805,
+    "stages": {
+      "latent_d2h_s": 0.0002401270903646946,
+      "codec_s": 0.019913514610379934
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT4",
+    "repeat": 2,
+    "warmup": false,
+    "post_dit_encoding_s": 0.02385247591882944,
+    "post_dit_to_receiver_pixels_s": 1.2337402729317546,
+    "stages": {
+      "latent_d2h_s": 0.0004683542065322399,
+      "codec_s": 0.0233841217122972
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT4",
+    "repeat": 3,
+    "warmup": false,
+    "post_dit_encoding_s": 0.020172731950879097,
+    "post_dit_to_receiver_pixels_s": 1.2300454280339181,
+    "stages": {
+      "latent_d2h_s": 0.00047452468425035477,
+      "codec_s": 0.019698207266628742
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT4",
+    "repeat": 4,
+    "warmup": false,
+    "post_dit_encoding_s": 0.020168092101812363,
+    "post_dit_to_receiver_pixels_s": 1.2324040280655026,
+    "stages": {
+      "latent_d2h_s": 0.0002361983060836792,
+      "codec_s": 0.019931893795728683
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_0000",
+    "method": "INT4",
+    "repeat": 5,
+    "warmup": false,
+    "post_dit_encoding_s": 0.021377097349613905,
+    "post_dit_to_receiver_pixels_s": 1.2334046950563788,
+    "stages": {
+      "latent_d2h_s": 0.00045415526255965233,
+      "codec_s": 0.020922942087054253
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "x264_medium_28",
+    "repeat": 1,
+    "warmup": false,
+    "post_dit_encoding_s": 1.625447120051831,
+    "post_dit_to_receiver_pixels_s": 1.7589179989881814,
+    "stages": {
+      "vae_s": 1.1982307839207351,
+      "pixel_prepare_transfer_conversion_s": 0.15460729924961925,
+      "encode_serialization_s": 0.27260903688147664
+    },
+    "peak_allocated": 9009469440,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "x264_medium_28",
+    "repeat": 2,
+    "warmup": false,
+    "post_dit_encoding_s": 1.6025191200897098,
+    "post_dit_to_receiver_pixels_s": 1.7332658721134067,
+    "stages": {
+      "vae_s": 1.1969808479771018,
+      "pixel_prepare_transfer_conversion_s": 0.1577237001620233,
+      "encode_serialization_s": 0.24781457195058465
+    },
+    "peak_allocated": 9009469440,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "x264_medium_28",
+    "repeat": 3,
+    "warmup": false,
+    "post_dit_encoding_s": 1.631909356918186,
+    "post_dit_to_receiver_pixels_s": 1.7645434751175344,
+    "stages": {
+      "vae_s": 1.198088533245027,
+      "pixel_prepare_transfer_conversion_s": 0.1575311627238989,
+      "encode_serialization_s": 0.27628966094926
+    },
+    "peak_allocated": 9009469440,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "x264_medium_28",
+    "repeat": 4,
+    "warmup": false,
+    "post_dit_encoding_s": 1.5941965687088668,
+    "post_dit_to_receiver_pixels_s": 1.7288825018331409,
+    "stages": {
+      "vae_s": 1.1962534049525857,
+      "pixel_prepare_transfer_conversion_s": 0.14484204770997167,
+      "encode_serialization_s": 0.25310111604630947
+    },
+    "peak_allocated": 9009469440,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "x264_medium_28",
+    "repeat": 5,
+    "warmup": false,
+    "post_dit_encoding_s": 1.6412309580482543,
+    "post_dit_to_receiver_pixels_s": 1.7716079228557646,
+    "stages": {
+      "vae_s": 1.1994190132245421,
+      "pixel_prepare_transfer_conversion_s": 0.14715395960956812,
+      "encode_serialization_s": 0.294657985214144
+    },
+    "peak_allocated": 9009469440,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT8",
+    "repeat": 1,
+    "warmup": false,
+    "post_dit_encoding_s": 0.029477928299456835,
+    "post_dit_to_receiver_pixels_s": 1.2438805243000388,
+    "stages": {
+      "latent_d2h_s": 0.0003116261214017868,
+      "codec_s": 0.029166302178055048
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT8",
+    "repeat": 2,
+    "warmup": false,
+    "post_dit_encoding_s": 0.02859398815780878,
+    "post_dit_to_receiver_pixels_s": 1.2423468721099198,
+    "stages": {
+      "latent_d2h_s": 0.00025567738339304924,
+      "codec_s": 0.02833831077441573
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT8",
+    "repeat": 3,
+    "warmup": false,
+    "post_dit_encoding_s": 0.028650136664509773,
+    "post_dit_to_receiver_pixels_s": 1.2463057320564985,
+    "stages": {
+      "latent_d2h_s": 0.00048349378630518913,
+      "codec_s": 0.028166642878204584
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT8",
+    "repeat": 4,
+    "warmup": false,
+    "post_dit_encoding_s": 0.028502860106527805,
+    "post_dit_to_receiver_pixels_s": 1.2461963333189487,
+    "stages": {
+      "latent_d2h_s": 0.00025886716321110725,
+      "codec_s": 0.028243992943316698
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT8",
+    "repeat": 5,
+    "warmup": false,
+    "post_dit_encoding_s": 0.025949690025299788,
+    "post_dit_to_receiver_pixels_s": 1.2406705194152892,
+    "stages": {
+      "latent_d2h_s": 0.0002643563784658909,
+      "codec_s": 0.025685333646833897
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT4",
+    "repeat": 1,
+    "warmup": false,
+    "post_dit_encoding_s": 0.02102466206997633,
+    "post_dit_to_receiver_pixels_s": 1.2362825409509242,
+    "stages": {
+      "latent_d2h_s": 0.00026321690529584885,
+      "codec_s": 0.02076144516468048
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT4",
+    "repeat": 2,
+    "warmup": false,
+    "post_dit_encoding_s": 0.021465016063302755,
+    "post_dit_to_receiver_pixels_s": 1.233525583986193,
+    "stages": {
+      "latent_d2h_s": 0.0004723742604255676,
+      "codec_s": 0.020992641802877188
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT4",
+    "repeat": 3,
+    "warmup": false,
+    "post_dit_encoding_s": 0.02084950264543295,
+    "post_dit_to_receiver_pixels_s": 1.2346704979427159,
+    "stages": {
+      "latent_d2h_s": 0.00026122666895389557,
+      "codec_s": 0.020588275976479053
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT4",
+    "repeat": 4,
+    "warmup": false,
+    "post_dit_encoding_s": 0.020426238887012005,
+    "post_dit_to_receiver_pixels_s": 1.2329239789396524,
+    "stages": {
+      "latent_d2h_s": 0.00027747685089707375,
+      "codec_s": 0.02014876203611493
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  },
+  {
+    "sample": "sample_1004",
+    "method": "INT4",
+    "repeat": 5,
+    "warmup": false,
+    "post_dit_encoding_s": 0.021349087357521057,
+    "post_dit_to_receiver_pixels_s": 1.2334322021342814,
+    "stages": {
+      "latent_d2h_s": 0.0002486472949385643,
+      "codec_s": 0.021100440062582493
+    },
+    "peak_allocated": 9012303872,
+    "peak_reserved": 11903434752
+  }
+]

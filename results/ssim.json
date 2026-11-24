@@ -1,0 +1,52 @@
+[
+  {
+    "sample": "sample_0000",
+    "method": "B2",
+    "ssim": 0.997929
+  },
+  {
+    "sample": "sample_0000",
+    "method": "C2",
+    "ssim": 0.960578
+  },
+  {
+    "sample": "sample_0000",
+    "method": "D2",
+    "ssim": 0.674389
+  },
+  {
+    "sample": "sample_0000",
+    "method": "E1",
+    "ssim": 0.960578
+  },
+  {
+    "sample": "sample_0000",
+    "method": "mixed",
+    "ssim": 0.971612
+  },
+  {
+    "sample": "sample_1004",
+    "method": "B2",
+    "ssim": 0.998413
+  },
+  {
+    "sample": "sample_1004",
+    "method": "C2",
+    "ssim": 0.933094
+  },
+  {
+    "sample": "sample_1004",
+    "method": "D2",
+    "ssim": 0.520556
+  },
+  {
+    "sample": "sample_1004",
+    "method": "E1",
+    "ssim": 0.933094
+  },
+  {
+    "sample": "sample_1004",
+    "method": "mixed",
+    "ssim": 0.952943
+  }
+]

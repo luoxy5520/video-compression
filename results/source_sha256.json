@@ -1,0 +1,13 @@
+{
+  "codec/lvc.py": "19cb36bc5b48abf14bcc67fbfad17fd81ec2b8605c2416b51898efa2b938c4c5",
+  "tests/test_codec.py": "a13dcf41eab0f0fdb0f09d996a848d735e6694de44613682e1523aac13240928",
+  "scripts/run_smoke.py": "640c758442230b681956b52b2a662988eea1e970b84e454fc7e65ccdd8aeae52",
+  "scripts/benchmark.py": "c660d989cc11d7dad8674ad888327b2c5a7d3f5911fdec95985510f3a44ac1c0",
+  "scripts/present.py": "c1287e181dbc4a79017f3271785fd6911746fc4f80695a8ebc788366b529534b",
+  "scripts/finalize_metadata.py": "7a08a5b30b03780eb631c2039f4c98c7ad47bfcccdf9502f006a7ed10c54b153",
+  "scripts/validate.py": "69c7545c703ec0c397cbcae27f2e3a1fcac312cbbaea27b3865da69202283706",
+  "scripts/generate_report.py": "867fe04af2bc10c9de94fe57fe244fb2128e1cfe44aa88c23ccfb8355765b289",
+  "scripts/plot_results.py": "852d5beaa9f886887bd59119961f04cdb59791838a4f388a970ca3e0937f6fd8",
+  "scripts/supplement.py": "15fc69735cd83e20738e3f365e09067866e48d985d91b087121ba0c7a9febc36",
+  "scripts/codec_cli.py": "f8b3581fb954581b6a8951d102d07ac6bc4419496b6d14c4cfb71e50f5202f98"
+}

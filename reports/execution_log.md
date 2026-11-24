@@ -34,3 +34,9 @@
 - 发现验证/混合精度码流最初仅带数据集checkpoint配置，显式VAE SHA与归一化字段需补齐：运行 scripts/finalize_metadata.py，对全部正式码流重新编码、重测5次并断言重建张量与原码流逐值相等；所有文件长度与相关指标更新。既有视频质量不变。
 - 原环境缺matplotlib，首次绘图NOT RUN；随后仅安装到服务器独立实验目录tools_plot，不修改Wan venv。使用scripts/plot_results.py生成标准曲线，LPIPS仍NOT RUN。pip目标目录中的pillow与gradio约束提示不影响Wan环境，因为目标目录仅用于独立绘图进程。
 - 原始数据、完整码流和中间YUV均留服务器独立实验目录，部分代表性LVC同步本地供直接审查。
+
+## 完成核验
+
+服务器已观察到 COMPLETE、SUPPLEMENT_COMPLETE、PRESENT_COMPLETE、VALIDATION_COMPLETE、BENCHMARK_COMPLETE、METADATA_COMPLETE、FINAL_COMPLETE。16条val共304条记录，2条开发样本共100条基础记录；最终数量以JSON实际值为准。码流元数据重写后全部重新计时并验证重建不变。源码归档commit为0f6fea7；最终结果由后续归档commit保存。本地videos/提供规范命名展示，bitstreams/提供10个代表码流。最终报告十项回答明确保留未执行指标。
+
+一次归档命令把状态文本和tar混写至/tmp临时文件，未用于解压或数据分析；随后用纯tar输出重新同步成功。
