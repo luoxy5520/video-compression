@@ -18,7 +18,8 @@ MODEL = Path('/mnt/data_hdd/models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth')
 
 def save(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix('.tmp')
+    import os
+    tmp = path.with_suffix(f'.{os.getpid()}.tmp')
     tmp.write_text(json.dumps(value, indent=2, allow_nan=False))
     tmp.replace(path)
 

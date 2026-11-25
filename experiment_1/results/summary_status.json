@@ -1,0 +1,5 @@
+{
+  "uniform_rows": 144,
+  "expected_uniform_rows": 144,
+  "bd_rate": "NOT RUN; per-video interpolation only"
+}

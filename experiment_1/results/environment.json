@@ -1,0 +1,7 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-29-generic-x86_64-with-glibc2.39",
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "model_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+}

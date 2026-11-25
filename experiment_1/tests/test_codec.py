@@ -24,6 +24,17 @@ class CodecTests(unittest.TestCase):
         for bits in (1,9,2.5,True):
             with self.assertRaises(ValueError): pack(np.array([0]),bits)
 
+    def test_profile_preserves_bitstream(self):
+        z=np.random.default_rng(12).normal(size=(1,3,2,3,5)).astype('float32')
+        with tempfile.TemporaryDirectory() as d:
+            a=Path(d)/'a'; b=Path(d)/'b'
+            for cfg in [dict(bits=i,granularity='channel') for i in range(2,9)]+[dict(channel_bits=[3,5,7])]:
+                encode(z,a,cfg,dict(algorithm='zstd'),{})
+                profile={};encode(z,b,cfg,dict(algorithm='zstd'),{},profile)
+                self.assertEqual(a.read_bytes(),b.read_bytes())
+                self.assertTrue(all(profile[k]>=0 for k in ('quantization_s','packing_s','entropy_s','total_s')))
+                self.assertGreaterEqual(profile['total_s'],sum(profile[k] for k in ('quantization_s','packing_s','entropy_s')))
+
     def test_roundtrip(self):
         rng=np.random.default_rng(42)
         with tempfile.TemporaryDirectory() as d:

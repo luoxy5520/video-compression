@@ -1,0 +1,22 @@
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+statistics sample_0000 DONE
+statistics sample_1004 DONE
+statistics sample_0020 DONE
+statistics sample_0021 DONE
+statistics sample_0022 DONE
+statistics sample_0023 DONE
+statistics sample_1024 DONE
+statistics sample_1025 DONE
+statistics sample_1026 DONE
+statistics sample_1027 DONE
+statistics sample_1028 DONE
+statistics sample_1029 DONE
+statistics sample_1030 DONE
+statistics sample_1031 DONE
+statistics sample_1032 DONE
+statistics sample_1033 DONE
+statistics sample_1034 DONE
+statistics sample_1035 DONE

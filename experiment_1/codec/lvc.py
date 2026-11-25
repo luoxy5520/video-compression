@@ -1,5 +1,5 @@
 """LVC1 standalone CPU codec; no VAE or pixel dependencies."""
-import json,struct,hashlib,zlib,ctypes,ctypes.util
+import json,struct,hashlib,zlib,ctypes,ctypes.util,time
 from pathlib import Path
 import numpy as np
 
@@ -33,21 +33,26 @@ def unpack(data,bits,count):
     b=np.unpackbits(np.frombuffer(data,dtype='uint8'),bitorder='little')[:count*bits].reshape(count,bits)
     return b.astype('int16')@(1<<np.arange(bits,dtype='int16'))-(1<<(bits-1))
 
-def encode(latent,output_path,quant_config,compression_config,video_metadata):
+def encode(latent,output_path,quant_config,compression_config,video_metadata,profile=None):
+    started=time.perf_counter()
     if 'channel_bits' in quant_config:
         import tempfile
-        parts=[]
+        parts=[]; profiles=[]
         with tempfile.TemporaryDirectory() as d:
             for c,bits in enumerate(quant_config['channel_bits']):
                 cfg=dict(bits=bits,granularity='channel',percentile=quant_config.get('percentile',100))
-                path=Path(d)/str(c); encode(latent[:,c:c+1],path,cfg,compression_config,video_metadata); parts.append(path.read_bytes())
+                child={}; path=Path(d)/str(c); encode(latent[:,c:c+1],path,cfg,compression_config,video_metadata,child); profiles.append(child); parts.append(path.read_bytes())
         h=json.dumps(dict(version=1,mixed=True,channel_bits=quant_config['channel_bits'],lengths=list(map(len,parts))),separators=(',',':')).encode()
         blob=b'LVC1'+struct.pack('<I',len(h))+h+b''.join(parts); Path(output_path).write_bytes(blob)
+        if profile is not None:
+            profile.update({k:sum(v[k] for v in profiles) for k in ('quantization_s','packing_s','entropy_s')})
+            profile['total_s']=time.perf_counter()-started
         return dict(total_bytes=len(blob),header_bytes=len(h)+8,payload_bytes=sum(map(len,parts)))
     x=np.ascontiguousarray(latent); cfg=quant_config; bits=cfg.get('bits',0)
     if bits: _bits(bits)
     if x.ndim!=5 or not np.isfinite(x).all(): raise ValueError('finite BCTHW required')
     h=dict(version=1,shape=list(x.shape),original_dtype=x.dtype.str,layout='BCTHW',byte_order='little',video=video_metadata,quantization=cfg,compression=compression_config,zero_point=0)
+    quant_start=time.perf_counter(); packing_s=0.0
     if bits:
         axis=(0,2,3,4) if cfg.get('granularity')=='channel' else None
         scale=np.maximum(np.percentile(abs(x.astype('float32')),cfg.get('percentile',100),axis=axis,keepdims=True)/((1<<(bits-1))-1),1e-12).astype('float32')
@@ -61,16 +66,21 @@ def encode(latent,output_path,quant_config,compression_config,video_metadata):
                 rec[:,:,t]=pred+q[:,:,t]*scale[:,:,0]
         if mode=='integer_delta':
             q=np.concatenate((q[:,:,:1],np.diff(q,axis=2)),axis=2); raw=q.astype('<i2').tobytes(); h['storage']='delta16'
-        else: raw=pack(q,bits); h['storage']='packed'
+        else:
+            pack_start=time.perf_counter(); raw=pack(q,bits); packing_s=time.perf_counter()-pack_start; h['storage']='packed'
     else:
         raw=x.tobytes(); h['storage']='raw'; h['original_sha256']=hashlib.sha256(raw).hexdigest()
+    quantization_s=time.perf_counter()-quant_start-packing_s
     h['raw_payload_bytes']=len(raw)
     if compression_config.get('shuffle'):
         item=x.dtype.itemsize; raw=np.frombuffer(raw,dtype='uint8').reshape(-1,item).T.copy().tobytes(); h['shuffle_itemsize']=item
+    entropy_start=time.perf_counter()
     alg=compression_config['algorithm']; p=zlib.compress(raw) if alg=='zlib' else zstd(raw) if alg=='zstd' else raw
+    entropy_s=time.perf_counter()-entropy_start
     h.update(payload_bytes=len(p),payload_sha256=hashlib.sha256(p).hexdigest())
     header=json.dumps(h,separators=(',',':'),allow_nan=False).encode(); blob=b'LVC1'+struct.pack('<I',len(header))+header+p
     Path(output_path).write_bytes(blob)
+    if profile is not None: profile.update(quantization_s=quantization_s,packing_s=packing_s,entropy_s=entropy_s,total_s=time.perf_counter()-started)
     return dict(total_bytes=len(blob),header_bytes=8+len(header),payload_bytes=len(p))
 
 def decode(input_path):

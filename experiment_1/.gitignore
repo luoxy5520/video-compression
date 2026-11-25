@@ -1,0 +1,7 @@
+__pycache__/
+*.lvc
+*.rgb
+*.yuv
+*.npy
+*.tmp
+results/E1_3/block_residual_statistics.csv

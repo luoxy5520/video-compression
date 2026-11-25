@@ -1,0 +1,53 @@
+{
+  "status": "PASSED",
+  "checks": [
+    {
+      "sample": "sample_0000",
+      "bits": 2,
+      "latent_file_sha256": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1",
+      "reference_sha256": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016",
+      "exact_bitstream": true,
+      "psnr_y": 16.849275345730476
+    },
+    {
+      "sample": "sample_0000",
+      "bits": 4,
+      "latent_file_sha256": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1",
+      "reference_sha256": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016",
+      "exact_bitstream": true,
+      "psnr_y": 36.76699126356627
+    },
+    {
+      "sample": "sample_0000",
+      "bits": 8,
+      "latent_file_sha256": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1",
+      "reference_sha256": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016",
+      "exact_bitstream": true,
+      "psnr_y": 52.812374988071525
+    },
+    {
+      "sample": "sample_1004",
+      "bits": 2,
+      "latent_file_sha256": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066",
+      "reference_sha256": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+      "exact_bitstream": true,
+      "psnr_y": 15.58057463422628
+    },
+    {
+      "sample": "sample_1004",
+      "bits": 4,
+      "latent_file_sha256": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066",
+      "reference_sha256": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+      "exact_bitstream": true,
+      "psnr_y": 32.49197188116631
+    },
+    {
+      "sample": "sample_1004",
+      "bits": 8,
+      "latent_file_sha256": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066",
+      "reference_sha256": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+      "exact_bitstream": true,
+      "psnr_y": 53.65860557961888
+    }
+  ]
+}
