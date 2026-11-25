@@ -16,3 +16,8 @@
 - reports/、final_report.md：阶段报告与综合报告；未测量项NOT RUN。
 - 服务器results下各样本的.lvc、原始参考和工作YUV、完整block_residual_statistics.csv保留服务器，不全部下载或入Git。
 - experiment_status.json：真实阶段状态；*_measurements为子状态，不表示所有报告和展示已完成。
+
+最终补充：results/E1_1/channel_statistics_augmented.csv 为既有码流INT4/6真实量化误差的事后关联分析；channel_rank_summary.csv为16val排序均值/Std，channel_ranks.csv为逐视频排名。
+results/actual_bitstream_breakdown.csv递归区分量化参数值、辅助信息值、其余头部与纯压缩Payload，严格相加为实文件Bytes。
+results/h264_post_dit_benchmark.json为新测QP28 GPU起点基线，不是同画质性能比较。
+results/artifact_inventory.json记录服务器全部产物的路径、Bytes及SHA256；完整块CSV与码流仅保留服务器。

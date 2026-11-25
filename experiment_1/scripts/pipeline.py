@@ -12,13 +12,14 @@ from pathlib import Path
 import numpy as np
 from run import ROOT,save
 from analyze import table
+ACTIVE_STAGE=None
 
 def launch(script,args,gpu,name):
     env=dict(os.environ,CUDA_VISIBLE_DEVICES=str(gpu),HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1')
     command=[sys.executable,'-u',str(ROOT/'scripts'/script),*args]
     with (ROOT/'logs/pipeline_commands.jsonl').open('a') as f:
         f.write(json.dumps(dict(time=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(),command=command,gpu=gpu))+'\n')
-    log=(ROOT/'logs'/f'{name}.log').open('w')
+    log=(ROOT/'logs'/f'{name}.log').open('a')
     process=subprocess.Popen(command,env=env,stdout=log,stderr=subprocess.STDOUT,cwd=ROOT)
     log.close();return process
 
@@ -27,6 +28,8 @@ def join(processes):
     if any(codes):raise RuntimeError(f'workers failed: {codes}; inspect logs')
 
 def state(stage,measurement=None):
+    global ACTIVE_STAGE
+    ACTIVE_STAGE=stage
     p=ROOT/'experiment_status.json';s=json.loads(p.read_text());s[stage]='RUNNING'
     if measurement:s[stage+'_measurements']=measurement
     save(p,s)
@@ -59,10 +62,14 @@ def main():
                 cmd=Path(f'/proc/{args.existing_sensitivity_pid}/cmdline').read_bytes()
                 assert b'scripts/analyze.py' in cmd and b'sensitivity' in cmd and b'--worker' not in cmd
                 os.kill(args.existing_sensitivity_pid,signal.SIGTERM)
-            rows=[r for r in json.loads((ROOT/'results/E1_1/sensitivity.json').read_text()) if r['split']=='development']
-            assert len(rows)==98
-            join([launch('analyze.py',['--stage','sensitivity','--worker',str(i),'--workers','4'],i%2,f'sensitivity_worker_{i}') for i in range(4)])
-            for i in range(4):rows+=json.loads((ROOT/f'results/E1_1/sensitivity_worker_{i}.json').read_text())
+            existing=json.loads((ROOT/'results/E1_1/sensitivity.json').read_text())
+            if len(existing)==882 and len({(v['sample'],v['channel'],v['bits']) for v in existing})==882:
+                rows=existing
+            else:
+                rows=[r for r in existing if r['split']=='development']
+                assert len(rows)==98
+                join([launch('analyze.py',['--stage','sensitivity','--worker',str(i),'--workers','4'],i%2,f'sensitivity_worker_{i}') for i in range(4)])
+                for i in range(4):rows+=json.loads((ROOT/f'results/E1_1/sensitivity_worker_{i}.json').read_text())
             assert len(rows)==882
             save(ROOT/'results/E1_1/sensitivity.json',rows)
             table(ROOT/'results/E1_1/channel_sensitivity.csv',rows)
@@ -92,6 +99,10 @@ def main():
         (ROOT/'results/ALL_MAIN_MEASUREMENTS_COMPLETE').touch()
     except Exception as error:
         save(ROOT/'results/pipeline_failure.json',dict(error=repr(error)))
+        if ACTIVE_STAGE:
+            status_path=ROOT/'experiment_status.json'
+            status=json.loads(status_path.read_text());status[ACTIVE_STAGE]='FAILED'
+            status['last_error']=repr(error);save(status_path,status)
         raise
 
 if __name__=='__main__':main()

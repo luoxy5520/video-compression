@@ -16,3 +16,16 @@
 - Git首次实现提交43f2384，已推送codex/experiment-1-latent-rd；后续结果与新增脚本见Git历史。
 
 阶段状态以experiment_status.json为准；测量完成与全部交付完成分别记录。LPIPS NOT RUN（E0环境缺包/权重）。不触碰封存测试集，不训练/改动DiT或VAE。所有后续NOT RUN项须保留，不用正向措辞替代未完成实验。
+
+- 验证分片首次启动失败：scripts/profile.py遮蔽标准库profile，触发PyTorch/cProfile导入异常。重命名measure_latency.py；原98条开发记录与冻结排名保留，从验证阶段接续，worker日志改为追加保留失败。
+
+## 主测量完成
+
+- E1.0：144/144；E1.1：882/882；E1.2：560条（开发网格、受限Oracle搜索与128条冻结验证）；E1.3：816/816。
+- 性能：质量worker全部结束后执行measure_latency.py，12代表配置，量化/打包/熵编码、完整CPU/GPU起点编码、D2H、独立解码、VAE和两端时间，预热1+正式5；对同配置E0重新计时，所有流逐字节一致。
+- 原生GPU起点VAE+YUV+x264 Medium QP28亦重测，明确不是同画质比较。
+- 三代表视频0/8/16帧已人工检查：杯子有轻微形变/漂移、玩具车有位移、集市大范围视角变化；展示不把Prompt当实际运动标注。
+- 主流程已生成29个展示MP4，ffprobe断言每条17帧、16fps，单面板832×480；Oracle仅开发样本，验证集Oracle NOT RUN。
+- 最终补充Medium/Fast有效重叠区间插值、通道排名方差与INT4/6实际Latent MSE相关性、逐像素误差空间统计、完整码流递归分解。补充只用于分析，不更新任何冻结策略。
+- 所有六种冻结可部署Mixed候选均未超过同码率Uniform，收益0/16；保留负向结果，不调整评价标准或重调验证集。
+- 最初profile命名冲突失败日志和pipeline_failure.json保留；修复后测量与交付全部完成，不能将历史失败文件误当当前未完成状态。

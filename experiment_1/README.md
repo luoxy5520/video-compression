@@ -17,7 +17,7 @@ $PY scripts/analyze.py --stage statistics
 CUDA_VISIBLE_DEVICES=0 $PY scripts/analyze.py --stage sensitivity
 $PY scripts/pipeline.py
 # 所有质量测量结束后，隔离执行代表配置的延迟测量：
-CUDA_VISIBLE_DEVICES=0 $PY scripts/profile.py
+CUDA_VISIBLE_DEVICES=0 $PY scripts/measure_latency.py
 PYTHONPATH=../tools_plot $PY scripts/summarize.py
 ```
 
@@ -38,3 +38,5 @@ Skip/Reuse 仅为受控扰动，不是完整 Skip Codec。
 
 `experiment_status.json` 区分阶段状态与 `_measurements` 子状态；主测量结束不等于所有交付已完成。
 LPIPS 不可用时保留 NOT RUN，不安装替代模型或修改原权重。
+
+评价口径：Uint8原生VAE参考，BT709 limited-range PSNR-Y；SSIM为FFmpeg YUV All；末四帧PSNR是四帧dB的算术平均。码率时长使用17/16秒，原始FP32大小为张量原始字节，不含PT容器。展示字幕中的enc为Codec CPU完整编码（H.264行沿用E0基线），GPU起点/D2H与最新隔离性能见专门JSON和报告；Skip没有真实码流字节。

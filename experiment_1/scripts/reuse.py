@@ -47,7 +47,11 @@ def main():
                         value=q4[region] if cfg['operation']=='int4' else rec[0,:,t-1,y:y+size,x:x+size]
                         rec[region]=value;symbols+=value.size;count+=1;selected_energy.append(float(energies[t-1][i]));mask[t-1,i]=1
                 video,vt,_,_=r.pixels(rec);rr=r.yuv(video);reconstructed=folder/'reconstruction.yuv';reconstructed.write_bytes(rr)
-                row=dict(sample=name,split=split,block_size=size,configuration=cfg,selected_blocks=count,selected_symbols=symbols,mask_uncompressed_bytes=len(np.packbits(mask)),mean_selected_residual_energy=float(np.mean(selected_energy)),latent_mse=float(np.mean((z-rec)**2)),latent_slice_mse=np.mean((z-rec)**2,axis=(0,1,3,4)).tolist(),actual_bitstream_bytes='NOT RUN: perturbation only; no skip codec',ssim=ssim(ref,reconstructed,17,832,480),vae_s=vt,**r.quality(rgb,video,raw,rr))
+                spatial=np.mean((rgb.astype('float32')-video.astype('float32'))**2,axis=(0,3))
+                spatial_map=[[float(spatial[y:y+32,x:x+32].mean()) for x in range(0,832,32)] for y in range(0,480,32)]
+                grid=mask.reshape(4,(60+size-1)//size,(104+size-1)//size)
+                transitions=int(np.sum(grid[:,:,1:]!=grid[:,:,:-1])+np.sum(grid[:,1:,:]!=grid[:,:-1,:]))
+                row=dict(sample=name,split=split,block_size=size,configuration=cfg,spatial_pixel_mse_32=spatial_map,mask_spatial_transitions=transitions,selected_blocks=count,selected_symbols=symbols,mask_uncompressed_bytes=len(np.packbits(mask)),mean_selected_residual_energy=float(np.mean(selected_energy)),latent_mse=float(np.mean((z-rec)**2)),latent_slice_mse=np.mean((z-rec)**2,axis=(0,1,3,4)).tolist(),actual_bitstream_bytes='NOT RUN: perturbation only; no skip codec',ssim=ssim(ref,reconstructed,17,832,480),vae_s=vt,**r.quality(rgb,video,raw,rr))
                 rows.append(row);save(ROOT/f'results/E1_3/skip_probe_results{suffix}.json',rows)
             print(name,size,'DONE',flush=True)
         ref.unlink();reconstructed.unlink()

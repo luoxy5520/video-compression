@@ -79,7 +79,7 @@ def main():
                 order=np.argsort(importance)[::-1]
             if method=='M2_three':
                 low,mid,high=policy['levels'];cb=[low]*16
-                for c in order[:min(16,2*k)]:cb[int(c)]=mid
+                for c in order[:k+(16-k)//2]:cb[int(c)]=mid
                 for c in order[:k]:cb[int(c)]=high
             else:
                 cb=[policy['lo']]*16

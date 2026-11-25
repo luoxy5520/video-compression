@@ -5,3 +5,5 @@
 先阅读 reports/final_report.md，运行方式与码流规范见 reports/codec_format.md。不能将未执行的Prompt级端到端性能当作局部codec测试结果。
 
 原模型权重不修改，不训练，不接触test数据。正式PSNR在展示MP4再编码前计算。
+
+Experiment 1 的代码、冻结策略、完整实测汇总、图表与展示位于 [experiment_1](experiment_1/README.md)，综合结论见 [final_report.md](experiment_1/final_report.md)。E0历史结果保留。

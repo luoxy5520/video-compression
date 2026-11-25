@@ -42,7 +42,7 @@ def ssim(a, b, frames, width, height):
         args += ['-f','rawvideo','-pix_fmt','yuv420p','-s',f'{width}x{height}','-r','16','-i',str(path)]
     proc = subprocess.run(args+['-lavfi','ssim','-f','null','-'], capture_output=True, check=True)
     import re
-    return float(re.findall(r'All:([0-9.]+)',proc.stderr.decode())[-1])
+    return float(re.findall(r'All:([-+0-9.eE]+)',proc.stderr.decode())[-1])
 
 def main():
     parser = argparse.ArgumentParser()
