@@ -120,6 +120,10 @@ def main():
     section('10. Ablation Study','主位宽控制相同channel symmetric absmax、Zstd level3、原生VAE和评价口径。Random控制、固定/逐视频统计代理、三级分配及受限近似Oracle见实测表。可选per-tensor/percentile范围消融 NOT RUN。LPIPS NOT RUN：原环境缺少可用包/权重。')
     body='完整逐视频/逐帧结果保留，不剔除低画质和退化样本。INT2可出现极低质量；INT4不能作为与高质量H.264的同画质基线。固定排序可能跨视频不稳定；闭环复用可能累积误差，须依实测表检验，不能先行宣称安全。连接/环境错误与修复见execution_log.md，worker错误保留logs与pipeline_failure.json。'
     breakdown=read('results/actual_bitstream_breakdown.csv',[])
+    worst=read('results/worst_cases.csv',[])
+    if worst:
+        v=next(v for v in worst if v['method']=='Uniform Q6')
+        body+=f"\n\n例如INT6：最差视频 {v['worst_video']}，全片PSNR-Y {float(v['worst_video_psnr_y']):.3f} dB；最差帧为 {v['worst_frame_video']} 第{v['worst_frame_index']}帧（从0计），{float(v['worst_frame_psnr_y']):.3f} dB。{len(worst)}种验证配置的最差视频、最差帧、SSIM与末四帧指标见worst_cases.csv。"
     if breakdown:
         val_names={v['sample'] for v in uniform if v['split']=='validation'}
         means=[]
@@ -133,11 +137,17 @@ def main():
     section('14. Next-Step Decision','不启动E1.4/E1.5/E1.6或联合训练。运动补偿/Skip研究需要在复用质量、误差累积和辅助信息开销证据上审核决定；本报告本身不构成自动启动授权。潜在Compression-Aware DiT动机仅为量化敏感度和误差传播，不推出内部Token/计算可跳过。')
     section('15. Reproducibility Instructions','按README顺序执行；基线失败立即停止。使用同一Wan venv和模型哈希。configs保存冻结策略；logs/pipeline_commands.jsonl记录后续实际命令、时间和GPU。源文件SHA和归档Git commit分别记录，后续归档commit不冒充此前运行版本。完整Latent/码流/块明细位于服务器，不需全部下载。')
     section('16. File and Code Manifest','详见file_manifest.md、code_changes.md、execution_log.md。GitHub仓库luoxy5520/video-compression，分支codex/experiment-1-latent-rd；保留E0历史，不覆盖现有远端分支。阶段状态和测量子状态见experiment_status.json，未完成交付不得标记COMPLETE。')
-    (ROOT/'final_report.md').write_text('\n'.join(text))
+    def markdown(lines):
+        result=[]
+        for line in '\n'.join(lines).splitlines():
+            if line.startswith('- ') and result and result[-1] and not result[-1].startswith('- '):result.append('')
+            result.append(line)
+        return '\n'.join(result)+'\n'
+    (ROOT/'final_report.md').write_text(markdown(text))
     for label,index in [('E1_0',4),('E1_1',5),('E1_2',6),('E1_3',7)]:
         # Each report is derived from the same observed data, not a separate claim.
         title=[line for line in text if line.startswith(f'## {index}.')][0]
         start=text.index(title);end=next((i for i in range(start+1,len(text)) if text[i].startswith('## ')),len(text))
-        path=ROOT/'reports'/f'{label}_report.md';path.parent.mkdir(exist_ok=True);path.write_text('\n'.join(text[start:end])+'\n')
+        path=ROOT/'reports'/f'{label}_report.md';path.parent.mkdir(exist_ok=True);path.write_text(markdown(text[start:end]))
 
 if __name__=='__main__':main()

@@ -109,6 +109,21 @@ def main():
                 best=max(feasible,key=lambda v:v['psnr_y']);gaps.append(dict(sample=name,budget_bytes=budget,approx_oracle_bytes=o['total_bytes'],approx_oracle_psnr=o['psnr_y'],best_deployable_bytes=best['total_bytes'],best_deployable_psnr=best['psnr_y'],oracle_minus_deployable_db=o['psnr_y']-best['psnr_y'],note='restricted greedy search can be worse; no global upper bound guarantee'))
     table(ROOT/'results/E1_2/oracle_gap.csv',gaps)
     reuse=json.loads((ROOT/'results/E1_3/skip_probe_results.json').read_text());correlations=[]
+    worst=[];groups={}
+    for v in uniform:
+        if v['split']=='validation' and v['method']!='Q0':groups.setdefault('Uniform '+v['method'],[]).append(v)
+    for v in sensitivity:
+        if v['split']=='validation':groups.setdefault(f"Channel c{v['channel']} b{v['bits']}",[]).append(v)
+    for v in mixed:
+        if v['split']=='validation':groups.setdefault('Mixed '+json.dumps(v['policy'],sort_keys=True),[]).append(v)
+    for v in reuse:
+        if v['split']=='validation':groups.setdefault('Block4 '+json.dumps(v['configuration'],sort_keys=True),[]).append(v)
+    for method,values in groups.items():
+        video=min(values,key=lambda v:v['psnr_y'])
+        frame=min((value,name,index) for v in values for name in [v['sample']] for index,value in enumerate(v['per_frame_psnr_y']))
+        worst.append(dict(method=method,n=len(values),mean_psnr_y=float(np.mean([v['psnr_y'] for v in values])),worst_video=video['sample'],worst_video_psnr_y=video['psnr_y'],worst_frame_video=frame[1],worst_frame_index=frame[2],worst_frame_psnr_y=frame[0],worst_ssim=min(v['ssim'] for v in values),worst_last4_psnr_y=min(v['last4_psnr_y'] for v in values)))
+    assert len(worst)==98 and all(v['n']==16 for v in worst)
+    table(ROOT/'results/worst_cases.csv',worst)
     for name in sorted({v['sample'] for v in reuse}):
         for size in sorted({v['block_size'] for v in reuse if v['sample']==name}):
             vals=[v for v in reuse if v['sample']==name and v['block_size']==size and v['configuration']['operation']=='int4']
