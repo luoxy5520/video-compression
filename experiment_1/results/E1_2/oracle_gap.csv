@@ -1,0 +1,5 @@
+sample,budget_bytes,approx_oracle_bytes,approx_oracle_psnr,best_deployable_bytes,best_deployable_psnr,oracle_minus_deployable_db,note
+sample_0000,245015,208488,38.534986597195406,238439,40.08250905021388,-1.5475224530184732,restricted greedy search can be worse; no global upper bound guarantee
+sample_0000,331520,329086,42.74585739124669,331160,43.652620756671105,-0.9067633654244176,restricted greedy search can be worse; no global upper bound guarantee
+sample_1004,255500,214669,34.06711255185029,246327,35.77693967379179,-1.709827121941494,restricted greedy search can be worse; no global upper bound guarantee
+sample_1004,337265,333519,39.72134202608333,333546,40.746089325738275,-1.0247472996549476,restricted greedy search can be worse; no global upper bound guarantee

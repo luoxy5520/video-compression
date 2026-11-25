@@ -1,0 +1,3 @@
+h264_QP28 E0 medium
+PSNR-Y 41.90 dB
+39859 Bytes 300.1 kbps enc 199.84 ms

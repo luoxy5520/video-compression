@@ -1,0 +1,3 @@
+uniform_INT5 
+PSNR-Y 38.26 dB
+255500 Bytes 1923.8 kbps enc 29.98 ms

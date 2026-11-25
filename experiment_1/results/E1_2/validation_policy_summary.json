@@ -1,0 +1,82 @@
+[
+  {
+    "policy": {
+      "method": "M2",
+      "lo": 4,
+      "hi": 6,
+      "k": 8
+    },
+    "n": 16,
+    "mean_gain_db": -1.9251221932887075,
+    "worst_gain_db": -3.2423918617787635,
+    "benefit_fraction": 0.0
+  },
+  {
+    "policy": {
+      "method": "M2",
+      "lo": 5,
+      "hi": 7,
+      "k": 4
+    },
+    "n": 16,
+    "mean_gain_db": -3.032699107726274,
+    "worst_gain_db": -4.012769000318315,
+    "benefit_fraction": 0.0
+  },
+  {
+    "policy": {
+      "method": "M2_three",
+      "levels": [
+        4,
+        5,
+        6
+      ],
+      "k": 2
+    },
+    "n": 16,
+    "mean_gain_db": -1.509890937352016,
+    "worst_gain_db": -2.351031455590089,
+    "benefit_fraction": 0.0
+  },
+  {
+    "policy": {
+      "method": "M2_three",
+      "levels": [
+        4,
+        5,
+        6
+      ],
+      "k": 4
+    },
+    "n": 16,
+    "mean_gain_db": -1.36955878549804,
+    "worst_gain_db": -2.5062088043720294,
+    "benefit_fraction": 0.0
+  },
+  {
+    "policy": {
+      "method": "M3",
+      "lo": 5,
+      "hi": 7,
+      "k": 8,
+      "proxy": "entropy"
+    },
+    "n": 16,
+    "mean_gain_db": -4.377765375211421,
+    "worst_gain_db": -6.583338310504068,
+    "benefit_fraction": 0.0
+  },
+  {
+    "policy": {
+      "method": "M3",
+      "lo": 5,
+      "hi": 7,
+      "k": 8,
+      "proxy": "variance"
+    },
+    "n": 16,
+    "mean_gain_db": -4.515217322951844,
+    "worst_gain_db": -6.697699773578471,
+    "benefit_fraction": 0.0
+  }
+]

@@ -1,6 +1,19 @@
 {
   "Stage0": "COMPLETE",
-  "E1_0": "RUNNING",
+  "E1_0": "COMPLETE",
   "E1_0_measurements": "COMPLETE",
-  "E1_1": "RUNNING"
+  "E1_1": "COMPLETE",
+  "E1_1_measurements": "COMPLETE",
+  "E1_2": "COMPLETE",
+  "E1_2_measurements": "COMPLETE",
+  "E1_3": "COMPLETE",
+  "E1_3_measurements": "COMPLETE",
+  "delivery": "COMPLETE",
+  "optional_not_run": [
+    "LPIPS: package/weights unavailable",
+    "optional quantization range ablation",
+    "BD-Rate: measured-range interpolation supplied instead",
+    "actual Skip codec: controlled perturbation route used",
+    "validation Oracle: development-only restricted greedy search"
+  ]
 }

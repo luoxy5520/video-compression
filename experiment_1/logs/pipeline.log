@@ -2,3 +2,17 @@
   @amp.autocast(enabled=False)
 /home/luoxiangyu/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   @amp.autocast(enabled=False)
+Traceback (most recent call last):
+  File "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/pipeline.py", line 97, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/pipeline.py", line 64, in main
+    join([launch('analyze.py',['--stage','sensitivity','--worker',str(i),'--workers','4'],i%2,f'sensitivity_worker_{i}') for i in range(4)])
+  File "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/pipeline.py", line 27, in join
+    if any(codes):raise RuntimeError(f'workers failed: {codes}; inspect logs')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: workers failed: [1, 1, 1, 1]; inspect logs
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)

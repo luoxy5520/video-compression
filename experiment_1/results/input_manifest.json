@@ -1,0 +1,308 @@
+[
+  {
+    "sample": "sample_0000",
+    "split": "development",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1",
+    "tensor_sha256": "c0d035577c499654330ab22160351b868184f567b8410903d7f215cb3fb1a288",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_0000/reference.yuv",
+    "reference_yuv_sha256": "b9558561d0d44842d4706fb32b747d372afecdd6cddeaf7cdd6fd1c4110b8016"
+  },
+  {
+    "sample": "sample_1004",
+    "split": "development",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066",
+    "tensor_sha256": "b766961a1f51da69b5bca076d7030590a3a8719f793e25e51e37fb8205c504aa",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1004/reference.yuv",
+    "reference_yuv_sha256": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60"
+  },
+  {
+    "sample": "sample_0020",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "3abfb4ec381fdbce7bc12afaad833abdebf1baf3010dfc74868e2e715fa41fc7",
+    "tensor_sha256": "5a208d860cab50af0af25072065097be30552ced90d9212cbeee9f79eb2db56a",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_0020/reference.yuv",
+    "reference_yuv_sha256": "182deb7cdf008d615d18767bafdd90b64c3c14da4b113845dfe1824d731cac53"
+  },
+  {
+    "sample": "sample_0021",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "a60ce81755cffc6d9d51274f9f16ea9644a673fd06b1ecb2e6fa556fe1de7856",
+    "tensor_sha256": "3888135f7c17eccfca8d0d18a48a81750fdad987058464ed7538842abcb9dfed",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_0021/reference.yuv",
+    "reference_yuv_sha256": "3ce1c0950d67ebf44f55ec2a6460157b609a2c2fa7c2e6435457859ad5b75b90"
+  },
+  {
+    "sample": "sample_0022",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "4403ec8ead755f61451f7bfe571bf43f4b1f34f362ad4d9b7044219f75b44eb3",
+    "tensor_sha256": "c4acbefe31171c106b05392dd238d4859d88979197fb5d7bcc29e2ad62d85ece",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_0022/reference.yuv",
+    "reference_yuv_sha256": "37cebf4b8689d58ef7488c5a0d1caeacdc557f527f657e16459699e298ec9953"
+  },
+  {
+    "sample": "sample_0023",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "2d224debf00858c09406d1f9f7eca3bd6d697ac334d068a339542f9686d9994f",
+    "tensor_sha256": "345c1773c271d9169671860077ade451bb4ee7459e5b22ebcf7ceec1ee64a550",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_0023/reference.yuv",
+    "reference_yuv_sha256": "45487487a07846a0904119b7ff60803f7a2a96bd6e4321f85f7aa2f0fb1fdf75"
+  },
+  {
+    "sample": "sample_1024",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1024/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "5cb9d3af5c9c9812361d63dc65ffb4239d4d95935a69e971f5ba4e3a96f9edd2",
+    "tensor_sha256": "af39c44cfd25db1e1825a9d791229ef684b973bb88bc07a75393533afa11b51a",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1024/reference.yuv",
+    "reference_yuv_sha256": "0d3b1708781ff2477fa86af42794b08c9571efff2f493a98e70585ebaac982d3"
+  },
+  {
+    "sample": "sample_1025",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1025/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "95081570e8811a090c22684a7971c8ac5c149e31b59e15419e6a246ec832fe51",
+    "tensor_sha256": "ca08a9507f964e548908558af90766c537a1595215d48a69e772d6accc1c36bc",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1025/reference.yuv",
+    "reference_yuv_sha256": "cb7b6da7606d79e1ba5b678f5e9b22e2b4f4fab4b8fa1e0260a50d32de94dd30"
+  },
+  {
+    "sample": "sample_1026",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1026/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "daaa518c949e7b7b6b1aa03771ac4802edb51d2dcce61d4540bee33e8954c9db",
+    "tensor_sha256": "b890e1bf60eebcdee42f66aaaf07e93cb5a47331ce5d403374423bdc2377f7f3",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1026/reference.yuv",
+    "reference_yuv_sha256": "caab2057f787db7a4039a35c20aad4639e3878392309bf2066df5f6daa6b2fbb"
+  },
+  {
+    "sample": "sample_1027",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1027/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "dc0058d57b223aa893a71c176971b4bd238c8f2a54ff372016b502392e64f51c",
+    "tensor_sha256": "28fed33fd9b3a59558338119359897b2ca9d435470961bd3ca36c27b694c16fd",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1027/reference.yuv",
+    "reference_yuv_sha256": "d4a1c28960cadb698b5e902006b93d41c32aa937c76d78b762c740b2d1e5a1fd"
+  },
+  {
+    "sample": "sample_1028",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "392056c401984b181c4960ca6b3b8937521ff47c6fabf38ef012508c3c0371af",
+    "tensor_sha256": "f05c25594a9fbfbf95c9dcbff67005a1f7d4e817f863afa9f651b1d83f189913",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1028/reference.yuv",
+    "reference_yuv_sha256": "00b55bd00345b917f65d7c7cd6068895542e7884804fe63ca5c2442dc4fe1504"
+  },
+  {
+    "sample": "sample_1029",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "7266777b1bcb8821a33579b07abcf7c42e3852eafb5b347f8be14fe960f4aa1d",
+    "tensor_sha256": "38ab9fa758649cb9146edf0d0563582bd9aed5a91d0af691e4d16d6f939fb2b5",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1029/reference.yuv",
+    "reference_yuv_sha256": "e8893e6ae9faaf5c7f34e362f99e30980c6ef76709913a2ae5c5d3515009f558"
+  },
+  {
+    "sample": "sample_1030",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1030/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "e7b61bc9ca88d568458b19d2f3b130fac1508eb9a616845c6ab2890c21cc4551",
+    "tensor_sha256": "1b553999482f8a667bda906acd3e5cb3b99379aa2edf8dacd2b226ea4e691e30",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1030/reference.yuv",
+    "reference_yuv_sha256": "3085984af5b268a121a39514a4195844e109fe95975341fb320010a28ef7b332"
+  },
+  {
+    "sample": "sample_1031",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1031/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "cb2389c01fd7c83bdb1d83b9c04676ab06f08724a21d3ce3543754ded0ef7588",
+    "tensor_sha256": "eed042d96e12b324ae77c9994a7867ab3b232cdfa5af5a51774bb36af27058f3",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1031/reference.yuv",
+    "reference_yuv_sha256": "9b6e93e83820afe2e9c8524f1604b196d338603830b70c4bb1f293bcbea40b14"
+  },
+  {
+    "sample": "sample_1032",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1032/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "52724adb2ef40acb4e904286e40f5e1a8c22a852af6776de30b9401942e9fa2d",
+    "tensor_sha256": "fcd32df40eed02d90da4c94c2725392b1d3d72a1a16c72a9603ff6b0a272a32b",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1032/reference.yuv",
+    "reference_yuv_sha256": "c710702a016c8bcc9391b356a0570bf55856fba8e3a5a798a9ba8eed102e71ec"
+  },
+  {
+    "sample": "sample_1033",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1033/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "8cf9948c3f01fd842d00041c53707eaae23bb97853c1157434bc69ad52bdab5b",
+    "tensor_sha256": "b50af03c08b10b6c3ffaa29b3b937a8e1d01dfc75106ed87195f168a3d9b99e4",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1033/reference.yuv",
+    "reference_yuv_sha256": "1f013870648f3a3d0cce5dca12cb4fb61695eb08a0b9af2fcce87d0b8009d828"
+  },
+  {
+    "sample": "sample_1034",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1034/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "70a7677a6f33335906676bd163723688d51a84233119cd122f298bbbdfc972a5",
+    "tensor_sha256": "4117f320a3ee01d4effbfab0755fe84c353d59c2ddb05639d7b2e4a11e488338",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1034/reference.yuv",
+    "reference_yuv_sha256": "a5fe00a0d2f68fbc6910cc4f6423e39dbcb320575acc915cb7f7c846603fb045"
+  },
+  {
+    "sample": "sample_1035",
+    "split": "validation",
+    "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1035/final_latent.pt",
+    "file_bytes": 1998412,
+    "file_sha256": "6ee7cdc02e0a3f5fd922ba5d36c899d56b149bd7348b926e01ec4d272c9e8ce2",
+    "tensor_sha256": "735ec9ec5356219bdd55059d598a31c32e01ee0c339da0fcd108f3251fc0b703",
+    "shape": [
+      16,
+      5,
+      60,
+      104
+    ],
+    "dtype": "torch.float32",
+    "reference_yuv_path": "/home/luoxiangyu/E0_Direct_Latent_Compression/results/sample_1035/reference.yuv",
+    "reference_yuv_sha256": "5bb1cfe2287e09394dbe1d9ce2247ec4200020d778b7d4d972e03043c8bd42cc"
+  }
+]

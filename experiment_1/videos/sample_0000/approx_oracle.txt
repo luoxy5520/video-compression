@@ -1,0 +1,3 @@
+approx_oracle OFFLINE search excluded
+PSNR-Y 42.75 dB
+329086 Bytes 2477.8 kbps enc 62.37 ms

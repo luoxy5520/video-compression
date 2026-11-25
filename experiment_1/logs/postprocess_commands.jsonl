@@ -1,0 +1,6 @@
+{"time": "2026-11-25T15:19:58.564489+08:00", "command": ["/home/luoxiangyu/Wan2.1/.venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-v"]}
+{"time": "2026-11-25T15:19:59.188823+08:00", "command": ["/home/luoxiangyu/Wan2.1/.venv/bin/python", "-u", "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/measure_latency.py"]}
+{"time": "2026-11-25T15:22:38.021048+08:00", "command": ["/home/luoxiangyu/Wan2.1/.venv/bin/python", "-u", "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/summarize.py"]}
+{"time": "2026-11-25T15:23:02.655012+08:00", "command": ["/home/luoxiangyu/Wan2.1/.venv/bin/python", "-u", "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/extra_figures.py"]}
+{"time": "2026-11-25T15:23:16.035943+08:00", "command": ["/home/luoxiangyu/Wan2.1/.venv/bin/python", "-u", "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/videos.py"]}
+{"time": "2026-11-25T15:25:21.737908+08:00", "command": ["/home/luoxiangyu/Wan2.1/.venv/bin/python", "-u", "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1/scripts/report.py"]}

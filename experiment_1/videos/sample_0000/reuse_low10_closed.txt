@@ -1,0 +1,3 @@
+reuse_low10_closed THEORETICAL RATE ONLY
+PSNR-Y 39.50 dB
+Actual skip bytes / bitrate / encoding time NOT RUN

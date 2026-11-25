@@ -1,0 +1,234 @@
+[
+  {
+    "path": "videos/sample_0000/reference.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/h264_QP28.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/uniform_INT4.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/uniform_INT5.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/uniform_INT6.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/uniform_INT8.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/mixed_deployable.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/approx_oracle.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/reuse_low10_closed.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_0000/comparison.mp4",
+    "width": 1248,
+    "height": 720,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/reference.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/h264_QP28.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/uniform_INT4.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/uniform_INT5.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/uniform_INT6.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/uniform_INT8.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/mixed_deployable.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/approx_oracle.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/reuse_low10_closed.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1004/comparison.mp4",
+    "width": 1248,
+    "height": 720,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/reference.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/h264_QP28.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/uniform_INT4.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/uniform_INT5.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/uniform_INT6.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/uniform_INT8.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/mixed_deployable.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/reuse_low10_closed.mp4",
+    "width": 832,
+    "height": 480,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  },
+  {
+    "path": "videos/sample_1032/comparison.mp4",
+    "width": 1248,
+    "height": 720,
+    "r_frame_rate": "16/1",
+    "nb_read_frames": "17",
+    "display_only": true
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 6,
+    "k": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 2,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 6,
+    "k": 4
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 4,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 6,
+    "k": 8
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 8,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 6,
+    "k": 12
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 6,
+    "k": 12,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 8,
+    "k": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 2,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 8,
+    "k": 4
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 4,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 8,
+    "k": 8
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 8,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 4,
+    "hi": 8,
+    "k": 12
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 4,
+    "hi": 8,
+    "k": 12,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 5,
+    "hi": 7,
+    "k": 2
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 2,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 5,
+    "hi": 7,
+    "k": 4
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 4,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 5,
+    "hi": 7,
+    "k": 8
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 8,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2",
+    "lo": 5,
+    "hi": 7,
+    "k": 12
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "seed": 0
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "seed": 1
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "seed": 2
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "seed": 3
+  },
+  {
+    "method": "M1",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "seed": 4
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "proxy": "variance"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "proxy": "energy"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "proxy": "quantization_mse"
+  },
+  {
+    "method": "M3",
+    "lo": 5,
+    "hi": 7,
+    "k": 12,
+    "proxy": "entropy"
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      5,
+      6
+    ],
+    "k": 2
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      5,
+      6
+    ],
+    "k": 4
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      5,
+      6
+    ],
+    "k": 8
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      5,
+      6
+    ],
+    "k": 12
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      6,
+      8
+    ],
+    "k": 2
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      6,
+      8
+    ],
+    "k": 4
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      6,
+      8
+    ],
+    "k": 8
+  },
+  {
+    "method": "M2_three",
+    "levels": [
+      4,
+      6,
+      8
+    ],
+    "k": 12
+  }
+]

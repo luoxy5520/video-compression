@@ -1,0 +1,10 @@
+test_packing (test_codec.CodecTests.test_packing) ... ok
+test_profile_preserves_bitstream (test_codec.CodecTests.test_profile_preserves_bitstream) ... ok
+test_roundtrip (test_codec.CodecTests.test_roundtrip) ... (1, 3, 5, 4, 7)
+ok
+test_strict_packing (test_codec.CodecTests.test_strict_packing) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.451s
+
+OK

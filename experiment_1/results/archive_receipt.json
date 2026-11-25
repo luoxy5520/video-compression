@@ -1,0 +1,16 @@
+{
+  "time": "2026-11-25T16:47:14.945270+08:00",
+  "archive_source_commit": "8c7cce21f2fbf3b320232efd649f996320a33008",
+  "execution_versions": "Earlier actual source hashes retained separately; archive commit is not claimed as original execution commit",
+  "remote": "git@github.com:luoxy5520/video-compression.git",
+  "branch": "codex/experiment-1-latent-rd",
+  "server_root": "/home/luoxiangyu/E0_Direct_Latent_Compression/experiment_1",
+  "uniform": 144,
+  "sensitivity": 882,
+  "mixed": 560,
+  "validation_mixed": 128,
+  "reuse": 816,
+  "block_statistics": 597168,
+  "latency_representatives": 12,
+  "videos": 29
+}

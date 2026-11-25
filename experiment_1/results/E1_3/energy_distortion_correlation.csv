@@ -1,0 +1,25 @@
+sample,block_size,n,operation,pearson,spearman,interpretation
+sample_0000,1,4,quartile_INT4,0.1992192454098701,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_0000,2,4,quartile_INT4,0.2811059187830479,0.19999999999999998,exploratory within-video four-group association; not causal validation
+sample_0000,4,4,quartile_INT4,0.3299842551529276,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_0000,8,4,quartile_INT4,0.3640532356601445,0.19999999999999998,exploratory within-video four-group association; not causal validation
+sample_0020,4,4,quartile_INT4,-0.3660511419539311,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_0021,4,4,quartile_INT4,0.48962299033711165,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_0022,4,4,quartile_INT4,0.9160494310591449,1.0,exploratory within-video four-group association; not causal validation
+sample_0023,4,4,quartile_INT4,-0.5048415777113798,-0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_1004,1,4,quartile_INT4,0.9990916259040243,1.0,exploratory within-video four-group association; not causal validation
+sample_1004,2,4,quartile_INT4,0.9939725344970797,1.0,exploratory within-video four-group association; not causal validation
+sample_1004,4,4,quartile_INT4,0.9698718087860981,1.0,exploratory within-video four-group association; not causal validation
+sample_1004,8,4,quartile_INT4,0.9471954163789916,0.7999999999999999,exploratory within-video four-group association; not causal validation
+sample_1024,4,4,quartile_INT4,-0.934310713160376,-1.0,exploratory within-video four-group association; not causal validation
+sample_1025,4,4,quartile_INT4,-0.8057912276297114,-0.7999999999999999,exploratory within-video four-group association; not causal validation
+sample_1026,4,4,quartile_INT4,-0.7926441389496666,-0.7999999999999999,exploratory within-video four-group association; not causal validation
+sample_1027,4,4,quartile_INT4,-0.9590711668643108,-1.0,exploratory within-video four-group association; not causal validation
+sample_1028,4,4,quartile_INT4,0.8034684578490155,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_1029,4,4,quartile_INT4,0.44310766225641274,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_1030,4,4,quartile_INT4,-0.5195291240159022,-0.7999999999999999,exploratory within-video four-group association; not causal validation
+sample_1031,4,4,quartile_INT4,0.959555138354899,0.7999999999999999,exploratory within-video four-group association; not causal validation
+sample_1032,4,4,quartile_INT4,0.3322937939991576,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_1033,4,4,quartile_INT4,0.14304468538389065,0.39999999999999997,exploratory within-video four-group association; not causal validation
+sample_1034,4,4,quartile_INT4,0.770116606620144,1.0,exploratory within-video four-group association; not causal validation
+sample_1035,4,4,quartile_INT4,0.5674843536524445,0.7999999999999999,exploratory within-video four-group association; not causal validation

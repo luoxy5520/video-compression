@@ -1,0 +1,3 @@
+uniform_INT8 
+PSNR-Y 44.69 dB
+456687 Bytes 3438.6 kbps enc 34.35 ms
