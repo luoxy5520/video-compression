@@ -1,0 +1,23 @@
+{
+  "precision": "fp32",
+  "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+  "full_sequence": true,
+  "shape": [
+    5,
+    16,
+    60,
+    104
+  ],
+  "checkpoint": "D16_f1_seed20261127",
+  "vae_file_sha256_before": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+  "vae_parameters_frozen": true,
+  "vae_not_in_optimizer": true,
+  "native_direct_max_abs_difference": 0.0,
+  "status": "OOM",
+  "error": "CUDA out of memory. Tried to allocate 446.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 86.75 MiB is free. Process 163488 has 7.84 GiB memory in use. Including non-PyTorch memory, this process has 71.17 GiB memory in use. Of the allocated memory 69.43 GiB is allocated by PyTorch, and 1.25 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+  "peak_gpu_bytes": 74545611776,
+  "elapsed_seconds": 3.441349871456623,
+  "vae_tensor_sha256_before": "e785617f55def726765dc311c9e50293d65acbaba7b4b3a03c279ad8d4dee5e8",
+  "vae_tensor_sha256_after": "e785617f55def726765dc311c9e50293d65acbaba7b4b3a03c279ad8d4dee5e8",
+  "vae_file_sha256_after": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+}

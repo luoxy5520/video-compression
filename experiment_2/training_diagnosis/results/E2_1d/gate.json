@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "basis": "three actual development working points, lower high-weight latent MSE and higher bitrate than low-weight; not independent validation",
+  "selected_name": "D16_f1_seed20261127",
+  "selected_step": 10000,
+  "coverage_rows": 14,
+  "candidate_rows": 14,
+  "two_training_seeds_evaluated": true
+}

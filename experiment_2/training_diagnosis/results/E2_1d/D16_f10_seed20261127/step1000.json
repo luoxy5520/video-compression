@@ -1,0 +1,25 @@
+{
+  "step": 1000,
+  "lambda_z": 69100.99949318758,
+  "checkpoint_sha256": "8b03fd559a50fe672d0f87c771447c60f9be2b8cc6a6f40dc6978201c125cb0d",
+  "elapsed_total": 19.960465553682297,
+  "peak_gpu_bytes": 163321344,
+  "train_paths": [
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+    "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+  ]
+}

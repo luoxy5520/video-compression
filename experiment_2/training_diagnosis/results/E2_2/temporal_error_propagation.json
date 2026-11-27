@@ -1,0 +1,6 @@
+{
+  "relative_to_TP0_max_latent_difference": 0,
+  "all_canonical_symbols_exact": true,
+  "all_reconstructions_exact": true,
+  "scope": "measured exact-equality checks in each actual decode, not a temporal prediction approximation"
+}

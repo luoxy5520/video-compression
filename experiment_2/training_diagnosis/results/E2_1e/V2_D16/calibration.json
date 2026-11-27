@@ -1,0 +1,11 @@
+{
+  "lambda_p": 8705.92646956641,
+  "lambda_z": 6910.099949318758,
+  "baseline_lambda_z": 6910.099949318758,
+  "pixel_mse": 8.303348295157775e-05,
+  "latent_mse": 0.0005510432529263198,
+  "rate": 4.476484298706055,
+  "pixel_gradient_norm": 5.27417978446465e-05,
+  "latent_gradient_norm": 6.644856330240145e-05,
+  "criterion": "match weighted initial reconstruction gradient norms; same source for V1 and V2"
+}

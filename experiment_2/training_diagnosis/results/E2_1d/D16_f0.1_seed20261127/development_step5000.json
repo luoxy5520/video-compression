@@ -1,0 +1,146 @@
+[
+  {
+    "name": "D16_f0.1_seed20261127",
+    "step": 5000,
+    "train_video_count": 16,
+    "seed": 20261127,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "scope": "historical development only; no independent generalization claim",
+    "actual_bytes": 214011,
+    "latent_mse": 0.0011237281141802669,
+    "psnr_y": 41.92425443891102,
+    "psnr_rgb": 40.496530768488256,
+    "per_frame_psnr_y": [
+      39.53275319516624,
+      41.26278898253085,
+      41.55761198246449,
+      41.57299106941497,
+      41.349903896491995,
+      42.496621515977196,
+      42.17681967713056,
+      42.00569785343781,
+      41.76638879372466,
+      42.34945125436891,
+      42.01442251281486,
+      41.87892704128097,
+      41.56736837838342,
+      43.605785482169715,
+      43.37719668848787,
+      43.10442909642329,
+      42.83998897382999
+    ],
+    "last4_psnr_y": 43.231850060227714,
+    "streams": [
+      {
+        "bytes": 37963,
+        "main_bytes": 34804,
+        "hyper_bytes": 2860,
+        "metadata_bytes": 299,
+        "sha256": "8464cd47759cddb66df787a132028171ad423234a65e7bbd203773b00a6843ed"
+      },
+      {
+        "bytes": 41207,
+        "main_bytes": 38092,
+        "hyper_bytes": 2816,
+        "metadata_bytes": 299,
+        "sha256": "74dae84847327e74b403c4b07ce1d78b247b362bd32c34b81c5c4ab71d39f49a"
+      },
+      {
+        "bytes": 43379,
+        "main_bytes": 40216,
+        "hyper_bytes": 2864,
+        "metadata_bytes": 299,
+        "sha256": "04ac974db210a8fc2d47c4ce728b685ce56662ecd5a1f49d72fb0638b7149eb0"
+      },
+      {
+        "bytes": 44659,
+        "main_bytes": 41480,
+        "hyper_bytes": 2880,
+        "metadata_bytes": 299,
+        "sha256": "7632056bb6fdd1e3b72f017558883000679ee30bf3d7c810c1d2b3e3457228c2"
+      },
+      {
+        "bytes": 46803,
+        "main_bytes": 43616,
+        "hyper_bytes": 2888,
+        "metadata_bytes": 299,
+        "sha256": "28cc3c26aa7e5b3a2dddbb34964857a7fbe5725625acd31d0f2d6a9d0a8d49b6"
+      }
+    ],
+    "checkpoint_sha256": "d28dab0b8405774e775f5aedf2364d4706eda2dd421b9521e22b78e25cd8f994",
+    "deploy_sha256": "9b8106fd7781296215552281ab29a16ef9817b6ee321650e853506832369f37f",
+    "independent_decode": true
+  },
+  {
+    "name": "D16_f0.1_seed20261127",
+    "step": 5000,
+    "train_video_count": 16,
+    "seed": 20261127,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "scope": "historical development only; no independent generalization claim",
+    "actual_bytes": 257971,
+    "latent_mse": 0.001194247044622898,
+    "psnr_y": 32.117654753451404,
+    "psnr_rgb": 30.988771781147296,
+    "per_frame_psnr_y": [
+      30.510274994999644,
+      31.437242444437885,
+      31.52946910280077,
+      31.140371538060624,
+      30.858157448571255,
+      32.466987363741985,
+      32.60350708221077,
+      32.20526238019229,
+      31.986950881532277,
+      32.28217476648898,
+      32.144690918188594,
+      31.846060275578406,
+      31.42355260390928,
+      34.1043915238906,
+      33.98041560129522,
+      33.96297171764536,
+      33.73666252362854
+    ],
+    "last4_psnr_y": 33.946110341614926,
+    "streams": [
+      {
+        "bytes": 46051,
+        "main_bytes": 43220,
+        "hyper_bytes": 2532,
+        "metadata_bytes": 299,
+        "sha256": "48cc8f17d9bd5ac978a74a8411f09ab64d257fc605479e4a330ea281e2c05a3f"
+      },
+      {
+        "bytes": 50595,
+        "main_bytes": 47664,
+        "hyper_bytes": 2632,
+        "metadata_bytes": 299,
+        "sha256": "a0447ec3e681a3875eb917600548e097f27d8fd0d8e2a27e92bd22e379d12f66"
+      },
+      {
+        "bytes": 51943,
+        "main_bytes": 48940,
+        "hyper_bytes": 2704,
+        "metadata_bytes": 299,
+        "sha256": "c24390a191d2acc0632d3b11304b5352a3f7a3b1d28bcba22965f9f06588b3dd"
+      },
+      {
+        "bytes": 52207,
+        "main_bytes": 49208,
+        "hyper_bytes": 2700,
+        "metadata_bytes": 299,
+        "sha256": "9ac677f5436c82fef2fc356a15667edffd6773066d6be85695b485f3ac816371"
+      },
+      {
+        "bytes": 57175,
+        "main_bytes": 54008,
+        "hyper_bytes": 2868,
+        "metadata_bytes": 299,
+        "sha256": "71fb559cd82f48220a9f3282704e3c1c8ad39c2a9ce8055775ae6a185dd51ead"
+      }
+    ],
+    "checkpoint_sha256": "d28dab0b8405774e775f5aedf2364d4706eda2dd421b9521e22b78e25cd8f994",
+    "deploy_sha256": "9b8106fd7781296215552281ab29a16ef9817b6ee321650e853506832369f37f",
+    "independent_decode": true
+  }
+]

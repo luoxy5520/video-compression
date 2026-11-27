@@ -1,7 +1,7 @@
 from pixels import *
 from diagnostic_codec import load
 import argparse
-p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--steps',type=int,default=5000);a=p.parse_args();v=vae();ck=ROOT/'checkpoints'/a.name/f'step{a.steps}.pt';m,c=load(ck);out=ROOT/'results/E2_1d'/a.name;out.mkdir(exist_ok=True);records=json.loads((E2/'dataset_manifest.json').read_text())['records'];train=set(c['train_paths']);groups={r['group'] for r in records if r['path'] in train};dev=[r for r in records if r['role']=='historical_development' and r['group'] not in groups and r['exists']][:2];assert len(dev)==2
+p=argparse.ArgumentParser();p.add_argument('--name',required=True);p.add_argument('--steps',type=int,default=5000);p.add_argument('--stage',default='E2_1d');a=p.parse_args();v=vae();ck=ROOT/'checkpoints'/a.name/f'step{a.steps}.pt';m,c=load(ck);out=ROOT/'results'/a.stage/a.name;out.mkdir(exist_ok=True);records=json.loads((E2/'dataset_manifest.json').read_text())['records'];train=set(c['train_paths']);groups={r['group'] for r in records if r['path'] in train};dev=[r for r in records if r['role']=='historical_development' and r['group'] not in groups and r['exists']][:2];assert len(dev)==2
 rows=[];deploy=out/f'deploy_step{a.steps}.pt';atomic_torch(deploy,dict(config=c['config'],state=m.state_dict()))
 for idx,record in enumerate(dev):
     x=tensor(record);stats=[];decoded=[]

@@ -1,0 +1,13 @@
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+V2_D16 {'step': 1, 'rate': 4.476484298706055, 'latent_mse': 0.0005510432529263198, 'pixel_mse': 8.303348295157775e-05, 'loss': 9.007131576538086, 'lambda_p': 8705.92646956641, 'lambda_z': 6910.099949318758, 'lr': 1e-05, 'sample_index': 0, 'vae_forward_backward_step_seconds': 7.591052142903209}
+V2_D16 {'step': 10, 'rate': 4.6952362060546875, 'latent_mse': 0.0005887707229703665, 'pixel_mse': 7.936489419080317e-05, 'loss': 9.454645156860352, 'lambda_p': 8705.92646956641, 'lambda_z': 6910.099949318758, 'lr': 1e-05, 'sample_index': 9, 'vae_forward_backward_step_seconds': 4.314049261622131}
+V2_D16 {'step': 20, 'rate': 4.869345664978027, 'latent_mse': 0.0006156777963042259, 'pixel_mse': 0.0009965068893507123, 'loss': 17.799257278442383, 'lambda_p': 8705.92646956641, 'lambda_z': 6910.099949318758, 'lr': 1e-05, 'sample_index': 3, 'vae_forward_backward_step_seconds': 4.336516000796109}
+V2_D16 {'step': 30, 'rate': 4.827075481414795, 'latent_mse': 0.0006009582430124283, 'pixel_mse': 0.0032266639173030853, 'loss': 37.07085418701172, 'lambda_p': 8705.92646956641, 'lambda_z': 6910.099949318758, 'lr': 1e-05, 'sample_index': 13, 'vae_forward_backward_step_seconds': 4.348052202258259}
+V2_D16 {'step': 40, 'rate': 4.794760227203369, 'latent_mse': 0.0006387155153788626, 'pixel_mse': 0.00032205486786551774, 'loss': 12.012134552001953, 'lambda_p': 8705.92646956641, 'lambda_z': 6910.099949318758, 'lr': 1e-05, 'sample_index': 7, 'vae_forward_backward_step_seconds': 4.3396988632157445}
+V2_D16 {'step': 50, 'rate': 4.8069658279418945, 'latent_mse': 0.0005919508985243738, 'pixel_mse': 0.00012949813390150666, 'loss': 10.02480697631836, 'lambda_p': 8705.92646956641, 'lambda_z': 6910.099949318758, 'lr': 1e-05, 'sample_index': 1, 'vae_forward_backward_step_seconds': 6.621872193645686}
+V2_D16 {'step': 60, 'rate': 4.930335521697998, 'latent_mse': 0.00058934889966622, 'pixel_mse': 0.0027412811759859324, 'loss': 32.868186950683594, 'lambda_p': 8705.92646956641, 'lambda_z': 6910.099949318758, 'lr': 1e-05, 'sample_index': 11, 'vae_forward_backward_step_seconds': 4.3409563740715384}

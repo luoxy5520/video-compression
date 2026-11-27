@@ -22,3 +22,10 @@
 - New tests PASS: original forward equality, STE values/gradient, dynamicCDF restore, TP1/TP2 integer-mean canonical symbol/reconstruction equality.
 - tmux e21-d16-low/high:16videos, factors.1/10,5000steps plus separate full development evaluation.
 - temporal_entropy_model.py and temporal_run.py added but training NOT RUN; frozen base requires E2.1d gate. Integer CDF-origin translation leaves canonical symbols q and dequantization fixed.
+
+- Complete low/middle/high development curves:14/14 measured points within Uniform support,2 unique historical development videos. summarize_scale.py gate PASS after last low-point video completed; earlier incomplete13-row snapshot correctly returnedFalse.
+- Native full-sequenceFP32 VAE gradient run OOM at peak74.55GB allocated (other service~8GB). Batch already1; gradient accumulation cannot lower per-sequence activations. Added pure local causal-cache checkpoint function, no detach/crop/independent-slice video concatenation. Full checkpointed FP32 run PASS: exact native forward parity,52.18GB peak, forward1.182s/backward3.265s diagnostic. VAE parameter/file hashes unchanged, no VAE optimizer entries or parameter gradients.
+- V1_D16 and V2_D16 from the same D16/10000 checkpoint, fixed common16 train videos, lr1e-5, initial pixel/latent reconstruction-gradient norm calibration, target100step smoke onGPU1/GPU0; model/optimizer/scheduler/RNG checkpoints every10 steps. Native frozen VAE FP32 throughout; no mixed precision needed.
+- TP0/TP1/TP2 frozen-symbol actual files and every independent decoder passed; TP1 gains6.124%/4.676%,TP2 gains8.723%/5.668%. New identical TPE1 container normalizes metadata for all methods; original fiveLVC2 files have a different header total and are not used as TP0 denominator.
+- temporal_profile.py:CPU path only,1warmup+5formal per video; GPU endpoint timing NOT RUN.
+- P2 temporal_joint.py small1500-step joint latent RD starts only after averageTP2>5%; two slices first500steps, then5. It is a separate lossy experiment; no fixed-symbol claims. Concurrent with pixel smoke onGPU0, so its training time is not isolated benchmark latency.
