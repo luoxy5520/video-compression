@@ -1,0 +1,10 @@
+{
+  "pass_": true,
+  "pass": true,
+  "distortion_loglambda_correlation": -0.8078076807795759,
+  "bytes_loglambda_correlation": 0.981320572097155,
+  "scope": "one training video only; latent MSE and PSNR evaluated separately",
+  "variant": "R3_identity",
+  "quant_step": 0.1,
+  "symbol_limit": 255
+}

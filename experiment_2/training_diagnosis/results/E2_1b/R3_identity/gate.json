@@ -1,0 +1,4 @@
+{
+  "pass": true,
+  "basis": "analytical unchanged R3-shape identity, <2e-6 max error on video and random tensor; use native VAE evaluation to verify pixel equality"
+}

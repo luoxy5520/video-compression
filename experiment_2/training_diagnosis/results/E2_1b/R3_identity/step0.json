@@ -1,0 +1,46 @@
+{
+  "variant": "R3_identity",
+  "step": 0,
+  "mse": 1.3416954238904834e-16,
+  "mae": 2.046705471769883e-09,
+  "relative_l2": 1.4584037089093727e-08,
+  "input_shape": [
+    5,
+    16,
+    60,
+    104
+  ],
+  "coding_shape": [
+    5,
+    32,
+    60,
+    104
+  ],
+  "bottleneck_element_ratio": 2.0,
+  "random_tensor_max_abs_error": 2.384185791015625e-07,
+  "checkpoint_sha256": "fb514152e5dfa5e43d7bea3db5ead4713be58f142c1cece9bad7efce0833c0ac",
+  "rate": "NOT APPLICABLE: analytic continuous reconstruction, no coding",
+  "interpretation": "capacity witness and new initialization, not a trained codec or evidence of compression performance",
+  "psnr_y": 73.87887628000189,
+  "psnr_rgb": 73.04648084344564,
+  "per_frame_psnr_y": [
+    74.06697146533482,
+    73.56778820624393,
+    73.88729540632882,
+    73.85061146849011,
+    73.89139059269452,
+    73.66391751418612,
+    73.89959256835054,
+    73.89139059269452,
+    74.3036789063139,
+    73.6522690186404,
+    73.5336960090443,
+    73.60215014670824,
+    73.92016553348735,
+    73.92429184716502,
+    73.89548964426736,
+    74.17495676038841,
+    74.31721536865676
+  ],
+  "last4_psnr_y": 74.07798840511938
+}

@@ -1,0 +1,16 @@
+test_hard_and_ste_forward_same_but_gradients_differ (test_diagnostic_forward.DiagnosticForward.test_hard_and_ste_forward_same_but_gradients_differ) ... ok
+test_training_forward_matches_default (test_diagnostic_forward.DiagnosticForward.test_training_forward_matches_default) ... FAIL
+
+======================================================================
+FAIL: test_training_forward_matches_default (test_diagnostic_forward.DiagnosticForward.test_training_forward_matches_default)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/tests/test_diagnostic_forward.py", line 11, in test_training_forward_matches_default
+    self.assertTrue(torch.equal(expected,got['rec']));self.assertAlmostEqual(r.item(),got['rate'].item(),places=5)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.080s
+
+FAILED (failures=1)

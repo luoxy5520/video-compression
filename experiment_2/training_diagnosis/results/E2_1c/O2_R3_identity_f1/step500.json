@@ -1,0 +1,8 @@
+{
+  "mode": "O2",
+  "step": 500,
+  "lambda_z": 6910.099949318758,
+  "checkpoint_sha256": "3564a5263af896864360725b0ce34b223f22197c19718dbf61478fee48f6d39f",
+  "elapsed_total": 10.071674424223602,
+  "peak_gpu_bytes": 208475648
+}

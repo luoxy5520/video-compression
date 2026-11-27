@@ -1,0 +1,13 @@
+{
+  "rate": 5.770472526550293,
+  "distortion": 0.0008350780117325485,
+  "rate_gradient_norm": 4.585620976565739,
+  "distortion_gradient_norm": 0.0022909361126900642,
+  "reference_lambda": 6910.099949318758,
+  "selected_lambda": 69100.99949318758,
+  "factor": 10.0,
+  "quant_step": 0.1,
+  "symbol_limit": 255,
+  "quantization": "STE centered hyper, zero-mean main; hard values in forward",
+  "scale_head_initialization": "checkpoint-shared training-video channel std; other hyper modules unchanged"
+}

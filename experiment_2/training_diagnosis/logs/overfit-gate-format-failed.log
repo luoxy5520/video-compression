@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/overfit_gate.py", line 5, in <module>
+    name=f'O2_R3_identity_f{factor:g}';x=json.loads((ROOT/'results/E2_1c'/name/'evaluation_step1000.json').read_text());rows.append(x);c=json.loads((ROOT/'results/E2_1c'/name/'calibration.json').read_text());cal.append(dict(factor=factor,**c))
+                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'factor'

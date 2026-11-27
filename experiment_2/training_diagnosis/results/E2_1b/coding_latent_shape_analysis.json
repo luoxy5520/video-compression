@@ -1,0 +1,291 @@
+[
+  {
+    "variant": "R1",
+    "step": 1000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 0.5
+  },
+  {
+    "variant": "R1",
+    "step": 500,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 0.5
+  },
+  {
+    "variant": "R1",
+    "step": 10000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 0.5
+  },
+  {
+    "variant": "R1",
+    "step": 100,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 0.5
+  },
+  {
+    "variant": "R1",
+    "step": 5000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 0.5
+  },
+  {
+    "variant": "R1",
+    "step": 2000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 0.5
+  },
+  {
+    "variant": "R2",
+    "step": 1000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      64,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 1.0
+  },
+  {
+    "variant": "R2",
+    "step": 500,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      64,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 1.0
+  },
+  {
+    "variant": "R2",
+    "step": 100,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      64,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 1.0
+  },
+  {
+    "variant": "R2",
+    "step": 5000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      64,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 1.0
+  },
+  {
+    "variant": "R2",
+    "step": 2000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      64,
+      30,
+      52
+    ],
+    "bottleneck_element_ratio": 1.0
+  },
+  {
+    "variant": "R3",
+    "step": 1000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      60,
+      104
+    ],
+    "bottleneck_element_ratio": 2.0
+  },
+  {
+    "variant": "R3",
+    "step": 500,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      60,
+      104
+    ],
+    "bottleneck_element_ratio": 2.0
+  },
+  {
+    "variant": "R3",
+    "step": 100,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      60,
+      104
+    ],
+    "bottleneck_element_ratio": 2.0
+  },
+  {
+    "variant": "R3",
+    "step": 5000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      60,
+      104
+    ],
+    "bottleneck_element_ratio": 2.0
+  },
+  {
+    "variant": "R3",
+    "step": 2000,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      60,
+      104
+    ],
+    "bottleneck_element_ratio": 2.0
+  },
+  {
+    "variant": "R3_identity",
+    "step": 0,
+    "input_shape": [
+      5,
+      16,
+      60,
+      104
+    ],
+    "coding_shape": [
+      5,
+      32,
+      60,
+      104
+    ],
+    "bottleneck_element_ratio": 2.0
+  }
+]

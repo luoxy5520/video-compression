@@ -1,0 +1,3 @@
+# E2.1b
+
+R1 random initialization: input499200 elements, coding249600 (ratio.5). R2 adds32→64 coding channels (ratio1), otherwise same transforms. R3 cancels the sole spatial downsample (ratio2); no large CNN replacement. Randomly trained R1/R2/R3 improve but remain below INT6 in this diagnostic budget. R3 also admits an analytical identity initialization because GELU(x)-GELU(-x)=x; tested on saved full video and random tensor (<2e-6 max error). Identity is a capacity witness and a separate new initialization, not compression performance or convergence evidence. It is used to remove reconstruction-optimization conditioning as a confound in O1/O2. Exact measured CSV and full-sequence VAE curves accompany this report.

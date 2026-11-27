@@ -23,14 +23,15 @@ def tensor(record):
 def forward(m,x,mode='noise'):
     y=m.ga(x);z=m.ha(y)
     median=m.eb._get_medians().reshape(1,m.channels,1,1)
-    if mode=='noise':zh=z+torch.rand_like(z)-.5;yh=y+torch.rand_like(y)-.5
+    if mode=='noise':zh,_=m.eb(z,training=True)
     elif mode=='none':zh=z;yh=y
     else:
         zh=(z-median).round()+median;yh=y.round()
         if mode=='ste':zh=z+(zh-z).detach();yh=y+(yh-y).detach()
     scales=m.hs(zh)[:,:,:y.shape[-2],:y.shape[-1]]+.11
     pz=m.eb._likelihood(zh.permute(1,0,2,3).reshape(m.channels,1,-1))[0]
-    py=m.gc._likelihood(yh,scales)
+    if mode=='noise':yh,py=m.gc(y,scales,training=True)
+    else:py=m.gc._likelihood(yh,scales)
     rec=m.gs(yh)[:,:,:x.shape[-2],:x.shape[-1]]
     main=-py.clamp_min(1e-9).log2().sum();hyper=-pz.clamp_min(1e-9).log2().sum()
     return dict(rec=rec,y=y,z=z,yh=yh,zh=zh,py=py,pz=pz,main=main,hyper=hyper,rate=(main+hyper)/x.numel(),dist=(rec-x).square().mean())

@@ -1,6 +1,6 @@
 {
   "status": "COMPLETE",
-  "step": 5000,
-  "target_steps": 5000,
+  "step": 10000,
+  "target_steps": 10000,
   "variant": "R1"
 }

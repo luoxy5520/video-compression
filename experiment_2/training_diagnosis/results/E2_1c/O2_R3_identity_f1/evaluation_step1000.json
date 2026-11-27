@@ -1,0 +1,120 @@
+{
+  "name": "O2_R3_identity_f1",
+  "step": 1000,
+  "mode": "O2",
+  "scope": "single-video overfit; not generalization",
+  "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+  "lambda_z": 6910.099949318758,
+  "latent_mse": 0.0005277479067444801,
+  "actual_bytes": 305811,
+  "main_bytes": 269716,
+  "hyper_bytes": 34600,
+  "metadata_bytes": 1495,
+  "streams": [
+    {
+      "bytes": 53951,
+      "main_bytes": 46716,
+      "hyper_bytes": 6936,
+      "metadata_bytes": 299,
+      "sha256": "07bae356f9ffdb251fdd6c43030d8b96d2cbcc01d66ccefc7c8d0e1d788a9df0"
+    },
+    {
+      "bytes": 60035,
+      "main_bytes": 52860,
+      "hyper_bytes": 6876,
+      "metadata_bytes": 299,
+      "sha256": "9026d9de4d60b0e436ffed90b5c1cd575c87de615cc32237d5dd825785fb8791"
+    },
+    {
+      "bytes": 61651,
+      "main_bytes": 54424,
+      "hyper_bytes": 6928,
+      "metadata_bytes": 299,
+      "sha256": "6b02bc7782581eab666a8becdd1770b9784e9d3be0a16e5858b2aee90dc10977"
+    },
+    {
+      "bytes": 62175,
+      "main_bytes": 54948,
+      "hyper_bytes": 6928,
+      "metadata_bytes": 299,
+      "sha256": "28c15db04babf874cdf9049c5086aa04d642fc02242d0667e3883bb42b2d13b3"
+    },
+    {
+      "bytes": 67999,
+      "main_bytes": 60768,
+      "hyper_bytes": 6932,
+      "metadata_bytes": 299,
+      "sha256": "e054f764870e8ddb6fcc9644783c9cf0981aa21a2341d91f52c2861e7d221a39"
+    }
+  ],
+  "per_slice_rate": [
+    {
+      "slice": 0,
+      "estimated_main_bits": 372782.75,
+      "estimated_hyper_bits": 55437.0625,
+      "actual_main_bytes": 46716,
+      "actual_hyper_bytes": 6936,
+      "metadata_bytes": 299
+    },
+    {
+      "slice": 1,
+      "estimated_main_bits": 422277.8125,
+      "estimated_hyper_bits": 55107.9296875,
+      "actual_main_bytes": 52860,
+      "actual_hyper_bytes": 6876,
+      "metadata_bytes": 299
+    },
+    {
+      "slice": 2,
+      "estimated_main_bits": 434656.15625,
+      "estimated_hyper_bits": 55317.5859375,
+      "actual_main_bytes": 54424,
+      "actual_hyper_bytes": 6928,
+      "metadata_bytes": 299
+    },
+    {
+      "slice": 3,
+      "estimated_main_bits": 438600.25,
+      "estimated_hyper_bits": 55352.80078125,
+      "actual_main_bytes": 54948,
+      "actual_hyper_bytes": 6928,
+      "metadata_bytes": 299
+    },
+    {
+      "slice": 4,
+      "estimated_main_bits": 485618.46875,
+      "estimated_hyper_bits": 55398.14453125,
+      "actual_main_bytes": 60768,
+      "actual_hyper_bytes": 6932,
+      "metadata_bytes": 299
+    }
+  ],
+  "psnr_y": 47.89490699312544,
+  "psnr_rgb": 46.416707183155594,
+  "per_frame_psnr_y": [
+    46.097318116848385,
+    47.28282527029667,
+    47.50405927467761,
+    47.432350433574804,
+    47.208815261870775,
+    48.10516065109732,
+    47.89540201908273,
+    47.864557293134894,
+    47.64961106940851,
+    48.28092832631044,
+    48.079055651736994,
+    47.86937740376796,
+    47.5403768871312,
+    49.50692245775925,
+    49.462128303941796,
+    49.11762492603914,
+    48.68073791894621
+  ],
+  "last4_psnr_y": 49.191853401671594,
+  "checkpoint_sha256": "676db877560459726844aa986fbe981fc2484f602b2c43c00127d4b4266bdd7d",
+  "deployment_sha256": "b10f9e828560410f7dff9e8b83e53c4ecea5de9dcf61bbbc90e2625101f17491",
+  "deployment_bytes": 1109501,
+  "independent_process_decode": true,
+  "quant_step": 0.1,
+  "symbol_limit": 255
+}

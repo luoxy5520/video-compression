@@ -1,0 +1,7 @@
+test_hard_and_ste_forward_same_but_gradients_differ (test_diagnostic_forward.DiagnosticForward.test_hard_and_ste_forward_same_but_gradients_differ) ... ok
+test_training_forward_matches_default (test_diagnostic_forward.DiagnosticForward.test_training_forward_matches_default) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.084s
+
+OK

@@ -1,8 +1,8 @@
 {
-  "E2.1a": "PASS",
-  "E2.1b": "RUNNING: R1 continuation10000 and full-sequence VAE evaluation",
-  "E2.1c": "NOT RUN: awaiting reconstruction gate",
-  "E2.1d": "NOT RUN",
+  "E2.1a": "PASS: audit plus exact historical-forward regression",
+  "E2.1b": "COMPLETE diagnosis: R1/R2/R3 random init belowINT6; same-shape R3 identity witness supports high-quality reconstruction; R4 not needed for capacity proof",
+  "E2.1c": "PASS: O1 and five O2 real-stream single-video RD points",
+  "E2.1d": "RUNNING:16 videos, middle point,5000steps, two seeded epoch-permutation trials",
   "E2.1e": "NOT RUN",
   "E2.2": "NOT RUN",
   "independent_validation": "NOT AVAILABLE/CERTIFIED",
