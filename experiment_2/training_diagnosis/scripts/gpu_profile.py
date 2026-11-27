@@ -5,8 +5,8 @@ Full H.264 measurements rerun from GPU latent, not assembled historical times.
 from pixels import *
 from temporal_entropy_model import load_temporal
 import copy,resource,math,argparse
-parser=argparse.ArgumentParser();parser.add_argument('--method',choices=['TP2','P2'],default='TP2');args=parser.parse_args()
-out=ROOT/'results/performance'/args.method;out.mkdir(parents=True,exist_ok=True);ck=ROOT/'checkpoints'/('temporal/TP2.pt' if args.method=='TP2' else 'temporal_joint/P2.pt');cpu,c=load_temporal(ck);gpu=copy.deepcopy(cpu.base).cuda().eval();v=vae();records=json.loads((E2/'dataset_manifest.json').read_text())['records'];base=json.loads((ROOT/'results/E2_1d/D16_f1_seed20261127/development_step10000.json').read_text());rows=[]
+parser=argparse.ArgumentParser();parser.add_argument('--method',choices=['TP2','P2','P3'],default='TP2');args=parser.parse_args()
+out=ROOT/'results/performance'/args.method;out.mkdir(parents=True,exist_ok=True);ck=ROOT/'checkpoints'/('temporal/TP2.pt' if args.method=='TP2' else 'temporal_joint/P2.pt' if args.method=='P2' else 'temporal_pixel/P3.pt');cpu,c=load_temporal(ck);gpu=copy.deepcopy(cpu.base).cuda().eval();v=vae();records=json.loads((E2/'dataset_manifest.json').read_text())['records'];base=json.loads((ROOT/'results/E2_1d/D16_f1_seed20261127/development_step10000.json').read_text());rows=[]
 def measured(fn):
     torch.cuda.synchronize();t=time.perf_counter();value=fn();torch.cuda.synchronize();return value,time.perf_counter()-t
 
@@ -20,7 +20,7 @@ def encode_hybrid(original,path):
 def h264_encode(original,path,qp):
     # End-to-end actual source GPU latent -> native VAE -> RGB/YUV -> H.264.
     image=rgb(v.decode([original])[0]);raw=yuv(image)
-    subprocess.run(['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','yuv420p','-s','832x480','-r','16','-i','pipe:0','-c:v','libx264','-preset','medium','-qp',str(qp),'-g','17','-bf','2','-refs','3','-threads','4','-f','h264',str(path)],input=raw,check=True)
+    subprocess.run(['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','yuv420p','-s','832x480','-r','16','-i','pipe:0','-c:v','libx264','-preset','medium','-qp',str(qp),'-g','17','-bf','2','-refs','3','-threads','4','-color_primaries','bt709','-colorspace','bt709','-color_trc','bt709','-color_range','tv','-f','h264',str(path)],input=raw,check=True)
     return raw
 
 def h264_decode(path):return subprocess.run(['ffmpeg','-v','error','-threads','4','-i',str(path),'-f','rawvideo','-pix_fmt','yuv420p','pipe:1'],capture_output=True,check=True).stdout

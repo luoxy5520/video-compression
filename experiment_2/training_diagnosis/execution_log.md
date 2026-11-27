@@ -40,3 +40,11 @@
 - Performance report initially failed NumPy bool serialization; retained failure log, fixed bool conversion and reran formal measurements. Raw timing samples persisted separately.
 - Five regression tests PASS including extreme±255 symbols/CDFescape, checkpoint buffer resizing, train-forward equality and fixed-symbol integral-CDF translation. Later TPE1 parser now validates version/shapes/lengths and supports only the selected R3 layout.
 - Analytical identity control weights are deterministic. The original auxiliary random-tensor witness did not explicitly seed its random draw; future reruns now seed it and skip completed evidence rather than overwrite it. This does not change the fixed identity transform or any seeded training experiment.
+
+## Continued execution — 2026-11-27 23:08 Asia/Shanghai
+- V1 and V2 each completed1000 steps and independently decoded both historical diagnostic videos. V1:293719Bytes/44.9517dB,321703/34.8290; V2:300835/44.7787,323895/34.7907. Frozen VAE integrity checks passed. These are two development cases, not full-pool conclusions.
+- D16 and D42 middle-rate exact continuations both reached20000 steps; actual full-pool quality for those checkpoints is still pending.
+- P3 completed its bounded100-step pixel-aware joint diagnosis and independent decoding:238015Bytes/44.8687dB,293315/34.5045. P3 changes canonical symbols; no fixed-symbol savings claim applies.
+- GPU0 now continues V2 middle from1000 to3000 steps; GPU1 trains V2 low1000, followed by high1000. Both GPUs report100% utilization. Existing unrelated services remain running.
+- Full18-video pool and final P2/P3 deployment profiling are queued, NOT RUN as of this update. Queue journals/status JSON distinguish active, waiting, failed and completed tasks. Server tmux execution continues through SSH/API interruptions.
+- Added fresh multi-QP H.264 pool references with explicit BT709, measured-support-only H.264 comparisons and coverage, plus unique per-video figure filenames across dataset sources. Dataset integrity audit passed42 train/18 historical development tensors with no exact hash or Prompt/Seed overlap. Sealed test files were not read.

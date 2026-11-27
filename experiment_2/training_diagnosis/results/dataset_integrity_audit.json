@@ -1,0 +1,911 @@
+{
+  "train_videos": 42,
+  "historical_development_videos": 18,
+  "unique_train_tensor_hashes": 42,
+  "unique_development_tensor_hashes": 18,
+  "prompt_seed_group_overlap": [],
+  "identical_tensor_train_development_overlap": [],
+  "sealed_test": "NOT OPENED; only explicit train/development records were read",
+  "records": [
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+      "role": "historical_development",
+      "group": "52d5195146b96e8c23a7dc8c296860249e893ea4f1222470348ef8658f8244b3",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "cd6365473cd9e8c786fe27597117b899e9df74a8f6f6ecc03f51de9454c1e4b1",
+      "tensor_sha256_TCHW": "9f736416d7c509b2b8fc63643dad8d9529da494e641e0b4bcbcc09186ef3eec2",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+      "role": "train_candidate",
+      "group": "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "57b5c7e8cf10c9b26538f2551f2148d37b8b52703ae68ad2e5e60764fb199363",
+      "tensor_sha256_TCHW": "1d7a6789f37f42aef7887c508d2c093c02dc72d4f9ad8bac3df7bd1c62c2eeee",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+      "role": "train_candidate",
+      "group": "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "884809388a3139cdbe90ff5d74199278cead1b54e66e6158674316329dea859c",
+      "tensor_sha256_TCHW": "f3c2f05b2ae500902a52e07f3f4449f9fe7aaadce89ecc0206e974247c11f45b",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+      "role": "train_candidate",
+      "group": "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "388481036dfb5eab998701f051c10fd9e32a80217bbffd0536d1ba751ed1c329",
+      "tensor_sha256_TCHW": "c09a5301f6ceeac3a512931a7d8c3220ca4ca589954b3b6e810cce1575325dbc",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+      "role": "train_candidate",
+      "group": "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "6579563c8e7b3889425a1f23bc6adfb9e18d9c70dcfe641f9e04fc06c10680ee",
+      "tensor_sha256_TCHW": "5a07747356c5366ff803593c66a09fc6662a4f5c22c6e8b348b3587f2b1e5574",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+      "role": "train_candidate",
+      "group": "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "bb6691be8d1d53f1877fa6982009c8b6887302ed7a35a2cc6d7eda6afe24d08c",
+      "tensor_sha256_TCHW": "3c90611e7f5f4510b9d290b04fa733ac4012e0a532b6d7adade12ff1b3f443f2",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+      "role": "train_candidate",
+      "group": "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "c2e31b8d72d613860d11b2963640dba4de43f37a845fb7b700fc2f84b0185c3a",
+      "tensor_sha256_TCHW": "2819ecc82c02158730f45784a0347b7ef4be992dcc18b3a5474e231e440f2c5c",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+      "role": "train_candidate",
+      "group": "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "f42eed2ab698bf388e2f279c6da695bcbe90c898e24af38a6e7c9c2f392c3f1e",
+      "tensor_sha256_TCHW": "84dcc9fe8b0d68c0596a5f0cac7f9e1637711fd037fc4d42c5ec78f925b0db4c",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+      "role": "train_candidate",
+      "group": "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "e955bc93215019e6bd36f1faa828f595988759c92bb6a88eb6cc9cc14b11ecb5",
+      "tensor_sha256_TCHW": "0353f1238c4390cb7b8c44d569587ca93471c6c7b16ac2db016e3c5328379587",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+      "role": "train_candidate",
+      "group": "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "619790f75ce89455a5e67bb570c6b9fe58bffa0724b5b6184a3119a52a37a582",
+      "tensor_sha256_TCHW": "d29f690a1f8a9656f2478920dd04ec6cc969a206e799ed67594d92378ebd9df3",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+      "role": "train_candidate",
+      "group": "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "067108671b2bc0da87e97b77ac472d097cb3abeb761cd5174a8ef0daf44de851",
+      "tensor_sha256_TCHW": "2b5b08040ec283bd418c33d4bdb2fc26f55c1a98f838c16b5753362ddd14b0e3",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+      "role": "train_candidate",
+      "group": "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "b53513b0505fb61f13f84975152e38a6ffbb8f6009662a4488986b2347cce51a",
+      "tensor_sha256_TCHW": "2a44d1b65635cc7da11af33abc705b4aa414404fc705bdc5294ba0f115b4ad43",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+      "role": "train_candidate",
+      "group": "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "5eb370a1a6e8ec6b2156b0f37073aeb7d96bfc6ee7c06620b4e8bb1d983a6c44",
+      "tensor_sha256_TCHW": "4fb42032d7d88cfe2323ffa9dce85a5605f75c0f6b2f6898ac68ecda593529bc",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+      "role": "train_candidate",
+      "group": "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "d0eb7c6a74a2aad109f36306547665a8a8e21610e83521a45865931f345e4b63",
+      "tensor_sha256_TCHW": "2cbb12e1389083d5fc5c793874a19f83d9d35561a7540f43104d6fba1c049dad",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+      "role": "train_candidate",
+      "group": "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "fabc7898ad0b127faa56c08e5537b5503810e75c821b456f2a86074f25c05da7",
+      "tensor_sha256_TCHW": "4934ecf41b541a8c5a161b4d83ceb11d65987469cf9cf568c05b6c1648e80acc",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+      "role": "train_candidate",
+      "group": "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "b20a0e29990b208796c0af52ff5483b5f1fbeb3c9dd0df1f2c2bdf57c63df5fd",
+      "tensor_sha256_TCHW": "3dc32e010b3087e82b7dabd8b372d99c4df0c199f1712c60bd26ec696f8e60f5",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt",
+      "role": "train_candidate",
+      "group": "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "19b9f19ac89af4ec9c921be4136d13d92fa714883bcf10a7480bf0a802f2825d",
+      "tensor_sha256_TCHW": "da2627635c6a7ccd45b904a6a2f395862c5604152426f876475ebd9305b3fa48",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0017/final_latent.pt",
+      "role": "train_candidate",
+      "group": "0ad81748324d974ef913e7849df7589c5a82d306d4aafa6cc8445ed563ea6769",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "d1d0f3885777bf5a4de8514692f23092b259b8825e7f2b6f72853c9f00587777",
+      "tensor_sha256_TCHW": "9d2e1b608d374f3cc9b779ae3426ad4dbaf3611f6defdd8c4d47c8fee14140de",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0018/final_latent.pt",
+      "role": "train_candidate",
+      "group": "0a478de15b677f950b9b91cfb24232369d4a3a9e0a8c06267e209829ebe34bd4",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "744d42fe0455da7965ba1b386acf2ade8df03af3eeeffc40d8d953ccd8402561",
+      "tensor_sha256_TCHW": "49e439bd3c105159154ce9080a25bb4ae95bee3185fe05c88fa74d41f1a937c4",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0019/final_latent.pt",
+      "role": "train_candidate",
+      "group": "1a3bb4f3178c8debdd858a55ef7d8ea94aec7728f43915f0e4631658819fb9a6",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "98acefd103dee5db285251422f8fc00d64a927473f075e88a03b63f60a2bc695",
+      "tensor_sha256_TCHW": "a25aea882eac135c2cb0531652da148eff030d3f7d66ed73715a78371ee49546",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+      "role": "historical_development",
+      "group": "d539983b22f8084ed4c9d96fc02f723d528407eca4aab345e8ab62cdab1f7e55",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "3abfb4ec381fdbce7bc12afaad833abdebf1baf3010dfc74868e2e715fa41fc7",
+      "tensor_sha256_TCHW": "e6bdb81ca8e54c1cfac384f0408f1e78d271e76832c7cb62bf91e869dcd0bfdf",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/final_latent.pt",
+      "role": "historical_development",
+      "group": "ecc2363a7bc0237cf905c93ee89ea5fa0e9a59541b5027bdd0de8dee9a007d00",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "a60ce81755cffc6d9d51274f9f16ea9644a673fd06b1ecb2e6fa556fe1de7856",
+      "tensor_sha256_TCHW": "1341242f1a191a5e8de2d7e4913889fc622069823936f7d7ea104c107e41ac43",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/final_latent.pt",
+      "role": "historical_development",
+      "group": "5790be8621fe99c804242b8b77d178cdc9aea5c029751d3ec1e65bd067b64fd5",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "4403ec8ead755f61451f7bfe571bf43f4b1f34f362ad4d9b7044219f75b44eb3",
+      "tensor_sha256_TCHW": "bd7881cf1ae379dcb7b4f958deb42a16b55fe69b8cb8f3afbb06027f631d038a",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/final_latent.pt",
+      "role": "historical_development",
+      "group": "1cd44f4464352d6f2c4e0c18576c7614c39f7cc9323d1dda720922ea8757c96d",
+      "source": "exp_expand32_20261106",
+      "file_sha256": "2d224debf00858c09406d1f9f7eca3bd6d697ac334d068a339542f9686d9994f",
+      "tensor_sha256_TCHW": "b17236cd42089f022c7c57bc5d072f3366329fe4607a45debbc3e50b454325c0",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1000/final_latent.pt",
+      "role": "train_candidate",
+      "group": "f94828decf249ca15dfc982384b42ef9c4c82072d8e9e0ee57c32ce6f9f8a361",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "adfb3b6bac8ee5162206022fed410f97296fdb1172c6497a5f28d035a51cbf82",
+      "tensor_sha256_TCHW": "b3f044d38a4e92bb7f88edfebd0ed733f288a4261c6d850c438ac3726e315900",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1001/final_latent.pt",
+      "role": "train_candidate",
+      "group": "94137ab08ed50ec7e2eb3dc33b9d198510f7120a9b300dee11bc6db31177089b",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "2be7e3cc53bb514ccef32fec62d63b2c69882b51559124d86373eac36358bac9",
+      "tensor_sha256_TCHW": "e583a9b15f7f667fbbdf364d9c6fd33c1b689f6a09f4e21f6f159a9217040471",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1002/final_latent.pt",
+      "role": "train_candidate",
+      "group": "b255dc998ef643ec0d9c21fe93a13729ce093d2aff908e0f8ec4b1b44e426f43",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "9b0ccbfde40e4c7b8add6bb5e6410749b3c1c33246816a1d9debebcd59fa940b",
+      "tensor_sha256_TCHW": "13802208d16e69968183fcd07d642a10c069040fe6cb35ef99dd0ee3c47e09b6",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1003/final_latent.pt",
+      "role": "train_candidate",
+      "group": "bd948316e996a9c056f2de90a3102de7890a71596588bc72ece917db56be5829",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "55da9f3736b211699209380933e94306597f9fa03aecdb0fb0b99843416ff388",
+      "tensor_sha256_TCHW": "a1ced5a390f11bb04a489a7212e5e9d526f5d66bb9cd4436a87c0f7ca1c582d9",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt",
+      "role": "historical_development",
+      "group": "b656ae5812e46ffcf2b9f38512b22dd215c1030fafedadb2993e299e8c4823b1",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "efa0260702a73d0af06a542272148be2de8df1ec06bcd29dc17c95c08fb97066",
+      "tensor_sha256_TCHW": "2b5a5cbf30453fa96f1b8c2b4eb256e0d81c31a7bd623dd88dcc63211bc3d73f",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1005/final_latent.pt",
+      "role": "train_candidate",
+      "group": "6d71e444c7f1a83b6d4942a143323fdcf11cee0da29b96fd0e4ad8ba6c5a1f20",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "1e9926bd54353cb4f6bf53756c3a463de8afbcfba13d03c49650dcebc4cdf4f0",
+      "tensor_sha256_TCHW": "4d11c00af69d6964dbebbf9c374349b2ecf7989a6c3dd73d020d5e518248b548",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1006/final_latent.pt",
+      "role": "train_candidate",
+      "group": "8d482efc711c76e0a91f93a5c9617fdefa11e2b67ee873790e2de62cd4f9a479",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "e13b0f94fdaff18ce451df785cafbef2b7f0d07abca34b1857c8c52a28d9a913",
+      "tensor_sha256_TCHW": "325b4a19d29962836cb42c6f4d00ddc8f4c6eb9a76ed21c05b475fe6fed8f490",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1007/final_latent.pt",
+      "role": "train_candidate",
+      "group": "a06ba0917f33d95bcabe7d72dde5d20d7081b2e89692b7d8d4908a7c946ab588",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "77bc6f96691cbeae18daac2b300dba99789da38486347afae8518b599931cbec",
+      "tensor_sha256_TCHW": "8c31ac3e55ff0e4305fe40e498cf08c87cdb38a64c6c1e8936a935d8d66974ec",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1008/final_latent.pt",
+      "role": "train_candidate",
+      "group": "10378d965907210b1f6512f2bf1e9372106398b35d7115e72f87ef3009b78849",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "7afd76de5a5f35a0f6a51b28831b05805609598b44a4a38e95efe848fcad93e3",
+      "tensor_sha256_TCHW": "502a4c5fdc5d7cd2911b63213bce5c327ad7357cb6c87efbfc378160e523521a",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1009/final_latent.pt",
+      "role": "train_candidate",
+      "group": "a0a163972454a3be93728d41ddfaad22b01587d635a27156611a0e2684fe703a",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "bad3d91292a91144b43bdc2cc1b241d4fb473d3d182d267b196f639bec04b630",
+      "tensor_sha256_TCHW": "b57f11130c22bdb0f74eab4f9bb549032b68e036c2d71c0ca2415b65a8252679",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1010/final_latent.pt",
+      "role": "train_candidate",
+      "group": "dcccd22b93a47d3051eff46c0b6fa5d28814ecc68189b7e9244d655050d95c3e",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "d5567bec6c072d3510364c20cf4ea25d49b65825202a73de052584c69b6619ed",
+      "tensor_sha256_TCHW": "7fbf6eba331cdcfb04175b188395e328dbcd1b2a98e57f482d3c4557423826a2",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1011/final_latent.pt",
+      "role": "train_candidate",
+      "group": "003b9f0f4265d79759c78f0a0ca77c0bb8d620f4758f4d10619285af67d9fc98",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "313b69ad2b7a4e4bcf640c92e4200c653c45765e3f3ecbd5c9300a9506501852",
+      "tensor_sha256_TCHW": "d703285330aedbf82bba59803d875ba97d1c0e09e1791feac82ae6536ba0115a",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1012/final_latent.pt",
+      "role": "train_candidate",
+      "group": "11e51e27a7a74e42ba3cb93d5f216959c5c0b58a04e994a0ecf01531644c0642",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "ec3f5c2ee18348c0a5a8fd0dacf9a9c467fb0abc0bca76cf588d77946d6d0180",
+      "tensor_sha256_TCHW": "8aeb95d6b5705e2cf77f50038a32b534b156b154c4992a38f225decd6248bfed",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1013/final_latent.pt",
+      "role": "train_candidate",
+      "group": "c3244142f517e2b331d7725b3e25740a4e95d7c5e7905869c20fe91b2c28d086",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "ba3fa1de0bb82ae4a9708059d9ac3b374364194d17f31cac2d9678774a1e5931",
+      "tensor_sha256_TCHW": "e2d828f5f0e8fe5f1a2d0278e13529c79de43597c76621869ecaa1ff4119245f",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1014/final_latent.pt",
+      "role": "train_candidate",
+      "group": "099b4ac72c20b0859f1fdee11c8f1f35506db0453b8cab521eb55e701490eaa8",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "75c1fcde3472c253eee78b57f7e4ec3ffe9324b636af48655c6db0774eb77b14",
+      "tensor_sha256_TCHW": "1af4427c0fb0f3112f6e84915e8072284ac21b39eee384bf5d563a1d13a98e56",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1015/final_latent.pt",
+      "role": "train_candidate",
+      "group": "fd2c7166e9e433a4c10f203ba8a6d0ad1c73335afcc7c6a6f62de64d1e57d950",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "a6147cee218aceeffdebd545a79e2aa7b91b0eed2db8aaa497d7af9cc6223a2a",
+      "tensor_sha256_TCHW": "a2ddc1ae6349224ff3952c8d18e73710ca46ef0204a0177e0934dbae79b0bedb",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1016/final_latent.pt",
+      "role": "train_candidate",
+      "group": "268a22bf3f5181ef385c0d31ed0064606eb655f9638989aa422b5042d0e1ad0a",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "627f95ff3e528c5e843c299c0c91a25f3683aa559ec62e950f1bf757d4912ea5",
+      "tensor_sha256_TCHW": "f6b8f20241e7f493aa02a080fb1dc091509ce3f9860517f41949b4fdbb5f652b",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1017/final_latent.pt",
+      "role": "train_candidate",
+      "group": "99f921b97461974be98bfa07f202602d84d4de010b424762f56e205f7a8969ad",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "fe1c543aa708bcf0ae2618dc867b3ef4bbf8d99df88223ab8b82018d9420b26d",
+      "tensor_sha256_TCHW": "7bd4fc30be96b181f25ee2c986bc7edf460339c44c281791c0d91ee3c83cefd2",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1018/final_latent.pt",
+      "role": "train_candidate",
+      "group": "aa5944e0cef4a526673a85a15c50ff26c88f64b0fdfebc3be4c0a3dce8c8e721",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "3854efb691d4f5b25f21e91e98cc6485fa9f8d873eecc0f82633c7d8e28de931",
+      "tensor_sha256_TCHW": "f51cc636042ed2e2325bbe3fdf545c2b838e32f0de74322d77bdd4f175df596c",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1019/final_latent.pt",
+      "role": "train_candidate",
+      "group": "97f420b424602a7eebacbc271ef4e3083509ca0ca657330f077216b4a22d85d5",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "1ee475cbf39c743a01d1dec0b6ea3fbbe165ce219053448fac25bcba6e8104ef",
+      "tensor_sha256_TCHW": "ce5db350ba9bc6b14ad8659efd5feebbe8274435b6f0a46ed78f3b286f463f15",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1020/final_latent.pt",
+      "role": "train_candidate",
+      "group": "7239d228ce0cb448d811e243e1494974f991f2aa45d9d718692f622a94b4c2a7",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "6a61fcde9ecf7f01d5bc2e4bf8f306efb38c4cad94199f2041f2153ef45050b8",
+      "tensor_sha256_TCHW": "4b5ffdf1ef7460dd2f07cfd2434388fe2b8c921d06481fa9f840d1d345b860db",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1021/final_latent.pt",
+      "role": "train_candidate",
+      "group": "e80cea63748336804e3c09f1483e4e251219d226119d1fb702e21136ae122551",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "70d246dafc70de6b2b56b6aa3ab7571dad29253d6298c9e90ee0e889dfea9121",
+      "tensor_sha256_TCHW": "5382c2d701739a51ff748f8d1de90cd234400b3ab167b709be837b865efd6355",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1022/final_latent.pt",
+      "role": "train_candidate",
+      "group": "01d81dd2a86fe5313e38a60e04520f6c234dba277d2b0bedc0b3f09f186a9b88",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "ae740efbb3765c16d9468254979bf3b27350f89b5083063979de3c52efda8e7d",
+      "tensor_sha256_TCHW": "498e05f29d859ba6bf5c04389e58f487d603b17c80e79690bcc04f61ca7eb648",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1023/final_latent.pt",
+      "role": "train_candidate",
+      "group": "247d6775d225befbe2aaec58d53d7eddb0bc30b318904067ae30f237ea815e4d",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "d6358f68c48a135b0c0766d7d0779ab34ecf5d1d7c8e01dd7421e6d48a6ed393",
+      "tensor_sha256_TCHW": "fc70d98aefe9a2a1b12fa82e9c18add3bccdf66bd275c841e37f2c68f9190175",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1024/final_latent.pt",
+      "role": "historical_development",
+      "group": "89cc93224c1e97faacdc084317f7ed91f47634b598c88e3d9a1ec065d84d0f92",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "5cb9d3af5c9c9812361d63dc65ffb4239d4d95935a69e971f5ba4e3a96f9edd2",
+      "tensor_sha256_TCHW": "b24c2d25d59adc74e82380701b33c68eabe31e55d44135b21fd7a0b47a7c8be5",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1025/final_latent.pt",
+      "role": "historical_development",
+      "group": "78d60c7317a1bd39245fa50391cc16bb8082ab1abc0c6c67489e2de32f7b9c83",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "95081570e8811a090c22684a7971c8ac5c149e31b59e15419e6a246ec832fe51",
+      "tensor_sha256_TCHW": "e89bd8a8699a9325c964830f895259aca745e5a4c145c67e45a6d3d8bff0b4c6",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1026/final_latent.pt",
+      "role": "historical_development",
+      "group": "96190fc790fa2e06f74a60efbcb33137b9ddf3b154e093525000d4ea746984d8",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "daaa518c949e7b7b6b1aa03771ac4802edb51d2dcce61d4540bee33e8954c9db",
+      "tensor_sha256_TCHW": "02175afd6946ba8404ac850c8f9a84dd5bce09dd0ad90cadc0b647b87ad2efd9",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1027/final_latent.pt",
+      "role": "historical_development",
+      "group": "01752e1be8699e016a4dab69c7f775047c487515471773f4c5bb15691d91b070",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "dc0058d57b223aa893a71c176971b4bd238c8f2a54ff372016b502392e64f51c",
+      "tensor_sha256_TCHW": "cc0d97377def1326659d4ca22fa9d7628cfa07962a847cf64bc082f186cc08f9",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/final_latent.pt",
+      "role": "historical_development",
+      "group": "cb50ef2d24613dd944ca231c56e4849673dd44239b75c0fa9fbf229dc36fd9f7",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "392056c401984b181c4960ca6b3b8937521ff47c6fabf38ef012508c3c0371af",
+      "tensor_sha256_TCHW": "909b5db50cdc75987106afa2d637f55394038b2af70b6715920eeac27bc67563",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/final_latent.pt",
+      "role": "historical_development",
+      "group": "b0fc78dc22d0f32d86471900782afbef06b90215aadbe578e651d4fc6e94dec7",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "7266777b1bcb8821a33579b07abcf7c42e3852eafb5b347f8be14fe960f4aa1d",
+      "tensor_sha256_TCHW": "7e93fea5eefe665ec424778e69d030e1477878d100a5b62027e3cfbd1ba7dfb6",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1030/final_latent.pt",
+      "role": "historical_development",
+      "group": "b1a8259da7bf799d90c767acd6df2f45e8013d2999fa85a3f8f90e84bab7212a",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "e7b61bc9ca88d568458b19d2f3b130fac1508eb9a616845c6ab2890c21cc4551",
+      "tensor_sha256_TCHW": "bc52cd2ddb83764f109c5685848528a22eea5355552bb79f9c59b60d9f9a1830",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1031/final_latent.pt",
+      "role": "historical_development",
+      "group": "45d2dfd02656ed8df4d89ad9f7751a128128500fa4003d236fb3e5aeeba84bc8",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "cb2389c01fd7c83bdb1d83b9c04676ab06f08724a21d3ce3543754ded0ef7588",
+      "tensor_sha256_TCHW": "d76c84de3ccef9d8f660de6aba41d1625aa909f41e240b5a42360caf2f0d00e5",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1032/final_latent.pt",
+      "role": "historical_development",
+      "group": "1f1b6e77e40a30ce56d5e9464c491c2e4164829caf78c65c15b3527c0d1cc08b",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "52724adb2ef40acb4e904286e40f5e1a8c22a852af6776de30b9401942e9fa2d",
+      "tensor_sha256_TCHW": "423d9a8ad03a42e240a477703d39deac603ed8fac71c6aa63569d58db48400f5",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1033/final_latent.pt",
+      "role": "historical_development",
+      "group": "97c395d3a07a804667fb67f93623774c45ddf513029bd0f8a3c9f734fc48495c",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "8cf9948c3f01fd842d00041c53707eaae23bb97853c1157434bc69ad52bdab5b",
+      "tensor_sha256_TCHW": "2a8558254b28e51101a2d284c26bd0eae376e1ef7c4229f6594171ab21af1043",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1034/final_latent.pt",
+      "role": "historical_development",
+      "group": "32641f301f923fff3629ae60db51f5d11a0994708f9e62c9b822c9990f4ea72d",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "70a7677a6f33335906676bd163723688d51a84233119cd122f298bbbdfc972a5",
+      "tensor_sha256_TCHW": "06586f11de261f6926dec2ceb74c9cc6c84e40b4e161ca9738bd12de01068087",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1035/final_latent.pt",
+      "role": "historical_development",
+      "group": "ba7a00de6413cb804d7e09dae4c151badd19e2fa257dcb87fa0694b9463efd1d",
+      "source": "exp_a_new48_20261107",
+      "file_sha256": "6ee7cdc02e0a3f5fd922ba5d36c899d56b149bd7348b926e01ec4d272c9e8ce2",
+      "tensor_sha256_TCHW": "f93de5e362ae5f2239da24bc654ed06cf9a8cef3af443b6b42f61797d0a3abc0",
+      "shape": [
+        5,
+        16,
+        60,
+        104
+      ],
+      "dtype": "torch.float32"
+    }
+  ]
+}

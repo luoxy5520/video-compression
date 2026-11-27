@@ -13,6 +13,7 @@ def fingerprint():
     for n,p in v.model.named_parameters():h.update(n.encode());h.update(p.detach().cpu().numpy().tobytes())
     return h.hexdigest()
 vae_hash=fingerprint();file_hash=sha(MODEL)
+assert file_hash=='38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981','original VAE file changed'
 if latest.exists():
     state=torch.load(latest,weights_only=False,map_location='cpu');restore_state(m,state['state']);opt.load_state_dict(state['optimizer']);aux.load_state_dict(state['aux_optimizer']);scheduler.load_state_dict(state['scheduler']);torch.set_rng_state(state['rng']);torch.cuda.set_rng_state(state['cuda_rng']);start=state['step'];curve=state['curve'];elapsed=state['elapsed_total'];lambda_p=state['lambda_p']
     assert state['train_paths']==[r['path'] for r in records] and state['source_sha256']==sha(source)

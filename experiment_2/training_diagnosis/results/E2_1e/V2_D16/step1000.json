@@ -1,0 +1,6 @@
+{
+  "step": 1000,
+  "checkpoint_sha256": "b8d700c23cf42dda70753ac4cbd9e23b8172f7d570940b420b97e1c4be9902bc",
+  "elapsed_total": 4506.604160713032,
+  "peak_gpu_bytes": 52218038784
+}

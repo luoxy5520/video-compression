@@ -6,7 +6,7 @@ import numpy as np
 out=ROOT/'results/E2_1e';rows=[];baseline=json.loads((ROOT/'results/E2_1d/D16_f1_seed20261127/development_step10000.json').read_text())
 for r in baseline:rows.append(dict(method='V0',steps=10000,video=r['video'],actual_bytes=r['actual_bytes'],latent_mse=r['latent_mse'],psnr_y=r['psnr_y'],psnr_rgb=r['psnr_rgb'],last4_psnr_y=r['last4_psnr_y']))
 for mode in ('V1','V2'):
-    for step in (100,1000):
+    for step in (100,1000,3000):
         p=out/f'{mode}_D16'/f'development_step{step}.json'
         if not p.exists():continue
         for r in json.loads(p.read_text()):rows.append(dict(method=mode,steps=step,video=r['video'],actual_bytes=r['actual_bytes'],latent_mse=r['latent_mse'],psnr_y=r['psnr_y'],psnr_rgb=r['psnr_rgb'],last4_psnr_y=r['last4_psnr_y']))

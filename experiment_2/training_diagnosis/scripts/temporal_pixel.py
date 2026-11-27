@@ -17,7 +17,7 @@ def fingerprint():
     h=hashlib.sha256()
     for name,p in v.model.named_parameters():h.update(name.encode());h.update(p.detach().cpu().numpy().tobytes())
     return h.hexdigest()
-vae_sha=fingerprint();file_sha=sha(MODEL);t0=time.perf_counter();torch.cuda.reset_peak_memory_stats()
+vae_sha=fingerprint();file_sha=sha(MODEL);assert file_sha=='38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981';t0=time.perf_counter();torch.cuda.reset_peak_memory_stats()
 for step in range(start+1,a.steps+1):
     m.train();x=xdata[(step-1)%len(xdata)];idx=(step-1)%len(xdata)
     if idx not in refs:
