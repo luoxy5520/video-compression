@@ -1,0 +1,1 @@
+{"models":["I2","I3"],"channels":32,"steps":100,"lambda_z":16,"lr":0.001,"seed":20261127,"scope":"one development video, all 5 slices","holdout":false}

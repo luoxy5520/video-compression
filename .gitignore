@@ -6,3 +6,10 @@ results/*/*.264
 results/*/jm_*/
 
 tools_plot/
+
+# E2 shared model artifacts stay on 113Server; hashes are tracked.
+.venv/
+third_party/
+experiment_2/checkpoints/*
+experiment_2/results/*.pt
+experiment_2/results/*.lvc2
