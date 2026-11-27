@@ -1,0 +1,3 @@
+# NOT RETRIEVED: effective pip freeze is on 113Server.
+# Do not use this placeholder as a reproducible dependency lock.
+# See environment.md for versions actually verified during setup.

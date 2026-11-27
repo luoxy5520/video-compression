@@ -1,0 +1,7 @@
+{
+  "status": "REMOTE GENERATED; NOT RETRIEVED",
+  "server_path": "/home/luoxiangyu/video-compression-e2/experiment_2/dataset_manifest.json",
+  "sealed_test": "not opened",
+  "independent_holdout": "not certified",
+  "note": "inventory.py completed environment output; file transfer interrupted by SSH timeout"
+}

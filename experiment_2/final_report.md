@@ -14,3 +14,5 @@ E2 is not complete. Isolated environment and minimal I2/I3 implementations creat
 | Deployment bottleneck | NOT RUN |
 
 Next: finish and archive real-bitstream smoke, complete reference reading/mapping gaps, build I0/I1 comparison with identical quantized symbols, then train I2/I3 on grouped legal train data. Only proceed to inter after actual intra RD gate. Historical validation is development only; no independent validation/test claimed. Sealed test remains closed.
+
+Execution interruption: 113Server SSH became unreachable after rerun was launched. Smoke outcome is UNKNOWN, not PASS. CDF-loading failure is preserved remotely. Core environment import succeeded before the interruption. Remote lock, manifest, logs, checkpoint and actual bitstream totals still require retrieval. No later stages have been executed.

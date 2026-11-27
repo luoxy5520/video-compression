@@ -9,3 +9,5 @@
 - First independent decoder failed because dynamic CDF buffers had empty shapes on construction; fixed checkpoint loader to resize buffers and preserve checkpoint CDFs. Original failure log retained.
 - Reran smoke; independent decoding, actual bytes and checksum checks pending completion. No formal RD conclusion.
 - `.venv/bin/python experiment_2/inventory.py`: metadata-only manifest audit, excludes test split and marks old validation historical_development. Independent holdout not certified.
+
+- Server SSH then stopped responding; multiple fresh connections with ConnectTimeout8/10 timed out. Existing sessions stopped producing output. Final smoke outcome, effective lock and generated manifest cannot be verified/retrieved. No further training stages launched. Local py_compile passed for all three Python scripts. First GitHub push succeeded at a4abf30.

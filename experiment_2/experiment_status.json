@@ -7,5 +7,8 @@
   "E2.3": "NOT RUN",
   "E2.4": "NOT RUN",
   "sealed_test": "NOT OPENED",
-  "formal_RD_claim": false
+  "formal_RD_claim": false,
+  "server_connection": "UNREACHABLE: repeated SSH connection timeouts after initial setup",
+  "E2_1_gate": "UNKNOWN: CDF loader fixed and rerun launched, no final result retrieved",
+  "artifact_sync": "source and notes pushed; remote logs/lock/manifest/results not yet retrieved"
 }
