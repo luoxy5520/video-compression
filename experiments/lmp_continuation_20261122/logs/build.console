@@ -1,0 +1,462 @@
+src/configfile.c: In function ‘DisplayEncoderParams’:
+src/configfile.c:572:10: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  572 |     else if (Map[i].Type == 2)
+      |          ^~
+src/configfile.c:574:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  574 |       i++;
+      |       ^
+src/fmo.c: In function ‘FmoGenerateMBAmap’:
+src/fmo.c:177:3: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]
+  177 |   else
+      |   ^~~~
+src/fmo.c:192:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+  192 |     return 0;
+      |     ^~~~~~
+src/img_distortion.c:69:37: warning: argument 1 of type ‘DistMetric *’ {aka ‘struct distortion_metric *’} declared as a pointer [-Warray-parameter=]
+   69 | void accumulate_average(DistMetric *metric, int frames)
+      |                         ~~~~~~~~~~~~^~~~~~
+In file included from src/img_distortion.c:45:
+inc/img_distortion.h:21:43: note: previously declared as an array ‘DistMetric[3]’ {aka ‘struct distortion_metric[3]’}
+   21 | extern void accumulate_average(DistMetric metric[3], int frames);
+      |                                ~~~~~~~~~~~^~~~~~~~~
+src/img_distortion.c:82:37: warning: argument 1 of type ‘DistMetric *’ {aka ‘struct distortion_metric *’} declared as a pointer [-Warray-parameter=]
+   82 | void accumulate_avslice(DistMetric *metric, int slice_type, int frames)
+      |                         ~~~~~~~~~~~~^~~~~~
+inc/img_distortion.h:20:43: note: previously declared as an array ‘DistMetric[3]’ {aka ‘struct distortion_metric[3]’}
+   20 | extern void accumulate_avslice(DistMetric metric[3], int slice_type, int frames);
+      |                                ~~~~~~~~~~~^~~~~~~~~
+src/img_distortion.c: In function ‘compute_distortion’:
+src/img_distortion.c:198:7: warning: ‘find_ms_ssim’ accessing 252 bytes in a region of size 168 [-Wstringop-overflow=]
+  198 |       find_ms_ssim(p_Vid, p_Inp, &p_Vid->imgREF, &p_Vid->imgSRC, &p_Dist->metric[MS_SSIM]);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/img_distortion.c:198:7: note: referencing argument 5 of type ‘DistMetric[3]’ {aka ‘struct distortion_metric[3]’}
+In file included from src/img_distortion.c:48:
+inc/img_dist_ms_ssim.h:23:13: note: in a call to function ‘find_ms_ssim’
+   23 | extern void find_ms_ssim (VideoParameters *p_Vid, InputParameters *p_Inp, ImageStructure *imgREF, ImageStructure *imgSRC, DistMetric metricMS_SSIM[3]);
+      |             ^~~~~~~~~~~~
+src/img_distortion.c:208:9: warning: ‘find_ms_ssim’ accessing 252 bytes in a region of size 84 [-Wstringop-overflow=]
+  208 |         find_ms_ssim(p_Vid, p_Inp, &p_Vid->imgRGB_ref, &p_Vid->imgRGB_src, &p_Dist->metric[MS_SSIM_RGB]);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/img_distortion.c:208:9: note: referencing argument 5 of type ‘DistMetric[3]’ {aka ‘struct distortion_metric[3]’}
+inc/img_dist_ms_ssim.h:23:13: note: in a call to function ‘find_ms_ssim’
+   23 | extern void find_ms_ssim (VideoParameters *p_Vid, InputParameters *p_Inp, ImageStructure *imgREF, ImageStructure *imgSRC, DistMetric metricMS_SSIM[3]);
+      |             ^~~~~~~~~~~~
+src/list_reorder.c: In function ‘mse_ref_pic_reorder_frame’:
+src/list_reorder.c:880:7: warning: variable ‘list_sign’ set but not used [-Wunused-but-set-variable]
+  880 |   int list_sign[32];
+      |       ^~~~~~~~~
+src/me_epzs_int.c: In function ‘EPZS_integer_motion_estimation’:
+src/me_epzs_int.c:217:26: warning: variable ‘used’ set but not used [-Wunused-but-set-variable]
+  217 |     int mode=lmp_mode(), used=0, improved=0;
+      |                          ^~~~
+src/me_hme.c: In function ‘invoke_HME’:
+src/me_hme.c:73:7: warning: variable ‘set_lists’ set but not used [-Wunused-but-set-variable]
+   73 |   int set_lists;
+      |       ^~~~~~~~~
+src/me_hme.c: In function ‘hme_EPZSSpatialPredictors’:
+src/me_hme.c:1101:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1101 |      point += (*(int*)(&point->motion)!=0);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+src/me_hme.c:1113:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1113 |       point += (*(int*)(&point->motion)!=0);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+src/me_hme.c:1126:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1126 |      point += (*(int*)(&point->motion)!=0);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+src/me_hme.c:1139:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1139 |      point += (*(int*)(&point->motion)!=0);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+src/me_hme.c: In function ‘HME_EPZSIntPelBlockMotionSearch_Enh’:
+src/me_hme.c:1232:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1232 |   if(*(int*)&tmv != *(int*)&tmp)
+      |       ^~~~~~~~~~
+src/me_hme.c:1232:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1232 |   if(*(int*)&tmv != *(int*)&tmp)
+      |                      ^~~~~~~~~~
+In file included from /usr/include/string.h:548,
+                 from ../lcommon/inc/win32.h:20,
+                 from inc/global.h:18,
+                 from src/me_umhex.c:29:
+In function ‘memcpy’,
+    inlined from ‘UMHEXIntegerPelBlockMotionSearch’ at src/me_umhex.c:419:5:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: warning: ‘__builtin_memcpy’ forming offset [32, 63] is out of the bounds [0, 32] of object ‘Big_Hexagon_X’ with type ‘const short int[16]’ [-Warray-bounds=]
+   29 |   return __builtin___memcpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   30 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/me_umhex.c: In function ‘UMHEXIntegerPelBlockMotionSearch’:
+src/me_umhex.c:46:20: note: ‘Big_Hexagon_X’ declared here
+   46 | static const short Big_Hexagon_X[16] = {0,-8, -16,-16,-16, -16, -16, -8,  0,  8,  16, 16, 16, 16, 16, 8};
+      |                    ^~~~~~~~~~~~~
+In function ‘memcpy’,
+    inlined from ‘UMHEXIntegerPelBlockMotionSearch’ at src/me_umhex.c:420:3:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: warning: ‘__builtin_memcpy’ forming offset [32, 63] is out of the bounds [0, 32] of object ‘Big_Hexagon_Y’ with type ‘const short int[16]’ [-Warray-bounds=]
+   29 |   return __builtin___memcpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   30 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/me_umhex.c: In function ‘UMHEXIntegerPelBlockMotionSearch’:
+src/me_umhex.c:47:20: note: ‘Big_Hexagon_Y’ declared here
+   47 | static const short Big_Hexagon_Y[16] = {8, 12, 8,  4, 0, -4, -8, -12, -16, -12, -8, -4, 0, 4, 8, 12};
+      |                    ^~~~~~~~~~~~~
+In function ‘memcpy’,
+    inlined from ‘UMHEXBipredIntegerPelBlockMotionSearch’ at src/me_umhex.c:1041:3:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: warning: ‘__builtin_memcpy’ forming offset [32, 63] is out of the bounds [0, 32] of object ‘Big_Hexagon_X’ with type ‘const short int[16]’ [-Warray-bounds=]
+   29 |   return __builtin___memcpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   30 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/me_umhex.c: In function ‘UMHEXBipredIntegerPelBlockMotionSearch’:
+src/me_umhex.c:46:20: note: ‘Big_Hexagon_X’ declared here
+   46 | static const short Big_Hexagon_X[16] = {0,-8, -16,-16,-16, -16, -16, -8,  0,  8,  16, 16, 16, 16, 16, 8};
+      |                    ^~~~~~~~~~~~~
+In function ‘memcpy’,
+    inlined from ‘UMHEXBipredIntegerPelBlockMotionSearch’ at src/me_umhex.c:1042:3:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: warning: ‘__builtin_memcpy’ forming offset [32, 63] is out of the bounds [0, 32] of object ‘Big_Hexagon_Y’ with type ‘const short int[16]’ [-Warray-bounds=]
+   29 |   return __builtin___memcpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   30 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/me_umhex.c: In function ‘UMHEXBipredIntegerPelBlockMotionSearch’:
+src/me_umhex.c:47:20: note: ‘Big_Hexagon_Y’ declared here
+   47 | static const short Big_Hexagon_Y[16] = {8, 12, 8,  4, 0, -4, -8, -12, -16, -12, -8, -4, 0, 4, 8, 12};
+      |                    ^~~~~~~~~~~~~
+src/parset.c: In function ‘GenerateSEImessage_rbsp’:
+src/parset.c:1193:7: warning: ‘__builtin_strncpy’ output truncated before terminating nul copying 13 bytes from a string of the same length [-Wstringop-truncation]
+ 1193 |       strncpy(sei_message,"Empty Message",message_size);
+      |       ^
+src/q_matrix.c: In function ‘CheckParameterName’:
+src/q_matrix.c:252:28: warning: the comparison will always evaluate as ‘true’ for the address of ‘MatrixType4x4’ will never be NULL [-Waddress]
+  252 |   while ((MatrixType4x4[i] != NULL) && (i<6))
+      |                            ^~
+src/q_matrix.c:172:19: note: ‘MatrixType4x4’ declared here
+  172 | static const char MatrixType4x4[6][20] =
+      |                   ^~~~~~~~~~~~~
+src/q_matrix.c:262:28: warning: the comparison will always evaluate as ‘true’ for the address of ‘MatrixType8x8’ will never be NULL [-Waddress]
+  262 |   while ((MatrixType8x8[i] != NULL) && (i<6))
+      |                            ^~
+src/q_matrix.c:182:19: note: ‘MatrixType8x8’ declared here
+  182 | static const char MatrixType8x8[6][20] =
+      |                   ^~~~~~~~~~~~~
+src/q_matrix.c: In function ‘init_qmatrix’:
+src/q_matrix.c:551:15: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+  551 |     if(content!='\0')
+      |               ^~
+src/q_matrix.c:551:8: note: did you mean to dereference the pointer?
+  551 |     if(content!='\0')
+      |        ^
+src/q_offsets.c: In function ‘CheckOffsetParameterName’:
+src/q_offsets.c:299:28: warning: the comparison will always evaluate as ‘true’ for the address of ‘OffsetType4x4’ will never be NULL [-Waddress]
+  299 |   while ((OffsetType4x4[i] != NULL) && (i < 15))
+      |                            ^~
+src/q_offsets.c:24:19: note: ‘OffsetType4x4’ declared here
+   24 | static const char OffsetType4x4[15][24] = {
+      |                   ^~~~~~~~~~~~~
+src/q_offsets.c:309:28: warning: the comparison will always evaluate as ‘true’ for the address of ‘OffsetType8x8’ will never be NULL [-Waddress]
+  309 |   while ((OffsetType8x8[i] != NULL) && (i < 15))
+      |                            ^~
+src/q_offsets.c:42:19: note: ‘OffsetType8x8’ declared here
+   42 | static const char OffsetType8x8[15][24] = {
+      |                   ^~~~~~~~~~~~~
+src/q_offsets.c: In function ‘init_qoffset’:
+src/q_offsets.c:472:17: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+  472 |     if (content != '\0')
+      |                 ^~
+src/q_offsets.c:472:9: note: did you mean to dereference the pointer?
+  472 |     if (content != '\0')
+      |         ^
+src/quant4x4_trellis.c:126:91: warning: argument 4 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  126 | void rdoq_4x4_CAVLC(Macroblock *currMB, int **tblock, struct quant_methods *q_method, int levelTrellis[])
+      |                                                                                       ~~~~^~~~~~~~~~~~~~
+In file included from src/quant4x4_trellis.c:31:
+inc/quant4x4.h:37:102: note: previously declared as ‘int[16]’
+   37 | extern void rdoq_4x4_CAVLC    (Macroblock *currMB, int **tblock, struct quant_methods *q_method, int levelTrellis[16]);
+      |                                                                                                  ~~~~^~~~~~~~~~~~~~~~
+src/quant4x4_trellis.c:159:91: warning: argument 4 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  159 | void rdoq_4x4_CABAC(Macroblock *currMB, int **tblock, struct quant_methods *q_method, int levelTrellis[])
+      |                                                                                       ~~~~^~~~~~~~~~~~~~
+inc/quant4x4.h:39:102: note: previously declared as ‘int[16]’
+   39 | extern void rdoq_4x4_CABAC    (Macroblock *currMB, int **tblock, struct quant_methods *q_method, int levelTrellis[16]);
+      |                                                                                                  ~~~~^~~~~~~~~~~~~~~~
+src/quant4x4_trellis.c:270:93: warning: argument 4 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  270 | void rdoq_ac4x4_CAVLC(Macroblock *currMB, int **tblock, struct quant_methods *q_method, int levelTrellis[])
+      |                                                                                         ~~~~^~~~~~~~~~~~~~
+inc/quant4x4.h:47:102: note: previously declared as ‘int[16]’
+   47 | extern void rdoq_ac4x4_CAVLC  (Macroblock *currMB, int **tblock, struct quant_methods *q_method, int levelTrellis[16]);
+      |                                                                                                  ~~~~^~~~~~~~~~~~~~~~
+src/quant4x4_trellis.c:304:93: warning: argument 4 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  304 | void rdoq_ac4x4_CABAC(Macroblock *currMB, int **tblock, struct quant_methods *q_method, int levelTrellis[])
+      |                                                                                         ~~~~^~~~~~~~~~~~~~
+inc/quant4x4.h:49:103: note: previously declared as ‘int[16]’
+   49 | extern void rdoq_ac4x4_CABAC  (Macroblock *currMB, int **tblock , struct quant_methods *q_method, int levelTrellis[16]);
+      |                                                                                                   ~~~~^~~~~~~~~~~~~~~~
+src/quant4x4_trellis.c:401:51: warning: argument 7 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  401 |                    const byte (*pos_scan)[2], int levelTrellis[], int type)
+      |                                               ~~~~^~~~~~~~~~~~~~
+inc/quant4x4.h:42:63: note: previously declared as ‘int[16]’
+   42 |                                const byte (*pos_scan)[2], int levelTrellis[16], int type);
+      |                                                           ~~~~^~~~~~~~~~~~~~~~
+src/quant4x4_trellis.c:421:141: warning: argument 7 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  421 | void rdoq_dc_CABAC(Macroblock *currMB, int **tblock, int qp_per, int qp_rem, LevelQuantParams *q_params_4x4, const byte (*pos_scan)[2], int levelTrellis[], int type)
+      |                                                                                                                                         ~~~~^~~~~~~~~~~~~~
+inc/quant4x4.h:45:63: note: previously declared as ‘int[16]’
+   45 |                                const byte (*pos_scan)[2], int levelTrellis[16], int type);
+      |                                                           ~~~~^~~~~~~~~~~~~~~~
+src/quantChroma_trellis.c:186:144: warning: argument 7 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  186 | void rdoq_dc_cr_CAVLC(Macroblock *currMB, int **tblock, int qp_per, int qp_rem, LevelQuantParams *q_params_4x4, const byte (*pos_scan)[2], int levelTrellis[], int type)
+      |                                                                                                                                            ~~~~^~~~~~~~~~~~~~
+In file included from src/quantChroma_trellis.c:23:
+inc/quantChroma.h:41:63: note: previously declared as ‘int[16]’
+   41 |                                const byte (*pos_scan)[2], int levelTrellis[16], int type);
+      |                                                           ~~~~^~~~~~~~~~~~~~~~
+src/quantChroma_trellis.c:208:144: warning: argument 7 of type ‘int[]’ with mismatched bound [-Warray-parameter=]
+  208 | void rdoq_dc_cr_CABAC(Macroblock *currMB, int **tblock, int qp_per, int qp_rem, LevelQuantParams *q_params_4x4, const byte (*pos_scan)[2], int levelTrellis[], int type)
+      |                                                                                                                                            ~~~~^~~~~~~~~~~~~~
+inc/quantChroma.h:44:95: note: previously declared as ‘int[16]’
+   44 |                                LevelQuantParams *q_params_4x4, const byte (*pos_scan)[2], int levelTrellis[16], int type);
+      |                                                                                           ~~~~^~~~~~~~~~~~~~~~
+src/ratectl.c: In function ‘rc_init_frame’:
+src/ratectl.c:309:3: warning: this ‘else’ clause does not guard... [-Wmisleading-indentation]
+  309 |   else
+      |   ^~~~
+src/ratectl.c:312:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+  312 |     if ( p_Inp->RDPictureDecision )
+      |     ^~
+src/rdoq.c: In function ‘RDOQ_update_mode’:
+src/rdoq.c:394:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  394 |   for(i=0; i<MAXMODE; i++)
+      |   ^~~
+src/rdoq.c:397:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  397 |     enc_mb->valid[mb_type] = 1;
+      |     ^~~~~~
+src/slice.c: In function ‘init_slice_lite’:
+src/slice.c:1869:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+ 1869 |   if (p_Inp->EnableOpenGOP)
+      |   ^~
+src/slice.c:1873:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+ 1873 |     (*currSlice)->max_num_references = (short) p_Vid->max_num_references;
+      |     ^
+src/weighted_prediction.c: In function ‘TestWPBSliceAlg0’:
+src/weighted_prediction.c:877:43: warning: the comparison will always evaluate as ‘false’ for the address of ‘B_List0_refs’ will never be NULL [-Waddress]
+  877 |     active_refs[0] = (p_Inp->B_List0_refs == 0 ? currSlice->listXsize[0] : imin(p_Inp->B_List0_refs[view_id], currSlice->listXsize[0]));
+      |                                           ^~
+In file included from inc/global.h:26,
+                 from src/weighted_prediction.c:17:
+inc/params.h:42:7: note: ‘B_List0_refs’ declared here
+   42 |   int B_List0_refs[2];                  //!< number of reference picture in list 0 in B pictures
+      |       ^~~~~~~~~~~~
+src/weighted_prediction.c:878:43: warning: the comparison will always evaluate as ‘false’ for the address of ‘B_List1_refs’ will never be NULL [-Waddress]
+  878 |     active_refs[1] = (p_Inp->B_List1_refs == 0 ? currSlice->listXsize[1] : imin(p_Inp->B_List1_refs[view_id], currSlice->listXsize[1]));
+      |                                           ^~
+inc/params.h:43:7: note: ‘B_List1_refs’ declared here
+   43 |   int B_List1_refs[2];                  //!< number of reference picture in list 1 in B pictures
+      |       ^~~~~~~~~~~~
+src/wp_lms.c: In function ‘EstimateWPPSliceAlg1’:
+src/wp_lms.c:386:5: warning: ‘ComputeExplicitWPParamsLMS’ accessing 1152 bytes in a region of size 384 [-Wstringop-overflow=]
+  386 |     ComputeExplicitWPParamsLMS(currSlice, select_offset, start_mb, end_mb, default_weight, weight, offset);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/wp_lms.c:386:5: note: referencing argument 6 of type ‘short int[6][32][3]’
+src/wp_lms.c:386:5: warning: ‘ComputeExplicitWPParamsLMS’ accessing 1152 bytes in a region of size 384 [-Wstringop-overflow=]
+src/wp_lms.c:386:5: note: referencing argument 7 of type ‘short int[6][32][3]’
+src/wp_lms.c:69:6: note: in a call to function ‘ComputeExplicitWPParamsLMS’
+   69 | void ComputeExplicitWPParamsLMS(Slice *currSlice,
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/wp_mciter.c: In function ‘TestWPPSliceAlg2’:
+src/wp_mciter.c:390:9: warning: variable ‘wp_offset’ set but not used [-Wunused-but-set-variable]
+  390 |   short wp_offset[6][MAX_REFERENCE_PICTURES][3];
+      |         ^~~~~~~~~
+src/wp_mciter.c:389:9: warning: variable ‘wp_weight’ set but not used [-Wunused-but-set-variable]
+  389 |   short wp_weight[6][MAX_REFERENCE_PICTURES][3];
+      |         ^~~~~~~~~
+src/wp_mciter.c: In function ‘TestWPBSliceAlg2’:
+src/wp_mciter.c:727:43: warning: the comparison will always evaluate as ‘false’ for the address of ‘B_List0_refs’ will never be NULL [-Waddress]
+  727 |     active_refs[0] = (p_Inp->B_List0_refs == 0 ? currSlice->listXsize[0] : imin(p_Inp->B_List0_refs[view_id], currSlice->listXsize[0]));
+      |                                           ^~
+In file included from inc/global.h:26,
+                 from src/wp_mciter.c:17:
+inc/params.h:42:7: note: ‘B_List0_refs’ declared here
+   42 |   int B_List0_refs[2];                  //!< number of reference picture in list 0 in B pictures
+      |       ^~~~~~~~~~~~
+src/wp_mciter.c:728:43: warning: the comparison will always evaluate as ‘false’ for the address of ‘B_List1_refs’ will never be NULL [-Waddress]
+  728 |     active_refs[1] = (p_Inp->B_List1_refs == 0 ? currSlice->listXsize[1] : imin(p_Inp->B_List1_refs[view_id], currSlice->listXsize[1]));
+      |                                           ^~
+inc/params.h:43:7: note: ‘B_List1_refs’ declared here
+   43 |   int B_List1_refs[2];                  //!< number of reference picture in list 1 in B pictures
+      |       ^~~~~~~~~~~~
+src/wp_mciter.c:551:9: warning: variable ‘wbp_weight’ set but not used [-Wunused-but-set-variable]
+  551 |   short wbp_weight[6][MAX_REFERENCE_PICTURES][MAX_REFERENCE_PICTURES][3];
+      |         ^~~~~~~~~~
+src/wp_mciter.c:539:10: warning: variable ‘dc_org’ set but not used [-Wunused-but-set-variable]
+  539 |   double dc_org = 0.0;
+      |          ^~~~~~
+../lcommon/src/config_common.c: In function ‘DisplayParams’:
+../lcommon/src/config_common.c:410:10: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  410 |     else if (Map[i].Type == 2)
+      |          ^~
+../lcommon/src/config_common.c:412:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  412 |       i++;
+      |       ^
+../lcommon/src/img_io.c: In function ‘ParseFrameNoFormatFromString’:
+../lcommon/src/img_io.c:202:5: warning: ‘__builtin___strncpy_chk’ specified bound depends on the length of the source argument [-Wstringop-truncation]
+  202 |     strncpy(ftail, tail, (int) strlen(tail));
+      |     ^
+../lcommon/src/img_io.c:202:32: note: length computed here
+  202 |     strncpy(ftail, tail, (int) strlen(tail));
+      |                                ^~~~~~~~~~~~
+../lcommon/src/img_io.c: In function ‘OpenFrameFile’:
+../lcommon/src/img_io.c:224:3: warning: ‘__builtin_strncpy’ output may be truncated copying 254 bytes from a string of length 254 [-Wstringop-truncation]
+  224 |   strncpy(infile, input_file->fhead, FILE_NAME_SIZE-1);
+      |   ^
+../lcommon/src/input.c: In function ‘buf2img_bitshift’:
+../lcommon/src/input.c:457:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  457 |         for(j = 0; j < o_size_y; j++)
+      |         ^~~
+../lcommon/src/input.c:462:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  462 |           break;
+      |           ^~~~~
+../lcommon/src/input.c:466:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  466 |         for(j = 0; j < o_size_y; j++)
+      |         ^~~
+../lcommon/src/input.c:473:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  473 |           break;
+      |           ^~~~~
+Creating obj ...
+
+compiling object file "obj/annexb.o" ...
+compiling object file "obj/biariencode.o" ...
+checking dependencies
+compiling object file "obj/block.o" ...
+compiling object file "obj/cabac.o" ...
+compiling object file "obj/cconv_yuv2rgb.o" ...
+compiling object file "obj/configfile.o" ...
+compiling object file "obj/conformance.o" ...
+compiling object file "obj/context_ini.o" ...
+compiling object file "obj/errdo.o" ...
+compiling object file "obj/errdo_dist_mhyp.o" ...
+compiling object file "obj/explicit_gop.o" ...
+compiling object file "obj/explicit_seq.o" ...
+compiling object file "obj/filehandle.o" ...
+compiling object file "obj/fmo.o" ...
+compiling object file "obj/get_block_otf.o" ...
+compiling object file "obj/header.o" ...
+compiling object file "obj/hme_distortion.o" ...
+compiling object file "obj/hme_luma.o" ...
+compiling object file "obj/image.o" ...
+compiling object file "obj/image_mp.o" ...
+compiling object file "obj/img_chroma.o" ...
+compiling object file "obj/img_dist_ms_ssim.o" ...
+compiling object file "obj/img_dist_snr.o" ...
+compiling object file "obj/img_dist_ssim.o" ...
+compiling object file "obj/img_distortion.o" ...
+compiling object file "obj/img_luma.o" ...
+compiling object file "obj/intra16x16.o" ...
+compiling object file "obj/intra4x4.o" ...
+compiling object file "obj/intra8x8.o" ...
+compiling object file "obj/intra_chroma.o" ...
+compiling object file "obj/intrarefresh.o" ...
+compiling object file "obj/lambda.o" ...
+compiling object file "obj/leaky_bucket.o" ...
+
+compiling object file "obj/lencod.o" ...
+compiling object file "obj/list_reorder.o" ...
+compiling object file "obj/lln_mc_prediction.o" ...
+compiling object file "obj/loopFilter.o" ...
+compiling object file "obj/loop_filter_mbaff.o" ...
+compiling object file "obj/loop_filter_normal.o" ...
+compiling object file "obj/macroblock.o" ...
+compiling object file "obj/macroblock_P444.o" ...
+compiling object file "obj/mb_access.o" ...
+compiling object file "obj/mbuffer.o" ...
+compiling object file "obj/mc_prediction.o" ...
+compiling object file "obj/mc_prediction_otf.o" ...
+compiling object file "obj/md_common.o" ...
+compiling object file "obj/md_distortion.o" ...
+compiling object file "obj/md_high.o" ...
+compiling object file "obj/md_high_updated.o" ...
+compiling object file "obj/md_highfast.o" ...
+compiling object file "obj/md_highloss.o" ...
+compiling object file "obj/md_low.o" ...
+compiling object file "obj/me_distortion.o" ...
+compiling object file "obj/me_distortion_otf.o" ...
+compiling object file "obj/me_epzs.o" ...
+compiling object file "obj/me_epzs_common.o" ...
+compiling object file "obj/me_epzs_int.o" ...
+compiling object file "obj/me_epzs_sub.o" ...
+compiling object file "obj/me_fullfast.o" ...
+compiling object file "obj/me_fullfast_otf.o" ...
+compiling object file "obj/me_fullsearch.o" ...
+compiling object file "obj/me_hme.o" ...
+compiling object file "obj/me_umhex.o" ...
+compiling object file "obj/me_umhexsmp.o" ...
+compiling object file "obj/mmco.o" ...
+compiling object file "obj/mode_decision.o" ...
+compiling object file "obj/mode_decision_P8x8.o" ...
+compiling object file "obj/mv_direct.o" ...
+compiling object file "obj/mv_search.o" ...
+compiling object file "obj/nal.o" ...
+compiling object file "obj/nalu.o" ...
+compiling object file "obj/output.o" ...
+compiling object file "obj/parset.o" ...
+compiling object file "obj/pred_struct.o" ...
+compiling object file "obj/q_around.o" ...
+compiling object file "obj/q_matrix.o" ...
+compiling object file "obj/q_offsets.o" ...
+compiling object file "obj/quant4x4.o" ...
+compiling object file "obj/quant4x4_2step.o" ...
+compiling object file "obj/quant4x4_around.o" ...
+compiling object file "obj/quant4x4_normal.o" ...
+compiling object file "obj/quant4x4_trellis.o" ...
+compiling object file "obj/quant8x8.o" ...
+compiling object file "obj/quant8x8_around.o" ...
+compiling object file "obj/quant8x8_normal.o" ...
+compiling object file "obj/quant8x8_trellis.o" ...
+compiling object file "obj/quantChroma.o" ...
+compiling object file "obj/quantChroma_2step.o" ...
+compiling object file "obj/quantChroma_around.o" ...
+compiling object file "obj/quantChroma_normal.o" ...
+compiling object file "obj/quantChroma_trellis.o" ...
+compiling object file "obj/ratectl.o" ...
+compiling object file "obj/rc_quadratic.o" ...
+compiling object file "obj/rd_intra_jm.o" ...
+compiling object file "obj/rd_intra_jm444.o" ...
+compiling object file "obj/rd_intra_jm_low.o" ...
+compiling object file "obj/rdopt.o" ...
+compiling object file "obj/rdopt_coding_state.o" ...
+compiling object file "obj/rdoq.o" ...
+compiling object file "obj/rdoq_cabac.o" ...
+compiling object file "obj/rdoq_cavlc.o" ...
+compiling object file "obj/rdpicdecision.o" ...
+compiling object file "obj/report.o" ...
+compiling object file "obj/rtp.o" ...
+compiling object file "obj/sei.o" ...
+compiling object file "obj/slice.o" ...
+compiling object file "obj/state_io.o" ...
+compiling object file "obj/symbol.o" ...
+compiling object file "obj/transform8x8.o" ...
+compiling object file "obj/transform8x8_H444.o" ...
+compiling object file "obj/vlc.o" ...
+compiling object file "obj/weighted_prediction.o" ...
+compiling object file "obj/wp_lms.o" ...
+compiling object file "obj/wp_mciter.o" ...
+compiling object file "obj/wp_mcprec.o" ...
+compiling object file "obj/wp_periodic.o" ...
+compiling object file "obj/wp_random.o" ...
+compiling object file "obj/blk_prediction.o" ...
+compiling object file "obj/config_common.o" ...
+compiling object file "obj/img_io.o" ...
+compiling object file "obj/img_process.o" ...
+compiling object file "obj/input.o" ...
+compiling object file "obj/io_raw.o" ...
+compiling object file "obj/io_tiff.o" ...
+compiling object file "obj/mbuffer_common.o" ...
+compiling object file "obj/memalloc.o" ...
+compiling object file "obj/mv_prediction.o" ...
+compiling object file "obj/nalucommon.o" ...
+compiling object file "obj/parsetcommon.o" ...
+compiling object file "obj/resize.o" ...
+compiling object file "obj/transform.o" ...
+compiling object file "obj/win32.o" ...
+
+creating binary "../bin/lencod.exe"
+... done
+

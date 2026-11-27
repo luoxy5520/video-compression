@@ -1,0 +1,14 @@
+{
+    "programs": [
+
+    ],
+    "streams": [
+        {
+            "codec_name": "h264",
+            "width": 832,
+            "height": 480,
+            "avg_frame_rate": "16/1",
+            "nb_read_frames": "17"
+        }
+    ]
+}

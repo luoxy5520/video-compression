@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/luoxiangyu/lmp-continuation-20261122/scripts/smoke.py", line 233, in <module>
+    main()
+  File "/home/luoxiangyu/lmp-continuation-20261122/scripts/smoke.py", line 204, in main
+    quality = verify(folder, raw, folder / "stream.264", folder / "recon.yuv", media)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luoxiangyu/lmp-continuation-20261122/scripts/smoke.py", line 109, in verify
+    assert stream["codec_name"] == "h264" and Fraction(stream["r_frame_rate"]) == 16, stream
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'codec_name': 'h264', 'width': 832, 'height': 480, 'r_frame_rate': '1200000/1', 'nb_read_frames': '17'}

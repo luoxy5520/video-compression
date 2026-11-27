@@ -1,0 +1,29 @@
+{
+  "dev": [
+    "sample_0000",
+    "sample_0004",
+    "sample_0008",
+    "sample_0012",
+    "sample_0016",
+    "sample_1000",
+    "sample_1004",
+    "sample_1008"
+  ],
+  "validation_policy": "historically observed; not used for tuning",
+  "base_commit": "f080a451831e89a59948006c4299bca698fdfef6",
+  "scope": "E1 to E2; cached full VAE source only",
+  "remote": "/home/luoxiangyu/lmp-e1-e2-followup-20261121",
+  "model_directory": "/mnt/data_hdd/models",
+  "build_command": "make -C jm-profile/lencod -j4 CFLAGS=-fcommon",
+  "injection_entry": "EPZS_integer_motion_estimation in me_epzs_int.c",
+  "final_policy": {
+    "native_stop_multiplier": 2,
+    "dit_gated": "same multiplier only if cached latent seed improves live initial cost",
+    "seed_count": 1,
+    "QP": 28,
+    "search_mode": 3
+  },
+  "final_status": "stopped expansion after negative two-video dev pilot",
+  "timing_note": "pipeline sum of medians; includes feature read/normalize/match/file write and in-JM injection; excludes interpreter startup; stderr per-block logging enabled equally in four D3 arms",
+  "invalid_runs": "diagnostic-inactive-injection and O2/initial builds excluded"
+}

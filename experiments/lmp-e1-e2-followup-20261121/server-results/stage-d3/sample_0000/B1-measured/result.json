@@ -1,0 +1,52 @@
+{
+  "sample": "sample_0000",
+  "arm": "B1-measured",
+  "bitrate_kbps": 335.4729411764706,
+  "P_Y_PSNR": 39.38401250628685,
+  "last4_Y_PSNR": 38.73423133193276,
+  "JM_wall_s": 1.0804809699766338,
+  "min_s": 1.0451264237053692,
+  "max_s": 1.0999220157973468,
+  "seconds": [
+    1.0358168352395296,
+    1.0451264237053692,
+    1.0999220157973468,
+    1.0804809699766338
+  ],
+  "sha256": "b83784abd00608ebf8736b8a7d29cef55381237f57ed8873b0978987c9d67d96",
+  "dual_decode": true,
+  "profiles": [
+    [
+      {
+        "integer_s": 0.088076151,
+        "subpixel_s": 0.132885129,
+        "integer_evals": 188708,
+        "subpixel_evals": 244057
+      }
+    ],
+    [
+      {
+        "integer_s": 0.085948939,
+        "subpixel_s": 0.12939991,
+        "integer_evals": 188708,
+        "subpixel_evals": 244057
+      }
+    ],
+    [
+      {
+        "integer_s": 0.08667616,
+        "subpixel_s": 0.127826524,
+        "integer_evals": 188708,
+        "subpixel_evals": 244057
+      }
+    ],
+    [
+      {
+        "integer_s": 0.088479789,
+        "subpixel_s": 0.134558738,
+        "integer_evals": 188708,
+        "subpixel_evals": 244057
+      }
+    ]
+  ]
+}

@@ -1,0 +1,8 @@
+{"sample": "sample_0000", "arm": "B1-measured", "dual_decode": true, "stream_sha256": "b83784abd00608ebf8736b8a7d29cef55381237f57ed8873b0978987c9d67d96"}
+{"sample": "sample_0000", "arm": "Native-budget", "dual_decode": true, "stream_sha256": "da75fab9b95c25f55c27fc04edc860fe0d6e7d833954f51d5a6ad38a838830bc"}
+{"sample": "sample_0000", "arm": "DiT-seed", "dual_decode": true, "stream_sha256": "f6121ae6329f3761c98523ff0fe4536d33208120c5fc472a97d9501bbd2df28d"}
+{"sample": "sample_0000", "arm": "DiT-gated", "dual_decode": true, "stream_sha256": "45eb8647597d3791ff6e9c83caa9463c46a9c4ff7dc7f5f74af87fa0da40591c"}
+{"sample": "sample_1004", "arm": "B1-measured", "dual_decode": true, "stream_sha256": "0393bd7ef434bcc8b2c5217b738d17d1cc1fc8893de6c27c4cb0e4a8486fcb73"}
+{"sample": "sample_1004", "arm": "Native-budget", "dual_decode": true, "stream_sha256": "f0750ad385a9419d89b7287c4d4afbf43c5a8d6af497a13b1e80148a57346a76"}
+{"sample": "sample_1004", "arm": "DiT-seed", "dual_decode": true, "stream_sha256": "c1de6672be41c028d80c54fab4fdc92b95fa44d949c8132524d579dc85e72cc6"}
+{"sample": "sample_1004", "arm": "DiT-gated", "dual_decode": true, "stream_sha256": "69a7a0f4e48822c0d7f0dd182f2c79176511698540c27597db6f4a98ce3efaba"}
