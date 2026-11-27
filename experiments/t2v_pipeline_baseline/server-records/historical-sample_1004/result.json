@@ -1,0 +1,23 @@
+{
+  "sample_id": "sample_1004",
+  "kind": "historical_raw_reencode",
+  "encoder_prepare_s": 0.00020422693341970444,
+  "h264_s": 1.0836531138047576,
+  "mux_s": 0.07619183603674173,
+  "bytes": 214114,
+  "mp4_bytes": 215004,
+  "bitrate_kbps": 1612.1524705882352,
+  "all_y_psnr_db": 37.741266782551264,
+  "p_y_psnr_db": 37.63517541258689,
+  "bit_sha256": "0393bd7ef434bcc8b2c5217b738d17d1cc1fc8893de6c27c4cb0e4a8486fcb73",
+  "raw_sha256": "9b4fd0194fe93578d1e48fcf1f4c2e88b89866eeb5d5ba26fd9d27ef0ab3ce60",
+  "recon_sha256": "87aa00a38980bd9ac2d750563825c1573dd9440c2a0125500c6eaeaf2419c900",
+  "historical_raw_match": true,
+  "historical_b1_match": true,
+  "decode_verified": true,
+  "encoder_init_s": "not_available",
+  "me_s": "not_available",
+  "mode_decision_s": "not_available",
+  "transform_entropy_s": "not_available",
+  "bitstream_write_s": "not_available"
+}

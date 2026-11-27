@@ -1,0 +1,47 @@
+Setting Default Parameters...
+Parsing Configfile /home/luoxiangyu/a_new48_20261107/kit/JM-backend/cfg/decoder.cfg
+...............
+Parsing command line string 'InputFile  =  /home/luoxiangyu/experiments/t2v_pipeline_baseline.VN08gB/historical-sample_0000/stream.264'.
+Parsing command line string 'OutputFile  =  /home/luoxiangyu/experiments/t2v_pipeline_baseline.VN08gB/historical-sample_0000/verify_jm.yuv'.
+Parsing command line string 'RefFile  =  ""'.
+
+----------------------------- JM 19.0 (FRExt) -----------------------------
+--------------------------------------------------------------------------
+ Input H.264 bitstream                  : /home/luoxiangyu/experiments/t2v_pipeline_baseline.VN08gB/historical-sample_0000/stream.264 
+ Output decoded YUV                     : /home/luoxiangyu/experiments/t2v_pipeline_baseline.VN08gB/historical-sample_0000/verify_jm.yuv 
+ Input reference file                   :  
+--------------------------------------------------------------------------
+Profile IDC  : 66
+Image Format : 832x480 (832x480)
+Color Format : 4:2:0 (8:8:8)
+--------------------------------------------------------------------------
+POC must = frame# or field# for SNRs to be correct
+--------------------------------------------------------------------------
+  Frame          POC  Pic#   QP    SnrY     SnrU     SnrV   Y:U:V Time(ms)
+--------------------------------------------------------------------------
+00000(IDR)        0     0    28                             4:2:0       7
+00001( P )        2     1    28                             4:2:0       2
+00002( P )        4     2    28                             4:2:0       2
+00003( P )        6     3    28                             4:2:0       2
+00004( P )        8     4    28                             4:2:0       2
+00005( P )       10     5    28                             4:2:0       2
+00006( P )       12     6    28                             4:2:0       2
+00007( P )       14     7    28                             4:2:0       2
+00008( P )       16     8    28                             4:2:0       2
+00009( P )       18     9    28                             4:2:0       2
+00010( P )       20    10    28                             4:2:0       2
+00011( P )       22    11    28                             4:2:0       2
+00012( P )       24    12    28                             4:2:0       2
+00013( P )       26    13    28                             4:2:0       4
+00014( P )       28    14    28                             4:2:0       3
+00015( P )       30    15    28                             4:2:0       2
+00016( P )       32     0    28                             4:2:0       2
+-------------------- Average SNR all frames ------------------------------
+ SNR Y(dB)           :  0.00
+ SNR U(dB)           :  0.00
+ SNR V(dB)           :  0.00
+ Total decoding time : 0.048 sec (354.167 fps)[17 frm/48 ms]
+--------------------------------------------------------------------------
+ Exit JM 19 (FRExt) decoder, ver 19.0 
+ Output status file                     : log.dec 
+17 frames are decoded.

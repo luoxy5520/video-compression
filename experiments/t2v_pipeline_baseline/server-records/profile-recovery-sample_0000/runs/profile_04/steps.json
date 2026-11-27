@@ -1,0 +1,182 @@
+[
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 1,
+    "timestep": 999,
+    "dit_forward_ms": 741.823486328125,
+    "scheduler_ms": 0.5611519813537598,
+    "total_step_ms": 742.403076171875
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 2,
+    "timestep": 993,
+    "dit_forward_ms": 742.8423767089844,
+    "scheduler_ms": 0.8335360288619995,
+    "total_step_ms": 743.6932983398438
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 3,
+    "timestep": 986,
+    "dit_forward_ms": 746.5072631835938,
+    "scheduler_ms": 1.311743974685669,
+    "total_step_ms": 747.8384399414062
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 4,
+    "timestep": 978,
+    "dit_forward_ms": 745.0470275878906,
+    "scheduler_ms": 1.1018240451812744,
+    "total_step_ms": 746.1672973632812
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 5,
+    "timestep": 969,
+    "dit_forward_ms": 751.2084350585938,
+    "scheduler_ms": 1.2216320037841797,
+    "total_step_ms": 752.4495239257812
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 6,
+    "timestep": 959,
+    "dit_forward_ms": 745.2037048339844,
+    "scheduler_ms": 1.1427839994430542,
+    "total_step_ms": 746.365966796875
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 7,
+    "timestep": 948,
+    "dit_forward_ms": 754.4012756347656,
+    "scheduler_ms": 1.210368037223816,
+    "total_step_ms": 755.631103515625
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 8,
+    "timestep": 936,
+    "dit_forward_ms": 746.6833801269531,
+    "scheduler_ms": 1.1089919805526733,
+    "total_step_ms": 747.809814453125
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 9,
+    "timestep": 922,
+    "dit_forward_ms": 749.638671875,
+    "scheduler_ms": 1.1776000261306763,
+    "total_step_ms": 750.835693359375
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 10,
+    "timestep": 907,
+    "dit_forward_ms": 745.4003295898438,
+    "scheduler_ms": 1.1141120195388794,
+    "total_step_ms": 746.5328369140625
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 11,
+    "timestep": 888,
+    "dit_forward_ms": 751.3057250976562,
+    "scheduler_ms": 1.1683839559555054,
+    "total_step_ms": 752.4925537109375
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 12,
+    "timestep": 867,
+    "dit_forward_ms": 746.9383850097656,
+    "scheduler_ms": 1.146880030632019,
+    "total_step_ms": 748.1046752929688
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 13,
+    "timestep": 841,
+    "dit_forward_ms": 752.6574096679688,
+    "scheduler_ms": 1.1857919692993164,
+    "total_step_ms": 753.8637084960938
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 14,
+    "timestep": 811,
+    "dit_forward_ms": 747.6121520996094,
+    "scheduler_ms": 1.1274240016937256,
+    "total_step_ms": 748.759033203125
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 15,
+    "timestep": 773,
+    "dit_forward_ms": 752.5755004882812,
+    "scheduler_ms": 1.230847954750061,
+    "total_step_ms": 753.8258056640625
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 16,
+    "timestep": 727,
+    "dit_forward_ms": 749.2669372558594,
+    "scheduler_ms": 1.1376639604568481,
+    "total_step_ms": 750.424072265625
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 17,
+    "timestep": 666,
+    "dit_forward_ms": 748.516357421875,
+    "scheduler_ms": 1.2113920450210571,
+    "total_step_ms": 749.7482299804688
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 18,
+    "timestep": 585,
+    "dit_forward_ms": 748.7733764648438,
+    "scheduler_ms": 1.1806720495224,
+    "total_step_ms": 749.9735107421875
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 19,
+    "timestep": 470,
+    "dit_forward_ms": 749.812744140625,
+    "scheduler_ms": 1.1274240016937256,
+    "total_step_ms": 750.9595947265625
+  },
+  {
+    "sample_id": "sample_0000",
+    "run_id": "profile_04",
+    "step_index": 20,
+    "timestep": 296,
+    "dit_forward_ms": 748.0770568847656,
+    "scheduler_ms": 0.9277439713478088,
+    "total_step_ms": 749.0242309570312
+  }
+]
