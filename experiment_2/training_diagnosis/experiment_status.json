@@ -2,9 +2,10 @@
   "E2.1a": "PASS: audit plus exact historical-forward regression",
   "E2.1b": "COMPLETE diagnosis: R1/R2/R3 random init belowINT6; same-shape R3 identity witness supports high-quality reconstruction; R4 not needed for capacity proof",
   "E2.1c": "PASS: O1 and five O2 real-stream single-video RD points",
-  "E2.1d": "RUNNING:16 videos, middle point,5000steps, two seeded epoch-permutation trials",
-  "E2.1e": "NOT RUN",
-  "E2.2": "NOT RUN",
+  "E2.1d": "16video middle:1000/5000/10000 evaluated; seed2 at5000 evaluated;42video middle5000 evaluated; low/high5000 evaluation RUNNING",
+  "E2.1e": "NOT RUN: gradient scripts ready, awaiting three-point scale gate",
+  "E2.2": "NOT RUN: implementation and fixed-symbol unit tests ready, awaiting prior gate",
   "independent_validation": "NOT AVAILABLE/CERTIFIED",
-  "sealed_test": "NOT OPENED"
+  "sealed_test": "NOT OPENED",
+  "connection": "RESTORED after user confirmed VPN"
 }

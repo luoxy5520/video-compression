@@ -7,7 +7,7 @@ source=ROOT/'checkpoints'/f'O2_R3_identity_f{a.factor:g}'/'step1000.pt';m,origin
 records=data()[:a.videos];assert len(records)==a.videos
 xdata=[tensor(r).cuda() for r in records];name=f'D{a.videos}_f{a.factor:g}_seed{a.seed}';out=ROOT/'results/E2_1d'/name;out.mkdir(exist_ok=True);cks=ROOT/'checkpoints'/name;cks.mkdir(exist_ok=True);latest=cks/'latest.pt';curve=[];start=0;elapsed=0;order=list(range(len(xdata)))
 if latest.exists():
-    c=torch.load(latest,weights_only=False,map_location='cpu');m.load_state_dict(c['state']);opt.load_state_dict(c['optimizer']);aux.load_state_dict(c['aux_optimizer']);sched.load_state_dict(c['scheduler']);torch.set_rng_state(c['rng']);torch.cuda.set_rng_state(c['cuda_rng']);start=c['step'];curve=c['curve'];elapsed=c['elapsed_total'];order=c['sampling_state']['order'];assert c['train_paths']==[r['path'] for r in records]
+    c=torch.load(latest,weights_only=False,map_location='cpu');restore_state(m,c['state']);opt.load_state_dict(c['optimizer']);aux.load_state_dict(c['aux_optimizer']);sched.load_state_dict(c['scheduler']);torch.set_rng_state(c['rng']);torch.cuda.set_rng_state(c['cuda_rng']);start=c['step'];curve=c['curve'];elapsed=c['elapsed_total'];order=c['sampling_state']['order'];assert c['train_paths']==[r['path'] for r in records]
     for o in (opt,aux):
         for state in o.state.values():
             for k,v in state.items():

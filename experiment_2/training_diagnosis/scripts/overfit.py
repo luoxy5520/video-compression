@@ -16,7 +16,7 @@ base_lambda=f['rate'].item()/max(f['dist'].item(),1e-12);lam=base_lambda*a.facto
 cal=dict(rate=f['rate'].item(),distortion=f['dist'].item(),rate_gradient_norm=sum(g.square().sum().item() for g in rgrad if g is not None)**.5,distortion_gradient_norm=sum(g.square().sum().item() for g in dgrad if g is not None)**.5,reference_lambda=base_lambda,selected_lambda=lam,factor=a.factor,quant_step=.1,symbol_limit=255,quantization='STE centered hyper, zero-mean main; hard values in forward',scale_head_initialization='checkpoint-shared training-video channel std; other hyper modules unchanged')
 name=f'{a.mode}_{a.variant}_f{a.factor:g}';out=ROOT/'results/E2_1c'/name;out.mkdir(exist_ok=True);cks=ROOT/'checkpoints'/name;cks.mkdir(exist_ok=True);latest=cks/'latest.pt';curve=[];start=0;elapsed_previous=0
 if latest.exists():
-    c=torch.load(latest,weights_only=False,map_location='cpu');m.load_state_dict(c['state']);opt.load_state_dict(c['optimizer']);aux.load_state_dict(c['aux_optimizer']);sched.load_state_dict(c['scheduler']);torch.set_rng_state(c['rng']);torch.cuda.set_rng_state(c['cuda_rng']);start=c['step'];curve=c['curve'];lam=c['lambda_z'];elapsed_previous=c['elapsed_total']
+    c=torch.load(latest,weights_only=False,map_location='cpu');restore_state(m,c['state']);opt.load_state_dict(c['optimizer']);aux.load_state_dict(c['aux_optimizer']);sched.load_state_dict(c['scheduler']);torch.set_rng_state(c['rng']);torch.cuda.set_rng_state(c['cuda_rng']);start=c['step'];curve=c['curve'];lam=c['lambda_z'];elapsed_previous=c['elapsed_total']
     for o in (opt,aux):
         for state in o.state.values():
             for k,v in state.items():

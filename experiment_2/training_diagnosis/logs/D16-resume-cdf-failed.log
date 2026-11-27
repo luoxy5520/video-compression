@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/train_scale.py", line 10, in <module>
+    c=torch.load(latest,weights_only=False,map_location='cpu');m.load_state_dict(c['state']);opt.load_state_dict(c['optimizer']);aux.load_state_dict(c['aux_optimizer']);sched.load_state_dict(c['scheduler']);torch.set_rng_state(c['rng']);torch.cuda.set_rng_state(c['cuda_rng']);start=c['step'];curve=c['curve'];elapsed=c['elapsed_total'];order=c['sampling_state']['order'];assert c['train_paths']==[r['path'] for r in records]
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luoxiangyu/Wan2.1/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 2593, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for Codec:
+	size mismatch for eb._quantized_cdf: copying a param with shape torch.Size([32, 38]) from checkpoint, the shape in current model is torch.Size([32, 27]).

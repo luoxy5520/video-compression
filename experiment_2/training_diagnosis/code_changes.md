@@ -1,3 +1,5 @@
 # Code changes
 
 Only additive scripts under training_diagnosis; historical codec and training checkpoints untouched. common.py splits existing I3 likelihoods and adds explicit diagnostic quantization modes. audit.py tests weights, gradients, optimizer coverage, symbol rules and actual entropy streams. reconstruction.py bypasses quantization/hyperprior and persists full optimizer/scheduler/RNG state atomically. reconstruction_eval.py uses full5-slice native VAE output, never independently decoded slice videos. pixels.py applies native decoding and historical8-bit BT709 YUV evaluation. R2/R3 are gated optional configurations, not yet executed.
+
+Resume: shared restore_state resizes dynamic CDF buffers for training checkpoints, matching the deployment loader. Added multi-video seeded sampler and complete resume state; VAE gradient audit with native/full-sequence forward parity, full parameter hash, and mixed-precision diagnostics; TP1/TP2 fixed-symbol CDF translation and gated resumable entropy-only fitting. Added relevant regression checks; all four tests passed on113Server. No VAE or historical checkpoints modified.

@@ -12,3 +12,13 @@
 - tmux e21-overfit: O1 then5 O2 factors at1000steps, fixedstep.1,range±255; all complete. Scale-head bias initialized from legal training-video std and stored as shared model parameters.
 - evaluate_codec.py: all five O2 points and O1 measured with full5slices, trueLVC2 streams, independent decoder and native VAE; full results saved. overfit_gate.py formatting duplication fixed; actual trend gate PASS (MSE/loglambda correlation-.808,bytes/loglambda+.981).
 - tmux e21-d16-mid and e21-d16-mid-seed2: train_scale.py --videos16 --factor1 --steps5000 --seed20261127/20261128 onGPU0/GPU1 respectively; then evaluate_development.py at1000/5000(primaryseed),5000(secondseed). New data-scale experiments initialized from O2 weights, not equivalent O2 optimizer continuation. Epoch permutations provide actual seed variation; order/RNG saved for exact resume.
+
+## Resume after usage limit
+- Previous tool action was not executed because automatic approval review could not run after usage limit; no unsafe action determination was made. Source files written before that point were preserved.
+- Initial SSH retries timed out; user confirmed VPN restored. Reconnected21:18 Asia/Shanghai, verified tmux queues ended and retrieved completed D42/5000 and D16/10000 results.
+- D16 continuation initially failed on dynamic EB CDF shape32x38 versus32x27; added restore_state buffer resizing, retained failure log, resumed from untouched5000 checkpoint with optimizer/scheduler/RNG and sampler order.
+- D16 primary:1000→5000→10000 development PSNR-Y43.591→44.475→44.873 and32.823→34.080→34.421; bytes323755→303983→298603 and334059→318763→315427.
+- D16 secondseed5000:303643/44.319 and318455/34.133. D42/5000:306971/43.993 and315747/33.728; no consistent data-scale improvement.
+- New tests PASS: original forward equality, STE values/gradient, dynamicCDF restore, TP1/TP2 integer-mean canonical symbol/reconstruction equality.
+- tmux e21-d16-low/high:16videos, factors.1/10,5000steps plus separate full development evaluation.
+- temporal_entropy_model.py and temporal_run.py added but training NOT RUN; frozen base requires E2.1d gate. Integer CDF-origin translation leaves canonical symbols q and dequantization fixed.

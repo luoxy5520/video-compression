@@ -38,3 +38,8 @@ def forward(m,x,mode='noise'):
 def optimizers(m,lr=.001):
     main=[p for n,p in m.named_parameters() if not n.endswith('.quantiles')];aux=[p for n,p in m.named_parameters() if n.endswith('.quantiles')]
     return torch.optim.Adam(main,lr=lr),torch.optim.Adam(aux,lr=.001),main
+
+def restore_state(m,state):
+    for name,buf in m.named_buffers():
+        if name in state:buf.resize_(state[name].shape)
+    m.load_state_dict(state)
