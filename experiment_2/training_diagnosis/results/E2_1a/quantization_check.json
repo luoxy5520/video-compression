@@ -1,0 +1,43 @@
+{
+  "modes": [
+    {
+      "mode": "none",
+      "mse": 0.07341837137937546,
+      "ga_grad_norm": 0.4772416199680722,
+      "gs_grad_norm": 0.31890630912803575,
+      "y_round_mse": 0.0,
+      "symbol_min": -4.122140884399414,
+      "symbol_max": 4.090487003326416
+    },
+    {
+      "mode": "noise",
+      "mse": 0.07946653664112091,
+      "ga_grad_norm": 0.4747449191734877,
+      "gs_grad_norm": 0.31725048827993485,
+      "y_round_mse": 0.08338184654712677,
+      "symbol_min": -4.357723236083984,
+      "symbol_max": 4.175415515899658
+    },
+    {
+      "mode": "ste",
+      "mse": 0.08170359581708908,
+      "ga_grad_norm": 0.45840737923709224,
+      "gs_grad_norm": 0.30231259058226306,
+      "y_round_mse": 0.07562238723039627,
+      "symbol_min": -4.0,
+      "symbol_max": 4.0
+    },
+    {
+      "mode": "hard",
+      "mse": 0.08170359581708908,
+      "ga_grad_norm": 0.0,
+      "gs_grad_norm": 0.30231259058226306,
+      "y_round_mse": 0.07562238723039627,
+      "symbol_min": -4.0,
+      "symbol_max": 4.0
+    }
+  ],
+  "main_symbols": "round(y), means=None; unit step; int32 rANS with escape handling in CompressAI",
+  "hyper_symbols": "round(z - learned medians), reconstruction adds medians",
+  "training_default": "independent U(-.5,.5) noise on main and hyper; eval hard rounding"
+}

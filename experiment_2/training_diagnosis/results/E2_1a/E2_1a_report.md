@@ -1,0 +1,3 @@
+# E2.1a
+
+PASS: fixed-batch weight arithmetic, expected gradient routes, disjoint complete optimizers, actual parameter updates, finite likelihood/gradient tests, hard-forward/real-stream equality and independent decoding. No evidence of a swapped loss or detached training transform in historical1000-step implementation. Evidence does not establish convergence. Estimated versus actual differences include scale-table discretization, finite CDF precision, rANS framing/tails and header cost; inspect measured CSV rather than substituting estimates for bytes. EB quantiles receive auxiliary gradients as expected, not main RD gradients.

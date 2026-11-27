@@ -13,3 +13,11 @@ third_party/
 experiment_2/checkpoints/*
 experiment_2/results/*.pt
 experiment_2/results/*.lvc2
+
+# Training diagnosis large artifacts are retained on 113Server with hashes.
+experiment_2/training_diagnosis/checkpoints/
+experiment_2/training_diagnosis/**/overfit_checkpoints/
+experiment_2/training_diagnosis/**/*.pt
+experiment_2/training_diagnosis/**/*.lvc
+experiment_2/training_diagnosis/**/*.lvc2
+experiment_2/training_diagnosis/**/*.bin

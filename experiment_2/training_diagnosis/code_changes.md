@@ -1,0 +1,3 @@
+# Code changes
+
+Only additive scripts under training_diagnosis; historical codec and training checkpoints untouched. common.py splits existing I3 likelihoods and adds explicit diagnostic quantization modes. audit.py tests weights, gradients, optimizer coverage, symbol rules and actual entropy streams. reconstruction.py bypasses quantization/hyperprior and persists full optimizer/scheduler/RNG state atomically. reconstruction_eval.py uses full5-slice native VAE output, never independently decoded slice videos. pixels.py applies native decoding and historical8-bit BT709 YUV evaluation. R2/R3 are gated optional configurations, not yet executed.

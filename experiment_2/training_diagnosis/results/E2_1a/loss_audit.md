@@ -1,0 +1,3 @@
+# Loss audit
+
+Historical train_intra.py: L=R+lambda*MSE. R=sum(-log2 main likelihood)+sum(-log2 hyper likelihood), divided by all B*C*H*W input latent elements, including all5 slices treated as batch. D=mean squared latent error over identical element count. No pixel or extra multiplier. Noise in training versus hard rounding for evaluation is intentional and must be reported separately. Fixed-checkpoint mathematical weight test saved in loss_values.json. Auxiliary loss optimized separately; the earlier100-step smoke instead added .01*aux to one optimizer, and is not equivalent to the1000-step runs. Validation previously recorded only actual bytes and hard reconstruction MSE, not a conflicting normalized total loss.

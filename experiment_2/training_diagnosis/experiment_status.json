@@ -1,0 +1,10 @@
+{
+  "E2.1a": "PASS",
+  "E2.1b": "RUNNING: R1 continuation10000 and full-sequence VAE evaluation",
+  "E2.1c": "NOT RUN: awaiting reconstruction gate",
+  "E2.1d": "NOT RUN",
+  "E2.1e": "NOT RUN",
+  "E2.2": "NOT RUN",
+  "independent_validation": "NOT AVAILABLE/CERTIFIED",
+  "sealed_test": "NOT OPENED"
+}

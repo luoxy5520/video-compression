@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checkpoint": "9a446cda23af1cb668c8e384154e842ef002d0b31a03010e67eb4a0f343ce102",
+  "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+  "seed": 20261127
+}
