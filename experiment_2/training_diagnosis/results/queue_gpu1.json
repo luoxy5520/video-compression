@@ -1,0 +1,9 @@
+{
+  "status": "WAITING_FOR_PREREQUISITES",
+  "lane": "gpu1",
+  "updated": "2026-11-27T22:34:09.169479+08:00",
+  "paths": [
+    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/results/E2_1e/V1_D16/development_step1000.json",
+    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/results/E2_1e/V2_D16/development_step1000.json"
+  ]
+}

@@ -1,0 +1,1144 @@
+{
+  "parameters": 118000,
+  "trainable_prior_parameters": 36960,
+  "deployment_bytes": 1259425,
+  "CPU_model_load_seconds": 0.011463637929409742,
+  "load_scope": "one filesystem-cache-warm CPU construction/state load; VAE and GPU upload excluded",
+  "input_shape": [
+    5,
+    16,
+    60,
+    104
+  ],
+  "encoder_nominal_conv_MACs": 1601034240,
+  "decoder_nominal_conv_MACs": 1511178240,
+  "maximum_single_conv_output_bytes": 1597440,
+  "encoder_layers": [
+    {
+      "layer": "base.ga.0.0",
+      "input_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ha.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 14376960,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.ha.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "nominal_MACs": 3594240,
+      "output_tensor_bytes": 49920
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.0",
+      "input_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ha.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 14376960,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.ha.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "nominal_MACs": 3594240,
+      "output_tensor_bytes": 49920
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.0",
+      "input_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ha.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 14376960,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.ha.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "nominal_MACs": 3594240,
+      "output_tensor_bytes": 49920
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.0",
+      "input_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ha.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 14376960,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.ha.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "nominal_MACs": 3594240,
+      "output_tensor_bytes": 49920
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.0",
+      "input_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ga.0.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.ha.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 14376960,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.ha.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "nominal_MACs": 3594240,
+      "output_tensor_bytes": 49920
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    }
+  ],
+  "decoder_layers": [
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.gs.1.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.gs.1.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 399360
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    },
+    {
+      "layer": "base.gs.1.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.gs.1.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 399360
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    },
+    {
+      "layer": "base.gs.1.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.gs.1.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 399360
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    },
+    {
+      "layer": "base.gs.1.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.gs.1.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 399360
+    },
+    {
+      "layer": "base.hs.0",
+      "input_shape": [
+        1,
+        32,
+        15,
+        26
+      ],
+      "output_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "nominal_MACs": 6389760,
+      "output_tensor_bytes": 199680
+    },
+    {
+      "layer": "base.hs.2",
+      "input_shape": [
+        1,
+        32,
+        30,
+        52
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 25559040,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.0",
+      "input_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "predictor.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        64,
+        60,
+        104
+      ],
+      "nominal_MACs": 115015680,
+      "output_tensor_bytes": 1597440
+    },
+    {
+      "layer": "base.gs.1.0",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "nominal_MACs": 57507840,
+      "output_tensor_bytes": 798720
+    },
+    {
+      "layer": "base.gs.1.2",
+      "input_shape": [
+        1,
+        32,
+        60,
+        104
+      ],
+      "output_shape": [
+        1,
+        16,
+        60,
+        104
+      ],
+      "nominal_MACs": 28753920,
+      "output_tensor_bytes": 399360
+    }
+  ],
+  "method": "custom PyTorch forward hooks on actual encode/decode; Conv2d output-elements*Cin/groups*kernel; ConvTranspose2d input-elements*Cout/groups*kernel, nominal padded-kernel upper bound; excludes elementwise, entropy CDF/index and VAE; one MAC is not reported as one FLOP",
+  "script_sha256": "83c23caa8f4043cb7c36c8e5110ae13a0064cb4c8077d86f204fde1eeb6b4eba"
+}

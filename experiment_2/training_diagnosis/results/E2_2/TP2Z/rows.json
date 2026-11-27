@@ -1,0 +1,198 @@
+[
+  {
+    "method": "TP2Z_zero_history",
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 300656,
+    "streams": {
+      "actual_bytes": 300656,
+      "metadata_bytes": 528,
+      "slices": [
+        {
+          "main": 50852,
+          "hyper": 1840,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 6.145983934402466e-05,
+          "entropy_encode_seconds": 0.02382954303175211,
+          "index_seconds": 0.005801537074148655,
+          "reference_update_seconds": 1.5980098396539688e-05
+        },
+        {
+          "main": 57624,
+          "hyper": 1872,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.005678257904946804,
+          "entropy_encode_seconds": 0.019909681752324104,
+          "index_seconds": 0.0053985100239515305,
+          "reference_update_seconds": 5.659647285938263e-06
+        },
+        {
+          "main": 59684,
+          "hyper": 1940,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.00510305305942893,
+          "entropy_encode_seconds": 0.02076242584735155,
+          "index_seconds": 0.005446289200335741,
+          "reference_update_seconds": 5.509704351425171e-06
+        },
+        {
+          "main": 60680,
+          "hyper": 2036,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.004384797997772694,
+          "entropy_encode_seconds": 0.02004807209596038,
+          "index_seconds": 0.00554546806961298,
+          "reference_update_seconds": 4.420056939125061e-06
+        },
+        {
+          "main": 61488,
+          "hyper": 2112,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.0044860560446977615,
+          "entropy_encode_seconds": 0.019134528003633022,
+          "index_seconds": 0.006391773000359535,
+          "reference_update_seconds": 0.0006477748975157738
+        }
+      ],
+      "sha256": "5127c761a139f4c1b062239032184cdda45f0537a36dda078b171c0db0078e5e"
+    },
+    "canonical_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_decode": true,
+    "train_steps": 2000,
+    "train_seconds": 31.3150208578445,
+    "scope": "same head and training budget as TP2, history replaced by zeros; frozen original hyperprior features retained"
+  },
+  {
+    "method": "TP2Z_zero_history",
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 304424,
+    "streams": {
+      "actual_bytes": 304424,
+      "metadata_bytes": 528,
+      "slices": [
+        {
+          "main": 55072,
+          "hyper": 1648,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 2.4689827114343643e-05,
+          "entropy_encode_seconds": 0.021234741900116205,
+          "index_seconds": 0.005671387072652578,
+          "reference_update_seconds": 5.170237272977829e-06
+        },
+        {
+          "main": 55876,
+          "hyper": 1796,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.004970992915332317,
+          "entropy_encode_seconds": 0.01840036315843463,
+          "index_seconds": 0.006644641049206257,
+          "reference_update_seconds": 5.890149623155594e-06
+        },
+        {
+          "main": 58736,
+          "hyper": 1944,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.004077740013599396,
+          "entropy_encode_seconds": 0.019726823084056377,
+          "index_seconds": 0.0052907210774719715,
+          "reference_update_seconds": 5.43985515832901e-06
+        },
+        {
+          "main": 59744,
+          "hyper": 1936,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.005284250248223543,
+          "entropy_encode_seconds": 0.01954629411920905,
+          "index_seconds": 0.006127145141363144,
+          "reference_update_seconds": 8.050352334976196e-06
+        },
+        {
+          "main": 64968,
+          "hyper": 2176,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.003976690117269754,
+          "entropy_encode_seconds": 0.024937023874372244,
+          "index_seconds": 0.0068945386447012424,
+          "reference_update_seconds": 0.001163901761174202
+        }
+      ],
+      "sha256": "d338b8a7c772a1cf6c2f0875d9ef56e560322124b554013c00dcb68546a8fd3f"
+    },
+    "canonical_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_decode": true,
+    "train_steps": 2000,
+    "train_seconds": 31.3150208578445,
+    "scope": "same head and training budget as TP2, history replaced by zeros; frozen original hyperprior features retained"
+  }
+]

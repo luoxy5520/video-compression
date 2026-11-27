@@ -3,6 +3,9 @@ Same R3 convolution shapes; changes initialization only. Tests unseen random ten
 """
 from common import *
 from diagnostic_codec import Codec
+if (ROOT/'results/E2_1b/R3_identity/step0.json').exists():
+    print('identity control already complete; preserved');exit()
+torch.manual_seed(20261127)
 m=Codec('R3',.1,255)
 # Each two-conv/GELU transform represents identity using +/- channel pairs.
 for mod in (m.ga[0],m.gs[1]):

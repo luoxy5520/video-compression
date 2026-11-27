@@ -25,7 +25,7 @@ class ResumeAndTemporal(unittest.TestCase):
     def test_integral_mean_changes_cdf_not_canonical_symbols(self):
         import tempfile
         from temporal_entropy_model import Temporal
-        for mode in ('TP1','TP2'):
+        for mode in ('TP1','TP2','TP2Z'):
             torch.manual_seed(7);m=Temporal(dict(variant='R3',step=.1,limit=255),mode).eval();m.base.update()
             with torch.no_grad():m.predictor[-1].bias[:32].fill_(1.6)
             x=torch.randn(3,16,12,16)
@@ -33,5 +33,14 @@ class ResumeAndTemporal(unittest.TestCase):
                 path=Path(d)/'stream';m.compress_video(x,path,'test-model');q,z=m.decompress_video(path,'test-model');fixed=m.fixed_sequence(x)
                 self.assertTrue(torch.equal(q,torch.cat([v[0] for v in fixed])))
                 self.assertTrue(torch.equal(z,torch.cat([m.base.gs(v[0]) for v in fixed])))
+                original=path.read_bytes()
+                for bad in (b'',original[:7],original[:-1],original[:-1]+bytes([original[-1]^1])):
+                    path.write_bytes(bad)
+                    with self.assertRaises(ValueError):m.decompress_video(path,'test-model')
+
+class EscapeSymbols(unittest.TestCase):
+    def test_canonical_extreme_symbols_with_integer_cdf_offset(self):
+        from diagnostic_codec import Codec
+        m=Codec('R3');m.update();q=torch.zeros(1,32,2,2);q[:,:,0,0]=255;q[:,:,1,1]=-255;means=torch.full_like(q,2.);indexes=m.gc.build_indexes(torch.full_like(q,.11));strings=m.gc.compress(q,indexes,means=means);self.assertTrue(torch.equal(m.gc.decompress(strings,indexes,means=means),q))
 
 if __name__=='__main__':unittest.main()

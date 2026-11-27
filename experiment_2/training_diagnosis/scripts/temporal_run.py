@@ -7,6 +7,10 @@ p=argparse.ArgumentParser();p.add_argument('--base-name',default='D42_f1_seed202
 assert json.loads((ROOT/'results/E2_1d/gate.json').read_text())['pass']
 source=ROOT/'checkpoints'/a.base_name/f'step{a.base_step}.pt';base,c=load(source);records=json.loads((E2/'dataset_manifest.json').read_text())['records'];train=[r for r in records if r['path'] in c['train_paths']];groups={r['group'] for r in train};dev=[r for r in records if r['role']=='historical_development' and r['group'] not in groups][:2];assert len(dev)==2
 out=ROOT/'results/E2_2';ckdir=ROOT/'checkpoints/temporal';ckdir.mkdir(exist_ok=True);baseline={};results=[]
+if all((out/f'{mode}_status.json').exists() and json.loads((out/f'{mode}_status.json').read_text()).get('status')=='COMPLETE' for mode in ('TP0','TP1','TP2')):
+    for mode in ('TP1','TP2'):
+        saved=torch.load(ckdir/f'{mode}.pt',weights_only=False,map_location='cpu');assert saved['source_sha256']==sha(source) and saved['step']>=a.steps,'new config needs a new run directory'
+    print('all temporal configurations already complete; preserved');exit()
 for mode in ('TP0','TP1','TP2'):
     torch.manual_seed(20261127);m=Temporal(c['config'],mode);restore_state(m.base,c['state']);curve=[];seconds=0;ck=ckdir/f'{mode}.pt'
     if mode!='TP0':
@@ -38,7 +42,9 @@ for mode in ('TP0','TP1','TP2'):
             seconds+=time.perf_counter()-t0;m.cpu().eval();del cache;torch.cuda.empty_cache()
             atomic_torch(ck,dict(config=c['config'],mode=mode,state=m.state_dict(),curve=curve,train_seconds=seconds,source_sha256=sha(source),step=a.steps))
     else:
-        atomic_torch(ck,dict(config=c['config'],mode=mode,state=m.state_dict(),curve=[],train_seconds=0,source_sha256=sha(source),step=0))
+        if ck.exists():
+            m,saved=load_temporal(ck);assert saved['source_sha256']==sha(source)
+        else:atomic_torch(ck,dict(config=c['config'],mode=mode,state=m.state_dict(),curve=[],train_seconds=0,source_sha256=sha(source),step=0))
     m.cpu().eval()
     for idx,r in enumerate(dev):
         x=tensor(r);path=out/f'{mode}_dev{idx}.bin';stats=m.compress_video(x,path,sha(ck));q,z=m.decompress_video(path,sha(ck));fixed=m.fixed_sequence(x);expectedq=torch.cat([f[0] for f in fixed]);expectedz=torch.cat([m.base.gs(f[0]) for f in fixed]);assert torch.equal(q,expectedq) and torch.equal(z,expectedz)

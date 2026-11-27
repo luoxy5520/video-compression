@@ -3,10 +3,10 @@ from pixels import *
 from diagnostic_codec import load
 from vae_differentiable import decode_full
 import argparse,gc
-p=argparse.ArgumentParser();p.add_argument('--mode',choices=['V1','V2'],default='V2');p.add_argument('--steps',type=int,default=100);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--mode',choices=['V1','V2'],default='V2');p.add_argument('--steps',type=int,default=100);p.add_argument('--factor',type=float,choices=[.1,1.,10.],default=1.);p.add_argument('--source-step',type=int);a=p.parse_args()
 assert json.loads((ROOT/'results/E2_1e/vae_gradient_fp32_checkpoint.json').read_text())['status']=='PASS'
-source=ROOT/'checkpoints/D16_f1_seed20261127/step10000.pt';m,c=load(source);m=m.cuda().train();v=vae();v.model.requires_grad_(False);records=[r for r in data() if r['path'] in c['train_paths']];assert len(records)==16
-xdata=[tensor(r).cuda() for r in records];references={};torch.manual_seed(20261127);opt,aux,main=optimizers(m,1e-5);scheduler=torch.optim.lr_scheduler.MultiStepLR(opt,[500,1000],gamma=.5);name=a.mode+'_D16';out=ROOT/'results/E2_1e'/name;out.mkdir(exist_ok=True);cks=ROOT/'checkpoints'/name;cks.mkdir(exist_ok=True);latest=cks/'latest.pt';curve=[];start=0;elapsed=0;lambda_p=None;lambda_z=c['lambda_z'] if a.mode=='V2' else 0
+source_step=a.source_step or (10000 if a.factor==1 else 5000);source=ROOT/'checkpoints'/f'D16_f{a.factor:g}_seed20261127'/f'step{source_step}.pt';m,c=load(source);m=m.cuda().train();v=vae();v.model.requires_grad_(False);records=[r for r in data() if r['path'] in c['train_paths']];assert len(records)==16
+xdata=[tensor(r).cuda() for r in records];references={};torch.manual_seed(20261127);opt,aux,main=optimizers(m,1e-5);scheduler=torch.optim.lr_scheduler.MultiStepLR(opt,[500,1000],gamma=.5);name=a.mode+('_D16' if a.factor==1 else '_low_D16' if a.factor==.1 else '_high_D16');out=ROOT/'results/E2_1e'/name;out.mkdir(exist_ok=True);cks=ROOT/'checkpoints'/name;cks.mkdir(exist_ok=True);latest=cks/'latest.pt';curve=[];start=0;elapsed=0;lambda_p=None;lambda_z=c['lambda_z'] if a.mode=='V2' else 0
 assert not ({id(p) for p in v.model.parameters()} & {id(p) for p in main})
 def fingerprint():
     h=hashlib.sha256()
@@ -15,7 +15,7 @@ def fingerprint():
 vae_hash=fingerprint();file_hash=sha(MODEL)
 if latest.exists():
     state=torch.load(latest,weights_only=False,map_location='cpu');restore_state(m,state['state']);opt.load_state_dict(state['optimizer']);aux.load_state_dict(state['aux_optimizer']);scheduler.load_state_dict(state['scheduler']);torch.set_rng_state(state['rng']);torch.cuda.set_rng_state(state['cuda_rng']);start=state['step'];curve=state['curve'];elapsed=state['elapsed_total'];lambda_p=state['lambda_p']
-    assert state['train_paths']==[r['path'] for r in records]
+    assert state['train_paths']==[r['path'] for r in records] and state['source_sha256']==sha(source)
 if start>=a.steps:print('already complete',name,start);exit()
 t0=time.perf_counter();torch.cuda.reset_peak_memory_stats()
 for step in range(start+1,a.steps+1):

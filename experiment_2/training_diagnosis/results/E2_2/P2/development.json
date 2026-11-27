@@ -1,0 +1,240 @@
+[
+  {
+    "method": "P2_joint_latent_RD",
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 237743,
+    "streams": {
+      "actual_bytes": 237743,
+      "metadata_bytes": 527,
+      "slices": [
+        {
+          "main": 51256,
+          "hyper": 1636,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 7.422920316457748e-05,
+          "entropy_encode_seconds": 0.022182648070156574,
+          "index_seconds": 0.006741181947290897,
+          "reference_update_seconds": 3.5599805414676666e-06
+        },
+        {
+          "main": 40132,
+          "hyper": 1724,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.004928627982735634,
+          "entropy_encode_seconds": 0.017966238781809807,
+          "index_seconds": 0.005812486167997122,
+          "reference_update_seconds": 3.6801211535930634e-06
+        },
+        {
+          "main": 42644,
+          "hyper": 1724,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.003313142340630293,
+          "entropy_encode_seconds": 0.01703396299853921,
+          "index_seconds": 0.006029582116752863,
+          "reference_update_seconds": 4.079658538103104e-06
+        },
+        {
+          "main": 44848,
+          "hyper": 1768,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.002874799072742462,
+          "entropy_encode_seconds": 0.017896620091050863,
+          "index_seconds": 0.006004112306982279,
+          "reference_update_seconds": 3.520399332046509e-06
+        },
+        {
+          "main": 49608,
+          "hyper": 1876,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.005815395154058933,
+          "entropy_encode_seconds": 0.017006223089993,
+          "index_seconds": 0.005965793039649725,
+          "reference_update_seconds": 3.820285201072693e-06
+        }
+      ],
+      "sha256": "25868fafd4394e286d6c8312e1f715077edf8c86c166d6e7cb2c7e29035ea5e6"
+    },
+    "latent_mse": 0.0005471808835864067,
+    "psnr_y": 44.79413052498625,
+    "psnr_rgb": 43.489111143460484,
+    "per_frame_psnr_y": [
+      44.00027301400793,
+      44.144501360992734,
+      44.036498830504186,
+      44.192135043693696,
+      44.14256915724528,
+      44.54358665411466,
+      44.35444999297928,
+      44.381128313108526,
+      44.28284318681011,
+      44.591642454828786,
+      44.38479422717374,
+      44.71956683294521,
+      44.42211529196268,
+      46.841214027242515,
+      46.893872096294686,
+      46.902182231296365,
+      46.75440936226873
+    ],
+    "last4_psnr_y": 46.84791942927558,
+    "independent_decode": true,
+    "fixed_symbols": "NOT APPLICABLE: joint lossy training",
+    "checkpoint_sha256": "7e817c8dfd48c3b9389978a7c3bab00a69099bb9047f60c0aa7bdd8ebbb53f89",
+    "scope": "historical development only"
+  },
+  {
+    "method": "P2_joint_latent_RD",
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 292395,
+    "streams": {
+      "actual_bytes": 292395,
+      "metadata_bytes": 527,
+      "slices": [
+        {
+          "main": 56128,
+          "hyper": 1536,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 2.7549918740987778e-05,
+          "entropy_encode_seconds": 0.01835981197655201,
+          "index_seconds": 0.00598344299942255,
+          "reference_update_seconds": 3.1902454793453217e-06
+        },
+        {
+          "main": 52528,
+          "hyper": 1648,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.003001895733177662,
+          "entropy_encode_seconds": 0.016539488919079304,
+          "index_seconds": 0.005990192759782076,
+          "reference_update_seconds": 3.79001721739769e-06
+        },
+        {
+          "main": 56380,
+          "hyper": 1796,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.003049435093998909,
+          "entropy_encode_seconds": 0.0179640487767756,
+          "index_seconds": 0.005930563900619745,
+          "reference_update_seconds": 4.00003045797348e-06
+        },
+        {
+          "main": 54600,
+          "hyper": 1800,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.0030206763185560703,
+          "entropy_encode_seconds": 0.017228248994797468,
+          "index_seconds": 0.005919723771512508,
+          "reference_update_seconds": 4.259869456291199e-06
+        },
+        {
+          "main": 63320,
+          "hyper": 2132,
+          "yshape": [
+            60,
+            104
+          ],
+          "zshape": [
+            15,
+            26
+          ],
+          "context_seconds": 0.003094105049967766,
+          "entropy_encode_seconds": 0.017930069006979465,
+          "index_seconds": 0.005905213765799999,
+          "reference_update_seconds": 4.569999873638153e-06
+        }
+      ],
+      "sha256": "3d52a798853f605362a9819a965d4bbd5dbba2447a29d2c6ecac18b26960deb3"
+    },
+    "latent_mse": 0.0005955255473963916,
+    "psnr_y": 34.391483428286314,
+    "psnr_rgb": 33.29593684693994,
+    "per_frame_psnr_y": [
+      33.399549123047024,
+      33.6956503469612,
+      33.685117409402736,
+      33.25388893835837,
+      33.035402125046836,
+      34.654103552228875,
+      34.884831154466866,
+      34.450956059996756,
+      34.26850869302371,
+      34.25973994780142,
+      34.13102339344589,
+      33.97788958957584,
+      33.635192209323186,
+      36.384094182062405,
+      36.62638596108751,
+      36.5265415845825,
+      36.23663175025561
+    ],
+    "last4_psnr_y": 36.44341336949701,
+    "independent_decode": true,
+    "fixed_symbols": "NOT APPLICABLE: joint lossy training",
+    "checkpoint_sha256": "7e817c8dfd48c3b9389978a7c3bab00a69099bb9047f60c0aa7bdd8ebbb53f89",
+    "scope": "historical development only"
+  }
+]

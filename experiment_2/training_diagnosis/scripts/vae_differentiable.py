@@ -1,3 +1,5 @@
+# Copyright 2024-2025 The Alibaba Wan Team Authors. All rights reserved.
+# Adapted causal decode glue under Apache-2.0; see ../third_party_licenses.
 """Original differentiable glue for frozen native Wan decoder, unchanged weights.
 Matches native causal slicing. Local immutable cache snapshots cross checkpoints;
 no detached history, no local crops and no concatenation of independently decoded videos.
