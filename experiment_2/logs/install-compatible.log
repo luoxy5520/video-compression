@@ -1,0 +1,27 @@
+Collecting scipy==1.14.1
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+Collecting scikit-learn==1.5.2
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (13 kB)
+Collecting torch-geometric==2.6.1
+  Downloading torch_geometric-2.6.1-py3-none-any.whl.metadata (63 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (40.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 MB 15.0 MB/s  0:00:02
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.9/12.9 MB 17.1 MB/s  0:00:00
+Downloading torch_geometric-2.6.1-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 15.3 MB/s  0:00:00
+Installing collected packages: torch-geometric, scipy, scikit-learn
+  Attempting uninstall: torch-geometric
+    Found existing installation: torch-geometric 2.8.1
+    Uninstalling torch-geometric-2.8.1:
+      Successfully uninstalled torch-geometric-2.8.1
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.18.1
+    Uninstalling scipy-1.18.1:
+      Successfully uninstalled scipy-1.18.1
+  Attempting uninstall: scikit-learn
+    Found existing installation: scikit-learn 1.9.1
+    Uninstalling scikit-learn-1.9.1:
+      Successfully uninstalled scikit-learn-1.9.1
+
+Successfully installed scikit-learn-1.5.2 scipy-1.14.1 torch-geometric-2.6.1

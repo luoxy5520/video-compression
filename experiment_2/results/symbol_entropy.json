@@ -1,0 +1,634 @@
+[
+  {
+    "bits": 4,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 122698,
+    "I1_bytes": 208772,
+    "saving_fraction": -0.7015110270746059,
+    "I1_payload_bytes": 208192,
+    "I1_metadata_bytes": 580,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": true,
+    "latent_mse": 0.010886185802519321,
+    "stream_sha256": "59bc5b3f4b377477046d94dd1d0121a0693b342157b359c7992b1bc05f8263b5",
+    "checkpoint_sha256": "acca0f4c007962fd798cd91fff8acab6ac317e241d5869137293a07335c5a1e4",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 8.223186146933585,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 3.1742749214172363
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 3.2369096279144287
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 3.583920955657959
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 3.0985450744628906
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 3.181445598602295
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 3.247096061706543
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 3.591596841812134
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 3.098149299621582
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 3.1818313598632812
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 3.2472851276397705
+      }
+    ]
+  },
+  {
+    "bits": 4,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 152004,
+    "I1_bytes": 193371,
+    "saving_fraction": -0.27214415410120796,
+    "I1_payload_bytes": 192792,
+    "I1_metadata_bytes": 579,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": false,
+    "latent_mse": 0.01568266935646534,
+    "stream_sha256": "e6b36c93e739c2ec5be321fdf90158270f260b3671eab4635d705874e682aced",
+    "checkpoint_sha256": "acca0f4c007962fd798cd91fff8acab6ac317e241d5869137293a07335c5a1e4",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 8.689719279762357,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 3.1742749214172363
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 3.2369096279144287
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 3.583920955657959
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 3.0985450744628906
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 3.181445598602295
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 3.247096061706543
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 3.591596841812134
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 3.098149299621582
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 3.1818313598632812
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 3.2472851276397705
+      }
+    ]
+  },
+  {
+    "bits": 5,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 242979,
+    "I1_bytes": 276861,
+    "saving_fraction": -0.13944414949440076,
+    "I1_payload_bytes": 276276,
+    "I1_metadata_bytes": 585,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": true,
+    "latent_mse": 0.002373035531491041,
+    "stream_sha256": "94abee72db84b6ecfd8ab59463534dae57dc29064485fcb55a1df9b020516261",
+    "checkpoint_sha256": "b4243acf2f7d594d5d00910c1b5678e03f01b491a45de593dc02bbc4ac827998",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 7.608398421201855,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 4.262513637542725
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 4.327092170715332
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 4.678733825683594
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 4.186853408813477
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 4.270916938781738
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 4.337830543518066
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 4.686898708343506
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 4.186471939086914
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 4.271312236785889
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 4.338027000427246
+      }
+    ]
+  },
+  {
+    "bits": 5,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 287012,
+    "I1_bytes": 261083,
+    "saving_fraction": 0.0903411704040249,
+    "I1_payload_bytes": 260504,
+    "I1_metadata_bytes": 579,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": false,
+    "latent_mse": 0.003411687910556793,
+    "stream_sha256": "9397fc56961b36d01da90906cc05af431f35977939cdfec020038d51fed9d550",
+    "checkpoint_sha256": "b4243acf2f7d594d5d00910c1b5678e03f01b491a45de593dc02bbc4ac827998",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 8.104319673031569,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 4.262513637542725
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 4.327092170715332
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 4.678733825683594
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 4.186853408813477
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 4.270916938781738
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 4.337830543518066
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 4.686898708343506
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 4.186471939086914
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 4.271312236785889
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 4.338027000427246
+      }
+    ]
+  },
+  {
+    "bits": 6,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 329484,
+    "I1_bytes": 342179,
+    "saving_fraction": -0.03852994379089725,
+    "I1_payload_bytes": 341592,
+    "I1_metadata_bytes": 587,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": true,
+    "latent_mse": 0.0005554635426960886,
+    "stream_sha256": "45c1bf50cb9c2eb514ec34a857d3ec6543d8d1d7073567eaa2aa09d068426570",
+    "checkpoint_sha256": "dbca8d9fe642f3a03340b8e5d58ff927643e505ad39461340a391d4de244c1c0",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 8.066258127335459,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 5.30764627456665
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 5.3722076416015625
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 5.725259304046631
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 5.232066631317139
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 5.31629753112793
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 5.383084774017334
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 5.7335124015808105
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 5.231682777404785
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 5.3166937828063965
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 5.3832831382751465
+      }
+    ]
+  },
+  {
+    "bits": 6,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 347861,
+    "I1_bytes": 326399,
+    "saving_fraction": 0.06169705715788776,
+    "I1_payload_bytes": 325816,
+    "I1_metadata_bytes": 583,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": false,
+    "latent_mse": 0.0007998636574484408,
+    "stream_sha256": "48e9e9a369905c1a214bfcf75ea66eff4d37e00989268f44f4f47518f2687612",
+    "checkpoint_sha256": "dbca8d9fe642f3a03340b8e5d58ff927643e505ad39461340a391d4de244c1c0",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 8.527824247255921,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 5.30764627456665
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 5.3722076416015625
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 5.725259304046631
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 5.232066631317139
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 5.31629753112793
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 5.383084774017334
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 5.7335124015808105
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 5.231682777404785
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 5.3166937828063965
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 5.3832831382751465
+      }
+    ]
+  },
+  {
+    "bits": 8,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 466513,
+    "I1_bytes": 469141,
+    "saving_fraction": -0.005633283531219835,
+    "I1_payload_bytes": 468544,
+    "I1_metadata_bytes": 597,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": true,
+    "latent_mse": 3.323214332340285e-05,
+    "stream_sha256": "b50f71b100c08ba79982dd17f3775a972a5e78f429e08ae2cca8b9d9897a3215",
+    "checkpoint_sha256": "2d045e76d172d8498e88a38653ff4eaaf10f2176fe35c8a6c76bedfd99505b8b",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 8.043195076752454,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 7.341491222381592
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 7.406145095825195
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 7.759321689605713
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 7.2657647132873535
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 7.350209712982178
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 7.417048454284668
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 7.767605304718018
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 7.265379428863525
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 7.350606441497803
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 7.417247772216797
+      }
+    ]
+  },
+  {
+    "bits": 8,
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "scope": "historical development only",
+    "I0_bytes": 449312,
+    "I1_bytes": 453489,
+    "saving_fraction": -0.009296435439071216,
+    "I1_payload_bytes": 452892,
+    "I1_metadata_bytes": 597,
+    "quant_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_process_decode": false,
+    "latent_mse": 4.7776236897334456e-05,
+    "stream_sha256": "88d75501f63e4e3680e637cf78f7d1d54915d346beec2adb94a84062e3884f92",
+    "checkpoint_sha256": "2d045e76d172d8498e88a38653ff4eaaf10f2176fe35c8a6c76bedfd99505b8b",
+    "checkpoint_bytes": 3177,
+    "train_video_count": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_seconds": 8.552299996837974,
+    "curve": [
+      {
+        "step": 0,
+        "bits_per_symbol": 7.341491222381592
+      },
+      {
+        "step": 20,
+        "bits_per_symbol": 7.406145095825195
+      },
+      {
+        "step": 40,
+        "bits_per_symbol": 7.759321689605713
+      },
+      {
+        "step": 60,
+        "bits_per_symbol": 7.2657647132873535
+      },
+      {
+        "step": 80,
+        "bits_per_symbol": 7.350209712982178
+      },
+      {
+        "step": 100,
+        "bits_per_symbol": 7.417048454284668
+      },
+      {
+        "step": 120,
+        "bits_per_symbol": 7.767605304718018
+      },
+      {
+        "step": 140,
+        "bits_per_symbol": 7.265379428863525
+      },
+      {
+        "step": 160,
+        "bits_per_symbol": 7.350606441497803
+      },
+      {
+        "step": 180,
+        "bits_per_symbol": 7.417247772216797
+      }
+    ]
+  }
+]

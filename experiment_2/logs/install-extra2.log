@@ -1,0 +1,20 @@
+Collecting xxhash
+  Downloading xxhash-4.1.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (18 kB)
+Requirement already satisfied: pandas in ./Wan2.1/.venv/lib/python3.12/site-packages (3.0.6)
+Collecting scikit-learn
+  Downloading scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting joblib
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting threadpoolctl
+  Downloading threadpoolctl-3.8.0-py3-none-any.whl.metadata (29 kB)
+Requirement already satisfied: python-dateutil in ./Wan2.1/.venv/lib/python3.12/site-packages (4.0.0)
+Requirement already satisfied: pytz in ./Wan2.1/.venv/lib/python3.12/site-packages (2026.6)
+Requirement already satisfied: tzdata in ./Wan2.1/.venv/lib/python3.12/site-packages (2026.6)
+Downloading xxhash-4.1.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (472 kB)
+Downloading scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 11.4 MB/s  0:00:00
+Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+Installing collected packages: xxhash, threadpoolctl, scikit-learn, joblib
+
+Successfully installed joblib-1.6.0 scikit-learn-1.9.1 threadpoolctl-3.8.0 xxhash-4.1.0

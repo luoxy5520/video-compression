@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/luoxiangyu/video-compression-e2/experiment_2/codec.py", line 73, in <module>
+    m=load_model(sys.argv[1]); torch.save(read_stream(sys.argv[2],m,sha(sys.argv[1])),sys.argv[3])
+      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luoxiangyu/video-compression-e2/experiment_2/codec.py", line 70, in load_model
+    c=torch.load(path,map_location='cpu',weights_only=True); m=Intra(c['kind'],c['channels']); m.load_state_dict(c['state']); m.eval(); m.update(); return m
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luoxiangyu/Wan2.1/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 2593, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for Intra:
+	size mismatch for eb._offset: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([0]).
+	size mismatch for eb._quantized_cdf: copying a param with shape torch.Size([32, 25]) from checkpoint, the shape in current model is torch.Size([0]).
+	size mismatch for eb._cdf_length: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([0]).
+Traceback (most recent call last):
+  File "/home/luoxiangyu/video-compression-e2/experiment_2/smoke.py", line 34, in <module>
+    subprocess.run([sys.executable,str(ROOT/'codec.py'),str(ck),str(stream),str(out)],check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/luoxiangyu/video-compression-e2/.venv/bin/python', '/home/luoxiangyu/video-compression-e2/experiment_2/codec.py', '/home/luoxiangyu/video-compression-e2/experiment_2/checkpoints/I2_smoke.pt', '/home/luoxiangyu/video-compression-e2/experiment_2/results/I2_0.lvc2', '/home/luoxiangyu/video-compression-e2/experiment_2/results/I2_0_decoded.pt']' returned non-zero exit status 1.

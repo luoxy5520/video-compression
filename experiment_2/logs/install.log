@@ -1,0 +1,5 @@
+Collecting compressai==1.2.8
+  Downloading compressai-1.2.8-cp312-cp312-manylinux_2_34_x86_64.whl.metadata (9.0 kB)
+Downloading compressai-1.2.8-cp312-cp312-manylinux_2_34_x86_64.whl (444 kB)
+Installing collected packages: compressai
+Successfully installed compressai-1.2.8
