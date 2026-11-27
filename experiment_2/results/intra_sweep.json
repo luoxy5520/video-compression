@@ -1688,5 +1688,1019 @@
     ],
     "forward_decode_exact": true,
     "independent_process_decode": "covered by smoke for same architecture, not separately run for this checkpoint"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 128,
+    "steps": 1000,
+    "train_videos": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_paths": [
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+    ],
+    "development_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "development_group": "52d5195146b96e8c23a7dc8c296860249e893ea4f1222470348ef8658f8244b3",
+    "scope": "historical development; not independent holdout",
+    "actual_bytes": 44195,
+    "mse": 0.08546115458011627,
+    "streams": [
+      {
+        "bytes": 6771,
+        "main_bytes": 6308,
+        "hyper_bytes": 168,
+        "metadata_bytes": 295,
+        "sha256": "b61752ccce18f15e269631f22f975fe9ad2018c93bf4f1bdaf93bc65f94ced10"
+      },
+      {
+        "bytes": 8779,
+        "main_bytes": 8300,
+        "hyper_bytes": 184,
+        "metadata_bytes": 295,
+        "sha256": "16c2615b6f7119868f4ef603c39c620a59a2a4ec22a7e86dc5b2e8a0625a6871"
+      },
+      {
+        "bytes": 9251,
+        "main_bytes": 8756,
+        "hyper_bytes": 200,
+        "metadata_bytes": 295,
+        "sha256": "7307fc6ebf5b0663658c9b45e7d19df186a8d468bc29e3d37ee6122dc637fe06"
+      },
+      {
+        "bytes": 9799,
+        "main_bytes": 9292,
+        "hyper_bytes": 212,
+        "metadata_bytes": 295,
+        "sha256": "9bace3a5e055839e5a081eafa4ebeb8853902975885a18e8bf9901715fba96fb"
+      },
+      {
+        "bytes": 9595,
+        "main_bytes": 9096,
+        "hyper_bytes": 204,
+        "metadata_bytes": 295,
+        "sha256": "bd37f3b09fe4ef23e23f1a825a8a4f4aaacf713b76398278d266aab53b3f74d2"
+      }
+    ],
+    "checkpoint_sha256": "9a446cda23af1cb668c8e384154e842ef002d0b31a03010e67eb4a0f343ce102",
+    "checkpoint_bytes": 1137687,
+    "train_seconds": 18.43819124996662,
+    "peak_gpu_bytes": 100532224,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 79.585205078125,
+        "mse": 0.6156353950500488,
+        "estimated_bits_per_element": 0.7838712930679321,
+        "aux": 1318.6676025390625
+      },
+      {
+        "step": 100,
+        "loss": 27.10175323486328,
+        "mse": 0.20430581271648407,
+        "estimated_bits_per_element": 0.9506083130836487,
+        "aux": 1268.766845703125
+      },
+      {
+        "step": 200,
+        "loss": 26.20789909362793,
+        "mse": 0.19767601788043976,
+        "estimated_bits_per_element": 0.9053695797920227,
+        "aux": 1191.0809326171875
+      },
+      {
+        "step": 300,
+        "loss": 28.497356414794922,
+        "mse": 0.21634270250797272,
+        "estimated_bits_per_element": 0.8054913878440857,
+        "aux": 1094.054443359375
+      },
+      {
+        "step": 400,
+        "loss": 19.713903427124023,
+        "mse": 0.14818835258483887,
+        "estimated_bits_per_element": 0.7457942962646484,
+        "aux": 961.708984375
+      },
+      {
+        "step": 500,
+        "loss": 13.831406593322754,
+        "mse": 0.10263016074895859,
+        "estimated_bits_per_element": 0.6947461366653442,
+        "aux": 812.0477294921875
+      },
+      {
+        "step": 600,
+        "loss": 9.510807037353516,
+        "mse": 0.06893246620893478,
+        "estimated_bits_per_element": 0.6874510049819946,
+        "aux": 661.9496459960938
+      },
+      {
+        "step": 700,
+        "loss": 18.21402931213379,
+        "mse": 0.13641700148582458,
+        "estimated_bits_per_element": 0.7526534795761108,
+        "aux": 505.89447021484375
+      },
+      {
+        "step": 800,
+        "loss": 21.19425392150879,
+        "mse": 0.15934550762176514,
+        "estimated_bits_per_element": 0.7980285882949829,
+        "aux": 348.78790283203125
+      },
+      {
+        "step": 900,
+        "loss": 16.19113540649414,
+        "mse": 0.12116055190563202,
+        "estimated_bits_per_element": 0.6825839281082153,
+        "aux": 207.63363647460938
+      },
+      {
+        "step": 999,
+        "loss": 10.047369003295898,
+        "mse": 0.07325207442045212,
+        "estimated_bits_per_element": 0.6711037158966064,
+        "aux": 188.13523864746094
+      }
+    ],
+    "forward_decode_exact": true,
+    "independent_process_decode": "covered by smoke for same architecture, not separately run for this checkpoint"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 128,
+    "steps": 1000,
+    "train_videos": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_paths": [
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+    ],
+    "development_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "development_group": "d539983b22f8084ed4c9d96fc02f723d528407eca4aab345e8ab62cdab1f7e55",
+    "scope": "historical development; not independent holdout",
+    "actual_bytes": 43731,
+    "mse": 0.13021622598171234,
+    "streams": [
+      {
+        "bytes": 6195,
+        "main_bytes": 5768,
+        "hyper_bytes": 132,
+        "metadata_bytes": 295,
+        "sha256": "89676b3b1d4dce05028c3be5bba60ed02f40bde3914583538ead74c8008e1ae8"
+      },
+      {
+        "bytes": 8771,
+        "main_bytes": 8292,
+        "hyper_bytes": 184,
+        "metadata_bytes": 295,
+        "sha256": "5ed9402cb288dbf8ebbd49ef7bd0ab16d017f7e3856936d177760ac4fa7695a2"
+      },
+      {
+        "bytes": 9183,
+        "main_bytes": 8684,
+        "hyper_bytes": 204,
+        "metadata_bytes": 295,
+        "sha256": "79ac68701469f715bc6c9a43a241ae69792f68347057584823028827446abd6e"
+      },
+      {
+        "bytes": 9499,
+        "main_bytes": 9004,
+        "hyper_bytes": 200,
+        "metadata_bytes": 295,
+        "sha256": "c05f13705c7ba34900861942d76c3e53d0dc0fbb7583dcab4089c61ffdd46b4a"
+      },
+      {
+        "bytes": 10083,
+        "main_bytes": 9592,
+        "hyper_bytes": 196,
+        "metadata_bytes": 295,
+        "sha256": "4d46dbe312b20f2814ebe0321b9bd7d7611ae1c596c217c2ed7c2a71cdac760a"
+      }
+    ],
+    "checkpoint_sha256": "9a446cda23af1cb668c8e384154e842ef002d0b31a03010e67eb4a0f343ce102",
+    "checkpoint_bytes": 1137687,
+    "train_seconds": 18.43819124996662,
+    "peak_gpu_bytes": 100532224,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 79.585205078125,
+        "mse": 0.6156353950500488,
+        "estimated_bits_per_element": 0.7838712930679321,
+        "aux": 1318.6676025390625
+      },
+      {
+        "step": 100,
+        "loss": 27.10175323486328,
+        "mse": 0.20430581271648407,
+        "estimated_bits_per_element": 0.9506083130836487,
+        "aux": 1268.766845703125
+      },
+      {
+        "step": 200,
+        "loss": 26.20789909362793,
+        "mse": 0.19767601788043976,
+        "estimated_bits_per_element": 0.9053695797920227,
+        "aux": 1191.0809326171875
+      },
+      {
+        "step": 300,
+        "loss": 28.497356414794922,
+        "mse": 0.21634270250797272,
+        "estimated_bits_per_element": 0.8054913878440857,
+        "aux": 1094.054443359375
+      },
+      {
+        "step": 400,
+        "loss": 19.713903427124023,
+        "mse": 0.14818835258483887,
+        "estimated_bits_per_element": 0.7457942962646484,
+        "aux": 961.708984375
+      },
+      {
+        "step": 500,
+        "loss": 13.831406593322754,
+        "mse": 0.10263016074895859,
+        "estimated_bits_per_element": 0.6947461366653442,
+        "aux": 812.0477294921875
+      },
+      {
+        "step": 600,
+        "loss": 9.510807037353516,
+        "mse": 0.06893246620893478,
+        "estimated_bits_per_element": 0.6874510049819946,
+        "aux": 661.9496459960938
+      },
+      {
+        "step": 700,
+        "loss": 18.21402931213379,
+        "mse": 0.13641700148582458,
+        "estimated_bits_per_element": 0.7526534795761108,
+        "aux": 505.89447021484375
+      },
+      {
+        "step": 800,
+        "loss": 21.19425392150879,
+        "mse": 0.15934550762176514,
+        "estimated_bits_per_element": 0.7980285882949829,
+        "aux": 348.78790283203125
+      },
+      {
+        "step": 900,
+        "loss": 16.19113540649414,
+        "mse": 0.12116055190563202,
+        "estimated_bits_per_element": 0.6825839281082153,
+        "aux": 207.63363647460938
+      },
+      {
+        "step": 999,
+        "loss": 10.047369003295898,
+        "mse": 0.07325207442045212,
+        "estimated_bits_per_element": 0.6711037158966064,
+        "aux": 188.13523864746094
+      }
+    ],
+    "forward_decode_exact": true,
+    "independent_process_decode": "covered by smoke for same architecture, not separately run for this checkpoint"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 1024,
+    "steps": 1000,
+    "train_videos": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_paths": [
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+    ],
+    "development_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "development_group": "52d5195146b96e8c23a7dc8c296860249e893ea4f1222470348ef8658f8244b3",
+    "scope": "historical development; not independent holdout",
+    "actual_bytes": 53246,
+    "mse": 0.07594660669565201,
+    "streams": [
+      {
+        "bytes": 8463,
+        "main_bytes": 7944,
+        "hyper_bytes": 224,
+        "metadata_bytes": 295,
+        "sha256": "ce2126aaaf30697d4d18462157786dac32d549aa1c63d5f07b03c33761ff8b67"
+      },
+      {
+        "bytes": 10483,
+        "main_bytes": 9984,
+        "hyper_bytes": 204,
+        "metadata_bytes": 295,
+        "sha256": "f17953d2c9eb138b8f7a2a1609c907d4a3ca474a0a40758c8ebe603d6c69111d"
+      },
+      {
+        "bytes": 11144,
+        "main_bytes": 10616,
+        "hyper_bytes": 232,
+        "metadata_bytes": 296,
+        "sha256": "94018b1b65fb7a23ed7a7423d73926de9da56826b7d4c7f3ccb2fbbeb24f43c5"
+      },
+      {
+        "bytes": 11576,
+        "main_bytes": 11028,
+        "hyper_bytes": 252,
+        "metadata_bytes": 296,
+        "sha256": "b6614066ca75186c3c51224bb93eeeee861b159b73f87e1fb213a1bfcf0ca380"
+      },
+      {
+        "bytes": 11580,
+        "main_bytes": 11048,
+        "hyper_bytes": 236,
+        "metadata_bytes": 296,
+        "sha256": "c177727fdfd373553a1ffe1cf5a55f502f384dac9cb168c62e9dc39afaabb2c0"
+      }
+    ],
+    "checkpoint_sha256": "75b9b1cd994f75a047f102b2b361c4e8de372ceee77be93f67940b22d280af4a",
+    "checkpoint_bytes": 1137736,
+    "train_seconds": 13.450094452127814,
+    "peak_gpu_bytes": 100532224,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 631.1945190429688,
+        "mse": 0.6156353950500488,
+        "estimated_bits_per_element": 0.7838712930679321,
+        "aux": 1318.678466796875
+      },
+      {
+        "step": 100,
+        "loss": 204.99876403808594,
+        "mse": 0.19924460351467133,
+        "estimated_bits_per_element": 0.9722835421562195,
+        "aux": 1270.1597900390625
+      },
+      {
+        "step": 200,
+        "loss": 196.2008056640625,
+        "mse": 0.19074788689613342,
+        "estimated_bits_per_element": 0.8749743700027466,
+        "aux": 1196.893310546875
+      },
+      {
+        "step": 300,
+        "loss": 191.918701171875,
+        "mse": 0.18659715354442596,
+        "estimated_bits_per_element": 0.8432204723358154,
+        "aux": 1102.5823974609375
+      },
+      {
+        "step": 400,
+        "loss": 133.38568115234375,
+        "mse": 0.12945912778377533,
+        "estimated_bits_per_element": 0.8195273280143738,
+        "aux": 962.068603515625
+      },
+      {
+        "step": 500,
+        "loss": 144.528564453125,
+        "mse": 0.14046911895275116,
+        "estimated_bits_per_element": 0.6881795525550842,
+        "aux": 824.305419921875
+      },
+      {
+        "step": 600,
+        "loss": 72.86762237548828,
+        "mse": 0.07037486135959625,
+        "estimated_bits_per_element": 0.8037622570991516,
+        "aux": 678.0902099609375
+      },
+      {
+        "step": 700,
+        "loss": 184.97901916503906,
+        "mse": 0.1798570603132248,
+        "estimated_bits_per_element": 0.8053967952728271,
+        "aux": 550.2269287109375
+      },
+      {
+        "step": 800,
+        "loss": 108.91988372802734,
+        "mse": 0.10563064366579056,
+        "estimated_bits_per_element": 0.754107654094696,
+        "aux": 412.473876953125
+      },
+      {
+        "step": 900,
+        "loss": 75.6895751953125,
+        "mse": 0.07320485264062881,
+        "estimated_bits_per_element": 0.7278026938438416,
+        "aux": 288.9320068359375
+      },
+      {
+        "step": 999,
+        "loss": 65.8302230834961,
+        "mse": 0.06353869289159775,
+        "estimated_bits_per_element": 0.7665998935699463,
+        "aux": 197.31130981445312
+      }
+    ],
+    "forward_decode_exact": true,
+    "independent_process_decode": "covered by smoke for same architecture, not separately run for this checkpoint"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 1024,
+    "steps": 1000,
+    "train_videos": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_paths": [
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+    ],
+    "development_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "development_group": "d539983b22f8084ed4c9d96fc02f723d528407eca4aab345e8ab62cdab1f7e55",
+    "scope": "historical development; not independent holdout",
+    "actual_bytes": 49257,
+    "mse": 0.13619205355644226,
+    "streams": [
+      {
+        "bytes": 7363,
+        "main_bytes": 6860,
+        "hyper_bytes": 208,
+        "metadata_bytes": 295,
+        "sha256": "e4326c41b9bae746f644188fce5bf6792881b14007d3268eaa43f66d9cdb2e43"
+      },
+      {
+        "bytes": 9783,
+        "main_bytes": 9244,
+        "hyper_bytes": 244,
+        "metadata_bytes": 295,
+        "sha256": "813393c85ca6f670b3d7efb582bc1923703659c19342be0d50f4234d102b66f4"
+      },
+      {
+        "bytes": 10115,
+        "main_bytes": 9600,
+        "hyper_bytes": 220,
+        "metadata_bytes": 295,
+        "sha256": "7ab7bc107a7afb3e3d69c3b3e70198c4b09ebc2ea480fb9c9e5661f4d337d957"
+      },
+      {
+        "bytes": 10784,
+        "main_bytes": 10272,
+        "hyper_bytes": 216,
+        "metadata_bytes": 296,
+        "sha256": "c5c9881abeb521852c014edc4372ae2dbd238634063758972b103f54023e86c8"
+      },
+      {
+        "bytes": 11212,
+        "main_bytes": 10704,
+        "hyper_bytes": 212,
+        "metadata_bytes": 296,
+        "sha256": "e083bb2c9b05cc6e1b6d3d0e4af54be2a24cb6fd4570abbd4ade815c06219eae"
+      }
+    ],
+    "checkpoint_sha256": "75b9b1cd994f75a047f102b2b361c4e8de372ceee77be93f67940b22d280af4a",
+    "checkpoint_bytes": 1137736,
+    "train_seconds": 13.450094452127814,
+    "peak_gpu_bytes": 100532224,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 631.1945190429688,
+        "mse": 0.6156353950500488,
+        "estimated_bits_per_element": 0.7838712930679321,
+        "aux": 1318.678466796875
+      },
+      {
+        "step": 100,
+        "loss": 204.99876403808594,
+        "mse": 0.19924460351467133,
+        "estimated_bits_per_element": 0.9722835421562195,
+        "aux": 1270.1597900390625
+      },
+      {
+        "step": 200,
+        "loss": 196.2008056640625,
+        "mse": 0.19074788689613342,
+        "estimated_bits_per_element": 0.8749743700027466,
+        "aux": 1196.893310546875
+      },
+      {
+        "step": 300,
+        "loss": 191.918701171875,
+        "mse": 0.18659715354442596,
+        "estimated_bits_per_element": 0.8432204723358154,
+        "aux": 1102.5823974609375
+      },
+      {
+        "step": 400,
+        "loss": 133.38568115234375,
+        "mse": 0.12945912778377533,
+        "estimated_bits_per_element": 0.8195273280143738,
+        "aux": 962.068603515625
+      },
+      {
+        "step": 500,
+        "loss": 144.528564453125,
+        "mse": 0.14046911895275116,
+        "estimated_bits_per_element": 0.6881795525550842,
+        "aux": 824.305419921875
+      },
+      {
+        "step": 600,
+        "loss": 72.86762237548828,
+        "mse": 0.07037486135959625,
+        "estimated_bits_per_element": 0.8037622570991516,
+        "aux": 678.0902099609375
+      },
+      {
+        "step": 700,
+        "loss": 184.97901916503906,
+        "mse": 0.1798570603132248,
+        "estimated_bits_per_element": 0.8053967952728271,
+        "aux": 550.2269287109375
+      },
+      {
+        "step": 800,
+        "loss": 108.91988372802734,
+        "mse": 0.10563064366579056,
+        "estimated_bits_per_element": 0.754107654094696,
+        "aux": 412.473876953125
+      },
+      {
+        "step": 900,
+        "loss": 75.6895751953125,
+        "mse": 0.07320485264062881,
+        "estimated_bits_per_element": 0.7278026938438416,
+        "aux": 288.9320068359375
+      },
+      {
+        "step": 999,
+        "loss": 65.8302230834961,
+        "mse": 0.06353869289159775,
+        "estimated_bits_per_element": 0.7665998935699463,
+        "aux": 197.31130981445312
+      }
+    ],
+    "forward_decode_exact": true,
+    "independent_process_decode": "covered by smoke for same architecture, not separately run for this checkpoint"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 8192,
+    "steps": 1000,
+    "train_videos": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_paths": [
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+    ],
+    "development_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "development_group": "52d5195146b96e8c23a7dc8c296860249e893ea4f1222470348ef8658f8244b3",
+    "scope": "historical development; not independent holdout",
+    "actual_bytes": 53018,
+    "mse": 0.07621090114116669,
+    "streams": [
+      {
+        "bytes": 8539,
+        "main_bytes": 8000,
+        "hyper_bytes": 244,
+        "metadata_bytes": 295,
+        "sha256": "46bfb8e67b69f42d6c56c5b1acd9c13e74695b14c572fba7b3ba966d4573c85a"
+      },
+      {
+        "bytes": 10503,
+        "main_bytes": 9952,
+        "hyper_bytes": 256,
+        "metadata_bytes": 295,
+        "sha256": "52eda31311c799051edc0f41173fefd4f9097650c45b1ff886c5297b0d288b60"
+      },
+      {
+        "bytes": 11020,
+        "main_bytes": 10448,
+        "hyper_bytes": 276,
+        "metadata_bytes": 296,
+        "sha256": "341c597266fb963c27933bcfcd61ffbe75398fa4ce852e2c76102f008492922f"
+      },
+      {
+        "bytes": 11480,
+        "main_bytes": 10888,
+        "hyper_bytes": 296,
+        "metadata_bytes": 296,
+        "sha256": "a1a845c75fb7406fb801d025f901dca56253d3f665e4bd2498a8522d128204ef"
+      },
+      {
+        "bytes": 11476,
+        "main_bytes": 10896,
+        "hyper_bytes": 284,
+        "metadata_bytes": 296,
+        "sha256": "4b7d137d83afe5d13ac28f987c267898749b939dd911c9e33f472e27f0ee098f"
+      }
+    ],
+    "checkpoint_sha256": "5592618af8a90f492fdb4d339f35a20e6b27557530b690bface781ba9342471a",
+    "checkpoint_bytes": 1137736,
+    "train_seconds": 14.173812388908118,
+    "peak_gpu_bytes": 100532224,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 5044.06884765625,
+        "mse": 0.6156353950500488,
+        "estimated_bits_per_element": 0.7838712930679321,
+        "aux": 1318.731689453125
+      },
+      {
+        "step": 100,
+        "loss": 1627.454833984375,
+        "mse": 0.19854451715946198,
+        "estimated_bits_per_element": 0.9781344532966614,
+        "aux": 1277.670166015625
+      },
+      {
+        "step": 200,
+        "loss": 1665.8465576171875,
+        "mse": 0.20324182510375977,
+        "estimated_bits_per_element": 0.8894658088684082,
+        "aux": 1220.8572998046875
+      },
+      {
+        "step": 300,
+        "loss": 1754.7723388671875,
+        "mse": 0.2141042798757553,
+        "estimated_bits_per_element": 0.8301085233688354,
+        "aux": 1148.404541015625
+      },
+      {
+        "step": 400,
+        "loss": 1268.7275390625,
+        "mse": 0.15477217733860016,
+        "estimated_bits_per_element": 0.8338567614555359,
+        "aux": 1047.8822021484375
+      },
+      {
+        "step": 500,
+        "loss": 737.1742553710938,
+        "mse": 0.0898890346288681,
+        "estimated_bits_per_element": 0.8033028841018677,
+        "aux": 935.489013671875
+      },
+      {
+        "step": 600,
+        "loss": 766.6011962890625,
+        "mse": 0.09348657727241516,
+        "estimated_bits_per_element": 0.7591745257377625,
+        "aux": 812.3323974609375
+      },
+      {
+        "step": 700,
+        "loss": 1114.169189453125,
+        "mse": 0.1358966827392578,
+        "estimated_bits_per_element": 0.9035214185714722,
+        "aux": 681.7430419921875
+      },
+      {
+        "step": 800,
+        "loss": 618.182861328125,
+        "mse": 0.07536034286022186,
+        "estimated_bits_per_element": 0.8309429883956909,
+        "aux": 562.7664794921875
+      },
+      {
+        "step": 900,
+        "loss": 525.376953125,
+        "mse": 0.06403443962335587,
+        "estimated_bits_per_element": 0.8068022131919861,
+        "aux": 442.51068115234375
+      },
+      {
+        "step": 999,
+        "loss": 471.4639587402344,
+        "mse": 0.05746269226074219,
+        "estimated_bits_per_element": 0.7295815348625183,
+        "aux": 327.9468994140625
+      }
+    ],
+    "forward_decode_exact": true,
+    "independent_process_decode": "covered by smoke for same architecture, not separately run for this checkpoint"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 8192,
+    "steps": 1000,
+    "train_videos": 16,
+    "train_groups": [
+      "fb0484c7e7d0df18f761ecc9ad3b08ef3b8a53148521dca84f61a6d9452dc3d3",
+      "882993e19faa4f26ec1722e3b722e0148a4185ef5b5a50a010dc4a666e5b9bae",
+      "7843d30cbcaa83e07f7890ffabd1aaf9741c0fd4e765a710422d461d69f49b10",
+      "b262f55cc7cac4d9eaeba70574ad744731fb475fb6ff07796106a4342ce75457",
+      "984b0c4bffa11613ea1fc82d18d584feddfcc0e01dbb44f0d8aa0df7ea7789f0",
+      "3fd79d4baf58704c84f7599347417402dfac1c2a78123c39791c52ca7635f64d",
+      "97ab993026da4ee07de5920a0e064ea397df895e7e93113867daca6399ea2500",
+      "697fd3f3169ddc8847a0c345cec895dfaf07e977a3547ee3b0865b81ab1533ea",
+      "248459d9468ae947560fee927909e6251510572678e7ee75cabffd3b731b3788",
+      "1d5093ba7cf1b8ea5b1ed2feabfec1b67e4af177a93328ff200081a476b50363",
+      "ceb7aefc58e4cdebb3a694f0bfc7e92fb587a4278f81f2f6d74c1d8d13039c45",
+      "520d08bfe18df2821d3d121572912204eaa4fbbdcdff705d4ad31622c78dca03",
+      "dd36aa11dfdbdff449e7373ed6eeb8d843991d29a677e08596381cfcca7f75ed",
+      "6bb693cea5d095d1331aa9ab65353a81340363dc2596f871301af95f17e0a4f1",
+      "4db34c1691ad19e7a12f18cad3e3807971a82774007a10c397961f8c2d333ca8",
+      "614d4727d0961dac206742a578c786f91009b9ec80350f58e6d473157173be27"
+    ],
+    "train_paths": [
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0001/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0002/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0003/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0004/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0005/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0006/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0007/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0008/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0009/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0010/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0011/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0012/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0013/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0014/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0015/final_latent.pt",
+      "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0016/final_latent.pt"
+    ],
+    "development_path": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "development_group": "d539983b22f8084ed4c9d96fc02f723d528407eca4aab345e8ab62cdab1f7e55",
+    "scope": "historical development; not independent holdout",
+    "actual_bytes": 53534,
+    "mse": 0.13654381036758423,
+    "streams": [
+      {
+        "bytes": 8495,
+        "main_bytes": 7984,
+        "hyper_bytes": 216,
+        "metadata_bytes": 295,
+        "sha256": "74e5bec77903e94413f6b14002d65c2dbdd428b31afc824ec157897993b68a41"
+      },
+      {
+        "bytes": 10211,
+        "main_bytes": 9664,
+        "hyper_bytes": 252,
+        "metadata_bytes": 295,
+        "sha256": "c4dafd6ba9765f076166edaac58b8ea63a91ef78c1baaab0cd85b3445cfa615e"
+      },
+      {
+        "bytes": 11052,
+        "main_bytes": 10496,
+        "hyper_bytes": 260,
+        "metadata_bytes": 296,
+        "sha256": "9a7d914db8b096491ba8fa01627c8f5b55565175dbd2e52b20b00ac716e2cad8"
+      },
+      {
+        "bytes": 11584,
+        "main_bytes": 11032,
+        "hyper_bytes": 256,
+        "metadata_bytes": 296,
+        "sha256": "3930367920783b87343e281e7ba3dacbad769e36581e2a847d2c6e8b02b6f642"
+      },
+      {
+        "bytes": 12192,
+        "main_bytes": 11636,
+        "hyper_bytes": 260,
+        "metadata_bytes": 296,
+        "sha256": "a2120749f2bc8d88fea226745a3c56543873b0f8db1ab0139cf1fca5e196ed7a"
+      }
+    ],
+    "checkpoint_sha256": "5592618af8a90f492fdb4d339f35a20e6b27557530b690bface781ba9342471a",
+    "checkpoint_bytes": 1137736,
+    "train_seconds": 14.173812388908118,
+    "peak_gpu_bytes": 100532224,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 5044.06884765625,
+        "mse": 0.6156353950500488,
+        "estimated_bits_per_element": 0.7838712930679321,
+        "aux": 1318.731689453125
+      },
+      {
+        "step": 100,
+        "loss": 1627.454833984375,
+        "mse": 0.19854451715946198,
+        "estimated_bits_per_element": 0.9781344532966614,
+        "aux": 1277.670166015625
+      },
+      {
+        "step": 200,
+        "loss": 1665.8465576171875,
+        "mse": 0.20324182510375977,
+        "estimated_bits_per_element": 0.8894658088684082,
+        "aux": 1220.8572998046875
+      },
+      {
+        "step": 300,
+        "loss": 1754.7723388671875,
+        "mse": 0.2141042798757553,
+        "estimated_bits_per_element": 0.8301085233688354,
+        "aux": 1148.404541015625
+      },
+      {
+        "step": 400,
+        "loss": 1268.7275390625,
+        "mse": 0.15477217733860016,
+        "estimated_bits_per_element": 0.8338567614555359,
+        "aux": 1047.8822021484375
+      },
+      {
+        "step": 500,
+        "loss": 737.1742553710938,
+        "mse": 0.0898890346288681,
+        "estimated_bits_per_element": 0.8033028841018677,
+        "aux": 935.489013671875
+      },
+      {
+        "step": 600,
+        "loss": 766.6011962890625,
+        "mse": 0.09348657727241516,
+        "estimated_bits_per_element": 0.7591745257377625,
+        "aux": 812.3323974609375
+      },
+      {
+        "step": 700,
+        "loss": 1114.169189453125,
+        "mse": 0.1358966827392578,
+        "estimated_bits_per_element": 0.9035214185714722,
+        "aux": 681.7430419921875
+      },
+      {
+        "step": 800,
+        "loss": 618.182861328125,
+        "mse": 0.07536034286022186,
+        "estimated_bits_per_element": 0.8309429883956909,
+        "aux": 562.7664794921875
+      },
+      {
+        "step": 900,
+        "loss": 525.376953125,
+        "mse": 0.06403443962335587,
+        "estimated_bits_per_element": 0.8068022131919861,
+        "aux": 442.51068115234375
+      },
+      {
+        "step": 999,
+        "loss": 471.4639587402344,
+        "mse": 0.05746269226074219,
+        "estimated_bits_per_element": 0.7295815348625183,
+        "aux": 327.9468994140625
+      }
+    ],
+    "forward_decode_exact": true,
+    "independent_process_decode": "covered by smoke for same architecture, not separately run for this checkpoint"
   }
 ]

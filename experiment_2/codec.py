@@ -1,4 +1,4 @@
-"""E2 original minimal adaptation; CompressAI 1.2.8 entropy APIs (BSD-3-Clause).
+"""E2 original minimal adaptation; CompressAI 1.2.8 entropy APIs (BSD-3-Clause-Clear).
 Not an implementation of complete GNVC-VD / GLVC / ELIC / DCVC.
 """
 import hashlib, json, struct

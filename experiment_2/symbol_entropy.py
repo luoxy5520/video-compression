@@ -1,5 +1,5 @@
 """I1 learned channel Gaussian, identical E1 channel-max quantized symbols.
-Original experiment glue; CompressAI GaussianConditional API, BSD-3-Clause.
+Original experiment glue; CompressAI GaussianConditional API, BSD-3-Clause-Clear.
 """
 import json,struct,hashlib,sys,subprocess,time
 from pathlib import Path

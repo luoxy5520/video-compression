@@ -1,0 +1,6 @@
+test_real_stream_and_checkpoint_odd_shapes (test_stream.StreamTests.test_real_stream_and_checkpoint_odd_shapes) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.134s
+
+OK

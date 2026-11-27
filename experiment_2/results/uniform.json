@@ -1,0 +1,114 @@
+[
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "bits": 2,
+    "total_bytes": 22597,
+    "header_bytes": 840,
+    "payload_bytes": 21757,
+    "latent_mse": 0.5129762291908264
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "bits": 3,
+    "total_bytes": 72775,
+    "header_bytes": 843,
+    "payload_bytes": 71932,
+    "latent_mse": 0.057195596396923065
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "bits": 4,
+    "total_bytes": 122698,
+    "header_bytes": 853,
+    "payload_bytes": 121845,
+    "latent_mse": 0.010886186733841896
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "bits": 5,
+    "total_bytes": 242979,
+    "header_bytes": 858,
+    "payload_bytes": 242121,
+    "latent_mse": 0.002373035531491041
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "bits": 6,
+    "total_bytes": 329484,
+    "header_bytes": 860,
+    "payload_bytes": 328624,
+    "latent_mse": 0.0005554634844884276
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "bits": 7,
+    "total_bytes": 429417,
+    "header_bytes": 866,
+    "payload_bytes": 428551,
+    "latent_mse": 0.00013456765736918896
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "bits": 8,
+    "total_bytes": 466513,
+    "header_bytes": 870,
+    "payload_bytes": 465643,
+    "latent_mse": 3.323214696138166e-05
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "bits": 2,
+    "total_bytes": 25028,
+    "header_bytes": 838,
+    "payload_bytes": 24190,
+    "latent_mse": 0.5866204500198364
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "bits": 3,
+    "total_bytes": 98217,
+    "header_bytes": 841,
+    "payload_bytes": 97376,
+    "latent_mse": 0.08575444668531418
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "bits": 4,
+    "total_bytes": 152004,
+    "header_bytes": 852,
+    "payload_bytes": 151152,
+    "latent_mse": 0.01568266935646534
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "bits": 5,
+    "total_bytes": 287012,
+    "header_bytes": 852,
+    "payload_bytes": 286160,
+    "latent_mse": 0.003411687444895506
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "bits": 6,
+    "total_bytes": 347861,
+    "header_bytes": 856,
+    "payload_bytes": 347005,
+    "latent_mse": 0.000799863541033119
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "bits": 7,
+    "total_bytes": 435441,
+    "header_bytes": 864,
+    "payload_bytes": 434577,
+    "latent_mse": 0.00019339792197570205
+  },
+  {
+    "sample": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "bits": 8,
+    "total_bytes": 449312,
+    "header_bytes": 870,
+    "payload_bytes": 448442,
+    "latent_mse": 4.777624781127088e-05
+  }
+]

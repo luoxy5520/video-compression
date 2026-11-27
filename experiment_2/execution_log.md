@@ -19,3 +19,9 @@
 - `evaluate_smoke.py`: initial namespace import conflict fixed; frozen VAE decode on GPU1, native scale normalization. No encoder VAE use.
 - `train_intra.py`: eight short runs, I2/I3 × lambda16/128/1024/8192, 1000 steps each, 16 training videos, 2 separate historical development groups, separate auxiliary optimizer, gradient clipping.
 - `baseline.py`: full INT2–INT8 actual-file baseline, no large manual channel search.
+
+- All eight short-training configurations completed; evaluate_intra.py completed 30 pixel rows (14 Uniform, 16 learned). Representative first slice of every learned checkpoint decoded in a separate process; all passed.
+- `python -m unittest discover -s experiment_2/tests -v`: PASS including both I2/I3 at61x105, checkpoint reloading, model mismatch, truncation and bit corruption.
+- summarize.py: initial plotting dependency absent; installed fixed plotting dependencies only into E2. Final summary PASS, 30 pixel rows, 8 training runs, 14 within-support diagnostic interpolations.
+- Source snapshots synchronized and verified: DCVC cbdae87a5445114cdc7f48816da63ea80bdeac40; CompressAI 79e51871e972c517bc528b689ccf15137fcc7785. Corrected CompressAI license name to BSD-3-Clause-Clear from its pyproject.toml.
+- Stop at intra decision gate for this resumed run: short-model curves are not monotonic and no converged matched-rate operating point is selected; P-stage complexity and VAE-aware training remain NOT RUN. All launched work completed; no background training left running.

@@ -9,3 +9,5 @@ Isolation: `python3 -m venv --without-pip .venv`; `.venv/lib/python3.12/site-pac
 Pinned new dependencies: compressai1.2.8, scipy1.14.1, scikit-learn1.5.2, torch-geometric2.6.1, pytorch-msssim1.0.0; full effective freeze in requirements-lock.txt after installation. Initial latest scipy1.18.1 failed against inherited numpy1.26.4; compatibility pin fixed import. ensurepip unavailable, avoided system apt/sudo.
 
 Official sources obtained via local SSH GitHub clones and synced separately, because server HTTPS clone stalled. No models or datasets downloaded. DCVC extensions not built; CompressAI precompiled rANS backend import succeeded.
+
+Resume: official source snapshots now fully present under third_party/DCVC-reference and CompressAI-reference, HEADs verified. Added pinned matplotlib3.9.4 and its plotting dependencies in E2 only; regenerated full effective lock. Other library versions and core Wan environment unchanged.

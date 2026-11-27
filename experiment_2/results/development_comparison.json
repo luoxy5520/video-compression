@@ -1,0 +1,142 @@
+[
+  {
+    "kind": "I2",
+    "lambda_z": 16,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 28488,
+    "psnr_y": 25.131383910446825,
+    "uniform_lograte_interpolated_psnr_y": 19.475679134242778,
+    "diagnostic_delta_db": 5.655704776204047,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I2",
+    "lambda_z": 16,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 26292,
+    "psnr_y": 16.872053447116436,
+    "uniform_lograte_interpolated_psnr_y": 15.57681213701802,
+    "diagnostic_delta_db": 1.2952413100984153,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I2",
+    "lambda_z": 128,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 51851,
+    "psnr_y": 25.084008199014214,
+    "uniform_lograte_interpolated_psnr_y": 26.2653320244873,
+    "diagnostic_delta_db": -1.1813238254730862,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I2",
+    "lambda_z": 128,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 49279,
+    "psnr_y": 15.982688036765794,
+    "uniform_lograte_interpolated_psnr_y": 17.67602597810516,
+    "diagnostic_delta_db": -1.6933379413393652,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I2",
+    "lambda_z": 1024,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 58556,
+    "psnr_y": 25.421230294303953,
+    "uniform_lograte_interpolated_psnr_y": 27.644021686903873,
+    "diagnostic_delta_db": -2.2227913925999196,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I2",
+    "lambda_z": 1024,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 50815,
+    "psnr_y": 16.901018699539406,
+    "uniform_lograte_interpolated_psnr_y": 17.77858715057957,
+    "diagnostic_delta_db": -0.8775684510401618,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I2",
+    "lambda_z": 8192,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 50551,
+    "psnr_y": 22.372170384601446,
+    "uniform_lograte_interpolated_psnr_y": 25.977467711539926,
+    "diagnostic_delta_db": -3.60529732693848,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I2",
+    "lambda_z": 8192,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 53048,
+    "psnr_y": 16.679256920971206,
+    "uniform_lograte_interpolated_psnr_y": 17.922288385654415,
+    "diagnostic_delta_db": -1.2430314646832095,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 128,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 44195,
+    "psnr_y": 25.08662481321728,
+    "uniform_lograte_interpolated_psnr_y": 24.45409787353872,
+    "diagnostic_delta_db": 0.6325269396785593,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 128,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 43731,
+    "psnr_y": 17.00307331364461,
+    "uniform_lograte_interpolated_psnr_y": 17.276919847446184,
+    "diagnostic_delta_db": -0.2738465338015743,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 1024,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 53246,
+    "psnr_y": 24.568307117449173,
+    "uniform_lograte_interpolated_psnr_y": 26.566312952937373,
+    "diagnostic_delta_db": -1.9980058354882004,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 1024,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 49257,
+    "psnr_y": 16.439321723327208,
+    "uniform_lograte_interpolated_psnr_y": 17.674533893421415,
+    "diagnostic_delta_db": -1.2352121700942078,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 8192,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 53018,
+    "psnr_y": 23.345928843959165,
+    "uniform_lograte_interpolated_psnr_y": 26.517663390811993,
+    "diagnostic_delta_db": -3.1717345468528286,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  },
+  {
+    "kind": "I3",
+    "lambda_z": 8192,
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 53534,
+    "psnr_y": 16.49854748180686,
+    "uniform_lograte_interpolated_psnr_y": 17.952761800685884,
+    "diagnostic_delta_db": -1.4542143188790249,
+    "scope": "sparse Uniform-curve interpolation, NOT measured equal-rate comparison"
+  }
+]
