@@ -48,3 +48,5 @@
 - GPU0 now continues V2 middle from1000 to3000 steps; GPU1 trains V2 low1000, followed by high1000. Both GPUs report100% utilization. Existing unrelated services remain running.
 - Full18-video pool and final P2/P3 deployment profiling are queued, NOT RUN as of this update. Queue journals/status JSON distinguish active, waiting, failed and completed tasks. Server tmux execution continues through SSH/API interruptions.
 - Added fresh multi-QP H.264 pool references with explicit BT709, measured-support-only H.264 comparisons and coverage, plus unique per-video figure filenames across dataset sources. Dataset integrity audit passed42 train/18 historical development tensors with no exact hash or Prompt/Seed overlap. Sealed test files were not read.
+
+- CPU-only extended checkpoint audit now PASS:both20k checkpoints ×18 declared development videos=36 real-stream roundtrips; first slice of first video percheckpoint independently decoded. D16 mean311214.3Bytes/MSE0.000589926;D42 mean305865.9Bytes/MSE0.000548192. Pixel quality NOT MEASURED by this audit.

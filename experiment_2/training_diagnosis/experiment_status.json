@@ -2,12 +2,13 @@
   "E2.1a": "PASS: audit plus exact historical-forward regression",
   "E2.1b": "COMPLETE diagnosis: R1/R2/R3 random init belowINT6; same-shape R3 identity witness supports high-quality reconstruction; R4 not needed for capacity proof",
   "E2.1c": "PASS: O1 and five O2 real-stream single-video RD points",
-  "E2.1d": "ENHANCED: D16 middle20000 trained;D42 middle20000 running/awaiting verification; older results preserved",
-  "E2.1e": "RUNNING: V1/V2 middle1000 in progress; queued V2 middle3000 and low/high1000",
-  "E2.2": "TP0/1/2 plus same-capacity zero-history control complete on2 historical videos;P2 joint1500 complete and independently evaluated;P3 pixel-aware100 queued",
+  "E2.1d": "D16 and D42 middle20000 TRAINED; full historical development evaluation pending; earlier results preserved",
+  "E2.1e": "V1/V2 middle1000 COMPLETE and independently evaluated on2 diagnostic development videos; V2 middle3000 and low1000 RUNNING; high1000 queued",
+  "E2.2": "TP0/1/2 and zero-history control complete on2 videos; P2 joint1500 and P3 pixel100 COMPLETE with real independent decode; full18 evaluation queued",
   "independent_validation": "NOT AVAILABLE/CERTIFIED",
   "sealed_test": "NOT OPENED",
   "connection": "RESTORED after user confirmed VPN",
   "full_history_evaluation": "QUEUED:18 historical videos, freshUniform2-8, historical/extended I3,V1/V2,TP controls,P2/P3; no independent validation claim",
-  "training_continuity": "tmux e21-enhanced-gpu0/gpu1; atomic checkpoints and bounded prerequisite waits survive SSH/API quota interruptions"
+  "training_continuity": "tmux e21-enhanced-gpu0/gpu1; atomic checkpoints and bounded prerequisite waits survive SSH/API quota interruptions",
+  "status_updated": "2026-11-27T23:11:00+08:00"
 }

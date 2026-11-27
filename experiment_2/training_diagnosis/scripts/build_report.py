@@ -19,6 +19,10 @@ if controls:lines.append(f"TP2相对TP0平均节省 {100*statistics.mean(float(r
 lines+=['', '10. **Temporal Prior计算开销？** CPU路径提供一次预热、五次正式编解码/概率头/rANS计时。GPU起点混合部署在下表另列，CPU概率计算保证两端一致。编码原型包含主符号round-trip验证开销，尚非极致优化实现。','', '11. **当前可部署候选？** I3、V1/V2、TP2、P2及P3均保留真实码流、部署权重和独立解码证据。根据实际码率区间选择Pareto点；不将单个高画质点称为全码率最优。P2采用2切片到5切片的联合训练，P3为100步像素联合诊断，P3未宣称充分收敛。','', '12. **与Uniform/H.264的差距？** Uniform同码率/同质量表仅在实测Pareto支持内插值；超出支持的实测支配另表记录，不外推。H.264在全池现场多QP编码，正式时延在两个代表视频用实际相近画质QP重新测量；单端加速与两端总耗时分开。','', '13. **下一步？** 优先根据全池最差案例继续优化失真目标与概率模型，并优化CPU尺度索引、rANS接口/张量转换及验证开销。是否增加完整Context-conditioned Transform应由进一步消融决定；本轮未引入GAN、VideoDiT refinement、Token Pruning或DiT联合训练。','', '## 全历史开发池实测均值','', '| 配置 | 视频数 | Bytes | PSNR-Y | SSIM-RGB | Uniform同码率ΔdB | 有效比较视频数 |','|---|---:|---:|---:|---:|---:|---:|']
 for name,r in sm.items():
     c=cv[name];lines.append(f"| {name} | {r['videos']} | {r['mean_actual_bytes']:.1f} | {r['mean_psnr_y']:.3f} | {r['mean_SSIM_RGB']:.4f} | {fmt(c['mean_matched_rate_delta_db'])} | {c['matched_rate_videos']} |")
+lines+=['', '## 与现场 H.264 多 QP 曲线的比较','', '| 配置 | 同码率 ΔPSNR-Y/dB | 有效视频数 | 同质量节省比例 | 有效视频数 |','|---|---:|---:|---:|---:|']
+for c in pool.get('h264_coverage',[]):
+    lines.append(f"| {c['method']} | {fmt(c['mean_matched_rate_delta_db'])} | {c['matched_rate_videos']} | {fmt(c['mean_matched_quality_saving'],4)} | {c['matched_quality_videos']} |")
+lines+=['', '以上仅在各视频实测 Pareto 曲线范围内进行 log(Bytes) 线性插值，不外推；不同配置的有效比较视频子集可能不同，不能仅按这些均值给出全池排名。正节省表示编码器字节更少，负值表示字节更多。这些插值结果也不代表正式时延测试的两个实际 QP 恰好等画质。']
 lines+=['', '以上配置—视频行不是独立样本数；有效视频与覆盖率以coverage.csv为准。相同视频切片未跨训练/开发集合。SSIM采用RGB8-bit、data_range255、17帧平均；末四帧PSNR沿用E1的逐帧PSNR平均口径。','', '## 相近画质的实际GPU起点性能','', '| 配置/视频 | Codec Bytes/PSNR-Y | H.264 Bytes/PSNR-Y | 编码端加速比 | 画质在±0.5dB内 |','|---|---|---|---:|---|']
 for r in perf:
     h=r['h264_selected'];lines.append(f"| {r['model']}/{Path(r['video']).parent.name} | {r['actual_bytes']}/{r['quality']['psnr_y']:.3f} | {h['bytes']}/{h['psnr_y']:.3f} | {fmt(r['encoder_speed_ratio'])} | {r['within_quality_tolerance']} |")
