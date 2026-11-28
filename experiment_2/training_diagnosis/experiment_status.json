@@ -14,5 +14,8 @@
   "optional_unrun": "see final_report.md",
   "extension_execution": "RUNNING: isolated P2 1500 to10000, P3 100 to1000; next D42/20000 TP2/TP2Z5000 and all18 evaluation",
   "extension_started": "2026-11-28T11:25:37+08:00",
-  "previous_source_archive": "all39 source files verified against actual684-row run SHA256"
+  "previous_source_archive": "all39 source files verified against actual684-row run SHA256",
+  "extension_gpu0": "COMPLETE: P2joint10000 and D42fixedTP0/TP2/TP2Z5000;72 actual18-video rows",
+  "extension_gpu1": "RUNNING: P3pixel1000",
+  "d42_joint": "QUEUED/RUNNING: new42-video joint10000 phase; separate source and optimizer; see results/d42_joint_queue.json"
 }

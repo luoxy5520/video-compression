@@ -56,3 +56,6 @@
 - Fixed-symbol quality/latent equality verified over18 videos;TP2 savings5.00%,history-only gain4.55%.P2 versus Uniform matched-rate+1.582dB over18;versusH264 same-quality median byte ratio1.394,wins4/18.
 - Recovered all39 exact source files against actual-run hashes into source_snapshots/development_pool_20261128.
 - Started isolated P2 1500-to10000 and P3 100-to1000 at11:25 with optimizer/scheduler/RNG continuation. GPU0 then trains frozen D42/20000 TP2 and TP2Z5000. Eachlane finishes with all18 actual-stream/nativeVAE evaluation. Original artifacts preserved;core5 regressions PASS.
+
+- At11:41 GPU0 completed72 new real-stream/nativeVAE development evaluations. P2long10000:278098.1 meanBytes/38.5766dB,Uniform matched-rate+2.1842dB across18 (oldP2+1.5817). D42fixedTP2:291785.7 meanBytes/38.7252dB;same-container savings4.2687%,history-vs-zero4.5569%.
+- D42joint10000 new phase started11:41:59 from frozenD42/20000+TP2/5000. Source/checkpoint paths isolated,42 legal train videos,new optimizer intentionally initialized. GPU0 file lock serializes our training and future formal profiles. P3 continues onGPU1.

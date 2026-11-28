@@ -4,9 +4,9 @@ from temporal_entropy_model import load_temporal
 from rate_diagnostics import temporal_rates
 from pytorch_msssim import ssim
 import argparse
-p=argparse.ArgumentParser();p.add_argument('--lane',choices=['gpu0','gpu1'],required=True);a=p.parse_args()
-names=[('P2_long10000','P2'),('D42_temporal5000','TP0'),('D42_temporal5000','TP2'),('D42_temporal5000','TP2Z')] if a.lane=='gpu0' else [('P3_long1000','P3')]
-out=ROOT/'results/extension_evaluation'/a.lane;out.mkdir(parents=True,exist_ok=True)
+p=argparse.ArgumentParser();p.add_argument('--lane',choices=['gpu0','gpu1'],required=True);p.add_argument('--run',help='isolated folder:checkpoint basename');p.add_argument('--output-name');a=p.parse_args()
+names=[tuple(a.run.split(':'))] if a.run else [('P2_long10000','P2'),('D42_temporal5000','TP0'),('D42_temporal5000','TP2'),('D42_temporal5000','TP2Z')] if a.lane=='gpu0' else [('P3_long1000','P3')]
+out=ROOT/'results/extension_evaluation'/(a.output_name or a.lane);out.mkdir(parents=True,exist_ok=True)
 configs=[]
 for folder,mode in names:
     ck=ROOT/'checkpoints/extensions'/folder/(mode+'.pt');m,c=load_temporal(ck)

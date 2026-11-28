@@ -1,0 +1,6 @@
+{
+  "all_symbols_equal": true,
+  "all_latents_equal": true,
+  "integer_mean_cdf_translation": true,
+  "mean_rule": "k=round(predicted_mean); canonical q unchanged; internal rANS encodes q-k then adds k exactly"
+}

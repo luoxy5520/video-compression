@@ -4,9 +4,10 @@ Allows symbols/reconstructions to change; this is NOT a fixed-symbol ablation.
 from common import *
 from temporal_entropy_model import load_temporal
 import argparse
-p=argparse.ArgumentParser();p.add_argument('--steps',type=int,default=1500);p.add_argument('--run-name');p.add_argument('--initial-state',type=Path);a=p.parse_args()
-measurements=json.loads((ROOT/'results/E2_2/temporal_results.json').read_text());gains=[r['saving_fraction'] for r in measurements if r['mode']=='TP2'];assert sum(gains)/len(gains)>=.05
-source=ROOT/'checkpoints/temporal/TP2.pt';m,tc=load_temporal(source);basec=torch.load(ROOT/'checkpoints/D16_f1_seed20261127/step10000.pt',weights_only=False,map_location='cpu');records=[r for r in data() if r['path'] in basec['train_paths']];xdata=[tensor(r).cuda() for r in records];m=m.cuda();m.base.requires_grad_(True);torch.manual_seed(20261127)
+p=argparse.ArgumentParser();p.add_argument('--steps',type=int,default=1500);p.add_argument('--run-name');p.add_argument('--initial-state',type=Path);p.add_argument('--source-checkpoint',type=Path);p.add_argument('--base-checkpoint',type=Path);a=p.parse_args()
+measurements_path=ROOT/'results/extensions'/a.source_checkpoint.parent.name/'temporal_results.json' if a.source_checkpoint else ROOT/'results/E2_2/temporal_results.json'
+measurements=json.loads(measurements_path.read_text());gains=[r['saving_fraction'] for r in measurements if r['mode']=='TP2'];assert sum(gains)/len(gains)>=.05
+source=a.source_checkpoint or ROOT/'checkpoints/temporal/TP2.pt';m,tc=load_temporal(source);basec=torch.load(a.base_checkpoint or ROOT/'checkpoints/D16_f1_seed20261127/step10000.pt',weights_only=False,map_location='cpu');records=[r for r in data() if r['path'] in basec['train_paths']];assert len(records)==len(basec['train_paths']) and set(tc.get('train_paths',basec['train_paths']))==set(basec['train_paths']);xdata=[tensor(r).cuda() for r in records];m=m.cuda();m.base.requires_grad_(True);torch.manual_seed(20261127)
 baseparams=[p for n,p in m.base.named_parameters() if not n.endswith('.quantiles')];priorparams=list(m.predictor.parameters());main=baseparams+priorparams;opt=torch.optim.Adam([dict(params=baseparams,lr=1e-5),dict(params=priorparams,lr=1e-4)]);aux=torch.optim.Adam([m.base.eb.quantiles],lr=.001);sched=torch.optim.lr_scheduler.MultiStepLR(opt,[1000],gamma=.5)
 cks=ROOT/'checkpoints'/('extensions/'+a.run_name if a.run_name else 'temporal_joint');cks.mkdir(parents=True,exist_ok=True);out=ROOT/'results'/('extensions/'+a.run_name if a.run_name else 'E2_2/P2');out.mkdir(parents=True,exist_ok=True);latest=cks/'latest.pt';curve=[];start=0;elapsed=0;lam=basec['lambda_z']
 resume=latest if latest.exists() else a.initial_state

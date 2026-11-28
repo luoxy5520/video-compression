@@ -1,5 +1,6 @@
 {
-  "status": "RUNNING",
-  "step": 1000,
-  "target": 5000
+  "status": "COMPLETE",
+  "development_videos": 2,
+  "all_symbols_equal": true,
+  "all_latents_equal": true
 }

@@ -394,5 +394,203 @@
     "scope": "historical development; exact reconstructed latent equality establishes identical deterministic video reconstruction",
     "base_name": "D42_f1_seed20261127",
     "base_step": 20000
+  },
+  {
+    "mode": "TP2Z",
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 289940,
+    "saving_fraction": 0.018147707916383093,
+    "metadata_bytes": 528,
+    "slices": [
+      {
+        "main": 51028,
+        "hyper": 1536,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 3.5590026527643204e-05,
+        "entropy_encode_seconds": 0.017342392820864916,
+        "index_seconds": 0.005368866957724094,
+        "reference_update_seconds": 2.35019251704216e-06
+      },
+      {
+        "main": 55224,
+        "hyper": 1504,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.003143827896565199,
+        "entropy_encode_seconds": 0.016701447777450085,
+        "index_seconds": 0.005358727183192968,
+        "reference_update_seconds": 3.79001721739769e-06
+      },
+      {
+        "main": 57544,
+        "hyper": 1648,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.0034437612630426884,
+        "entropy_encode_seconds": 0.016685417853295803,
+        "index_seconds": 0.006423872895538807,
+        "reference_update_seconds": 3.25031578540802e-06
+      },
+      {
+        "main": 58108,
+        "hyper": 1784,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.003986208699643612,
+        "entropy_encode_seconds": 0.017041349783539772,
+        "index_seconds": 0.005639750976115465,
+        "reference_update_seconds": 4.699919372797012e-06
+      },
+      {
+        "main": 59224,
+        "hyper": 1812,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.003767593763768673,
+        "entropy_encode_seconds": 0.017070969101041555,
+        "index_seconds": 0.005522894207388163,
+        "reference_update_seconds": 3.4300610423088074e-06
+      }
+    ],
+    "stream_sha256": "f6cee0713cab0650abe2bbcc82c5ae613357687f8450fb37d2d80233b5c4af55",
+    "deployment_sha256": "7be4c7ac441796864f22b16e39a5ff933add32152a66ef543e794b916a7b1391",
+    "deployment_bytes": 1268886,
+    "train_seconds": 66.01320051588118,
+    "canonical_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_decode": true,
+    "scope": "historical development; exact reconstructed latent equality establishes identical deterministic video reconstruction",
+    "base_name": "D42_f1_seed20261127",
+    "base_step": 20000
+  },
+  {
+    "mode": "TP2Z",
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 310192,
+    "saving_fraction": -0.009677135854227803,
+    "metadata_bytes": 528,
+    "slices": [
+      {
+        "main": 54208,
+        "hyper": 1324,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 3.518862649798393e-05,
+        "entropy_encode_seconds": 0.017110750079154968,
+        "index_seconds": 0.005216921214014292,
+        "reference_update_seconds": 2.299901098012924e-06
+      },
+      {
+        "main": 58508,
+        "hyper": 1420,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.0037635741755366325,
+        "entropy_encode_seconds": 0.017183588817715645,
+        "index_seconds": 0.005473605822771788,
+        "reference_update_seconds": 3.939960151910782e-06
+      },
+      {
+        "main": 61148,
+        "hyper": 1512,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.003628996666520834,
+        "entropy_encode_seconds": 0.01662771124392748,
+        "index_seconds": 0.0057356096804142,
+        "reference_update_seconds": 4.389788955450058e-06
+      },
+      {
+        "main": 62292,
+        "hyper": 1504,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.004083836916834116,
+        "entropy_encode_seconds": 0.016601191833615303,
+        "index_seconds": 0.006759386043995619,
+        "reference_update_seconds": 4.519708454608917e-06
+      },
+      {
+        "main": 66004,
+        "hyper": 1744,
+        "yshape": [
+          60,
+          104
+        ],
+        "zshape": [
+          15,
+          26
+        ],
+        "context_seconds": 0.004045518115162849,
+        "entropy_encode_seconds": 0.017366524785757065,
+        "index_seconds": 0.006685127969831228,
+        "reference_update_seconds": 4.259869456291199e-06
+      }
+    ],
+    "stream_sha256": "7c456995cf8a5961a50b2059a765f12badf00702a11ed25e8e68b89f111d222d",
+    "deployment_sha256": "7be4c7ac441796864f22b16e39a5ff933add32152a66ef543e794b916a7b1391",
+    "deployment_bytes": 1268886,
+    "train_seconds": 66.01320051588118,
+    "canonical_symbols_exact": true,
+    "reconstruction_exact": true,
+    "independent_decode": true,
+    "scope": "historical development; exact reconstructed latent equality establishes identical deterministic video reconstruction",
+    "base_name": "D42_f1_seed20261127",
+    "base_step": 20000
   }
 ]

@@ -1,0 +1,7 @@
+mode,video,actual_bytes,saving_fraction,metadata_bytes,train_seconds,canonical_symbols_exact,reconstruction_exact,independent_decode
+TP0,/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt,295299,0.0,527,0,True,True,True
+TP0,/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt,307219,0.0,527,0,True,True,True
+TP2,/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt,270855,0.08277711743013016,527,68.06657508201897,True,True,True
+TP2,/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt,294739,0.040622487541460695,527,68.06657508201897,True,True,True
+TP2Z,/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt,289940,0.018147707916383093,528,66.01320051588118,True,True,True
+TP2Z,/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt,310192,-0.009677135854227803,528,66.01320051588118,True,True,True
