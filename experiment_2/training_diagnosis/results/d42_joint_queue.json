@@ -1,17 +1,6 @@
 {
-  "status": "RUNNING",
-  "updated": "2026-11-28T11:41:59.343589+08:00",
-  "command": [
-    "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
-    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/temporal_joint.py",
-    "--steps",
-    "10000",
-    "--run-name",
-    "P2_D42_joint10000",
-    "--source-checkpoint",
-    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/checkpoints/extensions/D42_temporal5000/TP2.pt",
-    "--base-checkpoint",
-    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/checkpoints/D42_f1_seed20261127/step20000.pt"
-  ],
-  "log": "D42-joint10000-train.log"
+  "status": "WAITING_FOR_PREREQUISITE",
+  "updated": "2026-11-28T11:59:20.806532+08:00",
+  "path": "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/results/extension_finalization.json",
+  "target": "EXECUTION_COMPLETE_REVIEW_PENDING"
 }

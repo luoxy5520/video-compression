@@ -63,3 +63,5 @@ tail -n 3 experiment_2/training_diagnosis/logs/extension-P3-1000.log
 首批72组新评测已完成，见 [阶段实测报告](interim_extension_report.md)。P2/10000步相对Uniform的同码率均值为+2.184dB，18条中14条同时实现比原P2更小的码流和不低的PSNR-Y；逐视频权衡见 `figures/P2_continuation_paired.png`。
 
 D42中码率联合阶段之后，`joint_sweep_queue.py`还排入0.1/10倍Lambda工作点各10000步。三点从相同D42/20000+TP2/5000权重起步，均用42条合法训练视频、相同seed和步数，初始化新优化器。全部工作点随后评价18条历史开发视频并重新测量GPU起点性能。状态见 `results/joint_sweep_queue.json`；排队的低/高点尚不计为完成。GPU0实验锁避免训练与我们自己的正式计时重叠。
+
+D42中码率联合模型已完成18视频评价，实测Uniform同码率均值+2.871dB、同质量省字节15.73%，见 [D42联合阶段实测](D42_joint_interim_report.md)。`d42_pixel_queue.py`已排入从这个强基线开始的42视频、1000步VAE-aware微调，等待当前P3和高Lambda评测完成后执行；持有实验计时锁，避免正式时延与训练重叠。该未来阶段尚未训练完成。

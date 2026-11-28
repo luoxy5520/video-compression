@@ -3,10 +3,10 @@ from pixels import *
 from temporal_entropy_model import load_temporal
 from vae_differentiable import decode_full
 import argparse
-p=argparse.ArgumentParser();p.add_argument('--steps',type=int,default=100);p.add_argument('--run-name');p.add_argument('--initial-state',type=Path);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--steps',type=int,default=100);p.add_argument('--run-name');p.add_argument('--initial-state',type=Path);p.add_argument('--source-checkpoint',type=Path);a=p.parse_args()
 # Only after the standalone VAE-aware1000-step experiments have actual decode results.
 for mode in ('V1','V2'):assert (ROOT/'results/E2_1e'/f'{mode}_D16/development_step1000.json').exists()
-source=ROOT/'checkpoints/temporal_joint/P2.pt';m,c=load_temporal(source);m=m.cuda();m.base.requires_grad_(True);v=vae();v.model.requires_grad_(False);records=[r for r in data() if r['path'] in c['train_paths']];xdata=[tensor(r).cuda() for r in records];refs={};torch.manual_seed(20261127)
+source=a.source_checkpoint or ROOT/'checkpoints/temporal_joint/P2.pt';m,c=load_temporal(source);m=m.cuda();m.base.requires_grad_(True);v=vae();v.model.requires_grad_(False);records=[r for r in data() if r['path'] in c['train_paths']];assert len(records)==len(c['train_paths']);xdata=[tensor(r).cuda() for r in records];refs={};torch.manual_seed(20261127)
 main=[p for n,p in m.named_parameters() if not n.endswith('.quantiles')];opt=torch.optim.Adam(main,lr=1e-5);aux=torch.optim.Adam([m.base.eb.quantiles],lr=.001);sched=torch.optim.lr_scheduler.MultiStepLR(opt,[100],gamma=.5);lam=c['lambda_z'];lambda_p=None
 assert not ({id(p) for p in v.model.parameters()} & {id(p) for p in main})
 cks=ROOT/'checkpoints'/('extensions/'+a.run_name if a.run_name else 'temporal_pixel');cks.mkdir(parents=True,exist_ok=True);out=ROOT/'results'/('extensions/'+a.run_name if a.run_name else 'E2_2/P3');out.mkdir(parents=True,exist_ok=True);latest=cks/'latest.pt';curve=[];start=0;elapsed=0

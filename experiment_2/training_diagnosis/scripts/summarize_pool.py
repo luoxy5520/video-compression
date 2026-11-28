@@ -43,7 +43,7 @@ for video in videos:
     for label,names in groups:
         ps=sorted([r for r in rows if r['video']==video and r['method'] in names],key=lambda r:r['actual_bytes'])
         ax.plot([r['actual_bytes']/1000 for r in ps],[r['psnr_y'] for r in ps],'o-',label=label)
-    extra=[m for m in methods if m.startswith(('P2_long','P3_long','D42_temporal'))]
+    extra=[m for m in methods if m.startswith(('P2_long','P3_long','P3_D42','D42_temporal'))]
     for method in ['V1','V2_mid_3000','TP2','P2','P3']+extra:
         if method in selected:r=selected[method];ax.scatter([r['actual_bytes']/1000],[r['psnr_y']],label=method)
     ax.set_xscale('log');ax.set_xlabel('Actual complete kBytes');ax.set_ylabel('PSNR-Y');ax.set_title(Path(video).parent.parent.name+' / '+Path(video).parent.name+' / historical development');ax.grid(alpha=.3);ax.legend(fontsize=6,ncol=2 if extra else 1);fig.tight_layout();fig.savefig(ROOT/'figures'/f'{a.figure_prefix}_{videos.index(video):02d}_{Path(video).parent.name}.png',dpi=160);plt.close(fig)

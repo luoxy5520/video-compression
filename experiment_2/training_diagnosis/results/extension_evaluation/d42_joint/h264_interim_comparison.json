@@ -1,0 +1,137 @@
+{
+  "summary": {
+    "videos": 18,
+    "median_codec_to_h264_byte_ratio": 1.0520286683578965,
+    "mean_codec_to_h264_byte_ratio": 2.4374712149674287,
+    "videos_with_smaller_codec_stream": 7,
+    "scope": "same-quality interpolation within actual H264 Pareto support only; not exact same-quality encoder speed"
+  },
+  "per_video": [
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+      "codec_bytes": 225711,
+      "psnr_y": 45.05034649395158,
+      "h264_interpolated_bytes": 85736.68811264598,
+      "codec_to_h264_byte_ratio": 2.632606938390802
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+      "codec_bytes": 285215,
+      "psnr_y": 34.80185817072963,
+      "h264_interpolated_bytes": 417806.95513813966,
+      "codec_to_h264_byte_ratio": 0.6826478029924113
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/final_latent.pt",
+      "codec_bytes": 275350,
+      "psnr_y": 32.67396121208347,
+      "h264_interpolated_bytes": 375337.1853493735,
+      "codec_to_h264_byte_ratio": 0.7336070358808098
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/final_latent.pt",
+      "codec_bytes": 263119,
+      "psnr_y": 30.880935743665088,
+      "h264_interpolated_bytes": 284886.231780894,
+      "codec_to_h264_byte_ratio": 0.9235932475752806
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/final_latent.pt",
+      "codec_bytes": 286131,
+      "psnr_y": 31.950555511053608,
+      "h264_interpolated_bytes": 290698.377547098,
+      "codec_to_h264_byte_ratio": 0.9842882592409448
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt",
+      "codec_bytes": 308615,
+      "psnr_y": 43.61963509211601,
+      "h264_interpolated_bytes": 308205.6692798196,
+      "codec_to_h264_byte_ratio": 1.0013281089901327
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1024/final_latent.pt",
+      "codec_bytes": 261679,
+      "psnr_y": 48.55253563347211,
+      "h264_interpolated_bytes": 51425.657551223114,
+      "codec_to_h264_byte_ratio": 5.088491085201033
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1025/final_latent.pt",
+      "codec_bytes": 262167,
+      "psnr_y": 44.49818918468505,
+      "h264_interpolated_bytes": 30366.909677921536,
+      "codec_to_h264_byte_ratio": 8.63331181146201
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1026/final_latent.pt",
+      "codec_bytes": 268419,
+      "psnr_y": 43.29126806244503,
+      "h264_interpolated_bytes": 38162.308819131045,
+      "codec_to_h264_byte_ratio": 7.0336153211317125
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1027/final_latent.pt",
+      "codec_bytes": 260447,
+      "psnr_y": 42.832048715485115,
+      "h264_interpolated_bytes": 38018.5466188669,
+      "codec_to_h264_byte_ratio": 6.850524892783561
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/final_latent.pt",
+      "codec_bytes": 247163,
+      "psnr_y": 37.938895848443124,
+      "h264_interpolated_bytes": 261298.33363615107,
+      "codec_to_h264_byte_ratio": 0.9459034681184226
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/final_latent.pt",
+      "codec_bytes": 290711,
+      "psnr_y": 40.53367840171568,
+      "h264_interpolated_bytes": 273300.4211799308,
+      "codec_to_h264_byte_ratio": 1.0637049103140852
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1030/final_latent.pt",
+      "codec_bytes": 256890,
+      "psnr_y": 38.23629607259625,
+      "h264_interpolated_bytes": 215130.14171862198,
+      "codec_to_h264_byte_ratio": 1.1941143995340158
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1031/final_latent.pt",
+      "codec_bytes": 277939,
+      "psnr_y": 43.36174074485107,
+      "h264_interpolated_bytes": 185568.05361333047,
+      "codec_to_h264_byte_ratio": 1.497773968029775
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1032/final_latent.pt",
+      "codec_bytes": 281391,
+      "psnr_y": 34.59599516415657,
+      "h264_interpolated_bytes": 318966.6273895606,
+      "codec_to_h264_byte_ratio": 0.8821957403597941
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1033/final_latent.pt",
+      "codec_bytes": 294611,
+      "psnr_y": 35.59820944085261,
+      "h264_interpolated_bytes": 352837.33844491246,
+      "codec_to_h264_byte_ratio": 0.8349768233103164
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1034/final_latent.pt",
+      "codec_bytes": 275135,
+      "psnr_y": 34.47369145053212,
+      "h264_interpolated_bytes": 264463.2655412897,
+      "codec_to_h264_byte_ratio": 1.040352426401708
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1035/final_latent.pt",
+      "codec_bytes": 267571,
+      "psnr_y": 37.16878280447274,
+      "h264_interpolated_bytes": 144520.04191114363,
+      "codec_to_h264_byte_ratio": 1.851445629696902
+    }
+  ]
+}

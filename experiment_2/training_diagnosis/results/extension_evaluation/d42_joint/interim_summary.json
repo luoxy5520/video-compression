@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "method": "P2_D42_joint10000_P2",
+    "videos": 18,
+    "mean_actual_bytes": 271570.22222222225,
+    "mean_psnr_y": 38.89214576373927,
+    "mean_SSIM_RGB": 0.9712460736433665,
+    "mean_uniform_matched_rate_delta_db": 2.870637167390415,
+    "matched_rate_videos": 18,
+    "mean_uniform_matched_quality_saving": 0.15731118003691788,
+    "matched_quality_videos": 18
+  },
+  "per_video": [
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+      "uniform_matched_rate_delta_db": 4.172507025067745,
+      "uniform_matched_quality_saving": 0.3222427730772315
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+      "uniform_matched_rate_delta_db": 5.9399235560238814,
+      "uniform_matched_quality_saving": 0.2166201844946659
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/final_latent.pt",
+      "uniform_matched_rate_delta_db": 4.462183304598568,
+      "uniform_matched_quality_saving": 0.21456224723580142
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/final_latent.pt",
+      "uniform_matched_rate_delta_db": 4.390349231688859,
+      "uniform_matched_quality_saving": 0.24328787920110695
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/final_latent.pt",
+      "uniform_matched_rate_delta_db": 3.675670614562325,
+      "uniform_matched_quality_saving": 0.18919962378041433
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt",
+      "uniform_matched_rate_delta_db": 1.3760645642510951,
+      "uniform_matched_quality_saving": 0.06577527552919193
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1024/final_latent.pt",
+      "uniform_matched_rate_delta_db": 2.2929631758828393,
+      "uniform_matched_quality_saving": 0.14200150103279718
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1025/final_latent.pt",
+      "uniform_matched_rate_delta_db": 2.17684954956227,
+      "uniform_matched_quality_saving": 0.1390864533318904
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1026/final_latent.pt",
+      "uniform_matched_rate_delta_db": 2.4808475056471266,
+      "uniform_matched_quality_saving": 0.1635195112750758
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1027/final_latent.pt",
+      "uniform_matched_rate_delta_db": 1.5177952396746193,
+      "uniform_matched_quality_saving": 0.08939758141254961
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/final_latent.pt",
+      "uniform_matched_rate_delta_db": 1.5007402549692372,
+      "uniform_matched_quality_saving": 0.11793263928877173
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/final_latent.pt",
+      "uniform_matched_rate_delta_db": 0.4056600712525267,
+      "uniform_matched_quality_saving": 0.023706991769869568
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1030/final_latent.pt",
+      "uniform_matched_rate_delta_db": 3.065361269022077,
+      "uniform_matched_quality_saving": 0.20130787665988026
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1031/final_latent.pt",
+      "uniform_matched_rate_delta_db": -0.5374824224631496,
+      "uniform_matched_quality_saving": -0.04590734982050848
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1032/final_latent.pt",
+      "uniform_matched_rate_delta_db": 4.1222998986100485,
+      "uniform_matched_quality_saving": 0.1943817906837233
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1033/final_latent.pt",
+      "uniform_matched_rate_delta_db": 3.685755495857805,
+      "uniform_matched_quality_saving": 0.16463481298033378
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1034/final_latent.pt",
+      "uniform_matched_rate_delta_db": 3.630192930757449,
+      "uniform_matched_quality_saving": 0.19935425051189626
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1035/final_latent.pt",
+      "uniform_matched_rate_delta_db": 3.313787748062154,
+      "uniform_matched_quality_saving": 0.19049719821983035
+    }
+  ],
+  "scope": "all18 historical development, independent validation NOT VERIFIED"
+}

@@ -1,6 +1,6 @@
 {
   "status": "WAITING_FOR_TRAINING_AND_EVALUATION",
-  "updated": "2026-11-28T11:44:12.719776+08:00",
+  "updated": "2026-11-28T11:59:42.759884+08:00",
   "upstream": [
     {
       "status": "TRAINING_AND_FULL_POOL_COMPLETE",
