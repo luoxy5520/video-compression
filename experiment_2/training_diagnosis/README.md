@@ -59,3 +59,7 @@ tail -n 3 experiment_2/training_diagnosis/logs/extension-P3-1000.log
 - 当前tmux会话为 `e21-extension-gpu0`、`e21-extension-gpu1`，由 `extend_queue.py` 执行。运行状态见 `results/extension_queue_gpu*.json`。
 - 新权重位于 `checkpoints/extensions/`，结果位于 `results/extensions/`；每个lane训练后实际编码并用原生VAE评价全部18条历史开发视频，结果位于 `results/extension_evaluation/`。旧模型、码流和结果不覆盖。
 - 上轮全部39份实际运行脚本按原始SHA256存入 `source_snapshots/development_pool_20261128/`。归档用于来源复核；复现时需要恢复原scripts目录布局。
+
+首批72组新评测已完成，见 [阶段实测报告](interim_extension_report.md)。P2/10000步相对Uniform的同码率均值为+2.184dB，18条中14条同时实现比原P2更小的码流和不低的PSNR-Y；逐视频权衡见 `figures/P2_continuation_paired.png`。
+
+D42中码率联合阶段之后，`joint_sweep_queue.py`还排入0.1/10倍Lambda工作点各10000步。三点从相同D42/20000+TP2/5000权重起步，均用42条合法训练视频、相同seed和步数，初始化新优化器。全部工作点随后评价18条历史开发视频并重新测量GPU起点性能。状态见 `results/joint_sweep_queue.json`；排队的低/高点尚不计为完成。GPU0实验锁避免训练与我们自己的正式计时重叠。

@@ -39,6 +39,7 @@ for video in videos:
     if all(m in selected for m in ('TP0','TP1','TP2','TP2Z')):controls.append(dict(video=video,TP0_bytes=selected['TP0']['actual_bytes'],TP1_bytes=selected['TP1']['actual_bytes'],TP2_bytes=selected['TP2']['actual_bytes'],zero_history_same_head_bytes=selected['TP2Z']['actual_bytes'],TP2_saving_vs_TP0=1-selected['TP2']['actual_bytes']/selected['TP0']['actual_bytes'],TP2_independent_history_saving=1-selected['TP2']['actual_bytes']/selected['TP2Z']['actual_bytes']))
     fig,ax=plt.subplots(figsize=(8,5))
     groups=[('Uniform',[m for m in methods if m.startswith('Uniform_INT')]),('H.264 medium',[m for m in methods if m.startswith('H264_medium_QP')]),('Historical I3',[m for m in methods if m.startswith('historical_I3')]),('Trained I3',['trained_I3_f0.1','trained_I3_f1','trained_I3_f10']),('V2-1000',['V2_low_D16','V2','V2_high_D16'])]
+    if any(m.startswith('P2_D42') for m in methods):groups.append(('D42 joint RD',[m for m in methods if m.startswith('P2_D42')]))
     for label,names in groups:
         ps=sorted([r for r in rows if r['video']==video and r['method'] in names],key=lambda r:r['actual_bytes'])
         ax.plot([r['actual_bytes']/1000 for r in ps],[r['psnr_y'] for r in ps],'o-',label=label)
