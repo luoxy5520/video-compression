@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "models": 6,
+  "videos": 2,
+  "slice_rows": 60,
+  "source_sha256": "7181cb9aa5ea602ed9ab8332412bf1a156e069d642ef3a777654ec15a79754f2",
+  "sealed_test": "NOT OPENED",
+  "scope": "CPU actual-stream probability diagnostics only; no pixel evaluation"
+}

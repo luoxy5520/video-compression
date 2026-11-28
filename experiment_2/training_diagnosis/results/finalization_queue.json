@@ -1,36 +1,6 @@
 {
-  "status": "WAITING_FOR_TRAINING_AND_FULL_POOL",
-  "updated": "2026-11-27T23:09:08.364116+08:00",
-  "upstream": [
-    {
-      "status": "RUNNING",
-      "lane": "gpu0",
-      "updated": "2026-11-27T23:01:11.672702+08:00",
-      "command": [
-        "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
-        "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/pixel_train.py",
-        "--mode",
-        "V2",
-        "--steps",
-        "3000"
-      ],
-      "log": "queued-V2-mid3000.log"
-    },
-    {
-      "status": "RUNNING",
-      "lane": "gpu1",
-      "updated": "2026-11-27T22:52:49.223998+08:00",
-      "command": [
-        "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
-        "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/pixel_train.py",
-        "--mode",
-        "V2",
-        "--factor",
-        "0.1",
-        "--steps",
-        "1000"
-      ],
-      "log": "queued-V2_low_D16-1000.log"
-    }
-  ]
+  "status": "EXECUTION_COMPLETE_REVIEW_PENDING",
+  "updated": "2026-11-28T02:04:11.868820+08:00",
+  "artifacts": 2587,
+  "report": "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/final_report.md"
 }

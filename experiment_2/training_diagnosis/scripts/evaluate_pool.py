@@ -7,6 +7,7 @@ from temporal_entropy_model import load_temporal
 from pytorch_msssim import ssim
 import argparse,importlib.util
 from h264_reference import encode_decode
+from rate_diagnostics import temporal_rates
 p=argparse.ArgumentParser();p.add_argument('--include-p3',action='store_true');a=p.parse_args()
 out=ROOT/'results/development_pool';out.mkdir(exist_ok=True);deployed=out/'deploy';deployed.mkdir(exist_ok=True)
 uniform_path=E2.parent/'experiment_1/codec/lvc.py'
@@ -47,6 +48,17 @@ for ridx,r in enumerate(records):
     with torch.no_grad():
         ref=rgb(decode(v,x));ya=yuv(ref);baseq=torch.cat([base.ga(f[None]).round() for f in x]);basez=torch.cat([base.gs(q[None]) for q in baseq]);baseimg=rgb(decode(v,basez));basequality=quality(ref,baseimg,ya)
     basessim=ssim(torch.from_numpy(ref.copy()).permute(0,3,1,2).float(),torch.from_numpy(baseimg.copy()).permute(0,3,1,2).float(),data_range=255,size_average=True).item()
+    canonical=out/'reference_symbols'/f'{ridx:02d}.pt';canonical.parent.mkdir(exist_ok=True)
+    if not canonical.exists():
+        assert torch.equal(baseq,baseq.round()) and baseq.abs().max()<=255
+        atomic_torch(canonical,dict(q=baseq.to(torch.int16),reconstructed_latent=basez,
+            video=r['path'],source_sha256=source_hash['trained_I3_f1'],
+            rule='canonical q=round(ga(x)), fixed step0.1/limit255; z=gs(q); TP mean shifts CDF origin only'))
+    else:
+        saved=torch.load(canonical,weights_only=True)
+        assert saved['source_sha256']==source_hash['trained_I3_f1'] and saved['video']==r['path']
+        assert torch.equal(saved['q'].float(),baseq) and torch.equal(saved['reconstructed_latent'],basez)
+    canonical_sha=sha(canonical)
     for name,m,ck,kind in pending:
         modelpath=deployed/f'{name}.pt'
         if kind not in ('uniform','h264') and not modelpath.exists():
@@ -64,7 +76,7 @@ for ridx,r in enumerate(records):
                 if ridx==0:
                     target=leaf/'independent.npy';program="import importlib.util,numpy as np,sys;s=importlib.util.spec_from_file_location('decoder',sys.argv[1]);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);np.save(sys.argv[3],m.decode(sys.argv[2]))";subprocess.run([sys.executable,'-c',program,str(uniform_path),str(stream),str(target)],check=True);assert torch.equal(torch.from_numpy(np.load(target))[0].permute(1,0,2,3).contiguous(),z)
             elif kind.startswith('temporal'):
-                stream=leaf/'video.bin';st=m.compress_video(x,stream,sha(modelpath));q,z=m.decompress_video(stream,sha(modelpath));expected=torch.cat([m.base.gs(f[0]) for f in m.fixed_sequence(x)]);assert torch.equal(z,expected);size=st['actual_bytes'];main=sum(s['main'] for s in st['slices']);hyper=sum(s['hyper'] for s in st['slices']);metadata=st['metadata_bytes'];hashes=[st['sha256']]
+                stream=leaf/'video.bin';fixed=m.fixed_sequence(x);st=m.compress_fixed(fixed,list(x.shape[-2:]),stream,sha(modelpath));q,z=m.decompress_video(stream,sha(modelpath));expected=torch.cat([m.base.gs(f[0]) for f in fixed]);assert torch.equal(z,expected);size=st['actual_bytes'];main=sum(s['main'] for s in st['slices']);hyper=sum(s['hyper'] for s in st['slices']);metadata=st['metadata_bytes'];hashes=[st['sha256']]
                 if name in ('TP0','TP1','TP2','TP2Z'):assert torch.equal(q,baseq) and torch.equal(z,basez)
                 if ridx==0:
                     target=leaf/'independent.pt';subprocess.run([sys.executable,str(ROOT/'scripts/temporal_entropy_model.py'),str(modelpath),str(stream),str(target)],check=True);assert torch.equal(torch.load(target,weights_only=True)['z'],z)
@@ -83,5 +95,18 @@ for ridx,r in enumerate(records):
             else:
                 image=rgb(decode(v,z));quality_row=quality(ref,image,ya);score=ssim(torch.from_numpy(ref.copy()).permute(0,3,1,2).float(),torch.from_numpy(image.copy()).permute(0,3,1,2).float(),data_range=255,size_average=True).item()
         row=dict(method=name,video=r['path'],scope='all18 historical development videos, NOT independent validation',actual_bytes=size,main_bytes=main,hyper_bytes=hyper,metadata_bytes=metadata,bpp=size*8/(832*480*17),kbps=size*8/1000/(17/16),latent_mse=(z-x).square().mean().item() if z is not None else None,latent_mse_per_time_slice=(z-x).square().mean((1,2,3)).tolist() if z is not None else None,**quality_row,SSIM_RGB=score,bitstream_breakdown_scope='H264 full NAL bytes, breakdown not separately measured' if kind=='h264' else 'main/hyper/metadata explicit',ssim_scope='pytorch_msssim RGB8-bit,data_range255,mean17frames',stream_sha256=hashes,source_sha256=source_hash[name],deploy_sha256=sha(modelpath) if kind not in ('uniform','h264') else 'NOT APPLICABLE',real_decode=True,independent_process_decode=(ridx==0 or kind=='h264'),independent_check_scope='standard ffmpeg separate process for every video' if kind=='h264' else 'first video per checkpoint independently decoded; every row actual in-process stream decoded',LPIPS='NOT RUN: no verified weights',DISTS='NOT RUN: no verified weights')
+        if kind.startswith('temporal'):
+            row['slice_bytes']=[dict(time_slice=t,main_bytes=s['main'],hyper_bytes=s['hyper']) for t,s in enumerate(st['slices'])]
+            row['metadata_allocation']='one complete sequence header; not arbitrarily apportioned to slices'
+            row['rate_diagnostics']=temporal_rates(m,fixed,st['slices'])
+            row['estimated_rate_scope']='continuous or represented scale-table likelihood, floored at1e-9; actual bytes also include integer CDF precision, escape and rANS termination; sequence metadata separate'
+            row['fixed_symbol_control']=name in ('TP0','TP1','TP2','TP2Z')
+            if row['fixed_symbol_control']:
+                row['canonical_reference_sha256']=canonical_sha
+                row['canonical_symbols_exact']=True;row['reconstruction_exact']=True
+        elif kind not in ('uniform','h264'):
+            row['slice_bytes']=[dict(time_slice=t,main_bytes=s['main_bytes'],hyper_bytes=s['hyper_bytes'],metadata_bytes=s['metadata_bytes']) for t,s in enumerate(stats)]
+            row['metadata_allocation']='five independently framed latent slice files'
+        if kind not in ('uniform','h264'):assert main+hyper+metadata==size
         rows.append(row);done.add((name,r['path'],source_hash[name]));save(out/'rows.json',rows);print(json.dumps({k:row[k] for k in ['method','video','actual_bytes','psnr_y','SSIM_RGB']}),flush=True)
 save(out/'status.json',dict(status='COMPLETE',historical_videos=len(records),configurations=len(configs),rows=len(rows),independent_validation=False,sealed_test='NOT OPENED'))

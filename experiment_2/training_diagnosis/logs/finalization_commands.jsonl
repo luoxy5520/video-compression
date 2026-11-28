@@ -1,0 +1,8 @@
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/gpu_profile.py", "--method", "P2"], "time": "2026-11-28T01:59:39.311687+08:00"}
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/gpu_profile.py", "--method", "P3"], "time": "2026-11-28T02:01:30.239395+08:00"}
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/summarize_diagnosis.py"], "time": "2026-11-28T02:03:22.239984+08:00"}
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/summarize_scale.py"], "time": "2026-11-28T02:03:29.493405+08:00"}
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/summarize_pixel.py"], "time": "2026-11-28T02:03:37.028547+08:00"}
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/summarize_temporal.py"], "time": "2026-11-28T02:03:44.476573+08:00"}
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/summarize_pool.py"], "time": "2026-11-28T02:03:51.343921+08:00"}
+{"command": ["/home/luoxiangyu/video-compression-e2/.venv/bin/python", "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/build_report.py"], "time": "2026-11-28T02:04:03.616930+08:00"}

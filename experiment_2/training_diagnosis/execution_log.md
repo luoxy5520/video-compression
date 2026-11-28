@@ -50,3 +50,9 @@
 - Added fresh multi-QP H.264 pool references with explicit BT709, measured-support-only H.264 comparisons and coverage, plus unique per-video figure filenames across dataset sources. Dataset integrity audit passed42 train/18 historical development tensors with no exact hash or Prompt/Seed overlap. Sealed test files were not read.
 
 - CPU-only extended checkpoint audit now PASS:both20k checkpoints ×18 declared development videos=36 real-stream roundtrips; first slice of first video percheckpoint independently decoded. D16 mean311214.3Bytes/MSE0.000589926;D42 mean305865.9Bytes/MSE0.000548192. Pixel quality NOT MEASURED by this audit.
+
+## Resumed2026-11-28 11:22 Asia/Shanghai
+- Previous queues completed overnight:full18 pool01:59,profiling/report02:04;684 unique method-video rows,38 configurations,all real decoded.
+- Fixed-symbol quality/latent equality verified over18 videos;TP2 savings5.00%,history-only gain4.55%.P2 versus Uniform matched-rate+1.582dB over18;versusH264 same-quality median byte ratio1.394,wins4/18.
+- Recovered all39 exact source files against actual-run hashes into source_snapshots/development_pool_20261128.
+- Started isolated P2 1500-to10000 and P3 100-to1000 at11:25 with optimizer/scheduler/RNG continuation. GPU0 then trains frozen D42/20000 TP2 and TP2Z5000. Eachlane finishes with all18 actual-stream/nativeVAE evaluation. Original artifacts preserved;core5 regressions PASS.

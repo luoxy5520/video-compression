@@ -1,0 +1,50 @@
+[
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "method": "V0",
+    "SSIM_RGB": 0.9862726926803589,
+    "scope": "pytorch_msssim1.0.0 RGB8bit,data_range255,mean over17 full-sequence frames",
+    "LPIPS": "NOT RUN: no verified perceptual weights",
+    "DISTS": "NOT RUN: no verified perceptual weights"
+  },
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "method": "V1",
+    "SSIM_RGB": 0.9870907664299011,
+    "scope": "pytorch_msssim1.0.0 RGB8bit,data_range255,mean over17 full-sequence frames",
+    "LPIPS": "NOT RUN: no verified perceptual weights",
+    "DISTS": "NOT RUN: no verified perceptual weights"
+  },
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "method": "V2",
+    "SSIM_RGB": 0.9867988228797913,
+    "scope": "pytorch_msssim1.0.0 RGB8bit,data_range255,mean over17 full-sequence frames",
+    "LPIPS": "NOT RUN: no verified perceptual weights",
+    "DISTS": "NOT RUN: no verified perceptual weights"
+  },
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "method": "V0",
+    "SSIM_RGB": 0.9705083966255188,
+    "scope": "pytorch_msssim1.0.0 RGB8bit,data_range255,mean over17 full-sequence frames",
+    "LPIPS": "NOT RUN: no verified perceptual weights",
+    "DISTS": "NOT RUN: no verified perceptual weights"
+  },
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "method": "V1",
+    "SSIM_RGB": 0.9720714688301086,
+    "scope": "pytorch_msssim1.0.0 RGB8bit,data_range255,mean over17 full-sequence frames",
+    "LPIPS": "NOT RUN: no verified perceptual weights",
+    "DISTS": "NOT RUN: no verified perceptual weights"
+  },
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "method": "V2",
+    "SSIM_RGB": 0.9724780321121216,
+    "scope": "pytorch_msssim1.0.0 RGB8bit,data_range255,mean over17 full-sequence frames",
+    "LPIPS": "NOT RUN: no verified perceptual weights",
+    "DISTS": "NOT RUN: no verified perceptual weights"
+  }
+]

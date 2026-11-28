@@ -15,7 +15,8 @@ fig,axes=plt.subplots(1,2,figsize=(11,4))
 for ax,video in zip(axes,sorted({r['video'] for r in rows})):
     for method in ('V0','V1','V2'):
         x=[r for r in rows if r['video']==video and r['method']==method];ax.plot([r['actual_bytes']/1000 for r in x],[r['psnr_y'] for r in x],'o-',label=method)
-    ax.set_title(Path(video).parent.name);ax.set_xlabel('Actual complete kBytes');ax.set_ylabel('PSNR-Y');ax.legend();ax.grid(alpha=.3)
+        for r in x:ax.annotate(str(r['steps'])+(' source' if method=='V0' else ' fine-tune'),(r['actual_bytes']/1000,r['psnr_y']),xytext=(4,5),textcoords='offset points',fontsize=7)
+    ax.set_title(Path(video).parent.name+' / checkpoint trajectory');ax.set_xlabel('Actual complete kBytes');ax.set_ylabel('PSNR-Y');ax.legend();ax.grid(alpha=.3);ax.margins(x=.18,y=.18)
 fig.tight_layout();fig.savefig(ROOT/'figures/vae_aware_rd_curve.png',dpi=160);plt.close(fig)
 fig,ax=plt.subplots(figsize=(6,4))
 for method in ('V0','V1','V2'):
@@ -27,7 +28,7 @@ for mode in ('V1','V2'):
     if not p.exists():continue
     curve=json.loads(p.read_text())
     for ax,key in zip(axes,('rate','latent_mse','pixel_mse')):ax.plot([r['step'] for r in curve],[r[key] for r in curve],label=mode);ax.set_ylabel(key);ax.set_xlabel('Step');ax.legend();ax.set_yscale('log')
-fig.tight_layout();fig.savefig(ROOT/'figures/pixel_loss_training_curves.png',dpi=160);plt.close(fig)
+fig.suptitle('Sampled per-batch training metrics; not complete-epoch means',fontsize=10);fig.tight_layout();fig.savefig(ROOT/'figures/pixel_loss_training_curves.png',dpi=160);plt.close(fig)
 checks=[]
 for p in out.glob('vae_gradient*.json'):
     c=json.loads(p.read_text());checks.append(dict(precision=c['precision'],checkpoint_chunks=c.get('checkpoint_chunks',False),status=c['status'],peak_gpu_bytes=c['peak_gpu_bytes'],forward_seconds=c.get('vae_forward_seconds','NOT RUN'),backward_seconds=c.get('backward_seconds','NOT RUN'),vae_unchanged=c['vae_tensor_sha256_before']==c['vae_tensor_sha256_after']))

@@ -1,0 +1,17 @@
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{'step': 1, 'rate': 3.7498629093170166, 'latent_mse': 0.0005450780736282468, 'pixel_mse': 7.930240826681256e-05, 'loss': 8.226283073425293}
+{'step': 10, 'rate': 3.4731388092041016, 'latent_mse': 0.0005667703226208687, 'pixel_mse': 7.23259145161137e-05, 'loss': 8.037005424499512}
+{'step': 20, 'rate': 4.336620330810547, 'latent_mse': 0.0005987462936900556, 'pixel_mse': 0.0009830791968852282, 'loss': 17.27406120300293}
+{'step': 30, 'rate': 4.230249404907227, 'latent_mse': 0.0005857259966433048, 'pixel_mse': 0.0032008662819862366, 'loss': 36.93026351928711}
+{'step': 40, 'rate': 3.6033802032470703, 'latent_mse': 0.0005924999713897705, 'pixel_mse': 0.00030453052022494376, 'loss': 10.423622131347656}
+{'step': 50, 'rate': 3.9399938583374023, 'latent_mse': 0.0005960279377177358, 'pixel_mse': 0.00012923507892992347, 'loss': 9.215456008911133}
+{'step': 60, 'rate': 4.363595485687256, 'latent_mse': 0.0005891741020604968, 'pixel_mse': 0.002728997729718685, 'loss': 32.86349868774414}
+{'step': 70, 'rate': 4.071825981140137, 'latent_mse': 0.0005694417632184923, 'pixel_mse': 0.0026326761581003666, 'loss': 31.57315444946289}
+{'step': 80, 'rate': 4.138363361358643, 'latent_mse': 0.0006038626306690276, 'pixel_mse': 0.0031038939487189054, 'loss': 36.09565734863281}
+{'step': 90, 'rate': 3.5411272048950195, 'latent_mse': 0.0005890524480491877, 'pixel_mse': 7.223110151244327e-05, 'loss': 8.258115768432617}
+{'step': 100, 'rate': 4.344978332519531, 'latent_mse': 0.0005643101176247001, 'pixel_mse': 0.0009732902981340885, 'loss': 16.956836700439453}

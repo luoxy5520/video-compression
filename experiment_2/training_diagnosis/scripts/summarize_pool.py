@@ -3,7 +3,9 @@ import math,numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-out=ROOT/'results/development_pool';rows=json.loads((out/'rows.json').read_text());methods=sorted({r['method'] for r in rows});videos=sorted({r['video'] for r in rows})
+import argparse
+p=argparse.ArgumentParser();p.add_argument('--input-dir',type=Path,default=ROOT/'results/development_pool');p.add_argument('--figure-prefix',default='pool_rd');a=p.parse_args()
+out=a.input_dir;rows=json.loads((out/'rows.json').read_text());methods=sorted({r['method'] for r in rows});videos=sorted({r['video'] for r in rows})
 def frontier(points):
     result=[];best=-float('inf')
     for r in sorted(points,key=lambda r:(r['actual_bytes'],-r['psnr_y'])):
@@ -40,9 +42,10 @@ for video in videos:
     for label,names in groups:
         ps=sorted([r for r in rows if r['video']==video and r['method'] in names],key=lambda r:r['actual_bytes'])
         ax.plot([r['actual_bytes']/1000 for r in ps],[r['psnr_y'] for r in ps],'o-',label=label)
-    for method in ('V1','V2_mid_3000','TP2','P2','P3'):
+    extra=[m for m in methods if m.startswith(('P2_long','P3_long','D42_temporal'))]
+    for method in ['V1','V2_mid_3000','TP2','P2','P3']+extra:
         if method in selected:r=selected[method];ax.scatter([r['actual_bytes']/1000],[r['psnr_y']],label=method)
-    ax.set_xscale('log');ax.set_xlabel('Actual complete kBytes');ax.set_ylabel('PSNR-Y');ax.set_title(Path(video).parent.parent.name+' / '+Path(video).parent.name+' / historical development');ax.grid(alpha=.3);ax.legend(fontsize=7);fig.tight_layout();fig.savefig(ROOT/'figures'/f'pool_rd_{videos.index(video):02d}_{Path(video).parent.name}.png',dpi=160);plt.close(fig)
+    ax.set_xscale('log');ax.set_xlabel('Actual complete kBytes');ax.set_ylabel('PSNR-Y');ax.set_title(Path(video).parent.parent.name+' / '+Path(video).parent.name+' / historical development');ax.grid(alpha=.3);ax.legend(fontsize=6,ncol=2 if extra else 1);fig.tight_layout();fig.savefig(ROOT/'figures'/f'{a.figure_prefix}_{videos.index(video):02d}_{Path(video).parent.name}.png',dpi=160);plt.close(fig)
 coverage=[]
 for method in methods:
     mr=[r for r in matched if r['method']==method];mq=[r for r in matchedq if r['method']==method];coverage.append(dict(method=method,evaluated_videos=sum(r['method']==method for r in rows),historical_pool_videos=len(videos),matched_rate_videos=len(mr),matched_quality_videos=len(mq),mean_matched_rate_delta_db=float(np.mean([r['delta_psnr_y'] for r in mr])) if mr else 'NOT COMPARABLE',mean_matched_quality_saving=float(np.mean([r['saving_fraction'] for r in mq])) if mq else 'NOT COMPARABLE'))
@@ -53,6 +56,8 @@ for method in methods:
     h264coverage.append(dict(method=method,evaluated_videos=sum(r['method']==method for r in rows),historical_pool_videos=len(videos),matched_rate_videos=len(mr),matched_quality_videos=len(mq),mean_matched_rate_delta_db=float(np.mean([r['delta_psnr_y'] for r in mr])) if mr else 'NOT COMPARABLE',mean_matched_quality_saving=float(np.mean([r['saving_fraction'] for r in mq])) if mq else 'NOT COMPARABLE'))
 for name,data in [('summary.csv',summary),('coverage.csv',coverage),('matched_rate_comparison.csv',matched),('matched_quality_comparison.csv',matchedq),('h264_coverage.csv',h264coverage),('h264_matched_rate_comparison.csv',h264matched),('h264_matched_quality_comparison.csv',h264matchedq),('temporal_controlled_comparison.csv',controls),('out_of_support_measured_dominance.csv',dominance)]:
     if data:csvsave(out/name,data)
+rate_rows=[dict(method=r['method'],video=r['video'],**s) for r in rows for s in r.get('rate_diagnostics',[])]
+if rate_rows:csvsave(out/'estimated_vs_actual_temporal_rate.csv',rate_rows)
 csvsave(out/'worst_cases.csv',[{k:r[k] for k in ['method','video','actual_bytes','psnr_y','psnr_rgb','SSIM_RGB','last4_psnr_y']} for r in sorted(rows,key=lambda r:r['psnr_y'])])
 save(out/'summary.json',dict(summary=summary,coverage=coverage,h264_coverage=h264coverage,videos=len(videos),rows=len(rows),independent_validation=False,sealed_test='NOT OPENED',interpolation='measured Pareto support only; no extrapolation; matched subsets can differ between methods',BD_rate='NOT RUN: sparse/nonmonotonic learned points; no validated BD integration'))
 print('pool summarized',len(videos),len(rows))

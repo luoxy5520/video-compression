@@ -1,14 +1,6 @@
 {
-  "status": "RUNNING",
+  "status": "TRAINING_AND_EVALUATION_COMPLETE",
   "lane": "gpu0",
-  "updated": "2026-11-27T23:01:11.672702+08:00",
-  "command": [
-    "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
-    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/pixel_train.py",
-    "--mode",
-    "V2",
-    "--steps",
-    "3000"
-  ],
-  "log": "queued-V2-mid3000.log"
+  "updated": "2026-11-28T01:27:51.154588+08:00",
+  "checkpoint_steps": 3000
 }

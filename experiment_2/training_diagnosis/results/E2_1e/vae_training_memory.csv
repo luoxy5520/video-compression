@@ -1,0 +1,4 @@
+precision,checkpoint_chunks,status,peak_gpu_bytes,forward_seconds,backward_seconds,vae_unchanged
+fp32,True,PASS,52175331328,1.1818282869644463,3.2652018731459975,True
+fp32,True,PASS,52175331328,1.1818282869644463,3.2652018731459975,True
+fp32,False,OOM,74545611776,NOT RUN,NOT RUN,True
