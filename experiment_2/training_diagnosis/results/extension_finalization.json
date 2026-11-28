@@ -1,0 +1,44 @@
+{
+  "status": "WAITING_FOR_TRAINING_AND_EVALUATION",
+  "updated": "2026-11-28T11:35:12.687510+08:00",
+  "upstream": [
+    {
+      "status": "RUNNING",
+      "updated": "2026-11-28T11:33:22.076679+08:00",
+      "lane": "gpu0",
+      "command": [
+        "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
+        "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/temporal_run.py",
+        "--base-name",
+        "D42_f1_seed20261127",
+        "--base-step",
+        "20000",
+        "--steps",
+        "5000",
+        "--run-name",
+        "D42_temporal5000",
+        "--modes",
+        "TP0",
+        "TP2",
+        "TP2Z"
+      ],
+      "log": "extension-D42-temporal5000.log"
+    },
+    {
+      "status": "RUNNING",
+      "updated": "2026-11-28T11:25:37.873626+08:00",
+      "lane": "gpu1",
+      "command": [
+        "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
+        "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/temporal_pixel.py",
+        "--steps",
+        "1000",
+        "--run-name",
+        "P3_long1000",
+        "--initial-state",
+        "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/checkpoints/temporal_pixel/latest.pt"
+      ],
+      "log": "extension-P3-1000.log"
+    }
+  ]
+}

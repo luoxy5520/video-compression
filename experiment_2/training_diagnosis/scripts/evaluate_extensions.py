@@ -12,6 +12,7 @@ for folder,mode in names:
     ck=ROOT/'checkpoints/extensions'/folder/(mode+'.pt');m,c=load_temporal(ck)
     configs.append((folder+'_'+mode,m,c,ck,sha(ck)))
 records=[r for r in json.loads((E2/'dataset_manifest.json').read_text())['records'] if r['role']=='historical_development' and r['exists']];assert len(records)==18
+input_hashes={r['path']:r['file_sha256'] for r in json.loads((E2.parent/'experiment_1/results/input_manifest.json').read_text())}
 for name,m,c,ck,digest in configs:assert not ({r['path'] for r in records}&set(c['train_paths']))
 save(out/'source_snapshot.json',dict(models={n:d for n,m,c,k,d in configs},scripts={p.name:sha(p) for p in (ROOT/'scripts').glob('*.py')}))
 rows=json.loads((out/'rows.json').read_text()) if (out/'rows.json').exists() else [];done={(r['method'],r['video'],r['source_sha256']) for r in rows}
@@ -19,6 +20,7 @@ v=vae();vae_sha=sha(MODEL);assert vae_sha=='38071ab59bd94681c686fa51d75a1968f64e
 with torch.no_grad():
     for idx,record in enumerate(records):
         if all((name,record['path'],digest) in done for name,m,c,ck,digest in configs):continue
+        assert sha(record['path'])==input_hashes[record['path']],'historical input changed'
         x=tensor(record);reference=rgb(decode(v,x));reference_yuv=yuv(reference);canonical=None
         for name,m,c,ck,digest in configs:
             frozen=name.startswith('D42_temporal5000')

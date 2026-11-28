@@ -5,8 +5,8 @@ Full H.264 measurements rerun from GPU latent, not assembled historical times.
 from pixels import *
 from temporal_entropy_model import load_temporal
 import copy,resource,math,argparse
-parser=argparse.ArgumentParser();parser.add_argument('--method',choices=['TP2','P2','P3'],default='TP2');args=parser.parse_args()
-out=ROOT/'results/performance'/args.method;out.mkdir(parents=True,exist_ok=True);ck=ROOT/'checkpoints'/('temporal/TP2.pt' if args.method=='TP2' else 'temporal_joint/P2.pt' if args.method=='P2' else 'temporal_pixel/P3.pt');cpu,c=load_temporal(ck);gpu=copy.deepcopy(cpu.base).cuda().eval();v=vae();records=json.loads((E2/'dataset_manifest.json').read_text())['records'];base=json.loads((ROOT/'results/E2_1d/D16_f1_seed20261127/development_step10000.json').read_text());rows=[]
+parser=argparse.ArgumentParser();parser.add_argument('--method',choices=['TP2','P2','P3'],default='TP2');parser.add_argument('--checkpoint',type=Path);parser.add_argument('--output-name');args=parser.parse_args()
+out=ROOT/'results/performance'/(args.output_name or args.method);out.mkdir(parents=True,exist_ok=True);ck=args.checkpoint or ROOT/'checkpoints'/('temporal/TP2.pt' if args.method=='TP2' else 'temporal_joint/P2.pt' if args.method=='P2' else 'temporal_pixel/P3.pt');cpu,c=load_temporal(ck);gpu=copy.deepcopy(cpu.base).cuda().eval();v=vae();records=json.loads((E2/'dataset_manifest.json').read_text())['records'];base=json.loads((ROOT/'results/E2_1d/D16_f1_seed20261127/development_step10000.json').read_text());rows=[]
 def measured(fn):
     torch.cuda.synchronize();t=time.perf_counter();value=fn();torch.cuda.synchronize();return value,time.perf_counter()-t
 

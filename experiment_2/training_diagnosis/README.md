@@ -31,9 +31,9 @@ P2每500步、P3每10步原子保存模型、主/辅助优化器、调度器、R
 ```sh
 cd /home/luoxiangyu/video-compression-e2
 tmux list-sessions
-cat experiment_2/training_diagnosis/results/queue_gpu0.json
-cat experiment_2/training_diagnosis/results/queue_gpu1.json
-tail -n 3 experiment_2/training_diagnosis/logs/queued-V2-mid3000.log
+cat experiment_2/training_diagnosis/results/extension_queue_gpu0.json
+cat experiment_2/training_diagnosis/results/extension_queue_gpu1.json
+tail -n 3 experiment_2/training_diagnosis/logs/extension-P3-1000.log
 .venv/bin/python -m unittest discover -s experiment_2/training_diagnosis/tests -v
 ```
 

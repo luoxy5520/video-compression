@@ -1,0 +1,16 @@
+{
+  "status": "RUNNING",
+  "updated": "2026-11-28T11:25:37.873626+08:00",
+  "lane": "gpu1",
+  "command": [
+    "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
+    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/temporal_pixel.py",
+    "--steps",
+    "1000",
+    "--run-name",
+    "P3_long1000",
+    "--initial-state",
+    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/checkpoints/temporal_pixel/latest.pt"
+  ],
+  "log": "extension-P3-1000.log"
+}

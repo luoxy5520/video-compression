@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checked_artifacts": 2587,
+  "bytes_checked": 544257053,
+  "mismatches": [],
+  "elapsed_seconds": 9.721915509086102,
+  "scope": "all original experiment artifact hashes; extension outputs isolated"
+}
