@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "historical_videos": 18,
+  "checkpoint_sha256": "fd14d1c572c5a0eb5adb7c6df65ca886300ce4eeddb4d37712adb703177a1de3",
+  "source_sha256": "d74cbbbd8d9c0ae951c5473bce7a22b6566d7440a730b05d79c71325656f4b8e",
+  "all_bitstreams_identical": true,
+  "all_standard_independent_decode": true,
+  "scope": "CPU-only equality audit; no encoder latency inference; no sealed test access"
+}

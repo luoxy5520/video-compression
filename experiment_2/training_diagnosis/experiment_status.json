@@ -1,5 +1,5 @@
 {
-  "execution": "COMPLETE_REVIEW_PENDING",
+  "execution": "REVIEWED_846_ROWS_NEW_TRAINING_RUNNING",
   "E2_1a": "PASS",
   "E2_1b": "COMPLETE",
   "E2_1c": "PASS",
@@ -7,15 +7,15 @@
   "E2_1e": "COMPLETE:three V2 points1000,middle3000,V1 middle1000",
   "E2_2": "COMPLETE:fixed-symbol controls,P2joint,P3small diagnosis",
   "historical_videos": 18,
-  "evaluation_rows": 684,
+  "evaluation_rows": 846,
   "independent_validation": "NOT RUN",
   "sealed_test": "NOT OPENED",
   "figure_review": "PENDING",
   "optional_unrun": "see final_report.md",
-  "extension_execution": "RUNNING: isolated P2 1500 to10000, P3 100 to1000; next D42/20000 TP2/TP2Z5000 and all18 evaluation",
-  "extension_started": "2026-11-28T11:25:37+08:00",
-  "previous_source_archive": "all39 source files verified against actual684-row run SHA256",
-  "extension_gpu0": "COMPLETE: P2joint10000 and D42fixedTP0/TP2/TP2Z5000;72 actual18-video rows",
-  "extension_gpu1": "RUNNING: P3pixel1000",
-  "d42_joint": "QUEUED/RUNNING: new42-video joint10000 phase; separate source and optimizer; see results/d42_joint_queue.json"
+  "completed_configurations": 47,
+  "index_lookup": "PASS:18 CPU bitstreams identical,original independent decode;2 GPU bitstreams identical;full encoder latency savings3.02%/1.88%",
+  "regressions": "7 PASS",
+  "new_training": "RUNNING:middle1000-to3000 exact-state continuation;low/high pixel1000 each;42 legal train videos;new72 evaluations targeted,not complete",
+  "reviewed_report": "reviewed_extension_report.md",
+  "updated": "2026-11-28T19:54:02.395130+08:00"
 }

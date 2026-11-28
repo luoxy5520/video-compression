@@ -1,0 +1,10 @@
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{'step': 1, 'rate': 3.3673126697540283, 'latent_mse': 0.0005678279558196664, 'pixel_mse': 9.183034853776917e-05, 'loss': 3.834388256072998}
+{'step': 10, 'rate': 3.0750129222869873, 'latent_mse': 0.000590372015722096, 'pixel_mse': 8.764918311499059e-05, 'loss': 3.5542657375335693}
+{'step': 20, 'rate': 3.3481969833374023, 'latent_mse': 0.0006534080021083355, 'pixel_mse': 9.641461656428874e-05, 'loss': 3.878138542175293}
+{'step': 30, 'rate': 4.035888671875, 'latent_mse': 0.0006600061897188425, 'pixel_mse': 0.000580329040531069, 'loss': 4.964037895202637}

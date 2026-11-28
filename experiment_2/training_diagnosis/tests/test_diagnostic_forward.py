@@ -43,4 +43,22 @@ class EscapeSymbols(unittest.TestCase):
         from diagnostic_codec import Codec
         m=Codec('R3');m.update();q=torch.zeros(1,32,2,2);q[:,:,0,0]=255;q[:,:,1,1]=-255;means=torch.full_like(q,2.);indexes=m.gc.build_indexes(torch.full_like(q,.11));strings=m.gc.compress(q,indexes,means=means);self.assertTrue(torch.equal(m.gc.decompress(strings,indexes,means=means),q))
 
+class IndexLookup(unittest.TestCase):
+    def test_exact_scale_boundaries_and_noncontiguous_input(self):
+        from diagnostic_codec import Codec
+        from index_lookup import bucketize_indexes
+        m=Codec('R3');m.update();table=m.gc.scale_table
+        values=torch.cat([table,torch.nextafter(table,torch.full_like(table,-float('inf'))),torch.nextafter(table,torch.full_like(table,float('inf'))),torch.tensor([-float('inf'),-1.,0.,.11,1000.,float('inf'),float('nan')])])
+        self.assertTrue(torch.equal(m.gc.build_indexes(values),bucketize_indexes(m.gc,values)))
+        scales=torch.linspace(.01,500,192).reshape(12,16).t()
+        self.assertFalse(scales.is_contiguous());self.assertTrue(torch.equal(m.gc.build_indexes(scales),bucketize_indexes(m.gc,scales)))
+    def test_optional_lookup_preserves_complete_stream(self):
+        import tempfile
+        from temporal_entropy_model import Temporal
+        from index_lookup import install_bucketize
+        torch.manual_seed(73);m=Temporal(dict(variant='R3',step=.1,limit=255),'TP2').eval();m.base.update();x=torch.randn(3,16,12,16)
+        with tempfile.TemporaryDirectory() as d:
+            baseline=Path(d)/'baseline';fast=Path(d)/'fast';m.compress_video(x,baseline,'same-model');q,z=m.decompress_video(baseline,'same-model');install_bucketize(m);m.compress_video(x,fast,'same-model');q2,z2=m.decompress_video(fast,'same-model')
+            self.assertEqual(baseline.read_bytes(),fast.read_bytes());self.assertTrue(torch.equal(q,q2));self.assertTrue(torch.equal(z,z2))
+
 if __name__=='__main__':unittest.main()

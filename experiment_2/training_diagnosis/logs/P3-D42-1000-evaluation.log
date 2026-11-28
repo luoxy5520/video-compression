@@ -1,0 +1,94 @@
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt", "actual_bytes": 224083, "psnr_y": 45.10971809772936}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt", "actual_bytes": 287399, "psnr_y": 35.117554458728776}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/final_latent.pt", "actual_bytes": 277326, "psnr_y": 33.00569777537602}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/final_latent.pt", "actual_bytes": 265395, "psnr_y": 31.198573009206058}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/final_latent.pt", "actual_bytes": 288003, "psnr_y": 32.26278341853951}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt", "actual_bytes": 306463, "psnr_y": 43.42530963336092}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1024/final_latent.pt", "actual_bytes": 259175, "psnr_y": 48.63452209778332}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1025/final_latent.pt", "actual_bytes": 259091, "psnr_y": 44.995216747050506}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1026/final_latent.pt", "actual_bytes": 267179, "psnr_y": 43.42770544892045}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1027/final_latent.pt", "actual_bytes": 258767, "psnr_y": 42.94619867626045}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/final_latent.pt", "actual_bytes": 248019, "psnr_y": 38.04456032002809}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/final_latent.pt", "actual_bytes": 291299, "psnr_y": 40.68767657242038}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1030/final_latent.pt", "actual_bytes": 256922, "psnr_y": 38.43598853479151}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1031/final_latent.pt", "actual_bytes": 271419, "psnr_y": 43.42437366683929}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1032/final_latent.pt", "actual_bytes": 282363, "psnr_y": 34.860691998348756}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1033/final_latent.pt", "actual_bytes": 296107, "psnr_y": 35.79736565653243}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1034/final_latent.pt", "actual_bytes": 274959, "psnr_y": 34.69414388403293}
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/luoxiangyu/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+{"method": "P3_D42_1000_P3", "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1035/final_latent.pt", "actual_bytes": 264543, "psnr_y": 37.43818880893382}

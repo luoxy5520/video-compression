@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+      "actual_bytes": 225723,
+      "psnr_y": 45.050606775653826,
+      "bitstream_identical": true,
+      "baseline_encoder_seconds": 0.31602460891008377,
+      "bucketize_encoder_seconds": 0.3064926199615002,
+      "encoder_latency_saving_fraction": 0.030162173070818254,
+      "baseline_two_ends_seconds": 1.8615398563444614,
+      "bucketize_two_ends_seconds": 1.8516703210771084,
+      "two_ends_saving_fraction": 0.005301812493412883
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+      "actual_bytes": 285219,
+      "psnr_y": 34.80162016443312,
+      "bitstream_identical": true,
+      "baseline_encoder_seconds": 0.3215563510544598,
+      "bucketize_encoder_seconds": 0.3155030617490411,
+      "encoder_latency_saving_fraction": 0.018824972001232565,
+      "baseline_two_ends_seconds": 1.8780316508375108,
+      "bucketize_two_ends_seconds": 1.878133569471538,
+      "two_ends_saving_fraction": -5.426885855830399e-05
+    }
+  ],
+  "scope": "two representative historical videos;each method1warmup+5formal;all timing samples retained;no training active;encoder and both-end results separate;adverse timing preserved"
+}

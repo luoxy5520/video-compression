@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
-  "step": 530,
+  "status": "TRAINED_AWAITING_REAL_STREAM_EVALUATION",
+  "step": 1000,
   "target": 1000
 }

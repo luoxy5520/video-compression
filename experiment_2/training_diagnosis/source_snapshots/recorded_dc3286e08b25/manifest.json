@@ -1,0 +1,8 @@
+{
+  "snapshot": "results/extension_evaluation/d42_pixel/source_snapshot.json",
+  "snapshot_sha256": "dc3286e08b25ad6dee637d0067545001a9cbe53d7f2fc60a3e68911e0951135f",
+  "expected_files": 46,
+  "matched_files": 46,
+  "unrecovered": [],
+  "scope": "exact recorded evaluation source hashes; restore original scripts layout to reproduce"
+}

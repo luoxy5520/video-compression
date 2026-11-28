@@ -1,0 +1,8 @@
+{
+  "snapshot": "results/extension_evaluation/gpu1/source_snapshot.json",
+  "snapshot_sha256": "912ba5cf1bae0628b13cb4974b1d9cd2680b88a1f64c0b1a15e1f0bb9e88f087",
+  "expected_files": 46,
+  "matched_files": 46,
+  "unrecovered": [],
+  "scope": "exact recorded evaluation source hashes; restore original scripts layout to reproduce"
+}

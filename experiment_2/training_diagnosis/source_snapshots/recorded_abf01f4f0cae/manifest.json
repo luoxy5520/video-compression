@@ -1,0 +1,8 @@
+{
+  "snapshot": "results/extension_evaluation/P2_D42_low10000/source_snapshot.json",
+  "snapshot_sha256": "abf01f4f0cae97873e91769c8621b734cfa5d3672b72954a052c161d977d7faa",
+  "expected_files": 46,
+  "matched_files": 46,
+  "unrecovered": [],
+  "scope": "exact recorded evaluation source hashes; restore original scripts layout to reproduce"
+}

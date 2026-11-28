@@ -1,0 +1,191 @@
+{
+  "summary": {
+    "method": "P2_D42_low10000_P2",
+    "training_lambda_z": 691.0099949318759,
+    "videos": 18,
+    "mean_actual_bytes": 248807.77777777778,
+    "mean_psnr_y": 38.04975472846792,
+    "mean_latent_mse": 0.000640865657866622,
+    "uniform": {
+      "matched_rate_videos": 18,
+      "mean_matched_rate_delta_db": 3.1544196323854528,
+      "matched_quality_videos": 18,
+      "mean_same_quality_saving": 0.18712227351521482,
+      "median_same_quality_ratio": 0.7997759062004288,
+      "videos_smaller_at_same_quality": 17
+    },
+    "h264": {
+      "matched_rate_videos": 13,
+      "mean_matched_rate_delta_db": -0.4967462250177732,
+      "matched_quality_videos": 18,
+      "mean_same_quality_saving": -1.666594593105136,
+      "median_same_quality_ratio": 1.1509974510943488,
+      "videos_smaller_at_same_quality": 4
+    }
+  },
+  "per_video": [
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+      "actual_bytes": 209665,
+      "psnr_y": 44.2483091638137,
+      "uniform_matched_rate_delta_db": 3.8678239725016184,
+      "uniform_same_quality_ratio": 0.6726619158490255,
+      "h264_matched_rate_delta_db": null,
+      "h264_same_quality_ratio": 2.9588145826694694
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+      "actual_bytes": 264592,
+      "psnr_y": 33.863717742422295,
+      "uniform_matched_rate_delta_db": 5.535693471180817,
+      "uniform_same_quality_ratio": 0.7562528924157735,
+      "h264_matched_rate_delta_db": 1.2969718221198292,
+      "h264_same_quality_ratio": 0.7671402157945366
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0021/final_latent.pt",
+      "actual_bytes": 250524,
+      "psnr_y": 31.81308258141051,
+      "uniform_matched_rate_delta_db": 4.154162943594283,
+      "uniform_same_quality_ratio": 0.7473597462970706,
+      "h264_matched_rate_delta_db": 0.8269406572790068,
+      "h264_same_quality_ratio": 0.8064509936659578
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0022/final_latent.pt",
+      "actual_bytes": 241834,
+      "psnr_y": 30.04570097395073,
+      "uniform_matched_rate_delta_db": 4.100702865173133,
+      "uniform_same_quality_ratio": 0.7293807268056399,
+      "h264_matched_rate_delta_db": -0.2807256990470819,
+      "h264_same_quality_ratio": 1.086481829093836
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0023/final_latent.pt",
+      "actual_bytes": 264914,
+      "psnr_y": 31.106638636010736,
+      "uniform_matched_rate_delta_db": 4.031232966279642,
+      "uniform_same_quality_ratio": 0.7858049504975182,
+      "h264_matched_rate_delta_db": -0.4419015679373395,
+      "h264_same_quality_ratio": 1.1189246885037891
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1004/final_latent.pt",
+      "actual_bytes": 278907,
+      "psnr_y": 42.706837721050164,
+      "uniform_matched_rate_delta_db": 2.5103499636436766,
+      "uniform_same_quality_ratio": 0.8832720936875004,
+      "h264_matched_rate_delta_db": -0.33124430133266713,
+      "h264_same_quality_ratio": 1.0585449761597818
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1024/final_latent.pt",
+      "actual_bytes": 245595,
+      "psnr_y": 47.83647586745658,
+      "uniform_matched_rate_delta_db": 2.5266305042482102,
+      "uniform_same_quality_ratio": 0.8447114637637226,
+      "h264_matched_rate_delta_db": null,
+      "h264_same_quality_ratio": 5.671889942363437
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1025/final_latent.pt",
+      "actual_bytes": 240255,
+      "psnr_y": 43.959444901468025,
+      "uniform_matched_rate_delta_db": 2.90677353969496,
+      "uniform_same_quality_ratio": 0.8187488236300942,
+      "h264_matched_rate_delta_db": null,
+      "h264_same_quality_ratio": 8.893382421253083
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1026/final_latent.pt",
+      "actual_bytes": 249011,
+      "psnr_y": 42.31329695428581,
+      "uniform_matched_rate_delta_db": 2.515719586583856,
+      "uniform_same_quality_ratio": 0.8299283442705035,
+      "h264_matched_rate_delta_db": null,
+      "h264_same_quality_ratio": 8.045293028903838
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1027/final_latent.pt",
+      "actual_bytes": 242279,
+      "psnr_y": 42.049485815863704,
+      "uniform_matched_rate_delta_db": 1.9071725339555314,
+      "uniform_same_quality_ratio": 0.8889860648699636,
+      "h264_matched_rate_delta_db": null,
+      "h264_same_quality_ratio": 7.323146025418533
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1028/final_latent.pt",
+      "actual_bytes": 224903,
+      "psnr_y": 37.184996575195704,
+      "uniform_matched_rate_delta_db": 1.8755498511433757,
+      "uniform_same_quality_ratio": 0.8548517890870778,
+      "h264_matched_rate_delta_db": -0.32867589506106043,
+      "h264_same_quality_ratio": 1.122925540236239
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1029/final_latent.pt",
+      "actual_bytes": 262582,
+      "psnr_y": 39.6002295675799,
+      "uniform_matched_rate_delta_db": 1.1928512411745444,
+      "uniform_same_quality_ratio": 0.9318806978855957,
+      "h264_matched_rate_delta_db": -0.7321640034030921,
+      "h264_same_quality_ratio": 1.1771704076684224
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1030/final_latent.pt",
+      "actual_bytes": 232469,
+      "psnr_y": 37.60527954988814,
+      "uniform_matched_rate_delta_db": 2.9321982793991737,
+      "uniform_same_quality_ratio": 0.7569946837155738,
+      "h264_matched_rate_delta_db": -0.8709474255807947,
+      "h264_same_quality_ratio": 1.3249493930748624
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1031/final_latent.pt",
+      "actual_bytes": 248542,
+      "psnr_y": 42.39786097295534,
+      "uniform_matched_rate_delta_db": -0.16271120624617907,
+      "uniform_same_quality_ratio": 1.0126820011666013,
+      "h264_matched_rate_delta_db": -2.3627868339059717,
+      "h264_same_quality_ratio": 1.647951765993319
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1032/final_latent.pt",
+      "actual_bytes": 258567,
+      "psnr_y": 33.594345612552495,
+      "uniform_matched_rate_delta_db": 4.3105675750093155,
+      "uniform_same_quality_ratio": 0.777826119418157,
+      "h264_matched_rate_delta_db": 0.15807599376802273,
+      "h264_same_quality_ratio": 0.9717908627752695
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1033/final_latent.pt",
+      "actual_bytes": 272359,
+      "psnr_y": 34.53111295657596,
+      "uniform_matched_rate_delta_db": 4.230746429107466,
+      "uniform_same_quality_ratio": 0.8137468619033393,
+      "h264_matched_rate_delta_db": 0.41300625132934954,
+      "h264_same_quality_ratio": 0.9303082502808846
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1034/final_latent.pt",
+      "actual_bytes": 250995,
+      "psnr_y": 33.63898454943657,
+      "uniform_matched_rate_delta_db": 4.154421343558582,
+      "uniform_same_quality_ratio": 0.7638436710471851,
+      "h264_matched_rate_delta_db": -0.5779057583360583,
+      "h264_same_quality_ratio": 1.1248244945202754
+    },
+    {
+      "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_a_new48_20261107/sample_1035/final_latent.pt",
+      "actual_bytes": 240547,
+      "psnr_y": 36.39978497050608,
+      "uniform_matched_rate_delta_db": 4.189667522936141,
+      "uniform_same_quality_ratio": 0.7628662304157914,
+      "h264_matched_rate_delta_db": -3.2263441651231943,
+      "h264_same_quality_ratio": 1.9687132575169148
+    }
+  ],
+  "scope": "all18 historical development, measured-support interpolation only"
+}

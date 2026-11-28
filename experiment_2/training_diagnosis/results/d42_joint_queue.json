@@ -1,6 +1,7 @@
 {
-  "status": "WAITING_FOR_PREREQUISITE",
-  "updated": "2026-11-28T11:59:20.806532+08:00",
-  "path": "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/results/extension_finalization.json",
-  "target": "EXECUTION_COMPLETE_REVIEW_PENDING"
+  "status": "EXECUTION_COMPLETE_REVIEW_PENDING",
+  "updated": "2026-11-28T14:07:28.133308+08:00",
+  "new_rows": 18,
+  "total_rows": 792,
+  "report": "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/D42_joint_report.md"
 }

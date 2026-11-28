@@ -1,0 +1,32 @@
+"""Generate a measured-data report; final human figure review remains explicit."""
+from common import *
+import statistics,datetime
+pool=json.loads((ROOT/'results/development_pool/summary.json').read_text());rows=json.loads((ROOT/'results/development_pool/rows.json').read_text());sm={r['method']:r for r in pool['summary']};cv={r['method']:r for r in pool['coverage']}
+def val(method,key):return sm.get(method,{}).get(key,'NOT RUN')
+def fmt(x,n=3):return f'{x:.{n}f}' if isinstance(x,(int,float)) else str(x)
+def paired(a,b,key):
+    aa={r['video']:r for r in rows if r['method']==a};bb={r['video']:r for r in rows if r['method']==b};keys=aa.keys()&bb.keys();return statistics.mean(aa[k][key]-bb[k][key] for k in keys) if keys else 'NOT RUN'
+controls=[]
+import csv
+p=ROOT/'results/development_pool/temporal_controlled_comparison.csv'
+if p.exists():controls=list(csv.DictReader(p.open()))
+perf=[]
+for name in ('P2','P3'):
+    p=ROOT/'results/performance'/name/'deployment_benchmark.json'
+    if p.exists():perf.extend([dict(model=name,**r) for r in json.loads(p.read_text())])
+lines=['# Experiment 2.1 训练诊断与优化报告','',f"生成时间：{datetime.datetime.now().astimezone().isoformat()}。本报告由实测数据生成；图表与最终文字仍需助手复核。",'',f"实际覆盖 {pool['videos']} 条历史开发视频、{pool['rows']} 个配置—视频评价。所有样本仍属于历史开发集，独立泛化未验证；封存测试集未打开。原 Wan DiT/VAE 未训练，未修改去噪步数，未新增大型数据或模型下载。",'', '## 主要问题的回答','', '1. **历史训练代码是否错误？** 审计未发现 R/D 权重写反、训练变换被 detach 或优化器遗漏。实际为 R+λD，按输入 Latent 元素数归一化。诊断辅助函数的噪声顺序、续训动态 CDF 恢复和报告序列化曾出现问题，均保留失败证据并修复；不能将这些等同于原1000-step训练代码错误。','', '2. **原变换的重建能力？** 原32通道、stride2变换的 coding 元素数仅输入一半。在单视频无量化10000步仍仅41.107dB，低于同视频INT6的48.191dB。增加通道和取消下采样的随机初始化短训有所改善。相同R3形状的解析恒等初始化验证了高精度表达能力，后续保持该小网络结构；恒等对照不计为压缩性能。','', '3. **量化的失真？** 连续恒等对照MSE约1.34e-16；固定步长0.1、符号范围±255的O1在1000步达到MSE0.000518。正式实验使用真实rANS，不允许无限放大符号来规避量化。','', '4. **单视频过拟合是否成功？** 五个O2工作点通过独立解码，λ增大时Latent MSE总体降低、完整码流总体增大；该结果仅证明学习能力。','', '5. **Lambda如何选择？** 初始R/D参考约6910，重建梯度尺度参考约2002，围绕0.1/0.3/1/3/10倍筛选。历史PSNR非单调还受重建瓶颈、优化不足、训练噪声/推理舍入及Latent与Pixel目标差异影响，不存在唯一已证实原因。','',f"6. **延长训练的收益？** 全历史池：中码率5000相对1000步平均PSNR-Y变化 {fmt(paired('trained_I3_mid_5000','trained_I3_mid_1000','psnr_y'))} dB；10000相对5000步 {fmt(paired('trained_I3_f1','trained_I3_mid_5000','psnr_y'))} dB。新增20000步结果见下表，不能仅按步数宣布收敛。",'',f"7. **增加数据的收益？** 固定5000步，42相对16条训练视频平均PSNR-Y变化 {fmt(paired('trained_I3_D42_mid_5000','trained_I3_mid_5000','psnr_y'))} dB。两者更新数相同、每视频曝光量不同，不能据此断言更多数据无用。固定20000步的后续对照也已保留。",'',f"8. **Pixel Loss收益？** 中码率1000步：V1相对V0平均PSNR-Y变化 {fmt(paired('V1','trained_I3_f1','psnr_y'))} dB、平均字节变化 {fmt(paired('V1','trained_I3_f1','actual_bytes'),1)}；V2分别为 {fmt(paired('V2','trained_I3_f1','psnr_y'))} dB、{fmt(paired('V2','trained_I3_f1','actual_bytes'),1)} Bytes。V2低/中/高三点及中码率3000步均列出；PSNR上升不直接等于同码率成功。完整原生FP32 VAE前向/反向检查已通过，分块重计算前向与原接口完全相同，VAE参数及文件SHA不变。",'', '9. **固定符号Temporal Prior是否省码率？** TP0/TP1/TP2及同容量零历史TP2Z均验证原canonical整数符号和重建Latent完全相同。整数均值仅平移CDF原点；完整容器大小包含全部辅助信息。下方给出全池结果，而非只沿用两个样本的最佳数值。','']
+if controls:lines.append(f"TP2相对TP0平均节省 {100*statistics.mean(float(r['TP2_saving_vs_TP0']) for r in controls):.2f}%；相对同容量零历史头的独立历史收益 {100*statistics.mean(float(r['TP2_independent_history_saving']) for r in controls):.2f}%，有效视频数 {len(controls)}。")
+lines+=['', '10. **Temporal Prior计算开销？** CPU路径提供一次预热、五次正式编解码/概率头/rANS计时。GPU起点混合部署在下表另列，CPU概率计算保证两端一致。编码原型包含主符号round-trip验证开销，尚非极致优化实现。','', '11. **当前可部署候选？** I3、V1/V2、TP2、P2及P3均保留真实码流、部署权重和独立解码证据。根据实际码率区间选择Pareto点；不将单个高画质点称为全码率最优。P2采用2切片到5切片的联合训练，P3为100步像素联合诊断，P3未宣称充分收敛。','', '12. **与Uniform/H.264的差距？** Uniform同码率/同质量表仅在实测Pareto支持内插值；超出支持的实测支配另表记录，不外推。H.264在全池现场多QP编码，正式时延在两个代表视频用实际相近画质QP重新测量；单端加速与两端总耗时分开。','', '13. **下一步？** 优先根据全池最差案例继续优化失真目标与概率模型，并优化CPU尺度索引、rANS接口/张量转换及验证开销。是否增加完整Context-conditioned Transform应由进一步消融决定；本轮未引入GAN、VideoDiT refinement、Token Pruning或DiT联合训练。','', '## 全历史开发池实测均值','', '| 配置 | 视频数 | Bytes | PSNR-Y | SSIM-RGB | Uniform同码率ΔdB | 有效比较视频数 |','|---|---:|---:|---:|---:|---:|---:|']
+for name,r in sm.items():
+    c=cv[name];lines.append(f"| {name} | {r['videos']} | {r['mean_actual_bytes']:.1f} | {r['mean_psnr_y']:.3f} | {r['mean_SSIM_RGB']:.4f} | {fmt(c['mean_matched_rate_delta_db'])} | {c['matched_rate_videos']} |")
+lines+=['', '## 与现场 H.264 多 QP 曲线的比较','', '| 配置 | 同码率 ΔPSNR-Y/dB | 有效视频数 | 同质量节省比例 | 有效视频数 |','|---|---:|---:|---:|---:|']
+for c in pool.get('h264_coverage',[]):
+    lines.append(f"| {c['method']} | {fmt(c['mean_matched_rate_delta_db'])} | {c['matched_rate_videos']} | {fmt(c['mean_matched_quality_saving'],4)} | {c['matched_quality_videos']} |")
+lines+=['', '以上仅在各视频实测 Pareto 曲线范围内进行 log(Bytes) 线性插值，不外推；不同配置的有效比较视频子集可能不同，不能仅按这些均值给出全池排名。正节省表示编码器字节更少，负值表示字节更多。这些插值结果也不代表正式时延测试的两个实际 QP 恰好等画质。']
+lines+=['', '以上配置—视频行不是独立样本数；有效视频与覆盖率以coverage.csv为准。相同视频切片未跨训练/开发集合。SSIM采用RGB8-bit、data_range255、17帧平均；末四帧PSNR沿用E1的逐帧PSNR平均口径。','', '## 相近画质的实际GPU起点性能','', '| 配置/视频 | Codec Bytes/PSNR-Y | H.264 Bytes/PSNR-Y | 编码端加速比 | 画质在±0.5dB内 |','|---|---|---|---:|---|']
+for r in perf:
+    h=r['h264_selected'];lines.append(f"| {r['model']}/{Path(r['video']).parent.name} | {r['actual_bytes']}/{r['quality']['psnr_y']:.3f} | {h['bytes']}/{h['psnr_y']:.3f} | {fmt(r['encoder_speed_ratio'])} | {r['within_quality_tolerance']} |")
+lines+=['', '性能数据保留五次原始样本和完整分项；权重加载不计入稳态单视频延迟。接收端统一到原始YUV420。不能把编码端速度比当作两端速度比，不能外推Prompt-to-bitstream性能。GPU其它已有服务未被终止，硬件快照随性能日志保存。','', '## 未运行或未建立的结论','', '- 独立验证/封存测试：NOT RUN。','- LPIPS/DISTS/V3：NOT RUN，无可靠已配置的感知权重，未自动下载。','- P4完整条件变换、GAN、DiT联合训练：NOT RUN。','- BD-Rate：NOT RUN，稀疏或非单调学习式曲线未满足经过核验的BD积分要求。','- 全算子FLOPs：NOT RUN；提供实际卷积forward-hook名义MACs口径，排除elementwise/CDF/index/VAE。','- 原始Prompt/DiT端到端时延：NOT RUN。','', '完整数据：results/development_pool/{rows,summary}.json、coverage.csv、matched_rate_comparison.csv、matched_quality_comparison.csv、temporal_controlled_comparison.csv、worst_cases.csv。源代码及模型SHA、全部真实码流SHA保留；大型权重/码流留在113Server。']
+text='\n'.join(lines)+'\n';(ROOT/'final_report.md').write_text(text);(ROOT/'reports/final_report.md').write_text(text)
+save(ROOT/'experiment_status.json',dict(execution='COMPLETE_REVIEW_PENDING',E2_1a='PASS',E2_1b='COMPLETE',E2_1c='PASS',E2_1d='COMPLETE within recorded budgets',E2_1e='COMPLETE:three V2 points1000,middle3000,V1 middle1000',E2_2='COMPLETE:fixed-symbol controls,P2joint,P3small diagnosis',historical_videos=pool['videos'],evaluation_rows=pool['rows'],independent_validation='NOT RUN',sealed_test='NOT OPENED',figure_review='PENDING',optional_unrun='see final_report.md'))
+print('measured report generated; review pending')

@@ -1,0 +1,8 @@
+{
+  "snapshot": "results/development_pool/source_snapshot.json",
+  "snapshot_sha256": "d0968dd88613caa1ea573a973b93dd00e1bc39bb85823af225b619b2d690d114",
+  "expected_files": 39,
+  "matched_files": 39,
+  "unrecovered": [],
+  "scope": "exact recorded evaluation source hashes; restore original scripts layout to reproduce"
+}

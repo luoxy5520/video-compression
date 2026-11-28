@@ -1,0 +1,12 @@
+test_hard_and_ste_forward_same_but_gradients_differ (test_diagnostic_forward.DiagnosticForward.test_hard_and_ste_forward_same_but_gradients_differ) ... ok
+test_training_forward_matches_default (test_diagnostic_forward.DiagnosticForward.test_training_forward_matches_default) ... ok
+test_canonical_extreme_symbols_with_integer_cdf_offset (test_diagnostic_forward.EscapeSymbols.test_canonical_extreme_symbols_with_integer_cdf_offset) ... ok
+test_exact_scale_boundaries_and_noncontiguous_input (test_diagnostic_forward.IndexLookup.test_exact_scale_boundaries_and_noncontiguous_input) ... ok
+test_optional_lookup_preserves_complete_stream (test_diagnostic_forward.IndexLookup.test_optional_lookup_preserves_complete_stream) ... ok
+test_dynamic_cdf_restore (test_diagnostic_forward.ResumeAndTemporal.test_dynamic_cdf_restore) ... ok
+test_integral_mean_changes_cdf_not_canonical_symbols (test_diagnostic_forward.ResumeAndTemporal.test_integral_mean_changes_cdf_not_canonical_symbols) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.636s
+
+OK

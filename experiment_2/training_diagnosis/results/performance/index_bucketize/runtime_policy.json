@@ -1,0 +1,6 @@
+{
+  "index_lookup": "bucketize",
+  "checkpoint_sha256": "fd14d1c572c5a0eb5adb7c6df65ca886300ce4eeddb4d37712adb703177a1de3",
+  "profiling_script_sha256": "978f2df73678955d72400f0479303670049f8a6903146cfbd2a36af520a85e09",
+  "scope": "runtime index mapping only; unchanged model weights and format"
+}

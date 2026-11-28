@@ -1,0 +1,471 @@
+[
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0000/final_latent.pt",
+    "actual_bytes": 222655,
+    "bpp": 0.2623668457767723,
+    "kbps": 1676.4611764705883,
+    "quality": {
+      "psnr_y": 44.89791357665653,
+      "psnr_rgb": 43.59402908773677,
+      "per_frame_psnr_y": [
+        44.26714324450152,
+        44.25999237865406,
+        44.230252321208276,
+        44.33943423286294,
+        44.19968515756322,
+        44.46793067017279,
+        44.35361138251385,
+        44.39999094808809,
+        44.27490108818933,
+        44.74738516350585,
+        44.49127489805238,
+        44.90776147726503,
+        44.64452203744989,
+        46.985200950755306,
+        47.010056261721765,
+        46.95895075660569,
+        46.784637904148724
+      ],
+      "last4_psnr_y": 46.93471146830787
+    },
+    "main_coding_symbols_changed_cpu_vs_gpu": 1,
+    "gpu_analysis_cpu_probability": true,
+    "independent_decode": true,
+    "codec_samples": [
+      {
+        "analysis_gpu_seconds": 0.0007017697207629681,
+        "hyper_analysis_gpu_seconds": 0.00023735687136650085,
+        "D2H_seconds": 0.0006649410352110863,
+        "main_quantization_cpu_seconds": 0.00038888538256287575,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.02479429403319955,
+        "context_probability_seconds": 0.013252103701233864,
+        "index_seconds": 0.033003825694322586,
+        "entropy_main_seconds": 0.09002002468332648,
+        "reference_update_seconds": 2.5029759854078293e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.32096949266269803,
+        "hyper_entropy_decode_seconds": 0.010022677946835756,
+        "probability_and_index_seconds": 0.054687890224158764,
+        "main_entropy_decode_seconds": 0.1628612237982452,
+        "synthesis_seconds": 0.007936925161629915,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.2375656310468912,
+        "receiver_vae_and_RGB_seconds": 1.193423820193857,
+        "receiver_RGB_to_YUV_seconds": 0.12514830101281404,
+        "post_dit_two_ends_seconds": 1.8771072449162602,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.0006942707113921642,
+        "hyper_analysis_gpu_seconds": 0.0002360772341489792,
+        "D2H_seconds": 0.0006398111581802368,
+        "main_quantization_cpu_seconds": 0.000379675067961216,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.02532263658940792,
+        "context_probability_seconds": 0.016648349817842245,
+        "index_seconds": 0.04243964049965143,
+        "entropy_main_seconds": 0.08861392457038164,
+        "reference_update_seconds": 2.3469794541597366e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.3362276297993958,
+        "hyper_entropy_decode_seconds": 0.010040920227766037,
+        "probability_and_index_seconds": 0.05984137998893857,
+        "main_entropy_decode_seconds": 0.15913867391645908,
+        "synthesis_seconds": 0.008042404893785715,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.23908297903835773,
+        "receiver_vae_and_RGB_seconds": 1.1847917740233243,
+        "receiver_RGB_to_YUV_seconds": 0.11867961613461375,
+        "post_dit_two_ends_seconds": 1.8787819989956915,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.0008247196674346924,
+        "hyper_analysis_gpu_seconds": 0.0002953261137008667,
+        "D2H_seconds": 0.0007099010981619358,
+        "main_quantization_cpu_seconds": 0.0003764349967241287,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.028330876026302576,
+        "context_probability_seconds": 0.01366070844233036,
+        "index_seconds": 0.03251693118363619,
+        "entropy_main_seconds": 0.08873510966077447,
+        "reference_update_seconds": 2.3280270397663116e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.32354354532435536,
+        "hyper_entropy_decode_seconds": 0.00999581953510642,
+        "probability_and_index_seconds": 0.054106966592371464,
+        "main_entropy_decode_seconds": 0.15837667137384415,
+        "synthesis_seconds": 0.007591781206429005,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.2320150607265532,
+        "receiver_vae_and_RGB_seconds": 1.1842194315977395,
+        "receiver_RGB_to_YUV_seconds": 0.12319602398201823,
+        "post_dit_two_ends_seconds": 1.8629740616306663,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.0007118210196495056,
+        "hyper_analysis_gpu_seconds": 0.00023209583014249802,
+        "D2H_seconds": 0.0006190119311213493,
+        "main_quantization_cpu_seconds": 0.0003235158510506153,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.0240871817804873,
+        "context_probability_seconds": 0.01308659790083766,
+        "index_seconds": 0.03276729676872492,
+        "entropy_main_seconds": 0.08967615757137537,
+        "reference_update_seconds": 2.500787377357483e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.3154894979670644,
+        "hyper_entropy_decode_seconds": 0.010049689095467329,
+        "probability_and_index_seconds": 0.05403986666351557,
+        "main_entropy_decode_seconds": 0.16044613253325224,
+        "synthesis_seconds": 0.008011723402887583,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.23448071675375104,
+        "receiver_vae_and_RGB_seconds": 1.1849222029559314,
+        "receiver_RGB_to_YUV_seconds": 0.1305890162475407,
+        "post_dit_two_ends_seconds": 1.8654814339242876,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.0010529770515859127,
+        "hyper_analysis_gpu_seconds": 0.0003078957088291645,
+        "D2H_seconds": 0.0006953408010303974,
+        "main_quantization_cpu_seconds": 0.00037580495700240135,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.03327269107103348,
+        "context_probability_seconds": 0.013586469925940037,
+        "index_seconds": 0.03354623727500439,
+        "entropy_main_seconds": 0.09037493681535125,
+        "reference_update_seconds": 2.779066562652588e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.3344144159927964,
+        "hyper_entropy_decode_seconds": 0.010155716445297003,
+        "probability_and_index_seconds": 0.05411537550389767,
+        "main_entropy_decode_seconds": 0.15892973076552153,
+        "synthesis_seconds": 0.007946354802697897,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.23327099066227674,
+        "receiver_vae_and_RGB_seconds": 1.1851134318858385,
+        "receiver_RGB_to_YUV_seconds": 0.13361422484740615,
+        "post_dit_two_ends_seconds": 1.8864130633883178,
+        "peak_gpu_bytes": 9013414400
+      }
+    ],
+    "h264_candidates": [
+      {
+        "qp": 18,
+        "psnr_y": 47.33260479133067,
+        "bytes": 155318
+      },
+      {
+        "qp": 22,
+        "psnr_y": 45.20520613874464,
+        "bytes": 88950
+      },
+      {
+        "qp": 26,
+        "psnr_y": 42.926606630669625,
+        "bytes": 51764
+      },
+      {
+        "qp": 28,
+        "psnr_y": 41.88930313858938,
+        "bytes": 39878
+      },
+      {
+        "qp": 32,
+        "psnr_y": 39.61361066048246,
+        "bytes": 23844
+      },
+      {
+        "qp": 37,
+        "psnr_y": 37.141401180626154,
+        "bytes": 12898
+      },
+      {
+        "qp": 42,
+        "psnr_y": 34.7783336741143,
+        "bytes": 7008
+      },
+      {
+        "qp": 20,
+        "psnr_y": 46.233758482978686,
+        "bytes": 115624
+      },
+      {
+        "qp": 21,
+        "psnr_y": 45.75040122237059,
+        "bytes": 102406
+      },
+      {
+        "qp": 23,
+        "psnr_y": 44.60719845884719,
+        "bytes": 77178
+      },
+      {
+        "qp": 24,
+        "psnr_y": 44.09396482472349,
+        "bytes": 67686
+      }
+    ],
+    "h264_selected": {
+      "qp": 23,
+      "psnr_y": 44.60719845884719,
+      "bytes": 77178
+    },
+    "h264_samples": [
+      {
+        "gpu_latent_to_h264_seconds": 1.6372285899706185,
+        "h264_decode_seconds": 0.10092085367068648,
+        "two_ends_seconds": 1.738149443641305
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.5977966748178005,
+        "h264_decode_seconds": 0.10299783479422331,
+        "two_ends_seconds": 1.7007945096120238
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.572776059154421,
+        "h264_decode_seconds": 0.10732246609404683,
+        "two_ends_seconds": 1.680098525248468
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.6128379539586604,
+        "h264_decode_seconds": 0.1028412259183824,
+        "two_ends_seconds": 1.7156791798770428
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.6345279109664261,
+        "h264_decode_seconds": 0.0976333748549223,
+        "two_ends_seconds": 1.7321612858213484
+      }
+    ],
+    "quality_tolerance_db": 0.5,
+    "within_quality_tolerance": true,
+    "encoder_speed_ratio": 4.939866896219278,
+    "codec_to_h264_byte_ratio": 2.8849542615771333,
+    "parameters": 118000,
+    "weight_bytes": 1276460,
+    "cpu_rss_highwater_bytes": 1796321280,
+    "scope": "1warmup+5formal, actual GPU-start encode; active other GPU services present; no Prompt/DiT timing; both receiver endpoints are rawYUV420; VAE receiver includes latentH2D, RGB transfer and RGB-to-YUV conversion"
+  },
+  {
+    "video": "/mnt/data_hdd/luoxiangyu/dit_pairs/exp_expand32_20261106/sample_0020/final_latent.pt",
+    "actual_bytes": 285791,
+    "bpp": 0.33676352752639516,
+    "kbps": 2151.838117647059,
+    "quality": {
+      "psnr_y": 34.54730667078943,
+      "psnr_rgb": 33.45539214134273,
+      "per_frame_psnr_y": [
+        33.55665799764496,
+        33.92318519776774,
+        33.81014292772412,
+        33.363133690878094,
+        33.18089946959577,
+        34.74659236621053,
+        34.99942995949102,
+        34.59280133268678,
+        34.48725719307659,
+        34.41561360971804,
+        34.315016434028415,
+        34.093110196505734,
+        33.70707075447386,
+        36.580209954859235,
+        36.7135766568632,
+        36.82142697897294,
+        36.58156999878512
+      ],
+      "last4_psnr_y": 36.67419589737012
+    },
+    "main_coding_symbols_changed_cpu_vs_gpu": 0,
+    "gpu_analysis_cpu_probability": true,
+    "independent_decode": true,
+    "codec_samples": [
+      {
+        "analysis_gpu_seconds": 0.000765560194849968,
+        "hyper_analysis_gpu_seconds": 0.00026726583018898964,
+        "D2H_seconds": 0.000711511354893446,
+        "main_quantization_cpu_seconds": 0.0002926061861217022,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.027172306086868048,
+        "context_probability_seconds": 0.01344357943162322,
+        "index_seconds": 0.03359832148998976,
+        "entropy_main_seconds": 0.08854392590001225,
+        "reference_update_seconds": 2.18893401324749e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.32034346275031567,
+        "hyper_entropy_decode_seconds": 0.010092283599078655,
+        "probability_and_index_seconds": 0.05413057608529925,
+        "main_entropy_decode_seconds": 0.16080775810405612,
+        "synthesis_seconds": 0.007492640055716038,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.23463004967197776,
+        "receiver_vae_and_RGB_seconds": 1.192457888275385,
+        "receiver_RGB_to_YUV_seconds": 0.12004152312874794,
+        "post_dit_two_ends_seconds": 1.8674729238264263,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.0007243403233587742,
+        "hyper_analysis_gpu_seconds": 0.00023125717416405678,
+        "D2H_seconds": 0.0006789998151361942,
+        "main_quantization_cpu_seconds": 0.00032729608938097954,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.02405099803581834,
+        "context_probability_seconds": 0.013180602341890335,
+        "index_seconds": 0.0342135620303452,
+        "entropy_main_seconds": 0.09533335454761982,
+        "reference_update_seconds": 2.6440247893333435e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.3262797109782696,
+        "hyper_entropy_decode_seconds": 0.010561118833720684,
+        "probability_and_index_seconds": 0.05439773062244058,
+        "main_entropy_decode_seconds": 0.15914265858009458,
+        "synthesis_seconds": 0.0076189180836081505,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.23375263018533587,
+        "receiver_vae_and_RGB_seconds": 1.193369966931641,
+        "receiver_RGB_to_YUV_seconds": 0.12668198300525546,
+        "post_dit_two_ends_seconds": 1.880084291100502,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.0007920288480818272,
+        "hyper_analysis_gpu_seconds": 0.0003121960908174515,
+        "D2H_seconds": 0.0006100409664213657,
+        "main_quantization_cpu_seconds": 0.0003179260529577732,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.03147332835942507,
+        "context_probability_seconds": 0.01393849402666092,
+        "index_seconds": 0.0330541655421257,
+        "entropy_main_seconds": 0.09294156637042761,
+        "reference_update_seconds": 2.5218818336725235e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.3301035878248513,
+        "hyper_entropy_decode_seconds": 0.010038344655185938,
+        "probability_and_index_seconds": 0.0542818745598197,
+        "main_entropy_decode_seconds": 0.15805718069896102,
+        "synthesis_seconds": 0.007742287591099739,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.23231963720172644,
+        "receiver_vae_and_RGB_seconds": 1.1947066499851644,
+        "receiver_RGB_to_YUV_seconds": 0.12859798595309258,
+        "post_dit_two_ends_seconds": 1.8857278609648347,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.0008057700470089912,
+        "hyper_analysis_gpu_seconds": 0.00028584571555256844,
+        "D2H_seconds": 0.0006598518230021,
+        "main_quantization_cpu_seconds": 0.0003472352400422096,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.03044874221086502,
+        "context_probability_seconds": 0.016408439725637436,
+        "index_seconds": 0.04474508902058005,
+        "entropy_main_seconds": 0.09286870621144772,
+        "reference_update_seconds": 2.893945202231407e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.3442805358208716,
+        "hyper_entropy_decode_seconds": 0.010494870133697987,
+        "probability_and_index_seconds": 0.05936220521107316,
+        "main_entropy_decode_seconds": 0.1629704339429736,
+        "synthesis_seconds": 0.008463175501674414,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.24332900810986757,
+        "receiver_vae_and_RGB_seconds": 1.1929067657329142,
+        "receiver_RGB_to_YUV_seconds": 0.12614335818216205,
+        "post_dit_two_ends_seconds": 1.9066596678458154,
+        "peak_gpu_bytes": 9013414400
+      },
+      {
+        "analysis_gpu_seconds": 0.000793099869042635,
+        "hyper_analysis_gpu_seconds": 0.0003852047957479954,
+        "D2H_seconds": 0.0007057511247694492,
+        "main_quantization_cpu_seconds": 0.0003048460930585861,
+        "hyper_entropy_and_synthesis_cpu_seconds": 0.02509371330961585,
+        "context_probability_seconds": 0.01314417365938425,
+        "index_seconds": 0.03280234010890126,
+        "entropy_main_seconds": 0.08838111534714699,
+        "reference_update_seconds": 2.3039523512125015e-05,
+        "full_gpu_latent_to_bitstream_seconds": 0.3191983802244067,
+        "hyper_entropy_decode_seconds": 0.010416659992188215,
+        "probability_and_index_seconds": 0.05419493606314063,
+        "main_entropy_decode_seconds": 0.16248510917648673,
+        "synthesis_seconds": 0.007634500041604042,
+        "entropy_and_synthesis_decode_cpu_seconds": 0.23673397488892078,
+        "receiver_vae_and_RGB_seconds": 1.191193989943713,
+        "receiver_RGB_to_YUV_seconds": 0.11532903276383877,
+        "post_dit_two_ends_seconds": 1.8624553778208792,
+        "peak_gpu_bytes": 9013414400
+      }
+    ],
+    "h264_candidates": [
+      {
+        "qp": 18,
+        "psnr_y": 43.23589248665562,
+        "bytes": 1486120
+      },
+      {
+        "qp": 22,
+        "psnr_y": 39.74779442489116,
+        "bytes": 957755
+      },
+      {
+        "qp": 26,
+        "psnr_y": 36.544813449332146,
+        "bytes": 577733
+      },
+      {
+        "qp": 28,
+        "psnr_y": 35.06464314377739,
+        "bytes": 440861
+      },
+      {
+        "qp": 32,
+        "psnr_y": 32.2918755497203,
+        "bytes": 250137
+      },
+      {
+        "qp": 37,
+        "psnr_y": 29.387559811652398,
+        "bytes": 125574
+      },
+      {
+        "qp": 42,
+        "psnr_y": 26.836064340209642,
+        "bytes": 65641
+      },
+      {
+        "qp": 27,
+        "psnr_y": 35.78568617658898,
+        "bytes": 506424
+      },
+      {
+        "qp": 29,
+        "psnr_y": 34.32279667487237,
+        "bytes": 382716
+      },
+      {
+        "qp": 30,
+        "psnr_y": 33.64096118914273,
+        "bytes": 334661
+      }
+    ],
+    "h264_selected": {
+      "qp": 29,
+      "psnr_y": 34.32279667487237,
+      "bytes": 382716
+    },
+    "h264_samples": [
+      {
+        "gpu_latent_to_h264_seconds": 1.6772909671999514,
+        "h264_decode_seconds": 0.13137342175468802,
+        "two_ends_seconds": 1.8086643889546394
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.6192953316494823,
+        "h264_decode_seconds": 0.1322485590353608,
+        "two_ends_seconds": 1.751543890684843
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.609968326985836,
+        "h264_decode_seconds": 0.1349134431220591,
+        "two_ends_seconds": 1.7448817701078951
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.9465423268266022,
+        "h264_decode_seconds": 0.12153599318116903,
+        "two_ends_seconds": 2.0680783200077713
+      },
+      {
+        "gpu_latent_to_h264_seconds": 1.6596020427532494,
+        "h264_decode_seconds": 0.12626093765720725,
+        "two_ends_seconds": 1.7858629804104567
+      }
+    ],
+    "quality_tolerance_db": 0.5,
+    "within_quality_tolerance": true,
+    "encoder_speed_ratio": 5.19001922239279,
+    "codec_to_h264_byte_ratio": 0.7467443221605577,
+    "parameters": 118000,
+    "weight_bytes": 1276460,
+    "cpu_rss_highwater_bytes": 1846599680,
+    "scope": "1warmup+5formal, actual GPU-start encode; active other GPU services present; no Prompt/DiT timing; both receiver endpoints are rawYUV420; VAE receiver includes latentH2D, RGB transfer and RGB-to-YUV conversion"
+  }
+]

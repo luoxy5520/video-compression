@@ -1,0 +1,16 @@
+{
+  "status": "RUNNING",
+  "lane": "gpu0",
+  "updated": "2026-11-28T19:45:43.615185+08:00",
+  "command": [
+    "/home/luoxiangyu/video-compression-e2/.venv/bin/python",
+    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/scripts/temporal_pixel.py",
+    "--steps",
+    "1000",
+    "--run-name",
+    "P3_D42_low1000",
+    "--source-checkpoint",
+    "/home/luoxiangyu/video-compression-e2/experiment_2/training_diagnosis/checkpoints/extensions/P2_D42_low10000/P2.pt"
+  ],
+  "log": "P3_D42_low1000-train.log"
+}

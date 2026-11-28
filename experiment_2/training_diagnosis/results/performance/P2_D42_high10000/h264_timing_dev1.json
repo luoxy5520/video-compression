@@ -1,0 +1,27 @@
+[
+  {
+    "gpu_latent_to_h264_seconds": 1.64500163635239,
+    "h264_decode_seconds": 0.14308350579813123,
+    "two_ends_seconds": 1.7880851421505213
+  },
+  {
+    "gpu_latent_to_h264_seconds": 1.6610915851779282,
+    "h264_decode_seconds": 0.13641588436439633,
+    "two_ends_seconds": 1.7975074695423245
+  },
+  {
+    "gpu_latent_to_h264_seconds": 1.66230488428846,
+    "h264_decode_seconds": 0.13664866983890533,
+    "two_ends_seconds": 1.7989535541273654
+  },
+  {
+    "gpu_latent_to_h264_seconds": 1.6625826270319521,
+    "h264_decode_seconds": 0.13800765993073583,
+    "two_ends_seconds": 1.800590286962688
+  },
+  {
+    "gpu_latent_to_h264_seconds": 1.6374878343194723,
+    "h264_decode_seconds": 0.13387351110577583,
+    "two_ends_seconds": 1.7713613454252481
+  }
+]

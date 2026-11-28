@@ -59,3 +59,9 @@
 
 - At11:41 GPU0 completed72 new real-stream/nativeVAE development evaluations. P2long10000:278098.1 meanBytes/38.5766dB,Uniform matched-rate+2.1842dB across18 (oldP2+1.5817). D42fixedTP2:291785.7 meanBytes/38.7252dB;same-container savings4.2687%,history-vs-zero4.5569%.
 - D42joint10000 new phase started11:41:59 from frozenD42/20000+TP2/5000. Source/checkpoint paths isolated,42 legal train videos,new optimizer intentionally initialized. GPU0 file lock serializes our training and future formal profiles. P3 continues onGPU1.
+
+## Resumed2026-11-28 19:35 Asia/Shanghai
+- All previous queues completed at14:13;47 configurations times18 historical development videos=846 actual stream/nativeVAE evaluations. P3_D42_1000:271028.4meanBytes/39.0837dB;Uniform same-rate gain3.0917dB and same-quality savings16.8416%,all18 supported. H264 same-quality median ratio1.031,mean2.314,wins8/18;no universal H264 advantage.
+- Interrupted index-lookup audit nowPASS:18 exact-byte streams and original independent decoders;freshGPU paired profiles19:40-19:45 passed2 exact-byte streams. Full encoder latency savings3.02%/1.88%,two-end gain0.53%/-0.0054%. Microbenchmark is not end-to-end speedup. Seven regressionsPASS including boundaries,NaN/Inf,noncontiguous inputs and full-stream equality.
+- At19:45:43 started strengthen_gpu0/gpu1 after all formal index profiles ended. GPU1 resumesP3_D42_1000/latest intoisolatedP3_D42_3000,retains2000/3000 full checkpoints. GPU0 trainslow/high VAE-aware1000 eachfromcorresponding P2 models. Shared training locks allow twoGPUs;formal profiles exclusive after all training/evaluation. Target72new rows,total918,butnot counted complete.
+- Reviewed all18 latest RD layouts via contact sheet;numeric846 keysunique,finite,real-decode and byte accountingPASS;frozenVAE integrityPASS. Latest reportlinkedfromhistoricalE2 report to avoid mistaking old NOT RUN markers for current state.

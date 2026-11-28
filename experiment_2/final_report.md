@@ -1,5 +1,7 @@
 # E2 resumed experiment report
 
+此页保留最初1000步短训练的历史结果。后续训练诊断、Temporal Prior、42视频联合训练、VAE-aware训练及846组实测的最新汇总见 [已复核扩展报告](training_diagnosis/reviewed_extension_report.md)；当前继续训练状态见 [实验说明](training_diagnosis/README.md)。下文的NOT RUN仅描述当时阶段。
+
 The SSH interruption has been resolved. I2/I3 smoke and repeat passed. Eight short intra runs and fixed-symbol I1 comparison completed. This is a development-stage report, not a final independent evaluation.
 
 ## Fixed-symbol I1 versus I0
